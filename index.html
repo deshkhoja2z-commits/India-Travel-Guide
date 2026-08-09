@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>BHARAT KHOJ A2Z</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(
+135deg,
+#ff9933 0%,
+#ffb347 25%,
+#ffffff 50%,
+#b7e8b1 75%,
+#138808 100%
+);
+
+padding:28px 15px;
+text-align:center;
+border-bottom:5px solid #138808;
+box-shadow:0 5px 18px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:42px;
+margin-bottom:5px;
+}
+
+header h1{
+font-size:31px;
+font-weight:900;
+margin-bottom:7px;
+}
+
+header p{
+font-size:16px;
+font-weight:bold;
+color:#34495e;
+}
+
+/* SEARCH */
+
+.search{
+max-width:600px;
+margin:20px auto 0;
+position:relative;
+}
+
+.search input{
+width:100%;
+padding:16px 55px 16px 20px;
+border:0;
+border-radius:35px;
+outline:0;
+font-size:16px;
+box-shadow:0 5px 18px rgba(0,0,0,.15);
+}
+
+.search span{
+position:absolute;
+right:17px;
+top:9px;
+font-size:30px;
+}
+
+/* MAIN */
+
+.container{
+max-width:900px;
+margin:auto;
+padding:22px 15px;
+}
+
+/* TITLE */
+
+.title{
+background:white;
+padding:22px;
+border-radius:22px;
+margin-bottom:25px;
+border-left:6px solid #ff9933;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.title h2{
+font-size:26px;
+margin-bottom:8px;
+}
+
+.title p{
+font-size:16px;
+color:#666;
+line-height:1.7;
+}
+
+/* SECTION */
+
+.section-title{
+font-size:25px;
+margin-bottom:17px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+padding:22px 10px;
+border-radius:21px;
+min-height:165px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+cursor:pointer;
+transition:.2s;
+}
+
+.card:active{
+transform:scale(.96);
+}
+
+.icon{
+font-size:43px;
+margin-bottom:10px;
+}
+
+.card h3{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.card p{
+font-size:14px;
+color:#666;
+}
+
+/* BORDERS */
+
+.card:nth-child(1){
+border-top:5px solid #ff9933;
+}
+
+.card:nth-child(2){
+border-top:5px solid #138808;
+}
+
+.card:nth-child(3){
+border-top:5px solid #3498db;
+}
+
+.card:nth-child(4){
+border-top:5px solid #e67e22;
+}
+
+.card:nth-child(5){
+border-top:5px solid #16a085;
+}
+
+.card:nth-child(6){
+border-top:5px solid #8e44ad;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:30px;
+padding:25px 15px;
+text-align:center;
+background:#17202a;
+color:white;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:16px;
+}
+
+/* MOBILE */
+
+@media(max-width:450px){
+
+header h1{
+font-size:27px;
+}
+
+.logo{
+font-size:38px;
+}
+
+.container{
+padding:18px 14px;
+}
+
+.grid{
+gap:12px;
+}
+
+.card{
+min-height:155px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+BHARAT KHOJ A2Z
+</h1>
+
+<p>
+Explore India • भारत खोजें
+</p>
+
+<div class="search">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places, cities, states..."
+>
+
+<span>
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- MAIN -->
+
+<div class="container">
+
+
+<!-- MAIN TITLE -->
+
+<div class="title">
+
+<h2>
+🇮🇳 Explore Bharat / भारत खोजें
+</h2>
+
+<p>
+भारत के शहर, पर्यटन स्थल, होटल,
+भोजन, यात्रा और संस्कृति की जानकारी
+एक ही स्थान पर।
+</p>
+
+</div>
+
+
+<!-- CATEGORIES -->
+
+<h2 class="section-title">
+Explore India / भारत की खोज
+</h2>
+
+
+<div class="grid">
+
+
+<!-- STATES -->
+
+<div
+class="card"
+id="statesCard"
+>
+
+<div class="icon">
+🗺️
+</div>
+
+<h3>
+States / राज्य
+</h3>
+
+<p>
+भारत के प्रमुख राज्य
+</p>
+
+</div>
+
+
+<!-- TOURIST PLACES -->
+
+<div
+class="card"
+id="touristPlacesCard"
+>
+
+<div class="icon">
+🏛️
+</div>
+
+<h3>
+Tourist Places
+</h3>
+
+<p>
+पर्यटन स्थल
+</p>
+
+</div>
+
+
+<!-- HOTELS -->
+
+<div
+class="card"
+id="hotelsCard"
+>
+
+<div class="icon">
+🏨
+</div>
+
+<h3>
+Hotels / होटल
+</h3>
+
+<p>
+रहने की जगह
+</p>
+
+</div>
+
+
+<!-- FOOD -->
+
+<div
+class="card"
+id="foodCard"
+>
+
+<div class="icon">
+🍛
+</div>
+
+<h3>
+Food / भोजन
+</h3>
+
+<p>
+प्रसिद्ध भारतीय भोजन
+</p>
+
+</div>
+
+
+<!-- TRAVEL -->
+
+<div
+class="card"
+id="travelCard"
+>
+
+<div class="icon">
+🚆
+</div>
+
+<h3>
+Travel / यात्रा
+</h3>
+
+<p>
+यात्रा की जानकारी
+</p>
+
+</div>
+
+
+<!-- GALLERY -->
+
+<div
+class="card"
+id="galleryCard"
+>
+
+<div class="icon">
+📸
+</div>
+
+<h3>
+Gallery / गैलरी
+</h3>
+
+<p>
+भारत की तस्वीरें
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+BHARAT KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+© 2026 BHARAT KHOJ A2Z
+
+</footer>
+
+
+<script>
+
+/* TOURIST PLACES */
+
+document
+.getElementById("touristPlacesCard")
+.addEventListener("click",function(){
+
+window.location.href="cities.html";
+
+});
+
+
+/* OTHER BUTTONS */
+
+document
+.getElementById("statesCard")
+.addEventListener("click",function(){
+
+alert(
+"States / राज्य की जानकारी जल्द जोड़ी जाएगी।"
+);
+
+});
+
+
+document
+.getElementById("hotelsCard")
+.addEventListener("click",function(){
+
+alert(
+"Hotels / होटल की जानकारी जल्द जोड़ी जाएगी।"
+);
+
+});
+
+
+document
+.getElementById("foodCard")
+.addEventListener("click",function(){
+
+alert(
+"Food / भोजन की जानकारी जल्द जोड़ी जाएगी।"
+);
+
+});
+
+
+document
+.getElementById("travelCard")
+.addEventListener("click",function(){
+
+alert(
+"Travel / यात्रा की जानकारी जल्द जोड़ी जाएगी।"
+);
+
+});
+
+
+document
+.getElementById("galleryCard")
+.addEventListener("click",function(){
+
+alert(
+"Gallery / गैलरी जल्द उपलब्ध होगी।"
+);
+
+});
+
+
+/* SEARCH */
+
+document
+.getElementById("searchInput")
+.addEventListener("keyup",function(){
+
+if(this.value.trim() !== ""){
+
+console.log(
+"Search:",
+this.value
+);
+
+}
+
+});
+
+</script>
+
+
+</body>
+
+</html>
