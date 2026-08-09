@@ -165,12 +165,15 @@ header h1{font-size:26px}
 <p>Best Places in India • भारत के प्रमुख स्थान</p>
 
 <div class="search">
+
 <input
 id="search"
 type="text"
 placeholder="Search City / शहर खोजें..."
 autocomplete="off">
+
 <span>🔍</span>
+
 </div>
 
 </header>
@@ -190,7 +193,6 @@ autocomplete="off">
 <p>
 भारत के प्रसिद्ध मंदिर, तीर्थ, ऐतिहासिक,
 प्राकृतिक और पर्यटन स्थलों की जानकारी।
-
 </p>
 
 <p style="margin-top:6px">
@@ -203,7 +205,7 @@ Search in English or Hindi.
 <div class="grid" id="places">
 
 
-<!-- 1 -->
+<!-- 1 UJJAIN -->
 
 <div class="card"
 data-search="ujjain उज्जैन madhya pradesh mahakaleshwar महाकालेश्वर">
@@ -907,9 +909,13 @@ data-search="kerala केरल backwaters बैकवाटर">
 
 
 <div class="no" id="no">
+
 🔍
+
 <br><br>
+
 No place found / कोई स्थान नहीं मिला
+
 </div>
 
 </div>
@@ -933,21 +939,28 @@ Explore • Travel • Discover
 <script>
 
 const search=document.getElementById("search");
+
 const cards=document.querySelectorAll(".card");
+
 const no=document.getElementById("no");
+
 
 search.addEventListener("input",function(){
 
 let text=this.value.toLowerCase().trim();
+
 let found=0;
+
 
 cards.forEach(card=>{
 
 let data=card.dataset.search.toLowerCase();
 
+
 if(data.includes(text)){
 
 card.style.display="flex";
+
 found++;
 
 }else{
@@ -958,6 +971,7 @@ card.style.display="none";
 
 });
 
+
 no.style.display=found?"none":"block";
 
 });
@@ -967,9 +981,10 @@ no.style.display=found?"none":"block";
 
 cards[0].addEventListener("click",function(){
 
-window.location.href="ujjain/ujjain.html";
+window.location.href="ujjain.html";
 
 });
+
 
 </script>
 
