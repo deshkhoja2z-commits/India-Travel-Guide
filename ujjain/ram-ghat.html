@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Ram Ghat | राम घाट - Bharat Khoj A2Z</title>
+
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.7;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+background:linear-gradient(135deg,#171717,#3f3f46);
+color:white;
+padding:25px 20px;
+text-align:center;
+}
+
+.header h1{
+font-size:30px;
+}
+
+.header p{
+font-size:18px;
+margin-top:5px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back{
+display:inline-block;
+background:#e67e22;
+color:white;
+text-decoration:none;
+padding:11px 18px;
+border-radius:12px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+background:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:22px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+border-left:8px solid #e67e22;
+}
+
+.hero h2{
+font-size:30px;
+margin-bottom:8px;
+}
+
+.hero p{
+font-size:18px;
+color:#666;
+}
+
+
+/* =========================
+   MAIN TABS
+========================= */
+
+.tabs{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:16px;
+margin-bottom:22px;
+}
+
+.tabs a{
+background:white;
+color:#202124;
+text-decoration:none;
+min-height:90px;
+border-radius:25px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:16px 10px;
+
+font-size:19px;
+font-weight:bold;
+
+box-shadow:0 6px 20px rgba(0,0,0,.07);
+
+border:1px solid #f0f0f0;
+
+transition:.2s;
+}
+
+.tabs a:active{
+transform:scale(.97);
+background:#fff7e6;
+}
+
+
+/* =========================
+   DISCLAIMER
+========================= */
+
+.disclaimer{
+background:#fff7e6;
+border-left:6px solid #f39c12;
+border-radius:16px;
+padding:15px 18px;
+margin-bottom:25px;
+box-shadow:0 4px 12px rgba(0,0,0,.05);
+}
+
+.disclaimer h3{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.disclaimer p{
+font-size:14px;
+color:#666;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+background:white;
+border-radius:22px;
+padding:22px;
+margin-bottom:20px;
+
+box-shadow:0 6px 20px rgba(0,0,0,.07);
+
+scroll-margin-top:25px;
+}
+
+.card h2{
+font-size:24px;
+margin-bottom:15px;
+}
+
+.card h3{
+font-size:19px;
+margin-top:20px;
+margin-bottom:8px;
+}
+
+.card p{
+font-size:17px;
+color:#555;
+}
+
+
+/* =========================
+   INFORMATION GRID
+========================= */
+
+.info{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.info-box{
+background:#f8f9fa;
+padding:17px;
+border-radius:18px;
+text-align:center;
+}
+
+.info-box b{
+display:block;
+font-size:17px;
+color:#222;
+margin-bottom:5px;
+}
+
+.info-box span{
+font-size:15px;
+color:#666;
+}
+
+
+/* =========================
+   HIGHLIGHT
+========================= */
+
+.highlight{
+background:#fff7e6;
+border-left:5px solid #f39c12;
+padding:16px;
+border-radius:14px;
+margin-top:15px;
+}
+
+
+/* =========================
+   LIST
+========================= */
+
+ul{
+padding-left:22px;
+color:#555;
+}
+
+li{
+margin-bottom:8px;
+font-size:17px;
+}
+
+
+/* =========================
+   MAP
+========================= */
+
+.map-box{
+background:#eef7ff;
+border-left:6px solid #2196f3;
+padding:20px;
+border-radius:18px;
+}
+
+.map-btn{
+display:inline-block;
+background:#1976d2;
+color:white;
+text-decoration:none;
+padding:13px 18px;
+border-radius:12px;
+margin-top:12px;
+font-weight:bold;
+}
+
+.current-btn{
+background:#16a34a;
+}
+
+.search-btn{
+background:#1976d2;
+}
+
+
+/* =========================
+   HOTEL
+========================= */
+
+.hotel-box{
+background:#fff;
+border:1px solid #e5e7eb;
+border-radius:18px;
+padding:18px;
+margin-top:15px;
+box-shadow:0 4px 12px rgba(0,0,0,.05);
+}
+
+.hotel-box h3{
+font-size:20px;
+margin-top:0;
+margin-bottom:6px;
+}
+
+.hotel-box p{
+font-size:16px;
+}
+
+.hotel-btn{
+display:inline-block;
+background:#2563eb;
+color:white;
+text-decoration:none;
+padding:10px 15px;
+border-radius:10px;
+margin-top:10px;
+font-weight:bold;
+}
+
+
+/* =========================
+   FLOATING MENU
+========================= */
+
+.floating-menu{
+position:fixed;
+right:18px;
+bottom:20px;
+z-index:9999;
+}
+
+.floating-menu button{
+background:#e67e22;
+color:white;
+border:none;
+
+padding:13px 18px;
+
+border-radius:30px;
+
+font-size:15px;
+font-weight:bold;
+
+box-shadow:0 5px 18px rgba(0,0,0,.25);
+
+cursor:pointer;
+}
+
+.floating-panel{
+display:none;
+
+position:absolute;
+
+right:0;
+bottom:58px;
+
+width:285px;
+
+max-height:65vh;
+
+overflow-y:auto;
+
+background:white;
+
+border-radius:20px;
+
+padding:12px;
+
+box-shadow:0 8px 30px rgba(0,0,0,.25);
+}
+
+.floating-panel.show{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px;
+}
+
+.floating-panel a{
+text-decoration:none;
+color:#222;
+
+background:#f4f7f6;
+
+padding:11px 6px;
+
+border-radius:12px;
+
+text-align:center;
+
+font-size:13px;
+font-weight:bold;
+}
+
+.floating-panel a:active{
+background:#e67e22;
+color:white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+background:#111827;
+color:white;
+
+text-align:center;
+
+padding:25px 15px;
+
+margin-top:30px;
+}
+
+.footer h2{
+color:#f39c12;
+margin-bottom:5px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+.container{
+padding:15px;
+}
+
+.tabs{
+gap:12px;
+}
+
+.tabs a{
+min-height:82px;
+font-size:17px;
+border-radius:22px;
+padding:12px 6px;
+}
+
+.info{
+grid-template-columns:1fr 1fr;
+}
+
+.info-box{
+padding:14px 7px;
+}
+
+.info-box b{
+font-size:15px;
+}
+
+.info-box span{
+font-size:13px;
+}
+
+.hero h2{
+font-size:25px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.card h2{
+font-size:22px;
+}
+
+.card p{
+font-size:16px;
+}
+
+.disclaimer p{
+font-size:13px;
+}
+
+}
+
+
+/* =========================
+   SMALL SCREEN
+========================= */
+
+@media(max-width:380px){
+
+.tabs{
+gap:9px;
+}
+
+.tabs a{
+font-size:15px;
+min-height:75px;
+}
+
+.floating-menu{
+right:12px;
+bottom:15px;
+}
+
+.floating-panel{
+width:260px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<div class="header">
+
+<h1>🌊 राम घाट</h1>
+
+<p>Ram Ghat • Ujjain • Madhya Pradesh</p>
+
+</div>
+
+
+<div class="container">
+
+
+<!-- =========================
+     BACK
+========================= -->
+
+<a href="ujjain.html"
+class="back"
+onclick="window.location.href='ujjain.html'; return false;">
+
+← Ujjain / उज्जैन
+
+</a>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<div class="hero">
+
+<h2>🌊 Ram Ghat / राम घाट</h2>
+
+<p>
+
+क्षिप्रा नदी के पवित्र तट पर स्थित राम घाट उज्जैन के
+प्रमुख धार्मिक स्थलों में से एक है। यहाँ होने वाली
+शिप्रा आरती और धार्मिक वातावरण इसे उज्जैन यात्रा का
+महत्वपूर्ण हिस्सा बनाते हैं।
+
+</p>
+
+</div>
+
+
+<!-- =========================
+     MAIN TABS
+========================= -->
+
+<div class="tabs">
+
+
+<a href="#overview">
+
+ℹ️ जरूरी जानकारी
+
+</a>
+
+
+<a href="#travel">
+
+🚗 Travel / यात्रा
+
+</a>
+
+
+<a href="#fare">
+
+🛺 Fare / किराया
+
+</a>
+
+
+<a href="#maps">
+
+🗺️ Maps / नक्शा
+
+</a>
+
+
+<a href="#hotels">
+
+🏨 Hotels / होटल
+
+</a>
+
+
+<a href="#nearby">
+
+🛕 Nearby / आसपास
+
+</a>
+
+
+<a href="#gallery">
+
+📸 Gallery / फोटो
+
+</a>
+
+
+</div>
+
+
+<!-- =========================
+     DISCLAIMER
+========================= -->
+
+<div class="disclaimer">
+
+<h3>⚠️ Disclaimer / महत्वपूर्ण सूचना</h3>
+
+<p>
+
+दूरी, किराया, समय, होटल, उपलब्धता और अन्य travel
+information अनुमानित हो सकती है और समय के साथ बदल सकती है।
+यात्रा से पहले current information जरूर check करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     OVERVIEW
+================================================== -->
+
+<div class="card" id="overview">
+
+<h2>ℹ️ जरूरी जानकारी / Important Information</h2>
+
+
+<div class="info">
+
+
+<div class="info-box">
+
+<b>📍 Location</b>
+
+<span>Ujjain, Madhya Pradesh</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🌊 River</b>
+
+<span>Shipra River / क्षिप्रा</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🏞️ Type</b>
+
+<span>Holy River Ghat</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🙏 Religious Place</b>
+
+<span>Major Pilgrimage Site</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🚉 Railway</b>
+
+<span>Ujjain Junction (UJN)</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🕐 Visit</b>
+
+<span>Day & Evening</span>
+
+</div>
+
+
+</div>
+
+
+<h3>🌊 राम घाट का महत्व</h3>
+
+<p>
+
+राम घाट क्षिप्रा नदी के प्रमुख और प्रसिद्ध घाटों में से एक है।
+यहाँ श्रद्धालु धार्मिक स्नान, पूजा और अन्य धार्मिक अनुष्ठान करते हैं।
+उज्जैन के Simhastha/Kumbh आयोजन में भी क्षिप्रा के घाटों का विशेष
+महत्व रहता है।
+
+</p>
+
+
+<h3>🪔 शिप्रा आरती</h3>
+
+<p>
+
+राम घाट की शाम की शिप्रा आरती यहाँ के प्रमुख आकर्षणों में से एक है।
+सूर्यास्त के आसपास घाट का वातावरण विशेष रूप से धार्मिक और
+आकर्षक हो जाता है।
+
+</p>
+
+
+<div class="highlight">
+
+<b>⭐ सबसे खास:</b>
+
+<p>
+
+अगर आप Ujjain में हैं तो शाम के समय Ram Ghat जाकर
+Shipra Aarti और नदी किनारे का वातावरण देखना
+यात्रा का खास अनुभव हो सकता है।
+
+</p>
+
+</div>
+
+
+<h3>🏺 ऐतिहासिक एवं धार्मिक पहचान</h3>
+
+<p>
+
+राम घाट उज्जैन की प्राचीन धार्मिक परंपरा और क्षिप्रा नदी
+से जुड़ा महत्वपूर्ण स्थान है। इसे उज्जैन के प्रमुख
+स्नान घाटों में गिना जाता है और Simhastha/Kumbh के समय
+यह क्षेत्र विशेष रूप से महत्वपूर्ण हो जाता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL
+================================================== -->
+
+<div class="card" id="travel">
+
+<h2>🚗 Distance & Travel / दूरी एवं यात्रा</h2>
+
+
+<div class="info">
+
+
+<div class="info-box">
+
+<b>🚉 Ujjain Railway Station</b>
+
+<span>लगभग 3 km</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🚌 Ujjain Bus Stand</b>
+
+<span>लगभग 2–3 km</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🚌 Nanakheda Bus Stand</b>
+
+<span>लगभग 5 km</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🕉️ Mahakaleshwar Temple</b>
+
+<span>लगभग 1 km</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🌺 Harsiddhi Mata Temple</b>
+
+<span>लगभग 1 km</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>✈️ Indore Airport</b>
+
+<span>लगभग 53–55 km</span>
+
+</div>
+
+
+</div>
+
+
+<p style="margin-top:15px;">
+
+दूरी selected road route और traffic के अनुसार
+थोड़ी अलग हो सकती है।
+
+</p>
+
+
+<h3>🚕 Local Transport</h3>
+
+<p>
+
+Auto-rickshaw, E-rickshaw और cab द्वारा Ram Ghat
+तक पहुँचा जा सकता है। Mahakaleshwar और आसपास के
+कई प्रमुख स्थानों से पैदल भी यात्रा की जा सकती है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     FARE
+================================================== -->
+
+<div class="card" id="fare">
+
+<h2>🛺 Approx Auto / E-Rickshaw Fare</h2>
+
+<p>
+
+नीचे दिए गए किराए केवल approximate travel-planning
+ranges हैं। Actual fare route, traffic, समय और
+driver के अनुसार बदल सकता है।
+
+</p>
+
+
+<div class="info">
+
+
+<div class="info-box">
+
+<b>🚉 Railway Station → Ram Ghat</b>
+
+<span>लगभग ₹30–₹100</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🚌 Bus Stand → Ram Ghat</b>
+
+<span>लगभग ₹30–₹100</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🕉️ Mahakal → Ram Ghat</b>
+
+<span>लगभग ₹20–₹80</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🚌 Nanakheda → Ram Ghat</b>
+
+<span>लगभग ₹80–₹150</span>
+
+</div>
+
+
+</div>
+
+
+<div class="highlight">
+
+<b>💡 Important:</b>
+
+<p>
+
+ये official fixed fares नहीं हैं। यात्रा शुरू करने
+से पहले local fare confirm करना बेहतर है।
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     GOOGLE MAPS
+================================================== -->
+
+<div class="card" id="maps">
+
+<h2>🗺️ Google Maps & Navigation</h2>
+
+
+<div class="map-box">
+
+<p>
+
+Ram Ghat का location Google Maps पर देखें या
+अपनी current location से सीधे route खोलें।
+
+</p>
+
+
+<a class="map-btn current-btn"
+
+href="https://www.google.com/maps/dir/?api=1&destination=Ram%20Ghat%2C%20Ujjain%2C%20Madhya%20Pradesh&travelmode=driving"
+
+target="_blank">
+
+📍 Current Location से Route
+
+</a>
+
+
+<br>
+
+
+<a class="map-btn search-btn"
+
+href="https://www.google.com/maps/search/?api=1&query=Ram%20Ghat%2C%20Ujjain%2C%20Madhya%20Pradesh"
+
+target="_blank">
+
+🗺️ Google Maps पर देखें
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     HOTELS
+================================================== -->
+
+<div class="card" id="hotels">
+
+<h2>🏨 Hotels / होटल</h2>
+
+<p>
+
+Ram Ghat के आसपास और Mahakaleshwar area में
+budget से premium तक कई stay options मिलते हैं।
+Hotel price और availability यात्रा की तारीख के
+अनुसार बदल सकती है।
+
+</p>
+
+
+<!-- PREMIUM -->
+
+<div class="hotel-box">
+
+<h3>⭐⭐⭐⭐⭐ MPT Samrat Vikramaditya The Heritage</h3>
+
+<p>
+
+Jaisinghpura • Ram Ghat से लगभग 960 m
+और Mahakaleshwar के पास।
+
+</p>
+
+<a class="hotel-btn"
+
+href="https://www.google.com/maps/search/?api=1&query=MPT+Samrat+Vikramaditya+The+Heritage+Ujjain"
+
+target="_blank">
+
+📍 Google Maps
+
+</a>
+
+</div>
+
+
+<!-- MID RANGE -->
+
+<div class="hotel-box">
+
+<h3>🏨 Hotel Satyug</h3>
+
+<p>
+
+Kamri Marg / Patni Bazar area • Ram Ghat से
+लगभग 1.3 km के आसपास।
+
+</p>
+
+<a class="hotel-btn"
+
+href="https://www.google.com/maps/search/?api=1&query=Hotel+Satyug+Ujjain"
+
+target="_blank">
+
+📍 Google Maps
+
+</a>
+
+</div>
+
+
+<!-- BUDGET -->
+
+<div class="hotel-box">
+
+<h3>🏨 Anand Yatri Grah Home Stay</h3>
+
+<p>
+
+Harsiddhi Gate • Ram Ghat से लगभग 450 m।
+Budget stay option के रूप में देखा जा सकता है।
+
+</p>
+
+<a class="hotel-btn"
+
+href="https://www.google.com/maps/search/?api=1&query=Anand+Yatri+Grah+Home+Stay+Ujjain"
+
+target="_blank">
+
+📍 Google Maps
+
+</a>
+
+</div>
+
+
+<!-- NEAR RAM GHAT -->
+
+<div class="hotel-box">
+
+<h3>🏨 Ram Ghat के आसपास Hotels</h3>
+
+<p>
+
+Ram Ghat के आसपास उपलब्ध current hotels और
+उनकी location एक साथ देखें।
+
+</p>
+
+<a class="hotel-btn"
+
+href="https://www.google.com/maps/search/?api=1&query=hotels+near+Ram+Ghat+Ujjain"
+
+target="_blank">
+
+🔎 Nearby Hotels
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     NEARBY
+================================================== -->
+
+<div class="card" id="nearby">
+
+<h2>🛕 Nearby Important Places / आसपास के प्रमुख स्थान</h2>
+
+
+<div class="info">
+
+
+<div class="info-box">
+
+<b>🕉️ Mahakaleshwar</b>
+
+<span>Jyotirlinga Temple</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🌺 Harsiddhi Mata</b>
+
+<span>Famous Temple</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🔱 Kal Bhairav</b>
+
+<span>Famous Temple</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🙏 Bade Ganesh</b>
+
+<span>Religious Place</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🛕 Mangalnath</b>
+
+<span>Major Temple</span>
+
+</div>
+
+
+<div class="info-box">
+
+<b>🏛️ Mahakal Lok</b>
+
+<span>Major Attraction</span>
+
+</div>
+
+
+</div>
+
+
+<div class="highlight">
+
+<b>🗺️ Ujjain Darshan:</b>
+
+<p>
+
+Ram Ghat को Mahakaleshwar, Harsiddhi Mata और
+Mahakal Lok के साथ एक ही Ujjain itinerary में
+आसानी से शामिल किया जा सकता है।
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     GALLERY
+================================================== -->
+
+<div class="card" id="gallery">
+
+<h2>📸 Gallery / फोटो</h2>
+
+
+<p>
+
+Ram Ghat, Shipra River और evening Shipra Aarti
+की photos यहाँ आगे जोड़ी जाएँगी।
+
+</p>
+
+
+<div class="highlight">
+
+<b>🚧 Gallery Coming Soon</b>
+
+<p>
+
+Photo Gallery और additional visual information
+website के अगले चरण में जोड़ी जाएगी।
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<div class="footer">
+
+<h2>🇮🇳 BHARAT KHOJ A2Z</h2>
+
+<p>Explore • Travel • Discover</p>
+
+<p>© 2026 Bharat Khoj A2Z</p>
+
+</div>
+
+
+<!-- ==================================================
+     FLOATING SECTION MENU
+================================================== -->
+
+<div class="floating-menu">
+
+<button onclick="toggleSections()">
+
+☰ Sections
+
+</button>
+
+
+<div class="floating-panel"
+id="floatingPanel">
+
+
+<a href="#overview">
+ℹ️ जरूरी जानकारी
+</a>
+
+
+<a href="#travel">
+🚗 Travel
+</a>
+
+
+<a href="#fare">
+🛺 Fare
+</a>
+
+
+<a href="#maps">
+🗺️ Maps
+</a>
+
+
+<a href="#hotels">
+🏨 Hotels
+</a>
+
+
+<a href="#nearby">
+🛕 Nearby
+</a>
+
+
+<a href="#gallery">
+📸 Gallery
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+function toggleSections(){
+
+const panel =
+document.getElementById("floatingPanel");
+
+panel.classList.toggle("show");
+
+}
+
+
+document
+.querySelectorAll(".floating-panel a")
+.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+document
+.getElementById("floatingPanel")
+.classList.remove("show");
+
+});
+
+});
+
+</script>
+
+
+</body>
+
+</html>
