@@ -5,657 +5,607 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mangalnath Temple | मंगलनाथ मंदिर - Bharat Khoj A2Z</title>
+<title>
+Mangalnath Temple | मंगलनाथ मंदिर - DESH KHOJ A2Z
+</title>
 
+<link rel="stylesheet" href="../style.css">
 
 <style>
 
-/* =========================
-   RESET
-========================= */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-
-/* =========================
-   BODY
-========================= */
-
-body{
-font-family:Arial,sans-serif;
-background:#f4f7f6;
-color:#202124;
-line-height:1.7;
-}
-
-
-/* =========================
-   HEADER
-========================= */
-
-.header{
-background:linear-gradient(135deg,#171717,#3f3f46);
-color:white;
-padding:25px 20px;
-text-align:center;
-}
-
-.header h1{
-font-size:30px;
-}
-
-.header p{
-font-size:18px;
-margin-top:5px;
-}
-
-
-/* =========================
-   CONTAINER
-========================= */
-
-.container{
-max-width:900px;
-margin:auto;
-padding:20px;
-}
-
-
-/* =========================
-   BACK BUTTON
-========================= */
-
-.back{
-display:inline-block;
-
-background:#e67e22;
-
-color:white;
-
-text-decoration:none;
-
-padding:11px 18px;
-
-border-radius:12px;
-
-font-weight:bold;
-
-margin-bottom:20px;
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero{
-background:white;
-
-border-radius:25px;
-
-padding:25px;
-
-margin-bottom:22px;
-
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-
-border-left:8px solid #e67e22;
-}
-
-.hero h2{
-font-size:30px;
-
-margin-bottom:8px;
-}
-
-.hero p{
-font-size:18px;
-
-color:#666;
-}
-
-
-/* =========================
-   MAIN NAVIGATION
-========================= */
-
-.tabs{
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:16px;
-
-margin-bottom:22px;
-}
-
-.tabs a{
-
-background:white;
-
-color:#202124;
-
-text-decoration:none;
-
-min-height:90px;
-
-border-radius:25px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-text-align:center;
-
-padding:16px 10px;
-
-font-size:19px;
-
-font-weight:bold;
-
-box-shadow:0 6px 20px rgba(0,0,0,.07);
-
-border:1px solid #f0f0f0;
-
-transition:.2s;
-}
-
-.tabs a:active{
-
-transform:scale(.97);
-
-background:#fff7e6;
-}
-
-
-/* =========================
-   COMMON DISCLAIMER
-========================= */
-
-.disclaimer{
-
-background:#fff7e6;
-
-border-left:6px solid #f39c12;
-
-border-radius:16px;
-
-padding:15px 18px;
-
-margin-bottom:25px;
-
-box-shadow:0 4px 12px rgba(0,0,0,.05);
-}
-
-.disclaimer h3{
-
-font-size:18px;
-
-margin-bottom:5px;
-}
-
-.disclaimer p{
-
-font-size:14px;
-
-color:#666;
-}
-
-
-/* =========================
-   CARD
-========================= */
-
-.card{
-
-background:white;
-
-border-radius:22px;
-
-padding:22px;
-
-margin-bottom:20px;
-
-box-shadow:0 6px 20px rgba(0,0,0,.07);
-
-scroll-margin-top:25px;
-}
-
-.card h2{
-
-font-size:24px;
-
-margin-bottom:15px;
-}
-
-.card h3{
-
-font-size:19px;
-
-margin-top:20px;
-
-margin-bottom:8px;
-}
-
-.card p{
-
-font-size:17px;
-
-color:#555;
-}
-
-
-/* =========================
-   INFORMATION GRID
-========================= */
-
-.info{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:15px;
-}
+/* ==================================================
+   PAGE BOX
+================================================== */
 
 .info-box{
-
-background:#f8f9fa;
-
-padding:17px;
-
-border-radius:18px;
-
-text-align:center;
+background:#ffffff;
+border-radius:25px;
+padding:30px;
+margin:25px 0;
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+scroll-margin-top:90px;
 }
 
-.info-box b{
-
-display:block;
-
-font-size:17px;
-
-color:#222;
-
-margin-bottom:5px;
+.info-box h2{
+font-size:32px;
+line-height:1.25;
+margin-bottom:18px;
+color:#202124;
 }
 
-.info-box span{
-
-font-size:15px;
-
+.info-box p{
+font-size:20px;
+line-height:1.7;
 color:#666;
 }
 
 
-/* =========================
-   HIGHLIGHT
-========================= */
+/* ==================================================
+   SECTION TABS
+================================================== */
 
-.highlight{
-
-background:#fff7e6;
-
-border-left:5px solid #f39c12;
-
-padding:16px;
-
-border-radius:14px;
-
-margin-top:15px;
+.section-tabs{
+display:flex;
+gap:8px;
+overflow-x:auto;
+padding:10px 2px 14px;
+margin:10px 0 5px;
+position:sticky;
+top:0;
+z-index:50;
+background:#f4f7f6;
+scroll-behavior:smooth;
+-webkit-overflow-scrolling:touch;
 }
 
-
-/* =========================
-   LIST
-========================= */
-
-ul{
-
-padding-left:22px;
-
-color:#555;
+.section-tabs::-webkit-scrollbar{
+height:4px;
 }
 
-li{
-
-margin-bottom:8px;
-
-font-size:17px;
+.section-tabs::-webkit-scrollbar-thumb{
+background:#bbb;
+border-radius:10px;
 }
 
-
-/* =========================
-   MAP
-========================= */
-
-.map-box{
-
-background:#eef7ff;
-
-border-left:6px solid #2196f3;
-
-padding:20px;
-
-border-radius:18px;
-}
-
-.map-btn{
-
-display:inline-block;
-
-background:#1976d2;
-
-color:white;
-
+.section-tabs a{
+flex:0 0 auto;
+display:block;
+padding:10px 14px;
+background:white;
+color:#202124;
 text-decoration:none;
+border-radius:14px;
+font-size:14px;
+font-weight:bold;
+border:1px solid #e5e7eb;
+box-shadow:0 3px 10px rgba(0,0,0,.06);
+white-space:nowrap;
+}
 
-padding:13px 18px;
+.section-tabs a:active{
+transform:scale(.95);
+background:#fff7e6;
+}
 
+.section-tabs a:hover{
+background:#fff7e6;
+}
+
+
+/* ==================================================
+   IMPORTANT BOX
+================================================== */
+
+.important-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:20px;
+margin-top:20px;
+}
+
+.important-box h3{
+font-size:22px;
+margin-bottom:8px;
+}
+
+.important-box p{
+font-size:18px;
+margin:0;
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.official-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 18px;
+background:#1976d2;
+color:white;
+text-decoration:none;
 border-radius:12px;
-
-margin-top:12px;
-
+font-size:16px;
 font-weight:bold;
 }
 
-.current-btn{
+.official-btn:active{
+transform:scale(.97);
+}
 
+
+/* ==================================================
+   NEARBY GRID
+================================================== */
+
+.nearby-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.nearby-card{
+background:#f8f9fa;
+border-radius:20px;
+padding:22px 12px;
+text-align:center;
+border-top:5px solid #16a34a;
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+}
+
+.nearby-card:nth-child(2){
+border-top-color:#2196d2;
+}
+
+.nearby-card:nth-child(3){
+border-top-color:#f59e0b;
+}
+
+.nearby-card:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.nearby-icon{
+font-size:38px;
+margin-bottom:8px;
+}
+
+.nearby-card h3{
+font-size:20px;
+margin:8px 0;
+}
+
+.nearby-card p{
+font-size:16px;
+margin:5px 0 14px;
+color:#666;
+}
+
+
+/* ==================================================
+   ROUTE BUTTON
+================================================== */
+
+.route-btn{
+display:inline-block;
 background:#16a34a;
+color:white;
+text-decoration:none;
+padding:10px 13px;
+border-radius:11px;
+font-size:13px;
+font-weight:bold;
 }
 
-.search-btn{
+.route-btn:active{
+transform:scale(.96);
+}
 
+
+/* ==================================================
+   HOTEL GRID
+================================================== */
+
+.hotel-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.hotel-card{
+display:block;
+background:#f8f9fa;
+color:#202124;
+text-decoration:none;
+text-align:center;
+border-radius:20px;
+padding:22px 12px;
+border-top:5px solid #16a34a;
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+}
+
+.hotel-card:nth-child(2){
+border-top-color:#f59e0b;
+}
+
+.hotel-card:nth-child(3){
+border-top-color:#2196d2;
+}
+
+.hotel-card:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.hotel-card:active{
+transform:scale(.97);
+}
+
+.hotel-icon{
+font-size:38px;
+margin-bottom:8px;
+}
+
+.hotel-card h3{
+font-size:20px;
+margin:8px 0;
+}
+
+.hotel-card p{
+font-size:15px;
+margin:5px 0;
+color:#666;
+}
+
+.hotel-link{
+display:inline-block;
+margin-top:9px;
+padding:8px 11px;
+border-radius:10px;
 background:#1976d2;
+color:white;
+font-size:12px;
+font-weight:bold;
 }
 
 
-/* =========================
-   HOTEL
-========================= */
+/* ==================================================
+   HOTEL BOX
+================================================== */
 
 .hotel-box{
-
-background:#fff;
-
-border:1px solid #e5e7eb;
-
-border-radius:18px;
-
-padding:18px;
-
-margin-top:15px;
-
-box-shadow:0 4px 12px rgba(0,0,0,.05);
-}
-
-.hotel-box h3{
-
-font-size:20px;
-
-margin-top:0;
-
-margin-bottom:6px;
-}
-
-.hotel-box p{
-
-font-size:16px;
-}
-
-.hotel-btn{
-
-display:inline-block;
-
-background:#2563eb;
-
-color:white;
-
-text-decoration:none;
-
-padding:10px 15px;
-
-border-radius:10px;
-
-margin-top:10px;
-
-font-weight:bold;
-}
-
-
-/* =========================
-   FLOATING SECTION MENU
-========================= */
-
-.floating-menu{
-
-position:fixed;
-
-right:18px;
-
-bottom:20px;
-
-z-index:9999;
-}
-
-.floating-menu button{
-
-background:#e67e22;
-
-color:white;
-
-border:none;
-
-padding:13px 18px;
-
-border-radius:30px;
-
-font-size:15px;
-
-font-weight:bold;
-
-box-shadow:0 5px 18px rgba(0,0,0,.25);
-
-cursor:pointer;
-}
-
-.floating-panel{
-
-display:none;
-
-position:absolute;
-
-right:0;
-
-bottom:58px;
-
-width:285px;
-
-max-height:65vh;
-
-overflow-y:auto;
-
-background:white;
-
+background:#f8f9fa;
 border-radius:20px;
-
-padding:12px;
-
-box-shadow:0 8px 30px rgba(0,0,0,.25);
+padding:20px;
+margin-top:20px;
 }
 
-.floating-panel.show{
 
+/* ==================================================
+   RESTAURANTS
+================================================== */
+
+.restaurant-box{
 display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:8px;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
 }
 
-.floating-panel a{
-
-text-decoration:none;
-
-color:#222;
-
-background:#f4f7f6;
-
-padding:11px 6px;
-
-border-radius:12px;
-
+.restaurant-card{
+background:#f8f9fa;
+border-radius:20px;
+padding:20px 12px;
 text-align:center;
+border-top:5px solid #16a34a;
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+}
 
-font-size:13px;
+.restaurant-card:nth-child(2){
+border-top-color:#f59e0b;
+}
 
+.restaurant-card:nth-child(3){
+border-top-color:#2196d2;
+}
+
+.restaurant-card:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.restaurant-card h3{
+font-size:19px;
+margin:8px 0;
+}
+
+.restaurant-card p{
+font-size:15px;
+color:#666;
+margin:5px 0 12px;
+}
+
+.restaurant-btn{
+display:inline-block;
+background:#1976d2;
+color:white;
+text-decoration:none;
+padding:9px 11px;
+border-radius:10px;
+font-size:12px;
 font-weight:bold;
 }
 
-.floating-panel a:active{
 
-background:#e67e22;
+/* ==================================================
+   TRAVEL GRID
+================================================== */
 
-color:white;
+.travel-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.travel-card{
+background:#f8f9fa;
+border-radius:20px;
+padding:22px 16px;
+border-top:5px solid #2196d2;
+}
+
+.travel-card h3{
+font-size:20px;
+margin-bottom:12px;
+}
+
+.travel-card p{
+font-size:17px;
+margin:7px 0;
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* ==================================================
+   SHARE AUTO
+================================================== */
 
-.footer{
+.share-auto-box{
+margin-top:20px;
+padding:15px 18px;
+background:#f0f7ff;
+border-left:5px solid #2196d2;
+border-radius:15px;
+}
 
-background:#111827;
+.share-auto-box p{
+font-size:17px;
+margin:0;
+}
 
-color:white;
 
+/* ==================================================
+   TRAVEL NOTE
+================================================== */
+
+.travel-note{
+margin-top:15px;
+padding:14px 18px;
+background:#f0fff4;
+border-left:5px solid #16a34a;
+border-radius:15px;
+font-size:16px !important;
+}
+
+
+/* ==================================================
+   LOCATION
+================================================== */
+
+.location-box{
+background:#f0f7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:20px;
+margin-top:20px;
+}
+
+
+/* ==================================================
+   PHOTO
+================================================== */
+
+.photo-gallery{
+margin-top:20px;
+}
+
+.photo-card{
+display:block;
+background:#f8f9fa;
+border-radius:20px;
+overflow:hidden;
+text-decoration:none;
+color:#202124;
+box-shadow:0 5px 16px rgba(0,0,0,.06);
+border:1px solid #e5e7eb;
+}
+
+.photo-placeholder{
+height:230px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:90px;
+background:#eef7fa;
+}
+
+.photo-card p{
+font-size:18px;
+padding:15px;
+margin:0;
+font-weight:bold;
 text-align:center;
-
-padding:25px 15px;
-
-margin-top:30px;
 }
 
-.footer h2{
-
-color:#f39c12;
-
-margin-bottom:5px;
+.photo-more{
+display:block;
+margin-top:18px;
+background:#1976d2;
+color:white;
+text-decoration:none;
+padding:13px;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+text-align:center;
 }
 
 
-/* =========================
+/* ==================================================
    MOBILE
-========================= */
+================================================== */
 
 @media(max-width:600px){
 
-.container{
-padding:15px;
+.info-box{
+padding:22px 18px;
+border-radius:22px;
 }
 
-.tabs{
+.info-box h2{
+font-size:28px;
+line-height:1.3;
+}
+
+.info-box p{
+font-size:18px;
+}
+
+.section-tabs{
+gap:7px;
+padding:9px 2px 13px;
+}
+
+.section-tabs a{
+font-size:12px;
+padding:9px 11px;
+border-radius:12px;
+}
+
+.nearby-grid{
+grid-template-columns:1fr 1fr;
 gap:12px;
 }
 
-.tabs a{
-
-min-height:82px;
-
-font-size:17px;
-
-border-radius:22px;
-
-padding:12px 6px;
+.nearby-card{
+padding:18px 9px;
 }
 
-.info{
-
-grid-template-columns:1fr 1fr;
+.nearby-card h3{
+font-size:18px;
 }
 
-.info-box{
-
-padding:14px 7px;
-}
-
-.info-box b{
-
+.nearby-card p{
 font-size:15px;
 }
 
-.info-box span{
-
-font-size:13px;
+.route-btn{
+font-size:11px;
+padding:9px 8px;
 }
 
-.hero h2{
-
-font-size:25px;
+.hotel-grid{
+grid-template-columns:1fr 1fr;
+gap:12px;
 }
 
-.hero p{
-
-font-size:16px;
+.hotel-card{
+padding:18px 8px;
 }
 
-.card h2{
-
-font-size:22px;
+.hotel-icon{
+font-size:34px;
 }
 
-.card p{
-
-font-size:16px;
+.hotel-card h3{
+font-size:17px;
 }
 
-.disclaimer p{
+.hotel-card p{
+font-size:14px;
+}
 
-font-size:13px;
+.hotel-link{
+font-size:11px;
+padding:8px 8px;
+}
+
+.restaurant-box{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.restaurant-card{
+padding:17px 8px;
+}
+
+.restaurant-card h3{
+font-size:17px;
+}
+
+.restaurant-card p{
+font-size:14px;
+}
+
+.restaurant-btn{
+font-size:10px;
+padding:8px 7px;
+}
+
+.travel-grid{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.travel-card{
+padding:16px 10px;
+}
+
+.travel-card h3{
+font-size:17px;
+}
+
+.travel-card p{
+font-size:15px;
+}
+
+.photo-placeholder{
+height:210px;
+font-size:80px;
 }
 
 }
 
 
-/* =========================
-   VERY SMALL SCREEN
-========================= */
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
 
 @media(max-width:380px){
 
-.tabs{
-
-gap:9px;
+.nearby-grid,
+.hotel-grid,
+.restaurant-box,
+.travel-grid{
+grid-template-columns:1fr 1fr;
 }
 
-.tabs a{
-
-font-size:15px;
-
-min-height:75px;
-}
-
-.floating-menu{
-
-right:12px;
-
-bottom:15px;
-}
-
-.floating-panel{
-
-width:260px;
+.info-box h2{
+font-size:26px;
 }
 
 }
@@ -668,677 +618,122 @@ width:260px;
 <body>
 
 
-<!-- =========================
-     HEADER
-========================= -->
+<!-- HEADER -->
 
-<div class="header">
+<header>
 
-<h1>🔱 मंगलनाथ मंदिर</h1>
+<div class="logo">
+🔱
+</div>
 
-<p>Mangalnath Temple • Ujjain</p>
+<h1>
+Mangalnath Temple
+</h1>
+
+<p>
+मंगलनाथ मंदिर • उज्जैन
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
 
 </div>
 
+</header>
+
+
+<!-- MAIN -->
 
 <div class="container">
 
 
-<!-- =========================
-     BACK BUTTON
-========================= -->
+<!-- BACK -->
 
-<a href="ujjain.html" class="back">
+<a
+href="ujjain.html"
+class="back"
+>
 
 ← Ujjain / उज्जैन
 
 </a>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
-<div class="hero">
+<div class="title-box">
 
-<h2>🔱 Mangalnath Temple</h2>
+<h2>
+🔱 Mangalnath Temple
+</h2>
 
 <p>
 
-क्षिप्रा नदी के किनारे स्थित मंगलनाथ मंदिर
-उज्जैन का महत्वपूर्ण धार्मिक स्थल है। धार्मिक
-परंपरा में इसे मंगल ग्रह से जुड़ा विशेष तीर्थ
-माना जाता है।
+मंगलनाथ मंदिर उज्जैन के प्रमुख
+धार्मिक स्थलों में से एक है।
+यह मंदिर भगवान मंगलनाथ को
+समर्पित है और उज्जैन की धार्मिक
+परंपरा में विशेष महत्व रखता है।
+
+<br><br>
+
+Mangalnath Temple is one of the
+important religious places in Ujjain.
+The temple is dedicated to Lord
+Mangalnath and is an important
+spiritual destination for devotees
+and visitors.
 
 </p>
 
 </div>
 
 
-<!-- =========================
-     MAIN TABS
-========================= -->
+<!-- QUICK TABS -->
 
-<div class="tabs">
-
-
-<a href="#overview">
-
-ℹ️ जरूरी जानकारी
-
-</a>
-
-
-<a href="#travel">
-
-🚗 Travel / यात्रा
-
-</a>
-
-
-<a href="#fare">
-
-🛺 Fare / किराया
-
-</a>
-
-
-<a href="#maps">
-
-🗺️ Maps / नक्शा
-
-</a>
-
-
-<a href="#hotels">
-
-🏨 Hotels / होटल
-
-</a>
-
+<div class="section-tabs">
 
 <a href="#nearby">
-
-🛕 Nearby / आसपास
-
+📍 Nearby
 </a>
 
-
-<a href="#gallery">
-
-📸 Gallery / फोटो
-
+<a href="#hotels">
+🏨 Hotels
 </a>
 
-
-</div>
-
-
-<!-- =========================
-     COMMON DISCLAIMER
-========================= -->
-
-<div class="disclaimer">
-
-<h3>⚠️ Disclaimer / महत्वपूर्ण सूचना</h3>
-
-<p>
-
-दूरी, किराया, समय, पूजा व्यवस्था, होटल उपलब्धता
-और अन्य travel information समय के साथ बदल सकती है।
-यात्रा से पहले current information जरूर check करें।
-
-</p>
-
-</div>
-
-
-<!-- ==================================================
-     OVERVIEW
-================================================== -->
-
-<div class="card" id="overview">
-
-<h2>ℹ️ जरूरी जानकारी / Important Information</h2>
-
-
-<div class="info">
-
-
-<div class="info-box">
-
-<b>📍 Location</b>
-
-<span>
-Ujjain, Madhya Pradesh
-<br>
-उज्जैन, मध्य प्रदेश
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>🙏 देवता / Deity</b>
-
-<span>
-Lord Shiva
-<br>
-भगवान शिव
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>🛕 प्रकार / Type</b>
-
-<span>
-Religious Temple
-<br>
-धार्मिक मंदिर
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>🔴 मंगल / Mangal</b>
-
-<span>
-Planet Mars
-<br>
-मंगल ग्रह
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>🌊 नदी / River</b>
-
-<span>
-Shipra River
-<br>
-क्षिप्रा नदी
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>🏙️ City</b>
-
-<span>
-Ujjain
-<br>
-उज्जैन
-</span>
-
-</div>
-
-
-</div>
-
-
-<h3>🙏 धार्मिक महत्व / Religious Importance</h3>
-
-<p>
-
-मंगलनाथ मंदिर भगवान शिव को समर्पित है और
-मंगल ग्रह से जुड़ी धार्मिक मान्यताओं के कारण
-इसका विशेष महत्व है। Ujjain District की official
-information के अनुसार इसे मंगल ग्रह का origin
-place माना जाता है।
-
-</p>
-
-
-<h3>🔭 ऐतिहासिक एवं खगोलीय संबंध</h3>
-
-<p>
-
-प्राचीन समय में इस क्षेत्र को मंगल ग्रह के
-अवलोकन और खगोलीय अध्ययन के लिए उपयुक्त माना
-जाता था। मंदिर का स्थान क्षिप्रा नदी के किनारे
-शांत वातावरण के लिए भी जाना जाता है।
-
-</p>
-
-
-<h3>⭐ सबसे खास बातें / Main Highlights</h3>
-
-<ul>
-
-<li>
-क्षिप्रा नदी के किनारे स्थित प्रमुख धार्मिक स्थल।
-</li>
-
-<li>
-मंगल ग्रह से जुड़ी धार्मिक मान्यताओं के लिए प्रसिद्ध।
-</li>
-
-<li>
-भगवान शिव की आराधना का महत्वपूर्ण स्थान।
-</li>
-
-<li>
-मंगलवार को यहाँ विशेष धार्मिक गतिविधियाँ और
-श्रद्धालुओं की अधिक उपस्थिति हो सकती है।
-</li>
-
-<li>
-मंदिर का वातावरण शहर के व्यस्त हिस्सों से
-अपेक्षाकृत शांत है।
-</li>
-
-</ul>
-
-
-<div class="highlight">
-
-<b>🙏 पूजा / Worship:</b>
-
-<p>
-
-पूजा और विशेष धार्मिक अनुष्ठानों की वर्तमान
-व्यवस्था समय के अनुसार बदल सकती है। विशेष पूजा
-या मंगलवार की यात्रा से पहले current information
-check करें।
-
-</p>
-
-</div>
-
-</div>
-
-
-<!-- ==================================================
-     TRAVEL
-================================================== -->
-
-<div class="card" id="travel">
-
-<h2>🚗 Distance & Travel / दूरी एवं यात्रा</h2>
-
-
-<div class="info">
-
-
-<div class="info-box">
-
-<b>🏙️ Ujjain City</b>
-
-<span>
-लगभग 5 km
-<br>
-Approx. 5 km
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>🚉 Railway Station</b>
-
-<span>
-लगभग 6–8 km
-<br>
-Approximate
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>🚌 Dewas Gate</b>
-
-<span>
-लगभग 6–8 km
-<br>
-Approximate
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>🚌 Nanakheda</b>
-
-<span>
-लगभग 8–10 km
-<br>
-Approximate
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>✈️ Indore Airport</b>
-
-<span>
-लगभग 53–55 km
-<br>
-Approximate
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>🚕 Local Transport</b>
-
-<span>
-Auto • E-Rickshaw • Cab
-<br>
-ऑटो • ई-रिक्शा • कैब
-</span>
-
-</div>
-
-
-</div>
-
-
-<h3>🛣️ Local Travel / स्थानीय यात्रा</h3>
-
-<p>
-
-मंगलनाथ मंदिर तक उज्जैन शहर से सड़क मार्ग द्वारा
-ऑटो, ई-रिक्शा, टैक्सी या निजी वाहन से पहुँचा जा
-सकता है। मंदिर शहर के व्यस्त केंद्र से बाहर
-क्षिप्रा नदी के किनारे स्थित है।
-
-</p>
-
-
-<p style="margin-top:15px;">
-
-सभी दूरी approximate हैं। वास्तविक दूरी चुने गए
-route, traffic और starting point के अनुसार बदल
-सकती है।
-
-</p>
-
-</div>
-
-
-<!-- ==================================================
-     FARE
-================================================== -->
-
-<div class="card" id="fare">
-
-<h2>🛺 Approx Auto / E-Rickshaw Fare</h2>
-
-<p>
-
-नीचे दिए गए किराए केवल travel planning के लिए
-approximate हैं। ये official fixed fares नहीं हैं।
-Actual fare route, traffic, समय और driver/operator
-के अनुसार बदल सकता है।
-
-</p>
-
-
-<div class="info">
-
-
-<div class="info-box">
-
-<b>🚉 Railway Station</b>
-
-<span>
-₹150–₹300
-<br>
-Approximate
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>🚌 Dewas Gate</b>
-
-<span>
-₹150–₹300
-<br>
-Approximate
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>🚌 Nanakheda</b>
-
-<span>
-₹200–₹350
-<br>
-Approximate
-</span>
-
-</div>
-
-
-<div class="info-box">
-
-<b>🕉️ City Area</b>
-
-<span>
-₹150–₹350
-<br>
-Approximate
-</span>
-
-</div>
-
-
-</div>
-
-
-<div class="highlight">
-
-<b>🛺 किराया / Fare:</b>
-
-<p>
-
-यात्रा शुरू करने से पहले local auto/e-rickshaw
-driver या cab operator से current fare confirm करें।
-
-</p>
-
-</div>
-
-</div>
-
-
-<!-- ==================================================
-     GOOGLE MAPS
-================================================== -->
-
-<div class="card" id="maps">
-
-<h2>🗺️ Google Maps & Navigation</h2>
-
-
-<div class="map-box">
-
-<p>
-
-मंगलनाथ मंदिर का location देखें या अपनी current
-location से मंदिर तक direct route खोलें।
-
-<br>
-
-View the temple location or get directions from
-your current location.
-
-</p>
-
-
-<a class="map-btn current-btn"
-
-href="https://www.google.com/maps/dir/?api=1&destination=Mangalnath%20Temple%2C%20Ujjain%2C%20Madhya%20Pradesh&travelmode=driving"
-
-target="_blank">
-
-📍 Current Location से Route
-
+<a href="#food">
+🍽️ Food
 </a>
 
-
-<br>
-
-
-<a class="map-btn search-btn"
-
-href="https://www.google.com/maps/search/?api=1&query=Mangalnath%20Temple%2C%20Ujjain%2C%20Madhya%20Pradesh"
-
-target="_blank">
-
-🗺️ Google Maps पर देखें
-
+<a href="#religion">
+🙏 Religion
 </a>
 
-</div>
-
-</div>
-
-
-<!-- ==================================================
-     HOTELS
-================================================== -->
-
-<div class="card" id="hotels">
-
-<h2>🏨 Hotels / होटल</h2>
-
-<p>
-
-मंगलनाथ मंदिर के आसपास सीमित stay options हो सकते हैं।
-Ujjain city में budget, mid-range और premium
-accommodation options की अधिक variety मिल सकती है।
-
-</p>
-
-
-<div class="hotel-box">
-
-<h3>⭐ Premium Hotels</h3>
-
-<p>
-
-Ujjain में उपलब्ध premium accommodation की
-current list और location देखें।
-
-</p>
-
-<a class="hotel-btn"
-
-href="https://www.google.com/maps/search/?api=1&query=Premium+Hotels+Ujjain"
-
-target="_blank">
-
-🔎 Premium Hotels देखें
-
+<a href="#travel">
+🚗 Travel
 </a>
 
-</div>
-
-
-<div class="hotel-box">
-
-<h3>💰 Budget Hotels</h3>
-
-<p>
-
-Ujjain city में budget-friendly hotels और
-उनकी current location देखें।
-
-</p>
-
-<a class="hotel-btn"
-
-href="https://www.google.com/maps/search/?api=1&query=Budget+Hotels+Ujjain"
-
-target="_blank">
-
-🔎 Budget Hotels देखें
-
+<a href="#route">
+🗺️ Route
 </a>
 
-</div>
-
-
-<div class="hotel-box">
-
-<h3>🏨 Hotels Near Mangalnath</h3>
-
-<p>
-
-मंगलनाथ मंदिर के आसपास उपलब्ध hotels और
-guest houses देखें।
-
-</p>
-
-<a class="hotel-btn"
-
-href="https://www.google.com/maps/search/?api=1&query=Hotels+near+Mangalnath+Temple+Ujjain"
-
-target="_blank">
-
-🏨 Nearby Hotels
-
+<a href="#more">
+🌐 More
 </a>
 
-</div>
-
-
-<div class="hotel-box">
-
-<h3>🛕 Hotels Near Mahakaleshwar</h3>
-
-<p>
-
-यदि आप Ujjain में प्रमुख मंदिरों के पास रहना
-चाहते हैं तो Mahakaleshwar क्षेत्र के hotels
-भी देख सकते हैं।
-
-</p>
-
-<a class="hotel-btn"
-
-href="https://www.google.com/maps/search/?api=1&query=Hotels+near+Mahakaleshwar+Temple+Ujjain"
-
-target="_blank">
-
-🏨 Mahakal Area Hotels
-
+<a href="#photos">
+📸 Photos
 </a>
-
-</div>
-
-
-<p style="margin-top:15px;">
-
-Hotel availability, price और rating यात्रा से
-पहले verify करें।
-
-</p>
 
 </div>
 
@@ -1347,132 +742,817 @@ Hotel availability, price और rating यात्रा से
      NEARBY
 ================================================== -->
 
-<div class="card" id="nearby">
+<section
+class="info-box"
+id="nearby"
+>
 
-<h2>🛕 Nearby Important Places / आसपास के प्रमुख स्थान</h2>
+<h2>
+📍 Nearby Places / आसपास के स्थान
+</h2>
+
+<div class="nearby-grid">
 
 
-<div class="info">
+<!-- MAHAKALESHWAR -->
 
+<div class="nearby-card">
 
-<div class="info-box">
+<div class="nearby-icon">
+🕉️
+</div>
 
-<b>🔱 Mahakaleshwar</b>
+<h3>
+Mahakaleshwar Temple
+</h3>
 
-<span>
-Jyotirlinga Temple
-<br>
+<p>
 महाकालेश्वर मंदिर
-</span>
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mahakaleshwar%20Temple%2C%20Ujjain"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
 
 </div>
 
 
-<div class="info-box">
+<!-- HARSIDDHI -->
 
-<b>🔱 Kal Bhairav</b>
+<div class="nearby-card">
 
-<span>
-Kal Bhairav Temple
-<br>
-काल भैरव मंदिर
-</span>
-
+<div class="nearby-icon">
+🌺
 </div>
 
-
-<div class="info-box">
-
-<b>🌺 Harsiddhi Mata</b>
-
-<span>
+<h3>
 Harsiddhi Temple
-<br>
-हरसिद्धि माता मंदिर
-</span>
+</h3>
+
+<p>
+हरसिद्धि मंदिर
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Harsiddhi%20Temple%2C%20Ujjain"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
 
 </div>
 
 
-<div class="info-box">
+<!-- RAM GHAT -->
 
-<b>🌊 Ram Ghat</b>
+<div class="nearby-card">
 
-<span>
-Shipra River Ghat
-<br>
+<div class="nearby-icon">
+🌊
+</div>
+
+<h3>
+Ram Ghat
+</h3>
+
+<p>
 राम घाट
-</span>
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Ram%20Ghat%2C%20Ujjain"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
 
 </div>
 
 
-<div class="info-box">
+<!-- KAL BHAIRAV -->
 
-<b>🙏 Bade Ganesh</b>
+<div class="nearby-card">
 
-<span>
-Bade Ganesh Temple
-<br>
-बड़े गणेश मंदिर
-</span>
+<div class="nearby-icon">
+🙏
+</div>
+
+<h3>
+Kaal Bhairav Temple
+</h3>
+
+<p>
+काल भैरव मंदिर
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Kaal%20Bhairav%20Temple%2C%20Ujjain"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
 
 </div>
 
 
-<div class="info-box">
-
-<b>🏛️ Vedh Shala</b>
-
-<span>
-Observatory
-<br>
-वेधशाला
-</span>
-
 </div>
 
-
-</div>
-
-</div>
+</section>
 
 
 <!-- ==================================================
-     GALLERY
+     HOTELS
 ================================================== -->
 
-<div class="card" id="gallery">
+<section
+class="info-box"
+id="hotels"
+>
 
-<h2>📸 Gallery / फोटो</h2>
-
+<h2>
+🏨 Hotels / होटल
+</h2>
 
 <p>
 
-Mangalnath Temple की verified photos और
-travel images यहाँ आगे जोड़ी जाएँगी।
+मंगलनाथ मंदिर और आसपास के क्षेत्र में
+Ujjain में budget से premium तक कई
+accommodation options मिल सकते हैं।
 
 </p>
 
+<div class="hotel-grid">
 
-<div class="highlight">
 
-<b>🚧 Gallery Coming Soon</b>
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Mangalnath+Temple+Ujjain"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+💰
+</div>
+
+<h3>
+Budget Hotels
+</h3>
+
+<p>
+बजट होटल
+</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+near+Mangalnath+Temple+Ujjain"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+⭐
+</div>
+
+<h3>
+Best Hotels
+</h3>
+
+<p>
+अच्छे होटल
+</p>
+
+<span class="hotel-link">
+🏨 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=guest+house+near+Mangalnath+Temple+Ujjain"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+🏠
+</div>
+
+<h3>
+Guest Houses
+</h3>
+
+<p>
+गेस्ट हाउस
+</p>
+
+<span class="hotel-link">
+🏠 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Mangalnath+Temple+Ujjain"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+👑
+</div>
+
+<h3>
+Luxury Hotels
+</h3>
+
+<p>
+प्रीमियम होटल
+</p>
+
+<span class="hotel-link">
+⭐ देखें
+</span>
+
+</a>
+
+
+</div>
+
+
+<div class="hotel-box">
 
 <p>
 
-Photo Gallery को website के अगले चरण में जोड़ा जाएगा।
-
-<br>
-
-A verified photo gallery will be added soon.
+Booking से पहले price, reviews,
+distance और current availability
+check करना बेहतर रहेगा।
 
 </p>
 
 </div>
 
+</section>
+
+   <!-- ==================================================
+     RESTAURANTS
+================================================== -->
+
+<section
+class="info-box"
+id="food"
+>
+
+<h2>
+🍽️ Restaurants / रेस्टोरेंट
+</h2>
+
+<p>
+
+मंगलनाथ मंदिर और आसपास के क्षेत्र में
+vegetarian food, local Ujjaini food
+और cafes के कई विकल्प मिल सकते हैं।
+
+</p>
+
+
+<div class="restaurant-box">
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+⭐
 </div>
 
+<h3>
+Top Rated
+</h3>
+
+<p>
+Popular restaurants
+</p>
+
+<a
+href="https://www.google.com/maps/search/top+rated+restaurants+near+Mangalnath+Temple+Ujjain"
+target="_blank"
+class="restaurant-btn"
+>
+
+⭐ देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🥗
+</div>
+
+<h3>
+Vegetarian
+</h3>
+
+<p>
+Vegetarian food options
+</p>
+
+<a
+href="https://www.google.com/maps/search/vegetarian+restaurants+near+Mangalnath+Temple+Ujjain"
+target="_blank"
+class="restaurant-btn"
+>
+
+🥗 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🍛
+</div>
+
+<h3>
+Local Food
+</h3>
+
+<p>
+Ujjaini local food
+</p>
+
+<a
+href="https://www.google.com/maps/search/local+food+near+Mangalnath+Temple+Ujjain"
+target="_blank"
+class="restaurant-btn"
+>
+
+🍛 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+☕
+</div>
+
+<h3>
+Cafes
+</h3>
+
+<p>
+Nearby cafes
+</p>
+
+<a
+href="https://www.google.com/maps/search/cafes+near+Mangalnath+Temple+Ujjain"
+target="_blank"
+class="restaurant-btn"
+>
+
+☕ देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     RELIGION
+================================================== -->
+
+<section
+class="info-box"
+id="religion"
+>
+
+<h2>
+🙏 Religious Importance / धार्मिक महत्व
+</h2>
+
+<p>
+
+मंगलनाथ मंदिर उज्जैन के प्राचीन
+और महत्वपूर्ण धार्मिक स्थलों में
+से एक माना जाता है। धार्मिक मान्यताओं
+में मंगलनाथ का संबंध मंगल ग्रह से
+जोड़ा जाता है और श्रद्धालु यहाँ
+पूजा एवं दर्शन के लिए आते हैं।
+
+<br><br>
+
+Mangalnath Temple is an important
+spiritual destination in Ujjain.
+According to traditional beliefs,
+the temple is associated with Mars
+and devotees visit the temple for
+prayers and worship.
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     IMPORTANT INFORMATION
+================================================== -->
+
+<section class="info-box">
+
+<div class="important-box">
+
+<h3>
+⚠️ महत्वपूर्ण सूचना
+</h3>
+
+<p>
+
+दर्शन के समय भीड़, मंदिर व्यवस्था,
+पूजा व्यवस्था और स्थानीय नियम
+अवसर के अनुसार बदल सकते हैं।
+यात्रा के दौरान मंदिर की व्यवस्था
+और धार्मिक परंपराओं का सम्मान करें।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     TRAVEL
+================================================== -->
+
+<section
+class="info-box"
+id="travel"
+>
+
+<h2>
+🚗 Travel / यात्रा
+</h2>
+
+
+<div class="travel-grid">
+
+
+<!-- RAILWAY -->
+
+<div class="travel-card">
+
+<h3>
+🚉 Ujjain Junction
+</h3>
+
+<p>
+लगभग <strong>6–7 km</strong>
+</p>
+
+<p>
+⏱️ लगभग 20–30 मिनट*
+</p>
+
+<p>
+💰 Auto/E-Rickshaw:
+₹100–₹200* लगभग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mangalnath%20Temple%2C%20Ujjain&origin=Ujjain%20Junction"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- BUS -->
+
+<div class="travel-card">
+
+<h3>
+🚌 Dewas Gate Bus Stand
+</h3>
+
+<p>
+लगभग <strong>6–7 km</strong>
+</p>
+
+<p>
+⏱️ लगभग 20–30 मिनट*
+</p>
+
+<p>
+💰 Auto/E-Rickshaw:
+₹100–₹200* लगभग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mangalnath%20Temple%2C%20Ujjain&origin=Dewas%20Gate%20Bus%20Stand%2C%20Ujjain"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- AIRPORT -->
+
+<div class="travel-card">
+
+<h3>
+✈️ Indore Airport
+</h3>
+
+<p>
+लगभग <strong>60 km</strong>
+</p>
+
+<p>
+⏱️ लगभग 1.5–2 घंटे*
+</p>
+
+<p>
+💰 Cab/Taxi:
+₹1,200–₹2,500* लगभग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mangalnath%20Temple%2C%20Ujjain&origin=Devi%20Ahilyabai%20Holkar%20International%20Airport"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- LOCAL -->
+
+<div class="travel-card">
+
+<h3>
+🚕 Local Travel
+</h3>
+
+<p>
+Auto / E-Rickshaw
+</p>
+
+<p>
+Ujjain city में convenient
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mangalnath%20Temple%2C%20Ujjain"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- SHARE AUTO -->
+
+<div class="share-auto-box">
+
+<p>
+
+🛺 <strong>Share Auto:</strong>
+
+अगर route पर Share Auto उपलब्ध हो,
+तो अकेले Auto/Cab की तुलना में
+travel खर्च कम हो सकता है।
+
+</p>
+
+</div>
+
+
+<p class="travel-note">
+
+*दूरी, समय और किराया approximate हैं।
+Traffic, route, vehicle type और local fare
+के अनुसार actual amount अलग हो सकता है।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     LOCATION & ROUTE
+================================================== -->
+
+<section
+class="info-box"
+id="route"
+>
+
+<h2>
+🗺️ Location & Route / स्थान एवं मार्ग
+</h2>
+
+
+<div class="location-box">
+
+<p>
+
+मंगलनाथ मंदिर तक पहुँचने के लिए
+अपने current location से Google Maps
+पर सीधा route देखा जा सकता है।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mangalnath%20Temple%2C%20Ujjain"
+target="_blank"
+class="route-btn"
+>
+
+📍 Current Location से Route
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     MORE INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+id="more"
+>
+
+<h2>
+🌐 More Information / अधिक जानकारी
+</h2>
+
+
+<div class="important-box">
+
+<h3>
+📖 Mangalnath Temple के बारे में और जानें
+</h3>
+
+<p>
+
+मंदिर का इतिहास, धार्मिक महत्व,
+मंगल ग्रह से संबंधित मान्यताएँ,
+पूजा और वर्तमान जानकारी के लिए
+नीचे दिए गए button पर Chrome में
+अधिक जानकारी देख सकते हैं।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Mangalnath+Temple+Ujjain+history+Mars+religious+importance"
+target="_blank"
+class="official-btn"
+>
+
+🌐 Chrome में अधिक जानकारी देखें
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     PHOTO
+================================================== -->
+
+<section
+class="info-box"
+id="photos"
+>
+
+<h2>
+📸 Mangalnath Temple Photo / मंदिर की तस्वीर
+</h2>
+
+<p>
+
+मंगलनाथ मंदिर और मंदिर परिसर की
+तस्वीरें देखने के लिए नीचे photo
+card पर click करें।
+
+</p>
+
+
+<div class="photo-gallery">
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Mangalnath+Temple+Ujjain"
+target="_blank"
+class="photo-card"
+>
+
+<div class="photo-placeholder">
+🔱
+</div>
+
+<p>
+🔱 Mangalnath Temple • Ujjain
+</p>
+
+</a>
+
+</div>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Mangalnath+Temple+Ujjain"
+target="_blank"
+class="photo-more"
+>
+
+📸 Chrome में और Photos देखें
+
+</a>
+
+</section>
+
+
+<!-- ==================================================
+     DESH KHOJ A2Z TRAVEL INFORMATION
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🇮🇳 Desh Khoj A2Z Travel Information
+</h2>
+
+<p>
+
+Desh Khoj A2Z का उद्देश्य यात्रियों को
+भारत के प्रमुख स्थानों की सरल और practical
+travel information एक ही जगह उपलब्ध कराना है।
+
+</p>
 
 </div>
 
@@ -1481,106 +1561,37 @@ A verified photo gallery will be added soon.
      FOOTER
 ================================================== -->
 
-<div class="footer">
+<footer>
 
-<h2>🇮🇳 BHARAT KHOJ A2Z</h2>
+🇮🇳
 
-<p>Explore • Travel • Discover</p>
+<strong>
+DESH KHOJ A2Z
+</strong>
 
-<p>© 2026 Bharat Khoj A2Z</p>
+<br><br>
 
-</div>
+Explore • Travel • Discover
 
+<br><br>
 
-<!-- ==================================================
-     FLOATING SECTION MENU
-================================================== -->
+भारत को जानें • भारत को खोजें
 
-<div class="floating-menu">
+<br><br>
 
-<button onclick="toggleSections()">
+© 2026 DESH KHOJ A2Z
 
-☰ Sections
-
-</button>
-
-
-<div class="floating-panel" id="floatingPanel">
-
-
-<a href="#overview">
-ℹ️ जरूरी जानकारी
-</a>
-
-
-<a href="#travel">
-🚗 Travel
-</a>
-
-
-<a href="#fare">
-🛺 Fare
-</a>
-
-
-<a href="#maps">
-🗺️ Maps
-</a>
-
-
-<a href="#hotels">
-🏨 Hotels
-</a>
-
-
-<a href="#nearby">
-🛕 Nearby
-</a>
-
-
-<a href="#gallery">
-📸 Gallery
-</a>
-
-
-</div>
-
-</div>
+</footer>
 
 
 <!-- ==================================================
-     JAVASCRIPT
+     COMMON JAVASCRIPT
 ================================================== -->
 
-<script>
-
-function toggleSections(){
-
-const panel =
-document.getElementById("floatingPanel");
-
-panel.classList.toggle("show");
-
-}
-
-
-document
-.querySelectorAll(".floating-panel a")
-.forEach(function(link){
-
-link.addEventListener("click",function(){
-
-document
-.getElementById("floatingPanel")
-.classList.remove("show");
-
-});
-
-});
-
-</script>
+<script src="../script.js"></script>
 
 
 </body>
 
 </html>
+   
