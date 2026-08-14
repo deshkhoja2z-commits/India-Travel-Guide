@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Varanasi | वाराणसी - DESH KHOJ A2Z</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+/* =========================
+   CITY SERVICE BUTTONS
+========================= */
+
+.city-services{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.service-btn{
+display:block;
+background:white;
+color:#202124;
+text-decoration:none;
+text-align:center;
+padding:18px 8px;
+border-radius:18px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border:1px solid #eee;
+font-weight:bold;
+font-size:16px;
+}
+
+.service-btn:active{
+transform:scale(.97);
+background:#fff7e6;
+}
+
+.service-icon{
+font-size:30px;
+display:block;
+margin-bottom:5px;
+}
+
+
+/* =========================
+   BUSINESS BOX
+========================= */
+
+.business-box{
+background:#f0fff4;
+border-left:6px solid #16a34a;
+border-radius:18px;
+padding:20px;
+margin:25px 0;
+}
+
+.business-box h2{
+margin-bottom:10px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+.city-services{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.service-btn{
+font-size:14px;
+padding:15px 5px;
+}
+
+.service-icon{
+font-size:27px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🕉️
+</div>
+
+<h1>
+Varanasi / वाराणसी
+</h1>
+
+<p>
+Kashi • घाट • मंदिर • संस्कृति
+</p>
+
+
+<!-- SEARCH -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<!-- ==================================================
+     BACK BUTTON
+================================================== -->
+
+<a
+href="../cities.html"
+class="back"
+>
+
+← Cities / शहर
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🕉️ Varanasi Important Places
+</h2>
+
+<p>
+
+वाराणसी भारत के सबसे प्राचीन और प्रसिद्ध
+धार्मिक एवं सांस्कृतिक शहरों में से एक है।
+यहाँ के मंदिर, घाट, गंगा आरती और ऐतिहासिक
+स्थल देश-विदेश से आने वाले यात्रियों को आकर्षित करते हैं।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     PLACES — FIRST
+================================================== -->
+
+<h2 class="section-title">
+
+🛕 Places / प्रमुख स्थान
+
+</h2>
+
+
+<div
+class="place-grid"
+id="placeGrid"
+>
+
+
+<!-- ==================================================
+     1 KASHI VISHWANATH
+================================================== -->
+
+<a
+href="kashi-vishwanath.html"
+class="place-card"
+data-search="
+kashi vishwanath
+kashi vishwanath temple
+vishwanath
+काशी विश्वनाथ
+काशी विश्वनाथ मंदिर
+विश्वनाथ मंदिर
+"
+>
+
+<div class="place-icon">
+🕉️
+</div>
+
+<h3>
+Kashi Vishwanath
+</h3>
+
+<p>
+काशी विश्वनाथ मंदिर
+<br>
+Jyotirlinga
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     2 DASHASHWAMEDH GHAT
+================================================== -->
+
+<a
+href="dashashwamedh-ghat.html"
+class="place-card"
+data-search="
+dashashwamedh
+dashashwamedh ghat
+ganga aarti
+दशाश्वमेध
+दशाश्वमेध घाट
+गंगा आरती
+"
+>
+
+<div class="place-icon">
+🌊
+</div>
+
+<h3>
+Dashashwamedh Ghat
+</h3>
+
+<p>
+दशाश्वमेध घाट
+<br>
+Ganga Aarti
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     3 ASSI GHAT
+================================================== -->
+
+<a
+href="assi-ghat.html"
+class="place-card"
+data-search="
+assi ghat
+assi
+assi ghat varanasi
+अस्सी घाट
+अस्सी
+"
+>
+
+<div class="place-icon">
+🌊
+</div>
+
+<h3>
+Assi Ghat
+</h3>
+
+<p>
+अस्सी घाट
+<br>
+गंगा नदी
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     4 MANIKARNIKA GHAT
+================================================== -->
+
+<a
+href="manikarnika-ghat.html"
+class="place-card"
+data-search="
+manikarnika
+manikarnika ghat
+मणिकर्णिका
+मणिकर्णिका घाट
+"
+>
+
+<div class="place-icon">
+🌊
+</div>
+
+<h3>
+Manikarnika Ghat
+</h3>
+
+<p>
+मणिकर्णिका घाट
+<br>
+वाराणसी
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     5 SANKAT MOCHAN
+================================================== -->
+
+<a
+href="sankat-mochan.html"
+class="place-card"
+data-search="
+sankat mochan
+sankat mochan temple
+hanuman temple
+संकट मोचन
+संकट मोचन मंदिर
+हनुमान मंदिर
+"
+>
+
+<div class="place-icon">
+🙏
+</div>
+
+<h3>
+Sankat Mochan
+</h3>
+
+<p>
+संकट मोचन मंदिर
+<br>
+हनुमान मंदिर
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     6 DURGA TEMPLE
+================================================== -->
+
+<a
+href="durga-temple.html"
+class="place-card"
+data-search="
+durga temple
+durga mandir
+durga kund
+दुर्गा मंदिर
+दुर्गा कुंड
+"
+>
+
+<div class="place-icon">
+🛕
+</div>
+
+<h3>
+Durga Temple
+</h3>
+
+<p>
+दुर्गा मंदिर
+<br>
+दुर्गा कुंड
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     7 RAMNAGAR FORT
+================================================== -->
+
+<a
+href="ramnagar-fort.html"
+class="place-card"
+data-search="
+ramnagar fort
+ram nagar fort
+ramnagar
+रामनगर किला
+रामनगर
+"
+>
+
+<div class="place-icon">
+🏰
+</div>
+
+<h3>
+Ramnagar Fort
+</h3>
+
+<p>
+रामनगर किला
+<br>
+ऐतिहासिक स्थल
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     8 KEDAR GHAT
+================================================== -->
+
+<a
+href="kedar-ghat.html"
+class="place-card"
+data-search="
+kedar ghat
+kedar
+kedar ghat varanasi
+केदार घाट
+केदार
+"
+>
+
+<div class="place-icon">
+🌊
+</div>
+
+<h3>
+Kedar Ghat
+</h3>
+
+<p>
+केदार घाट
+<br>
+गंगा नदी
+</p>
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     NO RESULT
+================================================== -->
+
+<div
+class="no-result"
+id="noResult"
+>
+
+🔍
+
+<br><br>
+
+<strong>
+No place found
+</strong>
+
+<br><br>
+
+कोई स्थान नहीं मिला।
+
+<br>
+
+English या Hindi में दोबारा खोजें।
+
+</div>
+
+
+<!-- ==================================================
+     SERVICES
+================================================== -->
+
+<h2
+class="section-title"
+style="margin-top:35px;"
+>
+
+🤝 Services / सेवाएँ
+
+</h2>
+
+
+<div class="city-services">
+
+
+<!-- ==================================================
+     1 RESTAURANTS
+================================================== -->
+
+<a
+href="coming-soon.html"
+class="service-btn"
+>
+
+<span class="service-icon">
+🍽️
+</span>
+
+Restaurants
+<br>
+रेस्टोरेंट
+
+</a>
+
+
+<!-- ==================================================
+     2 HOTELS
+================================================== -->
+
+<a
+href="coming-soon.html"
+class="service-btn"
+>
+
+<span class="service-icon">
+🏨
+</span>
+
+Hotels
+<br>
+होटल
+
+</a>
+
+
+<!-- ==================================================
+     3 CARS
+================================================== -->
+
+<a
+href="coming-soon.html"
+class="service-btn"
+>
+
+<span class="service-icon">
+🚗
+</span>
+
+Cars
+<br>
+कार
+
+</a>
+
+
+<!-- ==================================================
+     4 BIKES
+================================================== -->
+
+<a
+href="coming-soon.html"
+class="service-btn"
+>
+
+<span class="service-icon">
+🏍️
+</span>
+
+Bikes
+<br>
+बाइक
+
+</a>
+
+
+<!-- ==================================================
+     5 AUTO
+================================================== -->
+
+<a
+href="coming-soon.html"
+class="service-btn"
+>
+
+<span class="service-icon">
+🛺
+</span>
+
+Auto
+<br>
+ऑटो
+
+</a>
+
+
+<!-- ==================================================
+     6 BUSINESS PARTNER
+================================================== -->
+
+<a
+href="coming-soon.html"
+class="service-btn"
+>
+
+<span class="service-icon">
+🤝
+</span>
+
+Business Partner
+<br>
+बिजनेस पार्टनर
+
+</a>
+
+
+</div>
+
+<!-- ==================================================
+     ROUTE
+================================================== -->
+
+<h2
+class="section-title"
+style="margin-top:35px;"
+>
+
+📍 Route / मार्ग
+
+</h2>
+
+
+<div class="city-services">
+
+
+<!-- ==================================================
+     RAILWAY STATION
+================================================== -->
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Varanasi+Junction+Railway+Station"
+class="service-btn"
+target="_blank"
+>
+
+<span class="service-icon">
+🚆
+</span>
+
+Current Location → Railway Station
+<br>
+वर्तमान स्थान → रेलवे स्टेशन
+
+</a>
+
+
+<!-- ==================================================
+     BUS STAND
+================================================== -->
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Varanasi+Cantt+Bus+Stand"
+class="service-btn"
+target="_blank"
+>
+
+<span class="service-icon">
+🚌
+</span>
+
+Current Location → Bus Stand
+<br>
+वर्तमान स्थान → बस स्टैंड
+
+</a>
+
+
+<!-- ==================================================
+     AIRPORT
+================================================== -->
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Lal+Bahadur+Shastri+International+Airport+Varanasi"
+class="service-btn"
+target="_blank"
+>
+
+<span class="service-icon">
+✈️
+</span>
+
+Current Location → Airport
+<br>
+वर्तमान स्थान → एयरपोर्ट
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     BUSINESS & TRAVEL NETWORK
+================================================== -->
+
+<div class="business-box">
+
+<h2>
+🤝 DESH KHOJ A2Z Business & Travel Network
+</h2>
+
+<p>
+
+DESH KHOJ A2Z का उद्देश्य यात्रियों को
+एक ही जगह पर शहर के प्रमुख स्थानों के साथ
+Hotel, Restaurant, Car, Bike, Auto और अन्य
+local travel services की जानकारी उपलब्ध कराना है।
+भविष्य में local business owners और service providers
+अपने business को DESH KHOJ A2Z पर register कर सकेंगे।
+
+</p>
+
+<br>
+
+<p>
+
+Customers अपने शहर में उपलब्ध registered
+business partners की services देख सकेंगे,
+enquiry कर सकेंगे और आगे चलकर सीधे
+booking की सुविधा भी प्राप्त कर सकेंगे।
+इससे यात्रियों को यात्रा के दौरान रहने,
+खाने और local transportation की सुविधाएँ
+एक ही platform से आसानी से मिल सकेंगी।
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     COMMON JAVASCRIPT
+================================================== -->
+
+<script src="../js/script.js"></script>
+
+
+</body>
+
+</html>

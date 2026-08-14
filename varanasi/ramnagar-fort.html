@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Ramnagar Fort | रामनगर किला - Desh Khoj A2Z
+</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+/* ==================================================
+   PAGE BOX
+================================================== */
+
+.info-box{
+
+background:#ffffff;
+
+border-radius:25px;
+
+padding:30px;
+
+margin:25px 0;
+
+box-shadow:
+0 8px 25px rgba(0,0,0,.07);
+
+scroll-margin-top:90px;
+
+}
+
+.info-box h2{
+
+font-size:32px;
+
+margin-bottom:18px;
+
+color:#202124;
+
+}
+
+.info-box p{
+
+font-size:20px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+
+
+/* ==================================================
+   SECTION TABS
+================================================== */
+
+.section-tabs{
+
+display:flex;
+
+gap:8px;
+
+overflow-x:auto;
+
+padding:10px 2px 14px;
+
+margin:10px 0 5px;
+
+position:sticky;
+
+top:0;
+
+z-index:50;
+
+background:#f4f7f6;
+
+scroll-behavior:smooth;
+
+-webkit-overflow-scrolling:touch;
+
+}
+
+.section-tabs::-webkit-scrollbar{
+
+height:4px;
+
+}
+
+.section-tabs::-webkit-scrollbar-thumb{
+
+background:#bbb;
+
+border-radius:10px;
+
+}
+
+.section-tabs a{
+
+flex:0 0 auto;
+
+display:block;
+
+padding:10px 14px;
+
+background:white;
+
+color:#202124;
+
+text-decoration:none;
+
+border-radius:14px;
+
+font-size:14px;
+
+font-weight:bold;
+
+border:1px solid #e5e7eb;
+
+box-shadow:0 3px 10px rgba(0,0,0,.06);
+
+white-space:nowrap;
+
+transition:.2s;
+
+}
+
+.section-tabs a:active{
+
+transform:scale(.95);
+
+background:#fff7e6;
+
+}
+
+.section-tabs a:hover{
+
+background:#fff7e6;
+
+}
+
+
+/* ==================================================
+   IMPORTANT
+================================================== */
+
+.important-box{
+
+background:#fff8e7;
+
+border-left:6px solid #f59e0b;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+.important-box h3{
+
+font-size:22px;
+
+margin-bottom:10px;
+
+}
+
+.important-box p{
+
+font-size:18px;
+
+margin:0;
+
+}
+
+
+/* ==================================================
+   BUTTONS
+================================================== */
+
+.official-btn{
+
+display:inline-block;
+
+margin-top:18px;
+
+padding:12px 18px;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+}
+
+.official-btn:active{
+
+transform:scale(.97);
+
+}
+
+
+.route-btn{
+
+display:inline-block;
+
+background:#16a34a;
+
+color:white;
+
+text-decoration:none;
+
+padding:11px 15px;
+
+border-radius:11px;
+
+font-size:14px;
+
+font-weight:bold;
+
+}
+
+.route-btn:active{
+
+transform:scale(.96);
+
+}
+
+
+/* ==================================================
+   NEARBY GRID
+================================================== */
+
+.nearby-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.nearby-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:22px 12px;
+
+text-align:center;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.nearby-card:nth-child(2){
+
+border-top-color:#2196d2;
+
+}
+
+.nearby-card:nth-child(3){
+
+border-top-color:#16a34a;
+
+}
+
+.nearby-card:nth-child(4){
+
+border-top-color:#f59e0b;
+
+}
+
+.nearby-icon{
+
+font-size:40px;
+
+margin-bottom:8px;
+
+}
+
+.nearby-card h3{
+
+font-size:21px;
+
+margin:8px 0;
+
+}
+
+.nearby-card p{
+
+font-size:16px;
+
+margin:5px 0 15px;
+
+color:#666;
+
+}
+
+
+/* ==================================================
+   HOTEL GRID
+================================================== */
+
+.hotel-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.hotel-card{
+
+display:block;
+
+background:#f8f9fa;
+
+color:#202124;
+
+text-decoration:none;
+
+text-align:center;
+
+border-radius:20px;
+
+padding:22px 10px;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.hotel-card:nth-child(2){
+
+border-top-color:#2196d2;
+
+}
+
+.hotel-card:nth-child(3){
+
+border-top-color:#16a34a;
+
+}
+
+.hotel-card:nth-child(4){
+
+border-top-color:#f59e0b;
+
+}
+
+.hotel-card:active{
+
+transform:scale(.97);
+
+}
+
+.hotel-icon{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.hotel-card h3{
+
+font-size:19px;
+
+margin:8px 0;
+
+}
+
+.hotel-card p{
+
+font-size:15px;
+
+margin:5px 0;
+
+color:#666;
+
+}
+
+.hotel-link{
+
+display:inline-block;
+
+margin-top:10px;
+
+padding:8px 10px;
+
+border-radius:10px;
+
+background:#1976d2;
+
+color:white;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+.hotel-box{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:18px;
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+   RESTAURANT GRID
+================================================== */
+
+.restaurant-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.restaurant-card{
+
+display:block;
+
+background:#f8f9fa;
+
+color:#202124;
+
+text-decoration:none;
+
+text-align:center;
+
+border-radius:20px;
+
+padding:22px 10px;
+
+border-top:5px solid #f59e0b;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.restaurant-card:nth-child(2){
+
+border-top-color:#16a34a;
+
+}
+
+.restaurant-card:nth-child(3){
+
+border-top-color:#2196d2;
+
+}
+
+.restaurant-card:nth-child(4){
+
+border-top-color:#16a34a;
+
+}
+
+.restaurant-card:active{
+
+transform:scale(.97);
+
+}
+
+.restaurant-icon{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.restaurant-card h3{
+
+font-size:19px;
+
+margin:8px 0;
+
+}
+
+.restaurant-card p{
+
+font-size:15px;
+
+margin:5px 0;
+
+color:#666;
+
+}
+
+.restaurant-link{
+
+display:inline-block;
+
+margin-top:10px;
+
+padding:8px 10px;
+
+border-radius:10px;
+
+background:#1976d2;
+
+color:white;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+   TRAVEL GRID
+================================================== */
+
+.travel-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.travel-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:22px;
+
+border-top:5px solid #2196d2;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.travel-card:nth-child(2){
+
+border-top-color:#16a34a;
+
+}
+
+.travel-card:nth-child(3){
+
+border-top-color:#f59e0b;
+
+}
+
+.travel-card:nth-child(4){
+
+border-top-color:#16a34a;
+
+}
+
+.travel-card h3{
+
+font-size:20px;
+
+margin-bottom:12px;
+
+}
+
+.travel-card p{
+
+font-size:17px;
+
+margin:7px 0;
+
+}
+
+.travel-note{
+
+margin-top:22px;
+
+padding:16px;
+
+background:#f0fff4;
+
+border-left:5px solid #16a34a;
+
+border-radius:15px;
+
+font-size:17px !important;
+
+}
+
+
+/* ==================================================
+   LOCATION BOX
+================================================== */
+
+.location-box{
+
+background:#f0f7ff;
+
+border-left:6px solid #1976d2;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+   PHOTO
+================================================== */
+
+.photo-card{
+
+background:#f8f9fa;
+
+border-radius:22px;
+
+padding:25px;
+
+margin-top:20px;
+
+text-align:center;
+
+box-shadow:0 5px 16px rgba(0,0,0,.06);
+
+border-top:5px solid #1976d2;
+
+}
+
+.photo-placeholder{
+
+height:190px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#eaf4ff;
+
+border-radius:18px;
+
+font-size:80px;
+
+margin-bottom:15px;
+
+}
+
+.photo-card h3{
+
+font-size:22px;
+
+margin:8px 0;
+
+}
+
+.photo-card p{
+
+font-size:17px;
+
+margin:5px 0;
+
+}
+
+.photo-more{
+
+display:inline-block;
+
+margin-top:18px;
+
+padding:12px 18px;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-size:15px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+.info-box{
+
+padding:22px 18px;
+
+border-radius:22px;
+
+}
+
+.info-box h2{
+
+font-size:28px;
+
+line-height:1.3;
+
+}
+
+.info-box p{
+
+font-size:18px;
+
+}
+
+
+/* TABS */
+
+.section-tabs{
+
+gap:7px;
+
+padding:9px 2px 13px;
+
+}
+
+.section-tabs a{
+
+font-size:12px;
+
+padding:9px 11px;
+
+border-radius:12px;
+
+}
+
+
+/* NEARBY */
+
+.nearby-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.nearby-card{
+
+padding:18px 8px;
+
+}
+
+.nearby-icon{
+
+font-size:34px;
+
+}
+
+.nearby-card h3{
+
+font-size:17px;
+
+}
+
+.nearby-card p{
+
+font-size:15px;
+
+}
+
+.route-btn{
+
+font-size:11px;
+
+padding:9px 8px;
+
+}
+
+
+/* HOTELS */
+
+.hotel-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.hotel-card{
+
+padding:18px 8px;
+
+}
+
+.hotel-icon{
+
+font-size:32px;
+
+}
+
+.hotel-card h3{
+
+font-size:16px;
+
+}
+
+.hotel-card p{
+
+font-size:14px;
+
+}
+
+.hotel-link{
+
+font-size:11px;
+
+padding:8px 8px;
+
+}
+
+
+/* RESTAURANTS */
+
+.restaurant-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.restaurant-card{
+
+padding:18px 8px;
+
+}
+
+.restaurant-icon{
+
+font-size:32px;
+
+}
+
+.restaurant-card h3{
+
+font-size:16px;
+
+}
+
+.restaurant-card p{
+
+font-size:14px;
+
+}
+
+.restaurant-link{
+
+font-size:11px;
+
+padding:8px 8px;
+
+}
+
+
+/* TRAVEL */
+
+.travel-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.travel-card{
+
+padding:16px 10px;
+
+}
+
+.travel-card h3{
+
+font-size:17px;
+
+}
+
+.travel-card p{
+
+font-size:15px;
+
+}
+
+.travel-note{
+
+font-size:15px !important;
+
+}
+
+
+/* MORE */
+
+.official-btn{
+
+font-size:13px;
+
+padding:11px 12px;
+
+}
+
+
+/* PHOTO */
+
+.photo-placeholder{
+
+height:150px;
+
+font-size:65px;
+
+}
+
+.photo-card h3{
+
+font-size:20px;
+
+}
+
+.photo-card p{
+
+font-size:16px;
+
+}
+
+.photo-more{
+
+font-size:13px;
+
+padding:11px 13px;
+
+}
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.nearby-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.hotel-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.restaurant-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.travel-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🏰
+</div>
+
+<h1>
+Ramnagar Fort
+</h1>
+
+<p>
+रामनगर किला • वाराणसी
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<!-- ==================================================
+     BACK
+================================================== -->
+
+<a
+href="varanasi.html"
+class="back"
+>
+
+← Varanasi / वाराणसी
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🏰 Ramnagar Fort
+</h2>
+
+<p>
+
+रामनगर किला वाराणसी के सामने गंगा नदी
+के पूर्वी तट पर स्थित एक प्रसिद्ध ऐतिहासिक
+स्थल है। यह अपने राजसी वास्तुकला,
+संग्रहालय और गंगा के सुंदर दृश्य के लिए
+जाना जाता है।
+
+<br><br>
+
+Ramnagar Fort is a historic landmark
+located on the eastern bank of the Ganga,
+opposite Varanasi. It is known for its
+heritage architecture, museum and
+riverfront views.
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK TABS
+================================================== -->
+
+<div class="section-tabs">
+
+<a href="#nearby">
+📍 Nearby
+</a>
+
+<a href="#hotels">
+🏨 Hotels
+</a>
+
+<a href="#food">
+🍽️ Food
+</a>
+
+<a href="#religion">
+🙏 Religion
+</a>
+
+<a href="#travel">
+🚗 Travel
+</a>
+
+<a href="#route">
+🗺️ Route
+</a>
+
+<a href="#more">
+🌐 More
+</a>
+
+<a href="#photos">
+📸 Photos
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     NEARBY
+================================================== -->
+
+<section
+class="info-box"
+id="nearby"
+>
+
+<h2>
+📍 Nearby Places / आसपास के स्थान
+</h2>
+
+<p>
+
+रामनगर किले के आसपास वाराणसी के कई
+प्रमुख धार्मिक और पर्यटन स्थल देखे जा
+सकते हैं।
+
+</p>
+
+
+<div class="nearby-grid">
+
+
+<!-- BHU -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🎓
+</div>
+
+<h3>
+BHU
+</h3>
+
+<p>
+काशी हिंदू विश्वविद्यालय
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Banaras%20Hindu%20University%2C%20Varanasi"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- ASSI GHAT -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🌊
+</div>
+
+<h3>
+Assi Ghat
+</h3>
+
+<p>
+अस्सी घाट
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Assi%20Ghat%2C%20Varanasi"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- KASHI VISHWANATH -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🕉️
+</div>
+
+<h3>
+Kashi Vishwanath
+</h3>
+
+<p>
+काशी विश्वनाथ मंदिर
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Kashi%20Vishwanath%20Temple%2C%20Varanasi"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- SARNATH -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+☸️
+</div>
+
+<h3>
+Sarnath
+</h3>
+
+<p>
+सारनाथ
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Sarnath%2C%20Varanasi"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     HOTELS
+================================================== -->
+
+<section
+class="info-box"
+id="hotels"
+>
+
+<h2>
+🏨 Hotels / होटल
+</h2>
+
+<p>
+
+रामनगर किले और आसपास वाराणसी क्षेत्र
+में budget hotels, guest houses और
+premium stay options मिल सकते हैं।
+
+</p>
+
+
+<div class="hotel-grid">
+
+
+<!-- BUDGET -->
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Ramnagar+Fort+Varanasi"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+💰
+</div>
+
+<h3>
+Budget Hotels
+</h3>
+
+<p>
+बजट होटल
+</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+<!-- BEST -->
+
+<a
+href="https://www.google.com/search?q=best+hotels+near+Ramnagar+Fort+Varanasi"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+⭐
+</div>
+
+<h3>
+Best Hotels
+</h3>
+
+<p>
+बेहतरीन होटल
+</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+<!-- GUEST HOUSE -->
+
+<a
+href="https://www.google.com/search?q=guest+house+near+Ramnagar+Fort+Varanasi"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+🏠
+</div>
+
+<h3>
+Guest Houses
+</h3>
+
+<p>
+गेस्ट हाउस
+</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+<!-- LUXURY -->
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Ramnagar+Fort+Varanasi"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+👑
+</div>
+
+<h3>
+Luxury Hotels
+</h3>
+
+<p>
+लक्जरी होटल
+</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+</div>
+
+
+<div class="hotel-box">
+
+<p>
+
+Booking से पहले price, reviews,
+distance और current availability
+check करना बेहतर रहेगा।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     RESTAURANTS
+================================================== -->
+
+<section
+class="info-box"
+id="food"
+>
+
+<h2>
+🍽️ Restaurants / रेस्टोरेंट
+</h2>
+
+<p>
+
+रामनगर और वाराणसी के आसपास local food,
+vegetarian restaurants, cafes और
+popular dining options मिल सकते हैं।
+
+</p>
+
+
+<div class="restaurant-grid">
+
+
+<!-- TOP RATED -->
+
+<a
+href="https://www.google.com/maps/search/top+rated+restaurants+near+Ramnagar+Fort+Varanasi"
+target="_blank"
+class="restaurant-card"
+>
+
+<div class="restaurant-icon">
+⭐
+</div>
+
+<h3>
+Top Rated
+</h3>
+
+<p>
+लोकप्रिय रेस्टोरेंट
+</p>
+
+<span class="restaurant-link">
+🍽️ देखें
+</span>
+
+</a>
+
+
+<!-- VEGETARIAN -->
+
+<a
+href="https://www.google.com/maps/search/vegetarian+restaurants+near+Ramnagar+Fort+Varanasi"
+target="_blank"
+class="restaurant-card"
+>
+
+<div class="restaurant-icon">
+🥗
+</div>
+
+<h3>
+Vegetarian
+</h3>
+
+<p>
+शाकाहारी भोजन
+</p>
+
+<span class="restaurant-link">
+🥗 देखें
+</span>
+
+</a>
+
+
+<!-- LOCAL FOOD -->
+
+<a
+href="https://www.google.com/maps/search/local+food+near+Ramnagar+Fort+Varanasi"
+target="_blank"
+class="restaurant-card"
+>
+
+<div class="restaurant-icon">
+🍛
+</div>
+
+<h3>
+Local Food
+</h3>
+
+<p>
+स्थानीय भोजन
+</p>
+
+<span class="restaurant-link">
+🍛 देखें
+</span>
+
+</a>
+
+
+<!-- CAFES -->
+
+<a
+href="https://www.google.com/maps/search/cafes+near+Ramnagar+Fort+Varanasi"
+target="_blank"
+class="restaurant-card"
+>
+
+<div class="restaurant-icon">
+☕
+</div>
+
+<h3>
+Cafes
+</h3>
+
+<p>
+कैफे
+</p>
+
+<span class="restaurant-link">
+☕ देखें
+</span>
+
+</a>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     RELIGION
+================================================== -->
+
+<section
+class="info-box"
+id="religion"
+>
+
+<h2>
+🙏 Religious & Cultural Importance
+</h2>
+
+<p>
+
+रामनगर किला केवल एक ऐतिहासिक इमारत
+नहीं है, बल्कि काशी की राजसी और
+सांस्कृतिक विरासत से भी जुड़ा हुआ है।
+रामलीला की प्रसिद्ध परंपरा के कारण
+इस स्थान का धार्मिक और सांस्कृतिक
+महत्व भी विशेष है।
+
+<br><br>
+
+Ramnagar Fort is closely connected
+with the cultural heritage of Varanasi
+and is especially associated with the
+traditional Ramnagar Ramlila.
+
+</p>
+
+<div class="important-box">
+
+<h3>
+⚠️ Visitor Note
+</h3>
+
+<p>
+
+किले और संग्रहालय में स्थानीय नियमों
+का पालन करें और heritage structures
+की सुरक्षा का ध्यान रखें।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     TRAVEL
+================================================== -->
+
+<section
+class="info-box"
+id="travel"
+>
+
+<h2>
+🚗 Travel / यात्रा
+</h2>
+
+
+<div class="travel-grid">
+
+
+<!-- RAILWAY -->
+
+<div class="travel-card">
+
+<h3>
+🚉 Varanasi Railway Station
+</h3>
+
+<p>
+लगभग <strong>12 km</strong>
+</p>
+
+<p>
+⏱️ लगभग 35–55 मिनट*
+</p>
+
+<p>
+💰 Auto/Cab:
+₹250–₹500* लगभग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Ramnagar%20Fort%2C%20Varanasi&origin=Varanasi%20Junction"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- BUS -->
+
+<div class="travel-card">
+
+<h3>
+🚌 Varanasi Bus Stand
+</h3>
+
+<p>
+लगभग <strong>10 km</strong>
+</p>
+
+<p>
+⏱️ लगभग 30–50 मिनट*
+</p>
+
+<p>
+💰 Auto/Cab:
+₹200–₹450* लगभग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Ramnagar%20Fort%2C%20Varanasi&origin=Varanasi%20Bus%20Stand"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- AIRPORT -->
+
+<div class="travel-card">
+
+<h3>
+✈️ Lal Bahadur Shastri Airport
+</h3>
+
+<p>
+लगभग <strong>32 km</strong>
+</p>
+
+<p>
+⏱️ लगभग 60–90 मिनट*
+</p>
+
+<p>
+💰 Cab/Taxi:
+₹700–₹1,400* लगभग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Ramnagar%20Fort%2C%20Varanasi&origin=Lal%20Bahadur%20Shastri%20International%20Airport"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- LOCAL TRAVEL -->
+
+<div class="travel-card">
+
+<h3>
+🛺 Local Travel
+</h3>
+
+<p>
+Auto / E-Rickshaw
+</p>
+
+<p>
+⏱️ समय route पर depend करेगा*
+</p>
+
+<p>
+💰 Local fare approximate*
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Ramnagar%20Fort%2C%20Varanasi"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<p class="travel-note">
+
+*दूरी, समय और किराया approximate हैं।
+Traffic, route और local fare के अनुसार
+actual amount अलग हो सकता है।
+
+<br><br>
+
+🛺 <strong>Share Auto:</strong>
+अगर route पर Share Auto उपलब्ध हो,
+तो अकेले Auto/Cab की तुलना में
+travel खर्च कम हो सकता है।
+
+</p>
+
+</section>
+
+<!-- ==================================================
+     ROUTE
+================================================== -->
+
+<section
+class="info-box"
+id="route"
+>
+
+<h2>
+🗺️ Location & Route / स्थान एवं मार्ग
+</h2>
+
+<div class="location-box">
+
+<p>
+
+रामनगर किले तक पहुँचने के लिए अपने
+current location से Google Maps पर
+सीधा route देखा जा सकता है।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Ramnagar%20Fort%2C%20Varanasi"
+target="_blank"
+class="route-btn"
+>
+
+📍 Current Location से Route
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     MORE INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+id="more"
+>
+
+<h2>
+🌐 More Information / अधिक जानकारी
+</h2>
+
+<div class="important-box">
+
+<h3>
+📖 रामनगर किले के बारे में और जानें
+</h3>
+
+<p>
+
+किले का इतिहास, वास्तुकला, संग्रहालय,
+रामनगर रामलीला और अन्य जानकारी के लिए
+नीचे दिए गए button पर Chrome में
+विस्तृत जानकारी देख सकते हैं।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Ramnagar+Fort+Varanasi+history+museum+Ramlila"
+target="_blank"
+class="official-btn"
+>
+
+🌐 Chrome में अधिक जानकारी देखें
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     PHOTOS
+================================================== -->
+
+<section
+class="info-box"
+id="photos"
+>
+
+<h2>
+📸 Ramnagar Fort Photos / रामनगर किले की तस्वीरें
+</h2>
+
+<p>
+
+रामनगर किले की तस्वीरें और आसपास के
+स्थान के visual views देखने के लिए
+नीचे photo card पर click करें।
+
+</p>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Ramnagar+Fort+Varanasi"
+target="_blank"
+class="photo-card"
+>
+
+<div class="photo-placeholder">
+🏰
+</div>
+
+<h3>
+📸 Ramnagar Fort
+</h3>
+
+<p>
+रामनगर किला • वाराणसी
+</p>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Ramnagar+Fort+Varanasi"
+target="_blank"
+class="photo-more"
+>
+
+📸 Chrome में और Photos देखें
+
+</a>
+
+</section>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 Desh Khoj A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     COMMON JAVASCRIPT
+================================================== -->
+
+<script src="../js/script.js"></script>
+
+
+</body>
+
+</html>
