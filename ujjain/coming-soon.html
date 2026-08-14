@@ -12,10 +12,13 @@ content="width=device-width, initial-scale=1.0">
 Business Partner Registration | DESH KHOJ A2Z
 </title>
 
-<link rel="stylesheet"
-href="../style.css?v=3">
+<link rel="stylesheet" href="../css/style.css">
 
 <style>
+
+/* ==================================================
+   COMING SOON BOX
+================================================== */
 
 .coming-box{
 background:white;
@@ -43,9 +46,58 @@ line-height:1.7;
 color:#555;
 }
 
+
+/* ==================================================
+   WHATSAPP BUTTON
+================================================== */
+
+.whatsapp-btn{
+display:inline-block;
+margin-top:20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+padding:13px 22px;
+border-radius:25px;
+font-weight:bold;
+font-size:16px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.whatsapp-btn:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   EMAIL BUTTON
+================================================== */
+
+.email-btn{
+display:inline-block;
+margin-top:15px;
+background:#1976d2;
+color:white;
+text-decoration:none;
+padding:13px 22px;
+border-radius:25px;
+font-weight:bold;
+font-size:16px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.email-btn:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   BACK BUTTON
+================================================== */
+
 .coming-btn{
 display:inline-block;
-margin-top:25px;
+margin-top:20px;
 background:#17202a;
 color:white;
 text-decoration:none;
@@ -56,6 +108,37 @@ font-weight:bold;
 
 .coming-btn:active{
 transform:scale(.96);
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+.coming-box{
+padding:30px 17px;
+}
+
+.coming-icon{
+font-size:58px;
+}
+
+.coming-box h2{
+font-size:23px;
+}
+
+.coming-box p{
+font-size:16px;
+}
+
+.whatsapp-btn,
+.email-btn{
+font-size:14px;
+padding:12px 18px;
+}
+
 }
 
 </style>
@@ -94,31 +177,36 @@ Business & Travel Network
 <div class="container">
 
 
-<!-- BACK TO UJJAIN -->
+<!-- ==================================================
+     BACK BUTTON
+================================================== -->
 
 <a
-href="ujjain.html"
+href="javascript:history.back()"
 class="back"
 >
 
-← Ujjain / उज्जैन
+← वापस Ujjain / उज्जैन
 
 </a>
 
 
 <!-- ==================================================
-     COMING SOON
+     COMING SOON BOX
 ================================================== -->
 
 <div class="coming-box">
+
 
 <div class="coming-icon">
 🤝
 </div>
 
+
 <h2>
 Business Partner Registration
 </h2>
+
 
 <p>
 
@@ -128,6 +216,7 @@ Business Partner Registration Coming Soon
 
 </p>
 
+
 <p>
 
 DESH KHOJ A2Z पर Hotel, Restaurant,
@@ -135,6 +224,7 @@ Car, Bike, Auto और अन्य Local Businesses
 जल्द अपना Business Register कर सकेंगे।
 
 </p>
+
 
 <p>
 
@@ -144,16 +234,85 @@ Car, Bike, Auto और अन्य Local Businesses
 </p>
 
 
-<!-- BACK BUTTON -->
+<!-- ==================================================
+     REGISTRATION REQUEST
+================================================== -->
+
+<p>
+
+<strong>
+📱 Registration Request
+</strong>
+
+<br>
+
+अगर आप अपना Business DESH KHOJ A2Z पर
+Register करवाना चाहते हैं, तो WhatsApp पर
+Registration Request भेज सकते हैं।
+
+</p>
+
+
+<!-- ==================================================
+     WHATSAPP BUTTON
+================================================== -->
 
 <a
-href="ujjain.html"
+href="https://wa.me/918200195546?text=Hello%20DESH%20KHOJ%20A2Z%2C%20I%20want%20to%20register%20my%20business."
+target="_blank"
+class="whatsapp-btn"
+>
+
+📱 Send Registration Request on WhatsApp
+
+</a>
+
+
+<!-- ==================================================
+     EMAIL
+================================================== -->
+
+<p style="margin-top:25px;">
+
+<strong>
+📧 Email Registration Request
+</strong>
+
+<br>
+
+अगर आप Email के माध्यम से
+Business Registration Request भेजना चाहते हैं,
+तो नीचे दिए गए button पर click करें।
+
+</p>
+
+
+<a
+href="mailto:deshkhoja2z@gmail.com?subject=Business%20Partner%20Registration%20Request&body=Hello%20DESH%20KHOJ%20A2Z%2C%0A%0AI%20want%20to%20register%20my%20business%20on%20DESH%20KHOJ%20A2Z.%0A%0ABusiness%20Name%3A%0ABusiness%20Type%3A%0ACity%3A%0AContact%20Name%3A%0A%0AThank%20you."
+class="email-btn"
+>
+
+📧 Send Registration Request by Email
+
+</a>
+
+
+<br>
+
+
+<!-- ==================================================
+     BACK TO UJJAIN
+================================================== -->
+
+<a
+href="javascript:history.back()"
 class="coming-btn"
 >
 
-← वापस Ujjain
+← वापस Ujjain / उज्जैन
 
 </a>
+
 
 </div>
 
@@ -192,7 +351,7 @@ Explore • Travel • Discover
      COMMON JAVASCRIPT
 ================================================== -->
 
-<script src="../script.js?v=3"></script>
+<script src="../js/script.js"></script>
 
 
 </body>
