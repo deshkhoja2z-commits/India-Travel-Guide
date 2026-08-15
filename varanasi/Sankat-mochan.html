@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="hi">
 
 <head>
@@ -12,8 +13,7 @@ content="width=device-width, initial-scale=1.0">
 Sankat Mochan Temple | संकट मोचन मंदिर - DESH KHOJ A2Z
 </title>
 
-<!-- UPDATED PATH -->
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="style.css">
 
 <style>
 
@@ -22,25 +22,41 @@ Sankat Mochan Temple | संकट मोचन मंदिर - DESH KHOJ A2Z
 ================================================== */
 
 .info-box{
+
 background:#ffffff;
+
 border-radius:25px;
+
 padding:30px;
+
 margin:25px 0;
+
 box-shadow:0 8px 25px rgba(0,0,0,.07);
+
 scroll-margin-top:90px;
+
 }
 
 .info-box h2{
+
 font-size:32px;
+
 line-height:1.25;
+
 margin-bottom:18px;
+
 color:#202124;
+
 }
 
 .info-box p{
+
 font-size:20px;
+
 line-height:1.7;
+
 color:#666;
+
 }
 
 
@@ -49,50 +65,85 @@ color:#666;
 ================================================== */
 
 .section-tabs{
+
 display:flex;
+
 gap:8px;
+
 overflow-x:auto;
+
 padding:10px 2px 14px;
+
 margin:10px 0 5px;
+
 position:sticky;
+
 top:0;
+
 z-index:50;
+
 background:#f4f7f6;
+
 scroll-behavior:smooth;
+
 -webkit-overflow-scrolling:touch;
+
 }
 
 .section-tabs::-webkit-scrollbar{
+
 height:4px;
+
 }
 
 .section-tabs::-webkit-scrollbar-thumb{
+
 background:#bbb;
+
 border-radius:10px;
+
 }
 
 .section-tabs a{
+
 flex:0 0 auto;
+
 display:block;
+
 padding:10px 14px;
+
 background:white;
+
 color:#202124;
+
 text-decoration:none;
+
 border-radius:14px;
+
 font-size:14px;
+
 font-weight:bold;
+
 border:1px solid #e5e7eb;
+
 box-shadow:0 3px 10px rgba(0,0,0,.06);
+
 white-space:nowrap;
+
 }
 
 .section-tabs a:active{
+
 transform:scale(.95);
+
 background:#fff7e6;
+
 }
 
 .section-tabs a:hover{
+
 background:#fff7e6;
+
 }
 
 
@@ -101,21 +152,33 @@ background:#fff7e6;
 ================================================== */
 
 .important-box{
+
 background:#fff8e7;
+
 border-left:6px solid #f59e0b;
+
 border-radius:18px;
+
 padding:20px;
+
 margin-top:20px;
+
 }
 
 .important-box h3{
+
 font-size:22px;
+
 margin-bottom:8px;
+
 }
 
 .important-box p{
+
 font-size:18px;
+
 margin:0;
+
 }
 
 
@@ -124,19 +187,31 @@ margin:0;
 ================================================== */
 
 .official-btn{
+
 display:inline-block;
+
 margin-top:15px;
+
 padding:12px 18px;
+
 background:#1976d2;
+
 color:white;
+
 text-decoration:none;
+
 border-radius:12px;
+
 font-size:16px;
+
 font-weight:bold;
+
 }
 
 .official-btn:active{
+
 transform:scale(.97);
+
 }
 
 
@@ -145,47 +220,75 @@ transform:scale(.97);
 ================================================== */
 
 .nearby-grid{
+
 display:grid;
+
 grid-template-columns:repeat(2,1fr);
+
 gap:18px;
+
 margin-top:20px;
+
 }
 
 .nearby-card{
+
 background:#f8f9fa;
+
 border-radius:20px;
+
 padding:22px 12px;
+
 text-align:center;
+
 border-top:5px solid #16a34a;
+
 box-shadow:0 5px 16px rgba(0,0,0,.05);
+
 }
 
 .nearby-card:nth-child(2){
+
 border-top-color:#2196d2;
+
 }
 
 .nearby-card:nth-child(3){
+
 border-top-color:#f59e0b;
+
 }
 
 .nearby-card:nth-child(4){
+
 border-top-color:#8b5cf6;
+
 }
 
 .nearby-icon{
+
 font-size:38px;
+
 margin-bottom:8px;
+
 }
 
 .nearby-card h3{
+
 font-size:20px;
+
 margin:8px 0;
+
 }
 
 .nearby-card p{
+
 font-size:16px;
+
 margin:5px 0 14px;
+
 color:#666;
+
 }
 
 
@@ -194,18 +297,29 @@ color:#666;
 ================================================== */
 
 .route-btn{
+
 display:inline-block;
+
 background:#16a34a;
+
 color:white;
+
 text-decoration:none;
+
 padding:10px 13px;
+
 border-radius:11px;
+
 font-size:13px;
+
 font-weight:bold;
+
 }
 
 .route-btn:active{
+
 transform:scale(.96);
+
 }
 
 
@@ -214,65 +328,107 @@ transform:scale(.96);
 ================================================== */
 
 .hotel-grid{
+
 display:grid;
+
 grid-template-columns:repeat(2,1fr);
+
 gap:18px;
+
 margin-top:20px;
+
 }
 
 .hotel-card{
+
 display:block;
+
 background:#f8f9fa;
+
 color:#202124;
+
 text-decoration:none;
+
 text-align:center;
+
 border-radius:20px;
+
 padding:22px 12px;
+
 border-top:5px solid #16a34a;
+
 box-shadow:0 5px 16px rgba(0,0,0,.05);
+
 }
 
 .hotel-card:nth-child(2){
+
 border-top-color:#f59e0b;
+
 }
 
 .hotel-card:nth-child(3){
+
 border-top-color:#2196d2;
+
 }
 
 .hotel-card:nth-child(4){
+
 border-top-color:#8b5cf6;
+
 }
 
 .hotel-card:active{
+
 transform:scale(.97);
+
 }
 
 .hotel-icon{
+
 font-size:38px;
+
 margin-bottom:8px;
+
 }
 
 .hotel-card h3{
+
 font-size:20px;
+
 margin:8px 0;
+
 }
 
 .hotel-card p{
+
 font-size:15px;
+
 margin:5px 0;
+
 color:#666;
+
 }
 
 .hotel-link{
+
 display:inline-block;
+
 margin-top:9px;
+
 padding:8px 11px;
+
 border-radius:10px;
+
 background:#1976d2;
+
 color:white;
+
 font-size:12px;
+
 font-weight:bold;
+
 }
 
 
@@ -281,10 +437,15 @@ font-weight:bold;
 ================================================== */
 
 .hotel-box{
+
 background:#f8f9fa;
+
 border-radius:20px;
+
 padding:20px;
+
 margin-top:20px;
+
 }
 
 
@@ -293,53 +454,87 @@ margin-top:20px;
 ================================================== */
 
 .restaurant-box{
+
 display:grid;
+
 grid-template-columns:repeat(2,1fr);
+
 gap:18px;
+
 margin-top:20px;
+
 }
 
 .restaurant-card{
+
 background:#f8f9fa;
+
 border-radius:20px;
+
 padding:20px 12px;
+
 text-align:center;
+
 border-top:5px solid #16a34a;
+
 box-shadow:0 5px 16px rgba(0,0,0,.05);
+
 }
 
 .restaurant-card:nth-child(2){
+
 border-top-color:#f59e0b;
+
 }
 
 .restaurant-card:nth-child(3){
+
 border-top-color:#2196d2;
+
 }
 
 .restaurant-card:nth-child(4){
+
 border-top-color:#8b5cf6;
+
 }
 
 .restaurant-card h3{
+
 font-size:19px;
+
 margin:8px 0;
+
 }
 
 .restaurant-card p{
+
 font-size:15px;
+
 color:#666;
+
 margin:5px 0 12px;
+
 }
 
 .restaurant-btn{
+
 display:inline-block;
+
 background:#1976d2;
+
 color:white;
+
 text-decoration:none;
+
 padding:9px 11px;
+
 border-radius:10px;
+
 font-size:12px;
+
 font-weight:bold;
+
 }
 
 
@@ -348,27 +543,43 @@ font-weight:bold;
 ================================================== */
 
 .travel-grid{
+
 display:grid;
+
 grid-template-columns:repeat(2,1fr);
+
 gap:18px;
+
 margin-top:20px;
+
 }
 
 .travel-card{
+
 background:#f8f9fa;
+
 border-radius:20px;
+
 padding:22px 16px;
+
 border-top:5px solid #2196d2;
+
 }
 
 .travel-card h3{
+
 font-size:20px;
+
 margin-bottom:12px;
+
 }
 
 .travel-card p{
+
 font-size:17px;
+
 margin:7px 0;
+
 }
 
 
@@ -377,25 +588,41 @@ margin:7px 0;
 ================================================== */
 
 .share-auto-box{
+
 margin-top:20px;
+
 padding:15px 18px;
+
 background:#f0f7ff;
+
 border-left:5px solid #2196d2;
+
 border-radius:15px;
+
 }
 
 .share-auto-box p{
+
 font-size:17px;
+
 margin:0;
+
 }
 
 .travel-note{
+
 margin-top:15px;
+
 padding:14px 18px;
+
 background:#f0fff4;
+
 border-left:5px solid #16a34a;
+
 border-radius:15px;
+
 font-size:16px !important;
+
 }
 
 
@@ -404,11 +631,17 @@ font-size:16px !important;
 ================================================== */
 
 .location-box{
+
 background:#f0f7ff;
+
 border-left:6px solid #1976d2;
+
 border-radius:18px;
+
 padding:20px;
+
 margin-top:20px;
+
 }
 
 
@@ -417,48 +650,83 @@ margin-top:20px;
 ================================================== */
 
 .photo-gallery{
+
 margin-top:20px;
+
 }
 
 .photo-card{
+
 display:block;
+
 background:#f8f9fa;
+
 border-radius:20px;
+
 overflow:hidden;
+
 text-decoration:none;
+
 color:#202124;
+
 box-shadow:0 5px 16px rgba(0,0,0,.06);
+
 border:1px solid #e5e7eb;
+
 }
 
 .photo-placeholder{
+
 height:230px;
+
 display:flex;
+
 align-items:center;
+
 justify-content:center;
+
 font-size:90px;
+
 background:#eef7fa;
+
 }
 
 .photo-card p{
+
 font-size:18px;
+
 padding:15px;
+
 margin:0;
+
 font-weight:bold;
+
 text-align:center;
+
 }
 
 .photo-more{
+
 display:block;
+
 margin-top:18px;
+
 background:#1976d2;
+
 color:white;
+
 text-decoration:none;
+
 padding:13px;
+
 border-radius:12px;
+
 font-size:16px;
+
 font-weight:bold;
+
 text-align:center;
+
 }
 
 
@@ -469,120 +737,203 @@ text-align:center;
 @media(max-width:600px){
 
 .info-box{
+
 padding:22px 18px;
+
 border-radius:22px;
+
 }
 
 .info-box h2{
+
 font-size:28px;
+
 line-height:1.3;
+
 }
 
 .info-box p{
+
 font-size:18px;
+
 }
 
+
+/* TABS */
+
 .section-tabs{
+
 gap:7px;
+
 padding:9px 2px 13px;
+
 }
 
 .section-tabs a{
+
 font-size:12px;
+
 padding:9px 11px;
+
 border-radius:12px;
+
 }
 
+
+/* NEARBY */
+
 .nearby-grid{
+
 grid-template-columns:1fr 1fr;
+
 gap:12px;
+
 }
 
 .nearby-card{
+
 padding:18px 9px;
+
 }
 
 .nearby-card h3{
+
 font-size:18px;
+
 }
 
 .nearby-card p{
+
 font-size:15px;
+
 }
 
 .route-btn{
+
 font-size:11px;
+
 padding:9px 8px;
+
 }
 
+
+/* HOTEL */
+
 .hotel-grid{
+
 grid-template-columns:1fr 1fr;
+
 gap:12px;
+
 }
 
 .hotel-card{
+
 padding:18px 8px;
+
 }
 
 .hotel-icon{
+
 font-size:34px;
+
 }
 
 .hotel-card h3{
+
 font-size:17px;
+
 }
 
 .hotel-card p{
+
 font-size:14px;
+
 }
 
 .hotel-link{
+
 font-size:11px;
+
 padding:8px 8px;
+
 }
 
+
+/* RESTAURANT */
+
 .restaurant-box{
+
 grid-template-columns:1fr 1fr;
+
 gap:12px;
+
 }
 
 .restaurant-card{
+
 padding:17px 8px;
+
 }
 
 .restaurant-card h3{
+
 font-size:17px;
+
 }
 
 .restaurant-card p{
+
 font-size:14px;
+
 }
 
 .restaurant-btn{
+
 font-size:10px;
+
 padding:8px 7px;
+
 }
 
+
+/* TRAVEL */
+
 .travel-grid{
+
 grid-template-columns:1fr 1fr;
+
 gap:12px;
+
 }
 
 .travel-card{
+
 padding:16px 10px;
+
 }
 
 .travel-card h3{
+
 font-size:17px;
+
 }
 
 .travel-card p{
+
 font-size:15px;
+
 }
 
+
+/* PHOTO */
+
 .photo-placeholder{
+
 height:210px;
+
 font-size:80px;
+
 }
 
 }
@@ -598,11 +949,15 @@ font-size:80px;
 .hotel-grid,
 .restaurant-box,
 .travel-grid{
+
 grid-template-columns:1fr 1fr;
+
 }
 
 .info-box h2{
+
 font-size:26px;
+
 }
 
 }
@@ -658,7 +1013,9 @@ autocomplete="off"
 <div class="container">
 
 
-<!-- BACK -->
+<!-- ==================================================
+     BACK
+================================================== -->
 
 <a
 href="varanasi.html"
@@ -670,7 +1027,9 @@ class="back"
 </a>
 
 
-<!-- HERO -->
+<!-- ==================================================
+     HERO
+================================================== -->
 
 <div class="title-box">
 
@@ -681,24 +1040,27 @@ class="back"
 <p>
 
 संकट मोचन मंदिर वाराणसी के प्रसिद्ध
-हनुमान मंदिरों में से एक है। यह धार्मिक
-आस्था, शांत वातावरण और भक्तों के लिए
-महत्वपूर्ण आध्यात्मिक स्थल के रूप में
-जाना जाता है।
+हनुमान मंदिरों में से एक है। यह मंदिर
+भगवान हनुमान को समर्पित है और
+श्रद्धालुओं के लिए एक महत्वपूर्ण
+धार्मिक एवं आध्यात्मिक स्थल है।
 
 <br><br>
 
 Sankat Mochan Temple is one of the
 well-known Hanuman temples in Varanasi.
-It is an important spiritual destination
-for devotees and visitors.
+Dedicated to Lord Hanuman, it is an
+important spiritual and religious
+destination for devotees.
 
 </p>
 
 </div>
 
 
-<!-- QUICK TABS -->
+<!-- ==================================================
+     QUICK TABS
+================================================== -->
 
 <div class="section-tabs">
 
@@ -737,7 +1099,9 @@ for devotees and visitors.
 </div>
 
 
-<!-- NEARBY -->
+<!-- ==================================================
+     NEARBY
+================================================== -->
 
 <section
 class="info-box"
@@ -754,7 +1118,7 @@ id="nearby"
 <div class="nearby-card">
 
 <div class="nearby-icon">
-🌅
+🌊
 </div>
 
 <h3>
@@ -781,34 +1145,7 @@ class="route-btn"
 <div class="nearby-card">
 
 <div class="nearby-icon">
-🌊
-</div>
-
-<h3>
-Tulsi Ghat
-</h3>
-
-<p>
-तुलसी घाट
-</p>
-
-<a
-href="https://www.google.com/maps/dir/?api=1&destination=Tulsi%20Ghat%2C%20Varanasi"
-target="_blank"
-class="route-btn"
->
-
-📍 Route देखें
-
-</a>
-
-</div>
-
-
-<div class="nearby-card">
-
-<div class="nearby-icon">
-🛕
+🌺
 </div>
 
 <h3>
@@ -835,19 +1172,46 @@ class="route-btn"
 <div class="nearby-card">
 
 <div class="nearby-icon">
-🏛️
+🛕
 </div>
 
 <h3>
-BHU
+Tulsi Manas Temple
 </h3>
 
 <p>
-काशी हिंदू विश्वविद्यालय
+तुलसी मानस मंदिर
 </p>
 
 <a
-href="https://www.google.com/maps/dir/?api=1&destination=BHU%2C%20Varanasi"
+href="https://www.google.com/maps/dir/?api=1&destination=Tulsi%20Manas%20Temple%2C%20Varanasi"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🕉️
+</div>
+
+<h3>
+Kashi Vishwanath Temple
+</h3>
+
+<p>
+काशी विश्वनाथ मंदिर
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Kashi%20Vishwanath%20Temple%2C%20Varanasi"
 target="_blank"
 class="route-btn"
 >
@@ -864,7 +1228,9 @@ class="route-btn"
 </section>
 
 
-<!-- HOTELS -->
+<!-- ==================================================
+     HOTELS
+================================================== -->
 
 <section
 class="info-box"
@@ -877,9 +1243,9 @@ id="hotels"
 
 <p>
 
-संकट मोचन मंदिर और आसपास के क्षेत्रों
-में budget stays, guest houses और
-premium hotels के कई विकल्प मिल सकते हैं।
+संकट मोचन मंदिर और आसपास के क्षेत्र में
+budget stays से लेकर premium hotels
+तक कई accommodation options मिल सकते हैं।
 
 </p>
 
@@ -1005,7 +1371,9 @@ check करना बेहतर रहेगा।
 </section>
 
 
-<!-- FOOD -->
+<!-- ==================================================
+     RESTAURANTS
+================================================== -->
 
 <section
 class="info-box"
@@ -1019,8 +1387,9 @@ id="food"
 <p>
 
 संकट मोचन मंदिर के आसपास vegetarian
-food, local Banarasi food और cafés
-के कई विकल्प मिल सकते हैं।
+restaurants, local Banarasi food,
+traditional meals और cafés के कई
+विकल्प मिल सकते हैं।
 
 </p>
 
@@ -1141,7 +1510,9 @@ class="restaurant-btn"
 </section>
 
 
-<!-- RELIGION -->
+<!-- ==================================================
+     RELIGION
+================================================== -->
 
 <section
 class="info-box"
@@ -1155,26 +1526,28 @@ id="religion"
 <p>
 
 संकट मोचन मंदिर भगवान हनुमान को
-समर्पित प्रसिद्ध मंदिर है। श्रद्धालु
-यहाँ पूजा और दर्शन के लिए आते हैं।
-मंदिर की धार्मिक परंपराओं और
-स्थानीय व्यवस्था का सम्मान करना
-चाहिए।
+समर्पित एक प्रसिद्ध हिंदू मंदिर है।
+यह वाराणसी की धार्मिक और आध्यात्मिक
+परंपरा में महत्वपूर्ण स्थान रखता है।
+श्रद्धालु यहाँ हनुमान जी के दर्शन,
+पूजा और प्रार्थना के लिए आते हैं।
 
 <br><br>
 
-Sankat Mochan Temple is dedicated to
-Lord Hanuman and is an important place
-of worship in Varanasi. Devotees visit
-for darshan, prayer and spiritual
-experience.
+Sankat Mochan Temple is a famous Hindu
+temple dedicated to Lord Hanuman.
+It holds an important place in the
+religious and spiritual traditions of
+Varanasi.
 
 </p>
 
 </section>
 
 
-<!-- IMPORTANT INFORMATION -->
+<!-- ==================================================
+     IMPORTANT INFORMATION
+================================================== -->
 
 <section class="info-box">
 
@@ -1186,10 +1559,11 @@ experience.
 
 <p>
 
-दर्शन, पूजा, भीड़ और मंदिर की व्यवस्था
-समय के अनुसार बदल सकती है। यात्रा से
-पहले वर्तमान व्यवस्था की जानकारी
-check करना बेहतर रहेगा।
+मंदिर के दर्शन, पूजा, प्रवेश,
+visitor arrangements और अन्य
+व्यवस्थाएँ समय-समय पर बदल सकती हैं।
+यात्रा से पहले वर्तमान व्यवस्था की
+पुष्टि करना बेहतर रहेगा।
 
 </p>
 
@@ -1197,8 +1571,9 @@ check करना बेहतर रहेगा।
 
 </section>
 
-
-<!-- TRAVEL -->
+   <!-- ==================================================
+     TRAVEL
+================================================== -->
 
 <section
 class="info-box"
@@ -1208,6 +1583,7 @@ id="travel"
 <h2>
 🚗 Travel / यात्रा
 </h2>
+
 
 <div class="travel-grid">
 
@@ -1228,7 +1604,7 @@ id="travel"
 
 <p>
 💰 Auto/Cab:
-₹180–₹450* लगभग
+₹150–₹400* लगभग
 </p>
 
 <a
@@ -1260,7 +1636,7 @@ class="route-btn"
 
 <p>
 💰 Auto/Cab:
-₹120–₹350* लगभग
+₹100–₹300* लगभग
 </p>
 
 <a
@@ -1283,11 +1659,11 @@ class="route-btn"
 </h3>
 
 <p>
-लगभग <strong>32 km</strong>
+लगभग <strong>35 km</strong>
 </p>
 
 <p>
-⏱️ लगभग 55–85 मिनट*
+⏱️ लगभग 60–90 मिनट*
 </p>
 
 <p>
@@ -1319,7 +1695,7 @@ Auto / E-Rickshaw
 </p>
 
 <p>
-Local travel के लिए convenient
+Short distance के लिए convenient
 </p>
 
 <a
@@ -1337,6 +1713,8 @@ class="route-btn"
 
 </div>
 
+
+<!-- SHARE AUTO -->
 
 <div class="share-auto-box">
 
@@ -1362,7 +1740,8 @@ actual amount अलग हो सकता है।
 
 </section>
 
-   <!-- ==================================================
+
+<!-- ==================================================
      LOCATION & ROUTE
 ================================================== -->
 
@@ -1421,9 +1800,10 @@ id="more"
 
 <p>
 
-मंदिर का इतिहास, धार्मिक महत्व,
-दर्शन और वर्तमान जानकारी के लिए
-नीचे दिए गए button पर Chrome में
+संकट मोचन मंदिर का इतिहास,
+धार्मिक महत्व, मंदिर की परंपराएँ
+और वर्तमान जानकारी के लिए नीचे
+दिए गए button पर Chrome में
 अधिक जानकारी देख सकते हैं।
 
 </p>
@@ -1458,8 +1838,9 @@ id="photos"
 
 <p>
 
-संकट मोचन मंदिर की photos देखने के
-लिए नीचे photo card पर click करें।
+संकट मोचन मंदिर और मंदिर परिसर की
+photos देखने के लिए नीचे photo card
+पर click करें।
 
 </p>
 
@@ -1480,7 +1861,7 @@ class="photo-card"
 
 <p>
 
-🙏 Sankat Mochan Temple, Varanasi
+🙏 Sankat Mochan Temple
 
 </p>
 
@@ -1514,9 +1895,22 @@ class="photo-more"
 
 <p>
 
-DESH KHOJ A2Z पर यात्रियों के लिए
-सरल और उपयोगी travel information
-एक ही जगह उपलब्ध कराने का प्रयास है।
+DESH KHOJ A2Z का उद्देश्य यात्रियों को
+भारत के अलग-अलग स्थानों के लिए
+सरल, उपयोगी और practical travel
+information एक ही जगह उपलब्ध कराना है।
+
+<br><br>
+
+Our goal is to provide simple, useful
+and practical travel information for
+travellers exploring India.
+
+<br><br>
+
+Place information, local details,
+reviews और उपलब्ध जानकारी के आधार पर
+pages को समय-समय पर update किया जाएगा।
 
 </p>
 
@@ -1557,8 +1951,8 @@ Explore • Travel • Discover
      COMMON JAVASCRIPT
 ================================================== -->
 
-<!-- UPDATED PATH -->
-<script src="../js/script.js"></script>
+<script src="script.js"></script>
+
 
 </body>
 
