@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Sri Govindaraja Swamy Temple | श्री गोविंदराज स्वामी मंदिर - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   PAGE BOX
+================================================== */
+
+.info-box{
+
+background:#ffffff;
+
+border-radius:25px;
+
+padding:30px;
+
+margin:25px 0;
+
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+
+scroll-margin-top:90px;
+
+}
+
+.info-box h2{
+
+font-size:32px;
+
+line-height:1.25;
+
+margin-bottom:18px;
+
+color:#202124;
+
+}
+
+.info-box p{
+
+font-size:20px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+
+
+/* ==================================================
+   SECTION TABS
+================================================== */
+
+.section-tabs{
+
+display:flex;
+
+gap:8px;
+
+overflow-x:auto;
+
+padding:10px 2px 14px;
+
+margin:10px 0 5px;
+
+position:sticky;
+
+top:0;
+
+z-index:50;
+
+background:#f4f7f6;
+
+scroll-behavior:smooth;
+
+-webkit-overflow-scrolling:touch;
+
+}
+
+.section-tabs::-webkit-scrollbar{
+
+height:4px;
+
+}
+
+.section-tabs::-webkit-scrollbar-thumb{
+
+background:#bbb;
+
+border-radius:10px;
+
+}
+
+.section-tabs a{
+
+flex:0 0 auto;
+
+display:block;
+
+padding:10px 14px;
+
+background:white;
+
+color:#202124;
+
+text-decoration:none;
+
+border-radius:14px;
+
+font-size:14px;
+
+font-weight:bold;
+
+border:1px solid #e5e7eb;
+
+box-shadow:0 3px 10px rgba(0,0,0,.06);
+
+white-space:nowrap;
+
+}
+
+.section-tabs a:active{
+
+transform:scale(.95);
+
+background:#fff7e6;
+
+}
+
+.section-tabs a:hover{
+
+background:#fff7e6;
+
+}
+
+
+/* ==================================================
+   IMPORTANT BOX
+================================================== */
+
+.important-box{
+
+background:#fff8e7;
+
+border-left:6px solid #f59e0b;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+.important-box h3{
+
+font-size:22px;
+
+margin-bottom:8px;
+
+}
+
+.important-box p{
+
+font-size:18px;
+
+margin:0;
+
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.official-btn{
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:12px 18px;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+}
+
+.official-btn:active{
+
+transform:scale(.97);
+
+}
+
+
+/* ==================================================
+   NEARBY GRID
+================================================== */
+
+.nearby-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.nearby-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:22px 12px;
+
+text-align:center;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.nearby-card:nth-child(2){
+
+border-top-color:#2196d2;
+
+}
+
+.nearby-card:nth-child(3){
+
+border-top-color:#f59e0b;
+
+}
+
+.nearby-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.nearby-icon{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.nearby-card h3{
+
+font-size:20px;
+
+margin:8px 0;
+
+}
+
+.nearby-card p{
+
+font-size:16px;
+
+margin:5px 0 14px;
+
+color:#666;
+
+}
+
+
+/* ==================================================
+   ROUTE BUTTON
+================================================== */
+
+.route-btn{
+
+display:inline-block;
+
+background:#16a34a;
+
+color:white;
+
+text-decoration:none;
+
+padding:10px 13px;
+
+border-radius:11px;
+
+font-size:13px;
+
+font-weight:bold;
+
+}
+
+.route-btn:active{
+
+transform:scale(.96);
+
+}
+
+
+/* ==================================================
+   HOTEL GRID
+================================================== */
+
+.hotel-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.hotel-card{
+
+display:block;
+
+background:#f8f9fa;
+
+color:#202124;
+
+text-decoration:none;
+
+text-align:center;
+
+border-radius:20px;
+
+padding:22px 12px;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.hotel-card:nth-child(2){
+
+border-top-color:#f59e0b;
+
+}
+
+.hotel-card:nth-child(3){
+
+border-top-color:#2196d2;
+
+}
+
+.hotel-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.hotel-card:active{
+
+transform:scale(.97);
+
+}
+
+.hotel-icon{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.hotel-card h3{
+
+font-size:20px;
+
+margin:8px 0;
+
+}
+
+.hotel-card p{
+
+font-size:15px;
+
+margin:5px 0;
+
+color:#666;
+
+}
+
+.hotel-link{
+
+display:inline-block;
+
+margin-top:9px;
+
+padding:8px 11px;
+
+border-radius:10px;
+
+background:#1976d2;
+
+color:white;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+   HOTEL BOX
+================================================== */
+
+.hotel-box{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+   RESTAURANTS
+================================================== */
+
+.restaurant-box{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.restaurant-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:20px 12px;
+
+text-align:center;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.restaurant-card:nth-child(2){
+
+border-top-color:#f59e0b;
+
+}
+
+.restaurant-card:nth-child(3){
+
+border-top-color:#2196d2;
+
+}
+
+.restaurant-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.restaurant-card h3{
+
+font-size:19px;
+
+margin:8px 0;
+
+}
+
+.restaurant-card p{
+
+font-size:15px;
+
+color:#666;
+
+margin:5px 0 12px;
+
+}
+
+.restaurant-btn{
+
+display:inline-block;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+padding:9px 11px;
+
+border-radius:10px;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+   TRAVEL GRID
+================================================== */
+
+.travel-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.travel-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:22px 16px;
+
+border-top:5px solid #2196d2;
+
+}
+
+.travel-card h3{
+
+font-size:20px;
+
+margin-bottom:12px;
+
+}
+
+.travel-card p{
+
+font-size:17px;
+
+margin:7px 0;
+
+}
+
+
+/* ==================================================
+   SMALL TRAVEL NOTES
+================================================== */
+
+.share-auto-box{
+
+margin-top:20px;
+
+padding:15px 18px;
+
+background:#f0f7ff;
+
+border-left:5px solid #2196d2;
+
+border-radius:15px;
+
+}
+
+.share-auto-box p{
+
+font-size:17px;
+
+margin:0;
+
+}
+
+.travel-note{
+
+margin-top:15px;
+
+padding:14px 18px;
+
+background:#f0fff4;
+
+border-left:5px solid #16a34a;
+
+border-radius:15px;
+
+font-size:16px !important;
+
+}
+
+
+/* ==================================================
+   LOCATION
+================================================== */
+
+.location-box{
+
+background:#f0f7ff;
+
+border-left:6px solid #1976d2;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+   PHOTO GALLERY
+================================================== */
+
+.photo-gallery{
+
+margin-top:20px;
+
+}
+
+.photo-card{
+
+display:block;
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+overflow:hidden;
+
+text-decoration:none;
+
+color:#202124;
+
+box-shadow:0 5px 16px rgba(0,0,0,.06);
+
+border:1px solid #e5e7eb;
+
+}
+
+.photo-card img{
+
+width:100%;
+
+height:230px;
+
+object-fit:cover;
+
+display:block;
+
+}
+
+.photo-card p{
+
+font-size:18px;
+
+padding:15px;
+
+margin:0;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+.photo-more{
+
+display:block;
+
+margin-top:18px;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+padding:13px;
+
+border-radius:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+.info-box{
+
+padding:22px 18px;
+
+border-radius:22px;
+
+}
+
+.info-box h2{
+
+font-size:28px;
+
+line-height:1.3;
+
+}
+
+.info-box p{
+
+font-size:18px;
+
+}
+
+
+/* TABS */
+
+.section-tabs{
+
+gap:7px;
+
+padding:9px 2px 13px;
+
+}
+
+.section-tabs a{
+
+font-size:12px;
+
+padding:9px 11px;
+
+border-radius:12px;
+
+}
+
+
+/* NEARBY */
+
+.nearby-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.nearby-card{
+
+padding:18px 9px;
+
+}
+
+.nearby-card h3{
+
+font-size:18px;
+
+}
+
+.nearby-card p{
+
+font-size:15px;
+
+}
+
+.route-btn{
+
+font-size:11px;
+
+padding:9px 8px;
+
+}
+
+
+/* HOTEL */
+
+.hotel-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.hotel-card{
+
+padding:18px 8px;
+
+}
+
+.hotel-icon{
+
+font-size:34px;
+
+}
+
+.hotel-card h3{
+
+font-size:17px;
+
+}
+
+.hotel-card p{
+
+font-size:14px;
+
+}
+
+.hotel-link{
+
+font-size:11px;
+
+padding:8px 8px;
+
+}
+
+
+/* RESTAURANT */
+
+.restaurant-box{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.restaurant-card{
+
+padding:17px 8px;
+
+}
+
+.restaurant-card h3{
+
+font-size:17px;
+
+}
+
+.restaurant-card p{
+
+font-size:14px;
+
+}
+
+.restaurant-btn{
+
+font-size:10px;
+
+padding:8px 7px;
+
+}
+
+
+/* TRAVEL */
+
+.travel-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.travel-card{
+
+padding:16px 10px;
+
+}
+
+.travel-card h3{
+
+font-size:17px;
+
+}
+
+.travel-card p{
+
+font-size:15px;
+
+}
+
+
+/* PHOTO */
+
+.photo-card img{
+
+height:210px;
+
+}
+
+}
+
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.nearby-grid,
+.hotel-grid,
+.restaurant-box,
+.travel-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.info-box h2{
+
+font-size:26px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🙏
+</div>
+
+<h1>
+Sri Govindaraja Swamy Temple
+</h1>
+
+<p>
+श्री गोविंदराज स्वामी मंदिर • तिरुपति
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<!-- ==================================================
+     BACK
+================================================== -->
+
+<a
+href="tirupati.html"
+class="back"
+>
+
+← Tirupati / तिरुपति
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🙏 Sri Govindaraja Swamy Temple
+</h2>
+
+<p>
+
+श्री गोविंदराज स्वामी मंदिर
+तिरुपति के प्रमुख धार्मिक स्थलों में
+से एक है। यह भगवान विष्णु के
+गोविंदराज स्वामी स्वरूप को समर्पित
+एक प्रसिद्ध मंदिर है और तिरुपति आने
+वाले श्रद्धालुओं के लिए महत्वपूर्ण
+तीर्थस्थल है।
+
+<br><br>
+
+Sri Govindaraja Swamy Temple is
+one of the important spiritual
+destinations of Tirupati. Dedicated
+to Lord Govindaraja Swamy, it is
+an important pilgrimage site for
+devotees visiting Tirupati.
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK TABS
+================================================== -->
+
+<div class="section-tabs">
+
+<a href="#nearby">
+📍 Nearby
+</a>
+
+<a href="#hotels">
+🏨 Hotels
+</a>
+
+<a href="#food">
+🍽️ Food
+</a>
+
+<a href="#religion">
+🙏 Religion
+</a>
+
+<a href="#darshan">
+🎟️ Darshan
+</a>
+
+<a href="#travel">
+🚗 Travel
+</a>
+
+<a href="#route">
+🗺️ Route
+</a>
+
+<a href="#more">
+🌐 More
+</a>
+
+<a href="#photos">
+📸 Photos
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     NEARBY
+================================================== -->
+
+<section
+class="info-box"
+id="nearby"
+>
+
+<h2>
+📍 Nearby Places / आसपास के स्थान
+</h2>
+
+<div class="nearby-grid">
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🌸
+</div>
+
+<h3>
+Padmavathi Ammavari Temple
+</h3>
+
+<p>
+पद्मावती अम्मावारी मंदिर
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Padmavathi+Ammavari+Temple%2C+Tiruchanur"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🌿
+</div>
+
+<h3>
+Kapila Theertham
+</h3>
+
+<p>
+कपिला तीर्थम
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Kapila+Theertham%2C+Tirupati"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🏛️
+</div>
+
+<h3>
+Chandragiri Fort
+</h3>
+
+<p>
+चंद्रगिरी किला
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Chandragiri+Fort%2C+Andhra+Pradesh"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🙏
+</div>
+
+<h3>
+ISKCON Temple
+</h3>
+
+<p>
+इस्कॉन मंदिर
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=ISKCON+Temple%2C+Tirupati"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     HOTELS
+================================================== -->
+
+<section
+class="info-box"
+id="hotels"
+>
+
+<h2>
+🏨 Hotels / होटल
+</h2>
+
+<p>
+
+गोविंदराज स्वामी मंदिर के आसपास
+और तिरुपति शहर में budget stays
+से लेकर premium hotels तक कई
+accommodation options मिल सकते हैं।
+
+</p>
+
+
+<div class="hotel-grid">
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Govindaraja+Swamy+Temple+Tirupati"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+💰
+</div>
+
+<h3>
+Budget Hotels
+</h3>
+
+<p>
+बजट होटल
+</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+near+Govindaraja+Swamy+Temple+Tirupati"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+⭐
+</div>
+
+<h3>
+Best Hotels
+</h3>
+
+<p>
+अच्छे होटल
+</p>
+
+<span class="hotel-link">
+🏨 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=guest+house+near+Govindaraja+Swamy+Temple+Tirupati"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+🏠
+</div>
+
+<h3>
+Guest Houses
+</h3>
+
+<p>
+गेस्ट हाउस
+</p>
+
+<span class="hotel-link">
+🏠 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Govindaraja+Swamy+Temple+Tirupati"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+👑
+</div>
+
+<h3>
+Luxury Hotels
+</h3>
+
+<p>
+प्रीमियम होटल
+</p>
+
+<span class="hotel-link">
+⭐ देखें
+</span>
+
+</a>
+
+
+</div>
+
+
+<div class="hotel-box">
+
+<p>
+
+Booking से पहले price, reviews,
+distance और current availability
+check करना बेहतर रहेगा।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     RESTAURANTS
+================================================== -->
+
+<section
+class="info-box"
+id="food"
+>
+
+<h2>
+🍽️ Restaurants / रेस्टोरेंट
+</h2>
+
+<p>
+
+तिरुपति में South Indian food,
+vegetarian meals, local restaurants
+और cafés के कई विकल्प मिल सकते हैं।
+
+</p>
+
+
+<div class="restaurant-box">
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+⭐
+</div>
+
+<h3>
+Top Rated
+</h3>
+
+<p>
+लोकप्रिय restaurants
+</p>
+
+<a
+href="https://www.google.com/maps/search/top+rated+restaurants+near+Govindaraja+Swamy+Temple+Tirupati"
+target="_blank"
+class="restaurant-btn"
+>
+
+⭐ देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🥗
+</div>
+
+<h3>
+Vegetarian
+</h3>
+
+<p>
+शाकाहारी भोजन
+</p>
+
+<a
+href="https://www.google.com/maps/search/vegetarian+restaurants+near+Govindaraja+Swamy+Temple+Tirupati"
+target="_blank"
+class="restaurant-btn"
+>
+
+🥗 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🍛
+</div>
+
+<h3>
+South Indian
+</h3>
+
+<p>
+दक्षिण भारतीय भोजन
+</p>
+
+<a
+href="https://www.google.com/maps/search/South+Indian+food+near+Govindaraja+Swamy+Temple+Tirupati"
+target="_blank"
+class="restaurant-btn"
+>
+
+🍛 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+☕
+</div>
+
+<h3>
+Cafes
+</h3>
+
+<p>
+Nearby cafes
+</p>
+
+<a
+href="https://www.google.com/maps/search/cafes+near+Govindaraja+Swamy+Temple+Tirupati"
+target="_blank"
+class="restaurant-btn"
+>
+
+☕ देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     RELIGION
+================================================== -->
+
+<section
+class="info-box"
+id="religion"
+>
+
+<h2>
+🙏 Religious Importance / धार्मिक महत्व
+</h2>
+
+<p>
+
+श्री गोविंदराज स्वामी मंदिर भगवान
+विष्णु के गोविंदराज स्वामी स्वरूप को
+समर्पित एक प्रमुख धार्मिक स्थल है।
+तिरुपति की धार्मिक परंपरा में इस
+मंदिर का विशेष महत्व है।
+
+<br><br>
+
+मंदिर तिरुपति शहर के प्रमुख
+तीर्थस्थलों में शामिल है और यहाँ
+वर्षभर श्रद्धालु दर्शन के लिए आते हैं।
+
+<br><br>
+
+Sri Govindaraja Swamy Temple is
+dedicated to Lord Govindaraja Swamy
+and holds an important place in the
+religious traditions of Tirupati.
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     DARSHAN
+================================================== -->
+
+<section
+class="info-box"
+id="darshan"
+>
+
+<h2>
+🎟️ Darshan / दर्शन
+</h2>
+
+<p>
+
+मंदिर में दर्शन और विभिन्न धार्मिक
+सेवाओं की व्यवस्था मंदिर प्रबंधन
+द्वारा की जाती है।
+
+</p>
+
+
+<div class="important-box">
+
+<h3>
+⚠️ दर्शन से पहले ध्यान दें
+</h3>
+
+<p>
+
+दर्शन की timing, queue व्यवस्था,
+special darshan, seva और अन्य
+visitor arrangements समय-समय पर
+बदल सकते हैं। यात्रा से पहले
+वर्तमान official information
+check करना बेहतर रहेगा।
+
+</p>
+
+</div>
+
+
+<a
+href="https://www.tirumala.org/"
+target="_blank"
+class="official-btn"
+>
+
+🌐 TTD Official Website
+
+</a>
+
+</section>
+
+
+<!-- ==================================================
+     IMPORTANT INFORMATION
+================================================== -->
+
+<section class="info-box">
+
+<div class="important-box">
+
+<h3>
+⚠️ महत्वपूर्ण सूचना
+</h3>
+
+<p>
+
+दर्शन, पूजा, आरती, प्रवेश, booking,
+seva और अन्य visitor arrangements
+समय-समय पर बदल सकते हैं। यात्रा से
+पहले वर्तमान व्यवस्था की पुष्टि
+करना बेहतर रहेगा।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     TRAVEL
+================================================== -->
+
+<section
+class="info-box"
+id="travel"
+>
+
+<h2>
+🚗 Travel / यात्रा
+</h2>
+
+
+<div class="travel-grid">
+
+
+<div class="travel-card">
+
+<h3>
+🚉 Tirupati Railway Station
+</h3>
+
+<p>
+लगभग <strong>1–2 km</strong>
+</p>
+
+<p>
+⏱️ लगभग 5–10 मिनट*
+</p>
+
+<p>
+💰 Auto/Cab:
+₹50–₹150* लगभग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Sri+Govindaraja+Swamy+Temple%2C+Tirupati&origin=Tirupati+Railway+Station"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+🚌 Tirupati Bus Stand
+</h3>
+
+<p>
+लगभग <strong>1–2 km</strong>
+</p>
+
+<p>
+⏱️ लगभग 5–10 मिनट*
+</p>
+
+<p>
+💰 Auto/Cab:
+₹50–₹150* लगभग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Sri+Govindaraja+Swamy+Temple%2C+Tirupati&origin=Tirupati+Bus+Station"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+✈️ Tirupati Airport
+</h3>
+
+<p>
+लगभग <strong>15–20 km</strong>
+</p>
+
+<p>
+⏱️ लगभग 30–45 मिनट*
+</p>
+
+<p>
+💰 Cab/Taxi:
+₹400–₹900* लगभग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Sri+Govindaraja+Swamy+Temple%2C+Tirupati&origin=Tirupati+Airport"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+🚕 Local Travel
+</h3>
+
+<p>
+Auto / E-Rickshaw
+</p>
+
+<p>
+शहर के अंदर travel के लिए
+convenient option
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Sri+Govindaraja+Swamy+Temple%2C+Tirupati"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- SHARE AUTO -->
+
+<div class="share-auto-box">
+
+<p>
+
+🛺 <strong>Share Auto:</strong>
+अगर route पर Share Auto उपलब्ध हो,
+तो अकेले Auto/Cab की तुलना में
+travel खर्च कम हो सकता है।
+
+</p>
+
+</div>
+
+
+<p class="travel-note">
+
+*दूरी, समय और किराया approximate हैं।
+Traffic, route और local fare के अनुसार
+actual amount अलग हो सकता है।
+
+</p>
+
+</section>
+
+<!-- ==================================================
+     LOCATION & ROUTE
+================================================== -->
+
+<section
+class="info-box"
+id="route"
+>
+
+<h2>
+🗺️ Location & Route / स्थान एवं मार्ग
+</h2>
+
+<div class="location-box">
+
+<p>
+
+श्री गोविंदराज स्वामी मंदिर
+तिरुपति शहर में स्थित है। अपने
+current location से Google Maps
+पर मंदिर तक सीधा route देखा जा
+सकता है।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Sri+Govindaraja+Swamy+Temple%2C+Tirupati"
+target="_blank"
+class="route-btn"
+>
+
+📍 Current Location से Route
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     MORE INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+id="more"
+>
+
+<h2>
+🌐 More Information / अधिक जानकारी
+</h2>
+
+<div class="important-box">
+
+<h3>
+📖 Govindaraja Swamy Temple के बारे में और जानें
+</h3>
+
+<p>
+
+मंदिर का इतिहास, धार्मिक महत्व,
+दर्शन, पूजा, आरती, सेवाएं और
+वर्तमान visitor information के लिए
+नीचे दिए गए button पर अधिक जानकारी
+देख सकते हैं।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Sri+Govindaraja+Swamy+Temple+Tirupati+history+religious+importance"
+target="_blank"
+class="official-btn"
+>
+
+🌐 Chrome में अधिक जानकारी देखें
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     PHOTO GALLERY
+================================================== -->
+
+<section
+class="info-box"
+id="photos"
+>
+
+<h2>
+📸 Photos / फोटो
+</h2>
+
+<p>
+
+श्री गोविंदराज स्वामी मंदिर की
+फोटो देखने के लिए नीचे फोटो पर
+tap कर सकते हैं।
+
+</p>
+
+
+<div class="photo-gallery">
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Sri+Govindaraja+Swamy+Temple+Tirupati"
+target="_blank"
+class="photo-card"
+>
+
+<img
+src="govindaraja-swamy-temple.jpg"
+alt="Sri Govindaraja Swamy Temple Tirupati"
+onerror="this.style.display='none';"
+>
+
+<p>
+🙏 Sri Govindaraja Swamy Temple
+</p>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Govindaraja+Swamy+Temple+Tirupati"
+target="_blank"
+class="photo-more"
+>
+
+📸 और Photos देखें
+
+</a>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     FOOTER INFORMATION
+================================================== -->
+
+<section class="info-box">
+
+<div class="important-box">
+
+<h3>
+🙏 यात्रा सुझाव
+</h3>
+
+<p>
+
+धार्मिक स्थल पर जाते समय स्थानीय
+नियमों, मंदिर की वर्तमान व्यवस्था,
+दर्शन समय और भीड़ की स्थिति का
+ध्यान रखें।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+<p>
+
+© 2026 DESH KHOJ A2Z
+
+</p>
+
+<p>
+
+Travel • Places • Hotels • Food •
+Religion • Routes • Photos
+
+</p>
+
+</footer>
+
+
+<!-- ==================================================
+     SCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
