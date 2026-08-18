@@ -195,13 +195,7 @@ min-height:155px
 
 </head>
 
-
 <body>
-
-
-<!-- ==================================================
-     HEADER
-================================================== -->
 
 <header>
 
@@ -216,7 +210,6 @@ DESH KHOJ A2Z
 <p>
 Best Places in India • भारत के प्रमुख स्थान
 </p>
-
 
 <div class="search">
 
@@ -236,12 +229,7 @@ autocomplete="off"
 </header>
 
 
-<!-- ==================================================
-     MAIN
-================================================== -->
-
 <div class="container">
-
 
 <a
 href="index.html"
@@ -274,10 +262,6 @@ Search in English or Hindi.
 
 </div>
 
-
-<!-- ==================================================
-     CITY GRID
-================================================== -->
 
 <div
 class="grid"
@@ -1662,10 +1646,6 @@ Backwaters • बैकवाटर्स
 </div>
 
 
-<!-- ==================================================
-     NO RESULT
-================================================== -->
-
 <div
 class="no"
 id="no"
@@ -1679,13 +1659,8 @@ No place found / कोई स्थान नहीं मिला
 
 </div>
 
-
 </div>
 
-
-<!-- ==================================================
-     FOOTER
-================================================== -->
 
 <footer>
 
@@ -1710,10 +1685,6 @@ Explore • Travel • Discover
 </footer>
 
 
-<!-- ==================================================
-     JAVASCRIPT
-================================================== -->
-
 <script>
 
 /* ==================================================
@@ -1737,12 +1708,10 @@ this.value.toLowerCase().trim();
 
 let found=0;
 
-
 cards.forEach(card=>{
 
 let data =
 card.dataset.search.toLowerCase();
-
 
 if(data.includes(text)){
 
@@ -1758,7 +1727,6 @@ card.style.display="none";
 
 });
 
-
 no.style.display =
 found ? "none" : "block";
 
@@ -1766,7 +1734,7 @@ found ? "none" : "block";
 
 
 /* ==================================================
-   1 UJJAIN
+   CITY PAGE LINKS
 ================================================== */
 
 cards[0].addEventListener("click",function(){
@@ -1777,10 +1745,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   2 VARANASI
-================================================== */
-
 cards[1].addEventListener("click",function(){
 
 window.location.href =
@@ -1788,10 +1752,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   3 AYODHYA
-================================================== */
 
 cards[2].addEventListener("click",function(){
 
@@ -1801,21 +1761,13 @@ window.location.href =
 });
 
 
-/* ==================================================
-   4 TIRUPATI
-================================================== */
-
 cards[3].addEventListener("click",function(){
 
 window.location.href =
-"tirupati/tirupati.html";
+"tirupati-balaji/tirupati.html";
 
 });
 
-
-/* ==================================================
-   5 KEDARNATH
-================================================== */
 
 cards[4].addEventListener("click",function(){
 
@@ -1825,10 +1777,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   6 BADRINATH
-================================================== */
-
 cards[5].addEventListener("click",function(){
 
 window.location.href =
@@ -1836,10 +1784,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   7 RAMESHWARAM
-================================================== */
 
 cards[6].addEventListener("click",function(){
 
@@ -1849,10 +1793,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   8 SOMNATH
-================================================== */
-
 cards[7].addEventListener("click",function(){
 
 window.location.href =
@@ -1860,10 +1800,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   9 DWARKA
-================================================== */
 
 cards[8].addEventListener("click",function(){
 
@@ -1873,10 +1809,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   10 HARIDWAR
-================================================== */
-
 cards[9].addEventListener("click",function(){
 
 window.location.href =
@@ -1884,10 +1816,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   11 MATHURA
-================================================== */
 
 cards[10].addEventListener("click",function(){
 
@@ -1897,10 +1825,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   12 VRINDAVAN
-================================================== */
-
 cards[11].addEventListener("click",function(){
 
 window.location.href =
@@ -1908,10 +1832,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   13 AMRITSAR
-================================================== */
 
 cards[12].addEventListener("click",function(){
 
@@ -1921,10 +1841,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   14 MADURAI
-================================================== */
-
 cards[13].addEventListener("click",function(){
 
 window.location.href =
@@ -1932,10 +1848,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   15 KANCHIPURAM
-================================================== */
 
 cards[14].addEventListener("click",function(){
 
@@ -1945,10 +1857,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   16 PURI
-================================================== */
-
 cards[15].addEventListener("click",function(){
 
 window.location.href =
@@ -1956,10 +1864,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   17 KONARK
-================================================== */
 
 cards[16].addEventListener("click",function(){
 
@@ -1969,10 +1873,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   18 NASHIK
-================================================== */
-
 cards[17].addEventListener("click",function(){
 
 window.location.href =
@@ -1980,10 +1880,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   19 SHIRDI
-================================================== */
 
 cards[18].addEventListener("click",function(){
 
@@ -1993,10 +1889,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   20 SRISAILAM
-================================================== */
-
 cards[19].addEventListener("click",function(){
 
 window.location.href =
@@ -2004,10 +1896,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   21 AGRA
-================================================== */
 
 cards[20].addEventListener("click",function(){
 
@@ -2017,10 +1905,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   22 JAIPUR
-================================================== */
-
 cards[21].addEventListener("click",function(){
 
 window.location.href =
@@ -2028,10 +1912,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   23 DELHI
-================================================== */
 
 cards[22].addEventListener("click",function(){
 
@@ -2041,10 +1921,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   24 JODHPUR
-================================================== */
-
 cards[23].addEventListener("click",function(){
 
 window.location.href =
@@ -2052,10 +1928,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   25 UDAIPUR
-================================================== */
 
 cards[24].addEventListener("click",function(){
 
@@ -2065,10 +1937,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   26 JAISALMER
-================================================== */
-
 cards[25].addEventListener("click",function(){
 
 window.location.href =
@@ -2076,10 +1944,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   27 HAMPI
-================================================== */
 
 cards[26].addEventListener("click",function(){
 
@@ -2089,10 +1953,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   28 KHAJURAHO
-================================================== */
-
 cards[27].addEventListener("click",function(){
 
 window.location.href =
@@ -2100,10 +1960,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   29 SANCHI
-================================================== */
 
 cards[28].addEventListener("click",function(){
 
@@ -2113,10 +1969,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   30 SAMBHAJINAGAR
-================================================== */
-
 cards[29].addEventListener("click",function(){
 
 window.location.href =
@@ -2124,10 +1976,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   31 MANALI
-================================================== */
 
 cards[30].addEventListener("click",function(){
 
@@ -2137,10 +1985,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   32 SHIMLA
-================================================== */
-
 cards[31].addEventListener("click",function(){
 
 window.location.href =
@@ -2148,10 +1992,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   33 SRINAGAR
-================================================== */
 
 cards[32].addEventListener("click",function(){
 
@@ -2161,10 +2001,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   34 GULMARG
-================================================== */
-
 cards[33].addEventListener("click",function(){
 
 window.location.href =
@@ -2172,10 +2008,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   35 LEH
-================================================== */
 
 cards[34].addEventListener("click",function(){
 
@@ -2185,10 +2017,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   36 GANGTOK
-================================================== */
-
 cards[35].addEventListener("click",function(){
 
 window.location.href =
@@ -2196,10 +2024,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   37 DARJEELING
-================================================== */
 
 cards[36].addEventListener("click",function(){
 
@@ -2209,10 +2033,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   38 MUSSOORIE
-================================================== */
-
 cards[37].addEventListener("click",function(){
 
 window.location.href =
@@ -2220,10 +2040,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   39 NAINITAL
-================================================== */
 
 cards[38].addEventListener("click",function(){
 
@@ -2233,10 +2049,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   40 MUNNAR
-================================================== */
-
 cards[39].addEventListener("click",function(){
 
 window.location.href =
@@ -2244,10 +2056,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   41 GOA
-================================================== */
 
 cards[40].addEventListener("click",function(){
 
@@ -2257,10 +2065,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   42 ANDAMAN
-================================================== */
-
 cards[41].addEventListener("click",function(){
 
 window.location.href =
@@ -2268,10 +2072,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   43 LAKSHADWEEP
-================================================== */
 
 cards[42].addEventListener("click",function(){
 
@@ -2281,10 +2081,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   44 OOTY
-================================================== */
-
 cards[43].addEventListener("click",function(){
 
 window.location.href =
@@ -2292,10 +2088,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   45 COORG
-================================================== */
 
 cards[44].addEventListener("click",function(){
 
@@ -2305,10 +2097,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   46 WAYANAD
-================================================== */
-
 cards[45].addEventListener("click",function(){
 
 window.location.href =
@@ -2316,10 +2104,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   47 JIM CORBETT
-================================================== */
 
 cards[46].addEventListener("click",function(){
 
@@ -2329,10 +2113,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   48 RANTHAMBORE
-================================================== */
-
 cards[47].addEventListener("click",function(){
 
 window.location.href =
@@ -2340,10 +2120,6 @@ window.location.href =
 
 });
 
-
-/* ==================================================
-   49 GIR
-================================================== */
 
 cards[48].addEventListener("click",function(){
 
@@ -2353,10 +2129,6 @@ window.location.href =
 });
 
 
-/* ==================================================
-   50 KERALA
-================================================== */
-
 cards[49].addEventListener("click",function(){
 
 window.location.href =
@@ -2365,7 +2137,6 @@ window.location.href =
 });
 
 </script>
-
 
 </body>
 
