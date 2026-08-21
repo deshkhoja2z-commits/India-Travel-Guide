@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Agra Fort | आगरा किला - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   PAGE BOX
+================================================== */
+
+.info-box{
+
+background:#ffffff;
+
+border-radius:25px;
+
+padding:30px;
+
+margin:25px 0;
+
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+
+scroll-margin-top:90px;
+
+}
+
+.info-box h2{
+
+font-size:32px;
+
+line-height:1.25;
+
+margin-bottom:18px;
+
+color:#202124;
+
+}
+
+.info-box p{
+
+font-size:20px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+
+
+/* ==================================================
+   SECTION TABS
+================================================== */
+
+.section-tabs{
+
+display:flex;
+
+gap:8px;
+
+overflow-x:auto;
+
+padding:10px 2px 14px;
+
+margin:10px 0 5px;
+
+position:sticky;
+
+top:0;
+
+z-index:50;
+
+background:#f4f7f6;
+
+scroll-behavior:smooth;
+
+-webkit-overflow-scrolling:touch;
+
+}
+
+.section-tabs::-webkit-scrollbar{
+
+height:4px;
+
+}
+
+.section-tabs::-webkit-scrollbar-thumb{
+
+background:#bbb;
+
+border-radius:10px;
+
+}
+
+.section-tabs a{
+
+flex:0 0 auto;
+
+display:block;
+
+padding:10px 14px;
+
+background:white;
+
+color:#202124;
+
+text-decoration:none;
+
+border-radius:14px;
+
+font-size:14px;
+
+font-weight:bold;
+
+border:1px solid #e5e7eb;
+
+box-shadow:0 3px 10px rgba(0,0,0,.06);
+
+white-space:nowrap;
+
+}
+
+.section-tabs a:active{
+
+transform:scale(.95);
+
+background:#fff7e6;
+
+}
+
+.section-tabs a:hover{
+
+background:#fff7e6;
+
+}
+
+
+/* ==================================================
+   IMPORTANT BOX
+================================================== */
+
+.important-box{
+
+background:#fff8e7;
+
+border-left:6px solid #f59e0b;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+.important-box h3{
+
+font-size:22px;
+
+margin-bottom:8px;
+
+}
+
+.important-box p{
+
+font-size:18px;
+
+margin:0;
+
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.official-btn{
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:12px 18px;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+}
+
+.official-btn:active{
+
+transform:scale(.97);
+
+}
+
+
+/* ==================================================
+   NEARBY GRID
+================================================== */
+
+.nearby-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.nearby-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:22px 12px;
+
+text-align:center;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.nearby-card:nth-child(2){
+
+border-top-color:#2196d2;
+
+}
+
+.nearby-card:nth-child(3){
+
+border-top-color:#f59e0b;
+
+}
+
+.nearby-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.nearby-icon{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.nearby-card h3{
+
+font-size:20px;
+
+margin:8px 0;
+
+}
+
+.nearby-card p{
+
+font-size:16px;
+
+margin:5px 0 14px;
+
+color:#666;
+
+}
+
+
+/* ==================================================
+   ROUTE BUTTON
+================================================== */
+
+.route-btn{
+
+display:inline-block;
+
+background:#16a34a;
+
+color:white;
+
+text-decoration:none;
+
+padding:10px 13px;
+
+border-radius:11px;
+
+font-size:13px;
+
+font-weight:bold;
+
+}
+
+.route-btn:active{
+
+transform:scale(.96);
+
+}
+
+
+/* ==================================================
+   HOTEL GRID
+================================================== */
+
+.hotel-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.hotel-card{
+
+display:block;
+
+background:#f8f9fa;
+
+color:#202124;
+
+text-decoration:none;
+
+text-align:center;
+
+border-radius:20px;
+
+padding:22px 12px;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.hotel-card:nth-child(2){
+
+border-top-color:#f59e0b;
+
+}
+
+.hotel-card:nth-child(3){
+
+border-top-color:#2196d2;
+
+}
+
+.hotel-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.hotel-card:active{
+
+transform:scale(.97);
+
+}
+
+.hotel-icon{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.hotel-card h3{
+
+font-size:20px;
+
+margin:8px 0;
+
+}
+
+.hotel-card p{
+
+font-size:15px;
+
+margin:5px 0;
+
+color:#666;
+
+}
+
+.hotel-link{
+
+display:inline-block;
+
+margin-top:9px;
+
+padding:8px 11px;
+
+border-radius:10px;
+
+background:#1976d2;
+
+color:white;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+   HOTEL BOX
+================================================== */
+
+.hotel-box{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+   RESTAURANTS
+================================================== */
+
+.restaurant-box{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.restaurant-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:20px 12px;
+
+text-align:center;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.restaurant-card:nth-child(2){
+
+border-top-color:#f59e0b;
+
+}
+
+.restaurant-card:nth-child(3){
+
+border-top-color:#2196d2;
+
+}
+
+.restaurant-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.restaurant-card h3{
+
+font-size:19px;
+
+margin:8px 0;
+
+}
+
+.restaurant-card p{
+
+font-size:15px;
+
+color:#666;
+
+margin:5px 0 12px;
+
+}
+
+.restaurant-btn{
+
+display:inline-block;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+padding:9px 11px;
+
+border-radius:10px;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+   TRAVEL GRID
+================================================== */
+
+.travel-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.travel-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:22px 16px;
+
+border-top:5px solid #2196d2;
+
+}
+
+.travel-card h3{
+
+font-size:20px;
+
+margin-bottom:12px;
+
+}
+
+.travel-card p{
+
+font-size:17px;
+
+margin:7px 0;
+
+}
+
+
+/* ==================================================
+   SMALL TRAVEL NOTES
+================================================== */
+
+.share-auto-box{
+
+margin-top:20px;
+
+padding:15px 18px;
+
+background:#f0f7ff;
+
+border-left:5px solid #2196d2;
+
+border-radius:15px;
+
+}
+
+.share-auto-box p{
+
+font-size:17px;
+
+margin:0;
+
+}
+
+.travel-note{
+
+margin-top:15px;
+
+padding:14px 18px;
+
+background:#f0fff4;
+
+border-left:5px solid #16a34a;
+
+border-radius:15px;
+
+font-size:16px !important;
+
+}
+
+
+/* ==================================================
+   LOCATION
+================================================== */
+
+.location-box{
+
+background:#f0f7ff;
+
+border-left:6px solid #1976d2;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+   PHOTO GALLERY
+================================================== */
+
+.photo-gallery{
+
+margin-top:20px;
+
+}
+
+.photo-card{
+
+display:block;
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+overflow:hidden;
+
+text-decoration:none;
+
+color:#202124;
+
+box-shadow:0 5px 16px rgba(0,0,0,.06);
+
+border:1px solid #e5e7eb;
+
+}
+
+.photo-placeholder{
+
+height:230px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:90px;
+
+background:#eef7fa;
+
+}
+
+.photo-card p{
+
+font-size:18px;
+
+padding:15px;
+
+margin:0;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+.photo-more{
+
+display:block;
+
+margin-top:18px;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+padding:13px;
+
+border-radius:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+.info-box{
+
+padding:22px 18px;
+
+border-radius:22px;
+
+}
+
+.info-box h2{
+
+font-size:28px;
+
+line-height:1.3;
+
+}
+
+.info-box p{
+
+font-size:18px;
+
+}
+
+
+/* TABS */
+
+.section-tabs{
+
+gap:7px;
+
+padding:9px 2px 13px;
+
+}
+
+.section-tabs a{
+
+font-size:12px;
+
+padding:9px 11px;
+
+border-radius:12px;
+
+}
+
+
+/* NEARBY */
+
+.nearby-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.nearby-card{
+
+padding:18px 9px;
+
+}
+
+.nearby-card h3{
+
+font-size:18px;
+
+}
+
+.nearby-card p{
+
+font-size:15px;
+
+}
+
+.route-btn{
+
+font-size:11px;
+
+padding:9px 8px;
+
+}
+
+
+/* HOTEL */
+
+.hotel-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.hotel-card{
+
+padding:18px 8px;
+
+}
+
+.hotel-icon{
+
+font-size:34px;
+
+}
+
+.hotel-card h3{
+
+font-size:17px;
+
+}
+
+.hotel-card p{
+
+font-size:14px;
+
+}
+
+.hotel-link{
+
+font-size:11px;
+
+padding:8px 8px;
+
+}
+
+
+/* RESTAURANT */
+
+.restaurant-box{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.restaurant-card{
+
+padding:17px 8px;
+
+}
+
+.restaurant-card h3{
+
+font-size:17px;
+
+}
+
+.restaurant-card p{
+
+font-size:14px;
+
+}
+
+.restaurant-btn{
+
+font-size:10px;
+
+padding:8px 7px;
+
+}
+
+
+/* TRAVEL */
+
+.travel-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.travel-card{
+
+padding:16px 10px;
+
+}
+
+.travel-card h3{
+
+font-size:17px;
+
+}
+
+.travel-card p{
+
+font-size:15px;
+
+}
+
+
+/* PHOTO */
+
+.photo-placeholder{
+
+height:210px;
+
+font-size:80px;
+
+}
+
+}
+
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.nearby-grid,
+.hotel-grid,
+.restaurant-box,
+.travel-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.info-box h2{
+
+font-size:26px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🏰
+</div>
+
+<h1>
+Agra Fort
+</h1>
+
+<p>
+आगरा किला • आगरा • उत्तर प्रदेश
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<!-- ==================================================
+     BACK
+================================================== -->
+
+<a
+href="agra.html"
+class="back"
+>
+
+← Agra / आगरा
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🏰 Agra Fort
+</h2>
+
+<p>
+
+आगरा किला उत्तर प्रदेश के आगरा शहर
+में यमुना नदी के किनारे स्थित भारत
+का एक प्रसिद्ध ऐतिहासिक किला है।
+लाल बलुआ पत्थर से निर्मित यह विशाल
+किला मुगलकालीन वास्तुकला और इतिहास
+के लिए प्रसिद्ध है।
+
+<br><br>
+
+Agra Fort is a magnificent historical
+fort located in Agra, Uttar Pradesh.
+Built mainly with red sandstone,
+the fort is an important example of
+Mughal architecture and Indian history.
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK TABS
+================================================== -->
+
+<div class="section-tabs">
+
+<a href="#nearby">
+📍 Nearby
+</a>
+
+<a href="#hotels">
+🏨 Hotels
+</a>
+
+<a href="#food">
+🍽️ Food
+</a>
+
+<a href="#history">
+📖 History
+</a>
+
+<a href="#travel">
+🚗 Travel
+</a>
+
+<a href="#route">
+🗺️ Route
+</a>
+
+<a href="#more">
+🌐 More
+</a>
+
+<a href="#photos">
+📸 Photos
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     NEARBY
+================================================== -->
+
+<section
+class="info-box"
+id="nearby"
+>
+
+<h2>
+📍 Nearby Places / आसपास के स्थान
+</h2>
+
+<div class="nearby-grid">
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🕌
+</div>
+
+<h3>
+Taj Mahal
+</h3>
+
+<p>
+ताजमहल
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Taj+Mahal%2C+Agra"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🏰
+</div>
+
+<h3>
+Agra Fort
+</h3>
+
+<p>
+आगरा किला
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Agra+Fort"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🏛️
+</div>
+
+<h3>
+Itmad-ud-Daulah
+</h3>
+
+<p>
+एतमाद-उद-दौला
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Itmad+ud+Daulah%2C+Agra"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🌳
+</div>
+
+<h3>
+Mehtab Bagh
+</h3>
+
+<p>
+मेहताब बाग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mehtab+Bagh%2C+Agra"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     HOTELS
+================================================== -->
+
+<section
+class="info-box"
+id="hotels"
+>
+
+<h2>
+🏨 Hotels / होटल
+</h2>
+
+<p>
+
+Agra Fort घूमने वाले यात्रियों के लिए
+आगरा शहर में budget, standard और
+premium hotels के कई विकल्प मिल सकते
+हैं। Hotel चुनते समय fort और अन्य
+tourist places से distance check करें।
+
+</p>
+
+
+<div class="hotel-grid">
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Agra+Fort"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+💰
+</div>
+
+<h3>
+Budget Hotels
+</h3>
+
+<p>
+बजट होटल
+</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+near+Agra+Fort"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+⭐
+</div>
+
+<h3>
+Best Hotels
+</h3>
+
+<p>
+अच्छे होटल
+</p>
+
+<span class="hotel-link">
+🏨 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=guest+house+near+Agra+Fort"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+🏠
+</div>
+
+<h3>
+Guest Houses
+</h3>
+
+<p>
+गेस्ट हाउस
+</p>
+
+<span class="hotel-link">
+🏠 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Agra+Fort"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+👑
+</div>
+
+<h3>
+Luxury Hotels
+</h3>
+
+<p>
+प्रीमियम होटल
+</p>
+
+<span class="hotel-link">
+⭐ देखें
+</span>
+
+</a>
+
+
+</div>
+
+
+<div class="hotel-box">
+
+<p>
+
+Booking से पहले hotel price, reviews,
+parking, distance और current
+availability check करना बेहतर रहेगा।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     RESTAURANTS
+================================================== -->
+
+<section
+class="info-box"
+id="food"
+>
+
+<h2>
+🍽️ Restaurants / रेस्टोरेंट
+</h2>
+
+<p>
+
+Agra Fort के आसपास और आगरा शहर में
+North Indian, Mughlai, vegetarian
+food और cafes के कई विकल्प मिल सकते
+हैं। Local food try करने से पहले
+reviews और hygiene जरूर check करें।
+
+</p>
+
+
+<div class="restaurant-box">
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+⭐
+</div>
+
+<h3>
+Top Rated
+</h3>
+
+<p>
+लोकप्रिय restaurants
+</p>
+
+<a
+href="https://www.google.com/maps/search/top+rated+restaurants+near+Agra+Fort"
+target="_blank"
+class="restaurant-btn"
+>
+
+⭐ देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🥗
+</div>
+
+<h3>
+Vegetarian
+</h3>
+
+<p>
+शाकाहारी भोजन
+</p>
+
+<a
+href="https://www.google.com/maps/search/vegetarian+restaurants+near+Agra+Fort"
+target="_blank"
+class="restaurant-btn"
+>
+
+🥗 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🍛
+</div>
+
+<h3>
+Mughlai Food
+</h3>
+
+<p>
+मुगलई भोजन
+</p>
+
+<a
+href="https://www.google.com/maps/search/Mughlai+restaurants+near+Agra+Fort"
+target="_blank"
+class="restaurant-btn"
+>
+
+🍛 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+☕
+</div>
+
+<h3>
+Cafes
+</h3>
+
+<p>
+Nearby cafes
+</p>
+
+<a
+href="https://www.google.com/maps/search/cafes+near+Agra+Fort"
+target="_blank"
+class="restaurant-btn"
+>
+
+☕ देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+  <!-- ==================================================
+     HISTORY
+================================================== -->
+
+<section
+class="info-box"
+id="history"
+>
+
+<h2>
+📖 History / इतिहास
+</h2>
+
+<p>
+
+आगरा किले का इतिहास बहुत पुराना है।
+मुगल सम्राट अकबर ने 16वीं शताब्दी
+में इस किले का बड़े स्तर पर पुनर्निर्माण
+करवाया। बाद में जहाँगीर और शाहजहाँ
+के समय में किले के अंदर कई महत्वपूर्ण
+महल, मस्जिद और संगमरमर की इमारतें
+बनाई गईं।
+
+<br><br>
+
+The Agra Fort was extensively rebuilt
+during the reign of Mughal Emperor
+Akbar in the 16th century. Later,
+Jahangir and Shah Jahan added several
+palaces, halls, mosques and marble
+structures to the complex.
+
+</p>
+
+
+<div class="important-box">
+
+<h3>
+🏛️ UNESCO World Heritage Site
+</h3>
+
+<p>
+
+आगरा किला UNESCO World Heritage Site
+है और मुगलकालीन वास्तुकला तथा भारतीय
+इतिहास की महत्वपूर्ण धरोहरों में
+शामिल है।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Agra+Fort+UNESCO+World+Heritage+Site"
+target="_blank"
+class="official-btn"
+>
+
+🌐 अधिक जानकारी देखें
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     FORT HIGHLIGHTS
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<h2>
+🏰 Fort Highlights / किले की खास जगहें
+</h2>
+
+<p>
+
+आगरा किले के विशाल परिसर में कई
+ऐतिहासिक और स्थापत्य महत्व की
+इमारतें देखने को मिलती हैं।
+
+<br><br>
+
+इनमें <strong>जहाँगीरी महल</strong>,
+<strong>खास महल</strong>,
+<strong>दीवान-ए-आम</strong>,
+<strong>दीवान-ए-खास</strong>,
+<strong>मोती मस्जिद</strong> और
+<strong>मुसम्मन बुर्ज</strong> जैसी
+महत्वपूर्ण संरचनाएँ शामिल हैं।
+
+<br><br>
+
+The fort complex contains important
+structures such as Jahangiri Mahal,
+Khas Mahal, Diwan-i-Aam, Diwan-i-Khas,
+Moti Masjid and Musamman Burj.
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     TAJ MAHAL VIEW
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<h2>
+🕌 Taj Mahal View / ताजमहल का दृश्य
+</h2>
+
+<p>
+
+आगरा किले के कुछ हिस्सों से यमुना
+नदी की ओर और ताजमहल की दिशा में
+सुंदर दृश्य दिखाई दे सकते हैं।
+
+<br><br>
+
+इसी कारण Agra Fort और Taj Mahal
+को एक साथ Agra sightseeing itinerary
+में शामिल करना यात्रियों के लिए
+काफी सुविधाजनक रहता है।
+
+</p>
+
+<div class="important-box">
+
+<h3>
+📸 Beautiful View
+</h3>
+
+<p>
+
+किले से दिखाई देने वाला दृश्य
+weather, visibility और visitor
+access वाले हिस्से पर निर्भर कर
+सकता है।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     ENTRY & TICKETS
+================================================== -->
+
+<section
+class="info-box"
+id="tickets"
+>
+
+<h2>
+🎟️ Entry & Tickets / प्रवेश एवं टिकट
+</h2>
+
+<p>
+
+आगरा किले में प्रवेश के लिए ticket
+व्यवस्था लागू होती है। भारतीय और
+विदेशी visitors के लिए ticket
+category अलग हो सकती है।
+
+<br><br>
+
+Ticket price, entry rules, opening
+days, visiting hours और अन्य
+व्यवस्थाएँ समय के साथ बदल सकती हैं।
+इसलिए यात्रा से पहले current
+information check करना बेहतर रहेगा।
+
+</p>
+
+
+<div class="important-box">
+
+<h3>
+⚠️ टिकट लेने से पहले ध्यान दें
+</h3>
+
+<p>
+
+Current ticket price, opening time,
+holiday arrangements और entry rules
+की जानकारी official ASI information
+से verify करें।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=official+Agra+Fort+ticket+ASI"
+target="_blank"
+class="official-btn"
+>
+
+🎟️ Current Ticket Information
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     BEST TIME
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<h2>
+🌤️ Best Time to Visit / घूमने का सही समय
+</h2>
+
+<p>
+
+आगरा घूमने के लिए सर्दियों का मौसम
+काफी सुविधाजनक हो सकता है क्योंकि
+दिन के समय मौसम अपेक्षाकृत pleasant
+रहता है।
+
+<br><br>
+
+गर्मियों में दिन के समय तापमान
+काफी अधिक हो सकता है। यदि गर्मी
+के मौसम में यात्रा कर रहे हैं तो
+पानी, cap और comfortable footwear
+का ध्यान रखें।
+
+<br><br>
+
+सुबह या दिन के अपेक्षाकृत ठंडे
+समय में sightseeing करना सुविधाजनक
+रह सकता है।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     TRAVEL
+================================================== -->
+
+<section
+class="info-box"
+id="travel"
+>
+
+<h2>
+🚗 Travel / यात्रा
+</h2>
+
+
+<div class="travel-grid">
+
+
+<div class="travel-card">
+
+<h3>
+🚉 Agra Cantt Railway Station
+</h3>
+
+<p>
+आगरा का प्रमुख रेलवे स्टेशन
+</p>
+
+<p>
+🚕 Auto / Cab / Local Transport
+</p>
+
+<p>
+⏱️ समय traffic के अनुसार
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Agra+Fort&origin=Agra+Cantt+Railway+Station"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+🚉 Agra Fort Railway Station
+</h3>
+
+<p>
+Agra Fort के नजदीक रेलवे स्टेशन
+</p>
+
+<p>
+🚕 Local transport उपलब्ध हो सकता है
+</p>
+
+<p>
+⏱️ समय route के अनुसार
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Agra+Fort&origin=Agra+Fort+Railway+Station"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+✈️ Agra Airport
+</h3>
+
+<p>
+आगरा एयरपोर्ट
+</p>
+
+<p>
+🚕 Cab / Taxi से किले तक
+</p>
+
+<p>
+⏱️ समय traffic के अनुसार
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Agra+Fort&origin=Agra+Airport"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+🚕 Local Travel
+</h3>
+
+<p>
+Auto / E-Rickshaw / Cab
+</p>
+
+<p>
+आगरा शहर में local transport के
+कई विकल्प मिल सकते हैं।
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Agra+Fort"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="share-auto-box">
+
+<p>
+
+🚕 <strong>Local Travel:</strong>
+आगरा में traffic और parking की
+स्थिति समय के अनुसार बदल सकती है।
+किले की यात्रा से पहले current
+local transport और parking
+arrangements check करना बेहतर रहेगा।
+
+</p>
+
+</div>
+
+
+<p class="travel-note">
+
+*Travel time और local fare traffic,
+route, मौसम और उपलब्ध transport के
+अनुसार अलग हो सकते हैं।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     LOCATION & ROUTE
+================================================== -->
+
+<section
+class="info-box"
+id="route"
+>
+
+<h2>
+🗺️ Location & Route / स्थान एवं मार्ग
+</h2>
+
+<div class="location-box">
+
+<p>
+
+Agra Fort आगरा शहर में यमुना नदी
+के किनारे स्थित है। अपने current
+location से नीचे दिए गए button पर
+click करके Google Maps में सीधे
+route देखा जा सकता है।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Agra+Fort"
+target="_blank"
+class="route-btn"
+>
+
+📍 Current Location से Route
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     IMPORTANT TRAVEL INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<div class="important-box">
+
+<h3>
+⚠️ महत्वपूर्ण यात्रा सूचना
+</h3>
+
+<p>
+
+आगरा किले में प्रवेश के समय security
+checking हो सकती है। Restricted items
+ले जाने से बचें और monument के
+current security rules का पालन करें।
+
+यात्रा से पहले opening time, ticket,
+weather और local arrangements की
+current जानकारी check करना बेहतर रहेगा।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     MORE INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+id="more"
+>
+
+<h2>
+🌐 More Information / अधिक जानकारी
+</h2>
+
+<div class="important-box">
+
+<h3>
+📖 Agra Fort के बारे में और जानें
+</h3>
+
+<p>
+
+आगरा किले का इतिहास, architecture,
+महल, मस्जिद, entry information,
+location और travel information के
+बारे में अधिक जानकारी देखने के लिए
+नीचे दिए गए button पर Chrome में
+search कर सकते हैं।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Agra+Fort+history+architecture+ticket+timing"
+target="_blank"
+class="official-btn"
+>
+
+🌐 Chrome में अधिक जानकारी देखें
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     PHOTO
+================================================== -->
+
+<section
+class="info-box"
+id="photos"
+>
+
+<h2>
+📸 Agra Fort Photo / आगरा किले की तस्वीर
+</h2>
+
+<p>
+
+Agra Fort की photos देखने के लिए
+नीचे photo पर click करें।
+
+</p>
+
+
+<div class="photo-gallery">
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Agra+Fort+Agra"
+target="_blank"
+class="photo-card"
+>
+
+<div class="photo-placeholder">
+
+🏰
+
+</div>
+
+<p>
+
+🏰 Agra Fort • Agra
+
+</p>
+
+</a>
+
+</div>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Agra+Fort+Agra"
+target="_blank"
+class="photo-more"
+>
+
+📸 Chrome में और Photos देखें
+
+</a>
+
+</section>
+
+
+<!-- ==================================================
+     DESH KHOJ A2Z INFORMATION
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🇮🇳 DESH KHOJ A2Z Travel Information
+</h2>
+
+<p>
+
+DESH KHOJ A2Z का उद्देश्य यात्रियों को
+भारत के अलग-अलग स्थानों के लिए
+सरल, उपयोगी और practical travel
+information एक ही जगह उपलब्ध कराना है।
+
+<br><br>
+
+Our goal is to provide simple, useful
+and practical travel information for
+travellers exploring India.
+
+<br><br>
+
+Place information, local details,
+reviews और उपलब्ध जानकारी के आधार पर
+pages को समय-समय पर update किया जाएगा।
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     COMMON JAVASCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

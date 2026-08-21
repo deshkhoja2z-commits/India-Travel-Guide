@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Taj Mahal | ताजमहल - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   PAGE BOX
+================================================== */
+
+.info-box{
+
+background:#ffffff;
+
+border-radius:25px;
+
+padding:30px;
+
+margin:25px 0;
+
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+
+scroll-margin-top:90px;
+
+}
+
+.info-box h2{
+
+font-size:32px;
+
+line-height:1.25;
+
+margin-bottom:18px;
+
+color:#202124;
+
+}
+
+.info-box p{
+
+font-size:20px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+
+
+/* ==================================================
+   SECTION TABS
+================================================== */
+
+.section-tabs{
+
+display:flex;
+
+gap:8px;
+
+overflow-x:auto;
+
+padding:10px 2px 14px;
+
+margin:10px 0 5px;
+
+position:sticky;
+
+top:0;
+
+z-index:50;
+
+background:#f4f7f6;
+
+scroll-behavior:smooth;
+
+-webkit-overflow-scrolling:touch;
+
+}
+
+.section-tabs::-webkit-scrollbar{
+
+height:4px;
+
+}
+
+.section-tabs::-webkit-scrollbar-thumb{
+
+background:#bbb;
+
+border-radius:10px;
+
+}
+
+.section-tabs a{
+
+flex:0 0 auto;
+
+display:block;
+
+padding:10px 14px;
+
+background:white;
+
+color:#202124;
+
+text-decoration:none;
+
+border-radius:14px;
+
+font-size:14px;
+
+font-weight:bold;
+
+border:1px solid #e5e7eb;
+
+box-shadow:0 3px 10px rgba(0,0,0,.06);
+
+white-space:nowrap;
+
+}
+
+.section-tabs a:active{
+
+transform:scale(.95);
+
+background:#fff7e6;
+
+}
+
+.section-tabs a:hover{
+
+background:#fff7e6;
+
+}
+
+
+/* ==================================================
+   IMPORTANT BOX
+================================================== */
+
+.important-box{
+
+background:#fff8e7;
+
+border-left:6px solid #f59e0b;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+.important-box h3{
+
+font-size:22px;
+
+margin-bottom:8px;
+
+}
+
+.important-box p{
+
+font-size:18px;
+
+margin:0;
+
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.official-btn{
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:12px 18px;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+}
+
+.official-btn:active{
+
+transform:scale(.97);
+
+}
+
+
+/* ==================================================
+   NEARBY GRID
+================================================== */
+
+.nearby-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.nearby-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:22px 12px;
+
+text-align:center;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.nearby-card:nth-child(2){
+
+border-top-color:#2196d2;
+
+}
+
+.nearby-card:nth-child(3){
+
+border-top-color:#f59e0b;
+
+}
+
+.nearby-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.nearby-icon{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.nearby-card h3{
+
+font-size:20px;
+
+margin:8px 0;
+
+}
+
+.nearby-card p{
+
+font-size:16px;
+
+margin:5px 0 14px;
+
+color:#666;
+
+}
+
+
+/* ==================================================
+   ROUTE BUTTON
+================================================== */
+
+.route-btn{
+
+display:inline-block;
+
+background:#16a34a;
+
+color:white;
+
+text-decoration:none;
+
+padding:10px 13px;
+
+border-radius:11px;
+
+font-size:13px;
+
+font-weight:bold;
+
+}
+
+.route-btn:active{
+
+transform:scale(.96);
+
+}
+
+
+/* ==================================================
+   HOTEL GRID
+================================================== */
+
+.hotel-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.hotel-card{
+
+display:block;
+
+background:#f8f9fa;
+
+color:#202124;
+
+text-decoration:none;
+
+text-align:center;
+
+border-radius:20px;
+
+padding:22px 12px;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.hotel-card:nth-child(2){
+
+border-top-color:#f59e0b;
+
+}
+
+.hotel-card:nth-child(3){
+
+border-top-color:#2196d2;
+
+}
+
+.hotel-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.hotel-card:active{
+
+transform:scale(.97);
+
+}
+
+.hotel-icon{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.hotel-card h3{
+
+font-size:20px;
+
+margin:8px 0;
+
+}
+
+.hotel-card p{
+
+font-size:15px;
+
+margin:5px 0;
+
+color:#666;
+
+}
+
+.hotel-link{
+
+display:inline-block;
+
+margin-top:9px;
+
+padding:8px 11px;
+
+border-radius:10px;
+
+background:#1976d2;
+
+color:white;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+   HOTEL BOX
+================================================== */
+
+.hotel-box{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+   RESTAURANTS
+================================================== */
+
+.restaurant-box{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.restaurant-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:20px 12px;
+
+text-align:center;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.restaurant-card:nth-child(2){
+
+border-top-color:#f59e0b;
+
+}
+
+.restaurant-card:nth-child(3){
+
+border-top-color:#2196d2;
+
+}
+
+.restaurant-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.restaurant-card h3{
+
+font-size:19px;
+
+margin:8px 0;
+
+}
+
+.restaurant-card p{
+
+font-size:15px;
+
+color:#666;
+
+margin:5px 0 12px;
+
+}
+
+.restaurant-btn{
+
+display:inline-block;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+padding:9px 11px;
+
+border-radius:10px;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+   TRAVEL GRID
+================================================== */
+
+.travel-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.travel-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:22px 16px;
+
+border-top:5px solid #2196d2;
+
+}
+
+.travel-card h3{
+
+font-size:20px;
+
+margin-bottom:12px;
+
+}
+
+.travel-card p{
+
+font-size:17px;
+
+margin:7px 0;
+
+}
+
+
+/* ==================================================
+   SMALL TRAVEL NOTES
+================================================== */
+
+.share-auto-box{
+
+margin-top:20px;
+
+padding:15px 18px;
+
+background:#f0f7ff;
+
+border-left:5px solid #2196d2;
+
+border-radius:15px;
+
+}
+
+.share-auto-box p{
+
+font-size:17px;
+
+margin:0;
+
+}
+
+.travel-note{
+
+margin-top:15px;
+
+padding:14px 18px;
+
+background:#f0fff4;
+
+border-left:5px solid #16a34a;
+
+border-radius:15px;
+
+font-size:16px !important;
+
+}
+
+
+/* ==================================================
+   LOCATION
+================================================== */
+
+.location-box{
+
+background:#f0f7ff;
+
+border-left:6px solid #1976d2;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+   PHOTO GALLERY
+================================================== */
+
+.photo-gallery{
+
+margin-top:20px;
+
+}
+
+.photo-card{
+
+display:block;
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+overflow:hidden;
+
+text-decoration:none;
+
+color:#202124;
+
+box-shadow:0 5px 16px rgba(0,0,0,.06);
+
+border:1px solid #e5e7eb;
+
+}
+
+.photo-placeholder{
+
+height:230px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:90px;
+
+background:#eef7fa;
+
+}
+
+.photo-card p{
+
+font-size:18px;
+
+padding:15px;
+
+margin:0;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+.photo-more{
+
+display:block;
+
+margin-top:18px;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+padding:13px;
+
+border-radius:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+.info-box{
+
+padding:22px 18px;
+
+border-radius:22px;
+
+}
+
+.info-box h2{
+
+font-size:28px;
+
+line-height:1.3;
+
+}
+
+.info-box p{
+
+font-size:18px;
+
+}
+
+
+/* TABS */
+
+.section-tabs{
+
+gap:7px;
+
+padding:9px 2px 13px;
+
+}
+
+.section-tabs a{
+
+font-size:12px;
+
+padding:9px 11px;
+
+border-radius:12px;
+
+}
+
+
+/* NEARBY */
+
+.nearby-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.nearby-card{
+
+padding:18px 9px;
+
+}
+
+.nearby-card h3{
+
+font-size:18px;
+
+}
+
+.nearby-card p{
+
+font-size:15px;
+
+}
+
+.route-btn{
+
+font-size:11px;
+
+padding:9px 8px;
+
+}
+
+
+/* HOTEL */
+
+.hotel-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.hotel-card{
+
+padding:18px 8px;
+
+}
+
+.hotel-icon{
+
+font-size:34px;
+
+}
+
+.hotel-card h3{
+
+font-size:17px;
+
+}
+
+.hotel-card p{
+
+font-size:14px;
+
+}
+
+.hotel-link{
+
+font-size:11px;
+
+padding:8px 8px;
+
+}
+
+
+/* RESTAURANT */
+
+.restaurant-box{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.restaurant-card{
+
+padding:17px 8px;
+
+}
+
+.restaurant-card h3{
+
+font-size:17px;
+
+}
+
+.restaurant-card p{
+
+font-size:14px;
+
+}
+
+.restaurant-btn{
+
+font-size:10px;
+
+padding:8px 7px;
+
+}
+
+
+/* TRAVEL */
+
+.travel-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.travel-card{
+
+padding:16px 10px;
+
+}
+
+.travel-card h3{
+
+font-size:17px;
+
+}
+
+.travel-card p{
+
+font-size:15px;
+
+}
+
+
+/* PHOTO */
+
+.photo-placeholder{
+
+height:210px;
+
+font-size:80px;
+
+}
+
+}
+
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.nearby-grid,
+.hotel-grid,
+.restaurant-box,
+.travel-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.info-box h2{
+
+font-size:26px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🕌
+</div>
+
+<h1>
+Taj Mahal
+</h1>
+
+<p>
+ताजमहल • आगरा • उत्तर प्रदेश
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<!-- ==================================================
+     BACK
+================================================== -->
+
+<a
+href="agra.html"
+class="back"
+>
+
+← Agra / आगरा
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🕌 Taj Mahal
+</h2>
+
+<p>
+
+ताजमहल उत्तर प्रदेश के आगरा शहर
+में यमुना नदी के किनारे स्थित भारत
+का विश्व प्रसिद्ध स्मारक है। सफेद
+संगमरमर से बना यह स्मारक अपनी
+वास्तुकला, सुंदरता और ऐतिहासिक
+महत्व के लिए पूरी दुनिया में प्रसिद्ध है।
+
+<br><br>
+
+The Taj Mahal is a world-famous
+monument located in Agra, Uttar
+Pradesh, on the banks of the Yamuna
+River. Built mainly of white marble,
+it is one of India's most iconic
+architectural and historical landmarks.
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK TABS
+================================================== -->
+
+<div class="section-tabs">
+
+<a href="#nearby">
+📍 Nearby
+</a>
+
+<a href="#hotels">
+🏨 Hotels
+</a>
+
+<a href="#food">
+🍽️ Food
+</a>
+
+<a href="#history">
+📖 History
+</a>
+
+<a href="#travel">
+🚗 Travel
+</a>
+
+<a href="#route">
+🗺️ Route
+</a>
+
+<a href="#more">
+🌐 More
+</a>
+
+<a href="#photos">
+📸 Photos
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     NEARBY
+================================================== -->
+
+<section
+class="info-box"
+id="nearby"
+>
+
+<h2>
+📍 Nearby Places / आसपास के स्थान
+</h2>
+
+<div class="nearby-grid">
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🕌
+</div>
+
+<h3>
+Taj Mahal
+</h3>
+
+<p>
+ताजमहल
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Taj+Mahal%2C+Agra"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🏰
+</div>
+
+<h3>
+Agra Fort
+</h3>
+
+<p>
+आगरा किला
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Agra+Fort"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🏛️
+</div>
+
+<h3>
+Itmad-ud-Daulah
+</h3>
+
+<p>
+एतमाद-उद-दौला का मकबरा
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Itmad+ud+Daulah%2C+Agra"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🌳
+</div>
+
+<h3>
+Mehtab Bagh
+</h3>
+
+<p>
+मेहताब बाग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mehtab+Bagh%2C+Agra"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     HOTELS
+================================================== -->
+
+<section
+class="info-box"
+id="hotels"
+>
+
+<h2>
+🏨 Hotels / होटल
+</h2>
+
+<p>
+
+ताजमहल के आसपास और आगरा शहर में
+budget से लेकर premium और luxury
+hotels तक कई accommodation options
+मिलते हैं। Booking से पहले distance,
+reviews और current price जरूर check करें।
+
+</p>
+
+
+<div class="hotel-grid">
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Taj+Mahal+Agra"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+💰
+</div>
+
+<h3>
+Budget Hotels
+</h3>
+
+<p>
+बजट होटल
+</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+near+Taj+Mahal+Agra"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+⭐
+</div>
+
+<h3>
+Best Hotels
+</h3>
+
+<p>
+अच्छे होटल
+</p>
+
+<span class="hotel-link">
+🏨 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=guest+house+near+Taj+Mahal+Agra"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+🏠
+</div>
+
+<h3>
+Guest Houses
+</h3>
+
+<p>
+गेस्ट हाउस
+</p>
+
+<span class="hotel-link">
+🏠 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Taj+Mahal+Agra"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+👑
+</div>
+
+<h3>
+Luxury Hotels
+</h3>
+
+<p>
+प्रीमियम होटल
+</p>
+
+<span class="hotel-link">
+⭐ देखें
+</span>
+
+</a>
+
+
+</div>
+
+
+<div class="hotel-box">
+
+<p>
+
+💡 ताजमहल के पास hotel चुनते समय
+monument से दूरी, parking, breakfast,
+reviews और cancellation policy check
+करना बेहतर रहेगा।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     RESTAURANTS
+================================================== -->
+
+<section
+class="info-box"
+id="food"
+>
+
+<h2>
+🍽️ Restaurants / रेस्टोरेंट
+</h2>
+
+<p>
+
+आगरा में ताजमहल के आसपास और शहर
+के अन्य हिस्सों में North Indian,
+Mughlai, vegetarian food और cafes
+के कई विकल्प मिलते हैं। आगरा की
+कुछ स्थानीय food specialties भी
+tourists के बीच लोकप्रिय हैं।
+
+</p>
+
+
+<div class="restaurant-box">
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+⭐
+</div>
+
+<h3>
+Top Rated
+</h3>
+
+<p>
+लोकप्रिय restaurants
+</p>
+
+<a
+href="https://www.google.com/maps/search/top+rated+restaurants+near+Taj+Mahal+Agra"
+target="_blank"
+class="restaurant-btn"
+>
+
+⭐ देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🥗
+</div>
+
+<h3>
+Vegetarian
+</h3>
+
+<p>
+शाकाहारी भोजन
+</p>
+
+<a
+href="https://www.google.com/maps/search/vegetarian+restaurants+near+Taj+Mahal+Agra"
+target="_blank"
+class="restaurant-btn"
+>
+
+🥗 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🍛
+</div>
+
+<h3>
+Mughlai Food
+</h3>
+
+<p>
+मुगलई भोजन
+</p>
+
+<a
+href="https://www.google.com/maps/search/Mughlai+restaurants+near+Taj+Mahal+Agra"
+target="_blank"
+class="restaurant-btn"
+>
+
+🍛 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+☕
+</div>
+
+<h3>
+Cafes
+</h3>
+
+<p>
+Nearby cafes
+</p>
+
+<a
+href="https://www.google.com/maps/search/cafes+near+Taj+Mahal+Agra"
+target="_blank"
+class="restaurant-btn"
+>
+
+☕ देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+  <!-- ==================================================
+     HISTORY
+================================================== -->
+
+<section
+class="info-box"
+id="history"
+>
+
+<h2>
+📖 History / इतिहास
+</h2>
+
+<p>
+
+ताजमहल का निर्माण मुगल सम्राट
+शाहजहाँ ने अपनी पत्नी मुमताज महल
+की स्मृति में करवाया था। इसका
+निर्माण 17वीं शताब्दी में शुरू हुआ
+और मुख्य मकबरे का निर्माण लगभग
+1630 के दशक के अंत तक पूरा हो गया।
+पूरे परिसर के निर्माण और सजावट में
+कई वर्षों का समय लगा।
+
+<br><br>
+
+Taj Mahal was commissioned by
+Mughal Emperor Shah Jahan in memory
+of his wife Mumtaz Mahal. Construction
+began in the 17th century and the
+monument became one of the greatest
+examples of Mughal architecture.
+
+</p>
+
+
+<div class="important-box">
+
+<h3>
+🏛️ UNESCO World Heritage Site
+</h3>
+
+<p>
+
+ताजमहल को UNESCO द्वारा World
+Heritage Site के रूप में मान्यता
+प्राप्त है। यह भारत की सबसे प्रसिद्ध
+ऐतिहासिक और स्थापत्य धरोहरों में से
+एक है।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Taj+Mahal+UNESCO+World+Heritage+Site"
+target="_blank"
+class="official-btn"
+>
+
+🌐 अधिक जानकारी देखें
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     TAJ MAHAL INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<h2>
+🕌 Taj Mahal / ताजमहल की विशेषताएँ
+</h2>
+
+<p>
+
+ताजमहल मुख्य रूप से सफेद संगमरमर
+से निर्मित है। इसके विशाल गुंबद,
+चार मीनारें, मेहराब, नक्काशी और
+संगमरमर पर की गई सजावटी कारीगरी
+इसे बेहद आकर्षक बनाती है।
+
+<br><br>
+
+ताजमहल परिसर में मुख्य मकबरे के
+साथ मस्जिद, मेहमानखाना, चारबाग
+शैली का उद्यान और अन्य स्थापत्य
+संरचनाएँ भी शामिल हैं।
+
+<br><br>
+
+The monument is known for its
+white marble architecture, large
+dome, four minarets, ornamental
+details, gardens and symmetrical
+Mughal design.
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     ENTRY & TICKETS
+================================================== -->
+
+<section
+class="info-box"
+id="tickets"
+>
+
+<h2>
+🎟️ Entry & Tickets / प्रवेश एवं टिकट
+</h2>
+
+<p>
+
+ताजमहल में प्रवेश के लिए अलग-अलग
+visitor categories और areas के
+अनुसार ticket व्यवस्था हो सकती है।
+मुख्य परिसर और मकबरे के अंदर जाने
+के लिए नियम और ticket अलग हो सकते हैं।
+
+<br><br>
+
+Ticket price, entry rules, visiting
+hours और monument के अंदर जाने की
+व्यवस्था समय-समय पर बदल सकती है।
+इसलिए यात्रा से पहले current
+information जरूर check करें।
+
+</p>
+
+
+<div class="important-box">
+
+<h3>
+⚠️ Ticket लेने से पहले ध्यान दें
+</h3>
+
+<p>
+
+ताजमहल की यात्रा से पहले official
+ASI information से current ticket
+price, opening days, entry timing,
+holiday restrictions और अन्य नियम
+check करना सबसे बेहतर रहेगा।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=official+Taj+Mahal+ticket+ASI+Agra"
+target="_blank"
+class="official-btn"
+>
+
+🎟️ Current Ticket Information
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     BEST TIME
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<h2>
+🌤️ Best Time to Visit / घूमने का सही समय
+</h2>
+
+<p>
+
+ताजमहल देखने के लिए सुबह का समय
+काफी अच्छा माना जाता है। सुबह
+भीड़ अपेक्षाकृत कम हो सकती है और
+रोशनी में monument का अलग सुंदर
+रूप दिखाई देता है।
+
+<br><br>
+
+सर्दियों के मौसम में सुबह fog की
+स्थिति हो सकती है, जबकि गर्मियों
+में दिन के समय तापमान काफी अधिक
+हो सकता है।
+
+<br><br>
+
+यात्रा की योजना बनाते समय मौसम,
+भीड़, local events और monument के
+current opening arrangements को
+ध्यान में रखें।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     TRAVEL
+================================================== -->
+
+<section
+class="info-box"
+id="travel"
+>
+
+<h2>
+🚗 Travel / यात्रा
+</h2>
+
+
+<div class="travel-grid">
+
+
+<div class="travel-card">
+
+<h3>
+🚉 Agra Cantt Railway Station
+</h3>
+
+<p>
+आगरा का प्रमुख रेलवे स्टेशन
+</p>
+
+<p>
+🚕 Taj Mahal तक road से जाएँ
+</p>
+
+<p>
+⏱️ समय traffic के अनुसार
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Taj+Mahal%2C+Agra&origin=Agra+Cantt+Railway+Station"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+🚉 Agra Fort Railway Station
+</h3>
+
+<p>
+आगरा फोर्ट के पास रेलवे स्टेशन
+</p>
+
+<p>
+🚕 Local cab/auto उपलब्ध हो सकते हैं
+</p>
+
+<p>
+⏱️ समय traffic के अनुसार
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Taj+Mahal%2C+Agra&origin=Agra+Fort+Railway+Station"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+✈️ Agra Airport
+</h3>
+
+<p>
+आगरा एयरपोर्ट
+</p>
+
+<p>
+🚕 Cab/Taxi से Taj Mahal की ओर
+</p>
+
+<p>
+⏱️ समय route और traffic पर निर्भर
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Taj+Mahal%2C+Agra&origin=Agra+Airport"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+🚕 Local Travel
+</h3>
+
+<p>
+Auto / E-Rickshaw / Cab
+</p>
+
+<p>
+आगरा शहर में local transport के
+कई विकल्प मिल सकते हैं।
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Taj+Mahal%2C+Agra"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="share-auto-box">
+
+<p>
+
+🚕 <strong>Local Travel:</strong>
+ताजमहल के आसपास traffic, parking
+और vehicle restrictions हो सकते हैं।
+इसलिए monument के पास पहुँचने से
+पहले current local arrangements
+check करना बेहतर रहेगा।
+
+</p>
+
+</div>
+
+
+<p class="travel-note">
+
+*Travel time और local fare traffic,
+route, मौसम और उपलब्ध transport के
+अनुसार अलग हो सकते हैं।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     LOCATION & ROUTE
+================================================== -->
+
+<section
+class="info-box"
+id="route"
+>
+
+<h2>
+🗺️ Location & Route / स्थान एवं मार्ग
+</h2>
+
+<div class="location-box">
+
+<p>
+
+ताजमहल आगरा शहर में यमुना नदी के
+किनारे स्थित है। अपने current
+location से नीचे दिए गए button पर
+click करके Google Maps में सीधे
+route देखा जा सकता है।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Taj+Mahal%2C+Agra"
+target="_blank"
+class="route-btn"
+>
+
+📍 Current Location से Route
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     IMPORTANT TRAVEL INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<div class="important-box">
+
+<h3>
+⚠️ महत्वपूर्ण यात्रा सूचना
+</h3>
+
+<p>
+
+ताजमहल में प्रवेश के समय security
+checking होती है। Restricted items
+ले जाने से बचें और monument के
+current security rules का पालन करें।
+
+यात्रा से पहले opening time, ticket,
+entry rules, weather और local
+arrangements की current जानकारी
+check करना बेहतर रहेगा।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     MORE INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+id="more"
+>
+
+<h2>
+🌐 More Information / अधिक जानकारी
+</h2>
+
+<div class="important-box">
+
+<h3>
+📖 Taj Mahal के बारे में और जानें
+</h3>
+
+<p>
+
+ताजमहल का इतिहास, architecture,
+location, ticket information,
+opening arrangements और travel
+information के बारे में अधिक जानकारी
+देखने के लिए नीचे दिए गए button पर
+Chrome में search कर सकते हैं।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Taj+Mahal+Agra+history+architecture+ticket+timing"
+target="_blank"
+class="official-btn"
+>
+
+🌐 Chrome में अधिक जानकारी देखें
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     PHOTO
+================================================== -->
+
+<section
+class="info-box"
+id="photos"
+>
+
+<h2>
+📸 Taj Mahal Photo / ताजमहल की तस्वीर
+</h2>
+
+<p>
+
+ताजमहल की photos देखने के लिए
+नीचे photo पर click करें।
+
+</p>
+
+
+<div class="photo-gallery">
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Taj+Mahal+Agra"
+target="_blank"
+class="photo-card"
+>
+
+<div class="photo-placeholder">
+
+🕌
+
+</div>
+
+<p>
+
+🕌 Taj Mahal • Agra
+
+</p>
+
+</a>
+
+</div>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Taj+Mahal+Agra"
+target="_blank"
+class="photo-more"
+>
+
+📸 Chrome में और Photos देखें
+
+</a>
+
+</section>
+
+
+<!-- ==================================================
+     DESH KHOJ A2Z INFORMATION
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🇮🇳 DESH KHOJ A2Z Travel Information
+</h2>
+
+<p>
+
+DESH KHOJ A2Z का उद्देश्य यात्रियों को
+भारत के अलग-अलग स्थानों के लिए
+सरल, उपयोगी और practical travel
+information एक ही जगह उपलब्ध कराना है।
+
+<br><br>
+
+Our goal is to provide simple, useful
+and practical travel information for
+travellers exploring India.
+
+<br><br>
+
+Place information, local details,
+reviews और उपलब्ध जानकारी के आधार पर
+pages को समय-समय पर update किया जाएगा।
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     COMMON JAVASCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
