@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Cellular Jail | सेल्युलर जेल - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   PAGE BOX
+================================================== */
+
+.info-box{
+background:#ffffff;
+border-radius:25px;
+padding:30px;
+margin:25px 0;
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+scroll-margin-top:90px;
+}
+
+.info-box h2{
+font-size:32px;
+line-height:1.25;
+margin-bottom:18px;
+color:#202124;
+}
+
+.info-box p{
+font-size:20px;
+line-height:1.7;
+color:#666;
+}
+
+
+/* ==================================================
+   SECTION TABS
+================================================== */
+
+.section-tabs{
+display:flex;
+gap:8px;
+overflow-x:auto;
+padding:10px 2px 14px;
+margin:10px 0 5px;
+position:sticky;
+top:0;
+z-index:50;
+background:#f4f7f6;
+scroll-behavior:smooth;
+-webkit-overflow-scrolling:touch;
+}
+
+.section-tabs::-webkit-scrollbar{
+height:4px;
+}
+
+.section-tabs::-webkit-scrollbar-thumb{
+background:#bbb;
+border-radius:10px;
+}
+
+.section-tabs a{
+flex:0 0 auto;
+display:block;
+padding:10px 14px;
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:14px;
+font-size:14px;
+font-weight:bold;
+border:1px solid #e5e7eb;
+box-shadow:0 3px 10px rgba(0,0,0,.06);
+white-space:nowrap;
+}
+
+.section-tabs a:active{
+transform:scale(.95);
+background:#fff7e6;
+}
+
+.section-tabs a:hover{
+background:#fff7e6;
+}
+
+
+/* ==================================================
+   IMPORTANT BOX
+================================================== */
+
+.important-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:20px;
+margin-top:20px;
+}
+
+.important-box h3{
+font-size:22px;
+margin-bottom:8px;
+}
+
+.important-box p{
+font-size:18px;
+margin:0;
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.official-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 18px;
+background:#1976d2;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+}
+
+.official-btn:active{
+transform:scale(.97);
+}
+
+
+/* ==================================================
+   NEARBY GRID
+================================================== */
+
+.nearby-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.nearby-card{
+background:#f8f9fa;
+border-radius:20px;
+padding:22px 12px;
+text-align:center;
+border-top:5px solid #16a34a;
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+}
+
+.nearby-card:nth-child(2){
+border-top-color:#2196d2;
+}
+
+.nearby-card:nth-child(3){
+border-top-color:#f59e0b;
+}
+
+.nearby-card:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.nearby-icon{
+font-size:38px;
+margin-bottom:8px;
+}
+
+.nearby-card h3{
+font-size:20px;
+margin:8px 0;
+}
+
+.nearby-card p{
+font-size:16px;
+margin:5px 0 14px;
+color:#666;
+}
+
+.route-btn{
+display:inline-block;
+background:#16a34a;
+color:white;
+text-decoration:none;
+padding:10px 13px;
+border-radius:11px;
+font-size:13px;
+font-weight:bold;
+}
+
+.route-btn:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   HOTEL GRID
+================================================== */
+
+.hotel-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.hotel-card{
+display:block;
+background:#f8f9fa;
+color:#202124;
+text-decoration:none;
+text-align:center;
+border-radius:20px;
+padding:22px 12px;
+border-top:5px solid #16a34a;
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+}
+
+.hotel-card:nth-child(2){
+border-top-color:#f59e0b;
+}
+
+.hotel-card:nth-child(3){
+border-top-color:#2196d2;
+}
+
+.hotel-card:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.hotel-card:active{
+transform:scale(.97);
+}
+
+.hotel-icon{
+font-size:38px;
+margin-bottom:8px;
+}
+
+.hotel-card h3{
+font-size:20px;
+margin:8px 0;
+}
+
+.hotel-card p{
+font-size:15px;
+margin:5px 0;
+color:#666;
+}
+
+.hotel-link{
+display:inline-block;
+margin-top:9px;
+padding:8px 11px;
+border-radius:10px;
+background:#1976d2;
+color:white;
+font-size:12px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   HOTEL BOX
+================================================== */
+
+.hotel-box{
+background:#f8f9fa;
+border-radius:20px;
+padding:20px;
+margin-top:20px;
+}
+
+
+/* ==================================================
+   RESTAURANTS
+================================================== */
+
+.restaurant-box{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.restaurant-card{
+background:#f8f9fa;
+border-radius:20px;
+padding:20px 12px;
+text-align:center;
+border-top:5px solid #16a34a;
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+}
+
+.restaurant-card:nth-child(2){
+border-top-color:#f59e0b;
+}
+
+.restaurant-card:nth-child(3){
+border-top-color:#2196d2;
+}
+
+.restaurant-card:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.restaurant-card h3{
+font-size:19px;
+margin:8px 0;
+}
+
+.restaurant-card p{
+font-size:15px;
+color:#666;
+margin:5px 0 12px;
+}
+
+.restaurant-btn{
+display:inline-block;
+background:#1976d2;
+color:white;
+text-decoration:none;
+padding:9px 11px;
+border-radius:10px;
+font-size:12px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   TRAVEL
+================================================== */
+
+.travel-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.travel-card{
+background:#f8f9fa;
+border-radius:20px;
+padding:22px 16px;
+border-top:5px solid #2196d2;
+}
+
+.travel-card h3{
+font-size:20px;
+margin-bottom:12px;
+}
+
+.travel-card p{
+font-size:17px;
+margin:7px 0;
+}
+
+.share-auto-box{
+margin-top:20px;
+padding:15px 18px;
+background:#f0f7ff;
+border-left:5px solid #2196d2;
+border-radius:15px;
+}
+
+.share-auto-box p{
+font-size:17px;
+margin:0;
+}
+
+.travel-note{
+margin-top:15px;
+padding:14px 18px;
+background:#f0fff4;
+border-left:5px solid #16a34a;
+border-radius:15px;
+font-size:16px !important;
+}
+
+
+/* ==================================================
+   LOCATION
+================================================== */
+
+.location-box{
+background:#f0f7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:20px;
+margin-top:20px;
+}
+
+
+/* ==================================================
+   PHOTO
+================================================== */
+
+.photo-gallery{
+margin-top:20px;
+}
+
+.photo-card{
+display:block;
+background:#f8f9fa;
+border-radius:20px;
+overflow:hidden;
+text-decoration:none;
+color:#202124;
+box-shadow:0 5px 16px rgba(0,0,0,.06);
+border:1px solid #e5e7eb;
+}
+
+.photo-placeholder{
+height:230px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:90px;
+background:#eef7fa;
+}
+
+.photo-card p{
+font-size:18px;
+padding:15px;
+margin:0;
+font-weight:bold;
+text-align:center;
+}
+
+.photo-more{
+display:block;
+margin-top:18px;
+background:#1976d2;
+color:white;
+text-decoration:none;
+padding:13px;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+text-align:center;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+.info-box{
+padding:22px 18px;
+border-radius:22px;
+}
+
+.info-box h2{
+font-size:28px;
+line-height:1.3;
+}
+
+.info-box p{
+font-size:18px;
+}
+
+.section-tabs{
+gap:7px;
+padding:9px 2px 13px;
+}
+
+.section-tabs a{
+font-size:12px;
+padding:9px 11px;
+border-radius:12px;
+}
+
+.nearby-grid,
+.hotel-grid,
+.restaurant-box,
+.travel-grid{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.nearby-card{
+padding:18px 9px;
+}
+
+.nearby-card h3{
+font-size:18px;
+}
+
+.nearby-card p{
+font-size:15px;
+}
+
+.route-btn{
+font-size:11px;
+padding:9px 8px;
+}
+
+.hotel-card{
+padding:18px 8px;
+}
+
+.hotel-icon{
+font-size:34px;
+}
+
+.hotel-card h3{
+font-size:17px;
+}
+
+.hotel-card p{
+font-size:14px;
+}
+
+.hotel-link{
+font-size:11px;
+padding:8px 8px;
+}
+
+.restaurant-card{
+padding:17px 8px;
+}
+
+.restaurant-card h3{
+font-size:17px;
+}
+
+.restaurant-card p{
+font-size:14px;
+}
+
+.restaurant-btn{
+font-size:10px;
+padding:8px 7px;
+}
+
+.travel-card{
+padding:16px 10px;
+}
+
+.travel-card h3{
+font-size:17px;
+}
+
+.travel-card p{
+font-size:15px;
+}
+
+.photo-placeholder{
+height:210px;
+font-size:80px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+🏛️
+</div>
+
+<h1>
+Cellular Jail
+</h1>
+
+<p>
+सेल्युलर जेल • पोर्ट ब्लेयर • इतिहास
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<div class="container">
+
+
+<a
+href="andaman.html"
+class="back"
+>
+
+← Andaman / अंडमान
+
+</a>
+
+
+<div class="title-box">
+
+<h2>
+🏛️ Cellular Jail
+</h2>
+
+<p>
+
+सेल्युलर जेल पोर्ट ब्लेयर में स्थित
+भारत का एक महत्वपूर्ण राष्ट्रीय स्मारक है।
+इसे आमतौर पर "काला पानी" के नाम से भी
+जाना जाता है।
+
+<br><br>
+
+यह स्थान भारतीय स्वतंत्रता संग्राम
+और स्वतंत्रता सेनानियों के इतिहास से
+गहराई से जुड़ा हुआ है।
+
+<br><br>
+
+Cellular Jail is one of the most
+important historical landmarks of
+the Andaman Islands.
+
+</p>
+
+</div>
+
+
+<div class="section-tabs">
+
+<a href="#nearby">📍 Nearby</a>
+<a href="#hotels">🏨 Hotels</a>
+<a href="#food">🍽️ Food</a>
+<a href="#history">📖 History</a>
+<a href="#travel">🚗 Travel</a>
+<a href="#route">🗺️ Route</a>
+<a href="#more">🌐 More</a>
+<a href="#photos">📸 Photos</a>
+
+</div>
+
+
+<section
+class="info-box"
+id="nearby"
+>
+
+<h2>
+📍 Nearby Places / आसपास के स्थान
+</h2>
+
+<div class="nearby-grid">
+
+<div class="nearby-card">
+
+<div class="nearby-icon">🏝️</div>
+
+<h3>Ross Island</h3>
+
+<p>
+रॉस आइलैंड
+<br>
+Port Blair के पास
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Ross+Island+Andaman"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">🐠</div>
+
+<h3>North Bay</h3>
+
+<p>
+नॉर्थ बे आइलैंड
+<br>
+Coral & Marine Life
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=North+Bay+Island+Andaman"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">🌊</div>
+
+<h3>Corbyn's Cove</h3>
+
+<p>
+समुद्र तट
+<br>
+Port Blair
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Corbyn%27s+Cove+Beach+Port+Blair"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">🌅</div>
+
+<h3>Chidiya Tapu</h3>
+
+<p>
+चिड़िया टापू
+<br>
+Sunset Point
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Chidiya+Tapu+Andaman"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section
+class="info-box"
+id="hotels"
+>
+
+<h2>
+🏨 Hotels / होटल
+</h2>
+
+<p>
+
+Cellular Jail Port Blair के प्रमुख
+tourist area में स्थित है। आसपास
+और Port Blair city में budget,
+family तथा premium hotels के
+कई विकल्प मिल सकते हैं।
+
+</p>
+
+<div class="hotel-grid">
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Cellular+Jail+Port+Blair"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">💰</div>
+
+<h3>Budget Hotels</h3>
+
+<p>बजट होटल</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+near+Cellular+Jail+Port+Blair"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">⭐</div>
+
+<h3>Best Hotels</h3>
+
+<p>अच्छे होटल</p>
+
+<span class="hotel-link">
+🏨 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=guest+house+near+Cellular+Jail+Port+Blair"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">🏠</div>
+
+<h3>Guest Houses</h3>
+
+<p>गेस्ट हाउस</p>
+
+<span class="hotel-link">
+🏠 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Cellular+Jail+Port+Blair"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">👑</div>
+
+<h3>Luxury Hotels</h3>
+
+<p>प्रीमियम होटल</p>
+
+<span class="hotel-link">
+⭐ देखें
+</span>
+
+</a>
+
+</div>
+
+</section>
+
+
+<section
+class="info-box"
+id="food"
+>
+
+<h2>
+🍽️ Restaurants / रेस्टोरेंट
+</h2>
+
+<p>
+
+Port Blair में Indian, South Indian,
+seafood, vegetarian food और local
+cuisine के कई विकल्प मिलते हैं।
+
+</p>
+
+<div class="restaurant-box">
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">⭐</div>
+
+<h3>Top Rated</h3>
+
+<p>लोकप्रिय restaurants</p>
+
+<a
+href="https://www.google.com/maps/search/top+rated+restaurants+near+Cellular+Jail+Port+Blair"
+target="_blank"
+class="restaurant-btn"
+>
+⭐ देखें
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">🥗</div>
+
+<h3>Vegetarian</h3>
+
+<p>शाकाहारी भोजन</p>
+
+<a
+href="https://www.google.com/maps/search/vegetarian+restaurants+near+Cellular+Jail+Port+Blair"
+target="_blank"
+class="restaurant-btn"
+>
+🥗 देखें
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">🐟</div>
+
+<h3>Seafood</h3>
+
+<p>Seafood restaurants</p>
+
+<a
+href="https://www.google.com/maps/search/seafood+restaurants+near+Cellular+Jail+Port+Blair"
+target="_blank"
+class="restaurant-btn"
+>
+🐟 देखें
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">☕</div>
+
+<h3>Cafes</h3>
+
+<p>Nearby cafes</p>
+
+<a
+href="https://www.google.com/maps/search/cafes+near+Cellular+Jail+Port+Blair"
+target="_blank"
+class="restaurant-btn"
+>
+☕ देखें
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section
+class="info-box"
+id="history"
+>
+
+<h2>
+📖 History / इतिहास
+</h2>
+
+<p>
+
+सेल्युलर जेल का निर्माण ब्रिटिश
+शासन के दौरान भारतीय स्वतंत्रता
+सेनानियों को कैद रखने के लिए किया गया था।
+
+<br><br>
+
+जेल की संरचना में अलग-अलग
+कैदियों के लिए cells बनाए गए थे।
+भारतीय स्वतंत्रता संग्राम से जुड़े
+कई प्रमुख स्वतंत्रता सेनानी यहाँ
+कैद रहे।
+
+<br><br>
+
+आज Cellular Jail भारत के
+स्वतंत्रता संग्राम की स्मृति और
+बलिदान का महत्वपूर्ण प्रतीक है।
+
+</p>
+
+<div class="important-box">
+
+<h3>
+🇮🇳 महत्वपूर्ण
+</h3>
+
+<p>
+
+यह एक ऐतिहासिक राष्ट्रीय स्मारक है।
+यात्रा के दौरान इसके इतिहास और
+स्वतंत्रता सेनानियों के योगदान का
+सम्मान करना चाहिए।
+
+</p>
+
+</div>
+
+</section>
+
+  <!-- ==================================================
+     TRAVEL
+================================================== -->
+
+<section
+class="info-box"
+id="travel"
+>
+
+<h2>
+🚗 Travel / यात्रा
+</h2>
+
+<div class="travel-grid">
+
+<div class="travel-card">
+
+<h3>
+✈️ Airport
+</h3>
+
+<p>
+Veer Savarkar International Airport
+</p>
+
+<p>
+Port Blair
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Cellular+Jail+Port+Blair&origin=Veer+Savarkar+International+Airport+Port+Blair"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+🚌 Bus Stand
+</h3>
+
+<p>
+Aberdeen Bus Terminus
+</p>
+
+<p>
+Port Blair
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Cellular+Jail+Port+Blair&origin=Aberdeen+Bus+Terminus+Port+Blair"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+⛴️ Jetty
+</h3>
+
+<p>
+Phoenix Bay Jetty
+</p>
+
+<p>
+Island trips के लिए महत्वपूर्ण
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Cellular+Jail+Port+Blair&origin=Phoenix+Bay+Jetty+Port+Blair"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+🚕 Local Travel
+</h3>
+
+<p>
+Auto / Cab / Local Transport
+</p>
+
+<p>
+Port Blair में उपलब्ध विकल्प देखें।
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Cellular+Jail+Port+Blair"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+</div>
+
+<div class="share-auto-box">
+
+<p>
+
+🚕 <strong>Local Travel:</strong>
+Port Blair में Auto, Cab और अन्य
+local transport options उपलब्ध हैं।
+Current fare यात्रा से पहले check करें।
+
+</p>
+
+</div>
+
+<p class="travel-note">
+
+*दूरी, समय और किराया approximate हैं।
+Traffic और local conditions के अनुसार
+actual समय एवं किराया अलग हो सकता है।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     ROUTE
+================================================== -->
+
+<section
+class="info-box"
+id="route"
+>
+
+<h2>
+🗺️ Location & Route / स्थान एवं मार्ग
+</h2>
+
+<div class="location-box">
+
+<p>
+
+Cellular Jail, Port Blair तक
+अपने current location से
+Google Maps पर सीधा route देखें।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Cellular+Jail+Port+Blair"
+target="_blank"
+class="route-btn"
+>
+
+📍 Current Location से Route
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     MORE
+================================================== -->
+
+<section
+class="info-box"
+id="more"
+>
+
+<h2>
+🌐 More Information / अधिक जानकारी
+</h2>
+
+<div class="important-box">
+
+<h3>
+📖 Cellular Jail के बारे में और जानें
+</h3>
+
+<p>
+
+History, timings, visitor information
+और अन्य details के लिए नीचे दिए गए
+button से current information देखें।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Cellular+Jail+Port+Blair+history+timings"
+target="_blank"
+class="official-btn"
+>
+
+🌐 Chrome में अधिक जानकारी देखें
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     PHOTOS
+================================================== -->
+
+<section
+class="info-box"
+id="photos"
+>
+
+<h2>
+📸 Cellular Jail Photo
+<br>
+सेल्युलर जेल की तस्वीर
+</h2>
+
+<p>
+
+Cellular Jail की photos देखने के लिए
+नीचे photo card पर click करें।
+
+</p>
+
+<div class="photo-gallery">
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Cellular+Jail+Port+Blair"
+target="_blank"
+class="photo-card"
+>
+
+<div class="photo-placeholder">
+🏛️
+</div>
+
+<p>
+🏛️ Cellular Jail
+</p>
+
+</a>
+
+</div>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Cellular+Jail+Port+Blair+inside"
+target="_blank"
+class="photo-more"
+>
+
+📸 Chrome में और Photos देखें
+
+</a>
+
+</section>
+
+
+<!-- ==================================================
+     DESH KHOJ A2Z
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🇮🇳 DESH KHOJ A2Z Travel Information
+</h2>
+
+<p>
+
+DESH KHOJ A2Z का उद्देश्य यात्रियों
+को भारत के अलग-अलग स्थानों की
+सरल और practical travel information
+एक ही जगह उपलब्ध कराना है।
+
+<br><br>
+
+Place information और local details
+को समय-समय पर update किया जाएगा।
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
