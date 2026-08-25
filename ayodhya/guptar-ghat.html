@@ -1,0 +1,2142 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Guptar Ghat | गुप्तार घाट - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   PAGE BOX
+================================================== */
+
+.info-box{
+background:#ffffff;
+border-radius:25px;
+padding:30px;
+margin:25px 0;
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+scroll-margin-top:90px;
+}
+
+.info-box h2{
+font-size:32px;
+line-height:1.25;
+margin-bottom:18px;
+color:#202124;
+}
+
+.info-box p{
+font-size:20px;
+line-height:1.7;
+color:#666;
+}
+
+
+/* ==================================================
+   SECTION TABS
+================================================== */
+
+.section-tabs{
+display:flex;
+gap:8px;
+overflow-x:auto;
+padding:10px 2px 14px;
+margin:10px 0 5px;
+position:sticky;
+top:0;
+z-index:50;
+background:#f4f7f6;
+scroll-behavior:smooth;
+-webkit-overflow-scrolling:touch;
+}
+
+.section-tabs::-webkit-scrollbar{
+height:4px;
+}
+
+.section-tabs::-webkit-scrollbar-thumb{
+background:#bbb;
+border-radius:10px;
+}
+
+.section-tabs a{
+flex:0 0 auto;
+display:block;
+padding:10px 14px;
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:14px;
+font-size:14px;
+font-weight:bold;
+border:1px solid #e5e7eb;
+box-shadow:0 3px 10px rgba(0,0,0,.06);
+white-space:nowrap;
+}
+
+.section-tabs a:active{
+transform:scale(.95);
+background:#fff7e6;
+}
+
+.section-tabs a:hover{
+background:#fff7e6;
+}
+
+
+/* ==================================================
+   IMPORTANT BOX
+================================================== */
+
+.important-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:20px;
+margin-top:20px;
+}
+
+.important-box h3{
+font-size:22px;
+margin-bottom:8px;
+}
+
+.important-box p{
+font-size:18px;
+margin:0;
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.official-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 18px;
+background:#1976d2;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+}
+
+.official-btn:active{
+transform:scale(.97);
+}
+
+
+/* ==================================================
+   NEARBY GRID
+================================================== */
+
+.nearby-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.nearby-card{
+background:#f8f9fa;
+border-radius:20px;
+padding:22px 12px;
+text-align:center;
+border-top:5px solid #16a34a;
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+}
+
+.nearby-card:nth-child(2){
+border-top-color:#2196d2;
+}
+
+.nearby-card:nth-child(3){
+border-top-color:#f59e0b;
+}
+
+.nearby-card:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.nearby-icon{
+font-size:38px;
+margin-bottom:8px;
+}
+
+.nearby-card h3{
+font-size:20px;
+margin:8px 0;
+}
+
+.nearby-card p{
+font-size:16px;
+margin:5px 0 14px;
+color:#666;
+}
+
+
+/* ==================================================
+   ROUTE BUTTON
+================================================== */
+
+.route-btn{
+display:inline-block;
+background:#16a34a;
+color:white;
+text-decoration:none;
+padding:10px 13px;
+border-radius:11px;
+font-size:13px;
+font-weight:bold;
+}
+
+.route-btn:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   HOTEL GRID
+================================================== */
+
+.hotel-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.hotel-card{
+display:block;
+background:#f8f9fa;
+color:#202124;
+text-decoration:none;
+text-align:center;
+border-radius:20px;
+padding:22px 12px;
+border-top:5px solid #16a34a;
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+}
+
+.hotel-card:nth-child(2){
+border-top-color:#f59e0b;
+}
+
+.hotel-card:nth-child(3){
+border-top-color:#2196d2;
+}
+
+.hotel-card:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.hotel-card:active{
+transform:scale(.97);
+}
+
+.hotel-icon{
+font-size:38px;
+margin-bottom:8px;
+}
+
+.hotel-card h3{
+font-size:20px;
+margin:8px 0;
+}
+
+.hotel-card p{
+font-size:15px;
+margin:5px 0;
+color:#666;
+}
+
+.hotel-link{
+display:inline-block;
+margin-top:9px;
+padding:8px 11px;
+border-radius:10px;
+background:#1976d2;
+color:white;
+font-size:12px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   HOTEL BOX
+================================================== */
+
+.hotel-box{
+background:#f8f9fa;
+border-radius:20px;
+padding:20px;
+margin-top:20px;
+}
+
+
+/* ==================================================
+   RESTAURANTS
+================================================== */
+
+.restaurant-box{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.restaurant-card{
+background:#f8f9fa;
+border-radius:20px;
+padding:20px 12px;
+text-align:center;
+border-top:5px solid #16a34a;
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+}
+
+.restaurant-card:nth-child(2){
+border-top-color:#f59e0b;
+}
+
+.restaurant-card:nth-child(3){
+border-top-color:#2196d2;
+}
+
+.restaurant-card:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.restaurant-card h3{
+font-size:19px;
+margin:8px 0;
+}
+
+.restaurant-card p{
+font-size:15px;
+color:#666;
+margin:5px 0 12px;
+}
+
+.restaurant-btn{
+display:inline-block;
+background:#1976d2;
+color:white;
+text-decoration:none;
+padding:9px 11px;
+border-radius:10px;
+font-size:12px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   TRAVEL GRID
+================================================== */
+
+.travel-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.travel-card{
+background:#f8f9fa;
+border-radius:20px;
+padding:22px 16px;
+border-top:5px solid #2196d2;
+}
+
+.travel-card h3{
+font-size:20px;
+margin-bottom:12px;
+}
+
+.travel-card p{
+font-size:17px;
+margin:7px 0;
+}
+
+
+/* ==================================================
+   TRAVEL NOTES
+================================================== */
+
+.share-auto-box{
+margin-top:20px;
+padding:15px 18px;
+background:#f0f7ff;
+border-left:5px solid #2196d2;
+border-radius:15px;
+}
+
+.share-auto-box p{
+font-size:17px;
+margin:0;
+}
+
+.travel-note{
+margin-top:15px;
+padding:14px 18px;
+background:#f0fff4;
+border-left:5px solid #16a34a;
+border-radius:15px;
+font-size:16px !important;
+}
+
+
+/* ==================================================
+   LOCATION
+================================================== */
+
+.location-box{
+background:#f0f7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:20px;
+margin-top:20px;
+}
+
+
+/* ==================================================
+   PHOTO GALLERY
+================================================== */
+
+.photo-gallery{
+margin-top:20px;
+}
+
+.photo-card{
+display:block;
+background:#f8f9fa;
+border-radius:20px;
+overflow:hidden;
+text-decoration:none;
+color:#202124;
+box-shadow:0 5px 16px rgba(0,0,0,.06);
+border:1px solid #e5e7eb;
+}
+
+.photo-placeholder{
+height:230px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:90px;
+background:#eef7fa;
+}
+
+.photo-card p{
+font-size:18px;
+padding:15px;
+margin:0;
+font-weight:bold;
+text-align:center;
+}
+
+.photo-more{
+display:block;
+margin-top:18px;
+background:#1976d2;
+color:white;
+text-decoration:none;
+padding:13px;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+text-align:center;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+.info-box{
+padding:22px 18px;
+border-radius:22px;
+}
+
+.info-box h2{
+font-size:28px;
+line-height:1.3;
+}
+
+.info-box p{
+font-size:18px;
+}
+
+.section-tabs{
+gap:7px;
+padding:9px 2px 13px;
+}
+
+.section-tabs a{
+font-size:12px;
+padding:9px 11px;
+border-radius:12px;
+}
+
+.nearby-grid{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.nearby-card{
+padding:18px 9px;
+}
+
+.nearby-card h3{
+font-size:18px;
+}
+
+.nearby-card p{
+font-size:15px;
+}
+
+.route-btn{
+font-size:11px;
+padding:9px 8px;
+}
+
+.hotel-grid{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.hotel-card{
+padding:18px 8px;
+}
+
+.hotel-icon{
+font-size:34px;
+}
+
+.hotel-card h3{
+font-size:17px;
+}
+
+.hotel-card p{
+font-size:14px;
+}
+
+.hotel-link{
+font-size:11px;
+padding:8px 8px;
+}
+
+.restaurant-box{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.restaurant-card{
+padding:17px 8px;
+}
+
+.restaurant-card h3{
+font-size:17px;
+}
+
+.restaurant-card p{
+font-size:14px;
+}
+
+.restaurant-btn{
+font-size:10px;
+padding:8px 7px;
+}
+
+.travel-grid{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.travel-card{
+padding:16px 10px;
+}
+
+.travel-card h3{
+font-size:17px;
+}
+
+.travel-card p{
+font-size:15px;
+}
+
+.photo-placeholder{
+height:210px;
+font-size:80px;
+}
+
+}
+
+@media(max-width:380px){
+
+.nearby-grid,
+.hotel-grid,
+.restaurant-box,
+.travel-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.info-box h2{
+font-size:26px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🌊
+</div>
+
+<h1>
+Guptar Ghat
+</h1>
+
+<p>
+गुप्तार घाट • अयोध्या • उत्तर प्रदेश
+</p>
+
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<!-- ==================================================
+     BACK
+================================================== -->
+
+<a
+href="ayodhya.html"
+class="back"
+>
+
+← Ayodhya / अयोध्या
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🌊 Guptar Ghat
+</h2>
+
+<p>
+
+गुप्तार घाट अयोध्या में
+सरयू नदी के किनारे स्थित
+एक प्रसिद्ध धार्मिक और
+ऐतिहासिक घाट है।
+
+<br><br>
+
+हिंदू धार्मिक परंपरा में
+गुप्तार घाट का विशेष महत्व
+माना जाता है और इसे भगवान
+श्री राम के पृथ्वी से
+प्रस्थान से जुड़ी मान्यताओं
+के साथ जोड़ा जाता है।
+
+<br><br>
+
+सरयू नदी का शांत वातावरण,
+घाट की सीढ़ियाँ और आसपास
+के मंदिर इसे अयोध्या के
+महत्वपूर्ण धार्मिक स्थलों
+में शामिल करते हैं।
+
+<br><br>
+
+सुबह और शाम के समय
+सरयू नदी के किनारे का
+वातावरण विशेष रूप से
+आकर्षक दिखाई देता है।
+
+<br><br>
+
+Guptar Ghat is a famous
+religious and historical
+ghat on the banks of the
+Saryu River in Ayodhya,
+traditionally associated
+with Lord Rama.
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK TABS
+================================================== -->
+
+<div class="section-tabs">
+
+<a href="#nearby">
+📍 Nearby
+</a>
+
+<a href="#hotels">
+🏨 Hotels
+</a>
+
+<a href="#food">
+🍽️ Food
+</a>
+
+<a href="#activities">
+🙏 Activities
+</a>
+
+<a href="#travel">
+🚗 Travel
+</a>
+
+<a href="#route">
+🗺️ Route
+</a>
+
+<a href="#more">
+🌐 More
+</a>
+
+<a href="#photos">
+📸 Photos
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     NEARBY
+================================================== -->
+
+<section
+class="info-box"
+id="nearby"
+>
+
+<h2>
+📍 Nearby Places / आसपास के स्थान
+</h2>
+
+<div class="nearby-grid">
+
+
+<!-- SARYU RIVER -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🌊
+</div>
+
+<h3>
+Saryu River
+</h3>
+
+<p>
+
+सरयू नदी
+
+<br>
+
+घाट के पास
+मुख्य नदी क्षेत्र।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Saryu+River+Guptar+Ghat+Ayodhya"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- RAM KI PAIDI -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🌅
+</div>
+
+<h3>
+Ram Ki Paidi
+</h3>
+
+<p>
+
+राम की पैड़ी
+
+<br>
+
+सरयू तट का प्रसिद्ध
+घाट क्षेत्र।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Ram+Ki+Paidi+Ayodhya"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- NAGESHWARNATH -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🔱
+</div>
+
+<h3>
+Nageshwarnath Temple
+</h3>
+
+<p>
+
+नागेश्वरनाथ मंदिर
+
+<br>
+
+प्रसिद्ध शिव मंदिर।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Nageshwarnath+Temple+Ayodhya"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- RAM JANMABHOOMI -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🛕
+</div>
+
+<h3>
+Ram Janmabhoomi
+</h3>
+
+<p>
+
+श्री राम जन्मभूमि मंदिर
+
+<br>
+
+अयोध्या का प्रमुख
+धार्मिक स्थल।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Ram+Janmabhoomi+Mandir+Ayodhya"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<p class="travel-note">
+
+अयोध्या के प्रमुख स्थलों की
+दूरी आपके starting point और
+चुने गए route के अनुसार अलग
+हो सकती है।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     HOTELS
+================================================== -->
+
+<section
+class="info-box"
+id="hotels"
+>
+
+<h2>
+🏨 Hotels / होटल
+</h2>
+
+<p>
+
+गुप्तार घाट और अयोध्या के
+अन्य प्रमुख धार्मिक क्षेत्रों
+के आसपास budget hotels,
+guest houses, dharamshalas
+और family accommodation
+options मिल सकते हैं।
+
+<br><br>
+
+Booking करते समय घाट से
+distance, reviews, parking,
+facilities और cancellation
+policy जरूर check करें।
+
+</p>
+
+
+<div class="hotel-grid">
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Guptar+Ghat+Ayodhya"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+💰
+</div>
+
+<h3>
+Budget Hotels
+</h3>
+
+<p>
+बजट होटल
+</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+near+Guptar+Ghat+Ayodhya"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+⭐
+</div>
+
+<h3>
+Best Hotels
+</h3>
+
+<p>
+अच्छे होटल
+</p>
+
+<span class="hotel-link">
+🏨 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=dharamshala+near+Guptar+Ghat+Ayodhya"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+🏠
+</div>
+
+<h3>
+Dharamshala
+</h3>
+
+<p>
+धर्मशाला
+</p>
+
+<span class="hotel-link">
+🏠 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=family+hotels+near+Guptar+Ghat+Ayodhya"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+👨‍👩‍👧‍👦
+</div>
+
+<h3>
+Family Hotels
+</h3>
+
+<p>
+परिवार के लिए
+</p>
+
+<span class="hotel-link">
+⭐ देखें
+</span>
+
+</a>
+
+
+</div>
+
+
+<div class="hotel-box">
+
+<p>
+
+त्योहारों, weekends और
+विशेष धार्मिक अवसरों पर
+अयोध्या में hotel demand
+बढ़ सकती है। यात्रा से पहले
+accommodation booking करना
+बेहतर रहता है।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     FOOD
+================================================== -->
+
+<section
+class="info-box"
+id="food"
+>
+
+<h2>
+🍽️ Food / भोजन
+</h2>
+
+<p>
+
+गुप्तार घाट के आसपास और
+अयोध्या शहर में vegetarian
+तथा सात्विक भोजन के कई
+विकल्प मिल सकते हैं।
+
+<br><br>
+
+घाट क्षेत्र में जाने से पहले
+drinking water और basic food
+की व्यवस्था के बारे में
+जानकारी लेना उपयोगी रहेगा।
+
+<br><br>
+
+अयोध्या की स्थानीय मिठाइयाँ,
+snacks और शाकाहारी भोजन
+यात्रा के दौरान आजमाए जा
+सकते हैं।
+
+</p>
+
+
+<div class="restaurant-box">
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+⭐
+</div>
+
+<h3>
+Top Rated
+</h3>
+
+<p>
+Ayodhya restaurants
+</p>
+
+<a
+href="https://www.google.com/maps/search/top+rated+restaurants+near+Guptar+Ghat+Ayodhya"
+target="_blank"
+class="restaurant-btn"
+>
+
+⭐ देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🥗
+</div>
+
+<h3>
+Vegetarian
+</h3>
+
+<p>
+शाकाहारी भोजन
+</p>
+
+<a
+href="https://www.google.com/maps/search/vegetarian+restaurants+near+Guptar+Ghat+Ayodhya"
+target="_blank"
+class="restaurant-btn"
+>
+
+🥗 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🍛
+</div>
+
+<h3>
+Local Food
+</h3>
+
+<p>
+स्थानीय भोजन
+</p>
+
+<a
+href="https://www.google.com/maps/search/local+food+near+Guptar+Ghat+Ayodhya"
+target="_blank"
+class="restaurant-btn"
+>
+
+🍛 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+☕
+</div>
+
+<h3>
+Cafes
+</h3>
+
+<p>
+Nearby cafes
+</p>
+
+<a
+href="https://www.google.com/maps/search/cafes+near+Guptar+Ghat+Ayodhya"
+target="_blank"
+class="restaurant-btn"
+>
+
+☕ देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     ACTIVITIES
+================================================== -->
+
+<section
+class="info-box"
+id="activities"
+>
+
+<h2>
+🙏 Activities / गतिविधियाँ
+</h2>
+
+<p>
+
+गुप्तार घाट मुख्य रूप से
+धार्मिक, आध्यात्मिक और
+नदी किनारे के अनुभव के लिए
+प्रसिद्ध है।
+
+<br><br>
+
+श्रद्धालु सरयू नदी के किनारे
+पूजा और प्रार्थना करते हैं।
+घाट पर शांत वातावरण में
+कुछ समय बिताया जा सकता है।
+
+<br><br>
+
+सुबह और शाम के समय नदी
+किनारे का वातावरण विशेष
+रूप से सुंदर हो सकता है।
+
+<br><br>
+
+घाट की यात्रा के साथ
+अयोध्या के अन्य धार्मिक
+स्थलों को भी itinerary में
+शामिल किया जा सकता है।
+
+</p>
+
+
+<div class="nearby-grid">
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🌊
+</div>
+
+<h3>
+Saryu Darshan
+</h3>
+
+<p>
+
+सरयू नदी और घाट के
+धार्मिक वातावरण का अनुभव।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Guptar+Ghat+Saryu+River+Ayodhya"
+target="_blank"
+class="route-btn"
+>
+
+🌊 जानकारी देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🙏
+</div>
+
+<h3>
+Prayer
+</h3>
+
+<p>
+
+सरयू तट पर पूजा और
+प्रार्थना।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Guptar+Ghat+Ayodhya+prayer"
+target="_blank"
+class="route-btn"
+>
+
+🙏 देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🌅
+</div>
+
+<h3>
+Sunrise & Sunset
+</h3>
+
+<p>
+
+नदी किनारे सुबह और शाम
+का सुंदर वातावरण।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Guptar+Ghat+Ayodhya+sunset"
+target="_blank"
+class="route-btn"
+>
+
+🌅 देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+📸
+</div>
+
+<h3>
+Photography
+</h3>
+
+<p>
+
+घाट और सरयू नदी के
+सुंदर दृश्य।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Guptar+Ghat+Ayodhya+photos"
+target="_blank"
+class="route-btn"
+>
+
+📸 Photos देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="important-box">
+
+<h3>
+⚠️ Important
+</h3>
+
+<p>
+
+सरयू नदी के किनारे पानी
+की गहराई और current flow
+अलग-अलग स्थानों पर बदल
+सकता है। नदी में उतरते समय
+विशेष सावधानी रखें और
+स्थानीय सुरक्षा निर्देशों
+का पालन करें।
+
+</p>
+
+</div>
+
+</section>
+
+  <!-- ==================================================
+     TRAVEL
+================================================== -->
+
+<section
+class="info-box"
+id="travel"
+>
+
+<h2>
+🚗 Travel / यात्रा
+</h2>
+
+
+<div class="travel-grid">
+
+
+<!-- AYODHYA DHAM -->
+
+<div class="travel-card">
+
+<h3>
+🚉 Ayodhya Dham
+</h3>
+
+<p>
+Ayodhya Dham Junction
+</p>
+
+<p>
+अयोध्या आने वाले यात्रियों
+के लिए प्रमुख railway
+connectivity point।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Ayodhya+Dham+Junction"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- AYODHYA CANTT -->
+
+<div class="travel-card">
+
+<h3>
+🚉 Ayodhya Cantt
+</h3>
+
+<p>
+Ayodhya Cantt Railway Station
+</p>
+
+<p>
+अयोध्या की एक अन्य
+महत्वपूर्ण railway
+connectivity।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Ayodhya+Cantt+Railway+Station"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- AIRPORT -->
+
+<div class="travel-card">
+
+<h3>
+✈️ Airport
+</h3>
+
+<p>
+Maharishi Valmiki
+International Airport
+</p>
+
+<p>
+अयोध्या का प्रमुख
+airport connectivity point।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Maharishi+Valmiki+International+Airport+Ayodhya"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- LOCAL TRAVEL -->
+
+<div class="travel-card">
+
+<h3>
+🚕 Local Travel
+</h3>
+
+<p>
+Auto / E-Rickshaw / Cab
+</p>
+
+<p>
+अयोध्या शहर में Guptar Ghat
+तक जाने के लिए local
+transport options मिल सकते हैं।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Guptar+Ghat+Ayodhya"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="share-auto-box">
+
+<p>
+
+🚗 <strong>Travel Note:</strong>
+त्योहारों और विशेष धार्मिक
+अवसरों के दौरान अयोध्या में
+traffic तथा local movement
+arrangements बदल सकते हैं।
+यात्रा से पहले current
+arrangements check करें।
+
+</p>
+
+</div>
+
+
+<p class="travel-note">
+
+Rail, road और air connectivity
+के लिए यात्रा से पहले current
+schedule और availability
+verify करें।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     LOCATION & ROUTE
+================================================== -->
+
+<section
+class="info-box"
+id="route"
+>
+
+<h2>
+🗺️ Location & Route / स्थान एवं मार्ग
+</h2>
+
+
+<div class="location-box">
+
+<p>
+
+गुप्तार घाट अयोध्या में
+सरयू नदी के किनारे स्थित
+प्रमुख घाट क्षेत्र है।
+
+<br><br>
+
+आप अपने current location से
+सीधे Google Maps पर गुप्तार
+घाट का route देख सकते हैं।
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Guptar+Ghat+Ayodhya"
+target="_blank"
+class="route-btn"
+>
+
+📍 Current Location से Route
+
+</a>
+
+</div>
+
+
+<br>
+
+
+<div class="location-box">
+
+<p>
+
+🌊 <strong>Guptar Ghat:</strong>
+
+<br>
+
+Ayodhya,
+Uttar Pradesh,
+India
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Guptar+Ghat+Ayodhya"
+target="_blank"
+class="route-btn"
+>
+
+📍 Location देखें
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     IMPORTANT INFORMATION
+================================================== -->
+
+<section class="info-box">
+
+<div class="important-box">
+
+<h3>
+⚠️ महत्वपूर्ण सूचना
+</h3>
+
+<p>
+
+गुप्तार घाट सरयू नदी के
+किनारे स्थित धार्मिक और
+ऐतिहासिक स्थल है।
+
+<br><br>
+
+नदी में उतरते समय पानी
+की गहराई और current flow
+का ध्यान रखें।
+
+<br><br>
+
+बच्चों और बुजुर्गों को
+नदी के किनारे अकेला न छोड़ें।
+
+<br><br>
+
+घाट की सीढ़ियों पर
+फिसलन हो सकती है, इसलिए
+सावधानी से चलें।
+
+<br><br>
+
+स्नान या नदी में उतरने से
+पहले स्थानीय safety
+instructions का पालन करें।
+
+<br><br>
+
+त्योहारों और विशेष धार्मिक
+अवसरों पर भीड़ बढ़ सकती है।
+
+<br><br>
+
+स्थानीय प्रशासन या घाट
+पर दिए गए निर्देशों का
+पालन करें।
+
+<br><br>
+
+मौसम और नदी की स्थिति
+के अनुसार यात्रा plan करें।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<h2>
+🎒 Travel Tips / यात्रा सुझाव
+</h2>
+
+
+<div class="important-box">
+
+<p>
+
+• सुबह या शाम के समय
+घाट जाना अच्छा अनुभव
+हो सकता है।
+<br><br>
+
+• नदी के किनारे पानी की
+गहराई का ध्यान रखें।
+<br><br>
+
+• बच्चों और बुजुर्गों का
+विशेष ध्यान रखें।
+<br><br>
+
+• घाट की सीढ़ियों पर
+सावधानी से चलें।
+<br><br>
+
+• Comfortable footwear पहनें।
+<br><br>
+
+• गर्मी के मौसम में पानी
+साथ रखें।
+<br><br>
+
+• नदी और घाट को साफ रखें।
+<br><br>
+
+• Plastic और कचरा नदी में
+न डालें।
+<br><br>
+
+• धार्मिक गतिविधियों और
+श्रद्धालुओं का सम्मान करें।
+<br><br>
+
+• राम की पैड़ी और सरयू
+के अन्य घाटों को भी
+itinerary में शामिल कर सकते हैं।
+<br><br>
+
+• राम जन्मभूमि, हनुमानगढ़ी,
+नागेश्वरनाथ मंदिर और कनक
+भवन को भी साथ में देखा जा
+सकता है।
+<br><br>
+
+• मौसम खराब होने पर
+नदी किनारे अतिरिक्त
+सावधानी रखें।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     MORE INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+id="more"
+>
+
+<h2>
+🌐 More Information / अधिक जानकारी
+</h2>
+
+
+<div class="important-box">
+
+<h3>
+📖 Guptar Ghat के बारे में और जानें
+</h3>
+
+
+<p>
+
+गुप्तार घाट का इतिहास,
+धार्मिक महत्व, सरयू नदी,
+भगवान श्री राम से जुड़ी
+परंपराएँ, घाट का वातावरण
+और अयोध्या tourism के बारे
+में अधिक जानकारी के लिए
+नीचे दिए गए buttons का
+उपयोग करें।
+
+</p>
+
+
+<a
+href="https://www.google.com/search?q=Guptar+Ghat+Ayodhya"
+target="_blank"
+class="official-btn"
+>
+
+🌐 अधिक जानकारी देखें
+
+</a>
+
+
+<br>
+
+
+<a
+href="https://www.google.com/search?q=Guptar+Ghat+Ayodhya+history"
+target="_blank"
+class="official-btn"
+>
+
+📖 History देखें
+
+</a>
+
+
+<br>
+
+
+<a
+href="https://www.google.com/search?q=Guptar+Ghat+Lord+Rama+Ayodhya"
+target="_blank"
+class="official-btn"
+>
+
+📜 Ram Connection देखें
+
+</a>
+
+
+<br>
+
+
+<a
+href="https://www.google.com/search?q=Guptar+Ghat+Saryu+River+Ayodhya"
+target="_blank"
+class="official-btn"
+>
+
+🌊 Saryu River Information देखें
+
+</a>
+
+
+<br>
+
+
+<a
+href="https://www.google.com/search?q=Ayodhya+tourism+places"
+target="_blank"
+class="official-btn"
+>
+
+🏝️ Ayodhya Tourism देखें
+
+</a>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     PHOTO GALLERY
+================================================== -->
+
+<section
+class="info-box"
+id="photos"
+>
+
+<h2>
+📸 Guptar Ghat Photo
+<br>
+गुप्तार घाट की तस्वीर
+</h2>
+
+
+<p>
+
+गुप्तार घाट, सरयू नदी,
+घाट की सीढ़ियाँ और अयोध्या
+के आसपास के प्रमुख धार्मिक
+स्थलों की photos देखने के
+लिए नीचे photo cards पर
+click करें।
+
+</p>
+
+
+<div class="photo-gallery">
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Guptar+Ghat+Ayodhya"
+target="_blank"
+class="photo-card"
+>
+
+<div class="photo-placeholder">
+
+🌊
+
+</div>
+
+
+<p>
+
+🌊 Guptar Ghat
+
+</p>
+
+
+</a>
+
+
+</div>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Guptar+Ghat+Ayodhya"
+target="_blank"
+class="photo-more"
+>
+
+🌊 Guptar Ghat Photos देखें
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Guptar+Ghat+Saryu+River"
+target="_blank"
+class="photo-more"
+>
+
+🌊 Saryu River Photos देखें
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Ram+Ki+Paidi+Ayodhya"
+target="_blank"
+class="photo-more"
+>
+
+🌅 Ram Ki Paidi Photos देखें
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Nageshwarnath+Temple+Ayodhya"
+target="_blank"
+class="photo-more"
+>
+
+🔱 Nageshwarnath Temple Photos देखें
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Ram+Janmabhoomi+Ayodhya"
+target="_blank"
+class="photo-more"
+>
+
+🛕 Ram Janmabhoomi Photos देखें
+
+</a>
+
+
+</section>
+
+
+<!-- ==================================================
+     DESH KHOJ A2Z INFORMATION
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🇮🇳 DESH KHOJ A2Z Travel Information
+</h2>
+
+
+<p>
+
+DESH KHOJ A2Z का उद्देश्य
+यात्रियों को भारत के अलग-अलग
+स्थानों के लिए सरल, उपयोगी और
+practical travel information
+एक ही जगह उपलब्ध कराना है।
+
+<br><br>
+
+गुप्तार घाट जैसे धार्मिक,
+ऐतिहासिक और नदी किनारे के
+destinations के लिए हम
+nearby places, hotels, food,
+activities, travel route और
+important visitor information
+को एक ही page पर उपलब्ध कराने
+का प्रयास करते हैं।
+
+<br><br>
+
+Our goal is to provide simple,
+useful and practical travel
+information for travellers
+exploring India.
+
+<br><br>
+
+Place information, local details,
+reviews और उपलब्ध जानकारी के
+आधार पर pages को समय-समय पर
+update किया जाएगा।
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     COMMON JAVASCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
