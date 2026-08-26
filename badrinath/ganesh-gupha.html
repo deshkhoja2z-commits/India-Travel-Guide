@@ -1,0 +1,2318 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Ganesh Gupha | गणेश गुफा - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   PAGE BOX
+================================================== */
+
+.info-box{
+
+background:#ffffff;
+
+border-radius:25px;
+
+padding:30px;
+
+margin:25px 0;
+
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+
+scroll-margin-top:90px;
+
+}
+
+.info-box h2{
+
+font-size:32px;
+
+line-height:1.25;
+
+margin-bottom:18px;
+
+color:#202124;
+
+}
+
+.info-box p{
+
+font-size:20px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+
+
+/* ==================================================
+   SECTION TABS
+================================================== */
+
+.section-tabs{
+
+display:flex;
+
+gap:8px;
+
+overflow-x:auto;
+
+padding:10px 2px 14px;
+
+margin:10px 0 5px;
+
+position:sticky;
+
+top:0;
+
+z-index:50;
+
+background:#f4f7f6;
+
+scroll-behavior:smooth;
+
+-webkit-overflow-scrolling:touch;
+
+}
+
+.section-tabs::-webkit-scrollbar{
+
+height:4px;
+
+}
+
+.section-tabs::-webkit-scrollbar-thumb{
+
+background:#bbb;
+
+border-radius:10px;
+
+}
+
+.section-tabs a{
+
+flex:0 0 auto;
+
+display:block;
+
+padding:10px 14px;
+
+background:white;
+
+color:#202124;
+
+text-decoration:none;
+
+border-radius:14px;
+
+font-size:14px;
+
+font-weight:bold;
+
+border:1px solid #e5e7eb;
+
+box-shadow:0 3px 10px rgba(0,0,0,.06);
+
+white-space:nowrap;
+
+}
+
+.section-tabs a:active{
+
+transform:scale(.95);
+
+background:#fff7e6;
+
+}
+
+.section-tabs a:hover{
+
+background:#fff7e6;
+
+}
+
+
+/* ==================================================
+   IMPORTANT BOX
+================================================== */
+
+.important-box{
+
+background:#fff8e7;
+
+border-left:6px solid #f59e0b;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+.important-box h3{
+
+font-size:22px;
+
+margin-bottom:8px;
+
+}
+
+.important-box p{
+
+font-size:18px;
+
+margin:0;
+
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.official-btn{
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:12px 18px;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+}
+
+.official-btn:active{
+
+transform:scale(.97);
+
+}
+
+
+/* ==================================================
+   NEARBY GRID
+================================================== */
+
+.nearby-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.nearby-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:22px 12px;
+
+text-align:center;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.nearby-card:nth-child(2){
+
+border-top-color:#2196d2;
+
+}
+
+.nearby-card:nth-child(3){
+
+border-top-color:#f59e0b;
+
+}
+
+.nearby-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.nearby-icon{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.nearby-card h3{
+
+font-size:20px;
+
+margin:8px 0;
+
+}
+
+.nearby-card p{
+
+font-size:16px;
+
+margin:5px 0 14px;
+
+color:#666;
+
+}
+
+.route-btn{
+
+display:inline-block;
+
+background:#16a34a;
+
+color:white;
+
+text-decoration:none;
+
+padding:10px 13px;
+
+border-radius:11px;
+
+font-size:13px;
+
+font-weight:bold;
+
+}
+
+.route-btn:active{
+
+transform:scale(.96);
+
+}
+
+
+/* ==================================================
+   HOTEL GRID
+================================================== */
+
+.hotel-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.hotel-card{
+
+display:block;
+
+background:#f8f9fa;
+
+color:#202124;
+
+text-decoration:none;
+
+text-align:center;
+
+border-radius:20px;
+
+padding:22px 12px;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.hotel-card:nth-child(2){
+
+border-top-color:#f59e0b;
+
+}
+
+.hotel-card:nth-child(3){
+
+border-top-color:#2196d2;
+
+}
+
+.hotel-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.hotel-card:active{
+
+transform:scale(.97);
+
+}
+
+.hotel-icon{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.hotel-card h3{
+
+font-size:20px;
+
+margin:8px 0;
+
+}
+
+.hotel-card p{
+
+font-size:15px;
+
+margin:5px 0;
+
+color:#666;
+
+}
+
+.hotel-link{
+
+display:inline-block;
+
+margin-top:9px;
+
+padding:8px 11px;
+
+border-radius:10px;
+
+background:#1976d2;
+
+color:white;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+   HOTEL BOX
+================================================== */
+
+.hotel-box{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+   RESTAURANTS
+================================================== */
+
+.restaurant-box{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.restaurant-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:20px 12px;
+
+text-align:center;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.restaurant-card:nth-child(2){
+
+border-top-color:#f59e0b;
+
+}
+
+.restaurant-card:nth-child(3){
+
+border-top-color:#2196d2;
+
+}
+
+.restaurant-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.restaurant-card h3{
+
+font-size:19px;
+
+margin:8px 0;
+
+}
+
+.restaurant-card p{
+
+font-size:15px;
+
+color:#666;
+
+margin:5px 0 12px;
+
+}
+
+.restaurant-btn{
+
+display:inline-block;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+padding:9px 11px;
+
+border-radius:10px;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+   TRAVEL GRID
+================================================== */
+
+.travel-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.travel-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:22px 16px;
+
+border-top:5px solid #2196d2;
+
+}
+
+.travel-card h3{
+
+font-size:20px;
+
+margin-bottom:12px;
+
+}
+
+.travel-card p{
+
+font-size:17px;
+
+margin:7px 0;
+
+}
+
+
+/* ==================================================
+   TRAVEL NOTES
+================================================== */
+
+.share-auto-box{
+
+margin-top:20px;
+
+padding:15px 18px;
+
+background:#f0f7ff;
+
+border-left:5px solid #2196d2;
+
+border-radius:15px;
+
+}
+
+.share-auto-box p{
+
+font-size:17px;
+
+margin:0;
+
+}
+
+.travel-note{
+
+margin-top:15px;
+
+padding:14px 18px;
+
+background:#f0fff4;
+
+border-left:5px solid #16a34a;
+
+border-radius:15px;
+
+font-size:16px !important;
+
+}
+
+
+/* ==================================================
+   LOCATION
+================================================== */
+
+.location-box{
+
+background:#f0f7ff;
+
+border-left:6px solid #1976d2;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+   PHOTO GALLERY
+================================================== */
+
+.photo-gallery{
+
+margin-top:20px;
+
+}
+
+.photo-card{
+
+display:block;
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+overflow:hidden;
+
+text-decoration:none;
+
+color:#202124;
+
+box-shadow:0 5px 16px rgba(0,0,0,.06);
+
+border:1px solid #e5e7eb;
+
+}
+
+.photo-placeholder{
+
+height:230px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:90px;
+
+background:#eef7fa;
+
+}
+
+.photo-card p{
+
+font-size:18px;
+
+padding:15px;
+
+margin:0;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+.photo-more{
+
+display:block;
+
+margin-top:18px;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+padding:13px;
+
+border-radius:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+.info-box{
+
+padding:22px 18px;
+
+border-radius:22px;
+
+}
+
+.info-box h2{
+
+font-size:28px;
+
+line-height:1.3;
+
+}
+
+.info-box p{
+
+font-size:18px;
+
+}
+
+.section-tabs{
+
+gap:7px;
+
+padding:9px 2px 13px;
+
+}
+
+.section-tabs a{
+
+font-size:12px;
+
+padding:9px 11px;
+
+border-radius:12px;
+
+}
+
+.nearby-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.nearby-card{
+
+padding:18px 9px;
+
+}
+
+.nearby-card h3{
+
+font-size:18px;
+
+}
+
+.nearby-card p{
+
+font-size:15px;
+
+}
+
+.route-btn{
+
+font-size:11px;
+
+padding:9px 8px;
+
+}
+
+.hotel-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.hotel-card{
+
+padding:18px 8px;
+
+}
+
+.hotel-icon{
+
+font-size:34px;
+
+}
+
+.hotel-card h3{
+
+font-size:17px;
+
+}
+
+.hotel-card p{
+
+font-size:14px;
+
+}
+
+.hotel-link{
+
+font-size:11px;
+
+padding:8px 8px;
+
+}
+
+.restaurant-box{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.restaurant-card{
+
+padding:17px 8px;
+
+}
+
+.restaurant-card h3{
+
+font-size:17px;
+
+}
+
+.restaurant-card p{
+
+font-size:14px;
+
+}
+
+.restaurant-btn{
+
+font-size:10px;
+
+padding:8px 7px;
+
+}
+
+.travel-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.travel-card{
+
+padding:16px 10px;
+
+}
+
+.travel-card h3{
+
+font-size:17px;
+
+}
+
+.travel-card p{
+
+font-size:15px;
+
+}
+
+.photo-placeholder{
+
+height:210px;
+
+font-size:80px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🕉️
+</div>
+
+<h1>
+Ganesh Gupha
+</h1>
+
+<p>
+गणेश गुफा • माणा • बद्रीनाथ • उत्तराखंड
+</p>
+
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<!-- ==================================================
+     BACK
+================================================== -->
+
+<a
+href="uttarakhand.html"
+class="back"
+>
+
+← Uttarakhand / उत्तराखंड
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🕉️ Ganesh Gupha / गणेश गुफा
+</h2>
+
+<p>
+
+Ganesh Gupha, जिसे गणेश गुफा के
+नाम से जाना जाता है, उत्तराखंड के
+Chamoli जिले में Mana Village के
+पास स्थित एक प्रसिद्ध धार्मिक और
+पौराणिक स्थल है।
+
+<br><br>
+
+यह स्थान Badrinath Dham के पास
+हिमालयी क्षेत्र में स्थित है और
+Mana Village आने वाले यात्रियों के
+लिए एक महत्वपूर्ण दर्शनीय स्थल है।
+
+<br><br>
+
+पौराणिक मान्यता के अनुसार भगवान
+गणेश ने यहाँ बैठकर महाभारत के
+श्लोक लिखे थे। स्थानीय परंपरा में
+इस स्थान को Mahabharata से जुड़ा
+महत्वपूर्ण स्थल माना जाता है।
+
+<br><br>
+
+Ganesh Gupha is located near
+Mana Village in the Badrinath
+region of Uttarakhand and is
+associated with Hindu mythology
+and the Mahabharata.
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK TABS
+================================================== -->
+
+<div class="section-tabs">
+
+<a href="#nearby">
+📍 Nearby
+</a>
+
+<a href="#hotels">
+🏨 Hotels
+</a>
+
+<a href="#food">
+🍽️ Food
+</a>
+
+<a href="#activities">
+🙏 Visit
+</a>
+
+<a href="#travel">
+🚗 Travel
+</a>
+
+<a href="#route">
+🗺️ Route
+</a>
+
+<a href="#more">
+🌐 More
+</a>
+
+<a href="#photos">
+📸 Photos
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     NEARBY
+================================================== -->
+
+<section
+class="info-box"
+id="nearby"
+>
+
+<h2>
+📍 Nearby Places / आसपास के स्थान
+</h2>
+
+<div class="nearby-grid">
+
+
+<!-- MANA VILLAGE -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🏔️
+</div>
+
+<h3>
+Mana Village
+</h3>
+
+<p>
+
+माणा गाँव
+
+<br>
+
+लगभग <strong>1 km*</strong>
+
+<br>
+
+कुछ दूरी पैदल
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mana+Village+Uttarakhand"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- VYAS GUFA -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🕉️
+</div>
+
+<h3>
+Vyas Gufa
+</h3>
+
+<p>
+
+व्यास गुफा
+
+<br>
+
+लगभग <strong>1 km*</strong>
+
+<br>
+
+Mana Village क्षेत्र
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Vyas+Gufa+Mana+Uttarakhand"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- BADRINATH TEMPLE -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🛕
+</div>
+
+<h3>
+Badrinath Temple
+</h3>
+
+<p>
+
+बद्रीनाथ मंदिर
+
+<br>
+
+लगभग <strong>4–5 km*</strong>
+
+<br>
+
+Badrinath Dham
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Badrinath+Temple+Uttarakhand"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- VASUDHARA FALLS -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+💧
+</div>
+
+<h3>
+Vasudhara Falls
+</h3>
+
+<p>
+
+वसुधारा जलप्रपात
+
+<br>
+
+लगभग <strong>6–8 km*</strong>
+
+<br>
+
+Mountain route
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Vasudhara+Falls+Uttarakhand"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<p class="travel-note">
+
+*दूरी approximate है। Actual दूरी और
+समय road condition, walking route,
+weather और local conditions के अनुसार
+बदल सकते हैं।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     HOTELS
+================================================== -->
+
+<section
+class="info-box"
+id="hotels"
+>
+
+<h2>
+🏨 Hotels / होटल
+</h2>
+
+<p>
+
+Ganesh Gupha के आसपास overnight
+stay options सीमित हो सकते हैं।
+अधिकांश travellers Badrinath या
+Mana Village क्षेत्र में stay करते हैं।
+
+</p>
+
+
+<div class="hotel-grid">
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Mana+Village+Badrinath"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+💰
+</div>
+
+<h3>
+Budget Hotels
+</h3>
+
+<p>
+बजट होटल
+</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+near+Badrinath+Uttarakhand"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+⭐
+</div>
+
+<h3>
+Best Hotels
+</h3>
+
+<p>
+अच्छे होटल
+</p>
+
+<span class="hotel-link">
+🏨 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=guest+house+near+Mana+Village+Badrinath"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+🏠
+</div>
+
+<h3>
+Guest Houses
+</h3>
+
+<p>
+गेस्ट हाउस
+</p>
+
+<span class="hotel-link">
+🏠 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Badrinath+Uttarakhand"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+👑
+</div>
+
+<h3>
+Premium Hotels
+</h3>
+
+<p>
+प्रीमियम होटल
+</p>
+
+<span class="hotel-link">
+⭐ देखें
+</span>
+
+</a>
+
+
+</div>
+
+
+<div class="hotel-box">
+
+<p>
+
+Hotel booking करते समय Badrinath
+Temple और Mana Village से distance,
+reviews, price और seasonal
+availability जरूर check करें।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     FOOD
+================================================== -->
+
+<section
+class="info-box"
+id="food"
+>
+
+<h2>
+🍽️ Food / भोजन
+</h2>
+
+<p>
+
+Mana Village और Badrinath क्षेत्र में
+local food options उपलब्ध हो सकते हैं।
+Ganesh Gupha जाने से पहले पानी और
+जरूरी snacks साथ रखना बेहतर रहेगा।
+
+</p>
+
+
+<div class="restaurant-box">
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+⭐
+</div>
+
+<h3>
+Top Rated
+</h3>
+
+<p>
+Badrinath restaurants
+</p>
+
+<a
+href="https://www.google.com/maps/search/top+rated+restaurants+near+Badrinath+Uttarakhand"
+target="_blank"
+class="restaurant-btn"
+>
+
+⭐ देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🥗
+</div>
+
+<h3>
+Vegetarian
+</h3>
+
+<p>
+शाकाहारी भोजन
+</p>
+
+<a
+href="https://www.google.com/maps/search/vegetarian+restaurants+near+Badrinath+Uttarakhand"
+target="_blank"
+class="restaurant-btn"
+>
+
+🥗 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🍛
+</div>
+
+<h3>
+Local Food
+</h3>
+
+<p>
+स्थानीय भोजन
+</p>
+
+<a
+href="https://www.google.com/maps/search/food+near+Mana+Village+Badrinath"
+target="_blank"
+class="restaurant-btn"
+>
+
+🍛 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+☕
+</div>
+
+<h3>
+Cafes
+</h3>
+
+<p>
+Nearby cafes
+</p>
+
+<a
+href="https://www.google.com/maps/search/cafes+near+Badrinath+Uttarakhand"
+target="_blank"
+class="restaurant-btn"
+>
+
+☕ देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     VISIT / ACTIVITIES
+================================================== -->
+
+<section
+class="info-box"
+id="activities"
+>
+
+<h2>
+🙏 Visit / दर्शन एवं अनुभव
+</h2>
+
+<p>
+
+Ganesh Gupha एक धार्मिक और
+पौराणिक स्थल है। यहाँ visitors
+गुफा, आसपास का Himalayan landscape
+और Mana Village क्षेत्र की प्राकृतिक
+सुंदरता देख सकते हैं।
+
+</p>
+
+
+<div class="nearby-grid">
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🕉️
+</div>
+
+<h3>
+Darshan
+</h3>
+
+<p>
+
+गणेश जी से जुड़ी इस पौराणिक
+गुफा के दर्शन करें।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Ganesh+Gufa+Mana+Village+Uttarakhand"
+target="_blank"
+class="route-btn"
+>
+
+🙏 जानकारी देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+📖
+</div>
+
+<h3>
+Mahabharata Connection
+</h3>
+
+<p>
+
+महाभारत और भगवान गणेश से
+जुड़ी स्थानीय पौराणिक मान्यताएँ।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Ganesh+Gufa+Mahabharata+Mana"
+target="_blank"
+class="route-btn"
+>
+
+📖 जानें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🏔️
+</div>
+
+<h3>
+Himalayan View
+</h3>
+
+<p>
+
+Mana Village क्षेत्र के
+सुंदर Himalayan views देखें।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Mana+Village+Himalayan+views"
+target="_blank"
+class="route-btn"
+>
+
+🏔️ देखें
+
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+📸
+</div>
+
+<h3>
+Photography
+</h3>
+
+<p>
+
+गुफा और आसपास के प्राकृतिक
+दृश्यों की photography करें।
+
+</p>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Ganesh+Gufa+Mana+Uttarakhand"
+target="_blank"
+class="route-btn"
+>
+
+📸 Photos देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="important-box">
+
+<h3>
+⚠️ यात्रा सावधानी
+</h3>
+
+<p>
+
+यह Himalayan क्षेत्र है। मौसम,
+बारिश, बर्फबारी और रास्ते की
+स्थिति यात्रा को प्रभावित कर सकती है।
+स्थानीय निर्देशों और सुरक्षा नियमों
+का पालन करें।
+
+</p>
+
+</div>
+
+</section>
+
+  <!-- ==================================================
+     TRAVEL
+================================================== -->
+
+<section
+class="info-box"
+id="travel"
+>
+
+<h2>
+🚗 Travel / यात्रा
+</h2>
+
+
+<div class="travel-grid">
+
+
+<!-- BADRINATH -->
+
+<div class="travel-card">
+
+<h3>
+🛕 Badrinath
+</h3>
+
+<p>
+बद्रीनाथ धाम
+</p>
+
+<p>
+Ganesh Gupha तक पहुँचने के लिए
+पहले Badrinath क्षेत्र पहुँचना
+होता है।
+</p>
+
+<p>
+🚗 Road से यात्रा
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Badrinath+Uttarakhand"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- MANA VILLAGE -->
+
+<div class="travel-card">
+
+<h3>
+🏔️ Mana Village
+</h3>
+
+<p>
+माणा गाँव
+</p>
+
+<p>
+Ganesh Gupha Mana Village के
+पास स्थित है। यहाँ से गुफा तक
+local walking route हो सकता है।
+</p>
+
+<p>
+🚶 Local / Walking
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mana+Village+Uttarakhand"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- AIRPORT -->
+
+<div class="travel-card">
+
+<h3>
+✈️ Airport
+</h3>
+
+<p>
+Jolly Grant Airport
+Dehradun
+</p>
+
+<p>
+Airport से आगे road transport
+द्वारा Badrinath क्षेत्र पहुँचना
+होता है।
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Badrinath+Uttarakhand&origin=Jolly+Grant+Airport+Dehradun"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- RAILWAY -->
+
+<div class="travel-card">
+
+<h3>
+🚆 Railway Station
+</h3>
+
+<p>
+Rishikesh Railway Station
+</p>
+
+<p>
+Rishikesh से Badrinath की ओर
+road journey करनी होती है।
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Badrinath+Uttarakhand&origin=Rishikesh+Railway+Station"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="share-auto-box">
+
+<p>
+
+🚗 <strong>Road Travel:</strong>
+Ganesh Gupha तक यात्रा सामान्यतः
+Badrinath और Mana Village के
+मार्ग से की जाती है। Mana Village
+के बाद गुफा तक local walking
+route हो सकता है।
+
+</p>
+
+</div>
+
+
+<p class="travel-note">
+
+*Mountain roads पर travel time
+weather, road condition, traffic,
+season और local restrictions के
+अनुसार बदल सकता है।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     LOCATION & ROUTE
+================================================== -->
+
+<section
+class="info-box"
+id="route"
+>
+
+<h2>
+🗺️ Location & Route / स्थान एवं मार्ग
+</h2>
+
+
+<div class="location-box">
+
+<p>
+
+Ganesh Gupha उत्तराखंड के Chamoli
+जिले में Mana Village के पास
+स्थित है।
+
+<br><br>
+
+Badrinath से Mana Village की ओर
+जाने के बाद Ganesh Gupha तक
+पहुँचा जा सकता है।
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Ganesh+Gufa+Mana+Uttarakhand"
+target="_blank"
+class="route-btn"
+>
+
+📍 Current Location से Route
+
+</a>
+
+</div>
+
+
+<br>
+
+
+<div class="location-box">
+
+<p>
+
+🕉️ <strong>Ganesh Gupha:</strong>
+
+<br>
+
+Ganesh Gufa, Mana Village,
+Badrinath, Chamoli, Uttarakhand
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Ganesh+Gufa+Mana+Uttarakhand"
+target="_blank"
+class="route-btn"
+>
+
+📍 Location देखें
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     IMPORTANT INFORMATION
+================================================== -->
+
+<section class="info-box">
+
+<div class="important-box">
+
+<h3>
+⚠️ महत्वपूर्ण सूचना
+</h3>
+
+<p>
+
+Ganesh Gupha एक धार्मिक और
+पौराणिक Himalayan tourism
+destination है।
+
+<br><br>
+
+यहाँ यात्रा के दौरान मौसम,
+बारिश, बर्फबारी और road conditions
+का विशेष ध्यान रखें।
+
+<br><br>
+
+Local access, visitor conditions
+और आसपास के रास्ते मौसम तथा
+प्रशासनिक निर्देशों के अनुसार
+बदल सकते हैं।
+
+<br><br>
+
+यात्रा से पहले current local
+information और road condition
+check करना बेहतर रहेगा।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<h2>
+🎒 Travel Tips / यात्रा सुझाव
+</h2>
+
+
+<div class="important-box">
+
+<p>
+
+• मौसम देखकर यात्रा की योजना बनाएं।
+<br><br>
+
+• Comfortable और warm कपड़े रखें।
+<br><br>
+
+• अच्छे grip वाले footwear पहनें।
+<br><br>
+
+• पानी और जरूरी सामान साथ रखें।
+<br><br>
+
+• Mountain roads पर सावधानी से यात्रा करें।
+<br><br>
+
+• गुफा में स्थानीय नियमों और
+धार्मिक मर्यादा का पालन करें।
+<br><br>
+
+• आसपास कचरा न फैलाएँ।
+<br><br>
+
+• बारिश या बर्फबारी की स्थिति में
+local advice को प्राथमिकता दें।
+<br><br>
+
+• अपनी valuables का ध्यान रखें।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     MORE INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+id="more"
+>
+
+<h2>
+🌐 More Information / अधिक जानकारी
+</h2>
+
+
+<div class="important-box">
+
+<h3>
+📖 Ganesh Gupha के बारे में और जानें
+</h3>
+
+
+<p>
+
+Ganesh Gupha के history, mythology,
+Mahabharata connection, location,
+Mana Village, Badrinath और travel
+information के बारे में अधिक जानकारी
+के लिए नीचे दिए गए buttons का उपयोग
+करें।
+
+</p>
+
+
+<a
+href="https://www.google.com/search?q=Ganesh+Gufa+Mana+Uttarakhand+history"
+target="_blank"
+class="official-btn"
+>
+
+🌐 Chrome में अधिक जानकारी देखें
+
+</a>
+
+
+<br>
+
+
+<a
+href="https://www.google.com/search?q=Ganesh+Gufa+Mana+Uttarakhand+tourism"
+target="_blank"
+class="official-btn"
+>
+
+🏔️ Tourism Information देखें
+
+</a>
+
+
+<br>
+
+
+<a
+href="https://www.google.com/search?q=Ganesh+Gufa+Mahabharata+Mana+Village"
+target="_blank"
+class="official-btn"
+>
+
+📖 Mythology Information देखें
+
+</a>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     PHOTO GALLERY
+================================================== -->
+
+<section
+class="info-box"
+id="photos"
+>
+
+<h2>
+📸 Ganesh Gupha Photo
+<br>
+गणेश गुफा की तस्वीर
+</h2>
+
+
+<p>
+
+Ganesh Gupha, Mana Village,
+Badrinath और आसपास के Himalayan
+landscape की photos देखने के लिए
+नीचे photo card पर click करें।
+
+</p>
+
+
+<div class="photo-gallery">
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Ganesh+Gufa+Mana+Uttarakhand"
+target="_blank"
+class="photo-card"
+>
+
+
+<div class="photo-placeholder">
+
+🕉️
+
+</div>
+
+
+<p>
+
+🕉️ Ganesh Gupha
+
+</p>
+
+
+</a>
+
+
+</div>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Ganesh+Gufa+Mana+Village"
+target="_blank"
+class="photo-more"
+>
+
+🕉️ Ganesh Gupha Photos देखें
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Mana+Village+Uttarakhand"
+target="_blank"
+class="photo-more"
+>
+
+🏔️ Mana Village Photos देखें
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Badrinath+Mana+Uttarakhand+Himalaya"
+target="_blank"
+class="photo-more"
+>
+
+🏔️ Himalayan Photos देखें
+
+</a>
+
+
+</section>
+
+
+<!-- ==================================================
+     DESH KHOJ A2Z INFORMATION
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🇮🇳 DESH KHOJ A2Z Travel Information
+</h2>
+
+
+<p>
+
+DESH KHOJ A2Z का उद्देश्य यात्रियों
+को भारत के अलग-अलग स्थानों के लिए
+सरल, उपयोगी और practical travel
+information एक ही जगह उपलब्ध कराना है।
+
+<br><br>
+
+Ganesh Gupha जैसे धार्मिक और
+हिमालयी destinations के लिए हम
+nearby places, distance, hotels,
+food, visit information, travel route
+और important visitor information को
+एक ही page पर उपलब्ध कराने का
+प्रयास करते हैं।
+
+<br><br>
+
+Our goal is to provide simple,
+useful and practical travel
+information for travellers
+exploring India.
+
+<br><br>
+
+Place information, local details,
+reviews और उपलब्ध जानकारी के आधार
+पर pages को समय-समय पर update किया
+जाएगा।
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     COMMON JAVASCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
