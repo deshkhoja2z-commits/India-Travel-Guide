@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Coorg | कूर्ग - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   CITY SERVICES
+================================================== */
+
+.city-services{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.service-btn{
+display:block;
+background:white;
+color:#202124;
+text-decoration:none;
+text-align:center;
+padding:18px 8px;
+border-radius:18px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border:1px solid #eee;
+font-weight:bold;
+font-size:16px;
+cursor:pointer;
+}
+
+.service-btn:active{
+transform:scale(.97);
+background:#fff7e6;
+}
+
+.service-icon{
+font-size:30px;
+display:block;
+margin-bottom:7px;
+}
+
+
+/* ==================================================
+   REGISTRATION POPUP
+================================================== */
+
+.popup-bg{
+display:none;
+position:fixed;
+z-index:9999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
+padding:20px;
+overflow:auto;
+}
+
+.popup-box{
+max-width:500px;
+margin:70px auto;
+background:white;
+border-radius:25px;
+padding:25px;
+box-shadow:0 10px 40px rgba(0,0,0,.3);
+text-align:center;
+}
+
+.popup-box h2{
+font-size:24px;
+margin-bottom:15px;
+}
+
+.popup-box p{
+font-size:17px;
+line-height:1.7;
+color:#555;
+margin-bottom:20px;
+}
+
+.popup-btn{
+display:block;
+width:100%;
+padding:15px;
+margin:12px 0;
+border-radius:30px;
+text-decoration:none;
+border:none;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+box-sizing:border-box;
+}
+
+.whatsapp-btn{
+background:#25D366;
+color:white;
+}
+
+.email-btn{
+background:#1976d2;
+color:white;
+}
+
+.close-btn{
+background:#17202a;
+color:white;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+.city-services{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.service-btn{
+font-size:14px;
+padding:17px 5px;
+}
+
+.service-icon{
+font-size:28px;
+}
+
+.popup-box{
+margin:50px auto;
+padding:22px 18px;
+}
+
+.popup-box h2{
+font-size:22px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🌿
+</div>
+
+<h1>
+Coorg / कूर्ग
+</h1>
+
+<p>
+Hills • Coffee • Waterfalls • Nature
+</p>
+
+
+<!-- SEARCH -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<!-- ==================================================
+     BACK
+================================================== -->
+
+<a
+href="../cities.html"
+class="back"
+>
+
+← Cities / शहर
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🌿 Best of Coorg
+</h2>
+
+<p>
+
+Coorg, जिसे Kodagu भी कहा जाता है,
+कर्नाटक का एक प्रसिद्ध hill destination है।
+यह अपनी हरी-भरी पहाड़ियों, coffee plantations,
+waterfalls, forests और शांत प्राकृतिक
+सुंदरता के लिए प्रसिद्ध है।
+
+</p>
+
+<br>
+
+<p>
+
+यहाँ Abbey Falls, Raja's Seat,
+Dubare Elephant Camp, Talakaveri,
+Mandalpatti और Namdroling Monastery
+जैसे प्रमुख पर्यटन स्थल हैं।
+
+</p>
+
+<br>
+
+<p>
+
+यहाँ आपको Coorg के प्रमुख प्राकृतिक,
+धार्मिक, ऐतिहासिक, adventure और
+पर्यटन स्थलों की जानकारी मिलेगी।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     PLACES
+================================================== -->
+
+<h2 class="section-title">
+
+🌿 Places / प्रमुख स्थान
+
+</h2>
+
+
+<div
+class="place-grid"
+id="placeGrid"
+>
+
+
+<!-- ==================================================
+     1 ABBEY FALLS
+================================================== -->
+
+<a
+href="abbey-falls.html"
+class="place-card"
+data-search="
+abbey falls
+abbey falls coorg
+abbey waterfall
+coorg waterfall
+अभ्बी फॉल्स
+अब्बे फॉल्स
+अभय फॉल्स
+कूर्ग झरना
+कोडागु
+"
+>
+
+<div class="place-icon">
+💦
+</div>
+
+<h3>
+Abbey Falls
+</h3>
+
+<p>
+एबी फॉल्स
+<br>
+Waterfall & Nature
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     2 RAJA'S SEAT
+================================================== -->
+
+<a
+href="rajas-seat.html"
+class="place-card"
+data-search="
+raja's seat
+rajas seat
+raja seat coorg
+raja's seat madikeri
+राजा सीट
+राजा की सीट
+मडिकेरी
+कूर्ग
+"
+>
+
+<div class="place-icon">
+🌅
+</div>
+
+<h3>
+Raja's Seat
+</h3>
+
+<p>
+राजा सीट
+<br>
+Sunset & Valley View
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     3 MANDALPATTI
+================================================== -->
+
+<a
+href="mandalpatti.html"
+class="place-card"
+data-search="
+mandalpatti
+mandalpatti peak
+mandalpatti viewpoint
+mandalpatti coorg
+मंडलपट्टी
+मंडलपट्टी पीक
+मंडलपट्टी व्यूपॉइंट
+कूर्ग
+"
+>
+
+<div class="place-icon">
+⛰️
+</div>
+
+<h3>
+Mandalpatti
+</h3>
+
+<p>
+मंडलपट्टी
+<br>
+Peak & Viewpoint
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     4 DUBARE ELEPHANT CAMP
+================================================== -->
+
+<a
+href="dubare-elephant-camp.html"
+class="place-card"
+data-search="
+dubare elephant camp
+dubare
+dubare elephant camp coorg
+elephant camp coorg
+दुबारे एलीफेंट कैंप
+दुबारे
+हाथी कैंप
+कूर्ग
+"
+>
+
+<div class="place-icon">
+🐘
+</div>
+
+<h3>
+Dubare Elephant Camp
+</h3>
+
+<p>
+दुबारे एलीफेंट कैंप
+<br>
+Elephants & Nature
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     5 TALACAUVERY
+================================================== -->
+
+<a
+href="talacauvery.html"
+class="place-card"
+data-search="
+talacauvery
+talakaveri
+talacauvery coorg
+source of river cauvery
+talakaveri temple
+तालाकावेरी
+तलाकावेरी
+कावेरी उद्गम
+कावेरी नदी
+कूर्ग
+"
+>
+
+<div class="place-icon">
+🛕
+</div>
+
+<h3>
+Talacauvery
+</h3>
+
+<p>
+तालाकावेरी
+<br>
+Cauvery Origin
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     6 NAMDROLING MONASTERY
+================================================== -->
+
+<a
+href="namdroling-monastery.html"
+class="place-card"
+data-search="
+namdroling monastery
+golden temple coorg
+golden temple bylakuppe
+namdroling monastery bylakuppe
+namdroling
+नामद्रोलिंग मठ
+गोल्डन टेंपल
+बायलाकुप्पे
+कूर्ग
+"
+>
+
+<div class="place-icon">
+🛕
+</div>
+
+<h3>
+Namdroling Monastery
+</h3>
+
+<p>
+नामद्रोलिंग मठ
+<br>
+Golden Temple
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     7 NISARGADHAMA
+================================================== -->
+
+<a
+href="nisargadhama.html"
+class="place-card"
+data-search="
+nisargadhama
+kaveri nisargadhama
+kaveri nisargadhama coorg
+nisargadhama coorg
+कावेरी निसर्गधाम
+निसर्गधाम
+कावेरी
+कूर्ग
+"
+>
+
+<div class="place-icon">
+🌳
+</div>
+
+<h3>
+Kaveri Nisargadhama
+</h3>
+
+<p>
+कावेरी निसर्गधाम
+<br>
+Forest & River
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     8 HARANGI DAM
+================================================== -->
+
+<a
+href="harangi-dam.html"
+class="place-card"
+data-search="
+harangi dam
+harangi dam coorg
+harangi reservoir
+harangi
+हरंगी डैम
+हरंगी बांध
+हरंगी जलाशय
+कूर्ग
+"
+>
+
+<div class="place-icon">
+🌊
+</div>
+
+<h3>
+Harangi Dam
+</h3>
+
+<p>
+हरंगी डैम
+<br>
+Dam & Reservoir
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     9 NAGARHOLE NATIONAL PARK
+================================================== -->
+
+<a
+href="nagarhole-national-park.html"
+class="place-card"
+data-search="
+nagarhole national park
+nagarhole
+rajiv gandhi national park
+nagarhole tiger reserve
+nagarhole coorg
+नागरहोल नेशनल पार्क
+नागरहोल
+राजीव गांधी नेशनल पार्क
+टाइगर रिजर्व
+कूर्ग
+"
+>
+
+<div class="place-icon">
+🐅
+</div>
+
+<h3>
+Nagarhole National Park
+</h3>
+
+<p>
+नागरहोल राष्ट्रीय उद्यान
+<br>
+Wildlife & Safari
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     10 NALKNAD PALACE
+================================================== -->
+
+<a
+href="nalknad-palace.html"
+class="place-card"
+data-search="
+nalknad palace
+nalknad aramane
+nalknad palace coorg
+nalknad
+नल्कनाड पैलेस
+नल्कनाड अरमाने
+नल्कनाड महल
+कूर्ग
+"
+>
+
+<div class="place-icon">
+🏛️
+</div>
+
+<h3>
+Nalknad Palace
+</h3>
+
+<p>
+नल्कनाड पैलेस
+<br>
+Historic Palace
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     11 OMKARESHWARA TEMPLE
+================================================== -->
+
+<a
+href="omkareshwara-temple.html"
+class="place-card"
+data-search="
+omkareshwara temple
+omkareshwara temple madikeri
+omkareshwara coorg
+omkareshwara
+ओंकारेश्वर मंदिर
+ओंकारेश्वर मंदिर मडिकेरी
+ओंकारेश्वर
+कूर्ग
+"
+>
+
+<div class="place-icon">
+🛕
+</div>
+
+<h3>
+Omkareshwara Temple
+</h3>
+
+<p>
+ओंकारेश्वर मंदिर
+<br>
+Temple & Heritage
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     12 MADIKERI FORT
+================================================== -->
+
+<a
+href="madikeri-fort.html"
+class="place-card"
+data-search="
+madikeri fort
+madikeri fort coorg
+coorg fort
+madikeri
+मडिकेरी फोर्ट
+मडिकेरी किला
+कूर्ग किला
+कूर्ग
+"
+>
+
+<div class="place-icon">
+🏰
+</div>
+
+<h3>
+Madikeri Fort
+</h3>
+
+<p>
+मडिकेरी किला
+<br>
+History & Heritage
+</p>
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     NO RESULT
+================================================== -->
+
+<div
+class="no-result"
+id="noResult"
+>
+
+🔍
+
+<br><br>
+
+<strong>
+No place found
+</strong>
+
+<br><br>
+
+कोई स्थान नहीं मिला।
+
+<br>
+
+English या Hindi में दोबारा खोजें।
+
+</div>
+
+
+<!-- ==================================================
+     SERVICES
+================================================== -->
+
+<h2
+class="section-title"
+style="margin-top:35px;"
+>
+
+🤝 Services / सेवाएँ
+
+</h2>
+
+
+<div class="city-services">
+
+
+<button
+type="button"
+class="service-btn"
+onclick="openRegistration('Restaurant','रेस्टोरेंट')"
+>
+
+<span class="service-icon">
+🍽️
+</span>
+
+Restaurants
+<br>
+रेस्टोरेंट
+
+</button>
+
+
+<button
+type="button"
+class="service-btn"
+onclick="openRegistration('Hotel','होटल')"
+>
+
+<span class="service-icon">
+🏨
+</span>
+
+Hotels
+<br>
+होटल
+
+</button>
+
+
+<button
+type="button"
+class="service-btn"
+onclick="openRegistration('Car','कार')"
+>
+
+<span class="service-icon">
+🚗
+</span>
+
+Cars
+<br>
+कार
+
+</button>
+
+
+<button
+type="button"
+class="service-btn"
+onclick="openRegistration('Bike','बाइक')"
+>
+
+<span class="service-icon">
+🏍️
+</span>
+
+Bikes
+<br>
+बाइक
+
+</button>
+
+
+<button
+type="button"
+class="service-btn"
+onclick="openRegistration('Auto','ऑटो')"
+>
+
+<span class="service-icon">
+🛺
+</span>
+
+Auto
+<br>
+ऑटो
+
+</button>
+
+
+<button
+type="button"
+class="service-btn"
+onclick="openRegistration('Business Partner','बिजनेस पार्टनर')"
+>
+
+<span class="service-icon">
+🤝
+</span>
+
+Business Partner
+<br>
+बिजनेस पार्टनर
+
+</button>
+
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE
+================================================== -->
+
+<h2
+class="section-title"
+style="margin-top:35px;"
+>
+
+📍 Route / मार्ग
+
+</h2>
+
+
+<div class="city-services">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mangalore+International+Airport"
+class="service-btn"
+target="_blank"
+>
+
+<span class="service-icon">
+✈️
+</span>
+
+Current Location →
+Mangalore Airport
+
+<br>
+
+वर्तमान स्थान →
+एयरपोर्ट
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Madikeri+Bus+Stand"
+class="service-btn"
+target="_blank"
+>
+
+<span class="service-icon">
+🚌
+</span>
+
+Current Location →
+Bus Stand
+
+<br>
+
+वर्तमान स्थान →
+बस स्टैंड
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Madikeri+Coorg"
+class="service-btn"
+target="_blank"
+>
+
+<span class="service-icon">
+📍
+</span>
+
+Current Location →
+Madikeri
+
+<br>
+
+वर्तमान स्थान →
+मडिकेरी
+
+</a>
+
+
+</div>
+
+  <!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     REGISTRATION POPUP
+================================================== -->
+
+<div
+class="popup-bg"
+id="registrationPopup"
+>
+
+<div class="popup-box">
+
+<h2 id="popupTitle">
+🤝 Registration Request
+</h2>
+
+<p id="popupMessage">
+
+आप अपनी service की Registration Request
+WhatsApp या Email के माध्यम से भेज सकते हैं।
+
+</p>
+
+
+<a
+href="#"
+id="whatsappButton"
+class="popup-btn whatsapp-btn"
+target="_blank"
+>
+
+📱 Send Registration Request on WhatsApp
+
+</a>
+
+
+<a
+href="#"
+id="emailButton"
+class="popup-btn email-btn"
+>
+
+📧 Send Registration Request by Email
+
+</a>
+
+
+<button
+type="button"
+class="popup-btn close-btn"
+onclick="closeRegistration()"
+>
+
+✕ Close / बंद करें
+
+</button>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+/* ==================================================
+   SEARCH
+================================================== */
+
+const searchInput =
+document.getElementById("searchInput");
+
+const placeCards =
+document.querySelectorAll(".place-card");
+
+const noResult =
+document.getElementById("noResult");
+
+
+searchInput.addEventListener(
+"input",
+function(){
+
+let text =
+this.value.toLowerCase().trim();
+
+let found = 0;
+
+
+placeCards.forEach(function(card){
+
+let data =
+card.dataset.search.toLowerCase();
+
+
+if(data.includes(text)){
+
+card.style.display = "flex";
+
+found++;
+
+}else{
+
+card.style.display = "none";
+
+}
+
+});
+
+
+if(found === 0){
+
+noResult.style.display = "block";
+
+}else{
+
+noResult.style.display = "none";
+
+}
+
+});
+
+
+/* ==================================================
+   WHATSAPP NUMBER
+================================================== */
+
+const whatsappNumber =
+"918200195546";
+
+
+/* ==================================================
+   EMAIL
+================================================== */
+
+const registrationEmail =
+"deshkhoja2z@gmail.com";
+
+
+/* ==================================================
+   OPEN REGISTRATION
+================================================== */
+
+function openRegistration(
+serviceEnglish,
+serviceHindi
+){
+
+let message = "";
+
+
+if(serviceEnglish === "Restaurant"){
+
+message =
+"Namaste DESH KHOJ A2Z,%0A%0A" +
+
+"I want to register my Restaurant " +
+"on DESH KHOJ A2Z.%0A%0A" +
+
+"Service: Restaurant / रेस्टोरेंट%0A%0A" +
+
+"Restaurant Name: %0A" +
+
+"Owner Name: %0A" +
+
+"City: Coorg%0A" +
+
+"Mobile Number: %0A%0A" +
+
+"Please share the registration process.%0A%0A" +
+
+"Thank You";
+
+}
+
+
+else if(serviceEnglish === "Hotel"){
+
+message =
+"Namaste DESH KHOJ A2Z,%0A%0A" +
+
+"I want to register my Hotel " +
+"on DESH KHOJ A2Z.%0A%0A" +
+
+"Service: Hotel / होटल%0A%0A" +
+
+"Hotel Name: %0A" +
+
+"Owner Name: %0A" +
+
+"City: Coorg%0A" +
+
+"Mobile Number: %0A%0A" +
+
+"Please share the registration process.%0A%0A" +
+
+"Thank You";
+
+}
+
+
+else if(serviceEnglish === "Car"){
+
+message =
+"Namaste DESH KHOJ A2Z,%0A%0A" +
+
+"I want to register my Car " +
+"service on DESH KHOJ A2Z.%0A%0A" +
+
+"Service: Car / कार%0A%0A" +
+
+"Business Name: %0A" +
+
+"Owner Name: %0A" +
+
+"City: Coorg%0A" +
+
+"Mobile Number: %0A%0A" +
+
+"Please share the registration process.%0A%0A" +
+
+"Thank You";
+
+}
+
+
+else if(serviceEnglish === "Bike"){
+
+message =
+"Namaste DESH KHOJ A2Z,%0A%0A" +
+
+"I want to register my Bike " +
+"service on DESH KHOJ A2Z.%0A%0A" +
+
+"Service: Bike / बाइक%0A%0A" +
+
+"Business Name: %0A" +
+
+"Owner Name: %0A" +
+
+"City: Coorg%0A" +
+
+"Mobile Number: %0A%0A" +
+
+"Please share the registration process.%0A%0A" +
+
+"Thank You";
+
+}
+
+
+else if(serviceEnglish === "Auto"){
+
+message =
+"Namaste DESH KHOJ A2Z,%0A%0A" +
+
+"I want to register my Auto " +
+"service on DESH KHOJ A2Z.%0A%0A" +
+
+"Service: Auto / ऑटो%0A%0A" +
+
+"Owner Name: %0A" +
+
+"City: Coorg%0A%0A" +
+
+"Mobile Number: %0A%0A" +
+
+"Please share the registration process.%0A%0A" +
+
+"Thank You";
+
+}
+
+
+else if(
+serviceEnglish === "Business Partner"
+){
+
+message =
+"Namaste DESH KHOJ A2Z,%0A%0A" +
+
+"I want to register my business " +
+"as a Business Partner on DESH KHOJ A2Z.%0A%0A" +
+
+"Business Category: %0A" +
+
+"Business Name: %0A" +
+
+"Owner Name: %0A" +
+
+"City: Coorg%0A" +
+
+"Mobile Number: %0A%0A" +
+
+"Please share the Business Partner " +
+"Registration process.%0A%0A" +
+
+"Thank You";
+
+}
+
+
+/* ==================================================
+   POPUP TITLE
+================================================== */
+
+document.getElementById(
+"popupTitle"
+).innerHTML =
+
+"🤝 " +
+serviceEnglish +
+" Registration";
+
+
+/* ==================================================
+   POPUP MESSAGE
+================================================== */
+
+document.getElementById(
+"popupMessage"
+).innerHTML =
+
+"आप " +
+serviceHindi +
+" के लिए Registration Request " +
+"WhatsApp या Email के माध्यम से भेज सकते हैं।";
+
+
+/* ==================================================
+   WHATSAPP
+================================================== */
+
+document.getElementById(
+"whatsappButton"
+).href =
+
+"https://wa.me/" +
+whatsappNumber +
+"?text=" +
+message;
+
+
+/* ==================================================
+   EMAIL SUBJECT
+================================================== */
+
+let emailSubject =
+
+"DESH KHOJ A2Z - " +
+serviceEnglish +
+" Registration Request";
+
+
+/* ==================================================
+   EMAIL BODY
+================================================== */
+
+let emailBody =
+decodeURIComponent(message)
+.replace(/%0A/g,"\n");
+
+
+/* ==================================================
+   EMAIL LINK
+================================================== */
+
+document.getElementById(
+"emailButton"
+).href =
+
+"mailto:" +
+registrationEmail +
+
+"?subject=" +
+encodeURIComponent(emailSubject) +
+
+"&body=" +
+encodeURIComponent(emailBody);
+
+
+/* ==================================================
+   SHOW POPUP
+================================================== */
+
+document.getElementById(
+"registrationPopup"
+).style.display =
+"block";
+
+}
+
+
+/* ==================================================
+   CLOSE REGISTRATION
+================================================== */
+
+function closeRegistration(){
+
+document.getElementById(
+"registrationPopup"
+).style.display =
+"none";
+
+}
+
+
+/* ==================================================
+   CLICK OUTSIDE POPUP
+================================================== */
+
+document.getElementById(
+"registrationPopup"
+).addEventListener(
+"click",
+function(event){
+
+if(event.target === this){
+
+closeRegistration();
+
+}
+
+});
+
+</script>
+
+
+<!-- ==================================================
+     COMMON SCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
