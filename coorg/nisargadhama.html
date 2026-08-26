@@ -1,0 +1,2133 @@
+<!DOCTYPE html>
+
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Kaveri Nisargadhama | कावेरी निसर्गधाम - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   PAGE BOX
+================================================== */
+
+.info-box{
+
+background:#ffffff;
+
+border-radius:25px;
+
+padding:30px;
+
+margin:25px 0;
+
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+
+scroll-margin-top:90px;
+
+}
+
+.info-box h2{
+
+font-size:32px;
+
+line-height:1.25;
+
+margin-bottom:18px;
+
+color:#202124;
+
+}
+
+.info-box p{
+
+font-size:20px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+
+
+/* ==================================================
+   SECTION TABS
+================================================== */
+
+.section-tabs{
+
+display:flex;
+
+gap:8px;
+
+overflow-x:auto;
+
+padding:10px 2px 14px;
+
+margin:10px 0 5px;
+
+position:sticky;
+
+top:0;
+
+z-index:50;
+
+background:#f4f7f6;
+
+scroll-behavior:smooth;
+
+-webkit-overflow-scrolling:touch;
+
+}
+
+.section-tabs::-webkit-scrollbar{
+
+height:4px;
+
+}
+
+.section-tabs::-webkit-scrollbar-thumb{
+
+background:#bbb;
+
+border-radius:10px;
+
+}
+
+.section-tabs a{
+
+flex:0 0 auto;
+
+display:block;
+
+padding:10px 14px;
+
+background:white;
+
+color:#202124;
+
+text-decoration:none;
+
+border-radius:14px;
+
+font-size:14px;
+
+font-weight:bold;
+
+border:1px solid #e5e7eb;
+
+box-shadow:0 3px 10px rgba(0,0,0,.06);
+
+white-space:nowrap;
+
+}
+
+.section-tabs a:active{
+
+transform:scale(.95);
+
+background:#e8f7ef;
+
+}
+
+.section-tabs a:hover{
+
+background:#e8f7ef;
+
+}
+
+
+/* ==================================================
+   IMPORTANT BOX
+================================================== */
+
+.important-box{
+
+background:#fff8e7;
+
+border-left:6px solid #f59e0b;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+.important-box h3{
+
+font-size:22px;
+
+margin-bottom:8px;
+
+}
+
+.important-box p{
+
+font-size:18px;
+
+margin:0;
+
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.official-btn{
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:12px 18px;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+}
+
+.official-btn:active{
+
+transform:scale(.97);
+
+}
+
+
+/* ==================================================
+   NEARBY GRID
+================================================== */
+
+.nearby-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.nearby-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:22px 12px;
+
+text-align:center;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.nearby-card:nth-child(2){
+
+border-top-color:#2196d2;
+
+}
+
+.nearby-card:nth-child(3){
+
+border-top-color:#f59e0b;
+
+}
+
+.nearby-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.nearby-icon{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.nearby-card h3{
+
+font-size:20px;
+
+margin:8px 0;
+
+}
+
+.nearby-card p{
+
+font-size:16px;
+
+margin:5px 0 14px;
+
+color:#666;
+
+}
+
+
+/* ==================================================
+   DISTANCE
+================================================== */
+
+.distance{
+
+display:block;
+
+font-size:14px;
+
+font-weight:bold;
+
+color:#555;
+
+margin:8px 0 12px;
+
+}
+
+
+/* ==================================================
+   ROUTE BUTTON
+================================================== */
+
+.route-btn{
+
+display:inline-block;
+
+background:#16a34a;
+
+color:white;
+
+text-decoration:none;
+
+padding:10px 13px;
+
+border-radius:11px;
+
+font-size:13px;
+
+font-weight:bold;
+
+}
+
+.route-btn:active{
+
+transform:scale(.96);
+
+}
+
+
+/* ==================================================
+   HOTEL GRID
+================================================== */
+
+.hotel-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.hotel-card{
+
+display:block;
+
+background:#f8f9fa;
+
+color:#202124;
+
+text-decoration:none;
+
+text-align:center;
+
+border-radius:20px;
+
+padding:22px 12px;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.hotel-card:nth-child(2){
+
+border-top-color:#f59e0b;
+
+}
+
+.hotel-card:nth-child(3){
+
+border-top-color:#2196d2;
+
+}
+
+.hotel-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.hotel-card:active{
+
+transform:scale(.97);
+
+}
+
+.hotel-icon{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.hotel-card h3{
+
+font-size:20px;
+
+margin:8px 0;
+
+}
+
+.hotel-card p{
+
+font-size:15px;
+
+margin:5px 0;
+
+color:#666;
+
+}
+
+.hotel-link{
+
+display:inline-block;
+
+margin-top:9px;
+
+padding:8px 11px;
+
+border-radius:10px;
+
+background:#1976d2;
+
+color:white;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+   HOTEL BOX
+================================================== */
+
+.hotel-box{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+   RESTAURANTS
+================================================== */
+
+.restaurant-box{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.restaurant-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:20px 12px;
+
+text-align:center;
+
+border-top:5px solid #16a34a;
+
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+}
+
+.restaurant-card:nth-child(2){
+
+border-top-color:#f59e0b;
+
+}
+
+.restaurant-card:nth-child(3){
+
+border-top-color:#2196d2;
+
+}
+
+.restaurant-card:nth-child(4){
+
+border-top-color:#8b5cf6;
+
+}
+
+.restaurant-card h3{
+
+font-size:19px;
+
+margin:8px 0;
+
+}
+
+.restaurant-card p{
+
+font-size:15px;
+
+color:#666;
+
+margin:5px 0 12px;
+
+}
+
+.restaurant-btn{
+
+display:inline-block;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+padding:9px 11px;
+
+border-radius:10px;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+   TRAVEL GRID
+================================================== */
+
+.travel-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.travel-card{
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+padding:22px 16px;
+
+border-top:5px solid #2196d2;
+
+}
+
+.travel-card h3{
+
+font-size:20px;
+
+margin-bottom:12px;
+
+}
+
+.travel-card p{
+
+font-size:17px;
+
+margin:7px 0;
+
+}
+
+
+/* ==================================================
+   SMALL TRAVEL NOTES
+================================================== */
+
+.share-auto-box{
+
+margin-top:20px;
+
+padding:15px 18px;
+
+background:#f0f7ff;
+
+border-left:5px solid #2196d2;
+
+border-radius:15px;
+
+}
+
+.share-auto-box p{
+
+font-size:17px;
+
+margin:0;
+
+}
+
+.travel-note{
+
+margin-top:15px;
+
+padding:14px 18px;
+
+background:#f0fff4;
+
+border-left:5px solid #16a34a;
+
+border-radius:15px;
+
+font-size:16px !important;
+
+}
+
+
+/* ==================================================
+   LOCATION
+================================================== */
+
+.location-box{
+
+background:#f0f7ff;
+
+border-left:6px solid #1976d2;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+   PHOTO GALLERY
+================================================== */
+
+.photo-gallery{
+
+margin-top:20px;
+
+}
+
+.photo-card{
+
+display:block;
+
+background:#f8f9fa;
+
+border-radius:20px;
+
+overflow:hidden;
+
+text-decoration:none;
+
+color:#202124;
+
+box-shadow:0 5px 16px rgba(0,0,0,.06);
+
+border:1px solid #e5e7eb;
+
+}
+
+.photo-placeholder{
+
+height:230px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:90px;
+
+background:#eef7fa;
+
+}
+
+.photo-card p{
+
+font-size:18px;
+
+padding:15px;
+
+margin:0;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+.photo-more{
+
+display:block;
+
+margin-top:18px;
+
+background:#1976d2;
+
+color:white;
+
+text-decoration:none;
+
+padding:13px;
+
+border-radius:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+.info-box{
+
+padding:22px 18px;
+
+border-radius:22px;
+
+}
+
+.info-box h2{
+
+font-size:28px;
+
+line-height:1.3;
+
+}
+
+.info-box p{
+
+font-size:18px;
+
+}
+
+
+/* TABS */
+
+.section-tabs{
+
+gap:7px;
+
+padding:9px 2px 13px;
+
+}
+
+.section-tabs a{
+
+font-size:12px;
+
+padding:9px 11px;
+
+border-radius:12px;
+
+}
+
+
+/* NEARBY */
+
+.nearby-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.nearby-card{
+
+padding:18px 9px;
+
+}
+
+.nearby-card h3{
+
+font-size:18px;
+
+}
+
+.nearby-card p{
+
+font-size:15px;
+
+}
+
+.route-btn{
+
+font-size:11px;
+
+padding:9px 8px;
+
+}
+
+
+/* HOTEL */
+
+.hotel-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.hotel-card{
+
+padding:18px 8px;
+
+}
+
+.hotel-icon{
+
+font-size:34px;
+
+}
+
+.hotel-card h3{
+
+font-size:17px;
+
+}
+
+.hotel-card p{
+
+font-size:14px;
+
+}
+
+.hotel-link{
+
+font-size:11px;
+
+padding:8px 8px;
+
+}
+
+
+/* RESTAURANT */
+
+.restaurant-box{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.restaurant-card{
+
+padding:17px 8px;
+
+}
+
+.restaurant-card h3{
+
+font-size:17px;
+
+}
+
+.restaurant-card p{
+
+font-size:14px;
+
+}
+
+.restaurant-btn{
+
+font-size:10px;
+
+padding:8px 7px;
+
+}
+
+
+/* TRAVEL */
+
+.travel-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+.travel-card{
+
+padding:16px 10px;
+
+}
+
+.travel-card h3{
+
+font-size:17px;
+
+}
+
+.travel-card p{
+
+font-size:15px;
+
+}
+
+
+/* PHOTO */
+
+.photo-placeholder{
+
+height:210px;
+
+font-size:80px;
+
+}
+
+}
+
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.nearby-grid,
+.hotel-grid,
+.restaurant-box,
+.travel-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.info-box h2{
+
+font-size:26px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🌿
+</div>
+
+<h1>
+Kaveri Nisargadhama
+</h1>
+
+<p>
+कावेरी निसर्गधाम • Kushalnagar • कर्नाटक
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<!-- ==================================================
+     BACK
+================================================== -->
+
+<a
+href="coorg.html"
+class="back"
+>
+
+← Coorg / कूर्ग
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🌿 Kaveri Nisargadhama
+</h2>
+
+<p>
+
+Kaveri Nisargadhama कर्नाटक के
+Kodagu जिले में Kushalnagar के
+पास स्थित Kaveri River से बना
+एक सुंदर river island और
+eco-park है।
+
+<br><br>
+
+यह जगह घने bamboo groves,
+हरियाली, नदी के किनारे का
+शांत वातावरण और scenic
+nature के लिए प्रसिद्ध है।
+यह Coorg की family और
+nature sightseeing के लिए
+लोकप्रिय जगहों में शामिल है।
+
+<br><br>
+
+Kaveri Nisargadhama is a
+picturesque river island
+developed as an eco-park,
+known for bamboo groves,
+lush greenery and the
+peaceful surroundings of
+the River Kaveri.
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK TABS
+================================================== -->
+
+<div class="section-tabs">
+
+<a href="#nearby">
+📍 Nearby
+</a>
+
+<a href="#hotels">
+🏨 Hotels
+</a>
+
+<a href="#food">
+🍽️ Food
+</a>
+
+<a href="#history">
+📖 About
+</a>
+
+<a href="#travel">
+🚗 Travel
+</a>
+
+<a href="#route">
+🗺️ Route
+</a>
+
+<a href="#more">
+🌐 More
+</a>
+
+<a href="#photos">
+📸 Photos
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     NEARBY
+================================================== -->
+
+<section
+class="info-box"
+id="nearby"
+>
+
+<h2>
+📍 Nearby Places / आसपास के स्थान
+</h2>
+
+<div class="nearby-grid">
+
+
+<!-- KUSHALNAGAR -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🏙️
+</div>
+
+<h3>
+Kushalnagar
+</h3>
+
+<p>
+कुशलनगर
+</p>
+
+<span class="distance">
+📏 लगभग 3 km
+</span>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Kushalnagar+Karnataka"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- GOLDEN TEMPLE -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🛕
+</div>
+
+<h3>
+Namdroling Monastery
+</h3>
+
+<p>
+गोल्डन टेंपल
+</p>
+
+<span class="distance">
+📏 लगभग 7 km
+</span>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Namdroling+Monastery+Bylakuppe"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- DUBARE -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🐘
+</div>
+
+<h3>
+Dubare Elephant Camp
+</h3>
+
+<p>
+दुबारे एलीफेंट कैंप
+</p>
+
+<span class="distance">
+📏 लगभग 12 km
+</span>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Dubare+Elephant+Camp+Karnataka"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- HARANGI -->
+
+<div class="nearby-card">
+
+<div class="nearby-icon">
+🌊
+</div>
+
+<h3>
+Harangi Dam
+</h3>
+
+<p>
+हरंगी डैम
+</p>
+
+<span class="distance">
+📏 लगभग 9 km
+</span>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Harangi+Dam+Karnataka"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<p class="travel-note">
+
+दूरी Kaveri Nisargadhama से
+approximate road route के
+आधार पर है। Starting point,
+route और traffic के अनुसार
+दूरी तथा travel time अलग
+हो सकते हैं।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     HOTELS
+================================================== -->
+
+<section
+class="info-box"
+id="hotels"
+>
+
+<h2>
+🏨 Hotels / होटल
+</h2>
+
+<p>
+
+Kaveri Nisargadhama के लिए
+Kushalnagar और आसपास के
+area में hotels, homestays
+और resorts के कई options
+मिल सकते हैं।
+
+<br><br>
+
+Stay चुनते समय Nisargadhama
+से distance, reviews,
+parking, facilities, price
+और current availability
+check करना बेहतर रहेगा।
+
+</p>
+
+
+<div class="hotel-grid">
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Kaveri+Nisargadhama+Kushalnagar"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+💰
+</div>
+
+<h3>
+Budget Hotels
+</h3>
+
+<p>
+बजट होटल
+</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+near+Kaveri+Nisargadhama+Kushalnagar"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+⭐
+</div>
+
+<h3>
+Best Hotels
+</h3>
+
+<p>
+अच्छे होटल
+</p>
+
+<span class="hotel-link">
+🏨 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=homestay+near+Kaveri+Nisargadhama+Kushalnagar"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+🏡
+</div>
+
+<h3>
+Homestays
+</h3>
+
+<p>
+होमस्टे
+</p>
+
+<span class="hotel-link">
+🏡 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=resorts+near+Kaveri+Nisargadhama+Kushalnagar"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">
+🌴
+</div>
+
+<h3>
+Resorts
+</h3>
+
+<p>
+रिसॉर्ट
+</p>
+
+<span class="hotel-link">
+⭐ देखें
+</span>
+
+</a>
+
+
+</div>
+
+
+<div class="hotel-box">
+
+<p>
+
+Weekend और holiday periods
+में accommodation की demand
+बढ़ सकती है। Booking से
+पहले current price, reviews,
+parking और cancellation
+policy check करें।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     FOOD
+================================================== -->
+
+<section
+class="info-box"
+id="food"
+>
+
+<h2>
+🍽️ Restaurants / भोजन
+</h2>
+
+<p>
+
+Kaveri Nisargadhama के
+आसपास Kushalnagar में
+South Indian, vegetarian
+और local Coorg food के
+कई options मिल सकते हैं।
+
+<br><br>
+
+Coorg की local coffee और
+स्थानीय dishes यात्रा के
+दौरान try की जा सकती हैं।
+Restaurant चुनते समय
+current reviews और
+availability check करना
+बेहतर रहेगा।
+
+</p>
+
+
+<div class="restaurant-box">
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+⭐
+</div>
+
+<h3>
+Top Rated
+</h3>
+
+<p>
+Kushalnagar restaurants
+</p>
+
+<a
+href="https://www.google.com/maps/search/top+rated+restaurants+near+Kaveri+Nisargadhama+Kushalnagar"
+target="_blank"
+class="restaurant-btn"
+>
+
+⭐ देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🥗
+</div>
+
+<h3>
+Vegetarian
+</h3>
+
+<p>
+शाकाहारी भोजन
+</p>
+
+<a
+href="https://www.google.com/maps/search/vegetarian+restaurants+near+Kaveri+Nisargadhama+Kushalnagar"
+target="_blank"
+class="restaurant-btn"
+>
+
+🥗 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+🍛
+</div>
+
+<h3>
+Coorg Food
+</h3>
+
+<p>
+स्थानीय कूर्गी भोजन
+</p>
+
+<a
+href="https://www.google.com/maps/search/Coorg+food+near+Kaveri+Nisargadhama+Kushalnagar"
+target="_blank"
+class="restaurant-btn"
+>
+
+🍛 देखें
+
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">
+☕
+</div>
+
+<h3>
+Cafes
+</h3>
+
+<p>
+Coffee & Cafes
+</p>
+
+<a
+href="https://www.google.com/maps/search/cafes+near+Kaveri+Nisargadhama+Kushalnagar"
+target="_blank"
+class="restaurant-btn"
+>
+
+☕ देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     ABOUT
+================================================== -->
+
+<section
+class="info-box"
+id="history"
+>
+
+<h2>
+📖 About Kaveri Nisargadhama / कावेरी निसर्गधाम के बारे में
+</h2>
+
+<p>
+
+Kaveri Nisargadhama Kaveri
+River द्वारा बने एक सुंदर
+river island को eco-park के
+रूप में विकसित किया गया है।
+यह Kodagu जिले में
+Kushalnagar के पास स्थित है।
+
+<br><br>
+
+यह क्षेत्र लगभग 64 acres
+में फैला हुआ है और यहाँ
+bamboo, teak तथा sandalwood
+जैसी हरियाली दिखाई देती है।
+Hanging bridge के माध्यम से
+इस natural island तक पहुँचा
+जा सकता है।
+
+<br><br>
+
+यहाँ nature surroundings,
+river views, bamboo groves,
+deer park और orchidarium
+जैसे attractions मिलते हैं।
+Boating जैसी activities भी
+उपलब्ध हो सकती हैं और
+current arrangements के
+अनुसार बदल सकती हैं।
+
+<br><br>
+
+Kaveri Nisargadhama is a
+scenic eco-park and river
+island near Kushalnagar,
+popular for its greenery,
+bamboo groves and peaceful
+Kaveri River surroundings.
+
+</p>
+
+
+<div class="important-box">
+
+<h3>
+🌿 Nature & River Island
+</h3>
+
+<p>
+
+Kaveri Nisargadhama की
+मुख्य पहचान इसकी riverine
+setting, bamboo forest और
+हरी-भरी natural surroundings
+हैं।
+
+</p>
+
+</div>
+
+</section>
+
+  <!-- ==================================================
+     BEST TIME
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<h2>
+🌤️ Best Time to Visit / घूमने का सही समय
+</h2>
+
+<p>
+
+Kaveri Nisargadhama घूमने के लिए
+October से March तक का मौसम
+काफी comfortable माना जाता है।
+इस दौरान मौसम sightseeing और
+nature walk के लिए बेहतर रह
+सकता है।
+
+<br><br>
+
+सुबह का समय greenery और
+river-side surroundings देखने
+के लिए अच्छा रहता है। दिन के
+समय भी sightseeing की जा सकती
+है, लेकिन मौसम के अनुसार
+comfort बदल सकता है।
+
+<br><br>
+
+Monsoon के दौरान Coorg की
+हरियाली काफी आकर्षक हो सकती है,
+लेकिन बारिश और river conditions
+के कारण कुछ activities या access
+व्यवस्थाएँ बदल सकती हैं।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     TRAVEL
+================================================== -->
+
+<section
+class="info-box"
+id="travel"
+>
+
+<h2>
+🚗 Travel / यात्रा
+</h2>
+
+
+<div class="travel-grid">
+
+
+<!-- KUSHALNAGAR -->
+
+<div class="travel-card">
+
+<h3>
+🏙️ Kushalnagar
+</h3>
+
+<p>
+Kushalnagar, Karnataka
+</p>
+
+<p>
+
+Kaveri Nisargadhama
+Kushalnagar के पास स्थित है
+और road से आसानी से पहुँचा
+जा सकता है।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Kaveri+Nisargadhama&origin=Kushalnagar+Karnataka"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- MYSURU -->
+
+<div class="travel-card">
+
+<h3>
+🚗 Mysuru
+</h3>
+
+<p>
+Mysuru, Karnataka
+</p>
+
+<p>
+
+Mysuru से road के माध्यम से
+Kushalnagar और Kaveri
+Nisargadhama तक पहुँचा जा
+सकता है।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Kaveri+Nisargadhama&origin=Mysuru+Karnataka"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- MYSURU AIRPORT -->
+
+<div class="travel-card">
+
+<h3>
+✈️ Mysuru Airport
+</h3>
+
+<p>
+Mysuru Airport
+</p>
+
+<p>
+
+Air travel के लिए Mysuru
+Airport एक nearby airport
+option हो सकता है। आगे
+road travel करना होगा।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Kaveri+Nisargadhama&origin=Mysuru+Airport"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+<!-- LOCAL -->
+
+<div class="travel-card">
+
+<h3>
+🚕 Local Travel
+</h3>
+
+<p>
+Cab / Taxi / Auto
+</p>
+
+<p>
+
+Kushalnagar और आसपास के
+area में local taxi, cab
+और अन्य transport options
+मिल सकते हैं।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Kaveri+Nisargadhama"
+target="_blank"
+class="route-btn"
+>
+
+📍 Route देखें
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="share-auto-box">
+
+<p>
+
+🚗 <strong>Local Travel:</strong>
+Weekend और holiday के समय
+Coorg के popular tourist
+places पर traffic और parking
+की स्थिति बदल सकती है।
+
+</p>
+
+</div>
+
+
+<p class="travel-note">
+
+Travel time और local fare
+traffic, route, मौसम और
+available transport के अनुसार
+अलग हो सकते हैं।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     LOCATION & ROUTE
+================================================== -->
+
+<section
+class="info-box"
+id="route"
+>
+
+<h2>
+🗺️ Location & Route / स्थान एवं मार्ग
+</h2>
+
+<div class="location-box">
+
+<p>
+
+Kaveri Nisargadhama कर्नाटक के
+Kodagu जिले में Kushalnagar के
+पास Kaveri River पर स्थित है।
+यह Coorg region के प्रमुख
+nature attractions में से एक है।
+
+<br><br>
+
+अपने current location से नीचे
+दिए गए button पर click करके
+Google Maps में सीधे route
+देखा जा सकता है।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Kaveri+Nisargadhama"
+target="_blank"
+class="route-btn"
+>
+
+📍 Current Location से Route
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     IMPORTANT INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<div class="important-box">
+
+<h3>
+🌿 यात्रा से पहले ध्यान दें
+</h3>
+
+<p>
+
+Kaveri Nisargadhama में river
+और weather conditions के कारण
+कुछ activities या local
+arrangements समय के अनुसार
+बदल सकते हैं।
+
+<br><br>
+
+यात्रा से पहले current
+opening arrangements, weather
+और available activities की
+जानकारी check करना बेहतर रहेगा।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     MORE INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+id="more"
+>
+
+<h2>
+🌐 More Information / अधिक जानकारी
+</h2>
+
+<div class="important-box">
+
+<h3>
+📖 Kaveri Nisargadhama के बारे में और जानें
+</h3>
+
+<p>
+
+Kaveri Nisargadhama की
+location, history, nature,
+nearby places, timing और
+travel information के बारे में
+अधिक जानकारी देखने के लिए
+नीचे दिए गए button का उपयोग
+करें।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Kaveri+Nisargadhama+history+location+timing+travel"
+target="_blank"
+class="official-btn"
+>
+
+🌐 Chrome में अधिक जानकारी देखें
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     PHOTO
+================================================== -->
+
+<section
+class="info-box"
+id="photos"
+>
+
+<h2>
+📸 Kaveri Nisargadhama Photo / कावेरी निसर्गधाम की तस्वीर
+</h2>
+
+<p>
+
+Kaveri Nisargadhama की photos
+देखने के लिए नीचे photo पर
+click करें।
+
+</p>
+
+
+<div class="photo-gallery">
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Kaveri+Nisargadhama"
+target="_blank"
+class="photo-card"
+>
+
+<div class="photo-placeholder">
+
+🌿
+
+</div>
+
+<p>
+
+🌿 Kaveri Nisargadhama • Coorg
+
+</p>
+
+</a>
+
+</div>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Kaveri+Nisargadhama"
+target="_blank"
+class="photo-more"
+>
+
+📸 Chrome में और Kaveri Nisargadhama Photos देखें
+
+</a>
+
+</section>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     COMMON JAVASCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
