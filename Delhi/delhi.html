@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Delhi | दिल्ली Travel Guide - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   DELHI MAIN PAGE
+   DESH KHOJ A2Z
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.5;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#ff9933,
+#ffffff,
+#138808
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #138808;
+}
+
+.logo{
+font-size:38px;
+}
+
+header h1{
+font-size:32px;
+margin:5px 0;
+}
+
+header p{
+font-weight:bold;
+color:#444;
+}
+
+.search-box{
+max-width:600px;
+margin:18px auto 0;
+position:relative;
+}
+
+.search-box input{
+width:100%;
+padding:14px 48px 14px 18px;
+border:0;
+border-radius:30px;
+font-size:16px;
+outline:none;
+box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.search-icon{
+position:absolute;
+right:16px;
+top:7px;
+font-size:27px;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:20px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+padding:10px 18px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;
+margin-bottom:18px;
+}
+
+.hero{
+background:white;
+border-left:6px solid #ff9933;
+border-radius:20px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:16px;
+color:#555;
+}
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+/* ==================================================
+   QUICK SERVICES
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin-bottom:25px;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:18px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #1976d2;
+}
+
+.quick:nth-child(2){
+border-top-color:#138808;
+}
+
+.quick:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.quick:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+/* ==================================================
+   GROUP
+================================================== */
+
+.group{
+background:white;
+border-radius:24px;
+padding:20px;
+margin:22px 0;
+box-shadow:0 5px 20px rgba(0,0,0,.09);
+border-left:6px solid #ff9933;
+}
+
+.group:nth-of-type(2){
+border-left-color:#138808;
+}
+
+.group:nth-of-type(3){
+border-left-color:#1976d2;
+}
+
+.group:nth-of-type(4){
+border-left-color:#8b5cf6;
+}
+
+.group:nth-of-type(5){
+border-left-color:#e11d48;
+}
+
+.group-header{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:18px;
+}
+
+.group-icon{
+font-size:42px;
+}
+
+.group-header h3{
+font-size:24px;
+margin:0;
+}
+
+.group-header p{
+font-size:14px;
+color:#666;
+margin-top:3px;
+}
+
+/* ==================================================
+   GROUP PREVIEW
+================================================== */
+
+.group-preview{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+}
+
+.preview{
+background:#f8f9fa;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px 10px;
+text-align:center;
+}
+
+.preview-icon{
+font-size:30px;
+display:block;
+margin-bottom:5px;
+}
+
+.preview strong{
+font-size:16px;
+display:block;
+}
+
+.preview span{
+font-size:13px;
+color:#666;
+}
+
+/* ==================================================
+   OPEN GROUP BUTTON
+================================================== */
+
+.group-open{
+display:block;
+margin-top:16px;
+background:#1976d2;
+color:white;
+text-decoration:none;
+text-align:center;
+padding:12px;
+border-radius:12px;
+font-weight:bold;
+}
+
+.group-open:active{
+transform:scale(.98);
+}
+
+/* ==================================================
+   INFORMATION
+================================================== */
+
+.info{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:22px 0;
+}
+
+.info h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.info p{
+color:#555;
+}
+
+/* ==================================================
+   TRANSPORT
+================================================== */
+
+.transport-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.transport{
+background:white;
+border-radius:20px;
+padding:18px 12px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #1976d2;
+}
+
+.transport:nth-child(2){
+border-top-color:#138808;
+}
+
+.transport:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.transport:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.transport-icon{
+font-size:34px;
+margin-bottom:5px;
+}
+
+.transport h3{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.transport p{
+font-size:13px;
+color:#666;
+margin-bottom:12px;
+}
+
+.transport a{
+display:block;
+background:#1976d2;
+color:white;
+text-decoration:none;
+text-align:center;
+padding:10px 5px;
+border-radius:10px;
+font-size:12px;
+font-weight:bold;
+}
+
+/* ==================================================
+   SEARCH RESULT
+================================================== */
+
+.search-result{
+display:none;
+background:white;
+border-radius:18px;
+padding:18px;
+margin:15px 0;
+text-align:center;
+color:#777;
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:25px 15px;
+margin-top:30px;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:17px;
+}
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:55px;
+height:55px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 4px 18px rgba(0,0,0,.22);
+font-size:25px;
+z-index:100;
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:27px;
+}
+
+.container{
+padding:18px 12px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.quick{
+padding:15px 7px;
+font-size:14px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+.group{
+padding:17px 12px;
+}
+
+.group-header h3{
+font-size:20px;
+}
+
+.group-icon{
+font-size:35px;
+}
+
+.group-preview{
+grid-template-columns:1fr 1fr;
+gap:8px;
+}
+
+.preview{
+padding:13px 6px;
+}
+
+.preview strong{
+font-size:14px;
+}
+
+.preview span{
+font-size:12px;
+}
+
+.transport-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.transport{
+padding:15px 8px;
+}
+
+.transport h3{
+font-size:16px;
+}
+
+.transport p{
+font-size:12px;
+}
+
+.transport a{
+font-size:11px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Delhi
+</h1>
+
+<p>
+दिल्ली • National Capital Territory of Delhi
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Delhi places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<a
+href="../index.html"
+class="back"
+>
+← India / भारत
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="hero">
+
+<h2>
+🇮🇳 Delhi / दिल्ली
+</h2>
+
+<p>
+भारत की राजधानी — इतिहास, heritage,
+culture, food और modern city life का
+unique combination।
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK SERVICES
+================================================== -->
+
+<h2 class="section-title">
+🔎 Quick Search
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogle('tourist places in Delhi')"
+class="quick"
+>
+
+<span class="quick-icon">
+📍
+</span>
+
+Delhi Places
+
+</a>
+
+
+<a
+href="javascript:openGoogle('best restaurants in Delhi')"
+class="quick"
+>
+
+<span class="quick-icon">
+🍽️
+</span>
+
+Food
+
+</a>
+
+
+<a
+href="javascript:openGoogle('hotels in Delhi')"
+class="quick"
+>
+
+<span class="quick-icon">
+🏨
+</span>
+
+Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('Delhi Metro stations')"
+class="quick"
+>
+
+<span class="quick-icon">
+🚇
+</span>
+
+Metro
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     INTRO
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 Delhi को area-wise देखें
+</h3>
+
+<p>
+Delhi के places को nearby areas के
+हिसाब से अलग pages में रखा गया है।
+नीचे किसी group को खोलकर उसके
+places की details देखें।
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     OLD DELHI
+================================================== -->
+
+<div
+class="group searchable-group"
+data-search="old delhi heritage पुरानी दिल्ली लाल किला जामा मस्जिद चांदनी चौक राजघाट"
+>
+
+<div class="group-header">
+
+<div class="group-icon">
+🏰
+</div>
+
+<div>
+
+<h3>
+Old Delhi Heritage
+</h3>
+
+<p>
+पुरानी दिल्ली • Heritage & Food
+</p>
+
+</div>
+
+</div>
+
+
+<div class="group-preview">
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🏰
+</span>
+
+<strong>
+Red Fort
+</strong>
+
+<span>
+लाल किला
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🕌
+</span>
+
+<strong>
+Jama Masjid
+</strong>
+
+<span>
+जामा मस्जिद
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🛍️
+</span>
+
+<strong>
+Chandni Chowk
+</strong>
+
+<span>
+चांदनी चौक
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🕊️
+</span>
+
+<strong>
+Raj Ghat
+</strong>
+
+<span>
+राजघाट
+</span>
+
+</div>
+
+
+</div>
+
+
+<a
+href="old-delhi-heritage.html"
+class="group-open"
+>
+🏰 Old Delhi Heritage खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     CENTRAL DELHI
+================================================== -->
+
+<div
+class="group searchable-group"
+data-search="central delhi इंडिया गेट national war memorial jantar mantar connaught place"
+>
+
+<div class="group-header">
+
+<div class="group-icon">
+🇮🇳
+</div>
+
+<div>
+
+<h3>
+Central Delhi
+</h3>
+
+<p>
+Central • Heritage • City Life
+</p>
+
+</div>
+
+</div>
+
+
+<div class="group-preview">
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🇮🇳
+</span>
+
+<strong>
+India Gate
+</strong>
+
+<span>
+इंडिया गेट
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🪖
+</span>
+
+<strong>
+National War Memorial
+</strong>
+
+<span>
+राष्ट्रीय युद्ध स्मारक
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🔭
+</span>
+
+<strong>
+Jantar Mantar
+</strong>
+
+<span>
+जंतर मंतर
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🏙️
+</span>
+
+<strong>
+Connaught Place
+</strong>
+
+<span>
+कनॉट प्लेस
+</span>
+
+</div>
+
+
+</div>
+
+
+<a
+href="central-delhi.html"
+class="group-open"
+>
+🇮🇳 Central Delhi खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     NIZAMUDDIN
+================================================== -->
+
+<div
+class="group searchable-group"
+data-search="nizamuddin heritage निजामुद्दीन humayun tomb sunder nursery dargah purana qila"
+>
+
+<div class="group-header">
+
+<div class="group-icon">
+🕌
+</div>
+
+<div>
+
+<h3>
+Nizamuddin Heritage
+</h3>
+
+<p>
+Mughal Heritage • Gardens
+</p>
+
+</div>
+
+</div>
+
+
+<div class="group-preview">
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🕌
+</span>
+
+<strong>
+Humayun's Tomb
+</strong>
+
+<span>
+हुमायूँ का मकबरा
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🌳
+</span>
+
+<strong>
+Sunder Nursery
+</strong>
+
+<span>
+सुंदर नर्सरी
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🙏
+</span>
+
+<strong>
+Nizamuddin Dargah
+</strong>
+
+<span>
+निजामुद्दीन दरगाह
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🏛️
+</span>
+
+<strong>
+Purana Qila
+</strong>
+
+<span>
+पुराना किला
+</span>
+
+</div>
+
+
+</div>
+
+
+<a
+href="nizamuddin-heritage.html"
+class="group-open"
+>
+🕌 Nizamuddin Heritage खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     SEARCH RESULT
+================================================== -->
+
+<div
+id="noResult"
+class="search-result"
+>
+
+🔍 कोई matching place या area नहीं मिला।
+
+</div>
+
+
+<!-- ==================================================
+     TRANSPORT
+================================================== -->
+
+<h2 class="section-title">
+🚇 Delhi Transport
+</h2>
+
+
+<div class="transport-grid">
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚇
+</div>
+
+<h3>
+Metro
+</h3>
+
+<p>
+Nearest Metro Station और route
+देखें।
+</p>
+
+<a
+href="javascript:openGoogle('Delhi Metro stations')"
+>
+🚇 Metro देखें
+</a>
+
+</div>
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚌
+</div>
+
+<h3>
+Bus
+</h3>
+
+<p>
+Nearby Bus Stops और routes देखें।
+</p>
+
+<a
+href="javascript:openGoogle('bus stops Delhi')"
+>
+🚌 Bus देखें
+</a>
+
+</div>
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚕
+</div>
+
+<h3>
+Cab / Taxi
+</h3>
+
+<p>
+Cab और taxi options देखें।
+</p>
+
+<a
+href="javascript:openGoogle('cab taxi Delhi')"
+>
+🚕 Cab देखें
+</a>
+
+</div>
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚆
+</div>
+
+<h3>
+Train
+</h3>
+
+<p>
+Delhi railway stations देखें।
+</p>
+
+<a
+href="javascript:openGoogle('railway stations Delhi')"
+>
+🚆 Train देखें
+</a>
+
+</div>
+
+
+</div>
+
+  <!-- ==================================================
+     MEHRAULI HERITAGE
+================================================== -->
+
+<div
+class="group searchable-group"
+data-search="mehrauli heritage महरौली qutub minar कुतुब मीनार archaeological park jamali kamali garden five senses"
+>
+
+<div class="group-header">
+
+<div class="group-icon">
+🗼
+</div>
+
+<div>
+
+<h3>
+Mehrauli Heritage
+</h3>
+
+<p>
+Ancient Delhi • Heritage
+</p>
+
+</div>
+
+</div>
+
+
+<div class="group-preview">
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🗼
+</span>
+
+<strong>
+Qutub Minar
+</strong>
+
+<span>
+कुतुब मीनार
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🏛️
+</span>
+
+<strong>
+Mehrauli Archaeological Park
+</strong>
+
+<span>
+महरौली पुरातत्व पार्क
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🕌
+</span>
+
+<strong>
+Jamali Kamali
+</strong>
+
+<span>
+जमाली कमाली
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🌿
+</span>
+
+<strong>
+Garden of Five Senses
+</strong>
+
+<span>
+गार्डन ऑफ Five Senses
+</span>
+
+</div>
+
+
+</div>
+
+
+<a
+href="mehrauli-heritage.html"
+class="group-open"
+>
+🗼 Mehrauli Heritage खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     RELIGIOUS & CULTURAL
+================================================== -->
+
+<div
+class="group searchable-group"
+data-search="religious cultural delhi धार्मिक सांस्कृतिक lotus temple लोटस टेंपल akshardham अक्षरधाम bangla sahib बिरला मंदिर birla mandir"
+>
+
+<div class="group-header">
+
+<div class="group-icon">
+🙏
+</div>
+
+<div>
+
+<h3>
+Religious & Cultural Delhi
+</h3>
+
+<p>
+Spiritual • Culture • Architecture
+</p>
+
+</div>
+
+</div>
+
+
+<div class="group-preview">
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🪷
+</span>
+
+<strong>
+Lotus Temple
+</strong>
+
+<span>
+लोटस टेंपल
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🛕
+</span>
+
+<strong>
+Akshardham
+</strong>
+
+<span>
+अक्षरधाम
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🙏
+</span>
+
+<strong>
+Bangla Sahib
+</strong>
+
+<span>
+बंगला साहिब
+</span>
+
+</div>
+
+
+<div class="preview">
+
+<span class="preview-icon">
+🛕
+</span>
+
+<strong>
+Birla Mandir
+</strong>
+
+<span>
+बिड़ला मंदिर
+</span>
+
+</div>
+
+
+</div>
+
+
+<a
+href="religious-cultural-delhi.html"
+class="group-open"
+>
+🙏 Religious & Cultural खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     DELHI TRAVEL QUICK LINKS
+================================================== -->
+
+<h2 class="section-title">
+🧭 Delhi Travel
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogle('best hotels near tourist places in Delhi')"
+class="quick"
+>
+
+<span class="quick-icon">
+🏨
+</span>
+
+Nearby Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('restaurants near tourist places in Delhi')"
+class="quick"
+>
+
+<span class="quick-icon">
+🍽️
+</span>
+
+Restaurants
+
+</a>
+
+
+<a
+href="javascript:openGoogle('Delhi railway stations')"
+class="quick"
+>
+
+<span class="quick-icon">
+🚆
+</span>
+
+Railway Stations
+
+</a>
+
+
+<a
+href="javascript:openGoogle('Delhi bus routes')"
+class="quick"
+>
+
+<span class="quick-icon">
+🚌
+</span>
+
+Bus Routes
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     SIMPLE TRAVEL INFO
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 Travel Tips
+</h3>
+
+<p>
+
+🚇 Metro कई tourist areas के लिए
+easy option है।
+
+<br><br>
+
+🚕 Cab/Auto लेते समय fare और destination
+check करें।
+
+<br><br>
+
+🏨 Hotel चुनते समय Metro connectivity
+देखना useful रहेगा।
+
+<br><br>
+
+🕒 किसी monument पर जाने से पहले
+timing check करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     HOTEL SEARCH
+================================================== -->
+
+<h2 class="section-title">
+🏨 Delhi Hotels
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogle('budget hotels in Delhi')"
+class="quick"
+>
+
+<span class="quick-icon">
+💰
+</span>
+
+Budget Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('best hotels in Delhi')"
+class="quick"
+>
+
+<span class="quick-icon">
+⭐
+</span>
+
+Best Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('family hotels in Delhi')"
+class="quick"
+>
+
+<span class="quick-icon">
+👨‍👩‍👧
+</span>
+
+Family Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('luxury hotels in Delhi')"
+class="quick"
+>
+
+<span class="quick-icon">
+👑
+</span>
+
+Luxury Hotels
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOD
+================================================== -->
+
+<h2 class="section-title">
+🍽️ Delhi Food
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogle('famous food in Delhi')"
+class="quick"
+>
+
+<span class="quick-icon">
+🍛
+</span>
+
+Famous Food
+
+</a>
+
+
+<a
+href="javascript:openGoogle('vegetarian restaurants Delhi')"
+class="quick"
+>
+
+<span class="quick-icon">
+🥗
+</span>
+
+Vegetarian
+
+</a>
+
+
+<a
+href="javascript:openGoogle('Old Delhi famous food')"
+class="quick"
+>
+
+<span class="quick-icon">
+🥘
+</span>
+
+Old Delhi Food
+
+</a>
+
+
+<a
+href="javascript:openGoogle('cafes in Delhi')"
+class="quick"
+>
+
+<span class="quick-icon">
+☕
+</span>
+
+Cafes
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     PHOTOS
+================================================== -->
+
+<h2 class="section-title">
+📸 Delhi Photos
+</h2>
+
+
+<div class="info">
+
+<h3>
+📷 Places की Photos
+</h3>
+
+<p>
+Delhi के monuments, markets और tourist
+places की photos देखने के लिए Google
+Images खोलें।
+</p>
+
+
+<a
+href="javascript:openGoogleImages('Delhi tourist places')"
+class="group-open"
+>
+📸 Delhi Photos देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     IMPORTANT INFORMATION
+================================================== -->
+
+<div class="info">
+
+<h3>
+⚠️ Important
+</h3>
+
+<p>
+
+• मौसम के अनुसार travel planning करें।
+
+<br><br>
+
+• Crowded areas में सामान संभालकर रखें।
+
+<br><br>
+
+• Religious places के rules follow करें।
+
+<br><br>
+
+• Current timing और entry rules पहले
+check करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     DESH KHOJ A2Z
+================================================== -->
+
+<div class="hero">
+
+<h2>
+🇮🇳 DESH KHOJ A2Z
+</h2>
+
+<p>
+भारत के अलग-अलग destinations की
+simple और useful travel information
+एक जगह उपलब्ध कराने का प्रयास।
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="Back to Top"
+>
+↑
+</button>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+
+/* ================================================
+   SEARCH
+================================================ */
+
+const searchInput =
+document.getElementById("searchInput");
+
+const groups =
+document.querySelectorAll(
+".searchable-group"
+);
+
+const noResult =
+document.getElementById("noResult");
+
+
+if(searchInput){
+
+searchInput.addEventListener(
+"input",
+function(){
+
+const value =
+this.value
+.toLowerCase()
+.trim();
+
+let found=0;
+
+groups.forEach(
+function(group){
+
+const text =
+(
+group.innerText +
+" " +
+(
+group.getAttribute(
+"data-search"
+) || ""
+)
+)
+.toLowerCase();
+
+if(
+value === "" ||
+text.includes(value)
+){
+
+group.style.display =
+"block";
+
+found++;
+
+}else{
+
+group.style.display =
+"none";
+
+}
+
+});
+
+
+if(noResult){
+
+if(
+value !== "" &&
+found === 0
+){
+
+noResult.style.display =
+"block";
+
+}else{
+
+noResult.style.display =
+"none";
+
+}
+
+}
+
+});
+
+}
+
+
+/* ================================================
+   BACK TO TOP
+================================================ */
+
+const topBtn =
+document.getElementById(
+"topBtn"
+);
+
+
+if(topBtn){
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(
+window.scrollY > 300
+){
+
+topBtn.style.display =
+"block";
+
+}else{
+
+topBtn.style.display =
+"none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+});
+
+
+/* ================================================
+   GOOGLE SEARCH
+================================================ */
+
+function openGoogle(query){
+
+const url =
+"https://www.google.com/search?q=" +
+encodeURIComponent(query);
+
+window.open(
+url,
+"_blank"
+);
+
+}
+
+
+/* ================================================
+   GOOGLE IMAGES
+================================================ */
+
+function openGoogleImages(query){
+
+const url =
+"https://www.google.com/search?tbm=isch&q=" +
+encodeURIComponent(query);
+
+window.open(
+url,
+"_blank"
+);
+
+}
+
+</script>
+
+
+<!-- ==================================================
+     COMMON SCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
+  
