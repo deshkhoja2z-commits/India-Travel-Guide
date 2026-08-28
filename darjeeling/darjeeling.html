@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Darjeeling | दार्जिलिंग - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   CITY SERVICES
+================================================== */
+
+.city-services{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.service-btn{
+display:block;
+background:white;
+color:#202124;
+text-decoration:none;
+text-align:center;
+padding:18px 8px;
+border-radius:18px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border:1px solid #eee;
+font-weight:bold;
+font-size:16px;
+cursor:pointer;
+}
+
+.service-btn:active{
+transform:scale(.97);
+background:#fff7e6;
+}
+
+.service-icon{
+font-size:30px;
+display:block;
+margin-bottom:7px;
+}
+
+
+/* ==================================================
+   REGISTRATION POPUP
+================================================== */
+
+.popup-bg{
+display:none;
+position:fixed;
+z-index:9999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
+padding:20px;
+overflow:auto;
+}
+
+.popup-box{
+max-width:500px;
+margin:70px auto;
+background:white;
+border-radius:25px;
+padding:25px;
+box-shadow:0 10px 40px rgba(0,0,0,.3);
+text-align:center;
+}
+
+.popup-box h2{
+font-size:24px;
+margin-bottom:15px;
+}
+
+.popup-box p{
+font-size:17px;
+line-height:1.7;
+color:#555;
+margin-bottom:20px;
+}
+
+.popup-btn{
+display:block;
+width:100%;
+padding:15px;
+margin:12px 0;
+border-radius:30px;
+text-decoration:none;
+border:none;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+box-sizing:border-box;
+}
+
+.whatsapp-btn{
+background:#25D366;
+color:white;
+}
+
+.email-btn{
+background:#1976d2;
+color:white;
+}
+
+.close-btn{
+background:#17202a;
+color:white;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+.city-services{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.service-btn{
+font-size:14px;
+padding:17px 5px;
+}
+
+.service-icon{
+font-size:28px;
+}
+
+.popup-box{
+margin:50px auto;
+padding:22px 18px;
+}
+
+.popup-box h2{
+font-size:22px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🏔️
+</div>
+
+<h1>
+Darjeeling / दार्जिलिंग
+</h1>
+
+<p>
+Hills • Tea • Mountains • Nature
+</p>
+
+
+<!-- SEARCH -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<!-- ==================================================
+     BACK
+================================================== -->
+
+<a
+href="../cities.html"
+class="back"
+>
+
+← Cities / शहर
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🏔️ Best of Darjeeling
+</h2>
+
+<p>
+
+Darjeeling, जिसे "Queen of the Hills"
+के नाम से भी जाना जाता है, पश्चिम बंगाल
+का एक प्रसिद्ध hill station है।
+यह अपनी चाय के बागानों, हिमालयी
+दृश्यों, ठंडी जलवायु और प्राकृतिक
+सुंदरता के लिए प्रसिद्ध है।
+
+</p>
+
+<br>
+
+<p>
+
+यहाँ Tiger Hill, Batasia Loop,
+Darjeeling Himalayan Railway,
+Peace Pagoda, Himalayan Mountaineering
+Institute और Happy Valley Tea Estate
+जैसे प्रमुख पर्यटन स्थल हैं।
+
+</p>
+
+<br>
+
+<p>
+
+यहाँ आपको Darjeeling के प्रमुख प्राकृतिक,
+धार्मिक, ऐतिहासिक, adventure और
+पर्यटन स्थलों की जानकारी मिलेगी।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     PLACES
+================================================== -->
+
+<h2 class="section-title">
+
+🏔️ Places / प्रमुख स्थान
+
+</h2>
+
+
+<div
+class="place-grid"
+id="placeGrid"
+>
+
+
+<!-- ==================================================
+     1 TIGER HILL
+================================================== -->
+
+<a
+href="tiger-hill.html"
+class="place-card"
+data-search="
+tiger hill
+tiger hill darjeeling
+sunrise tiger hill
+tiger hill sunrise
+टाइगर हिल
+टाइगर हिल दार्जिलिंग
+सूर्योदय
+कंचनजंगा
+दार्जिलिंग
+"
+>
+
+<div class="place-icon">
+🌄
+</div>
+
+<h3>
+Tiger Hill
+</h3>
+
+<p>
+टाइगर हिल
+<br>
+Sunrise & Mountain View
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     2 BATASIA LOOP
+================================================== -->
+
+<a
+href="batasia-loop.html"
+class="place-card"
+data-search="
+batasia loop
+batasia loop darjeeling
+batasia
+toy train batasia loop
+बाटासिया लूप
+बाटासिया लूप दार्जिलिंग
+टॉय ट्रेन
+दार्जिलिंग
+"
+>
+
+<div class="place-icon">
+🚂
+</div>
+
+<h3>
+Batasia Loop
+</h3>
+
+<p>
+बाटासिया लूप
+<br>
+Toy Train & Valley View
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     3 DARJEELING HIMALAYAN RAILWAY
+================================================== -->
+
+<a
+href="darjeeling-himalayan-railway.html"
+class="place-card"
+data-search="
+darjeeling himalayan railway
+darjeeling toy train
+toy train darjeeling
+dhr
+दार्जिलिंग हिमालयन रेलवे
+दार्जिलिंग टॉय ट्रेन
+टॉय ट्रेन
+रेलवे
+दार्जिलिंग
+"
+>
+
+<div class="place-icon">
+🚂
+</div>
+
+<h3>
+Darjeeling Himalayan Railway
+</h3>
+
+<p>
+दार्जिलिंग हिमालयन रेलवे
+<br>
+Toy Train Heritage
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     4 PEACE PAGODA
+================================================== -->
+
+<a
+href="peace-pagoda.html"
+class="place-card"
+data-search="
+peace pagoda
+peace pagoda darjeeling
+japanese peace pagoda
+darjeeling peace pagoda
+पीस पैगोडा
+शांति स्तूप
+जापानी पीस पैगोडा
+दार्जिलिंग
+"
+>
+
+<div class="place-icon">
+🛕
+</div>
+
+<h3>
+Peace Pagoda
+</h3>
+
+<p>
+पीस पैगोडा
+<br>
+Peace & Spirituality
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     5 HIMALAYAN MOUNTAINEERING INSTITUTE
+================================================== -->
+
+<a
+href="himalayan-mountaineering-institute.html"
+class="place-card"
+data-search="
+himalayan mountaineering institute
+hmi darjeeling
+mountaineering institute darjeeling
+himalayan mountaineering
+हिमालयन माउंटेनियरिंग इंस्टीट्यूट
+एचएमआई
+माउंटेनियरिंग
+दार्जिलिंग
+"
+>
+
+<div class="place-icon">
+🧗
+</div>
+
+<h3>
+Himalayan Mountaineering Institute
+</h3>
+
+<p>
+हिमालयन माउंटेनियरिंग इंस्टीट्यूट
+<br>
+Mountaineering & Adventure
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     6 PADMAJA NAIDU HIMALAYAN ZOOLOGICAL PARK
+================================================== -->
+
+<a
+href="padmaja-naidu-himalayan-zoological-park.html"
+class="place-card"
+data-search="
+padmaja naidu himalayan zoological park
+darjeeling zoo
+himalayan zoo darjeeling
+padmaja naidu zoo
+red panda darjeeling
+पद्मजा नायडू हिमालयन जूलॉजिकल पार्क
+दार्जिलिंग चिड़ियाघर
+हिमालयन जू
+रेड पांडा
+दार्जिलिंग
+"
+>
+
+<div class="place-icon">
+🐼
+</div>
+
+<h3>
+Padmaja Naidu Himalayan Zoo
+</h3>
+
+<p>
+पद्मजा नायडू हिमालयन जू
+<br>
+Wildlife & Red Panda
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     7 HAPPY VALLEY TEA ESTATE
+================================================== -->
+
+<a
+href="happy-valley-tea-estate.html"
+class="place-card"
+data-search="
+happy valley tea estate
+happy valley tea garden
+darjeeling tea estate
+darjeeling tea garden
+happy valley
+हैप्पी वैली टी एस्टेट
+दार्जिलिंग चाय बागान
+चाय बागान
+दार्जिलिंग
+"
+>
+
+<div class="place-icon">
+🍃
+</div>
+
+<h3>
+Happy Valley Tea Estate
+</h3>
+
+<p>
+हैप्पी वैली टी एस्टेट
+<br>
+Tea Garden & Factory
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     8 DARJEELING ROPEWAY
+================================================== -->
+
+<a
+href="darjeeling-ropeway.html"
+class="place-card"
+data-search="
+darjeeling ropeway
+darjeeling rangeet valley passenger cable car
+ropeway darjeeling
+darjeeling cable car
+दार्जिलिंग रोपवे
+दार्जिलिंग केबल कार
+रोपवे
+केबल कार
+दार्जिलिंग
+"
+>
+
+<div class="place-icon">
+🚡
+</div>
+
+<h3>
+Darjeeling Ropeway
+</h3>
+
+<p>
+दार्जिलिंग रोपवे
+<br>
+Cable Car & Valley View
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     9 OBSERVATORY HILL
+================================================== -->
+
+<a
+href="observatory-hill.html"
+class="place-card"
+data-search="
+observatory hill
+observatory hill darjeeling
+mahakal temple
+mahakal mandir darjeeling
+observatory hill temple
+ऑब्जर्वेटरी हिल
+महाकाल मंदिर
+महाकाल मंदिर दार्जिलिंग
+दार्जिलिंग
+"
+>
+
+<div class="place-icon">
+🛕
+</div>
+
+<h3>
+Observatory Hill
+</h3>
+
+<p>
+ऑब्जर्वेटरी हिल
+<br>
+Temple & Mountain View
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     10 DARJEELING ROCK GARDEN
+================================================== -->
+
+<a
+href="rock-garden.html"
+class="place-card"
+data-search="
+rock garden
+rock garden darjeeling
+barbotey rock garden
+darjeeling rock garden
+रॉक गार्डन
+रॉक गार्डन दार्जिलिंग
+बारबोटे रॉक गार्डन
+झरना
+दार्जिलिंग
+"
+>
+
+<div class="place-icon">
+🌿
+</div>
+
+<h3>
+Darjeeling Rock Garden
+</h3>
+
+<p>
+रॉक गार्डन
+<br>
+Waterfall & Nature
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     11 DALI MONASTERY
+================================================== -->
+
+<a
+href="dali-monastery.html"
+class="place-card"
+data-search="
+dali monastery
+dali monastery darjeeling
+dali gompa
+dali buddhist monastery
+दाली मठ
+दाली मोनास्ट्री
+दाली गोम्पा
+बौद्ध मठ
+दार्जिलिंग
+"
+>
+
+<div class="place-icon">
+☸️
+</div>
+
+<h3>
+Dali Monastery
+</h3>
+
+<p>
+दाली मठ
+<br>
+Buddhist Monastery
+</p>
+
+</a>
+
+
+<!-- ==================================================
+     12 SINGALILA NATIONAL PARK
+================================================== -->
+
+<a
+href="singalila-national-park.html"
+class="place-card"
+data-search="
+singalila national park
+singalila
+singalila national park darjeeling
+sandakphu
+sandakfu
+wildlife darjeeling
+सिंगालीला नेशनल पार्क
+सिंगालीला राष्ट्रीय उद्यान
+संदकफू
+वन्यजीव
+दार्जिलिंग
+"
+>
+
+<div class="place-icon">
+🏔️
+</div>
+
+<h3>
+Singalila National Park
+</h3>
+
+<p>
+सिंगालीला नेशनल पार्क
+<br>
+Mountains & Wildlife
+</p>
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     NO RESULT
+================================================== -->
+
+<div
+class="no-result"
+id="noResult"
+>
+
+🔍
+
+<br><br>
+
+<strong>
+No place found
+</strong>
+
+<br><br>
+
+कोई स्थान नहीं मिला।
+
+<br>
+
+English या Hindi में दोबारा खोजें।
+
+</div>
+
+
+<!-- ==================================================
+     SERVICES
+================================================== -->
+
+<h2
+class="section-title"
+style="margin-top:35px;"
+>
+
+🤝 Services / सेवाएँ
+
+</h2>
+
+
+<div class="city-services">
+
+
+<button
+type="button"
+class="service-btn"
+onclick="openRegistration('Restaurant','रेस्टोरेंट')"
+>
+
+<span class="service-icon">
+🍽️
+</span>
+
+Restaurants
+<br>
+रेस्टोरेंट
+
+</button>
+
+
+<button
+type="button"
+class="service-btn"
+onclick="openRegistration('Hotel','होटल')"
+>
+
+<span class="service-icon">
+🏨
+</span>
+
+Hotels
+<br>
+होटल
+
+</button>
+
+
+<button
+type="button"
+class="service-btn"
+onclick="openRegistration('Car','कार')"
+>
+
+<span class="service-icon">
+🚗
+</span>
+
+Cars
+<br>
+कार
+
+</button>
+
+
+<button
+type="button"
+class="service-btn"
+onclick="openRegistration('Bike','बाइक')"
+>
+
+<span class="service-icon">
+🏍️
+</span>
+
+Bikes
+<br>
+बाइक
+
+</button>
+
+
+<button
+type="button"
+class="service-btn"
+onclick="openRegistration('Auto','ऑटो')"
+>
+
+<span class="service-icon">
+🛺
+</span>
+
+Auto
+<br>
+ऑटो
+
+</button>
+
+
+<button
+type="button"
+class="service-btn"
+onclick="openRegistration('Business Partner','बिजनेस पार्टनर')"
+>
+
+<span class="service-icon">
+🤝
+</span>
+
+Business Partner
+<br>
+बिजनेस पार्टनर
+
+</button>
+
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE
+================================================== -->
+
+<h2
+class="section-title"
+style="margin-top:35px;"
+>
+
+📍 Route / मार्ग
+
+</h2>
+
+
+<div class="city-services">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Bagdogra+Airport"
+class="service-btn"
+target="_blank"
+>
+
+<span class="service-icon">
+✈️
+</span>
+
+Current Location →
+Bagdogra Airport
+
+<br>
+
+वर्तमान स्थान →
+एयरपोर्ट
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Darjeeling+Railway+Station"
+class="service-btn"
+target="_blank"
+>
+
+<span class="service-icon">
+🚂
+</span>
+
+Current Location →
+Railway Station
+
+<br>
+
+वर्तमान स्थान →
+रेलवे स्टेशन
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Darjeeling+Chowrasta"
+class="service-btn"
+target="_blank"
+>
+
+<span class="service-icon">
+📍
+</span>
+
+Current Location →
+Darjeeling Chowrasta
+
+<br>
+
+वर्तमान स्थान →
+चौरास्ता
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     REGISTRATION POPUP
+================================================== -->
+
+<div
+class="popup-bg"
+id="registrationPopup"
+>
+
+<div class="popup-box">
+
+<h2 id="popupTitle">
+🤝 Registration Request
+</h2>
+
+<p id="popupMessage">
+
+आप अपनी service की Registration Request
+WhatsApp या Email के माध्यम से भेज सकते हैं।
+
+</p>
+
+
+<a
+href="#"
+id="whatsappButton"
+class="popup-btn whatsapp-btn"
+target="_blank"
+>
+
+📱 Send Registration Request on WhatsApp
+
+</a>
+
+
+<a
+href="#"
+id="emailButton"
+class="popup-btn email-btn"
+>
+
+📧 Send Registration Request by Email
+
+</a>
+
+
+<button
+type="button"
+class="popup-btn close-btn"
+onclick="closeRegistration()"
+>
+
+✕ Close / बंद करें
+
+</button>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+/* ==================================================
+   SEARCH
+================================================== */
+
+const searchInput =
+document.getElementById("searchInput");
+
+const placeCards =
+document.querySelectorAll(".place-card");
+
+const noResult =
+document.getElementById("noResult");
+
+
+searchInput.addEventListener(
+"input",
+function(){
+
+let text =
+this.value.toLowerCase().trim();
+
+let found = 0;
+
+
+placeCards.forEach(function(card){
+
+let data =
+card.dataset.search.toLowerCase();
+
+
+if(data.includes(text)){
+
+card.style.display = "flex";
+
+found++;
+
+}else{
+
+card.style.display = "none";
+
+}
+
+});
+
+
+if(found === 0){
+
+noResult.style.display = "block";
+
+}else{
+
+noResult.style.display = "none";
+
+}
+
+});
+
+
+/* ==================================================
+   WHATSAPP NUMBER
+================================================== */
+
+const whatsappNumber =
+"918200195546";
+
+
+/* ==================================================
+   EMAIL
+================================================== */
+
+const registrationEmail =
+"deshkhoja2z@gmail.com";
+
+
+/* ==================================================
+   OPEN REGISTRATION
+================================================== */
+
+function openRegistration(
+serviceEnglish,
+serviceHindi
+){
+
+let message = "";
+
+
+if(serviceEnglish === "Restaurant"){
+
+message =
+"Namaste DESH KHOJ A2Z,%0A%0A" +
+
+"I want to register my Restaurant " +
+"on DESH KHOJ A2Z.%0A%0A" +
+
+"Service: Restaurant / रेस्टोरेंट%0A%0A" +
+
+"Restaurant Name: %0A" +
+
+"Owner Name: %0A" +
+
+"City: Darjeeling%0A" +
+
+"Mobile Number: %0A%0A" +
+
+"Please share the registration process.%0A%0A" +
+
+"Thank You";
+
+}
+
+
+else if(serviceEnglish === "Hotel"){
+
+message =
+"Namaste DESH KHOJ A2Z,%0A%0A" +
+
+"I want to register my Hotel " +
+"on DESH KHOJ A2Z.%0A%0A" +
+
+"Service: Hotel / होटल%0A%0A" +
+
+"Hotel Name: %0A" +
+
+"Owner Name: %0A" +
+
+"City: Darjeeling%0A" +
+
+"Mobile Number: %0A%0A" +
+
+"Please share the registration process.%0A%0A" +
+
+"Thank You";
+
+}
+
+
+else if(serviceEnglish === "Car"){
+
+message =
+"Namaste DESH KHOJ A2Z,%0A%0A" +
+
+"I want to register my Car " +
+"service on DESH KHOJ A2Z.%0A%0A" +
+
+"Service: Car / कार%0A%0A" +
+
+"Business Name: %0A" +
+
+"Owner Name: %0A" +
+
+"City: Darjeeling%0A" +
+
+"Mobile Number: %0A%0A" +
+
+"Please share the registration process.%0A%0A" +
+
+"Thank You";
+
+}
+
+
+else if(serviceEnglish === "Bike"){
+
+message =
+"Namaste DESH KHOJ A2Z,%0A%0A" +
+
+"I want to register my Bike " +
+"service on DESH KHOJ A2Z.%0A%0A" +
+
+"Service: Bike / बाइक%0A%0A" +
+
+"Business Name: %0A" +
+
+"Owner Name: %0A" +
+
+"City: Darjeeling%0A" +
+
+"Mobile Number: %0A%0A" +
+
+"Please share the registration process.%0A%0A" +
+
+"Thank You";
+
+}
+
+
+else if(serviceEnglish === "Auto"){
+
+message =
+"Namaste DESH KHOJ A2Z,%0A%0A" +
+
+"I want to register my Auto " +
+"service on DESH KHOJ A2Z.%0A%0A" +
+
+"Service: Auto / ऑटो%0A%0A" +
+
+"Owner Name: %0A" +
+
+"City: Darjeeling%0A%0A" +
+
+"Mobile Number: %0A%0A" +
+
+"Please share the registration process.%0A%0A" +
+
+"Thank You";
+
+}
+
+
+else if(
+serviceEnglish === "Business Partner"
+){
+
+message =
+"Namaste DESH KHOJ A2Z,%0A%0A" +
+
+"I want to register my business " +
+"as a Business Partner on DESH KHOJ A2Z.%0A%0A" +
+
+"Business Category: %0A" +
+
+"Business Name: %0A" +
+
+"Owner Name: %0A" +
+
+"City: Darjeeling%0A" +
+
+"Mobile Number: %0A%0A" +
+
+"Please share the Business Partner " +
+"Registration process.%0A%0A" +
+
+"Thank You";
+
+}
+
+
+/* ==================================================
+   POPUP TITLE
+================================================== */
+
+document.getElementById(
+"popupTitle"
+).innerHTML =
+
+"🤝 " +
+serviceEnglish +
+" Registration";
+
+
+/* ==================================================
+   POPUP MESSAGE
+================================================== */
+
+document.getElementById(
+"popupMessage"
+).innerHTML =
+
+"आप " +
+serviceHindi +
+" के लिए Registration Request " +
+"WhatsApp या Email के माध्यम से भेज सकते हैं।";
+
+
+/* ==================================================
+   WHATSAPP
+================================================== */
+
+document.getElementById(
+"whatsappButton"
+).href =
+
+"https://wa.me/" +
+whatsappNumber +
+"?text=" +
+message;
+
+
+/* ==================================================
+   EMAIL SUBJECT
+================================================== */
+
+let emailSubject =
+
+"DESH KHOJ A2Z - " +
+serviceEnglish +
+" Registration Request";
+
+
+/* ==================================================
+   EMAIL BODY
+================================================== */
+
+let emailBody =
+decodeURIComponent(message)
+.replace(/%0A/g,"\n");
+
+
+/* ==================================================
+   EMAIL LINK
+================================================== */
+
+document.getElementById(
+"emailButton"
+).href =
+
+"mailto:" +
+registrationEmail +
+
+"?subject=" +
+encodeURIComponent(emailSubject) +
+
+"&body=" +
+encodeURIComponent(emailBody);
+
+
+/* ==================================================
+   SHOW POPUP
+================================================== */
+
+document.getElementById(
+"registrationPopup"
+).style.display =
+"block";
+
+}
+
+
+/* ==================================================
+   CLOSE REGISTRATION
+================================================== */
+
+function closeRegistration(){
+
+document.getElementById(
+"registrationPopup"
+).style.display =
+"none";
+
+}
+
+
+/* ==================================================
+   CLICK OUTSIDE POPUP
+================================================== */
+
+document.getElementById(
+"registrationPopup"
+).addEventListener(
+"click",
+function(event){
+
+if(event.target === this){
+
+closeRegistration();
+
+}
+
+});
+
+</script>
+
+
+<!-- ==================================================
+     COMMON SCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

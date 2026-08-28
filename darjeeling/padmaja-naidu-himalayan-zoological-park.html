@@ -1,0 +1,1687 @@
+<!-- ==================================================
+     PADMAJA NAIDU HIMALAYAN ZOOLOGICAL PARK
+     DESH KHOJ A2Z
+     PART 1 OF 2
+================================================== -->
+
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Padmaja Naidu Himalayan Zoological Park | पद्मजा नायडू हिमालयन जूलॉजिकल पार्क - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   PAGE BOX
+================================================== */
+
+.info-box{
+background:#ffffff;
+border-radius:25px;
+padding:30px;
+margin:25px 0;
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+scroll-margin-top:90px;
+}
+
+.info-box h2{
+font-size:32px;
+line-height:1.25;
+margin-bottom:18px;
+color:#202124;
+}
+
+.info-box p{
+font-size:20px;
+line-height:1.7;
+color:#666;
+}
+
+
+/* ==================================================
+   SECTION TABS
+================================================== */
+
+.section-tabs{
+display:flex;
+gap:8px;
+overflow-x:auto;
+padding:10px 2px 14px;
+margin:10px 0 5px;
+position:sticky;
+top:0;
+z-index:50;
+background:#f4f7f6;
+scroll-behavior:smooth;
+-webkit-overflow-scrolling:touch;
+}
+
+.section-tabs::-webkit-scrollbar{
+height:4px;
+}
+
+.section-tabs::-webkit-scrollbar-thumb{
+background:#bbb;
+border-radius:10px;
+}
+
+.section-tabs a{
+flex:0 0 auto;
+display:block;
+padding:10px 14px;
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:14px;
+font-size:14px;
+font-weight:bold;
+border:1px solid #e5e7eb;
+box-shadow:0 3px 10px rgba(0,0,0,.06);
+white-space:nowrap;
+}
+
+.section-tabs a:active{
+transform:scale(.95);
+background:#fff7e6;
+}
+
+.section-tabs a:hover{
+background:#fff7e6;
+}
+
+
+/* ==================================================
+   IMPORTANT BOX
+================================================== */
+
+.important-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:20px;
+margin-top:20px;
+}
+
+.important-box h3{
+font-size:22px;
+margin-bottom:8px;
+}
+
+.important-box p{
+font-size:18px;
+margin:0;
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.official-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 18px;
+background:#1976d2;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+}
+
+.official-btn:active{
+transform:scale(.97);
+}
+
+
+/* ==================================================
+   NEARBY GRID
+================================================== */
+
+.nearby-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.nearby-card{
+background:#f8f9fa;
+border-radius:20px;
+padding:22px 12px;
+text-align:center;
+border-top:5px solid #16a34a;
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+}
+
+.nearby-card:nth-child(2){
+border-top-color:#2196d2;
+}
+
+.nearby-card:nth-child(3){
+border-top-color:#f59e0b;
+}
+
+.nearby-card:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.nearby-icon{
+font-size:38px;
+margin-bottom:8px;
+}
+
+.nearby-card h3{
+font-size:20px;
+margin:8px 0;
+}
+
+.nearby-card p{
+font-size:16px;
+margin:5px 0 14px;
+color:#666;
+}
+
+
+/* ==================================================
+   ROUTE BUTTON
+================================================== */
+
+.route-btn{
+display:inline-block;
+background:#16a34a;
+color:white;
+text-decoration:none;
+padding:10px 13px;
+border-radius:11px;
+font-size:13px;
+font-weight:bold;
+}
+
+.route-btn:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   HOTEL GRID
+================================================== */
+
+.hotel-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.hotel-card{
+display:block;
+background:#f8f9fa;
+color:#202124;
+text-decoration:none;
+text-align:center;
+border-radius:20px;
+padding:22px 12px;
+border-top:5px solid #16a34a;
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+}
+
+.hotel-card:nth-child(2){
+border-top-color:#f59e0b;
+}
+
+.hotel-card:nth-child(3){
+border-top-color:#2196d2;
+}
+
+.hotel-card:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.hotel-card:active{
+transform:scale(.97);
+}
+
+.hotel-icon{
+font-size:38px;
+margin-bottom:8px;
+}
+
+.hotel-card h3{
+font-size:20px;
+margin:8px 0;
+}
+
+.hotel-card p{
+font-size:15px;
+margin:5px 0;
+color:#666;
+}
+
+.hotel-link{
+display:inline-block;
+margin-top:9px;
+padding:8px 11px;
+border-radius:10px;
+background:#1976d2;
+color:white;
+font-size:12px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   HOTEL BOX
+================================================== */
+
+.hotel-box{
+background:#f8f9fa;
+border-radius:20px;
+padding:20px;
+margin-top:20px;
+}
+
+
+/* ==================================================
+   RESTAURANTS
+================================================== */
+
+.restaurant-box{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.restaurant-card{
+background:#f8f9fa;
+border-radius:20px;
+padding:20px 12px;
+text-align:center;
+border-top:5px solid #16a34a;
+box-shadow:0 5px 16px rgba(0,0,0,.05);
+}
+
+.restaurant-card:nth-child(2){
+border-top-color:#f59e0b;
+}
+
+.restaurant-card:nth-child(3){
+border-top-color:#2196d2;
+}
+
+.restaurant-card:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.restaurant-card h3{
+font-size:19px;
+margin:8px 0;
+}
+
+.restaurant-card p{
+font-size:15px;
+color:#666;
+margin:5px 0 12px;
+}
+
+.restaurant-btn{
+display:inline-block;
+background:#1976d2;
+color:white;
+text-decoration:none;
+padding:9px 11px;
+border-radius:10px;
+font-size:12px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   TRAVEL GRID
+================================================== */
+
+.travel-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:20px;
+}
+
+.travel-card{
+background:#f8f9fa;
+border-radius:20px;
+padding:22px 16px;
+border-top:5px solid #2196d2;
+}
+
+.travel-card h3{
+font-size:20px;
+margin-bottom:12px;
+}
+
+.travel-card p{
+font-size:17px;
+margin:7px 0;
+}
+
+
+/* ==================================================
+   SMALL TRAVEL NOTES
+================================================== */
+
+.share-auto-box{
+margin-top:20px;
+padding:15px 18px;
+background:#f0f7ff;
+border-left:5px solid #2196d2;
+border-radius:15px;
+}
+
+.share-auto-box p{
+font-size:17px;
+margin:0;
+}
+
+.travel-note{
+margin-top:15px;
+padding:14px 18px;
+background:#f0fff4;
+border-left:5px solid #16a34a;
+border-radius:15px;
+font-size:16px !important;
+}
+
+
+/* ==================================================
+   LOCATION
+================================================== */
+
+.location-box{
+background:#f0f7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:20px;
+margin-top:20px;
+}
+
+
+/* ==================================================
+   PHOTO GALLERY
+================================================== */
+
+.photo-gallery{
+margin-top:20px;
+}
+
+.photo-card{
+display:block;
+background:#f8f9fa;
+border-radius:20px;
+overflow:hidden;
+text-decoration:none;
+color:#202124;
+box-shadow:0 5px 16px rgba(0,0,0,.06);
+border:1px solid #e5e7eb;
+}
+
+.photo-placeholder{
+height:230px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:90px;
+background:#eef7fa;
+}
+
+.photo-card p{
+font-size:18px;
+padding:15px;
+margin:0;
+font-weight:bold;
+text-align:center;
+}
+
+.photo-more{
+display:block;
+margin-top:18px;
+background:#1976d2;
+color:white;
+text-decoration:none;
+padding:13px;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+text-align:center;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+.info-box{
+padding:22px 18px;
+border-radius:22px;
+}
+
+.info-box h2{
+font-size:28px;
+line-height:1.3;
+}
+
+.info-box p{
+font-size:18px;
+}
+
+.section-tabs{
+gap:7px;
+padding:9px 2px 13px;
+}
+
+.section-tabs a{
+font-size:12px;
+padding:9px 11px;
+border-radius:12px;
+}
+
+.nearby-grid{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.nearby-card{
+padding:18px 9px;
+}
+
+.nearby-card h3{
+font-size:18px;
+}
+
+.nearby-card p{
+font-size:15px;
+}
+
+.route-btn{
+font-size:11px;
+padding:9px 8px;
+}
+
+.hotel-grid{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.hotel-card{
+padding:18px 8px;
+}
+
+.hotel-icon{
+font-size:34px;
+}
+
+.hotel-card h3{
+font-size:17px;
+}
+
+.hotel-card p{
+font-size:14px;
+}
+
+.hotel-link{
+font-size:11px;
+padding:8px 8px;
+}
+
+.restaurant-box{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.restaurant-card{
+padding:17px 8px;
+}
+
+.restaurant-card h3{
+font-size:17px;
+}
+
+.restaurant-card p{
+font-size:14px;
+}
+
+.restaurant-btn{
+font-size:10px;
+padding:8px 7px;
+}
+
+.travel-grid{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.travel-card{
+padding:16px 10px;
+}
+
+.travel-card h3{
+font-size:17px;
+}
+
+.travel-card p{
+font-size:15px;
+}
+
+.photo-placeholder{
+height:210px;
+font-size:80px;
+}
+
+}
+
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.nearby-grid,
+.hotel-grid,
+.restaurant-box,
+.travel-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.info-box h2{
+font-size:26px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🦁
+</div>
+
+<h1>
+Padmaja Naidu Himalayan Zoological Park
+</h1>
+
+<p>
+पद्मजा नायडू हिमालयन जूलॉजिकल पार्क • दार्जिलिंग
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search places / स्थान खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<!-- ==================================================
+     BACK
+================================================== -->
+
+<a
+href="darjeeling.html"
+class="back"
+>
+
+← Darjeeling / दार्जिलिंग
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🦁 Padmaja Naidu Himalayan Zoological Park
+</h2>
+
+<p>
+
+पद्मजा नायडू हिमालयन जूलॉजिकल पार्क,
+जिसे Darjeeling Zoo के नाम से भी जाना
+जाता है, दार्जिलिंग का एक प्रसिद्ध
+high-altitude zoological park है। यह
+Himalayan और high-altitude wildlife
+के conservation, education और
+awareness के लिए जाना जाता है।
+
+यहाँ हिमालयी क्षेत्र से संबंधित कई
+प्रमुख वन्यजीव प्रजातियों को देखने का
+अवसर मिलता है। Red Panda और Snow
+Leopard जैसे दुर्लभ Himalayan animals
+इस पार्क के प्रमुख आकर्षणों में शामिल
+हैं।
+
+<br><br>
+
+The Padmaja Naidu Himalayan Zoological
+Park, commonly known as Darjeeling Zoo,
+is a famous high-altitude zoological park
+in Darjeeling.
+
+The park is particularly known for
+Himalayan wildlife conservation,
+education and breeding programmes.
+Visitors may see animals such as the
+Red Panda and Snow Leopard along with
+other mountain wildlife.
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK TABS
+================================================== -->
+
+<div class="section-tabs">
+
+<a href="#nearby">📍 Nearby</a>
+
+<a href="#hotels">🏨 Hotels</a>
+
+<a href="#food">🍽️ Food</a>
+
+<a href="#religion">🙏 Religion</a>
+
+<a href="#travel">🚗 Travel</a>
+
+<a href="#route">🗺️ Route</a>
+
+<a href="#more">🌐 More</a>
+
+<a href="#photos">📸 Photos</a>
+
+</div>
+
+
+<!-- ==================================================
+     NEARBY
+================================================== -->
+
+<section
+class="info-box"
+id="nearby"
+>
+
+<h2>
+📍 Nearby Places / आसपास के स्थान
+</h2>
+
+<div class="nearby-grid">
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">🏔️</div>
+
+<h3>Himalayan Mountaineering Institute</h3>
+
+<p>
+हिमालयन माउंटेनियरिंग इंस्टीट्यूट
+<br>
+📏 लगभग 0.5 km
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Himalayan+Mountaineering+Institute+Darjeeling"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">🏛️</div>
+
+<h3>Bengal Natural History Museum</h3>
+
+<p>
+बंगाल नेचुरल हिस्ट्री म्यूजियम
+<br>
+📏 लगभग 0.5 km
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Bengal+Natural+History+Museum+Darjeeling"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">🌿</div>
+
+<h3>Lloyd's Botanical Garden</h3>
+
+<p>
+लॉयड्स बॉटनिकल गार्डन
+<br>
+📏 लगभग 2 km
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Lloyds+Botanical+Garden+Darjeeling"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+<div class="nearby-card">
+
+<div class="nearby-icon">🌅</div>
+
+<h3>Darjeeling Mall</h3>
+
+<p>
+दार्जिलिंग मॉल
+<br>
+📏 लगभग 3 km
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Darjeeling+Mall"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     HOTELS
+================================================== -->
+
+<section
+class="info-box"
+id="hotels"
+>
+
+<h2>
+🏨 Hotels / होटल
+</h2>
+
+<p>
+
+Padmaja Naidu Himalayan Zoological Park
+के लिए Darjeeling town में रहना
+सुविधाजनक रहता है। Zoo और आसपास
+के sightseeing locations तक पहुँच के
+लिए Mall, Chowrasta तथा अन्य central
+areas में accommodation देख सकते हैं।
+
+Hotel या homestay चुनते समय zoo तक
+की दूरी, road access, parking और
+current availability check करना बेहतर
+रहेगा।
+
+</p>
+
+
+<div class="hotel-grid">
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">💰</div>
+
+<h3>Budget Hotels</h3>
+
+<p>बजट होटल</p>
+
+<span class="hotel-link">
+🏨 Hotels देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+near+Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">⭐</div>
+
+<h3>Best Hotels</h3>
+
+<p>अच्छे होटल</p>
+
+<span class="hotel-link">
+🏨 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=homestays+near+Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">🏠</div>
+
+<h3>Homestays</h3>
+
+<p>होमस्टे</p>
+
+<span class="hotel-link">
+🏠 देखें
+</span>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+in+Darjeeling"
+target="_blank"
+class="hotel-card"
+>
+
+<div class="hotel-icon">👑</div>
+
+<h3>Luxury Hotels</h3>
+
+<p>प्रीमियम होटल</p>
+
+<span class="hotel-link">
+⭐ देखें
+</span>
+
+</a>
+
+
+</div>
+
+
+<div class="hotel-box">
+
+<p>
+
+Booking से पहले price, reviews,
+distance, parking, breakfast और
+current availability check करना
+बेहतर रहेगा।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     RESTAURANTS
+================================================== -->
+
+<section
+class="info-box"
+id="food"
+>
+
+<h2>
+🍽️ Restaurants / रेस्टोरेंट
+</h2>
+
+<p>
+
+Zoo के आसपास और Darjeeling town में
+restaurants, cafés और local food के
+कई विकल्प मिल सकते हैं। परिवार के
+साथ यात्रा करते समय भोजन और पानी की
+व्यवस्था पहले देख लेना उपयोगी रहेगा।
+
+</p>
+
+
+<div class="restaurant-box">
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">⭐</div>
+
+<h3>Top Rated</h3>
+
+<p>Darjeeling Restaurants</p>
+
+<a
+href="https://www.google.com/maps/search/top+rated+restaurants+near+Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling"
+target="_blank"
+class="restaurant-btn"
+>
+⭐ देखें
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">🥗</div>
+
+<h3>Vegetarian</h3>
+
+<p>शाकाहारी भोजन</p>
+
+<a
+href="https://www.google.com/maps/search/vegetarian+restaurants+near+Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling"
+target="_blank"
+class="restaurant-btn"
+>
+🥗 देखें
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">🍛</div>
+
+<h3>Local Food</h3>
+
+<p>Local Darjeeling Food</p>
+
+<a
+href="https://www.google.com/maps/search/local+food+near+Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling"
+target="_blank"
+class="restaurant-btn"
+>
+🍛 देखें
+</a>
+
+</div>
+
+
+<div class="restaurant-card">
+
+<div class="nearby-icon">☕</div>
+
+<h3>Cafes</h3>
+
+<p>Nearby Cafes</p>
+
+<a
+href="https://www.google.com/maps/search/cafes+near+Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling"
+target="_blank"
+class="restaurant-btn"
+>
+☕ देखें
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     RELIGION
+================================================== -->
+
+<section
+class="info-box"
+id="religion"
+>
+
+<h2>
+🙏 Religious & Cultural Importance / धार्मिक एवं सांस्कृतिक महत्व
+</h2>
+
+<p>
+
+Padmaja Naidu Himalayan Zoological Park
+कोई धार्मिक स्थल नहीं है। इसका मुख्य
+महत्व Himalayan wildlife conservation,
+education और Darjeeling की natural
+heritage से जुड़ा हुआ है।
+
+यह पार्क विशेष रूप से Himalayan
+species के संरक्षण और public awareness
+के लिए महत्वपूर्ण है। यहाँ wildlife को
+देखने के साथ visitors को mountain
+ecosystems और endangered species के
+बारे में जानकारी मिलती है।
+
+<br><br>
+
+The park is not a religious site.
+Its importance is primarily ecological,
+educational and cultural, particularly
+through Himalayan wildlife conservation
+and awareness.
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     IMPORTANT INFORMATION
+================================================== -->
+
+<section class="info-box">
+
+<div class="important-box">
+
+<h3>
+⚠️ महत्वपूर्ण सूचना
+</h3>
+
+<p>
+
+Zoo में entry timing, ticket rules,
+weekly closure, animal viewing
+conditions और other visitor facilities
+समय के अनुसार बदल सकती हैं।
+
+यात्रा से पहले current opening hours
+और ticket information check करना
+बेहतर रहेगा।
+
+जानवरों को खाना न खिलाएँ, enclosures
+के पास सुरक्षा नियमों का पालन करें और
+wildlife को disturb न करें।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     TRAVEL
+================================================== -->
+
+<section
+class="info-box"
+id="travel"
+>
+
+<h2>
+🚗 Travel / यात्रा
+</h2>
+
+
+<div class="travel-grid">
+
+
+<div class="travel-card">
+
+<h3>
+🚉 Darjeeling Railway Station
+</h3>
+
+<p>
+लगभग <strong>2 km</strong>
+</p>
+
+<p>
+⏱️ लगभग 10–20 मिनट*
+</p>
+
+<p>
+💰 Auto/Cab:
+₹100–₹300* लगभग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling&origin=Darjeeling+Railway+Station"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+🚌 Darjeeling Bus Stand
+</h3>
+
+<p>
+लगभग <strong>3 km</strong>
+</p>
+
+<p>
+⏱️ लगभग 10–25 मिनट*
+</p>
+
+<p>
+💰 Auto/Cab:
+₹100–₹300* लगभग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling&origin=Darjeeling+Bus+Stand"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+✈️ Bagdogra Airport
+</h3>
+
+<p>
+लगभग <strong>70–75 km</strong>
+</p>
+
+<p>
+⏱️ लगभग 3–4 घंटे*
+</p>
+
+<p>
+💰 Cab/Taxi:
+₹2,500–₹4,500* लगभग
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling&origin=Bagdogra+Airport"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+<div class="travel-card">
+
+<h3>
+🚕 Local Travel
+</h3>
+
+<p>
+Darjeeling से Zoo
+</p>
+
+<p>
+Local taxi, shared taxi और walking
+route location के अनुसार practical
+options हो सकते हैं।
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling"
+target="_blank"
+class="route-btn"
+>
+📍 Route देखें
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="share-auto-box">
+
+<p>
+
+🚕 <strong>Shared Travel:</strong>
+Darjeeling में shared taxi options
+कुछ routes पर उपलब्ध हो सकते हैं।
+Availability और fare season तथा
+local conditions के अनुसार बदल सकते हैं।
+
+</p>
+
+</div>
+
+
+<p class="travel-note">
+
+*दूरी, समय और किराया approximate हैं।
+Traffic, road conditions, मौसम और
+local fare के अनुसार actual amount
+अलग हो सकता है।
+
+</p>
+
+</section>
+
+  <!-- ==================================================
+     PADMAJA NAIDU HIMALAYAN ZOOLOGICAL PARK
+     DESH KHOJ A2Z
+     PART 2 OF 2
+================================================== -->
+
+
+<!-- ==================================================
+     LOCATION & ROUTE
+================================================== -->
+
+<section
+class="info-box"
+id="route"
+>
+
+<h2>
+🗺️ Location & Route / स्थान एवं मार्ग
+</h2>
+
+<div class="location-box">
+
+<p>
+
+Padmaja Naidu Himalayan Zoological
+Park दार्जिलिंग के Jawahar Road क्षेत्र
+में स्थित है। अपने current location से
+Google Maps पर सीधा route देखा जा सकता है।
+
+<br><br>
+
+Darjeeling के पहाड़ी रास्तों पर travel
+time traffic, मौसम और road conditions
+के अनुसार बदल सकता है।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling"
+target="_blank"
+class="route-btn"
+>
+
+📍 Current Location से Route
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     MORE INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+id="more"
+>
+
+<h2>
+🌐 More Information / अधिक जानकारी
+</h2>
+
+<div class="important-box">
+
+<h3>
+🦁 Padmaja Naidu Himalayan Zoological Park के बारे में और जानें
+</h3>
+
+<p>
+
+Padmaja Naidu Himalayan Zoological
+Park का इतिहास, Himalayan wildlife,
+Red Panda, Snow Leopard, conservation,
+visiting information और Darjeeling
+travel information के बारे में अधिक
+जानकारी के लिए नीचे दिए गए button पर
+search कर सकते हैं।
+
+</p>
+
+<a
+href="https://www.google.com/search?q=Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling+history+Red+Panda+Snow+Leopard+travel+information"
+target="_blank"
+class="official-btn"
+>
+
+🌐 Chrome में अधिक जानकारी देखें
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     PHOTO
+================================================== -->
+
+<section
+class="info-box"
+id="photos"
+>
+
+<h2>
+📸 Padmaja Naidu Himalayan Zoological Park Photo / पद्मजा नायडू हिमालयन जूलॉजिकल पार्क की तस्वीर
+</h2>
+
+<p>
+
+Padmaja Naidu Himalayan Zoological
+Park, Red Panda, Snow Leopard और
+Darjeeling Zoo की photos देखने के लिए
+नीचे photo card पर click करें।
+
+</p>
+
+
+<div class="photo-gallery">
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling"
+target="_blank"
+class="photo-card"
+>
+
+<div class="photo-placeholder">
+
+🦁
+
+</div>
+
+<p>
+
+🦁 Darjeeling Zoo & Himalayan Wildlife
+
+</p>
+
+</a>
+
+</div>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Padmaja+Naidu+Himalayan+Zoological+Park+Darjeeling"
+target="_blank"
+class="photo-more"
+>
+
+📸 Chrome में और Photos देखें
+
+</a>
+
+</section>
+
+
+<!-- ==================================================
+     VISITOR INFORMATION
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<h2>
+🙏 Visitor Information / आगंतुक जानकारी
+</h2>
+
+<div class="important-box">
+
+<h3>
+🦁 Zoo Visit के लिए ध्यान रखें
+</h3>
+
+<p>
+
+• Visit से पहले current opening hours और ticket information check करें।<br>
+• Darjeeling के मौसम के अनुसार warm clothes रखें।<br>
+• Comfortable footwear पहनें।<br>
+• Animals को खाना न खिलाएँ।<br>
+• Wildlife को disturb या tease न करें।<br>
+• Enclosures और safety barriers का पालन करें।<br>
+• बच्चों के साथ wildlife viewing के दौरान विशेष ध्यान रखें।<br>
+• परिसर में cleanliness बनाए रखें।<br>
+• Photography के लिए local rules का पालन करें।<br>
+• बारिश या fog के दौरान रास्तों पर सावधानी रखें।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     BEST TIME
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<h2>
+🗓️ Best Time / घूमने का सही समय
+</h2>
+
+<p>
+
+Padmaja Naidu Himalayan Zoological Park
+घूमने के लिए Darjeeling का relatively
+clear और comfortable weather वाला समय
+अच्छा रहता है।
+
+<br><br>
+
+Spring और autumn के दौरान मौसम
+sightseeing के लिए सामान्यतः comfortable
+हो सकता है। Monsoon के दौरान बारिश,
+fog और slippery roads के कारण यात्रा
+प्रभावित हो सकती है।
+
+<br><br>
+
+Wildlife देखने की visibility और animal
+activity मौसम तथा दिन के समय के अनुसार
+बदल सकती है। इसलिए यात्रा के दिन park
+की current opening व्यवस्था और weather
+forecast check करना बेहतर रहेगा।
+
+</p>
+
+</section>
+
+
+<!-- ==================================================
+     IMPORTANT TIPS
+================================================== -->
+
+<section
+class="info-box"
+>
+
+<h2>
+💡 Travel Tips / यात्रा सुझाव
+</h2>
+
+<div class="important-box">
+
+<h3>
+✅ यात्रा से पहले
+</h3>
+
+<p>
+
+• Zoo के current opening hours check करें।<br>
+• Ticket और entry rules पहले verify करें।<br>
+• Darjeeling weather forecast देखें।<br>
+• Comfortable walking shoes पहनें।<br>
+• मौसम के अनुसार warm clothes रखें।<br>
+• पानी साथ रखें।<br>
+• Mobile phone और camera charge रखें।<br>
+• Wildlife को खाना न खिलाएँ।<br>
+• Animals के पास तेज आवाज न करें।<br>
+• Local rules और safety barriers का पालन करें।<br>
+• बारिश के मौसम में slippery paths का ध्यान रखें।
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     DESH KHOJ A2Z INFORMATION
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🇮🇳 DESH KHOJ A2Z Travel Information
+</h2>
+
+<p>
+
+DESH KHOJ A2Z का उद्देश्य यात्रियों को
+भारत के अलग-अलग स्थानों के लिए
+सरल, उपयोगी और practical travel
+information एक ही जगह उपलब्ध कराना है।
+
+<br><br>
+
+Our goal is to provide simple, useful
+and practical travel information for
+travellers exploring India.
+
+<br><br>
+
+Place information, local details,
+reviews और उपलब्ध जानकारी के आधार पर
+pages को समय-समय पर update किया जाएगा।
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     COMMON JAVASCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
