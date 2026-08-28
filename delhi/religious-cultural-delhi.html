@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Religious & Cultural Delhi | DESH KHOJ A2Z
+</title>
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   RELIGIOUS & CULTURAL DELHI
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#ff9933,
+#ffffff,
+#138808
+);
+padding:24px 15px;
+text-align:center;
+border-bottom:5px solid #138808;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:40px;
+}
+
+header h1{
+font-size:30px;
+margin:5px 0;
+}
+
+header p{
+font-size:15px;
+font-weight:bold;
+color:#34495e;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:20px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:18px;
+}
+
+.hero{
+background:white;
+border-left:6px solid #ff9933;
+border-radius:22px;
+padding:22px;
+margin-bottom:25px;
+box-shadow:0 5px 18px rgba(0,0,0,.09);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+font-size:16px;
+}
+
+.info{
+background:#eef7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:17px;
+margin:20px 0 28px;
+font-size:15px;
+}
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   PLACE CARD
+================================================== */
+
+.place-card{
+background:white;
+border-radius:24px;
+padding:22px;
+margin:25px 0;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+border-left:6px solid #ff9933;
+}
+
+.place-card:nth-of-type(2){
+border-left-color:#138808;
+}
+
+.place-card:nth-of-type(3){
+border-left-color:#1976d2;
+}
+
+.place-card:nth-of-type(4){
+border-left-color:#8b5cf6;
+}
+
+.place-header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:14px;
+}
+
+.place-icon{
+font-size:48px;
+}
+
+.place-header h3{
+font-size:25px;
+margin:0;
+}
+
+.place-header span{
+display:block;
+font-size:16px;
+color:#666;
+margin-top:2px;
+}
+
+.category{
+display:inline-block;
+background:#f1f5f9;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#555;
+margin-bottom:14px;
+}
+
+.short-history{
+background:#fff8e7;
+border-left:4px solid #f59e0b;
+padding:14px;
+border-radius:13px;
+margin:12px 0 18px;
+}
+
+.short-history h4{
+margin-bottom:5px;
+font-size:17px;
+}
+
+.short-history p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   BUTTON GRID
+================================================== */
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.action-btn{
+display:block;
+padding:12px 8px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:bold;
+transition:.2s;
+}
+
+.action-btn:active{
+transform:scale(.96);
+}
+
+.route{
+background:#1976d2;
+}
+
+.maps{
+background:#0f766e;
+}
+
+.hotel{
+background:#d97706;
+}
+
+.luxury{
+background:#7c2d12;
+}
+
+.restaurant{
+background:#be123c;
+}
+
+.photo{
+background:#7c3aed;
+}
+
+.metro{
+background:#2563eb;
+}
+
+.bus{
+background:#15803d;
+}
+
+.cab{
+background:#ea580c;
+}
+
+.train{
+background:#6d28d9;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px;
+margin-top:18px;
+}
+
+.place-info-row{
+padding:8px 0;
+border-bottom:1px solid #e5e7eb;
+font-size:14px;
+}
+
+.place-info-row:last-child{
+border-bottom:0;
+}
+
+.place-info strong{
+display:inline-block;
+margin-right:5px;
+}
+
+
+/* ==================================================
+   ROUTE BOX
+================================================== */
+
+.route-box{
+background:#eaf4ff;
+border-left:5px solid #1976d2;
+border-radius:16px;
+padding:17px;
+margin:25px 0;
+}
+
+.route-box h3{
+font-size:20px;
+margin-bottom:7px;
+}
+
+.route-box p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:28px 15px;
+margin-top:35px;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:17px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:54px;
+height:54px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:26px;
+}
+
+.container{
+padding:18px 11px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.place-card{
+padding:18px 14px;
+}
+
+.place-header h3{
+font-size:21px;
+}
+
+.place-icon{
+font-size:40px;
+}
+
+.action-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.action-btn{
+font-size:11px;
+padding:11px 5px;
+}
+
+.place-info-row{
+font-size:13px;
+}
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.action-btn{
+font-size:10px;
+}
+
+.place-header h3{
+font-size:19px;
+}
+
+.place-header span{
+font-size:14px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Religious & Cultural Delhi
+</h1>
+
+<p>
+दिल्ली • Religion • Culture • Heritage
+</p>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<a
+href="delhi.html"
+class="back"
+>
+← Delhi / दिल्ली
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="hero">
+
+<h2>
+🛕 Religious & Cultural Delhi
+</h2>
+
+<p>
+
+Delhi भारत के प्रमुख religious
+और cultural centres में से एक है।
+यहाँ अलग-अलग धर्मों के प्रसिद्ध
+temples, gurudwaras, mosques
+और cultural places देखने को मिलते हैं।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     INFO
+================================================== -->
+
+<div class="info">
+
+📌 <strong>एक ही Cultural Route में:</strong>
+
+Akshardham → Lotus Temple →
+Gurudwara Bangla Sahib → Jama Masjid
+
+<br><br>
+
+हर place के नीचे Route, Maps,
+Budget Hotel, Luxury Hotel,
+Restaurant, Photos और Transport
+के direct buttons दिए गए हैं।
+
+</div>
+
+
+<!-- ==================================================
+     GROUP ROUTE
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+📍 Delhi Religious & Cultural Route
+</h3>
+
+<p>
+
+<strong>
+Akshardham → Lotus Temple →
+Gurudwara Bangla Sahib → Jama Masjid
+</strong>
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Jama+Masjid+Delhi&waypoints=Akshardham+Delhi%7CLotus+Temple+Delhi%7CGurudwara+Bangla+Sahib+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+📍 पूरा Route देखें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     SECTION
+================================================== -->
+
+<h2 class="section-title">
+⭐ Religious & Cultural Places
+</h2>
+
+
+<!-- ==================================================
+     AKSHARDHAM
+================================================== -->
+
+<div class="place-card">
+
+<div class="place-header">
+
+<div class="place-icon">
+🛕
+</div>
+
+<div>
+
+<h3>
+Akshardham Temple
+</h3>
+
+<span>
+अक्षरधाम मंदिर
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Temple • Culture • Architecture
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Swaminarayan Akshardham Delhi का
+प्रसिद्ध cultural और spiritual
+complex है। यहाँ भारतीय संस्कृति,
+कला और architecture को प्रदर्शित
+किया गया है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+NH 24, Akshardham Setu, Delhi
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚇 Metro:</strong>
+
+Akshardham Metro Station
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚌 Bus:</strong>
+
+Akshardham Bus Stop
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚆 Railway:</strong>
+
+Anand Vihar Railway Station
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Akshardham+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Akshardham+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Akshardham+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Akshardham+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Akshardham+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Akshardham+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Akshardham+Metro+Station+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Nearest Metro
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Akshardham+Bus+Stop+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Akshardham+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Anand+Vihar+Railway+Station+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     LOTUS TEMPLE
+================================================== -->
+
+<div class="place-card">
+
+<div class="place-header">
+
+<div class="place-icon">
+🌸
+</div>
+
+<div>
+
+<h3>
+Lotus Temple
+</h3>
+
+<span>
+लोटस टेम्पल
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Baháʼí House of Worship • Architecture
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Lotus Temple Delhi का प्रसिद्ध
+Baháʼí House of Worship है।
+कमल के फूल जैसी इसकी architecture
+इसे Delhi के प्रमुख cultural
+landmarks में शामिल करती है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Lotus Temple Road, Bahapur, Delhi
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚇 Metro:</strong>
+
+Kalkaji Mandir Metro Station
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚌 Bus:</strong>
+
+Lotus Temple Bus Stop
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚆 Railway:</strong>
+
+Okhla Railway Station
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Lotus+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Lotus+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Lotus+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Lotus+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Lotus+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Lotus+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Kalkaji+Mandir+Metro+Station+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Nearest Metro
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Lotus+Temple+Bus+Stop+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Lotus+Temple+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Okhla+Railway+Station+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     GURUDWARA BANGLA SAHIB
+================================================== -->
+
+<div class="place-card">
+
+<div class="place-header">
+
+<div class="place-icon">
+🙏
+</div>
+
+<div>
+
+<h3>
+Gurudwara Bangla Sahib
+</h3>
+
+<span>
+गुरुद्वारा बंगला साहिब
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Sikh Heritage • Religious • Culture
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Gurudwara Bangla Sahib Delhi का
+प्रसिद्ध Sikh religious place है।
+यह Guru Har Krishan Sahib Ji से
+जुड़ी महत्वपूर्ण ऐतिहासिक स्मृति
+के लिए जाना जाता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Ashoka Road, Connaught Place, Delhi
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚇 Metro:</strong>
+
+Shivaji Stadium Metro Station
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚌 Bus:</strong>
+
+Bangla Sahib Bus Stop
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚆 Railway:</strong>
+
+New Delhi Railway Station
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Gurudwara+Bangla+Sahib+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gurudwara+Bangla+Sahib+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Gurudwara+Bangla+Sahib+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Gurudwara+Bangla+Sahib+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Gurudwara+Bangla+Sahib+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gurudwara+Bangla+Sahib+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Shivaji+Stadium+Metro+Station+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Nearest Metro
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Bangla+Sahib+Bus+Stop+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Gurudwara+Bangla+Sahib+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=New+Delhi+Railway+Station"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     BIRLA MANDIR
+================================================== -->
+
+<div class="place-card">
+
+<div class="place-header">
+
+<div class="place-icon">
+🛕
+</div>
+
+<div>
+
+<h3>
+Birla Mandir
+</h3>
+
+<span>
+बिड़ला मंदिर
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Hindu Temple • Religious • Architecture
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Birla Mandir, जिसे Laxminarayan
+Temple भी कहा जाता है, Delhi का
+प्रसिद्ध Hindu temple है। यह
+Laxmi और Narayan को समर्पित
+प्रमुख धार्मिक स्थल है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Mandir Marg, New Delhi
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚇 Metro:</strong>
+
+RK Ashram Marg Metro Station
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚌 Bus:</strong>
+
+Birla Mandir Bus Stop
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚆 Railway:</strong>
+
+New Delhi Railway Station
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Birla+Mandir+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Birla+Mandir+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Birla+Mandir+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Birla+Mandir+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Birla+Mandir+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Birla+Mandir+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=RK+Ashram+Marg+Metro+Station+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Nearest Metro
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Birla+Mandir+Bus+Stop+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Birla+Mandir+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=New+Delhi+Railway+Station"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK ROUTE
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+🗺️ Religious & Cultural Quick Route
+</h3>
+
+<p>
+
+🛕 Akshardham → 🌸 Lotus Temple
+→ 🙏 Gurudwara Bangla Sahib
+→ 🛕 Birla Mandir
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Birla+Mandir+Delhi&waypoints=Akshardham+Delhi%7CLotus+Temple+Delhi%7CGurudwara+Bangla+Sahib+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+📍 Route खोलें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL TIP
+================================================== -->
+
+<div class="info">
+
+💡 <strong>Travel Tip:</strong>
+
+इन places को देखने के लिए
+Metro और Cab को destination
+के अनुसार combine करना convenient
+हो सकता है।
+
+<br><br>
+
+🙏 Religious places में dress code,
+photography और visitor rules का
+ध्यान रखें।
+
+<br><br>
+
+📌 Opening timings, entry rules,
+transport routes और fares यात्रा
+से पहले verify करें।
+
+</div>
+
+
+<!-- ==================================================
+     BACK TO DELHI
+================================================== -->
+
+<a
+href="delhi.html"
+class="back"
+>
+← Back to Delhi
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Religious & Cultural Delhi
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="Back to Top"
+>
+↑
+</button>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY > 300){
+
+topBtn.style.display = "block";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+behavior:"smooth"
+
+});
+
+});
+
+</script>
+
+
+</body>
+
+</html>
+

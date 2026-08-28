@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Central Delhi | DESH KHOJ A2Z
+</title>
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   CENTRAL DELHI
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#ff9933,
+#ffffff,
+#138808
+);
+padding:24px 15px;
+text-align:center;
+border-bottom:5px solid #138808;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:40px;
+}
+
+header h1{
+font-size:30px;
+margin:5px 0;
+}
+
+header p{
+font-size:15px;
+font-weight:bold;
+color:#34495e;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:20px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:18px;
+}
+
+.hero{
+background:white;
+border-left:6px solid #ff9933;
+border-radius:22px;
+padding:22px;
+margin-bottom:25px;
+box-shadow:0 5px 18px rgba(0,0,0,.09);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+font-size:16px;
+}
+
+.info{
+background:#eef7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:17px;
+margin:20px 0 28px;
+font-size:15px;
+}
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   PLACE CARD
+================================================== */
+
+.place-card{
+background:white;
+border-radius:24px;
+padding:22px;
+margin:25px 0;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+border-left:6px solid #ff9933;
+}
+
+.place-card:nth-of-type(2){
+border-left-color:#138808;
+}
+
+.place-card:nth-of-type(3){
+border-left-color:#1976d2;
+}
+
+.place-card:nth-of-type(4){
+border-left-color:#8b5cf6;
+}
+
+.place-header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:14px;
+}
+
+.place-icon{
+font-size:48px;
+}
+
+.place-header h3{
+font-size:25px;
+margin:0;
+}
+
+.place-header span{
+display:block;
+font-size:16px;
+color:#666;
+margin-top:2px;
+}
+
+.category{
+display:inline-block;
+background:#f1f5f9;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#555;
+margin-bottom:14px;
+}
+
+.short-history{
+background:#fff8e7;
+border-left:4px solid #f59e0b;
+padding:14px;
+border-radius:13px;
+margin:12px 0 18px;
+}
+
+.short-history h4{
+margin-bottom:5px;
+font-size:17px;
+}
+
+.short-history p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   BUTTON GRID
+================================================== */
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.action-btn{
+display:block;
+padding:12px 8px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:bold;
+transition:.2s;
+}
+
+.action-btn:active{
+transform:scale(.96);
+}
+
+.route{
+background:#1976d2;
+}
+
+.maps{
+background:#0f766e;
+}
+
+.hotel{
+background:#d97706;
+}
+
+.photo{
+background:#7c3aed;
+}
+
+.metro{
+background:#2563eb;
+}
+
+.bus{
+background:#15803d;
+}
+
+.cab{
+background:#ea580c;
+}
+
+.train{
+background:#6d28d9;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px;
+margin-top:18px;
+}
+
+.place-info-row{
+padding:8px 0;
+border-bottom:1px solid #e5e7eb;
+font-size:14px;
+}
+
+.place-info-row:last-child{
+border-bottom:0;
+}
+
+.place-info strong{
+display:inline-block;
+margin-right:5px;
+}
+
+
+/* ==================================================
+   ROUTE BOX
+================================================== */
+
+.route-box{
+background:#eaf4ff;
+border-left:5px solid #1976d2;
+border-radius:16px;
+padding:17px;
+margin:25px 0;
+}
+
+.route-box h3{
+font-size:20px;
+margin-bottom:7px;
+}
+
+.route-box p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:28px 15px;
+margin-top:35px;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:17px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:54px;
+height:54px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:26px;
+}
+
+.container{
+padding:18px 11px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.place-card{
+padding:18px 14px;
+}
+
+.place-header h3{
+font-size:21px;
+}
+
+.place-icon{
+font-size:40px;
+}
+
+.action-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.action-btn{
+font-size:11px;
+padding:11px 5px;
+}
+
+.place-info-row{
+font-size:13px;
+}
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.action-btn{
+font-size:10px;
+}
+
+.place-header h3{
+font-size:19px;
+}
+
+.place-header span{
+font-size:14px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Central Delhi
+</h1>
+
+<p>
+Central Delhi • Heritage • City Life • Monuments
+</p>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<a
+href="delhi.html"
+class="back"
+>
+← Delhi / दिल्ली
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="hero">
+
+<h2>
+🇮🇳 Central Delhi
+</h2>
+
+<p>
+
+Central Delhi में India Gate,
+Rashtrapati Bhavan, Connaught
+Place और Jantar Mantar जैसे
+प्रमुख places देखने को मिलते हैं।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     INFO
+================================================== -->
+
+<div class="info">
+
+📌 <strong>Central Delhi Route:</strong>
+
+India Gate → Rashtrapati Bhavan
+→ Connaught Place → Jantar Mantar
+
+<br><br>
+
+हर place के नीचे दिए गए buttons से
+Route, Google Maps, Hotels,
+Photos और Transport information
+देख सकते हैं।
+
+</div>
+
+
+<!-- ==================================================
+     GROUP ROUTE
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+📍 Central Delhi Heritage Route
+</h3>
+
+<p>
+
+<strong>
+India Gate → Rashtrapati Bhavan
+→ Connaught Place → Jantar Mantar
+</strong>
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Jantar+Mantar+Delhi&waypoints=India+Gate+Delhi%7CRashtrapati+Bhavan+Delhi%7CConnaught+Place+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+📍 पूरा Route देखें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     SECTION
+================================================== -->
+
+<h2 class="section-title">
+⭐ Places in Central Delhi
+</h2>
+
+
+<!-- ==================================================
+     INDIA GATE
+================================================== -->
+
+<div class="place-card">
+
+<div class="place-header">
+
+<div class="place-icon">
+🇮🇳
+</div>
+
+<div>
+
+<h3>
+India Gate
+</h3>
+
+<span>
+इंडिया गेट
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+National Monument • War Memorial
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+India Gate प्रथम विश्व युद्ध
+में शहीद हुए भारतीय सैनिकों
+की स्मृति में बनाया गया
+प्रमुख national memorial है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Kartavya Path, New Delhi
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚇 Metro:</strong>
+
+Central Secretariat Metro Station
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚌 Bus:</strong>
+
+India Gate Bus Stop
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚆 Railway:</strong>
+
+New Delhi Railway Station
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=India+Gate+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=India+Gate+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+India+Gate+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 1
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+India+Gate+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 2
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=India+Gate+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Central+Secretariat+Metro+Station+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Nearest Metro
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=India+Gate+Bus+Stop+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=India+Gate+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=New+Delhi+Railway+Station"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     RASHTRAPATI BHAVAN
+================================================== -->
+
+<div class="place-card">
+
+<div class="place-header">
+
+<div class="place-icon">
+🏛️
+</div>
+
+<div>
+
+<h3>
+Rashtrapati Bhavan
+</h3>
+
+<span>
+राष्ट्रपति भवन
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+National Heritage • Architecture
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Rashtrapati Bhavan भारत के
+राष्ट्रपति का official residence
+है और New Delhi की प्रसिद्ध
+heritage architecture का हिस्सा है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Rashtrapati Bhavan Estate, New Delhi
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚇 Metro:</strong>
+
+Central Secretariat Metro Station
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚌 Bus:</strong>
+
+Rashtrapati Bhavan Bus Stop
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚆 Railway:</strong>
+
+New Delhi Railway Station
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Rashtrapati+Bhavan+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Rashtrapati+Bhavan+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Rashtrapati+Bhavan+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 1
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Rashtrapati+Bhavan+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 2
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Rashtrapati+Bhavan+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Central+Secretariat+Metro+Station+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Nearest Metro
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Rashtrapati+Bhavan+Bus+Stop+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Rashtrapati+Bhavan+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=New+Delhi+Railway+Station"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     CONNAUGHT PLACE
+================================================== -->
+
+<div class="place-card">
+
+<div class="place-header">
+
+<div class="place-icon">
+🏙️
+</div>
+
+<div>
+
+<h3>
+Connaught Place
+</h3>
+
+<span>
+कनॉट प्लेस
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Shopping • Food • City Life
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Connaught Place New Delhi का
+प्रसिद्ध commercial और shopping
+area है। यहाँ shops, restaurants,
+cafes और historic architecture
+देखने को मिलते हैं।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Connaught Place, New Delhi
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚇 Metro:</strong>
+
+Rajiv Chowk Metro Station
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚌 Bus:</strong>
+
+Connaught Place Bus Stop
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚆 Railway:</strong>
+
+New Delhi Railway Station
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Connaught+Place+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Connaught+Place+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Connaught+Place+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 1
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Connaught+Place+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 2
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Connaught+Place+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Rajiv+Chowk+Metro+Station+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Nearest Metro
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Connaught+Place+Bus+Stop+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Connaught+Place+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=New+Delhi+Railway+Station"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     JANTAR MANTAR
+================================================== -->
+
+<div class="place-card">
+
+<div class="place-header">
+
+<div class="place-icon">
+🔭
+</div>
+
+<div>
+
+<h3>
+Jantar Mantar
+</h3>
+
+<span>
+जंतर मंतर
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Historic Observatory • Heritage
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Jantar Mantar एक historic
+astronomical observatory है।
+यह New Delhi के प्रमुख
+heritage attractions में शामिल है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Sansad Marg, New Delhi
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚇 Metro:</strong>
+
+Patel Chowk Metro Station
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚌 Bus:</strong>
+
+Jantar Mantar Bus Stop
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚆 Railway:</strong>
+
+New Delhi Railway Station
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Jantar+Mantar+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Jantar+Mantar+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Jantar+Mantar+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 1
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Jantar+Mantar+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 2
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Jantar+Mantar+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Patel+Chowk+Metro+Station+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Nearest Metro
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Jantar+Mantar+Bus+Stop+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Jantar+Mantar+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=New+Delhi+Railway+Station"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK ROUTE
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+🗺️ Central Delhi Quick Route
+</h3>
+
+<p>
+
+🇮🇳 India Gate → 🏛️ Rashtrapati Bhavan
+→ 🏙️ Connaught Place → 🔭 Jantar Mantar
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Jantar+Mantar+Delhi&waypoints=India+Gate+Delhi%7CRashtrapati+Bhavan+Delhi%7CConnaught+Place+Delhi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+📍 Route खोलें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     NOTE
+================================================== -->
+
+<div class="info">
+
+💡 <strong>Travel Tip:</strong>
+
+Central Delhi घूमने के लिए
+Metro और walking को route के
+अनुसार combine करना सुविधाजनक
+रह सकता है।
+
+<br><br>
+
+📌 Opening timings, entry rules,
+transport routes और fares यात्रा
+से पहले verify करें।
+
+</div>
+
+
+<!-- ==================================================
+     BACK TO DELHI
+================================================== -->
+
+<a
+href="delhi.html"
+class="back"
+>
+← Back to Delhi
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Central Delhi
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="Back to Top"
+>
+↑
+</button>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY > 300){
+
+topBtn.style.display = "block";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+behavior:"smooth"
+
+});
+
+});
+
+</script>
+
+
+</body>
+
+</html>
