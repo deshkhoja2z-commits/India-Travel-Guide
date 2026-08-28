@@ -1,0 +1,2428 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Grand Island Adventure | DESH KHOJ A2Z
+</title>
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   GRAND ISLAND ADVENTURE
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:75px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#ff9933,
+#ffffff,
+#138808
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #138808;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:40px;
+}
+
+header h1{
+font-size:30px;
+margin:5px 0;
+}
+
+header p{
+font-size:14px;
+font-weight:bold;
+color:#34495e;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:18px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   STICKY HORIZONTAL MENU
+================================================== */
+
+.sticky-menu{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:6px 0;
+margin:0 -2px 15px;
+border-bottom:1px solid #ddd;
+}
+
+.horizontal-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:2px 3px 5px;
+scrollbar-width:none;
+-webkit-overflow-scrolling:touch;
+}
+
+.horizontal-menu::-webkit-scrollbar{
+display:none;
+}
+
+.menu-card{
+flex:0 0 auto;
+min-width:82px;
+background:white;
+color:#202124;
+text-decoration:none;
+border:1px solid #e1e5e8;
+border-radius:10px;
+padding:5px 7px;
+text-align:center;
+font-size:10px;
+font-weight:bold;
+box-shadow:0 2px 7px rgba(0,0,0,.10);
+line-height:1.2;
+}
+
+.menu-card span{
+display:block;
+font-size:18px;
+line-height:19px;
+margin-bottom:2px;
+}
+
+.menu-card small{
+display:block;
+font-size:8px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+.menu-card:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+background:white;
+border-left:6px solid #dc2458;
+border-radius:22px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.09);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+font-size:16px;
+}
+
+
+/* ==================================================
+   SUGGESTED PLANNING
+================================================== */
+
+.suggested{
+background:#f1f8fc;
+border-radius:20px;
+padding:18px;
+margin-top:20px;
+}
+
+.suggested h3{
+font-size:20px;
+color:#2878b9;
+margin-bottom:8px;
+}
+
+.suggested p{
+font-size:15px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+background:#eef8ff;
+border-left:5px solid #1976d2;
+border-radius:16px;
+padding:15px;
+margin:18px 0 25px;
+font-size:13px;
+}
+
+.distance-note strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   ACTIVITY GRID
+================================================== */
+
+.activity-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin:20px 0;
+}
+
+.activity-card{
+background:#f8fafc;
+border:1px solid #e1e5e8;
+border-radius:18px;
+padding:20px 10px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.activity-icon{
+display:block;
+font-size:35px;
+margin-bottom:6px;
+}
+
+.activity-card strong{
+font-size:17px;
+}
+
+.activity-card span{
+font-size:13px;
+color:#777;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   INFO
+================================================== */
+
+.info{
+background:#eef7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:17px;
+margin:20px 0 25px;
+font-size:14px;
+}
+
+.info h3{
+font-size:20px;
+margin-bottom:7px;
+}
+
+
+/* ==================================================
+   ROUTE SUMMARY
+================================================== */
+
+.route-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:20px 0 28px;
+}
+
+.route-box h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.route-box p{
+font-size:14px;
+color:#555;
+}
+
+.route-line{
+font-weight:bold;
+font-size:15px;
+line-height:2;
+margin:10px 0;
+}
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:5px 0;
+}
+
+
+/* ==================================================
+   PLACE / DETAIL CARD
+================================================== */
+
+.place-card{
+background:white;
+border-radius:24px;
+padding:22px;
+margin:25px 0;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+border-left:6px solid #dc2458;
+scroll-margin-top:75px;
+}
+
+.place-header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:14px;
+}
+
+.place-icon{
+font-size:48px;
+}
+
+.place-header h3{
+font-size:25px;
+margin:0;
+}
+
+.place-header span{
+display:block;
+font-size:16px;
+color:#666;
+margin-top:2px;
+}
+
+.category{
+display:inline-block;
+background:#f1f5f9;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#555;
+margin-bottom:14px;
+}
+
+
+/* ==================================================
+   DISTANCE BADGE
+================================================== */
+
+.place-distance{
+background:#eaf8ef;
+border-left:4px solid #138808;
+border-radius:12px;
+padding:10px 12px;
+margin:10px 0 15px;
+font-size:13px;
+font-weight:bold;
+color:#176b38;
+}
+
+.place-distance span{
+color:#555;
+font-weight:normal;
+}
+
+
+/* ==================================================
+   SHORT HISTORY
+================================================== */
+
+.short-history{
+background:#fff8e7;
+border-left:4px solid #f59e0b;
+padding:14px;
+border-radius:13px;
+margin:12px 0 18px;
+}
+
+.short-history h4{
+margin-bottom:5px;
+font-size:17px;
+}
+
+.short-history p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   BUTTON GRID
+================================================== */
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.action-btn{
+display:block;
+padding:12px 8px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:bold;
+transition:.2s;
+}
+
+.action-btn:active{
+transform:scale(.96);
+}
+
+.route{
+background:#1976d2;
+}
+
+.maps{
+background:#0f766e;
+}
+
+.hotel{
+background:#d97706;
+}
+
+.luxury{
+background:#7c3aed;
+}
+
+.restaurant{
+background:#dc2626;
+}
+
+.photo{
+background:#2563eb;
+}
+
+.metro{
+background:#2563eb;
+}
+
+.bus{
+background:#15803d;
+}
+
+.cab{
+background:#ea580c;
+}
+
+.train{
+background:#6d28d9;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px;
+margin-top:18px;
+}
+
+.place-info-row{
+padding:8px 0;
+border-bottom:1px solid #e5e7eb;
+font-size:14px;
+}
+
+.place-info-row:last-child{
+border-bottom:0;
+}
+
+.place-info strong{
+display:inline-block;
+margin-right:5px;
+}
+
+
+/* ==================================================
+   QUICK LINKS
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:17px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #dc2458;
+}
+
+.quick:nth-child(2){
+border-top-color:#138808;
+}
+
+.quick:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.quick:nth-child(4){
+border-top-color:#1976d2;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:28px 15px;
+margin-top:35px;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:17px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:54px;
+height:54px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:26px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:17px 11px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.menu-card{
+min-width:78px;
+padding:5px 5px;
+font-size:9px;
+}
+
+.menu-card span{
+font-size:17px;
+}
+
+.menu-card small{
+font-size:7px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-line{
+font-size:13px;
+}
+
+.place-card{
+padding:18px 14px;
+}
+
+.place-header h3{
+font-size:21px;
+}
+
+.place-icon{
+font-size:40px;
+}
+
+.place-header span{
+font-size:14px;
+}
+
+.place-distance{
+font-size:11px;
+}
+
+.action-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.action-btn{
+font-size:11px;
+padding:11px 5px;
+}
+
+.place-info-row{
+font-size:13px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.quick{
+padding:14px 7px;
+font-size:13px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+.activity-card{
+padding:16px 7px;
+}
+
+.activity-card strong{
+font-size:15px;
+}
+
+.activity-card span{
+font-size:11px;
+}
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.menu-card{
+min-width:72px;
+}
+
+.action-btn{
+font-size:10px;
+}
+
+.place-header h3{
+font-size:19px;
+}
+
+.place-header span{
+font-size:13px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Grand Island Adventure
+</h1>
+
+<p>
+Scuba Diving • Snorkeling • Boat Trip • Marine Adventure
+</p>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<a
+href="goa.html"
+class="back"
+>
+← Goa / गोवा
+</a>
+
+
+<!-- ==================================================
+     STICKY HORIZONTAL MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#adventure"
+class="menu-card"
+>
+<span>🤿</span>
+Adventure
+<small>Grand Island</small>
+</a>
+
+
+<a
+href="#diving"
+class="menu-card"
+>
+<span>🤿</span>
+Scuba
+<small>Diving</small>
+</a>
+
+
+<a
+href="#snorkeling"
+class="menu-card"
+>
+<span>🌊</span>
+Snorkeling
+<small>Marine</small>
+</a>
+
+
+<a
+href="#boattrip"
+class="menu-card"
+>
+<span>🛶</span>
+Boat Trip
+<small>Tour</small>
+</a>
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Map</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+<a
+href="#stay"
+class="menu-card"
+>
+<span>🏨</span>
+Stay & Food
+<small>Hotels</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div
+class="hero"
+id="adventure"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🤿
+</div>
+
+<div>
+
+<h2>
+Grand Island Adventure
+</h2>
+
+<span>
+Scuba Diving • Snorkeling • Boat Trip
+</span>
+
+</div>
+
+</div>
+
+
+<p>
+
+Grand Island Goa के marine
+adventure activities के लिए
+popular destination है। यहाँ
+scuba diving, snorkeling और
+boat-based activities जैसे
+experiences tour operators के
+अनुसार available हो सकते हैं।
+
+</p>
+
+
+<!-- ==================================================
+     SUGGESTED PLANNING
+================================================== -->
+
+<div class="suggested">
+
+<h3>
+📍 Suggested Planning
+</h3>
+
+<p>
+
+🏙️ Panaji
+
+→
+
+🛶 Boat Point
+
+→
+
+🤿 Grand Island
+
+</p>
+
+</div>
+
+
+<div class="route-distance">
+
+📍 लगभग 35 km area • route/operator के अनुसार
+
+</div>
+
+
+<!-- ==================================================
+     ACTIVITY GRID
+================================================== -->
+
+<div class="activity-grid">
+
+<div
+class="activity-card"
+id="diving"
+>
+
+<span class="activity-icon">
+🤿
+</span>
+
+<strong>
+Scuba Diving
+</strong>
+
+<span>
+Adventure
+</span>
+
+</div>
+
+
+<div
+class="activity-card"
+id="snorkeling"
+>
+
+<span class="activity-icon">
+🌊
+</span>
+
+<strong>
+Snorkeling
+</strong>
+
+<span>
+Marine
+</span>
+
+</div>
+
+
+<div
+class="activity-card"
+id="boattrip"
+>
+
+<span class="activity-icon">
+🛶
+</span>
+
+<strong>
+Boat Trip
+</strong>
+
+<span>
+Tour
+</span>
+
+</div>
+
+
+<div
+class="activity-card"
+>
+
+<span class="activity-icon">
+🐬
+</span>
+
+<strong>
+Dolphin
+</strong>
+
+<span>
+Watching
+</span>
+
+</div>
+
+</div>
+
+
+<a
+href="#details"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🤿 Grand Island Details देखें →
+</a>
+
+</div>
+
+  <!-- ==================================================
+     GRAND ISLAND DETAILS
+================================================== -->
+
+<div
+class="place-card"
+id="details"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🤿
+</div>
+
+<div>
+
+<h3>
+Grand Island Goa
+</h3>
+
+<span>
+ग्रैंड आइलैंड एडवेंचर
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Marine Adventure • Scuba • Snorkeling • Boat Tour
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 35 km area</strong>
+
+<br>
+
+<span>
+➡️ Exact distance selected boat point और operator के अनुसार बदल सकती है
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌊 About Grand Island Adventure
+</h4>
+
+<p>
+
+Grand Island Goa के आसपास marine
+adventure activities के लिए जाना
+जाता है। यहाँ boat trips के साथ
+scuba diving, snorkeling और
+कुछ operators के अनुसार dolphin
+watching जैसे experiences मिल
+सकते हैं।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Grand Island / Goa Coast
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🤿 Main Activity:</strong>
+
+Scuba Diving
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌊 Other Activity:</strong>
+
+Snorkeling
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🛶 Access:</strong>
+
+Boat Tour / Boat Point
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🐬 Optional:</strong>
+
+Dolphin Watching
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Grand+Island+Goa+Boat+Point"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🛶 Boat Point
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Grand+Island+Goa+Boat+Trip"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚤 Boat Operators
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Madgaon+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE
+================================================== -->
+
+<div
+class="route-box"
+id="route"
+>
+
+<h3>
+🗺️ Complete Grand Island Adventure Route
+</h3>
+
+<p>
+
+Grand Island adventure के लिए
+एक practical planning sequence:
+
+</p>
+
+<div class="route-line">
+
+🏙️ Panaji
+
+↓
+
+🛶 Boat Point
+
+↓
+
+🌊 Boat Ride
+
+↓
+
+🤿 Grand Island
+
+↓
+
+🐬 Marine Activities
+
+↓
+
+🏙️ Return to Goa
+
+</div>
+
+
+<div class="route-distance">
+
+📍 Panaji से boat point लगभग 30–35 km area
+
+</div>
+
+
+<p>
+
+👉 Actual boat point, departure time,
+sea conditions और route selected
+tour operator के अनुसार बदल सकते हैं।
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+📍 Grand Island Route देखें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL PLANNING
+================================================== -->
+
+<h2
+class="section-title"
+id="travel"
+>
+🚗 Grand Island Travel Planning
+</h2>
+
+
+<div class="info">
+
+<h3>
+⏰ Suggested Day Plan
+</h3>
+
+<p>
+
+🌅 <strong>Morning:</strong>
+
+Panaji से boat point की तरफ
+departure
+
+<br><br>
+
+🛶 <strong>Boat Ride:</strong>
+
+Boat point → Grand Island
+
+<br><br>
+
+🤿 <strong>Adventure:</strong>
+
+Scuba Diving / Snorkeling
+
+<br><br>
+
+🐬 <strong>Optional:</strong>
+
+Dolphin Watching
+
+<br><br>
+
+🍽️ <strong>Lunch:</strong>
+
+Boat point / nearby coastal area
+
+<br><br>
+
+🏙️ <strong>Evening:</strong>
+
+Goa वापस लौटें
+
+<br><br>
+
+⚠️ यह केवल suggested planning है।
+Sea conditions, weather, operator
+schedule और activity timing के
+अनुसार plan बदल सकता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     ACTIVITY DETAILS
+================================================== -->
+
+<h2 class="section-title">
+⭐ Grand Island Activities
+</h2>
+
+
+<div
+class="place-card"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🤿
+</div>
+
+<div>
+
+<h3>
+Scuba Diving
+</h3>
+
+<span>
+स्कूबा डाइविंग
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Adventure • Underwater • Marine Experience
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🤿 About Scuba Diving
+</h4>
+
+<p>
+
+Scuba diving Grand Island
+adventure का प्रमुख attraction
+हो सकता है। Beginners के लिए
+activity केवल authorised और
+trained operators के safety
+instructions के अनुसार करें।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>🤿 Activity:</strong>
+
+Scuba Diving
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌊 Experience:</strong>
+
+Underwater Marine Life
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🛟 Safety:</strong>
+
+Operator Instructions Follow करें
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📅 Availability:</strong>
+
+Weather / Sea Conditions पर निर्भर
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=Grand+Island+Goa+scuba+diving"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+🤿 Scuba Options
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Grand+Island+Goa+Scuba+Diving"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Scuba Location
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Grand+Island+Goa+scuba+diving"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     SNORKELING
+================================================== -->
+
+<div class="place-card">
+
+<div class="place-header">
+
+<div class="place-icon">
+🌊
+</div>
+
+<div>
+
+<h3>
+Snorkeling
+</h3>
+
+<span>
+स्नॉर्कलिंग
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Marine • Water Activity • Adventure
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌊 About Snorkeling
+</h4>
+
+<p>
+
+Snorkeling समुद्र की surface के
+पास marine environment देखने का
+एक popular water activity experience
+है। Availability sea conditions और
+tour operator पर निर्भर करती है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>🌊 Activity:</strong>
+
+Snorkeling
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🐠 Experience:</strong>
+
+Marine Life Viewing
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🛟 Safety:</strong>
+
+Life Jacket और Operator Instructions
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📅 Availability:</strong>
+
+Weather / Sea Conditions पर निर्भर
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=Grand+Island+Goa+snorkeling"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+🌊 Snorkeling Options
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Grand+Island+Goa+Snorkeling"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Location
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Grand+Island+Goa+snorkeling"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     BOAT TRIP
+================================================== -->
+
+<div class="place-card">
+
+<div class="place-header">
+
+<div class="place-icon">
+🛶
+</div>
+
+<div>
+
+<h3>
+Grand Island Boat Trip
+</h3>
+
+<span>
+ग्रैंड आइलैंड बोट ट्रिप
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Boat Tour • Marine Adventure • Coastal Trip
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🛶 About Boat Trip
+</h4>
+
+<p>
+
+Grand Island जाने के लिए boat
+transfer एक महत्वपूर्ण हिस्सा है।
+Departure point और boat timing
+selected tour operator के अनुसार
+अलग हो सकते हैं।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>🛶 Activity:</strong>
+
+Boat Trip
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📍 Start:</strong>
+
+Selected Boat Point
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌊 Route:</strong>
+
+Boat Point → Grand Island
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📅 Timing:</strong>
+
+Operator Schedule के अनुसार
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=Grand+Island+Goa+boat+trip"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+🛶 Boat Trip Options
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Grand+Island+Goa+Boat+Point"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Boat Point
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Grand+Island+Goa+boat+point"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Grand+Island+Goa+boat+trip"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     DOLPHIN WATCHING
+================================================== -->
+
+<div class="place-card">
+
+<div class="place-header">
+
+<div class="place-icon">
+🐬
+</div>
+
+<div>
+
+<h3>
+Dolphin Watching
+</h3>
+
+<span>
+डॉल्फिन वॉचिंग
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Marine • Boat Experience • Wildlife Viewing
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🐬 About Dolphin Watching
+</h4>
+
+<p>
+
+कुछ Grand Island और coastal boat
+tours में dolphin watching जैसी
+activities available हो सकती हैं।
+यह wildlife activity है इसलिए
+dolphins दिखना guaranteed नहीं
+होता।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>🐬 Activity:</strong>
+
+Dolphin Watching
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🛶 Access:</strong>
+
+Boat Tour
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌊 Experience:</strong>
+
+Marine Wildlife Viewing
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⚠️ Note:</strong>
+
+Sightings Guaranteed नहीं हैं
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=Grand+Island+Goa+dolphin+watching"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+🐬 Dolphin Tour
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Grand+Island+Goa+Boat+Point"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Boat Point
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Grand+Island+Goa+dolphin"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     STAY & FOOD
+================================================== -->
+
+<h2
+class="section-title"
+id="stay"
+>
+🏨 Grand Island Stay & Food
+</h2>
+
+
+<div class="info">
+
+<h3>
+🍽️ Stay और Food Planning
+</h3>
+
+<p>
+
+Grand Island खुद एक island
+adventure destination है, इसलिए
+stay के लिए Goa mainland के
+nearby coastal areas को base
+बनाना practical हो सकता है।
+
+<br><br>
+
+🏨 <strong>Budget Stay:</strong>
+
+Boat point / nearby beach area
+में budget hotels देख सकते हैं।
+
+<br><br>
+
+⭐ <strong>Luxury Stay:</strong>
+
+North Goa या South Goa के
+premium resorts और hotels
+location के अनुसार choose करें।
+
+<br><br>
+
+🍽️ <strong>Food:</strong>
+
+Boat departure point के आसपास
+restaurants और cafes check करें।
+
+</p>
+
+</div>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🏨
+</span>
+
+Budget Hotels
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+⭐
+</span>
+
+Luxury Hotels
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🍽️
+</span>
+
+Restaurants
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Grand+Island+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🗺️
+</span>
+
+Maps
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 Grand Island Adventure Tips
+</h3>
+
+<p>
+
+🤿 Scuba diving और snorkeling
+केवल authorised / trained
+operators के साथ करें।
+
+<br><br>
+
+🛟 Life jacket और safety
+instructions को हमेशा follow करें।
+
+<br><br>
+
+🌊 Sea conditions खराब होने पर
+boat trip या activities cancel
+हो सकती हैं।
+
+<br><br>
+
+☀️ Sunscreen, sunglasses,
+waterproof phone pouch और
+जरूरी personal सामान साथ रखें।
+
+<br><br>
+
+📱 Boat operator से reporting
+point और departure time पहले
+confirm करें।
+
+<br><br>
+
+🐬 Dolphin watching में sightings
+guaranteed नहीं होती हैं।
+
+<br><br>
+
+🕒 Weather और sea conditions
+यात्रा से पहले check करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE SUMMARY
+================================================== -->
+
+<div class="distance-note">
+
+📍 <strong>Grand Island Route Distance Summary</strong>
+
+<br><br>
+
+🏙️ <strong>Panaji → Boat Point:</strong>
+
+लगभग <strong>30–35 km</strong>
+
+<br><br>
+
+🛶 <strong>Boat Point → Grand Island:</strong>
+
+Boat route / sea distance
+operator के अनुसार बदल सकती है।
+
+<br><br>
+
+🏙️ <strong>Panaji → Grand Island Area:</strong>
+
+लगभग <strong>35 km area</strong>
+
+<br><br>
+
+🏖️ <strong>North Goa → Grand Island:</strong>
+
+लगभग <strong>35–50 km area</strong>
+
+<br><br>
+
+🌴 <strong>South Goa → Grand Island:</strong>
+
+लगभग <strong>30–50 km area</strong>
+
+<br><br>
+
+⚠️ <strong>Important:</strong>
+
+ये road/area based approximate
+planning distances हैं। Exact
+boat point, departure location,
+selected road, traffic, sea route
+और tour operator के अनुसार
+distance बदल सकती है।
+
+</div>
+
+
+<!-- ==================================================
+     COMPLETE ADVENTURE ROUTE
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+🧭 Complete Grand Island Adventure Plan
+</h3>
+
+<p>
+
+अगर आप Goa trip में Grand Island
+Adventure को include करना चाहते हैं
+तो इसे एक अलग half-day / full-day
+activity के रूप में रखना practical
+रहेगा।
+
+</p>
+
+<div class="route-line">
+
+🏙️ Goa Base
+
+↓
+
+🛶 Boat Point
+
+↓
+
+🌊 Boat Ride
+
+↓
+
+🤿 Scuba / Snorkeling
+
+↓
+
+🐬 Dolphin Watching
+
+↓
+
+🛶 Return Boat
+
+↓
+
+🏙️ Goa
+
+</div>
+
+<div class="route-distance">
+
+📍 Activity duration operator और package के अनुसार बदल सकती है
+
+</div>
+
+<p>
+
+👉 Booking से पहले reporting point,
+boat timing, inclusions, safety
+equipment और cancellation rules
+check करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     BACK TO GOA
+================================================== -->
+
+<a
+href="goa.html"
+class="back"
+>
+← Back to Goa / गोवा
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Grand Island Adventure
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="Back to Top"
+>
+↑
+</button>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY > 300){
+
+topBtn.style.display =
+"block";
+
+}else{
+
+topBtn.style.display =
+"none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+</script>
+
+
+</body>
+
+</html>
