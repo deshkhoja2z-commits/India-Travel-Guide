@@ -1,0 +1,2742 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Gir | गिर Travel Guide | DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   SMALL STICKY PLACE MENU
+================================================== */
+
+.place-nav-wrapper{
+    position:sticky;
+    top:0;
+    z-index:9999;
+    width:100%;
+    background:#ffffff;
+    margin:0 0 18px 0;
+    padding:5px 0;
+    border-bottom:1px solid #eeeeee;
+    box-shadow:0 3px 12px rgba(0,0,0,0.08);
+}
+
+.place-nav{
+    display:flex;
+    gap:7px;
+    width:100%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    padding:3px 4px 7px 4px;
+    scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+}
+
+.place-nav::-webkit-scrollbar{
+    height:4px;
+}
+
+.place-nav::-webkit-scrollbar-thumb{
+    background:#bdbdbd;
+    border-radius:20px;
+}
+
+.place-nav::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+.place-tab{
+    flex:0 0 auto;
+    min-width:108px;
+    height:46px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+    padding:3px 8px;
+    background:#ffffff;
+    border:1px solid #e5e5e5;
+    border-radius:11px;
+    box-shadow:0 2px 7px rgba(0,0,0,0.07);
+    text-decoration:none;
+    color:#222;
+    font-size:12px;
+    font-weight:700;
+    white-space:nowrap;
+    transition:0.2s;
+}
+
+.place-tab .tab-icon{
+    font-size:18px;
+    line-height:1;
+}
+
+.place-tab small{
+    display:block;
+    margin-top:1px;
+    font-size:9px;
+    color:#777;
+    font-weight:600;
+}
+
+.place-tab:active{
+    transform:scale(0.96);
+}
+
+@media(max-width:600px){
+
+    .place-nav-wrapper{
+        top:0;
+        margin:0 0 15px 0;
+        padding:4px 0;
+    }
+
+    .place-nav{
+        gap:6px;
+        padding:2px 3px 6px 3px;
+    }
+
+    .place-tab{
+        min-width:108px;
+        height:43px;
+        padding:3px 8px;
+        border-radius:10px;
+        font-size:11px;
+    }
+
+    .place-tab .tab-icon{
+        font-size:16px;
+    }
+
+    .place-tab small{
+        font-size:8.5px;
+    }
+}
+
+.place-detail{
+    scroll-margin-top:75px;
+}
+
+.distance-note{
+    background:#eef7ff;
+    border:1px solid #2196f3;
+    border-left:6px solid #1976d2;
+    border-radius:14px;
+    padding:15px 16px;
+    margin:15px 0 22px 0;
+    color:#222;
+    font-size:15px;
+    line-height:1.6;
+    box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.distance-note strong{
+    color:#0d47a1;
+}
+
+.place-distance{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    margin-top:9px;
+    padding:6px 11px;
+    background:#f1f7ff;
+    border-radius:20px;
+    color:#1769aa;
+    font-size:13px;
+    font-weight:700;
+}
+
+.place-distance.start{
+    background:#eef9ee;
+    color:#188038;
+}
+
+.bottom-navigation{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin:25px 0;
+}
+
+.bottom-nav-btn{
+    display:inline-block;
+    padding:10px 16px;
+    background:#ffffff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-decoration:none;
+    color:#1769aa;
+    font-weight:700;
+}
+
+.fixed-place-menu{
+    display:none !important;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div id="top"></div>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Gir / गिर
+</h1>
+
+<p>
+Lion Safari • Wildlife • Forest • Nature • Gujarat
+</p>
+
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Gir में place खोजें..."
+autocomplete="off"
+>
+
+<div class="search-icon">
+🔍
+</div>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container" id="place-menu">
+
+
+<a
+href="../index.html"
+class="back"
+>
+← DESH KHOJ A2Z
+</a>
+
+
+<!-- ==================================================
+     TITLE BOX
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🦁 Gir Travel Guide
+</h2>
+
+<p>
+
+Gir Gujarat का प्रसिद्ध wildlife destination
+है और Asiatic Lion के लिए पूरी दुनिया में
+पहचाना जाता है। Gir National Park, Sasan Gir,
+Devalia Safari Park, Kamleshwar Dam और
+Kankai Mata Temple जैसे स्थान यहाँ की यात्रा
+को खास बनाते हैं।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     STICKY PLACE MENU
+================================================== -->
+
+<div
+id="placeMenu"
+class="place-nav-wrapper"
+>
+
+<div class="place-nav">
+
+
+<a
+href="#girpark"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🦁
+</span>
+
+<span>
+Gir Park
+<small>गिर पार्क</small>
+</span>
+
+</a>
+
+
+<a
+href="#sasan"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🌳
+</span>
+
+<span>
+Sasan Gir
+<small>सासन गिर</small>
+</span>
+
+</a>
+
+
+<a
+href="#devalia"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🦁
+</span>
+
+<span>
+Devalia
+<small>देवलिया</small>
+</span>
+
+</a>
+
+
+<a
+href="#kamleshwar"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🌊
+</span>
+
+<span>
+Kamleshwar
+<small>कमलेश्वर</small>
+</span>
+
+</a>
+
+
+<a
+href="#kankai"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🛕
+</span>
+
+<span>
+Kankai
+<small>कंकाई माता</small>
+</span>
+
+</a>
+
+
+<a
+href="#tulsishyam"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🙏
+</span>
+
+<span>
+Tulsi Shyam
+<small>तुलसी श्याम</small>
+</span>
+
+</a>
+
+
+<a
+href="#transport"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🚗
+</span>
+
+<span>
+Transport
+<small>परिवहन</small>
+</span>
+
+</a>
+
+
+<a
+href="#stayfood"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🏨
+</span>
+
+<span>
+Stay & Food
+<small>रहें और खाएँ</small>
+</span>
+
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE NOTE
+================================================== -->
+
+<div class="distance-note">
+
+📍 <strong>Distance Note:</strong>
+
+<br>
+
+यहाँ दी गई सभी approximate दूरियाँ
+<strong>Sasan Gir</strong> को starting point
+मानकर दी गई हैं।
+
+<br>
+
+सभी दूरी लगभग road distance के अनुसार
+है और actual route के अनुसार थोड़ी
+कम-ज्यादा हो सकती है।
+
+</div>
+
+
+<!-- ==================================================
+     QUICK HIGHLIGHTS
+================================================== -->
+
+<div class="city-intro">
+
+<p>
+
+📍 <strong>पहली बार Gir जा रहे हैं?</strong>
+
+<br><br>
+
+नीचे दिए गए places को देखकर अपनी
+Gir wildlife यात्रा आसानी से plan करें।
+
+<br><br>
+
+🦁 <strong>Gir National Park</strong>
+→ 🌳 <strong>Sasan Gir</strong>
+→ 🦁 <strong>Devalia Safari Park</strong>
+→ 🌊 <strong>Kamleshwar Dam</strong>
+→ 🛕 <strong>Kankai Mata Temple</strong>
+→ 🙏 <strong>Tulsi Shyam</strong>
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     SEARCH NOTE
+================================================== -->
+
+<div class="search-note">
+
+🔎 <strong>Place Search:</strong>
+
+ऊपर search box में किसी भी place का
+नाम लिखकर तुरंत खोजें।
+
+</div>
+
+
+<!-- ==================================================
+     CITY SERVICES
+================================================== -->
+
+<div class="city-services">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gir+National+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="service-btn"
+>
+
+<span class="service-icon">
+🗺️
+</span>
+
+Gir Maps
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+in+Sasan+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="service-btn"
+>
+
+<span class="service-icon">
+🏨
+</span>
+
+Hotels
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+in+Sasan+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="service-btn"
+>
+
+<span class="service-icon">
+🍽️
+</span>
+
+Restaurants
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gir+National+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="service-btn"
+>
+
+<span class="service-icon">
+📸
+</span>
+
+Gir Photos
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     BEST PLACES
+================================================== -->
+
+<h2 class="section-title">
+⭐ Best Places to Visit in Gir
+</h2>
+
+
+<div class="click-info">
+
+📌 <strong>किसी भी place पर सीधे जाएँ</strong>
+
+<br>
+
+ऊपर की छोटी Place Menu पट्टी हमेशा
+screen के ऊपर दिखाई देती रहेगी।
+
+<br>
+
+किसी भी समय place के नाम पर click
+करके उसकी पूरी details पर जाएँ।
+
+</div>
+
+
+<!-- ==================================================
+     PLACE GRID
+================================================== -->
+
+<div class="place-grid">
+
+
+<!-- 1 -->
+
+<a
+href="#girpark"
+class="place-card"
+data-search="Gir National Park Gir Wildlife Sanctuary गिर नेशनल पार्क wildlife sanctuary lion safari asiatic lion"
+>
+
+<div class="place-icon">
+🦁
+</div>
+
+<h3>
+1. Gir National Park
+</h3>
+
+<p>
+गिर नेशनल पार्क
+<br>
+Wildlife • Lion • Safari
+</p>
+
+<span class="place-distance start">
+📍 0 km • MAIN AREA
+</span>
+
+<br>
+
+<span class="route-mini">
+📍 Details देखें
+</span>
+
+</a>
+
+
+<!-- 2 -->
+
+<a
+href="#sasan"
+class="place-card"
+data-search="Sasan Gir Sasan village Sasan Gir सासन गिर safari forest wildlife"
+>
+
+<div class="place-icon">
+🌳
+</div>
+
+<h3>
+2. Sasan Gir
+</h3>
+
+<p>
+सासन गिर
+<br>
+Safari • Forest • Stay
+</p>
+
+<span class="place-distance start">
+📍 लगभग 0 km
+</span>
+
+<br>
+
+<span class="route-mini">
+📍 Details देखें
+</span>
+
+</a>
+
+
+<!-- 3 -->
+
+<a
+href="#devalia"
+class="place-card"
+data-search="Devalia Safari Park Devaliya Gir Interpretation Zone देवलिया सफारी पार्क lion safari"
+>
+
+<div class="place-icon">
+🦁
+</div>
+
+<h3>
+3. Devalia Safari Park
+</h3>
+
+<p>
+देवलिया सफारी पार्क
+<br>
+Lion • Wildlife • Safari
+</p>
+
+<span class="place-distance">
+📍 लगभग 12 km
+</span>
+
+<br>
+
+<span class="route-mini">
+📍 Details देखें
+</span>
+
+</a>
+
+
+<!-- 4 -->
+
+<a
+href="#kamleshwar"
+class="place-card"
+data-search="Kamleshwar Dam Kamleshwar lake कमलेश्वर डैम lake crocodile Gir wildlife"
+>
+
+<div class="place-icon">
+🌊
+</div>
+
+<h3>
+4. Kamleshwar Dam
+</h3>
+
+<p>
+कमलेश्वर डैम
+<br>
+Lake • Nature • Wildlife
+</p>
+
+<span class="place-distance">
+📍 लगभग 20 km
+</span>
+
+<br>
+
+<span class="route-mini">
+📍 Details देखें
+</span>
+
+</a>
+
+
+<!-- 5 -->
+
+<a
+href="#kankai"
+class="place-card"
+data-search="Kankai Mata Temple Kankai temple कंकाई माता मंदिर Gir forest temple"
+>
+
+<div class="place-icon">
+🛕
+</div>
+
+<h3>
+5. Kankai Mata Temple
+</h3>
+
+<p>
+कंकाई माता मंदिर
+<br>
+Temple • Forest • Spiritual
+</p>
+
+<span class="place-distance">
+📍 लगभग 25 km
+</span>
+
+<br>
+
+<span class="route-mini">
+📍 Details देखें
+</span>
+
+</a>
+
+
+<!-- 6 -->
+
+<a
+href="#tulsishyam"
+class="place-card"
+data-search="Tulsi Shyam Tulsi Shyam Temple तुलसी श्याम मंदिर hot spring Gir forest"
+>
+
+<div class="place-icon">
+🙏
+</div>
+
+<h3>
+6. Tulsi Shyam
+</h3>
+
+<p>
+तुलसी श्याम
+<br>
+Temple • Hot Spring • Nature
+</p>
+
+<span class="place-distance">
+📍 लगभग 35 km
+</span>
+
+<br>
+
+<span class="route-mini">
+📍 Details देखें
+</span>
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     NO RESULT
+================================================== -->
+
+<div
+id="noResult"
+class="no-result"
+>
+
+😔
+
+<br><br>
+
+इस नाम का कोई place नहीं मिला।
+
+<br><br>
+
+कृपया दूसरा place name search करें।
+
+</div>
+
+
+<!-- ==================================================
+     MAIN ROUTE
+================================================== -->
+
+<h2 class="section-title">
+🗺️ Gir Main Tourist Route
+</h2>
+
+
+<div class="group-box">
+
+<div class="group-header">
+
+<div class="group-icon">
+🦁
+</div>
+
+<div>
+
+<h3>
+Gir Wildlife Complete Route
+</h3>
+
+<p>
+पहले से आखिरी तक recommended sightseeing order
+</p>
+
+</div>
+
+</div>
+
+
+<div class="group-places">
+
+
+<a
+href="#girpark"
+class="group-place"
+>
+🦁 1. Gir National Park
+<span>Wildlife • Lion Safari</span>
+</a>
+
+
+<a
+href="#sasan"
+class="group-place"
+>
+🌳 2. Sasan Gir
+<span>Main Tourist Base</span>
+</a>
+
+
+<a
+href="#devalia"
+class="group-place"
+>
+🦁 3. Devalia Safari Park
+<span>~12 km • Wildlife</span>
+</a>
+
+
+<a
+href="#kamleshwar"
+class="group-place"
+>
+🌊 4. Kamleshwar Dam
+<span>~20 km • Lake + Nature</span>
+</a>
+
+
+<a
+href="#kankai"
+class="group-place"
+>
+🛕 5. Kankai Mata Temple
+<span>~25 km • Temple + Forest</span>
+</a>
+
+
+<a
+href="#tulsishyam"
+class="group-place"
+>
+🙏 6. Tulsi Shyam
+<span>~35 km • Temple + Hot Spring</span>
+</a>
+
+</div>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Tulsi+Shyam+Gujarat&waypoints=Gir+National+Park%7CSasan+Gir%7CDevalia+Safari+Park%7CKamleshwar+Dam%7CKankai+Mata+Temple"
+target="_blank"
+rel="noopener noreferrer"
+class="group-route"
+>
+
+📍 पूरा Gir Route देखें
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK TRAVEL PLAN
+================================================== -->
+
+<div class="travel-note">
+
+💡 <strong>Simple Gir Plan:</strong>
+
+<br><br>
+
+🦁 <strong>पहले:</strong>
+Gir National Park / Safari
+
+<br><br>
+
+🌳 <strong>फिर:</strong>
+Sasan Gir
+
+<br><br>
+
+🦁 <strong>इसके बाद:</strong>
+Devalia Safari Park
+
+<br><br>
+
+🌊 <strong>फिर:</strong>
+Kamleshwar Dam
+
+<br><br>
+
+🛕 <strong>इसके बाद:</strong>
+Kankai Mata Temple
+
+<br><br>
+
+🙏 <strong>अंत में:</strong>
+Tulsi Shyam
+
+<br><br>
+
+इस route को safari timing, मौसम और
+local forest rules के अनुसार
+adjust कर सकते हैं।
+
+</div>
+
+
+<!-- ==================================================
+     PART 1 END
+================================================== -->
+
+<!-- PART 2 YAHAN SE CONTINUE HOGA -->
+
+  <!-- ==================================================
+     PLACE DETAILS
+================================================== -->
+
+
+<!-- ==================================================
+     1. GIR NATIONAL PARK
+================================================== -->
+
+<div
+id="girpark"
+class="place-card place-detail"
+style="text-align:left;"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🦁
+</div>
+
+<div>
+
+<h3>
+Gir National Park
+</h3>
+
+<span>
+गिर नेशनल पार्क
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Wildlife • Asiatic Lion • Safari • Forest
+</div>
+
+
+<div class="place-distance start">
+📍 Main Wildlife Area • Sasan Gir
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About the Place
+</h4>
+
+<p>
+
+Gir National Park और आसपास का Gir
+landscape Asiatic Lion के संरक्षण के लिए
+भारत का सबसे महत्वपूर्ण wildlife region
+है। जंगल में safari के दौरान lion के
+अलावा कई प्रकार के birds, deer,
+antelope और अन्य wildlife देखने को
+मिल सकते हैं।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+<strong>📍 Location:</strong>
+Gir National Park, Gujarat
+</div>
+
+<div class="place-info-row">
+<strong>🦁 Famous For:</strong>
+Asiatic Lion • Wildlife Safari
+</div>
+
+<div class="place-info-row">
+<strong>🚗 Access:</strong>
+Sasan Gir / local safari area
+</div>
+
+<div class="place-info-row">
+<strong>🚆 Railway:</strong>
+Nearest railway access includes Junagadh
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Gir+National+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gir+National+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Maps
+</a>
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Gir+National+Park"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=luxury+resorts+near+Gir+National+Park"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Gir+National+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gir+National+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Sasan+Gir+Bus+Stand"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Bus
+</a>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Gir+National+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab
+</a>
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Gir+National+Park"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     2. SASAN GIR
+================================================== -->
+
+<div
+id="sasan"
+class="place-card place-detail"
+style="text-align:left;"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🌳
+</div>
+
+<div>
+
+<h3>
+Sasan Gir
+</h3>
+
+<span>
+सासन गिर
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Tourist Base • Safari • Hotels • Forest
+</div>
+
+
+<div class="place-distance start">
+📍 लगभग 0 km • Main Base
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About the Place
+</h4>
+
+<p>
+
+Sasan Gir Gir National Park की
+सैर के लिए प्रमुख tourist base है।
+यहाँ safari, hotels, resorts,
+restaurants और local transport की
+सुविधाएँ मिलती हैं। Gir घूमने वाले
+tourists के लिए Sasan Gir एक
+convenient starting point है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+<strong>📍 Location:</strong>
+Sasan Gir, Gujarat
+</div>
+
+<div class="place-info-row">
+<strong>🌳 Famous For:</strong>
+Gir Safari • Hotels • Forest Tourism
+</div>
+
+<div class="place-info-row">
+<strong>🚌 Bus:</strong>
+Local / regional bus connectivity
+</div>
+
+<div class="place-info-row">
+<strong>🚆 Railway:</strong>
+Nearest major rail access via Junagadh
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Sasan+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Sasan+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Maps
+</a>
+
+<a
+href="https://www.google.com/search?q=budget+hotels+in+Sasan+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=luxury+resorts+in+Sasan+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=restaurants+in+Sasan+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Sasan+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Sasan+Gir+Bus+Stand"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Bus
+</a>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Sasan+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab
+</a>
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Sasan+Gir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     3. DEVALIA SAFARI PARK
+================================================== -->
+
+<div
+id="devalia"
+class="place-card place-detail"
+style="text-align:left;"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🦁
+</div>
+
+<div>
+
+<h3>
+Devalia Safari Park
+</h3>
+
+<span>
+देवलिया सफारी पार्क
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Wildlife • Lion Safari • Interpretation Zone
+</div>
+
+
+<div class="place-distance">
+📍 लगभग 12 km • Sasan Gir से
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About the Place
+</h4>
+
+<p>
+
+Devalia Safari Park Gir region में
+wildlife देखने के लिए popular destination
+है। यह controlled safari experience
+provide करता है जहाँ visitors को Gir
+के wildlife landscape को करीब से
+देखने का अवसर मिलता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+<strong>📍 Location:</strong>
+Devalia, Gir, Gujarat
+</div>
+
+<div class="place-info-row">
+<strong>🦁 Famous For:</strong>
+Lion Safari • Wildlife Viewing
+</div>
+
+<div class="place-info-row">
+<strong>🚌 Bus:</strong>
+Local taxi / tourist transport
+</div>
+
+<div class="place-info-row">
+<strong>🚆 Railway:</strong>
+Nearest major rail access via Junagadh
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Devalia+Safari+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Devalia+Safari+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Maps
+</a>
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Devalia+Safari+Park"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=resorts+near+Devalia+Safari+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Devalia+Safari+Park"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Devalia+Safari+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Devalia+Safari+Park"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Bus
+</a>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Devalia+Safari+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab
+</a>
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Devalia+Safari+Park"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     PART 2 END
+================================================== -->
+
+<!-- PART 3 में Kamleshwar Dam, Kankai Mata,
+     Tulsi Shyam, Transport, Stay & Food,
+     Useful Searches, Travel Tips, Footer और
+     JavaScript रहेगा. -->
+
+  <!-- ==================================================
+     4. KAMLESHWAR DAM
+================================================== -->
+
+<div
+id="kamleshwar"
+class="place-card place-detail"
+style="text-align:left;"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🌊
+</div>
+
+<div>
+
+<h3>
+Kamleshwar Dam
+</h3>
+
+<span>
+कमलेश्वर डैम
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Dam • Lake • Nature • Wildlife
+</div>
+
+
+<div class="place-distance">
+📍 लगभग 20 km • Sasan Gir से
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About the Place
+</h4>
+
+<p>
+
+Kamleshwar Dam Gir landscape के
+सुंदर natural spots में से एक है।
+यहाँ water body और आसपास का forest
+environment wildlife और nature
+experience को और खास बनाता है।
+Safari route के दौरान इस क्षेत्र की
+natural beauty देखने को मिल सकती है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+<strong>📍 Location:</strong>
+Gir Wildlife Region, Gujarat
+</div>
+
+<div class="place-info-row">
+<strong>🌊 Famous For:</strong>
+Dam • Lake • Crocodiles • Nature
+</div>
+
+<div class="place-info-row">
+<strong>🚌 Bus:</strong>
+Local tourist transport / safari route
+</div>
+
+<div class="place-info-row">
+<strong>🚆 Railway:</strong>
+Nearest major rail access via Junagadh
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Kamleshwar+Dam+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Kamleshwar+Dam+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Maps
+</a>
+
+<a
+href="https://www.google.com/search?q=hotels+near+Kamleshwar+Dam+Gir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=resorts+near+Kamleshwar+Dam+Gir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Kamleshwar+Dam+Gir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Kamleshwar+Dam+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Kamleshwar+Dam+Gir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Bus
+</a>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Kamleshwar+Dam+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab
+</a>
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     5. KANKAI MATA TEMPLE
+================================================== -->
+
+<div
+id="kankai"
+class="place-card place-detail"
+style="text-align:left;"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🛕
+</div>
+
+<div>
+
+<h3>
+Kankai Mata Temple
+</h3>
+
+<span>
+कंकाई माता मंदिर
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Temple • Forest • Spiritual • Wildlife Region
+</div>
+
+
+<div class="place-distance">
+📍 लगभग 25 km • Sasan Gir से
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About the Place
+</h4>
+
+<p>
+
+Kankai Mata Temple Gir forest region
+में स्थित एक प्रसिद्ध धार्मिक स्थान है।
+मंदिर का forest surroundings के साथ
+अनुभव इसे सामान्य city temples से
+अलग बनाता है। Gir क्षेत्र की यात्रा
+में nature और spirituality को साथ
+देखने वाले visitors के लिए यह एक
+interesting stop हो सकता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+<strong>📍 Location:</strong>
+Gir Forest Region, Gujarat
+</div>
+
+<div class="place-info-row">
+<strong>🛕 Famous For:</strong>
+Kankai Mata Temple • Forest Setting
+</div>
+
+<div class="place-info-row">
+<strong>🚗 Access:</strong>
+Local tourist vehicle / permitted route
+</div>
+
+<div class="place-info-row">
+<strong>🚆 Railway:</strong>
+Nearest major rail access via Junagadh
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Kankai+Mata+Temple+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Kankai+Mata+Temple+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Maps
+</a>
+
+<a
+href="https://www.google.com/search?q=hotels+near+Kankai+Mata+Temple+Gir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=resorts+near+Kankai+Mata+Temple+Gir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Kankai+Mata+Temple+Gir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Kankai+Mata+Temple+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Kankai+Mata+Temple+Gir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Bus
+</a>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Kankai+Mata+Temple+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab
+</a>
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     6. TULSI SHYAM
+================================================== -->
+
+<div
+id="tulsishyam"
+class="place-card place-detail"
+style="text-align:left;"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🙏
+</div>
+
+<div>
+
+<h3>
+Tulsi Shyam
+</h3>
+
+<span>
+तुलसी श्याम
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Temple • Hot Spring • Forest • Nature
+</div>
+
+
+<div class="place-distance">
+📍 लगभग 35 km • Sasan Gir से
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About the Place
+</h4>
+
+<p>
+
+Tulsi Shyam Gir forest region का
+प्रसिद्ध धार्मिक और natural destination
+है। यहाँ भगवान विष्णु के Shyam रूप से
+जुड़ा मंदिर और natural hot springs
+देखने को मिलते हैं। यह Gir के आसपास
+एक अलग तरह का spiritual और nature
+experience देता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+<strong>📍 Location:</strong>
+Tulsi Shyam, Gir region, Gujarat
+</div>
+
+<div class="place-info-row">
+<strong>🙏 Famous For:</strong>
+Temple • Hot Springs • Forest
+</div>
+
+<div class="place-info-row">
+<strong>🚗 Access:</strong>
+Private vehicle / local tourist transport
+</div>
+
+<div class="place-info-row">
+<strong>🚆 Railway:</strong>
+Nearest major rail access via Junagadh
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Tulsi+Shyam+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Tulsi+Shyam+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Maps
+</a>
+
+<a
+href="https://www.google.com/search?q=hotels+near+Tulsi+Shyam+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=resorts+near+Tulsi+Shyam+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Tulsi+Shyam+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Tulsi+Shyam+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Tulsi+Shyam+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Bus
+</a>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Tulsi+Shyam+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab
+</a>
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Tulsi+Shyam+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK ROUTE
+================================================== -->
+
+<h2 class="section-title">
+🗺️ Gir Quick Tourist Route
+</h2>
+
+
+<div class="route-box">
+
+<h3>
+📍 Recommended Sightseeing Order
+</h3>
+
+<p>
+
+🦁 Gir National Park
+→ 🌳 Sasan Gir
+→ 🦁 Devalia Safari Park
+→ 🌊 Kamleshwar Dam
+→ 🛕 Kankai Mata Temple
+→ 🙏 Tulsi Shyam
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Tulsi+Shyam+Gujarat&waypoints=Gir+National+Park%7CSasan+Gir%7CDevalia+Safari+Park%7CKamleshwar+Dam%7CKankai+Mata+Temple"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+
+📍 पूरा Route खोलें
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRANSPORT
+================================================== -->
+
+<h2
+id="transport"
+class="section-title"
+>
+🚗 Gir Transport
+</h2>
+
+
+<div class="transport-grid">
+
+
+<div class="transport-card">
+
+<div class="transport-icon">
+🚆
+</div>
+
+<h3>
+Railway
+</h3>
+
+<p>
+Gir जाने के लिए nearest railway
+stations और travel options देखें।
+</p>
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Gir+National+Park"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🚆 Railway देखें
+</a>
+
+</div>
+
+
+<div class="transport-card">
+
+<div class="transport-icon">
+🚌
+</div>
+
+<h3>
+Bus
+</h3>
+
+<p>
+Sasan Gir और आसपास की
+bus connectivity देखें।
+</p>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Sasan+Gir+Bus+Stand+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🚌 Bus Stand
+</a>
+
+</div>
+
+
+<div class="transport-card">
+
+<div class="transport-icon">
+🚕
+</div>
+
+<h3>
+Cab / Taxi
+</h3>
+
+<p>
+Gir में local cab और taxi
+options खोजें।
+</p>
+
+<a
+href="https://www.google.com/search?q=cab+taxi+in+Sasan+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🚕 Cab खोजें
+</a>
+
+</div>
+
+
+<div class="transport-card">
+
+<div class="transport-icon">
+✈️
+</div>
+
+<h3>
+Airport
+</h3>
+
+<p>
+Gir के लिए nearby airport
+और flight options देखें।
+</p>
+
+<a
+href="https://www.google.com/search?q=nearest+airport+to+Gir+National+Park"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+✈️ Airport देखें
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     STAY & FOOD
+================================================== -->
+
+<div
+id="stayfood"
+class="business-box"
+>
+
+<h2>
+🏨 Stay & 🍽️ Food
+</h2>
+
+<p>
+
+Sasan Gir और Gir National Park के
+आसपास रहने और खाने के लिए latest
+options यहाँ से देख सकते हैं।
+Budget hotels, resorts और restaurants
+के options उपलब्ध हो सकते हैं।
+
+</p>
+
+<br>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+in+Sasan+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🏨 Budget Hotels
+</a>
+
+<br><br>
+
+
+<a
+href="https://www.google.com/search?q=resorts+near+Gir+National+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🏨 Resorts Near Gir
+</a>
+
+<br><br>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+in+Sasan+Gir+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🍽️ Restaurants Near Sasan Gir
+</a>
+
+<br><br>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Gir+National+Park+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🍽️ All Restaurants
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     USEFUL SEARCHES
+================================================== -->
+
+<h2 class="section-title">
+🔎 Useful Gir Searches
+</h2>
+
+
+<div class="transport-grid">
+
+
+<a
+href="https://www.google.com/search?q=Gir+National+Park+safari+booking"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-card"
+style="text-decoration:none;color:inherit;"
+>
+
+<div class="transport-icon">
+🎟️
+</div>
+
+<h3>
+Safari Booking
+</h3>
+
+<p>
+Gir safari booking और latest information
+देखें।
+</p>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gir+National+Park+tourist+places"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-card"
+style="text-decoration:none;color:inherit;"
+>
+
+<div class="transport-icon">
+📍
+</div>
+
+<h3>
+More Places
+</h3>
+
+<p>
+Gir के और tourist places खोजें।
+</p>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gir+National+Park+Gujarat+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-card"
+style="text-decoration:none;color:inherit;"
+>
+
+<div class="transport-icon">
+🌤️
+</div>
+
+<h3>
+Weather
+</h3>
+
+<p>
+Travel से पहले Gir का weather देखें।
+</p>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gir+National+Park+travel+tips"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-card"
+style="text-decoration:none;color:inherit;"
+>
+
+<div class="transport-icon">
+💡
+</div>
+
+<h3>
+Travel Tips
+</h3>
+
+<p>
+Safari और Gir यात्रा के useful tips देखें।
+</p>
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<div class="travel-note">
+
+<h2>
+💡 Gir Travel Tips
+</h2>
+
+<br>
+
+
+<p>
+🦁 <strong>Safari:</strong>
+Safari timing और booking की latest
+information पहले check करें।
+</p>
+
+
+<p>
+🌳 <strong>Forest Rules:</strong>
+Gir forest में local forest department
+के सभी rules follow करें।
+</p>
+
+
+<p>
+📸 <strong>Photography:</strong>
+Wildlife को परेशान किए बिना distance
+और safety instructions maintain करें।
+</p>
+
+
+<p>
+👟 <strong>Clothing:</strong>
+Comfortable clothes और footwear रखें।
+</p>
+
+
+<p>
+💧 <strong>Water:</strong>
+Safari और sightseeing के दौरान
+पानी साथ रखें।
+</p>
+
+
+<p>
+🌤️ <strong>Weather:</strong>
+यात्रा से पहले मौसम और forest
+conditions check करें।
+</p>
+
+
+<p>
+🚙 <strong>Vehicle:</strong>
+Forest area में केवल permitted
+vehicle और authorised safari service
+का उपयोग करें।
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     IMPORTANT NOTE
+================================================== -->
+
+<div class="search-note">
+
+⚠️ <strong>Important:</strong>
+
+Gir जाने से पहले safari availability,
+forest entry rules, permitted routes,
+weather, hotel availability और local
+timings की latest information जरूर
+check करें।
+
+</div>
+
+
+<!-- ==================================================
+     BACK TO TOP / PLACE MENU
+================================================== -->
+
+<div class="bottom-navigation">
+
+
+<a
+href="#place-menu"
+class="bottom-nav-btn"
+>
+📍 Place Menu
+</a>
+
+
+<a
+href="#top"
+class="bottom-nav-btn"
+>
+⬆️ ऊपर जाएँ
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+<div class="footer-logo">
+🇮🇳
+</div>
+
+
+<h3>
+DESH KHOJ A2Z
+</h3>
+
+
+<p>
+India Travel Guide
+</p>
+
+
+<p>
+Gir | गिर
+</p>
+
+
+<div class="footer-links">
+
+<a href="../index.html">
+← Home
+</a>
+
+<span>•</span>
+
+<a href="#place-menu">
+Place Menu
+</a>
+
+</div>
+
+
+<p class="copyright">
+© 2026 DESH KHOJ A2Z
+</p>
+
+</footer>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+const searchInput =
+document.getElementById("searchInput");
+
+
+const placeCards =
+document.querySelectorAll(
+".place-grid .place-card"
+);
+
+
+const noResult =
+document.getElementById("noResult");
+
+
+if(searchInput){
+
+searchInput.addEventListener(
+"input",
+function(){
+
+const query =
+this.value.toLowerCase().trim();
+
+let found = false;
+
+
+placeCards.forEach(
+function(card){
+
+const text =
+(
+card.innerText +
+" " +
+(
+card.getAttribute(
+"data-search"
+) || ""
+)
+).toLowerCase();
+
+
+if(text.includes(query)){
+
+card.style.display = "";
+
+found = true;
+
+}else{
+
+card.style.display = "none";
+
+}
+
+});
+
+
+if(noResult){
+
+if(
+query !== "" &&
+!found
+){
+
+noResult.style.display =
+"block";
+
+}else{
+
+noResult.style.display =
+"none";
+
+}
+
+}
+
+});
+
+}
+
+
+/* ==========================================
+   SMOOTH SCROLL
+========================================== */
+
+document.querySelectorAll(
+'a[href^="#"]'
+).forEach(function(link){
+
+link.addEventListener(
+"click",
+function(e){
+
+const targetId =
+this.getAttribute("href");
+
+
+if(
+targetId === "#" ||
+targetId === ""
+){
+return;
+}
+
+
+const target =
+document.querySelector(targetId);
+
+
+if(target){
+
+e.preventDefault();
+
+
+target.scrollIntoView({
+
+behavior:"smooth",
+
+block:"start"
+
+});
+
+}
+
+});
+
+});
+
+
+/* ==========================================
+   KEEP HORIZONTAL PLACE MENU VISIBLE
+========================================== */
+
+const placeMenu =
+document.getElementById(
+"placeMenu"
+);
+
+
+if(placeMenu){
+
+window.addEventListener(
+"scroll",
+function(){
+
+/*
+   Menu is sticky.
+   No extra fixed menu is created.
+   इसलिए नीचे duplicate links नहीं आएँगे।
+*/
+
+});
+
+}
+
+});
+
+
+/* ==========================================
+   END
+========================================== */
+
+</script>
+
+
+</body>
+
+</html>
