@@ -1,0 +1,2585 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Goa | गोवा Travel Guide - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   GOA MAIN PAGE
+   DESH KHOJ A2Z
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:82px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.5;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#ff9933,
+#ffffff,
+#138808
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #138808;
+}
+
+.logo{
+font-size:38px;
+}
+
+header h1{
+font-size:32px;
+margin:5px 0;
+}
+
+header p{
+font-weight:bold;
+color:#444;
+}
+
+.search-box{
+max-width:600px;
+margin:18px auto 0;
+position:relative;
+}
+
+.search-box input{
+width:100%;
+padding:14px 48px 14px 18px;
+border:0;
+border-radius:30px;
+font-size:16px;
+outline:none;
+box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.search-icon{
+position:absolute;
+right:16px;
+top:7px;
+font-size:27px;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:20px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+padding:10px 18px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;
+margin-bottom:18px;
+}
+
+.hero{
+background:white;
+border-left:6px solid #ff9933;
+border-radius:20px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:16px;
+color:#555;
+}
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   STICKY ROUTE MENU
+================================================== */
+
+.route-menu-wrap{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:7px 0;
+margin:0 -2px 12px;
+border-bottom:1px solid #ddd;
+}
+
+.route-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:3px 2px 6px;
+-webkit-overflow-scrolling:touch;
+scrollbar-width:none;
+}
+
+.route-menu::-webkit-scrollbar{
+display:none;
+}
+
+.route-tab{
+flex:0 0 auto;
+min-width:88px;
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:11px;
+padding:6px 8px;
+text-align:center;
+font-weight:bold;
+font-size:11px;
+box-shadow:0 2px 8px rgba(0,0,0,.10);
+border:1px solid #e3e7eb;
+}
+
+.route-tab span{
+display:block;
+font-size:19px;
+line-height:20px;
+margin-bottom:2px;
+}
+
+.route-tab small{
+display:block;
+font-size:9px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+.route-tab:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   QUICK GRID
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin-bottom:25px;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:18px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #1976d2;
+}
+
+.quick:nth-child(2){
+border-top-color:#138808;
+}
+
+.quick:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.quick:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   INFORMATION
+================================================== */
+
+.info{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:22px 0;
+}
+
+.info h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.info p{
+color:#555;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+background:#eef8ff;
+border-left:5px solid #1976d2;
+border-radius:15px;
+padding:15px;
+margin:18px 0;
+font-size:14px;
+}
+
+.distance-note strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   ROUTE CARDS
+================================================== */
+
+.route-card{
+background:white;
+border-radius:23px;
+padding:20px;
+margin:22px 0;
+box-shadow:0 5px 20px rgba(0,0,0,.09);
+border-left:6px solid #ff9933;
+scroll-margin-top:82px;
+}
+
+.route-card.oldgoa{
+border-left-color:#8b5cf6;
+}
+
+.route-card.south{
+border-left-color:#138808;
+}
+
+.route-card.dudhsagar{
+border-left-color:#0ea5e9;
+}
+
+.route-card.adventure{
+border-left-color:#e11d48;
+}
+
+.route-top{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:12px;
+}
+
+.route-big-icon{
+font-size:42px;
+}
+
+.route-top h2{
+font-size:24px;
+margin:0;
+}
+
+.route-subtitle{
+font-size:13px;
+color:#666;
+margin-top:3px;
+}
+
+.route-description{
+font-size:14px;
+color:#555;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   ROUTE PATH
+================================================== */
+
+.route-path-box{
+background:#f5f9fc;
+border-radius:15px;
+padding:14px;
+margin:12px 0;
+}
+
+.route-path-title{
+font-size:13px;
+font-weight:bold;
+color:#1976d2;
+margin-bottom:6px;
+}
+
+.route-path{
+font-size:14px;
+font-weight:bold;
+line-height:1.9;
+}
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 10px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:8px 0;
+}
+
+.route-place-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:8px;
+margin-top:12px;
+}
+
+.route-place{
+background:#f8f9fa;
+border:1px solid #e5e7eb;
+border-radius:13px;
+padding:10px 8px;
+text-align:center;
+font-size:12px;
+font-weight:bold;
+}
+
+.route-place span{
+display:block;
+font-size:22px;
+margin-bottom:2px;
+}
+
+.route-place small{
+font-size:10px;
+font-weight:normal;
+color:#666;
+}
+
+.route-button{
+display:block;
+margin-top:15px;
+background:#1976d2;
+color:white;
+text-decoration:none;
+text-align:center;
+padding:12px;
+border-radius:12px;
+font-weight:bold;
+font-size:13px;
+}
+
+.route-button:active{
+transform:scale(.98);
+}
+
+
+/* ==================================================
+   ROUTE PLANNING
+================================================== */
+
+.plan-card{
+background:white;
+border-radius:20px;
+padding:18px;
+margin:18px 0;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.plan-row{
+display:flex;
+gap:12px;
+padding:12px 0;
+border-bottom:1px solid #eee;
+}
+
+.plan-row:last-child{
+border-bottom:0;
+}
+
+.plan-icon{
+font-size:27px;
+min-width:35px;
+}
+
+.plan-row strong{
+font-size:15px;
+}
+
+.plan-row p{
+font-size:12px;
+color:#666;
+margin-top:3px;
+}
+
+
+/* ==================================================
+   SEARCH RESULT
+================================================== */
+
+.search-result{
+display:none;
+background:white;
+border-radius:18px;
+padding:18px;
+margin:15px 0;
+text-align:center;
+color:#777;
+}
+
+
+/* ==================================================
+   TRANSPORT
+================================================== */
+
+.transport-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.transport{
+background:white;
+border-radius:20px;
+padding:18px 12px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #1976d2;
+}
+
+.transport:nth-child(2){
+border-top-color:#138808;
+}
+
+.transport:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.transport:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.transport-icon{
+font-size:34px;
+margin-bottom:5px;
+}
+
+.transport h3{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.transport p{
+font-size:13px;
+color:#666;
+margin-bottom:12px;
+}
+
+.transport a{
+display:block;
+background:#1976d2;
+color:white;
+text-decoration:none;
+text-align:center;
+padding:10px 5px;
+border-radius:10px;
+font-size:12px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:25px 15px;
+margin-top:30px;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:17px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:55px;
+height:55px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 4px 18px rgba(0,0,0,.22);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:27px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:18px 12px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-tab{
+min-width:82px;
+padding:6px 5px;
+font-size:10px;
+}
+
+.route-tab span{
+font-size:17px;
+}
+
+.route-tab small{
+font-size:8px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.quick{
+padding:15px 7px;
+font-size:14px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+.info{
+padding:15px;
+}
+
+.info h3{
+font-size:18px;
+}
+
+.info p{
+font-size:13px;
+}
+
+.distance-note{
+font-size:12px;
+}
+
+.route-card{
+padding:16px 12px;
+}
+
+.route-big-icon{
+font-size:35px;
+}
+
+.route-top h2{
+font-size:20px;
+}
+
+.route-description{
+font-size:13px;
+}
+
+.route-path{
+font-size:12px;
+}
+
+.route-place-grid{
+grid-template-columns:1fr 1fr;
+gap:7px;
+}
+
+.route-place{
+font-size:11px;
+padding:9px 5px;
+}
+
+.route-place span{
+font-size:20px;
+}
+
+.route-place small{
+font-size:9px;
+}
+
+.transport-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.transport{
+padding:15px 8px;
+}
+
+.transport h3{
+font-size:16px;
+}
+
+.transport p{
+font-size:12px;
+}
+
+.transport a{
+font-size:11px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Goa / गोवा
+</h1>
+
+<p>
+Beach • Heritage • Nature • Adventure
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Goa में place या route खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<div class="container">
+
+
+<a
+href="../index.html"
+class="back"
+>
+← DESH KHOJ A2Z
+</a>
+
+
+<div class="hero">
+
+<h2>
+🏝️ Goa Travel Guide
+</h2>
+
+<p>
+Goa सिर्फ beaches के लिए ही नहीं बल्कि
+heritage churches, historical forts,
+nature, waterfalls, adventure और
+relaxed beach life के लिए भी प्रसिद्ध है।
+हमने Goa के प्रमुख places को उनके
+location और route के हिसाब से अलग-अलग
+pages में रखा है ताकि यात्रा plan करना आसान हो।
+</p>
+
+</div>
+
+
+<div class="route-menu-wrap">
+
+<div class="route-menu">
+
+
+<a href="#northgoa" class="route-tab">
+<span>🏖️</span>
+North Goa
+<small>Beaches + Forts</small>
+</a>
+
+
+<a href="#oldgoa" class="route-tab">
+<span>⛪</span>
+Old Goa
+<small>Heritage</small>
+</a>
+
+
+<a href="#southgoa" class="route-tab">
+<span>🌴</span>
+South Goa
+<small>Beaches</small>
+</a>
+
+
+<a href="#dudhsagar" class="route-tab">
+<span>💦</span>
+Dudhsagar
+<small>Nature</small>
+</a>
+
+
+<a href="#adventure" class="route-tab">
+<span>🤿</span>
+Adventure
+<small>Grand Island</small>
+</a>
+
+
+<a href="#transport" class="route-tab">
+<span>🚗</span>
+Transport
+<small>Travel</small>
+</a>
+
+
+<a href="#stayfood" class="route-tab">
+<span>🏨</span>
+Stay & Food
+<small>Hotels</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+<div class="distance-note">
+
+📍 <strong>Distance Note:</strong>
+
+<br>
+
+यहाँ दी गई दूरी approximate road distance
+है और planning के लिए दी गई है।
+
+<br>
+
+Distance को सामान्यतः <strong>Panaji</strong>
+से starting point मानकर बताया गया है।
+आपकी actual starting location, road और
+traffic के अनुसार distance और travel time
+कम-ज्यादा हो सकता है।
+
+</div>
+
+
+<div class="info">
+
+<h3>
+📌 पहली बार Goa जा रहे हैं?
+</h3>
+
+<p>
+Goa घूमते समय सबसे जरूरी बात है कि
+एक ही दिन में अलग-अलग direction के
+places को mix न करें। पास-पास के places
+को एक route में रखें। इससे travelling
+कम होगी और sightseeing आराम से होगी।
+</p>
+
+<br>
+
+🏖️ <strong>North Goa:</strong>
+Beaches + Forts
+
+<br>
+
+⛪ <strong>Old Goa:</strong>
+Churches + Heritage
+
+<br>
+
+🌴 <strong>South Goa:</strong>
+Peaceful Beaches
+
+<br>
+
+💦 <strong>Dudhsagar:</strong>
+Waterfall + Nature
+
+<br>
+
+🤿 <strong>Adventure:</strong>
+Grand Island + Water Activities
+
+</div>
+
+
+<h2 class="section-title">
+🔎 Quick Search
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogle('tourist places in Goa')"
+class="quick"
+>
+
+<span class="quick-icon">
+🗺️
+</span>
+
+Goa Maps
+
+</a>
+
+
+<a
+href="javascript:openGoogle('hotels in Goa near tourist places')"
+class="quick"
+>
+
+<span class="quick-icon">
+🏨
+</span>
+
+Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('restaurants in Goa')"
+class="quick"
+>
+
+<span class="quick-icon">
+🍽️
+</span>
+
+Restaurants
+
+</a>
+
+
+<a
+href="javascript:openGoogleImages('Goa beaches forts waterfalls tourist places')"
+class="quick"
+>
+
+<span class="quick-icon">
+📸
+</span>
+
+Goa Photos
+
+</a>
+
+
+</div>
+
+
+<h2 class="section-title">
+🧭 Goa को Route-wise घूमें
+</h2>
+
+
+<div class="info">
+
+<h3>
+💡 Smart Goa Travel Planning
+</h3>
+
+<p>
+नीचे Goa के प्रमुख tourist areas को
+अलग-अलग routes में रखा गया है। जिस
+area में आप जाना चाहते हैं उस route
+को खोलकर उसके अंदर सभी places की
+details, distance, maps और travel
+information देख सकते हैं।
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     NORTH GOA
+================================================== -->
+
+<div
+class="route-card"
+id="northgoa"
+data-search="north goa north beaches baga calangute anjuna chapora aguada fort beach nightlife shopping water sports"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+🏖️
+</div>
+
+<div>
+
+<h2>
+North Goa Route
+</h2>
+
+<div class="route-subtitle">
+Beaches • Forts • Nightlife • Shopping
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+North Goa पहली बार आने वाले tourists
+के लिए सबसे popular sightseeing areas
+में से एक है। यहाँ beaches और forts
+को एक practical route में cover किया
+जा सकता है।
+</p>
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏰 Fort Aguada
+→
+🏖️ Calangute
+→
+🌊 Baga
+→
+🏝️ Anjuna
+→
+🏰 Chapora
+
+</div>
+
+</div>
+
+<div class="route-distance">
+📍 Panaji से लगभग 7–22 km range
+</div>
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>🏰</span>
+Fort Aguada
+<small>अगुआडा</small>
+</div>
+
+<div class="route-place">
+<span>🏖️</span>
+Calangute
+<small>कलंगूट</small>
+</div>
+
+<div class="route-place">
+<span>🌊</span>
+Baga
+<small>बागा</small>
+</div>
+
+<div class="route-place">
+<span>🏝️</span>
+Anjuna
+<small>अंजुना</small>
+</div>
+
+<div class="route-place">
+<span>🏰</span>
+Chapora
+<small>चपोरा</small>
+</div>
+
+</div>
+
+<a
+href="north-goa-route.html"
+class="route-button"
+>
+🏖️ North Goa Route खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     OLD GOA
+================================================== -->
+
+<div
+class="route-card oldgoa"
+id="oldgoa"
+data-search="old goa heritage panaji basilica bom jesus church churches portuguese architecture heritage"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+⛪
+</div>
+
+<div>
+
+<h2>
+Old Goa Heritage Route
+</h2>
+
+<div class="route-subtitle">
+Churches • Heritage • Portuguese Architecture
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+Old Goa historical और architectural
+places के लिए प्रसिद्ध है। यह route
+उन travellers के लिए useful है जो Goa
+की Portuguese और colonial heritage को
+देखना चाहते हैं।
+</p>
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏙️ Panaji
+→
+⛪ Basilica of Bom Jesus
+→
+🏛️ Old Goa Heritage Area
+
+</div>
+
+</div>
+
+<div class="route-distance">
+📍 Panaji से लगभग 11 km
+</div>
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>🏙️</span>
+Panaji
+<small>पणजी</small>
+</div>
+
+<div class="route-place">
+<span>⛪</span>
+Bom Jesus
+<small>बॉम जीसस</small>
+</div>
+
+<div class="route-place">
+<span>🏛️</span>
+Old Goa
+<small>Heritage Area</small>
+</div>
+
+<div class="route-place">
+<span>⛪</span>
+Historic Churches
+<small>Churches</small>
+</div>
+
+</div>
+
+<a
+href="old-goa-route.html"
+class="route-button"
+>
+⛪ Old Goa Route खोलें →
+</a>
+
+</div>
+
+  <!-- ==================================================
+     SOUTH GOA
+================================================== -->
+
+<div
+class="route-card south"
+id="southgoa"
+data-search="south goa palolem beach peaceful beach nature scenic canacona beaches"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+🌴
+</div>
+
+<div>
+
+<h2>
+South Goa Route
+</h2>
+
+<div class="route-subtitle">
+Peaceful Beaches • Nature • Relaxation
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+South Goa उन travellers के लिए बेहतर
+रह सकता है जो comparatively peaceful
+beaches, nature और relaxed atmosphere
+पसंद करते हैं।
+</p>
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏙️ Panaji
+→
+🌴 South Goa
+→
+🏖️ Palolem
+→
+🌊 Nearby Beaches
+
+</div>
+
+</div>
+
+<div class="route-distance">
+📍 Palolem लगभग 70 km • Panaji से
+</div>
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>🌴</span>
+Palolem
+<small>पालोलेम</small>
+</div>
+
+<div class="route-place">
+<span>🏖️</span>
+South Beaches
+<small>Beaches</small>
+</div>
+
+<div class="route-place">
+<span>🌊</span>
+Coastline
+<small>Sea View</small>
+</div>
+
+<div class="route-place">
+<span>🌿</span>
+Nature
+<small>Relaxation</small>
+</div>
+
+</div>
+
+<a
+href="south-goa-route.html"
+class="route-button"
+>
+🌴 South Goa Route खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     DUDHSAGAR
+================================================== -->
+
+<div
+class="route-card dudhsagar"
+id="dudhsagar"
+data-search="dudhsagar nature route waterfall दूधसागर falls waterfall forest adventure trekking wildlife"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+💦
+</div>
+
+<div>
+
+<h2>
+Dudhsagar Nature Route
+</h2>
+
+<div class="route-subtitle">
+Waterfall • Forest • Nature • Adventure
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+Dudhsagar Goa के सबसे प्रसिद्ध natural
+attractions में से एक है। यह सामान्य
+city sightseeing route से अलग nature
+और adventure focused trip है।
+</p>
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏙️ Panaji
+→
+🌿 Nature Area
+→
+💦 Dudhsagar Falls
+
+</div>
+
+</div>
+
+<div class="route-distance">
+📍 लगभग 60 km • Panaji से
+</div>
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>💦</span>
+Dudhsagar Falls
+<small>दूधसागर</small>
+</div>
+
+<div class="route-place">
+<span>🌿</span>
+Forest
+<small>Nature</small>
+</div>
+
+<div class="route-place">
+<span>🚙</span>
+Local Tour
+<small>Access</small>
+</div>
+
+<div class="route-place">
+<span>🥾</span>
+Adventure
+<small>Activity</small>
+</div>
+
+</div>
+
+<a
+href="dudhsagar-nature-route.html"
+class="route-button"
+>
+💦 Dudhsagar Route खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     GRAND ISLAND ADVENTURE
+================================================== -->
+
+<div
+class="route-card adventure"
+id="adventure"
+data-search="grand island adventure scuba diving snorkeling dolphin boat water sports marine"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+🤿
+</div>
+
+<div>
+
+<h2>
+Grand Island Adventure
+</h2>
+
+<div class="route-subtitle">
+Scuba Diving • Snorkeling • Boat Trip
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+Grand Island Goa के marine adventure
+activities के लिए popular destination
+है। यहाँ scuba diving, snorkeling और
+boat-based activities जैसे experiences
+tour operators के अनुसार available हो
+सकते हैं।
+</p>
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Planning
+</div>
+
+<div class="route-path">
+
+🏙️ Panaji
+→
+🚤 Boat Point
+→
+🤿 Grand Island
+
+</div>
+
+</div>
+
+<div class="route-distance">
+📍 लगभग 35 km area • route/operator के अनुसार
+</div>
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>🤿</span>
+Scuba Diving
+<small>Adventure</small>
+</div>
+
+<div class="route-place">
+<span>🌊</span>
+Snorkeling
+<small>Marine</small>
+</div>
+
+<div class="route-place">
+<span>🚤</span>
+Boat Trip
+<small>Tour</small>
+</div>
+
+<div class="route-place">
+<span>🐬</span>
+Dolphin
+<small>Watching</small>
+</div>
+
+</div>
+
+<!-- UPDATED DIRECT LINK -->
+
+<a
+href="grand-island-adventure.html"
+class="route-button"
+>
+🤿 Grand Island Details देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE PLANNING
+================================================== -->
+
+<h2 class="section-title">
+🗓️ Goa Trip Planning
+</h2>
+
+
+<div class="plan-card">
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🏖️
+</div>
+
+<div>
+
+<strong>
+1 Day — North Goa
+</strong>
+
+<p>
+Fort Aguada + Calangute + Baga +
+Anjuna + Chapora को अपनी timing के
+अनुसार plan करें।
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+⛪
+</div>
+
+<div>
+
+<strong>
+Half / Full Day — Old Goa
+</strong>
+
+<p>
+Panaji और Old Goa के heritage places
+को आराम से explore करें।
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🌴
+</div>
+
+<div>
+
+<strong>
+1 Day — South Goa
+</strong>
+
+<p>
+Palolem और आसपास के peaceful beaches
+के लिए अलग दिन रखना बेहतर रहेगा।
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+💦
+</div>
+
+<div>
+
+<strong>
+1 Day — Dudhsagar
+</strong>
+
+<p>
+Dudhsagar को अलग nature/adventure
+day के रूप में plan करें।
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🤿
+</div>
+
+<div>
+
+<strong>
+Half / Full Day — Adventure
+</strong>
+
+<p>
+Grand Island या water activities के
+लिए weather और operator schedule
+check करें।
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     SMART TRAVEL TIP
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 सबसे जरूरी Travel Tip
+</h3>
+
+<p>
+<strong>
+North Goa, South Goa और Dudhsagar
+को एक ही दिन में mix करने से बचें।
+</strong>
+</p>
+
+<br>
+
+Goa map पर पास दिखाई देने वाले places
+को route में साथ रखना ज्यादा practical
+रहेगा। इससे unnecessary travelling,
+traffic और time waste कम किया जा सकता है।
+
+</div>
+
+
+<!-- ==================================================
+     GOA TRANSPORT
+================================================== -->
+
+<h2
+class="section-title"
+id="transport"
+>
+🚗 Goa Transport
+</h2>
+
+
+<div class="transport-grid">
+
+
+<div class="transport">
+
+<div class="transport-icon">
+✈️
+</div>
+
+<h3>
+Airport
+</h3>
+
+<p>
+Goa airports और flight options
+देखें।
+</p>
+
+<a
+href="javascript:openGoogle('Goa airports flight options')"
+>
+✈️ Airport देखें
+</a>
+
+</div>
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚆
+</div>
+
+<h3>
+Train
+</h3>
+
+<p>
+Goa railway stations और connectivity
+देखें।
+</p>
+
+<a
+href="javascript:openGoogle('railway stations in Goa')"
+>
+🚆 Train देखें
+</a>
+
+</div>
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚌
+</div>
+
+<h3>
+Bus
+</h3>
+
+<p>
+Goa bus stands और routes देखें।
+</p>
+
+<a
+href="javascript:openGoogle('Goa bus stand bus routes')"
+>
+🚌 Bus देखें
+</a>
+
+</div>
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚕
+</div>
+
+<h3>
+Cab / Taxi
+</h3>
+
+<p>
+Goa में cab और taxi options
+देखें।
+</p>
+
+<a
+href="javascript:openGoogle('cab taxi Goa sightseeing')"
+>
+🚕 Cab देखें
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     STAY & FOOD
+================================================== -->
+
+<h2
+class="section-title"
+id="stayfood"
+>
+🏨 Stay & 🍽️ Food
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogle('budget hotels in Goa')"
+class="quick"
+>
+
+<span class="quick-icon">
+💰
+</span>
+
+Budget Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('best hotels in Goa')"
+class="quick"
+>
+
+<span class="quick-icon">
+⭐
+</span>
+
+Best Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('family hotels in Goa')"
+class="quick"
+>
+
+<span class="quick-icon">
+👨‍👩‍👧
+</span>
+
+Family Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('luxury hotels in Goa')"
+class="quick"
+>
+
+<span class="quick-icon">
+👑
+</span>
+
+Luxury Hotels
+
+</a>
+
+
+</div>
+
+
+<h2 class="section-title">
+🍽️ Goa Food
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogle('famous food in Goa')"
+class="quick"
+>
+
+<span class="quick-icon">
+🍛
+</span>
+
+Famous Food
+
+</a>
+
+
+<a
+href="javascript:openGoogle('vegetarian restaurants in Goa')"
+class="quick"
+>
+
+<span class="quick-icon">
+🥗
+</span>
+
+Vegetarian
+
+</a>
+
+
+<a
+href="javascript:openGoogle('seafood restaurants in Goa')"
+class="quick"
+>
+
+<span class="quick-icon">
+🦐
+</span>
+
+Seafood
+
+</a>
+
+
+<a
+href="javascript:openGoogle('cafes in Goa')"
+class="quick"
+>
+
+<span class="quick-icon">
+☕
+</span>
+
+Cafes
+
+</a>
+
+
+</div>
+
+
+<h2 class="section-title">
+🏖️ Goa Beach Life
+</h2>
+
+
+<div class="info">
+
+<h3>
+🌴 Beach • Food • Shopping • Activities
+</h3>
+
+<p>
+
+🏖️ <strong>Popular Beaches:</strong>
+Baga, Calangute, Anjuna और Palolem।
+
+<br><br>
+
+🍽️ <strong>Food:</strong>
+Beach shacks, restaurants और cafes।
+
+<br><br>
+
+🛍️ <strong>Shopping:</strong>
+Local markets और beach-side shopping।
+
+<br><br>
+
+🚤 <strong>Adventure:</strong>
+Water sports और boat activities।
+
+</p>
+
+<a
+href="javascript:openGoogle('Goa beaches water sports shopping restaurants')"
+class="route-button"
+>
+🏖️ Goa Beach Life देखें →
+</a>
+
+</div>
+
+  <!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<h2 class="section-title">
+💡 Goa Travel Tips
+</h2>
+
+
+<div class="info">
+
+<p>
+
+📍 एक route में पास-पास के places
+को साथ रखें।
+
+<br><br>
+
+🚗 बहुत दूर के destinations को एक ही
+दिन में जोड़ने से बचें।
+
+<br><br>
+
+🏨 Hotel चुनते समय अपने main sightseeing
+area की location जरूर देखें।
+
+<br><br>
+
+🌊 Water sports authorised operators
+के साथ करें और safety instructions
+follow करें।
+
+<br><br>
+
+🌧️ Monsoon में weather और sea
+conditions check करें।
+
+<br><br>
+
+💦 Dudhsagar जाने से पहले current
+access और local rules check करें।
+
+<br><br>
+
+🕒 Heritage places और attractions की
+current timings पहले check करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     PHOTOS
+================================================== -->
+
+<h2 class="section-title">
+📸 Goa Photos
+</h2>
+
+
+<div class="info">
+
+<h3>
+📷 Goa के Places की Photos
+</h3>
+
+<p>
+Beaches, forts, churches, waterfalls
+और Goa के अन्य tourist attractions
+की photos देखने के लिए Google Images
+खोलें।
+</p>
+
+<a
+href="javascript:openGoogleImages('Goa tourist places Baga Calangute Anjuna Chapora Aguada Old Goa Dudhsagar Palolem')"
+class="route-button"
+>
+📸 Goa Photos देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     IMPORTANT
+================================================== -->
+
+<div class="info">
+
+<h3>
+⚠️ Important Information
+</h3>
+
+<p>
+
+• सभी distances approximate हैं।
+
+<br><br>
+
+• Actual road distance आपकी starting
+location और selected route के अनुसार
+बदल सकती है।
+
+<br><br>
+
+• Weather के अनुसार travel planning करें।
+
+<br><br>
+
+• Beach और sea conditions का ध्यान रखें।
+
+<br><br>
+
+• Water sports में safety instructions
+follow करें।
+
+<br><br>
+
+• Forts और heritage places के local
+rules follow करें।
+
+<br><br>
+
+• Dudhsagar और adventure destinations
+के current access rules पहले check करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK ROUTE SUMMARY
+================================================== -->
+
+<h2 class="section-title">
+🗺️ Goa Quick Route Summary
+</h2>
+
+
+<div class="hero">
+
+<h2>
+📍 Goa को Confusion-Free घूमें
+</h2>
+
+<p>
+
+🏖️ <strong>North Goa:</strong>
+
+Fort Aguada
+→ Calangute
+→ Baga
+→ Anjuna
+→ Chapora
+
+<br><br>
+
+⛪ <strong>Old Goa:</strong>
+
+Panaji
+→ Basilica of Bom Jesus
+→ Old Goa Heritage
+
+<br><br>
+
+🌴 <strong>South Goa:</strong>
+
+South Goa
+→ Palolem
+→ Nearby Beaches
+
+<br><br>
+
+💦 <strong>Dudhsagar:</strong>
+
+Nature Area
+→ Dudhsagar Falls
+
+<br><br>
+
+🤿 <strong>Adventure:</strong>
+
+Boat Point
+→ Grand Island
+
+<br><br>
+
+<strong>
+👉 हर route के अंदर जाकर उस area के
+सभी detailed places देखें।
+</strong>
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     GOA ROUTE-TO-ROUTE DISTANCE
+================================================== -->
+
+<div class="distance-note">
+
+📍 <strong>Goa Route-to-Route Distance Summary</strong>
+
+<br><br>
+
+🏖️ <strong>North Goa → Old Goa:</strong>
+लगभग <strong>30–37 km</strong>
+
+<br>
+
+<small>
+North Goa के अंतिम point Chapora Fort
+से Old Goa को आधार माना गया है।
+</small>
+
+<br><br>
+
+⛪ <strong>Old Goa → South Goa:</strong>
+लगभग <strong>67–70 km</strong>
+
+<br>
+
+<small>
+South Goa के Palolem को representative
+route point माना गया है।
+</small>
+
+<br><br>
+
+🏖️ <strong>North Goa → South Goa:</strong>
+लगभग <strong>88–95 km</strong>
+
+<br>
+
+<small>
+Chapora Fort → Palolem approximate
+road distance।
+</small>
+
+<br><br>
+
+⛪ <strong>Old Goa → Dudhsagar:</strong>
+लगभग <strong>60–65 km</strong>
+
+<br>
+
+<small>
+Dudhsagar / Kulem access region के
+आधार पर approximate distance।
+</small>
+
+<br><br>
+
+🏖️ <strong>North Goa → Dudhsagar:</strong>
+लगभग <strong>65–75 km</strong>
+
+<br><br>
+
+🌴 <strong>South Goa → Dudhsagar:</strong>
+लगभग <strong>69–75 km</strong>
+
+<br>
+
+<small>
+Palolem और Dudhsagar access point के
+अनुसार distance बदल सकती है।
+</small>
+
+<br><br>
+
+⛪ <strong>Old Goa → Adventure:</strong>
+लगभग <strong>30–40 km</strong>
+
+<br>
+
+<small>
+Adventure के लिए Bogmalo / Grand Island
+boat point को representative location
+माना गया है।
+</small>
+
+<br><br>
+
+🏖️ <strong>North Goa → Adventure:</strong>
+लगभग <strong>40–50 km</strong>
+
+<br><br>
+
+🌴 <strong>South Goa → Adventure:</strong>
+लगभग <strong>55–70 km</strong>
+
+<br><br>
+
+💦 <strong>Dudhsagar → Adventure:</strong>
+लगभग <strong>60–75 km</strong>
+
+<br><br>
+
+⚠️ <strong>Important:</strong>
+ये distances planning के लिए
+approximate हैं। Exact starting point,
+selected road, traffic, boat point और
+Dudhsagar access route के अनुसार
+distance बदल सकती है।
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE CONNECTION
+================================================== -->
+
+<div class="info">
+
+<h3>
+🧭 Goa Route Connection
+</h3>
+
+<p>
+
+🏖️ <strong>North Goa</strong>
+→
+⛪ <strong>Old Goa</strong>
+→
+🌴 <strong>South Goa</strong>
+
+<br><br>
+
+💦 <strong>Dudhsagar</strong> और
+🤿 <strong>Adventure / Grand Island</strong>
+को अलग day-trip route के रूप में रखना
+ज्यादा practical रहेगा।
+
+<br><br>
+
+👉 हर route के अंदर जाकर उस area के
+detailed places, maps और travel
+information देखें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     BOTTOM STICKY MENU
+================================================== -->
+
+<div class="route-menu-wrap">
+
+<div class="route-menu">
+
+
+<a
+href="#top"
+class="route-tab"
+>
+<span>⬆️</span>
+Top
+<small>ऊपर</small>
+</a>
+
+
+<a
+href="#northgoa"
+class="route-tab"
+>
+<span>🏖️</span>
+North Goa
+<small>Beaches</small>
+</a>
+
+
+<a
+href="#oldgoa"
+class="route-tab"
+>
+<span>⛪</span>
+Old Goa
+<small>Heritage</small>
+</a>
+
+
+<a
+href="#southgoa"
+class="route-tab"
+>
+<span>🌴</span>
+South Goa
+<small>Beaches</small>
+</a>
+
+
+<a
+href="#dudhsagar"
+class="route-tab"
+>
+<span>💦</span>
+Dudhsagar
+<small>Nature</small>
+</a>
+
+
+<a
+href="#adventure"
+class="route-tab"
+>
+<span>🤿</span>
+Adventure
+<small>Grand Island</small>
+</a>
+
+
+<a
+href="#transport"
+class="route-tab"
+>
+<span>🚗</span>
+Transport
+<small>Travel</small>
+</a>
+
+
+<a
+href="#stayfood"
+class="route-tab"
+>
+<span>🏨</span>
+Stay & Food
+<small>Hotels</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+India Travel Guide
+
+<br><br>
+
+Goa | गोवा
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="ऊपर जाएँ"
+>
+⬆️
+</button>
+
+
+<script src="script.js"></script>
+
+
+<!-- ==================================================
+     GOA MAIN PAGE SEARCH
+================================================== -->
+
+<script>
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+
+const searchInput =
+document.getElementById("searchInput");
+
+const searchable =
+document.querySelectorAll(
+".route-card"
+);
+
+const noResult =
+document.getElementById("noResult");
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+/* ==================================================
+   SEARCH
+================================================== */
+
+if(searchInput){
+
+searchInput.addEventListener(
+"input",
+function(){
+
+const value =
+this.value
+.toLowerCase()
+.trim();
+
+let found = false;
+
+searchable.forEach(
+function(item){
+
+const text =
+(
+item.innerText +
+" " +
+(item.getAttribute(
+"data-search"
+) || "")
+)
+.toLowerCase();
+
+if(
+value === "" ||
+text.includes(value)
+){
+
+item.style.display =
+"";
+
+if(value !== ""){
+found = true;
+}
+
+}else{
+
+item.style.display =
+"none";
+
+}
+
+});
+
+
+if(
+value !== "" &&
+!found
+){
+
+if(noResult){
+noResult.style.display =
+"block";
+}
+
+}else{
+
+if(noResult){
+noResult.style.display =
+"none";
+}
+
+}
+
+});
+
+}
+
+
+/* ==================================================
+   BACK TO TOP
+================================================== */
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY > 500){
+
+topBtn.style.display =
+"block";
+
+}else{
+
+topBtn.style.display =
+"none";
+
+}
+
+});
+
+
+if(topBtn){
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+});
+
+</script>
+
+
+</body>
+
+</html>

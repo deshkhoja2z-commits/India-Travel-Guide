@@ -1,0 +1,2459 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+North Goa Route | DESH KHOJ A2Z
+</title>
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   NORTH GOA ROUTE
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:75px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#ff9933,
+#ffffff,
+#138808
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #138808;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:40px;
+}
+
+header h1{
+font-size:30px;
+margin:5px 0;
+}
+
+header p{
+font-size:14px;
+font-weight:bold;
+color:#34495e;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:18px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   STICKY HORIZONTAL MENU
+================================================== */
+
+.sticky-menu{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:6px 0;
+margin:0 -2px 15px;
+border-bottom:1px solid #ddd;
+}
+
+.horizontal-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:2px 3px 5px;
+scrollbar-width:none;
+-webkit-overflow-scrolling:touch;
+}
+
+.horizontal-menu::-webkit-scrollbar{
+display:none;
+}
+
+.menu-card{
+flex:0 0 auto;
+min-width:82px;
+background:white;
+color:#202124;
+text-decoration:none;
+border:1px solid #e1e5e8;
+border-radius:10px;
+padding:5px 7px;
+text-align:center;
+font-size:10px;
+font-weight:bold;
+box-shadow:0 2px 7px rgba(0,0,0,.10);
+line-height:1.2;
+}
+
+.menu-card span{
+display:block;
+font-size:18px;
+line-height:19px;
+margin-bottom:2px;
+}
+
+.menu-card small{
+display:block;
+font-size:8px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+.menu-card:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+background:white;
+border-left:6px solid #ff9933;
+border-radius:22px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.09);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+font-size:16px;
+}
+
+
+/* ==================================================
+   INFO
+================================================== */
+
+.info{
+background:#eef7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:17px;
+margin:20px 0 25px;
+font-size:14px;
+}
+
+.info h3{
+font-size:20px;
+margin-bottom:7px;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+background:#eef8ff;
+border-left:5px solid #1976d2;
+border-radius:16px;
+padding:15px;
+margin:18px 0 25px;
+font-size:13px;
+}
+
+.distance-note strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   ROUTE SUMMARY
+================================================== */
+
+.route-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:20px 0 28px;
+}
+
+.route-box h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.route-box p{
+font-size:14px;
+color:#555;
+}
+
+.route-line{
+font-weight:bold;
+font-size:15px;
+line-height:2;
+margin:10px 0;
+}
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:5px 0;
+}
+
+
+/* ==================================================
+   PLACE CARD
+================================================== */
+
+.place-card{
+background:white;
+border-radius:24px;
+padding:22px;
+margin:25px 0;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+border-left:6px solid #ff9933;
+scroll-margin-top:75px;
+}
+
+.place-card:nth-of-type(2){
+border-left-color:#138808;
+}
+
+.place-card:nth-of-type(3){
+border-left-color:#1976d2;
+}
+
+.place-card:nth-of-type(4){
+border-left-color:#8b5cf6;
+}
+
+.place-card:nth-of-type(5){
+border-left-color:#e11d48;
+}
+
+.place-header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:14px;
+}
+
+.place-icon{
+font-size:48px;
+}
+
+.place-header h3{
+font-size:25px;
+margin:0;
+}
+
+.place-header span{
+display:block;
+font-size:16px;
+color:#666;
+margin-top:2px;
+}
+
+.category{
+display:inline-block;
+background:#f1f5f9;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#555;
+margin-bottom:14px;
+}
+
+
+/* ==================================================
+   DISTANCE BADGE
+================================================== */
+
+.place-distance{
+background:#eaf8ef;
+border-left:4px solid #138808;
+border-radius:12px;
+padding:10px 12px;
+margin:10px 0 15px;
+font-size:13px;
+font-weight:bold;
+color:#176b38;
+}
+
+.place-distance span{
+color:#555;
+font-weight:normal;
+}
+
+
+/* ==================================================
+   SHORT HISTORY
+================================================== */
+
+.short-history{
+background:#fff8e7;
+border-left:4px solid #f59e0b;
+padding:14px;
+border-radius:13px;
+margin:12px 0 18px;
+}
+
+.short-history h4{
+margin-bottom:5px;
+font-size:17px;
+}
+
+.short-history p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   BUTTON GRID
+================================================== */
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.action-btn{
+display:block;
+padding:12px 8px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:bold;
+transition:.2s;
+}
+
+.action-btn:active{
+transform:scale(.96);
+}
+
+.route{
+background:#1976d2;
+}
+
+.maps{
+background:#0f766e;
+}
+
+.hotel{
+background:#d97706;
+}
+
+.photo{
+background:#7c3aed;
+}
+
+.metro{
+background:#2563eb;
+}
+
+.bus{
+background:#15803d;
+}
+
+.cab{
+background:#ea580c;
+}
+
+.train{
+background:#6d28d9;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px;
+margin-top:18px;
+}
+
+.place-info-row{
+padding:8px 0;
+border-bottom:1px solid #e5e7eb;
+font-size:14px;
+}
+
+.place-info-row:last-child{
+border-bottom:0;
+}
+
+.place-info strong{
+display:inline-block;
+margin-right:5px;
+}
+
+
+/* ==================================================
+   NEXT PLACE ROUTE
+================================================== */
+
+.next-route{
+background:#eef7ff;
+border-left:4px solid #1976d2;
+border-radius:13px;
+padding:12px;
+margin-top:18px;
+font-size:13px;
+}
+
+.next-route strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   QUICK LINKS
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:17px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #1976d2;
+}
+
+.quick:nth-child(2){
+border-top-color:#138808;
+}
+
+.quick:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.quick:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:28px 15px;
+margin-top:35px;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:17px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:54px;
+height:54px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:26px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:17px 11px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.menu-card{
+min-width:78px;
+padding:5px 5px;
+font-size:9px;
+}
+
+.menu-card span{
+font-size:17px;
+}
+
+.menu-card small{
+font-size:7px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-line{
+font-size:13px;
+}
+
+.place-card{
+padding:18px 14px;
+}
+
+.place-header h3{
+font-size:21px;
+}
+
+.place-icon{
+font-size:40px;
+}
+
+.place-header span{
+font-size:14px;
+}
+
+.place-distance{
+font-size:11px;
+}
+
+.action-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.action-btn{
+font-size:11px;
+padding:11px 5px;
+}
+
+.place-info-row{
+font-size:13px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.quick{
+padding:14px 7px;
+font-size:13px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.menu-card{
+min-width:72px;
+}
+
+.action-btn{
+font-size:10px;
+}
+
+.place-header h3{
+font-size:19px;
+}
+
+.place-header span{
+font-size:13px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+North Goa Route
+</h1>
+
+<p>
+North Goa • Beaches • Forts • Shopping • Nightlife
+</p>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<a
+href="goa.html"
+class="back"
+>
+← Goa / गोवा
+</a>
+
+
+<!-- ==================================================
+     STICKY HORIZONTAL MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#aguada"
+class="menu-card"
+>
+<span>🏰</span>
+Aguada
+<small>Fort</small>
+</a>
+
+
+<a
+href="#calangute"
+class="menu-card"
+>
+<span>🏖️</span>
+Calangute
+<small>Beach</small>
+</a>
+
+
+<a
+href="#baga"
+class="menu-card"
+>
+<span>🌊</span>
+Baga
+<small>Beach</small>
+</a>
+
+
+<a
+href="#anjuna"
+class="menu-card"
+>
+<span>🏝️</span>
+Anjuna
+<small>Beach</small>
+</a>
+
+
+<a
+href="#chapora"
+class="menu-card"
+>
+<span>🏰</span>
+Chapora
+<small>Fort</small>
+</a>
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Map</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="hero">
+
+<h2>
+🏖️ North Goa Tourist Route
+</h2>
+
+<p>
+
+North Goa Goa के सबसे popular
+tourist areas में से एक है। यहाँ
+famous beaches, historical forts,
+shopping, nightlife और water
+activities आसानी से एक route में
+cover किए जा सकते हैं।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE NOTE
+================================================== -->
+
+<div class="distance-note">
+
+📍 <strong>Distance Note:</strong>
+
+<br><br>
+
+नीचे दी गई सभी distances
+<strong>approximate road distance</strong>
+हैं।
+
+<br><br>
+
+Distance को planning के लिए
+<strong>Panaji</strong> को सामान्य
+starting point मानकर बताया गया है।
+
+<br><br>
+
+Actual distance आपकी starting
+location, selected road, traffic
+और route के अनुसार कम-ज्यादा हो
+सकती है।
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE SUMMARY
+================================================== -->
+
+<div
+class="route-box"
+id="route"
+>
+
+<h3>
+🗺️ North Goa Main Route
+</h3>
+
+<p>
+पहली बार North Goa घूम रहे हैं तो
+पास-पास के places को इसी sequence
+में रखना practical रहेगा:
+</p>
+
+<div class="route-line">
+
+🏙️ Panaji
+
+→
+
+🏰 Fort Aguada
+
+→
+
+🏖️ Calangute Beach
+
+→
+
+🌊 Baga Beach
+
+→
+
+🏝️ Anjuna Beach
+
+→
+
+🏰 Chapora Fort
+
+</div>
+
+<div class="route-distance">
+📍 Panaji से पूरे route का लगभग 20–25 km area
+</div>
+
+<p>
+
+इस route को आराम से cover करने के
+लिए पूरे दिन का plan रखना ज्यादा
+comfortable रहेगा।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     FIRST TIME TIP
+================================================== -->
+
+<div class="info">
+
+<h3>
+📌 पहली बार North Goa जा रहे हैं?
+</h3>
+
+<p>
+
+सुबह historical Fort Aguada से
+शुरुआत करें।
+
+<br><br>
+
+फिर Calangute और Baga की तरफ
+आते हुए beach और lunch का plan
+कर सकते हैं।
+
+<br><br>
+
+शाम की तरफ Anjuna और फिर
+Chapora Fort को sunset के लिए
+रखा जा सकता है।
+
+<br><br>
+
+👉 Traffic और crowd के अनुसार
+timing बदल सकती है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     SECTION
+================================================== -->
+
+<h2 class="section-title">
+⭐ North Goa के प्रमुख Places
+</h2>
+
+
+<!-- ==================================================
+     FORT AGUADA
+================================================== -->
+
+<div
+class="place-card"
+id="aguada"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏰
+</div>
+
+<div>
+
+<h3>
+Fort Aguada
+</h3>
+
+<span>
+अगुआडा किला
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Fort • Portuguese Heritage • Sea View
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 7 km</strong>
+
+<br>
+
+<span>
+➡️ North Goa route का पहला major stop
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Fort Aguada Portuguese period का
+ऐतिहासिक fort है। यह समुद्र के
+पास बना हुआ है और अपने fort
+architecture तथा sea views के लिए
+प्रसिद्ध है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Sinquerim, North Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏰 Type:</strong>
+
+Historic Fort
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌊 Highlight:</strong>
+
+Arabian Sea View
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Route:</strong>
+
+Panaji → Fort Aguada
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Fort+Aguada+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Fort+Aguada+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Fort+Aguada+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 1
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Fort+Aguada+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 2
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Fort+Aguada+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Fort+Aguada+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Transport
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Fort+Aguada+Goa+Bus+Stop"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Fort+Aguada+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Thivim+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+➡️ <strong>Next Stop:</strong>
+
+Fort Aguada → Calangute Beach
+
+<br>
+
+📍 लगभग <strong>8 km</strong>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     CALANGUTE
+================================================== -->
+
+<div
+class="place-card"
+id="calangute"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏖️
+</div>
+
+<div>
+
+<h3>
+Calangute Beach
+</h3>
+
+<span>
+कलंगूट बीच
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Beach • Shopping • Water Activities
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 15 km</strong>
+
+<br>
+
+<span>
+➡️ Fort Aguada से लगभग 8 km
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌊 About Calangute
+</h4>
+
+<p>
+
+Calangute North Goa के सबसे
+popular beaches में से एक है।
+यह beach अपनी lively atmosphere,
+shopping, restaurants और
+water activities के लिए जाना जाता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Calangute, North Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏖️ Type:</strong>
+
+Popular Beach
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🛍️ Famous For:</strong>
+
+Shopping + Beach Life
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Route:</strong>
+
+Fort Aguada → Calangute
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Calangute+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Calangute+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Calangute+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 1
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Calangute+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 2
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Calangute+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Calangute+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Transport
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Calangute+Bus+Stand+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Calangute+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Thivim+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+➡️ <strong>Next Stop:</strong>
+
+Calangute Beach → Baga Beach
+
+<br>
+
+📍 लगभग <strong>2 km</strong>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     BAGA BEACH
+================================================== -->
+
+<div
+class="place-card"
+id="baga"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🌊
+</div>
+
+<div>
+
+<h3>
+Baga Beach
+</h3>
+
+<span>
+बागा बीच
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Beach • Nightlife • Water Sports
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 17 km</strong>
+
+<br>
+
+<span>
+➡️ Calangute से लगभग 2 km
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌴 About Baga Beach
+</h4>
+
+<p>
+
+Baga Beach North Goa के सबसे
+famous beach areas में से एक है।
+यह beach nightlife, restaurants,
+beach shacks और water sports
+के लिए popular है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Baga, North Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌊 Famous For:</strong>
+
+Beach + Water Sports
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌙 Special:</strong>
+
+Nightlife
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Route:</strong>
+
+Calangute → Baga
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Baga+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Baga+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Baga+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 1
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Baga+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 2
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Baga+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Baga+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Transport
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Baga+Bus+Stop+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Baga+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Thivim+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+➡️ <strong>Next Stop:</strong>
+
+Baga Beach → Anjuna Beach
+
+<br>
+
+📍 लगभग <strong>3 km</strong>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     ANJUNA BEACH
+================================================== -->
+
+<div
+class="place-card"
+id="anjuna"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏝️
+</div>
+
+<div>
+
+<h3>
+Anjuna Beach
+</h3>
+
+<span>
+अंजुना बीच
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Beach • Rocks • Market • Sunset
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 20 km</strong>
+
+<br>
+
+<span>
+➡️ Baga से लगभग 3 km
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌴 About Anjuna Beach
+</h4>
+
+<p>
+
+Anjuna Beach अपनी rocky coastline,
+scenic views, beach atmosphere और
+famous local market के लिए जाना
+जाता है। यहाँ sunset के समय
+अच्छा माहौल देखने को मिलता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Anjuna, North Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏝️ Famous For:</strong>
+
+Rocky Beach + Sunset
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🛍️ Nearby:</strong>
+
+Local Market
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Route:</strong>
+
+Baga → Anjuna
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Anjuna+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Anjuna+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Anjuna+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 1
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Anjuna+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 2
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Anjuna+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Anjuna+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Transport
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Anjuna+Bus+Stop+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Anjuna+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Thivim+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+➡️ <strong>Next Stop:</strong>
+
+Anjuna Beach → Chapora Fort
+
+<br>
+
+📍 लगभग <strong>6 km</strong>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     CHAPORA FORT
+================================================== -->
+
+<div
+class="place-card"
+id="chapora"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏰
+</div>
+
+<div>
+
+<h3>
+Chapora Fort
+</h3>
+
+<span>
+चपोरा किला
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Fort • Sunset • Viewpoint • Heritage
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 22 km</strong>
+
+<br>
+
+<span>
+➡️ Anjuna से लगभग 6 km
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Chapora Fort North Goa का प्रसिद्ध
+historic fort है। यह Chapora River
+और Arabian Sea के views के लिए
+popular है और sunset के समय
+खास तौर पर आकर्षक लगता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Chapora, North Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏰 Type:</strong>
+
+Historic Fort
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌅 Famous For:</strong>
+
+Sunset + Viewpoint
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Route:</strong>
+
+Anjuna → Chapora
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Chapora+Fort+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Chapora+Fort+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Chapora+Fort+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 1
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Chapora+Fort+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotel Option 2
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Chapora+Fort+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Chapora+Fort+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn metro"
+>
+🚇 Transport
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Chapora+Bus+Stop+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Chapora+Fort+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Thivim+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+🏁 <strong>North Goa Main Route Complete</strong>
+
+<br><br>
+
+🏰 Aguada
+→ 🏖️ Calangute
+→ 🌊 Baga
+→ 🏝️ Anjuna
+→ 🏰 Chapora
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     COMPLETE ROUTE
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+🗺️ Complete North Goa Route
+</h3>
+
+<p>
+
+अगर आप Panaji से North Goa sightseeing
+कर रहे हैं तो एक practical sequence:
+
+</p>
+
+<div class="route-line">
+
+🏙️ Panaji
+
+↓
+
+🏰 Fort Aguada
+
+↓
+
+🏖️ Calangute Beach
+
+↓
+
+🌊 Baga Beach
+
+↓
+
+🏝️ Anjuna Beach
+
+↓
+
+🏰 Chapora Fort
+
+</div>
+
+<div class="route-distance">
+📍 Approx route: 20–25 km area
+</div>
+
+<p>
+
+👉 Places के बीच की distance कम रखने
+से travelling time बचाया जा सकता है।
+Actual route और distance Google Maps
+पर departure के समय check करें।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Chapora+Fort+Goa&waypoints=Fort+Aguada+Goa%7CCalangute+Beach+Goa%7CBaga+Beach+Goa%7CAnjuna+Beach+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+📍 पूरा North Goa Route देखें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL PLANNING
+================================================== -->
+
+<h2
+class="section-title"
+id="travel"
+>
+🚗 North Goa Travel Planning
+</h2>
+
+
+<div class="info">
+
+<h3>
+⏰ Suggested Day Plan
+</h3>
+
+<p>
+
+🌅 <strong>Morning:</strong>
+
+Fort Aguada
+
+<br><br>
+
+🏖️ <strong>Late Morning:</strong>
+
+Calangute Beach
+
+<br><br>
+
+🍽️ <strong>Lunch:</strong>
+
+Calangute / Baga area
+
+<br><br>
+
+🌊 <strong>Afternoon:</strong>
+
+Baga Beach
+
+<br><br>
+
+🏝️ <strong>Evening:</strong>
+
+Anjuna Beach
+
+<br><br>
+
+🌅 <strong>Sunset:</strong>
+
+Chapora Fort
+
+<br><br>
+
+⚠️ यह केवल suggested planning है।
+Traffic, weather, crowd और opening
+timings के अनुसार sequence बदल सकता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK SERVICES
+================================================== -->
+
+<h2 class="section-title">
+🔎 North Goa Quick Search
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=North+Goa+tourist+places"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🗺️
+</span>
+
+North Goa Maps
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+in+North+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🏨
+</span>
+
+Hotels
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+in+North+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🍽️
+</span>
+
+Restaurants
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=North+Goa+tourist+places+beaches+forts"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+📸
+</span>
+
+Photos
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     NORTH GOA TIPS
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 North Goa Travel Tips
+</h3>
+
+<p>
+
+🏖️ Beach पर जाते समय पानी,
+sunscreen और जरूरी सामान साथ रखें।
+
+<br><br>
+
+🚗 एक ही दिन में North Goa और
+South Goa को combine करने से
+बचें।
+
+<br><br>
+
+🏰 Forts पर sunset देखने के लिए
+local access और timings पहले
+check करें।
+
+<br><br>
+
+🌊 Water sports केवल authorised
+operators के साथ करें।
+
+<br><br>
+
+🚦 North Goa में tourist season
+के दौरान traffic और parking के
+लिए extra time रखें।
+
+<br><br>
+
+🕒 सभी attraction की current
+timing और entry rules यात्रा से
+पहले verify करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     IMPORTANT DISTANCE
+================================================== -->
+
+<div class="distance-note">
+
+📍 <strong>Route Distance Summary</strong>
+
+<br><br>
+
+🏙️ Panaji → Fort Aguada:
+लगभग 7 km
+
+<br><br>
+
+🏰 Fort Aguada → Calangute:
+लगभग 8 km
+
+<br><br>
+
+🏖️ Calangute → Baga:
+लगभग 2 km
+
+<br><br>
+
+🌊 Baga → Anjuna:
+लगभग 3 km
+
+<br><br>
+
+🏝️ Anjuna → Chapora:
+लगभग 6 km
+
+<br><br>
+
+🏁 <strong>
+Panaji → Chapora:
+लगभग 22 km
+</strong>
+
+<br><br>
+
+⚠️ सभी distances approximate
+road distances हैं और actual
+route के अनुसार बदल सकती हैं।
+
+</div>
+
+
+<!-- ==================================================
+     BACK TO GOA
+================================================== -->
+
+<a
+href="goa.html"
+class="back"
+>
+← Back to Goa / गोवा
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+North Goa Route
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="Back to Top"
+>
+↑
+</button>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY > 300){
+
+topBtn.style.display =
+"block";
+
+}else{
+
+topBtn.style.display =
+"none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+</script>
+
+
+</body>
+
+</html>

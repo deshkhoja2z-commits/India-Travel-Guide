@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Old Goa Route | DESH KHOJ A2Z
+</title>
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   OLD GOA ROUTE
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:75px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#ff9933,
+#ffffff,
+#138808
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #138808;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:40px;
+}
+
+header h1{
+font-size:30px;
+margin:5px 0;
+}
+
+header p{
+font-size:14px;
+font-weight:bold;
+color:#34495e;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:18px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   STICKY HORIZONTAL MENU
+================================================== */
+
+.sticky-menu{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:6px 0;
+margin:0 -2px 15px;
+border-bottom:1px solid #ddd;
+}
+
+.horizontal-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:2px 3px 5px;
+scrollbar-width:none;
+-webkit-overflow-scrolling:touch;
+}
+
+.horizontal-menu::-webkit-scrollbar{
+display:none;
+}
+
+.menu-card{
+flex:0 0 auto;
+min-width:82px;
+background:white;
+color:#202124;
+text-decoration:none;
+border:1px solid #e1e5e8;
+border-radius:10px;
+padding:5px 7px;
+text-align:center;
+font-size:10px;
+font-weight:bold;
+box-shadow:0 2px 7px rgba(0,0,0,.10);
+line-height:1.2;
+}
+
+.menu-card span{
+display:block;
+font-size:18px;
+line-height:19px;
+margin-bottom:2px;
+}
+
+.menu-card small{
+display:block;
+font-size:8px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+.menu-card:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+background:white;
+border-left:6px solid #8b5cf6;
+border-radius:22px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.09);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+font-size:16px;
+}
+
+
+/* ==================================================
+   INFO
+================================================== */
+
+.info{
+background:#eef7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:17px;
+margin:20px 0 25px;
+font-size:14px;
+}
+
+.info h3{
+font-size:20px;
+margin-bottom:7px;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+background:#eef8ff;
+border-left:5px solid #1976d2;
+border-radius:16px;
+padding:15px;
+margin:18px 0 25px;
+font-size:13px;
+}
+
+.distance-note strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   ROUTE SUMMARY
+================================================== */
+
+.route-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:20px 0 28px;
+}
+
+.route-box h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.route-box p{
+font-size:14px;
+color:#555;
+}
+
+.route-line{
+font-weight:bold;
+font-size:15px;
+line-height:2;
+margin:10px 0;
+}
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:5px 0;
+}
+
+
+/* ==================================================
+   PLACE CARD
+================================================== */
+
+.place-card{
+background:white;
+border-radius:24px;
+padding:22px;
+margin:25px 0;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+border-left:6px solid #8b5cf6;
+scroll-margin-top:75px;
+}
+
+.place-card:nth-of-type(2){
+border-left-color:#ff9933;
+}
+
+.place-card:nth-of-type(3){
+border-left-color:#138808;
+}
+
+.place-card:nth-of-type(4){
+border-left-color:#1976d2;
+}
+
+.place-header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:14px;
+}
+
+.place-icon{
+font-size:48px;
+}
+
+.place-header h3{
+font-size:25px;
+margin:0;
+}
+
+.place-header span{
+display:block;
+font-size:16px;
+color:#666;
+margin-top:2px;
+}
+
+.category{
+display:inline-block;
+background:#f1f5f9;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#555;
+margin-bottom:14px;
+}
+
+
+/* ==================================================
+   DISTANCE BADGE
+================================================== */
+
+.place-distance{
+background:#eaf8ef;
+border-left:4px solid #138808;
+border-radius:12px;
+padding:10px 12px;
+margin:10px 0 15px;
+font-size:13px;
+font-weight:bold;
+color:#176b38;
+}
+
+.place-distance span{
+color:#555;
+font-weight:normal;
+}
+
+
+/* ==================================================
+   SHORT HISTORY
+================================================== */
+
+.short-history{
+background:#fff8e7;
+border-left:4px solid #f59e0b;
+padding:14px;
+border-radius:13px;
+margin:12px 0 18px;
+}
+
+.short-history h4{
+margin-bottom:5px;
+font-size:17px;
+}
+
+.short-history p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   BUTTON GRID
+================================================== */
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.action-btn{
+display:block;
+padding:12px 8px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:bold;
+transition:.2s;
+}
+
+.action-btn:active{
+transform:scale(.96);
+}
+
+.route{
+background:#1976d2;
+}
+
+.maps{
+background:#0f766e;
+}
+
+.hotel{
+background:#d97706;
+}
+
+.luxury{
+background:#7c3aed;
+}
+
+.restaurant{
+background:#dc2626;
+}
+
+.photo{
+background:#2563eb;
+}
+
+.metro{
+background:#2563eb;
+}
+
+.bus{
+background:#15803d;
+}
+
+.cab{
+background:#ea580c;
+}
+
+.train{
+background:#6d28d9;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px;
+margin-top:18px;
+}
+
+.place-info-row{
+padding:8px 0;
+border-bottom:1px solid #e5e7eb;
+font-size:14px;
+}
+
+.place-info-row:last-child{
+border-bottom:0;
+}
+
+.place-info strong{
+display:inline-block;
+margin-right:5px;
+}
+
+
+/* ==================================================
+   NEXT PLACE ROUTE
+================================================== */
+
+.next-route{
+background:#eef7ff;
+border-left:4px solid #1976d2;
+border-radius:13px;
+padding:12px;
+margin-top:18px;
+font-size:13px;
+}
+
+.next-route strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   QUICK LINKS
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:17px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #8b5cf6;
+}
+
+.quick:nth-child(2){
+border-top-color:#138808;
+}
+
+.quick:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.quick:nth-child(4){
+border-top-color:#1976d2;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:28px 15px;
+margin-top:35px;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:17px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:54px;
+height:54px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:26px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:17px 11px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.menu-card{
+min-width:78px;
+padding:5px 5px;
+font-size:9px;
+}
+
+.menu-card span{
+font-size:17px;
+}
+
+.menu-card small{
+font-size:7px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-line{
+font-size:13px;
+}
+
+.place-card{
+padding:18px 14px;
+}
+
+.place-header h3{
+font-size:21px;
+}
+
+.place-icon{
+font-size:40px;
+}
+
+.place-header span{
+font-size:14px;
+}
+
+.place-distance{
+font-size:11px;
+}
+
+.action-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.action-btn{
+font-size:11px;
+padding:11px 5px;
+}
+
+.place-info-row{
+font-size:13px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.quick{
+padding:14px 7px;
+font-size:13px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.menu-card{
+min-width:72px;
+}
+
+.action-btn{
+font-size:10px;
+}
+
+.place-header h3{
+font-size:19px;
+}
+
+.place-header span{
+font-size:13px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Old Goa Route
+</h1>
+
+<p>
+Old Goa • Heritage • Churches • History • Culture
+</p>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<a
+href="goa.html"
+class="back"
+>
+← Goa / गोवा
+</a>
+
+
+<!-- ==================================================
+     STICKY HORIZONTAL MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#bomjesus"
+class="menu-card"
+>
+<span>⛪</span>
+Bom Jesus
+<small>Basilica</small>
+</a>
+
+
+<a
+href="#secathedral"
+class="menu-card"
+>
+<span>⛪</span>
+Sé Cathedral
+<small>Church</small>
+</a>
+
+
+<a
+href="#francis"
+class="menu-card"
+>
+<span>🏛️</span>
+St Francis
+<small>Church</small>
+</a>
+
+
+<a
+href="#cajetan"
+class="menu-card"
+>
+<span>⛪</span>
+St Cajetan
+<small>Church</small>
+</a>
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Map</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="hero">
+
+<h2>
+⛪ Old Goa Heritage Route
+</h2>
+
+<p>
+
+Old Goa Goa का सबसे महत्वपूर्ण
+heritage और historical areas में
+से एक है। यहाँ Portuguese-era
+churches, basilicas, historic
+architecture और UNESCO World
+Heritage heritage sites को एक
+practical route में explore किया
+जा सकता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE NOTE
+================================================== -->
+
+<div class="distance-note">
+
+📍 <strong>Distance Note:</strong>
+
+<br><br>
+
+नीचे दी गई सभी distances
+<strong>approximate road distance</strong>
+हैं।
+
+<br><br>
+
+Old Goa sightseeing के लिए
+<strong>Panaji</strong> को सामान्य
+starting point माना गया है।
+
+<br><br>
+
+Old Goa के प्रमुख heritage
+places एक-दूसरे के काफी पास हैं,
+इसलिए local sightseeing में
+walking और short local rides
+दोनों practical हो सकते हैं।
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE SUMMARY
+================================================== -->
+
+<div
+class="route-box"
+id="route"
+>
+
+<h3>
+🗺️ Old Goa Main Route
+</h3>
+
+<p>
+
+पहली बार Old Goa घूम रहे हैं तो
+heritage places को इसी sequence
+में रखना practical रहेगा:
+
+</p>
+
+<div class="route-line">
+
+🏙️ Panaji
+
+→
+
+⛪ Basilica of Bom Jesus
+
+→
+
+⛪ Sé Cathedral
+
+→
+
+🏛️ Church of St Francis of Assisi
+
+→
+
+⛪ Church of St Cajetan
+
+</div>
+
+<div class="route-distance">
+📍 Panaji से Old Goa लगभग 10 km area
+</div>
+
+<p>
+
+इस heritage route को आराम से
+cover करने के लिए आधे दिन से
+एक दिन का plan रखा जा सकता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     FIRST TIME TIP
+================================================== -->
+
+<div class="info">
+
+<h3>
+📌 पहली बार Old Goa जा रहे हैं?
+</h3>
+
+<p>
+
+सुबह Basilica of Bom Jesus से
+शुरुआत करें।
+
+<br><br>
+
+इसके बाद Sé Cathedral और
+Church of St Francis of Assisi
+को पैदल या short local ride से
+cover किया जा सकता है।
+
+<br><br>
+
+अंत में Church of St Cajetan और
+nearby heritage area explore करें।
+
+<br><br>
+
+👉 Church opening hours,
+religious services और visitor
+rules के अनुसार timing बदल सकती है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     SECTION
+================================================== -->
+
+<h2 class="section-title">
+⭐ Old Goa के प्रमुख Places
+</h2>
+
+
+<!-- ==================================================
+     BASILICA OF BOM JESUS
+================================================== -->
+
+<div
+class="place-card"
+id="bomjesus"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+⛪
+</div>
+
+<div>
+
+<h3>
+Basilica of Bom Jesus
+</h3>
+
+<span>
+बेसिलिका ऑफ बॉम जीसस
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Heritage • Basilica • UNESCO Area
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 10 km</strong>
+
+<br>
+
+<span>
+➡️ Old Goa heritage route का main starting point
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Basilica of Bom Jesus Old Goa का
+प्रसिद्ध historic basilica है।
+यह Portuguese-era architecture
+और St. Francis Xavier से जुड़ी
+धार्मिक विरासत के लिए प्रसिद्ध है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Old Goa, Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⛪ Type:</strong>
+
+Historic Basilica
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏛️ Highlight:</strong>
+
+Heritage Architecture
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Route:</strong>
+
+Panaji → Basilica of Bom Jesus
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Basilica+of+Bom+Jesus+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Basilica+of+Bom+Jesus+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Basilica+of+Bom+Jesus+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Basilica+of+Bom+Jesus+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Basilica+of+Bom+Jesus+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Basilica+of+Bom+Jesus+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Old+Goa+Bus+Stop"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Basilica+of+Bom+Jesus+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Karmali+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+➡️ <strong>Next Stop:</strong>
+
+Basilica of Bom Jesus → Sé Cathedral
+
+<br>
+
+📍 लगभग <strong>1 km</strong>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     SE CATHEDRAL
+================================================== -->
+
+<div
+class="place-card"
+id="secathedral"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+⛪
+</div>
+
+<div>
+
+<h3>
+Sé Cathedral
+</h3>
+
+<span>
+से कैथेड्रल
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Heritage • Cathedral • Portuguese Architecture
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 10 km</strong>
+
+<br>
+
+<span>
+➡️ Basilica of Bom Jesus से लगभग 1 km
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Sé Cathedral Old Goa के सबसे
+महत्वपूर्ण historic churches में
+से एक है। इसकी विशाल Portuguese
+architecture और historic
+importance इसे Old Goa heritage
+route का प्रमुख हिस्सा बनाती है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Old Goa, Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⛪ Type:</strong>
+
+Historic Cathedral
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏛️ Highlight:</strong>
+
+Portuguese Architecture
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Route:</strong>
+
+Bom Jesus → Sé Cathedral
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Se+Cathedral+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Se+Cathedral+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Se+Cathedral+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Se+Cathedral+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Se+Cathedral+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Se+Cathedral+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Old+Goa+Bus+Stop"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Se+Cathedral+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Karmali+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+➡️ <strong>Next Stop:</strong>
+
+Sé Cathedral → Church of St Francis of Assisi
+
+<br>
+
+📍 लगभग <strong>0.5–1 km</strong>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     CHURCH OF ST FRANCIS
+================================================== -->
+
+<div
+class="place-card"
+id="francis"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏛️
+</div>
+
+<div>
+
+<h3>
+Church of St Francis of Assisi
+</h3>
+
+<span>
+सेंट फ्रांसिस ऑफ असीसी चर्च
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Heritage • Church • Museum • Architecture
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 10 km</strong>
+
+<br>
+
+<span>
+➡️ Sé Cathedral से लगभग 0.5–1 km
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Church of St Francis of Assisi
+Old Goa के historic church complex
+का महत्वपूर्ण हिस्सा है। इसकी
+architecture और धार्मिक-ऐतिहासिक
+महत्व इसे heritage sightseeing
+में खास बनाते हैं।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Old Goa, Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏛️ Type:</strong>
+
+Historic Church
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⭐ Highlight:</strong>
+
+Heritage Architecture
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Route:</strong>
+
+Sé Cathedral → St Francis
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Church+of+St+Francis+of+Assisi+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Church+of+St+Francis+of+Assisi+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Church+of+St+Francis+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Church+of+St+Francis+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Church+of+St+Francis+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Church+of+St+Francis+of+Assisi+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Old+Goa+Bus+Stop"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Church+of+St+Francis+of+Assisi+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Karmali+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+➡️ <strong>Next Stop:</strong>
+
+St Francis → Church of St Cajetan
+
+<br>
+
+📍 लगभग <strong>1 km</strong>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     CHURCH OF ST CAJETAN
+================================================== -->
+
+<div
+class="place-card"
+id="cajetan"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+⛪
+</div>
+
+<div>
+
+<h3>
+Church of St Cajetan
+</h3>
+
+<span>
+सेंट काजेतान चर्च
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Heritage • Church • Architecture • History
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 11 km</strong>
+
+<br>
+
+<span>
+➡️ Old Goa heritage area के अंदर
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 Short History
+</h4>
+
+<p>
+
+Church of St Cajetan Old Goa की
+प्रसिद्ध historic churches में से
+एक है। इसकी architecture और
+historic surroundings इसे Old Goa
+heritage route का अच्छा final stop
+बनाते हैं।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Old Goa, Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⛪ Type:</strong>
+
+Historic Church
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏛️ Highlight:</strong>
+
+Historic Architecture
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Route:</strong>
+
+St Francis → St Cajetan
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Church+of+St+Cajetan+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Church+of+St+Cajetan+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Church+of+St+Cajetan+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Church+of+St+Cajetan+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Church+of+St+Cajetan+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Church+of+St+Cajetan+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Old+Goa+Bus+Stop"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Church+of+St+Cajetan+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Karmali+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+🏁 <strong>Old Goa Heritage Route Complete</strong>
+
+<br><br>
+
+⛪ Bom Jesus
+→ ⛪ Sé Cathedral
+→ 🏛️ St Francis
+→ ⛪ St Cajetan
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     COMPLETE ROUTE
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+🗺️ Complete Old Goa Route
+</h3>
+
+<p>
+
+अगर आप Panaji से Old Goa heritage
+sightseeing कर रहे हैं तो practical
+sequence:
+
+</p>
+
+<div class="route-line">
+
+🏙️ Panaji
+
+↓
+
+⛪ Basilica of Bom Jesus
+
+↓
+
+⛪ Sé Cathedral
+
+↓
+
+🏛️ Church of St Francis of Assisi
+
+↓
+
+⛪ Church of St Cajetan
+
+</div>
+
+<div class="route-distance">
+📍 Panaji → Old Goa लगभग 10–11 km area
+</div>
+
+<p>
+
+👉 Old Goa के प्रमुख heritage
+places एक-दूसरे के काफी पास हैं।
+Actual route और distance Google
+Maps पर departure के समय check करें।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Church+of+St+Cajetan+Old+Goa&waypoints=Basilica+of+Bom+Jesus+Goa%7CSe+Cathedral+Old+Goa%7CChurch+of+St+Francis+of+Assisi+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+📍 पूरा Old Goa Route देखें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL PLANNING
+================================================== -->
+
+<h2
+class="section-title"
+id="travel"
+>
+🚗 Old Goa Travel Planning
+</h2>
+
+
+<div class="info">
+
+<h3>
+⏰ Suggested Day Plan
+</h3>
+
+<p>
+
+🌅 <strong>Morning:</strong>
+
+Basilica of Bom Jesus
+
+<br><br>
+
+⛪ <strong>Late Morning:</strong>
+
+Sé Cathedral
+
+<br><br>
+
+🏛️ <strong>Afternoon:</strong>
+
+Church of St Francis of Assisi
+
+<br><br>
+
+🍽️ <strong>Lunch:</strong>
+
+Old Goa / Panaji area
+
+<br><br>
+
+⛪ <strong>Late Afternoon:</strong>
+
+Church of St Cajetan
+
+<br><br>
+
+🌆 <strong>Evening:</strong>
+
+Panaji या अगली route destination
+की तरफ निकलें
+
+<br><br>
+
+⚠️ यह केवल suggested planning है।
+Traffic, weather, church timings,
+religious services और crowd के
+अनुसार sequence बदल सकता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK SERVICES
+================================================== -->
+
+<h2 class="section-title">
+🔎 Old Goa Quick Search
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Old+Goa+Heritage+Places"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🗺️
+</span>
+
+Old Goa Maps
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+in+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🏨
+</span>
+
+Budget Hotels
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+⭐
+</span>
+
+Luxury Hotels
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+in+Old+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🍽️
+</span>
+
+Restaurants
+
+</a>
+
+
+</div>
+
+  <!-- ==================================================
+     OLD GOA TIPS
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 Old Goa Travel Tips
+</h3>
+
+<p>
+
+⛪ Churches और religious places
+में appropriate dress और
+visitor rules follow करें।
+
+<br><br>
+
+📸 Photography हर जगह allowed
+हो यह जरूरी नहीं है। Local
+instructions follow करें।
+
+<br><br>
+
+🕒 Church opening timings और
+religious services पहले check करें।
+
+<br><br>
+
+🚗 Heritage area में parking के
+लिए extra time रखें।
+
+<br><br>
+
+🚶 Nearby churches को walking
+से cover करना convenient हो
+सकता है।
+
+<br><br>
+
+🍽️ Lunch और refreshments के लिए
+Old Goa / Panaji area में options
+देख सकते हैं।
+
+<br><br>
+
+🕒 सभी attraction की current
+timing और entry rules यात्रा से
+पहले verify करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     BACK TO GOA
+================================================== -->
+
+<a
+href="goa.html"
+class="back"
+>
+← Back to Goa / गोवा
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Old Goa Route
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="Back to Top"
+>
+↑
+</button>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY > 300){
+
+topBtn.style.display =
+"block";
+
+}else{
+
+topBtn.style.display =
+"none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+</script>
+
+
+</body>
+
+</html>

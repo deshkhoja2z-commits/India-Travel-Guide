@@ -1,0 +1,2283 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Dudhsagar Nature Route | DESH KHOJ A2Z
+</title>
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   DUDHSAGAR NATURE ROUTE
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:75px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#ff9933,
+#ffffff,
+#138808
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #138808;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:40px;
+}
+
+header h1{
+font-size:30px;
+margin:5px 0;
+}
+
+header p{
+font-size:14px;
+font-weight:bold;
+color:#34495e;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:18px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   STICKY HORIZONTAL MENU
+================================================== */
+
+.sticky-menu{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:6px 0;
+margin:0 -2px 15px;
+border-bottom:1px solid #ddd;
+}
+
+.horizontal-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:2px 3px 5px;
+scrollbar-width:none;
+-webkit-overflow-scrolling:touch;
+}
+
+.horizontal-menu::-webkit-scrollbar{
+display:none;
+}
+
+.menu-card{
+flex:0 0 auto;
+min-width:82px;
+background:white;
+color:#202124;
+text-decoration:none;
+border:1px solid #e1e5e8;
+border-radius:10px;
+padding:5px 7px;
+text-align:center;
+font-size:10px;
+font-weight:bold;
+box-shadow:0 2px 7px rgba(0,0,0,.10);
+line-height:1.2;
+}
+
+.menu-card span{
+display:block;
+font-size:18px;
+line-height:19px;
+margin-bottom:2px;
+}
+
+.menu-card small{
+display:block;
+font-size:8px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+.menu-card:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+background:white;
+border-left:6px solid #138808;
+border-radius:22px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.09);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+font-size:16px;
+}
+
+
+/* ==================================================
+   INFO
+================================================== */
+
+.info{
+background:#eef7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:17px;
+margin:20px 0 25px;
+font-size:14px;
+}
+
+.info h3{
+font-size:20px;
+margin-bottom:7px;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+background:#eef8ff;
+border-left:5px solid #1976d2;
+border-radius:16px;
+padding:15px;
+margin:18px 0 25px;
+font-size:13px;
+}
+
+.distance-note strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   ROUTE SUMMARY
+================================================== */
+
+.route-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:20px 0 28px;
+}
+
+.route-box h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.route-box p{
+font-size:14px;
+color:#555;
+}
+
+.route-line{
+font-weight:bold;
+font-size:15px;
+line-height:2;
+margin:10px 0;
+}
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:5px 0;
+}
+
+
+/* ==================================================
+   PLACE CARD
+================================================== */
+
+.place-card{
+background:white;
+border-radius:24px;
+padding:22px;
+margin:25px 0;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+border-left:6px solid #138808;
+scroll-margin-top:75px;
+}
+
+.place-card:nth-of-type(2){
+border-left-color:#1976d2;
+}
+
+.place-card:nth-of-type(3){
+border-left-color:#ff9933;
+}
+
+.place-card:nth-of-type(4){
+border-left-color:#8b5cf6;
+}
+
+.place-header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:14px;
+}
+
+.place-icon{
+font-size:48px;
+}
+
+.place-header h3{
+font-size:25px;
+margin:0;
+}
+
+.place-header span{
+display:block;
+font-size:16px;
+color:#666;
+margin-top:2px;
+}
+
+.category{
+display:inline-block;
+background:#f1f5f9;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#555;
+margin-bottom:14px;
+}
+
+
+/* ==================================================
+   DISTANCE BADGE
+================================================== */
+
+.place-distance{
+background:#eaf8ef;
+border-left:4px solid #138808;
+border-radius:12px;
+padding:10px 12px;
+margin:10px 0 15px;
+font-size:13px;
+font-weight:bold;
+color:#176b38;
+}
+
+.place-distance span{
+color:#555;
+font-weight:normal;
+}
+
+
+/* ==================================================
+   SHORT HISTORY
+================================================== */
+
+.short-history{
+background:#fff8e7;
+border-left:4px solid #f59e0b;
+padding:14px;
+border-radius:13px;
+margin:12px 0 18px;
+}
+
+.short-history h4{
+margin-bottom:5px;
+font-size:17px;
+}
+
+.short-history p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   BUTTON GRID
+================================================== */
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.action-btn{
+display:block;
+padding:12px 8px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:bold;
+transition:.2s;
+}
+
+.action-btn:active{
+transform:scale(.96);
+}
+
+.route{
+background:#1976d2;
+}
+
+.maps{
+background:#0f766e;
+}
+
+.hotel{
+background:#d97706;
+}
+
+.luxury{
+background:#7c3aed;
+}
+
+.restaurant{
+background:#dc2626;
+}
+
+.photo{
+background:#2563eb;
+}
+
+.metro{
+background:#2563eb;
+}
+
+.bus{
+background:#15803d;
+}
+
+.cab{
+background:#ea580c;
+}
+
+.train{
+background:#6d28d9;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px;
+margin-top:18px;
+}
+
+.place-info-row{
+padding:8px 0;
+border-bottom:1px solid #e5e7eb;
+font-size:14px;
+}
+
+.place-info-row:last-child{
+border-bottom:0;
+}
+
+.place-info strong{
+display:inline-block;
+margin-right:5px;
+}
+
+
+/* ==================================================
+   NEXT PLACE ROUTE
+================================================== */
+
+.next-route{
+background:#eef7ff;
+border-left:4px solid #1976d2;
+border-radius:13px;
+padding:12px;
+margin-top:18px;
+font-size:13px;
+}
+
+.next-route strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   QUICK LINKS
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:17px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #138808;
+}
+
+.quick:nth-child(2){
+border-top-color:#1976d2;
+}
+
+.quick:nth-child(3){
+border-top-color:#dc2626;
+}
+
+.quick:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:28px 15px;
+margin-top:35px;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:17px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:54px;
+height:54px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:26px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:17px 11px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.menu-card{
+min-width:78px;
+padding:5px 5px;
+font-size:9px;
+}
+
+.menu-card span{
+font-size:17px;
+}
+
+.menu-card small{
+font-size:7px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-line{
+font-size:13px;
+}
+
+.place-card{
+padding:18px 14px;
+}
+
+.place-header h3{
+font-size:21px;
+}
+
+.place-icon{
+font-size:40px;
+}
+
+.place-header span{
+font-size:14px;
+}
+
+.place-distance{
+font-size:11px;
+}
+
+.action-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.action-btn{
+font-size:11px;
+padding:11px 5px;
+}
+
+.place-info-row{
+font-size:13px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.quick{
+padding:14px 7px;
+font-size:13px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.menu-card{
+min-width:72px;
+}
+
+.action-btn{
+font-size:10px;
+}
+
+.place-header h3{
+font-size:19px;
+}
+
+.place-header span{
+font-size:13px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Dudhsagar Nature Route
+</h1>
+
+<p>
+Dudhsagar • Waterfall • Forest • Wildlife • Nature
+</p>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container">
+
+
+<a
+href="goa.html"
+class="back"
+>
+← Goa / गोवा
+</a>
+
+
+<!-- ==================================================
+     STICKY HORIZONTAL MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#mollem"
+class="menu-card"
+>
+<span>🌳</span>
+Mollem
+<small>Nature</small>
+</a>
+
+
+<a
+href="#wildlife"
+class="menu-card"
+>
+<span>🐅</span>
+Wildlife
+<small>Sanctuary</small>
+</a>
+
+
+<a
+href="#tambdi"
+class="menu-card"
+>
+<span>🛕</span>
+Tambdi
+<small>Surla</small>
+</a>
+
+
+<a
+href="#dudhsagar"
+class="menu-card"
+>
+<span>💦</span>
+Dudhsagar
+<small>Falls</small>
+</a>
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Map</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div class="hero">
+
+<h2>
+💦 Dudhsagar Nature & Adventure Route
+</h2>
+
+<p>
+
+Dudhsagar Goa के सबसे प्रसिद्ध
+nature destinations में से एक है।
+यह route waterfall, forest,
+wildlife और historical temple
+को एक साथ explore करने के लिए
+बनाया गया है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE NOTE
+================================================== -->
+
+<div class="distance-note">
+
+📍 <strong>Distance Note:</strong>
+
+<br><br>
+
+नीचे दी गई सभी distances
+<strong>approximate road distance</strong>
+हैं।
+
+<br><br>
+
+Planning के लिए
+<strong>Panaji / Goa</strong> से
+distance का अंदाजा दिया गया है।
+
+<br><br>
+
+Dudhsagar Falls तक actual access
+route मौसम, forest permissions,
+local transport और permitted entry
+के अनुसार बदल सकता है।
+
+<br><br>
+
+⚠️ Monsoon और forest conditions
+के दौरान access rules अलग हो सकते हैं।
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE SUMMARY
+================================================== -->
+
+<div
+class="route-box"
+id="route"
+>
+
+<h3>
+🗺️ Dudhsagar Nature Main Route
+</h3>
+
+<p>
+
+Nature और waterfall देखने के लिए
+पास-पास के places को इस sequence
+में रखना practical रहेगा:
+
+</p>
+
+<div class="route-line">
+
+🏙️ Panaji
+
+→
+
+🌳 Mollem
+
+→
+
+🐅 Bhagwan Mahavir Wildlife Sanctuary
+
+→
+
+🛕 Tambdi Surla
+
+→
+
+💦 Dudhsagar Falls
+
+</div>
+
+<div class="route-distance">
+📍 Panaji से Dudhsagar region लगभग 60 km+ area
+</div>
+
+<p>
+
+इस route के लिए पूरा दिन या
+overnight stay रखना ज्यादा
+comfortable हो सकता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     FIRST TIME TIP
+================================================== -->
+
+<div class="info">
+
+<h3>
+📌 पहली बार Dudhsagar जा रहे हैं?
+</h3>
+
+<p>
+
+सुबह जल्दी Mollem side से
+शुरुआत करना बेहतर रहेगा।
+
+<br><br>
+
+पहले forest / wildlife area और
+Tambdi Surla को route में रखें।
+
+<br><br>
+
+इसके बाद Dudhsagar Falls की
+journey करें।
+
+<br><br>
+
+💡 Dudhsagar का access सामान्य
+tourist spot जैसा simple नहीं है।
+Forest rules, authorised access,
+weather और local conditions को
+पहले check करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     SECTION
+================================================== -->
+
+<h2 class="section-title">
+⭐ Dudhsagar Nature Route के प्रमुख Places
+</h2>
+
+
+<!-- ==================================================
+     MOLLEM
+================================================== -->
+
+<div
+class="place-card"
+id="mollem"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🌳
+</div>
+
+<div>
+
+<h3>
+Mollem
+</h3>
+
+<span>
+मोलेम
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Nature • Forest • Dudhsagar Gateway
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 55 km</strong>
+
+<br>
+
+<span>
+➡️ Dudhsagar nature route का main base area
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌿 About Mollem
+</h4>
+
+<p>
+
+Mollem Goa के eastern side में
+स्थित एक important forest region
+है। Dudhsagar और Bhagwan Mahavir
+Wildlife Sanctuary की तरफ जाने
+वाले travellers के लिए यह प्रमुख
+base area माना जाता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Mollem, Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌳 Type:</strong>
+
+Forest / Nature Area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>💦 Famous For:</strong>
+
+Dudhsagar Region
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Route:</strong>
+
+Panaji → Mollem
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mollem+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Mollem+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Mollem+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Mollem+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Mollem+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Mollem+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Mollem+Goa+Bus+Stop"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Mollem+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Madgaon+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+➡️ <strong>Next Stop:</strong>
+
+Mollem → Bhagwan Mahavir Wildlife Sanctuary
+
+<br>
+
+📍 लगभग <strong>0–5 km area</strong>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     BHAGWAN MAHAVIR WILDLIFE SANCTUARY
+================================================== -->
+
+<div
+class="place-card"
+id="wildlife"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🐅
+</div>
+
+<div>
+
+<h3>
+Bhagwan Mahavir Wildlife Sanctuary
+</h3>
+
+<span>
+भगवान महावीर वन्यजीव अभयारण्य
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Wildlife • Forest • Nature • Adventure
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 55–60 km</strong>
+
+<br>
+
+<span>
+➡️ Mollem area के आसपास
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌳 About Wildlife Sanctuary
+</h4>
+
+<p>
+
+Bhagwan Mahavir Wildlife Sanctuary
+Goa का महत्वपूर्ण forest और
+wildlife area है। यह Western Ghats
+के natural landscape का हिस्सा है
+और Dudhsagar region के साथ
+nature lovers के लिए खास जगह है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Mollem, Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🐾 Type:</strong>
+
+Wildlife Sanctuary
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌳 Highlight:</strong>
+
+Forest + Wildlife
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Route:</strong>
+
+Mollem → Wildlife Sanctuary
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Bhagwan+Mahavir+Wildlife+Sanctuary+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Bhagwan+Mahavir+Wildlife+Sanctuary+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Bhagwan+Mahavir+Wildlife+Sanctuary+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Bhagwan+Mahavir+Wildlife+Sanctuary+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Mollem+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Bhagwan+Mahavir+Wildlife+Sanctuary+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Mollem+Bus+Stop+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Bhagwan+Mahavir+Wildlife+Sanctuary+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Madgaon+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+➡️ <strong>Next Stop:</strong>
+
+Wildlife Sanctuary → Tambdi Surla Temple
+
+<br>
+
+📍 लगभग <strong>15 km area</strong>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     TAMBDI SURLA
+================================================== -->
+
+  <div
+class="place-card"
+id="tambdi"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🛕
+</div>
+
+<div>
+
+<h3>
+Tambdi Surla Temple
+</h3>
+
+<span>
+तांबड़ी सुरला मंदिर
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Temple • Heritage • Forest • Nature
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 65 km</strong>
+
+<br>
+
+<span>
+➡️ Wildlife Sanctuary area से लगभग 15 km
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About Tambdi Surla
+</h4>
+
+<p>
+
+Tambdi Surla का प्राचीन मंदिर
+घने forest area के बीच स्थित है।
+यह अपनी पुरानी stone architecture,
+शांत natural surroundings और
+heritage importance के लिए
+प्रसिद्ध है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Tambdi Surla, Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🛕 Type:</strong>
+
+Historic Temple
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌳 Highlight:</strong>
+
+Forest + Stone Architecture
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Route:</strong>
+
+Wildlife Sanctuary → Tambdi Surla
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Tambdi+Surla+Temple+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Tambdi+Surla+Temple+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Tambdi+Surla+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Tambdi+Surla+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Tambdi+Surla+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Tambdi+Surla+Temple+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Tambdi+Surla+Goa+Bus+Stop"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Tambdi+Surla+Temple+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Madgaon+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+➡️ <strong>Next Stop:</strong>
+
+Tambdi Surla → Dudhsagar Falls
+
+<br>
+
+📍 लगभग <strong>35 km area</strong>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     DUDHSAGAR FALLS
+================================================== -->
+
+<div
+class="place-card"
+id="dudhsagar"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+💦
+</div>
+
+<div>
+
+<h3>
+Dudhsagar Falls
+</h3>
+
+<span>
+दूधसागर झरना
+</span>
+
+</div>
+
+</div>
+
+<div class="category">
+Waterfall • Nature • Adventure • Forest
+</div>
+
+
+<div class="place-distance">
+
+📍 Panaji से:
+<strong>लगभग 60–65 km</strong>
+
+<br>
+
+<span>
+➡️ Mollem / forest route से access conditions पर निर्भर
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+💧 About Dudhsagar Falls
+</h4>
+
+<p>
+
+Dudhsagar Falls Goa और Karnataka
+border region के पास Western Ghats
+में स्थित प्रसिद्ध waterfall है।
+मानसून के दौरान इसका विशाल
+water flow इसे बेहद आकर्षक
+बनाता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Dudhsagar, Goa
+
+</div>
+
+<div class="place-info-row">
+
+<strong>💦 Type:</strong>
+
+Waterfall
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌳 Highlight:</strong>
+
+Forest + Waterfall
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⚠️ Access:</strong>
+
+Official / authorised access rules check करें
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Dudhsagar+Falls+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Current Location Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dudhsagar+Falls+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Dudhsagar+Falls+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Dudhsagar+Falls+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Luxury Hotel
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Dudhsagar+Falls+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Dudhsagar+Falls+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dudhsagar+Falls+Goa+Bus+Stop"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Nearby Bus
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Dudhsagar+Falls+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Castle+Rock+Railway+Station+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="next-route">
+
+🏁 <strong>Dudhsagar Nature Route Complete</strong>
+
+<br><br>
+
+🌳 Mollem
+→ 🐅 Wildlife Sanctuary
+→ 🛕 Tambdi Surla
+→ 💦 Dudhsagar Falls
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     COMPLETE ROUTE
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+🗺️ Complete Dudhsagar Nature Route
+</h3>
+
+<p>
+
+अगर आप Goa से Dudhsagar और
+nearby nature places explore कर
+रहे हैं तो practical sequence:
+
+</p>
+
+<div class="route-line">
+
+🏙️ Panaji
+
+↓
+
+🌳 Mollem
+
+↓
+
+🐅 Bhagwan Mahavir Wildlife Sanctuary
+
+↓
+
+🛕 Tambdi Surla Temple
+
+↓
+
+💦 Dudhsagar Falls
+
+</div>
+
+<div class="route-distance">
+📍 Panaji से Dudhsagar region लगभग 60–65 km
+</div>
+
+<p>
+
+👉 Nature और forest locations के
+बीच travelling time को ध्यान में
+रखकर इस route को पूरा दिन देना
+बेहतर रहेगा।
+
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Dudhsagar+Falls+Goa&waypoints=Mollem+Goa%7CBhagwan+Mahavir+Wildlife+Sanctuary+Goa%7CTambdi+Surla+Temple+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+📍 पूरा Dudhsagar Route देखें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL PLANNING
+================================================== -->
+
+<h2
+class="section-title"
+id="travel"
+>
+🚗 Dudhsagar Travel Planning
+</h2>
+
+
+<div class="info">
+
+<h3>
+⏰ Suggested Day Plan
+</h3>
+
+<p>
+
+🌅 <strong>Early Morning:</strong>
+
+Goa / Panaji से निकलें
+
+<br><br>
+
+🌳 <strong>Morning:</strong>
+
+Mollem area
+
+<br><br>
+
+🐅 <strong>Late Morning:</strong>
+
+Bhagwan Mahavir Wildlife
+Sanctuary area
+
+<br><br>
+
+🛕 <strong>Afternoon:</strong>
+
+Tambdi Surla Temple
+
+<br><br>
+
+💦 <strong>Main Attraction:</strong>
+
+Dudhsagar Falls
+
+<br><br>
+
+🏙️ <strong>Evening:</strong>
+
+Return / overnight stay
+के लिए suitable nearby area
+
+<br><br>
+
+⚠️ यह केवल suggested planning है।
+Forest rules, weather, access,
+local transport और seasonal
+conditions के अनुसार plan बदल
+सकता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK SERVICES
+================================================== -->
+
+<h2 class="section-title">
+🔎 Dudhsagar Quick Search
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dudhsagar+Falls+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🗺️
+</span>
+
+Dudhsagar Maps
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Dudhsagar+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🏨
+</span>
+
+Budget Hotels
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Dudhsagar+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+⭐
+</span>
+
+Luxury Hotels
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Dudhsagar+Goa"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🍽️
+</span>
+
+Restaurants
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     DUDHSAGAR TIPS
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 Dudhsagar Nature Travel Tips
+</h3>
+
+<p>
+
+💦 Dudhsagar जाने से पहले
+current access conditions जरूर
+check करें।
+
+<br><br>
+
+🌧️ Monsoon में waterfall बहुत
+खूबसूरत होता है लेकिन रास्ते और
+access conditions challenging
+हो सकती हैं।
+
+<br><br>
+
+🥾 Forest / waterfall route पर
+comfortable footwear पहनें।
+
+<br><br>
+
+🎒 पानी, snacks और जरूरी
+personal सामान साथ रखें।
+
+<br><br>
+
+🐾 Wildlife area में animals से
+safe distance रखें और forest
+rules follow करें।
+
+<br><br>
+
+🚙 केवल authorised / permitted
+transport और access route का
+उपयोग करें।
+
+<br><br>
+
+🕒 Entry timing, permissions,
+local transport और seasonal
+restrictions यात्रा से पहले
+verify करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     IMPORTANT DISTANCE
+================================================== -->
+
+<div class="distance-note">
+
+📍 <strong>Route Distance Summary</strong>
+
+<br><br>
+
+🏙️ Panaji → Mollem:
+लगभग 55 km
+
+<br><br>
+
+🌳 Mollem → Wildlife Sanctuary:
+लगभग 0–5 km area
+
+<br><br>
+
+🐅 Wildlife Sanctuary → Tambdi Surla:
+लगभग 15 km area
+
+<br><br>
+
+🛕 Tambdi Surla → Dudhsagar region:
+लगभग 35 km area
+
+<br><br>
+
+🏁 <strong>
+Panaji → Dudhsagar region:
+लगभग 60–65 km
+</strong>
+
+<br><br>
+
+⚠️ सभी distances approximate
+road / route distances हैं।
+Forest access route अलग हो सकता है।
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE WARNING
+================================================== -->
+
+<div class="info">
+
+<h3>
+⚠️ Important Access Note
+</h3>
+
+<p>
+
+Dudhsagar Falls एक forest और
+waterfall destination है। इसलिए
+यह सामान्य city sightseeing की
+तरह केवल Google Maps destination
+से पूरी तरह accessible नहीं माना
+जाना चाहिए।
+
+<br><br>
+
+👉 जाने से पहले official forest
+rules, permitted entry, authorised
+vehicle / local access, weather
+और current restrictions जरूर
+check करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     BACK TO GOA
+================================================== -->
+
+<a
+href="goa.html"
+class="back"
+>
+← Back to Goa / गोवा
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+Dudhsagar Nature Route
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="Back to Top"
+>
+↑
+</button>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY > 300){
+
+topBtn.style.display =
+"block";
+
+}else{
+
+topBtn.style.display =
+"none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+</script>
+
+
+</body>
+
+</html>
