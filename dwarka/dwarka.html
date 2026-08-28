@@ -1,0 +1,2861 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Dwarka | द्वारका Travel Guide | DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   SMALL STICKY PLACE MENU
+================================================== */
+
+.place-nav-wrapper{
+    position:sticky;
+    top:0;
+    z-index:9999;
+
+    width:100%;
+
+    background:#ffffff;
+
+    margin:0 0 18px 0;
+
+    padding:5px 0;
+
+    border-bottom:1px solid #eeeeee;
+
+    box-shadow:0 3px 12px rgba(0,0,0,0.08);
+}
+
+
+/* HORIZONTAL MENU */
+
+.place-nav{
+
+    display:flex;
+
+    gap:7px;
+
+    width:100%;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    padding:3px 4px 7px 4px;
+
+    scroll-behavior:smooth;
+
+    -webkit-overflow-scrolling:touch;
+
+    scrollbar-width:thin;
+}
+
+
+/* SCROLLBAR */
+
+.place-nav::-webkit-scrollbar{
+    height:4px;
+}
+
+.place-nav::-webkit-scrollbar-thumb{
+    background:#bdbdbd;
+    border-radius:20px;
+}
+
+.place-nav::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+
+/* ==================================================
+   SMALL THIN TABS
+================================================== */
+
+.place-tab{
+
+    flex:0 0 auto;
+
+    min-width:108px;
+
+    height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:5px;
+
+    padding:3px 8px;
+
+    background:#ffffff;
+
+    border:1px solid #e5e5e5;
+
+    border-radius:11px;
+
+    box-shadow:0 2px 7px rgba(0,0,0,0.07);
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+    transition:0.2s;
+}
+
+
+.place-tab .tab-icon{
+    font-size:18px;
+    line-height:1;
+}
+
+
+.place-tab small{
+    display:block;
+    margin-top:1px;
+    font-size:9px;
+    color:#777;
+    font-weight:600;
+}
+
+
+.place-tab:active{
+    transform:scale(0.96);
+}
+
+
+/* ==================================================
+   MOBILE MENU
+================================================== */
+
+@media(max-width:600px){
+
+    .place-nav-wrapper{
+
+        top:0;
+
+        margin:0 0 15px 0;
+
+        padding:4px 0;
+
+    }
+
+
+    .place-nav{
+
+        gap:6px;
+
+        padding:2px 3px 6px 3px;
+
+    }
+
+
+    .place-tab{
+
+        min-width:108px;
+
+        height:43px;
+
+        padding:3px 8px;
+
+        border-radius:10px;
+
+        font-size:11px;
+
+    }
+
+
+    .place-tab .tab-icon{
+        font-size:16px;
+    }
+
+
+    .place-tab small{
+        font-size:8.5px;
+    }
+
+}
+
+
+/* ==================================================
+   DETAIL SCROLL POSITION
+================================================== */
+
+.place-detail{
+    scroll-margin-top:75px;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+
+    background:#eef7ff;
+
+    border:1px solid #2196f3;
+
+    border-left:6px solid #1976d2;
+
+    border-radius:14px;
+
+    padding:15px 16px;
+
+    margin:15px 0 22px 0;
+
+    color:#222;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+
+.distance-note strong{
+    color:#0d47a1;
+}
+
+
+/* ==================================================
+   DISTANCE ON PLACE CARD
+================================================== */
+
+.place-distance{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    margin-top:9px;
+
+    padding:6px 11px;
+
+    background:#f1f7ff;
+
+    border-radius:20px;
+
+    color:#1769aa;
+
+    font-size:13px;
+
+    font-weight:700;
+}
+
+
+/* START POINT */
+
+.place-distance.start{
+    background:#eef9ee;
+    color:#188038;
+}
+
+
+/* ==================================================
+   PLACE CARD DETAIL
+================================================== */
+
+.place-detail{
+    scroll-margin-top:75px;
+}
+
+
+/* ==================================================
+   BOTTOM NAVIGATION
+================================================== */
+
+.bottom-navigation{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin:25px 0;
+}
+
+
+.bottom-nav-btn{
+
+    display:inline-block;
+
+    padding:10px 16px;
+
+    background:#ffffff;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    color:#1769aa;
+
+    font-weight:700;
+
+}
+
+
+/* ==================================================
+   HIDE OLD FIXED TEXT MENU
+================================================== */
+
+.fixed-place-menu{
+    display:none !important;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     TOP ANCHOR
+================================================== -->
+
+<div id="top"></div>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Dwarka / द्वारका
+</h1>
+
+<p>
+Dwarkadhish • Temple • Jyotirlinga • Beach • Heritage
+</p>
+
+
+<!-- SEARCH -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Dwarka में place खोजें..."
+autocomplete="off"
+>
+
+<div class="search-icon">
+🔍
+</div>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<div class="container" id="place-menu">
+
+
+<!-- BACK -->
+
+<a
+href="../index.html"
+class="back"
+>
+← DESH KHOJ A2Z
+</a>
+
+
+<!-- ==================================================
+     TITLE BOX
+================================================== -->
+
+<div class="title-box">
+
+<h2>
+🛕 Dwarka Travel Guide
+</h2>
+
+<p>
+
+Dwarka Gujarat का प्रसिद्ध धार्मिक और
+tourist destination है। भगवान श्रीकृष्ण
+से जुड़ी धार्मिक परंपरा, Dwarkadhish Temple,
+Nageshwar Jyotirlinga, समुद्र तट और Bet
+Dwarka इसे एक खास travel destination
+बनाते हैं।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     STICKY PLACE MENU
+================================================== -->
+
+<div
+id="placeMenu"
+class="place-nav-wrapper"
+>
+
+<div class="place-nav">
+
+
+<a
+href="#dwarkadhish"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🛕
+</span>
+
+<span>
+Dwarkadhish
+<small>द्वारकाधीश</small>
+</span>
+
+</a>
+
+
+<a
+href="#gomti"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🌊
+</span>
+
+<span>
+Gomti
+<small>गोमती घाट</small>
+</span>
+
+</a>
+
+
+<a
+href="#rukmini"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🛕
+</span>
+
+<span>
+Rukmini
+<small>रुक्मिणी</small>
+</span>
+
+</a>
+
+
+<a
+href="#nageshwar"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🔱
+</span>
+
+<span>
+Nageshwar
+<small>नागेश्वर</small>
+</span>
+
+</a>
+
+
+<a
+href="#betdwarka"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🏝️
+</span>
+
+<span>
+Bet Dwarka
+<small>बेट द्वारका</small>
+</span>
+
+</a>
+
+
+<a
+href="#shivrajpur"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🏖️
+</span>
+
+<span>
+Shivrajpur
+<small>शिवराजपुर</small>
+</span>
+
+</a>
+
+
+<a
+href="#transport"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🚌
+</span>
+
+<span>
+Transport
+<small>परिवहन</small>
+</span>
+
+</a>
+
+
+<a
+href="#stayfood"
+class="place-tab"
+>
+
+<span class="tab-icon">
+🏨
+</span>
+
+<span>
+Stay & Food
+<small>रहें और खाएँ</small>
+</span>
+
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE NOTE
+================================================== -->
+
+<div class="distance-note">
+
+📍 <strong>Distance Note:</strong>
+
+<br>
+
+यहाँ दी गई सभी approximate दूरियाँ
+<strong>Dwarkadhish Temple</strong> से हैं।
+
+<br>
+
+सभी दूरी लगभग road distance के अनुसार
+है और actual route के अनुसार थोड़ी
+कम-ज्यादा हो सकती है।
+
+</div>
+
+
+<!-- ==================================================
+     QUICK HIGHLIGHTS
+================================================== -->
+
+<div class="city-intro">
+
+<p>
+
+📍 <strong>पहली बार Dwarka जा रहे हैं?</strong>
+
+<br><br>
+
+नीचे दिए गए places को इसी क्रम में
+देखें और अपनी यात्रा आसानी से plan करें।
+
+<br><br>
+
+🛕 <strong>Dwarkadhish Temple</strong>
+→ 🌊 <strong>Gomti Ghat</strong>
+→ 🛕 <strong>Rukmini Temple</strong>
+→ 🔱 <strong>Nageshwar</strong>
+→ 🏝️ <strong>Bet Dwarka</strong>
+→ 🏖️ <strong>Shivrajpur Beach</strong>
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     SEARCH NOTE
+================================================== -->
+
+<div class="search-note">
+
+🔎 <strong>Place Search:</strong>
+
+ऊपर search box में किसी भी place का
+नाम लिखकर तुरंत खोजें।
+
+</div>
+
+
+<!-- ==================================================
+     CITY SERVICES
+================================================== -->
+
+<div class="city-services">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="service-btn"
+>
+
+<span class="service-icon">
+🗺️
+</span>
+
+Dwarka Maps
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+in+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="service-btn"
+>
+
+<span class="service-icon">
+🏨
+</span>
+
+Budget Hotels
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+in+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="service-btn"
+>
+
+<span class="service-icon">
+🍽️
+</span>
+
+Restaurants
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="service-btn"
+>
+
+<span class="service-icon">
+📸
+</span>
+
+Dwarka Photos
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     BEST PLACES
+================================================== -->
+
+<h2 class="section-title">
+⭐ Best Places to Visit in Dwarka
+</h2>
+
+
+<div class="click-info">
+
+📌 <strong>किसी भी place पर सीधे जाएँ</strong>
+
+<br>
+
+ऊपर की छोटी Place Menu पट्टी हमेशा
+screen के ऊपर दिखाई देती रहेगी।
+
+<br>
+
+किसी भी समय place के नाम पर click
+करके उसकी पूरी details पर जाएँ।
+
+</div>
+
+
+<!-- ==================================================
+     PLACE GRID
+================================================== -->
+
+<div class="place-grid">
+
+
+<!-- 1 -->
+
+<a
+href="#dwarkadhish"
+class="place-card"
+data-search="Dwarkadhish Temple द्वारकाधीश मंदिर Krishna temple Jagat Mandir चार धाम"
+>
+
+<div class="place-icon">
+🛕
+</div>
+
+<h3>
+1. Dwarkadhish Temple
+</h3>
+
+<p>
+द्वारकाधीश मंदिर
+<br>
+Krishna Temple • Char Dham
+</p>
+
+<span class="place-distance start">
+📍 0 km • START POINT
+</span>
+
+<br>
+
+<span class="route-mini">
+📍 Details देखें
+</span>
+
+</a>
+
+
+<!-- 2 -->
+
+<a
+href="#gomti"
+class="place-card"
+data-search="Gomti Ghat गोमती घाट Sudama Setu सुदामा सेतु bridge"
+>
+
+<div class="place-icon">
+🌊
+</div>
+
+<h3>
+2. Gomti Ghat
+</h3>
+
+<p>
+गोमती घाट • सुदामा सेतु
+<br>
+Ghat • River • Bridge
+</p>
+
+<span class="place-distance">
+📍 लगभग 1 km
+</span>
+
+<br>
+
+<span class="route-mini">
+📍 Details देखें
+</span>
+
+</a>
+
+
+<!-- 3 -->
+
+<a
+href="#rukmini"
+class="place-card"
+data-search="Rukmini Devi Temple Rukmini Mandir रुक्मिणी देवी मंदिर"
+>
+
+<div class="place-icon">
+🛕
+</div>
+
+<h3>
+3. Rukmini Devi Temple
+</h3>
+
+<p>
+रुक्मिणी देवी मंदिर
+<br>
+Temple • Heritage
+</p>
+
+<span class="place-distance">
+📍 लगभग 2–3 km
+</span>
+
+<br>
+
+<span class="route-mini">
+📍 Details देखें
+</span>
+
+</a>
+
+
+<!-- 4 -->
+
+<a
+href="#nageshwar"
+class="place-card"
+data-search="Nageshwar Jyotirlinga Nageshwar Temple नागेश्वर ज्योतिर्लिंग Shiva temple"
+>
+
+<div class="place-icon">
+🔱
+</div>
+
+<h3>
+4. Nageshwar Jyotirlinga
+</h3>
+
+<p>
+नागेश्वर ज्योतिर्लिंग
+<br>
+Jyotirlinga • Shiva Temple
+</p>
+
+<span class="place-distance">
+📍 लगभग 16–18 km
+</span>
+
+<br>
+
+<span class="route-mini">
+📍 Details देखें
+</span>
+
+</a>
+
+
+<!-- 5 -->
+
+<a
+href="#betdwarka"
+class="place-card"
+data-search="Bet Dwarka Beyt Dwarka बेट द्वारका island Krishna temple ferry Okha"
+>
+
+<div class="place-icon">
+🏝️
+</div>
+
+<h3>
+5. Bet Dwarka
+</h3>
+
+<p>
+बेट द्वारका
+<br>
+Island • Temple • Sea
+</p>
+
+<span class="place-distance">
+📍 लगभग 30–35 km
+</span>
+
+<br>
+
+<span class="route-mini">
+📍 Details देखें
+</span>
+
+</a>
+
+
+<!-- 6 -->
+
+<a
+href="#shivrajpur"
+class="place-card"
+data-search="Shivrajpur Beach शिवराजपुर बीच beach Dwarka sea water"
+>
+
+<div class="place-icon">
+🏖️
+</div>
+
+<h3>
+6. Shivrajpur Beach
+</h3>
+
+<p>
+शिवराजपुर बीच
+<br>
+Beach • Nature • Water
+</p>
+
+<span class="place-distance">
+📍 लगभग 12–15 km
+</span>
+
+<br>
+
+<span class="route-mini">
+📍 Details देखें
+</span>
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     NO RESULT
+================================================== -->
+
+<div
+id="noResult"
+class="no-result"
+>
+
+😔
+
+<br><br>
+
+इस नाम का कोई place नहीं मिला।
+
+<br><br>
+
+कृपया दूसरा place name search करें।
+
+</div>
+
+
+<!-- ==================================================
+     MAIN ROUTE
+================================================== -->
+
+<h2 class="section-title">
+🗺️ Dwarka Main Tourist Route
+</h2>
+
+
+<div class="group-box">
+
+<div class="group-header">
+
+<div class="group-icon">
+🛕
+</div>
+
+<div>
+
+<h3>
+Dwarka Complete Route
+</h3>
+
+<p>
+पहले से आखिरी तक recommended sightseeing order
+</p>
+
+</div>
+
+</div>
+
+
+<div class="group-places">
+
+
+<a
+href="#dwarkadhish"
+class="group-place"
+>
+🛕 1. Dwarkadhish Temple
+<span>0 km • द्वारकाधीश मंदिर</span>
+</a>
+
+
+<a
+href="#gomti"
+class="group-place"
+>
+🌊 2. Gomti Ghat
+<span>~1 km • Gomti Ghat + Sudama Setu</span>
+</a>
+
+
+<a
+href="#rukmini"
+class="group-place"
+>
+🛕 3. Rukmini Temple
+<span>~2–3 km • रुक्मिणी देवी मंदिर</span>
+</a>
+
+
+<a
+href="#nageshwar"
+class="group-place"
+>
+🔱 4. Nageshwar
+<span>~16–18 km • ज्योतिर्लिंग</span>
+</a>
+
+
+<a
+href="#betdwarka"
+class="group-place"
+>
+🏝️ 5. Bet Dwarka
+<span>~30–35 km • बेट द्वारका</span>
+</a>
+
+
+<a
+href="#shivrajpur"
+class="group-place"
+>
+🏖️ 6. Shivrajpur Beach
+<span>~12–15 km • शिवराजपुर बीच</span>
+</a>
+
+</div>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Shivrajpur+Beach+Gujarat&waypoints=Dwarkadhish+Temple+Dwarka%7CGomti+Ghat+Dwarka%7CRukmini+Devi+Temple+Dwarka%7CNageshwar+Jyotirlinga%7CBet+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="group-route"
+>
+
+📍 पूरा Dwarka Route देखें
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK TRAVEL PLAN
+================================================== -->
+
+<div class="travel-note">
+
+💡 <strong>Simple Dwarka Plan:</strong>
+
+<br><br>
+
+🛕 <strong>पहले:</strong>
+Dwarkadhish Temple + Gomti Ghat
+
+<br><br>
+
+🛕 <strong>फिर:</strong>
+Rukmini Devi Temple
+
+<br><br>
+
+🔱 <strong>इसके बाद:</strong>
+Nageshwar Jyotirlinga
+
+<br><br>
+
+🏝️ <strong>फिर:</strong>
+Bet Dwarka
+
+<br><br>
+
+🏖️ <strong>अंत में:</strong>
+Shivrajpur Beach
+
+<br><br>
+
+इस route को अपनी यात्रा के समय,
+मौसम और local transport के अनुसार
+adjust कर सकते हैं।
+
+</div>
+
+
+<!-- ==================================================
+     PART 1 END
+================================================== -->
+
+<!-- PART 2 YAHAN SE CONTINUE HOGA -->
+
+  <!-- ==================================================
+     PLACE DETAILS
+================================================== -->
+
+
+<!-- ==================================================
+     1. DWARKADHISH TEMPLE
+================================================== -->
+
+<div
+id="dwarkadhish"
+class="place-card place-detail"
+style="text-align:left;"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🛕
+</div>
+
+<div>
+
+<h3>
+Dwarkadhish Temple
+</h3>
+
+<span>
+द्वारकाधीश मंदिर
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Krishna Temple • Char Dham • Religious Heritage
+</div>
+
+
+<div class="place-distance start">
+📍 0 km • START POINT
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About the Place
+</h4>
+
+<p>
+
+Dwarkadhish Temple भगवान श्रीकृष्ण को
+समर्पित Dwarka का सबसे प्रसिद्ध मंदिर है।
+इसे Jagat Mandir के नाम से भी जाना जाता है।
+यह भारत के प्रमुख तीर्थ स्थलों और Char Dham
+परंपरा से जुड़ा महत्वपूर्ण धार्मिक स्थल है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+<strong>📍 Location:</strong>
+Dwarka, Devbhumi Dwarka, Gujarat
+</div>
+
+<div class="place-info-row">
+<strong>🛕 Famous For:</strong>
+Lord Krishna • Dwarkadhish
+</div>
+
+<div class="place-info-row">
+<strong>🚌 Bus:</strong>
+Dwarka Bus Station
+</div>
+
+<div class="place-info-row">
+<strong>🚆 Railway:</strong>
+Dwarka Railway Station
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Dwarkadhish+Temple+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dwarkadhish+Temple+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Maps
+</a>
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Dwarkadhish+Temple+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Dwarkadhish+Temple+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Dwarkadhish+Temple+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Dwarkadhish+Temple+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dwarka+Bus+Station+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Bus
+</a>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Dwarkadhish+Temple+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dwarka+Railway+Station+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     2. GOMTI GHAT + SUDAMA SETU
+================================================== -->
+
+<div
+id="gomti"
+class="place-card place-detail"
+style="text-align:left;"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🌊
+</div>
+
+<div>
+
+<h3>
+Gomti Ghat + Sudama Setu
+</h3>
+
+<span>
+गोमती घाट • सुदामा सेतु
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Ghat • River • Suspension Bridge • Scenic View
+</div>
+
+
+<div class="place-distance">
+📍 लगभग 1 km • Dwarkadhish Temple से
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About the Place
+</h4>
+
+<p>
+
+Gomti Ghat Dwarkadhish Temple के पास
+स्थित प्रमुख धार्मिक स्थान है। इसके पास
+Sudama Setu pedestrian suspension bridge
+है, जहाँ से Gomti नदी और आसपास के
+दृश्यों का सुंदर view मिलता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+<strong>📍 Location:</strong>
+Near Dwarkadhish Temple, Dwarka
+</div>
+
+<div class="place-info-row">
+<strong>🌊 Nearby:</strong>
+Gomti Ghat • Sudama Setu
+</div>
+
+<div class="place-info-row">
+<strong>🚌 Bus:</strong>
+Dwarka Bus Station
+</div>
+
+<div class="place-info-row">
+<strong>🚆 Railway:</strong>
+Dwarka Railway Station
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Gomti+Ghat+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gomti+Ghat+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Maps
+</a>
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Gomti+Ghat+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Gomti+Ghat+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Gomti+Ghat+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gomti+Ghat+Sudama+Setu+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dwarka+Bus+Station+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Bus
+</a>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Gomti+Ghat+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dwarka+Railway+Station+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     3. RUKMINI DEVI TEMPLE
+================================================== -->
+
+<div
+id="rukmini"
+class="place-card place-detail"
+style="text-align:left;"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🛕
+</div>
+
+<div>
+
+<h3>
+Rukmini Devi Temple
+</h3>
+
+<span>
+रुक्मिणी देवी मंदिर
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Ancient Temple • Religious Heritage • Architecture
+</div>
+
+
+<div class="place-distance">
+📍 लगभग 2–3 km • Dwarkadhish Temple से
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About the Place
+</h4>
+
+<p>
+
+Rukmini Devi Temple भगवान श्रीकृष्ण की
+पत्नी रुक्मिणी देवी को समर्पित प्रसिद्ध
+मंदिर है। मंदिर अपनी सुंदर नक्काशी और
+ऐतिहासिक architectural details के लिए
+भी जाना जाता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+<strong>📍 Location:</strong>
+Near Dwarka, Gujarat
+</div>
+
+<div class="place-info-row">
+<strong>🛕 Famous For:</strong>
+Rukmini Devi Temple
+</div>
+
+<div class="place-info-row">
+<strong>🚌 Bus:</strong>
+Dwarka Bus Station
+</div>
+
+<div class="place-info-row">
+<strong>🚆 Railway:</strong>
+Dwarka Railway Station
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Rukmini+Devi+Temple+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Rukmini+Devi+Temple+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Maps
+</a>
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Rukmini+Devi+Temple+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Rukmini+Devi+Temple+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Rukmini+Devi+Temple+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Rukmini+Devi+Temple+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dwarka+Bus+Station+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Bus
+</a>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Rukmini+Devi+Temple+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dwarka+Railway+Station+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     4. NAGESHWAR JYOTIRLINGA
+================================================== -->
+
+<div
+id="nageshwar"
+class="place-card place-detail"
+style="text-align:left;"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🔱
+</div>
+
+<div>
+
+<h3>
+Nageshwar Jyotirlinga
+</h3>
+
+<span>
+नागेश्वर ज्योतिर्लिंग
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Jyotirlinga • Shiva Temple • Pilgrimage
+</div>
+
+
+<div class="place-distance">
+📍 लगभग 16–18 km • Dwarkadhish Temple से
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About the Place
+</h4>
+
+<p>
+
+Nageshwar Jyotirlinga भगवान शिव को
+समर्पित प्रसिद्ध मंदिर है। यह Dwarka
+region के प्रमुख pilgrimage destinations
+में शामिल है और Dwarka sightseeing के
+साथ इसे आसानी से plan किया जा सकता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+<strong>📍 Location:</strong>
+Near Dwarka, Gujarat
+</div>
+
+<div class="place-info-row">
+<strong>🔱 Famous For:</strong>
+Nageshwar Jyotirlinga
+</div>
+
+<div class="place-info-row">
+<strong>🚌 Bus:</strong>
+Dwarka / Nageshwar Road
+</div>
+
+<div class="place-info-row">
+<strong>🚆 Railway:</strong>
+Dwarka Railway Station
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Nageshwar+Jyotirlinga+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Nageshwar+Jyotirlinga+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Maps
+</a>
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Nageshwar+Jyotirlinga+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Nageshwar+Jyotirlinga+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Nageshwar+Jyotirlinga+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Nageshwar+Jyotirlinga+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Nageshwar+Jyotirlinga+Bus+Stop"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Bus
+</a>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Nageshwar+Jyotirlinga+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dwarka+Railway+Station+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     PART 2 END
+================================================== -->
+
+<!-- PART 3 में Bet Dwarka, Shivrajpur Beach,
+     Transport, Stay & Food, Useful Searches,
+     Travel Tips, Footer और JavaScript रहेगा. -->
+
+  <!-- ==================================================
+     5. BET DWARKA
+================================================== -->
+
+<div
+id="betdwarka"
+class="place-card place-detail"
+style="text-align:left;"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏝️
+</div>
+
+<div>
+
+<h3>
+Bet Dwarka
+</h3>
+
+<span>
+बेट द्वारका
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Island • Krishna Heritage • Pilgrimage • Sea
+</div>
+
+
+<div class="place-distance">
+📍 लगभग 30–35 km • Dwarkadhish Temple से
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About the Place
+</h4>
+
+<p>
+
+Bet Dwarka, जिसे Beyt Dwarka भी कहा जाता
+है, Dwarka region का प्रसिद्ध island
+destination है। यह भगवान श्रीकृष्ण से
+जुड़ी धार्मिक परंपराओं के कारण महत्वपूर्ण
+है। यहाँ जाने के लिए Okha side से road
+और available ferry/boat connectivity
+का उपयोग किया जाता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+<strong>📍 Location:</strong>
+Bet Dwarka, Gujarat
+</div>
+
+<div class="place-info-row">
+<strong>⛴️ Access:</strong>
+Okha / Bet Dwarka route
+</div>
+
+<div class="place-info-row">
+<strong>🚌 Bus:</strong>
+Okha Bus Area
+</div>
+
+<div class="place-info-row">
+<strong>🚆 Railway:</strong>
+Okha Railway Station
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Bet+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Bet+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Maps
+</a>
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Bet+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Bet+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Bet+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Bet+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Okha+Bus+Station+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Bus
+</a>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Bet+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Okha+Railway+Station+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     6. SHIVRAJPUR BEACH
+================================================== -->
+
+<div
+id="shivrajpur"
+class="place-card place-detail"
+style="text-align:left;"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏖️
+</div>
+
+<div>
+
+<h3>
+Shivrajpur Beach
+</h3>
+
+<span>
+शिवराजपुर बीच
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Beach • Nature • Sea • Water Activities
+</div>
+
+
+<div class="place-distance">
+📍 लगभग 12–15 km • Dwarkadhish Temple से
+</div>
+
+
+<div class="short-history">
+
+<h4>
+📖 About the Place
+</h4>
+
+<p>
+
+Shivrajpur Beach Dwarka के पास प्रसिद्ध
+समुद्र तट है। यहाँ समुद्र का सुंदर दृश्य,
+open beach environment और sunset का
+आनंद लिया जा सकता है। Family और leisure
+travellers के लिए यह Dwarka trip में
+अच्छा addition है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+<strong>📍 Location:</strong>
+Shivrajpur Beach, near Dwarka, Gujarat
+</div>
+
+<div class="place-info-row">
+<strong>🌊 Type:</strong>
+Beach • Nature • Water Activities
+</div>
+
+<div class="place-info-row">
+<strong>🚌 Bus:</strong>
+Dwarka / Shivrajpur Road
+</div>
+
+<div class="place-info-row">
+<strong>🚆 Railway:</strong>
+Dwarka Railway Station
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Shivrajpur+Beach+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Shivrajpur+Beach+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Maps
+</a>
+
+<a
+href="https://www.google.com/search?q=budget+hotels+near+Shivrajpur+Beach+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Budget Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=luxury+hotels+near+Shivrajpur+Beach+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+🏨 Luxury Hotel
+</a>
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Shivrajpur+Beach+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Shivrajpur+Beach+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Shivrajpur+Beach+Bus+Stop"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn bus"
+>
+🚌 Bus
+</a>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Shivrajpur+Beach+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn cab"
+>
+🚕 Cab
+</a>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dwarka+Railway+Station+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn train"
+>
+🚆 Railway
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK ROUTE
+================================================== -->
+
+<h2 class="section-title">
+🗺️ Dwarka Quick Tourist Route
+</h2>
+
+
+<div class="route-box">
+
+<h3>
+📍 Recommended Sightseeing Order
+</h3>
+
+<p>
+
+🛕 Dwarkadhish Temple
+→ 🌊 Gomti Ghat + Sudama Setu
+→ 🛕 Rukmini Devi Temple
+→ 🔱 Nageshwar Jyotirlinga
+→ 🏝️ Bet Dwarka
+→ 🏖️ Shivrajpur Beach
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Shivrajpur+Beach+Dwarka+Gujarat&waypoints=Dwarkadhish+Temple+Dwarka%7CGomti+Ghat+Dwarka%7CRukmini+Devi+Temple+Dwarka%7CNageshwar+Jyotirlinga%7CBet+Dwarka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+
+📍 पूरा Route खोलें
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRANSPORT
+================================================== -->
+
+<h2
+id="transport"
+class="section-title"
+>
+🚗 Dwarka Transport
+</h2>
+
+
+<div class="transport-grid">
+
+
+<div class="transport-card">
+
+<div class="transport-icon">
+🚆
+</div>
+
+<h3>
+Railway
+</h3>
+
+<p>
+Dwarka और Okha railway station
+के options देखें।
+</p>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dwarka+Railway+Station+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🚆 Railway Station
+</a>
+
+</div>
+
+
+<div class="transport-card">
+
+<div class="transport-icon">
+🚌
+</div>
+
+<h3>
+Bus
+</h3>
+
+<p>
+Dwarka Bus Stand और आसपास की
+bus connectivity देखें।
+</p>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Dwarka+Bus+Stand+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🚌 Bus Stand
+</a>
+
+</div>
+
+
+<div class="transport-card">
+
+<div class="transport-icon">
+🚕
+</div>
+
+<h3>
+Cab / Taxi
+</h3>
+
+<p>
+Dwarka में local cab और taxi
+options खोजें।
+</p>
+
+<a
+href="https://www.google.com/search?q=cab+taxi+in+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🚕 Cab खोजें
+</a>
+
+</div>
+
+
+<div class="transport-card">
+
+<div class="transport-icon">
+✈️
+</div>
+
+<h3>
+Airport
+</h3>
+
+<p>
+Dwarka के लिए nearby airport
+और flight options देखें।
+</p>
+
+<a
+href="https://www.google.com/search?q=nearest+airport+to+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+✈️ Airport देखें
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     STAY & FOOD
+================================================== -->
+
+<div
+id="stayfood"
+class="business-box"
+>
+
+<h2>
+🏨 Stay & 🍽️ Food
+</h2>
+
+<p>
+
+Dwarka में रहने और खाने के लिए
+latest options यहाँ से देख सकते हैं।
+Budget और premium दोनों तरह के
+options available हो सकते हैं।
+
+</p>
+
+<br>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+in+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🏨 Budget Hotels
+</a>
+
+<br><br>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Dwarkadhish+Temple+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🏨 Hotels Near Temple
+</a>
+
+<br><br>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Dwarkadhish+Temple+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🍽️ Restaurants Near Temple
+</a>
+
+<br><br>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+in+Dwarka+Gujarat"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-btn"
+>
+🍽️ All Restaurants
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     USEFUL SEARCHES
+================================================== -->
+
+<h2 class="section-title">
+🔎 Useful Dwarka Searches
+</h2>
+
+
+<div class="transport-grid">
+
+
+<a
+href="https://www.google.com/search?q=Dwarka+Gujarat+tourist+places"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-card"
+style="text-decoration:none;color:inherit;"
+>
+
+<div class="transport-icon">
+📍
+</div>
+
+<h3>
+More Places
+</h3>
+
+<p>
+Dwarka के और tourist places खोजें।
+</p>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Dwarka+Gujarat+shopping"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-card"
+style="text-decoration:none;color:inherit;"
+>
+
+<div class="transport-icon">
+🛍️
+</div>
+
+<h3>
+Shopping
+</h3>
+
+<p>
+Local shopping और markets देखें।
+</p>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Dwarka+Gujarat+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-card"
+style="text-decoration:none;color:inherit;"
+>
+
+<div class="transport-icon">
+🌤️
+</div>
+
+<h3>
+Weather
+</h3>
+
+<p>
+Travel से पहले weather देखें।
+</p>
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Dwarka+Gujarat+travel+tips"
+target="_blank"
+rel="noopener noreferrer"
+class="transport-card"
+style="text-decoration:none;color:inherit;"
+>
+
+<div class="transport-icon">
+💡
+</div>
+
+<h3>
+Travel Tips
+</h3>
+
+<p>
+यात्रा से पहले useful tips देखें।
+</p>
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<div class="travel-note">
+
+<h2>
+💡 Dwarka Travel Tips
+</h2>
+
+<br>
+
+
+<p>
+🛕 मंदिर जाने से पहले current darshan
+timing और local rules check करें।
+</p>
+
+
+<p>
+👟 Comfortable footwear रखें क्योंकि
+कई जगह walking करनी पड़ सकती है।
+</p>
+
+
+<p>
+💧 पानी और जरूरी सामान साथ रखें।
+</p>
+
+
+<p>
+🌞 गर्म मौसम में दोपहर की यात्रा
+कम रखें और सुबह/शाम sightseeing
+करना बेहतर हो सकता है।
+</p>
+
+
+<p>
+🏝️ Bet Dwarka जाते समय ferry/boat
+service की current availability पहले
+check करें।
+</p>
+
+
+<p>
+🏖️ Beach पर local safety instructions
+का पालन करें।
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     IMPORTANT NOTE
+================================================== -->
+
+<div class="search-note">
+
+⚠️ <strong>Important:</strong>
+
+Travel से पहले मंदिर timing, transport,
+boat/ferry service, hotel availability
+और local rules की latest information
+एक बार जरूर check करें।
+
+</div>
+
+
+<!-- ==================================================
+     BACK TO TOP / PLACE MENU
+================================================== -->
+
+<div class="bottom-navigation">
+
+
+<a
+href="#place-menu"
+class="bottom-nav-btn"
+>
+📍 Place Menu
+</a>
+
+
+<a
+href="#top"
+class="bottom-nav-btn"
+>
+⬆️ ऊपर जाएँ
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+<div class="footer-logo">
+🇮🇳
+</div>
+
+
+<h3>
+DESH KHOJ A2Z
+</h3>
+
+
+<p>
+India Travel Guide
+</p>
+
+
+<p>
+Dwarka | द्वारका
+</p>
+
+
+<div class="footer-links">
+
+<a href="../index.html">
+← Home
+</a>
+
+<span>•</span>
+
+<a href="#place-menu">
+Place Menu
+</a>
+
+</div>
+
+
+<p class="copyright">
+© 2026 DESH KHOJ A2Z
+</p>
+
+</footer>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+const searchInput =
+document.getElementById("searchInput");
+
+
+const placeCards =
+document.querySelectorAll(
+".place-grid .place-card"
+);
+
+
+const noResult =
+document.getElementById("noResult");
+
+
+if(searchInput){
+
+searchInput.addEventListener(
+"input",
+function(){
+
+const query =
+this.value.toLowerCase().trim();
+
+let found = false;
+
+
+placeCards.forEach(
+function(card){
+
+const text =
+(
+card.innerText +
+" " +
+(
+card.getAttribute(
+"data-search"
+) || ""
+)
+).toLowerCase();
+
+
+if(text.includes(query)){
+
+card.style.display = "";
+
+found = true;
+
+}else{
+
+card.style.display = "none";
+
+}
+
+});
+
+
+if(noResult){
+
+if(
+query !== "" &&
+!found
+){
+
+noResult.style.display =
+"block";
+
+}else{
+
+noResult.style.display =
+"none";
+
+}
+
+}
+
+});
+
+}
+
+
+/* ==========================================
+   SMOOTH SCROLL
+========================================== */
+
+document.querySelectorAll(
+'a[href^="#"]'
+).forEach(function(link){
+
+link.addEventListener(
+"click",
+function(e){
+
+const targetId =
+this.getAttribute("href");
+
+
+if(
+targetId === "#" ||
+targetId === ""
+){
+return;
+}
+
+
+const target =
+document.querySelector(targetId);
+
+
+if(target){
+
+e.preventDefault();
+
+
+target.scrollIntoView({
+
+behavior:"smooth",
+
+block:"start"
+
+});
+
+}
+
+});
+
+});
+
+
+/* ==========================================
+   KEEP HORIZONTAL PLACE MENU VISIBLE
+========================================== */
+
+const placeMenu =
+document.getElementById(
+"placeMenu"
+);
+
+
+if(placeMenu){
+
+window.addEventListener(
+"scroll",
+function(){
+
+/*
+   Menu is sticky.
+   No extra fixed menu is created.
+   इसलिए नीचे duplicate links नहीं आएँगे।
+*/
+
+});
+
+}
+
+});
+
+
+/* ==========================================
+   END
+========================================== */
+
+</script>
+
+
+</body>
+
+</html>
