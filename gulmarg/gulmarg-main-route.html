@@ -1,0 +1,2653 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Gulmarg Main Route | गुलमर्ग Main Sightseeing - DESH KHOJ A2Z
+</title>
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   GULMARG MAIN ROUTE
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:75px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#dbeafe,
+#ffffff,
+#e8f5e9
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #1976d2;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:40px;
+}
+
+header h1{
+font-size:30px;
+margin:5px 0;
+}
+
+header p{
+font-size:14px;
+font-weight:bold;
+color:#34495e;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:18px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   STICKY HORIZONTAL MENU
+================================================== */
+
+.sticky-menu{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:6px 0;
+margin:0 -2px 15px;
+border-bottom:1px solid #ddd;
+}
+
+.horizontal-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:2px 3px 5px;
+scrollbar-width:none;
+-webkit-overflow-scrolling:touch;
+}
+
+.horizontal-menu::-webkit-scrollbar{
+display:none;
+}
+
+.menu-card{
+flex:0 0 auto;
+min-width:82px;
+background:white;
+color:#202124;
+text-decoration:none;
+border:1px solid #e1e5e8;
+border-radius:10px;
+padding:5px 7px;
+text-align:center;
+font-size:10px;
+font-weight:bold;
+box-shadow:0 2px 7px rgba(0,0,0,.10);
+line-height:1.2;
+}
+
+.menu-card span{
+display:block;
+font-size:18px;
+line-height:19px;
+margin-bottom:2px;
+}
+
+.menu-card small{
+display:block;
+font-size:8px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+.menu-card:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+background:white;
+border-left:6px solid #1976d2;
+border-radius:22px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.09);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+font-size:16px;
+}
+
+
+/* ==================================================
+   SUGGESTED PLANNING
+================================================== */
+
+.suggested{
+background:#eef7ff;
+border-radius:20px;
+padding:18px;
+margin-top:20px;
+}
+
+.suggested h3{
+font-size:20px;
+color:#1976d2;
+margin-bottom:8px;
+}
+
+.suggested p{
+font-size:15px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+background:#eef8ff;
+border-left:5px solid #1976d2;
+border-radius:16px;
+padding:15px;
+margin:18px 0 25px;
+font-size:13px;
+}
+
+.distance-note strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   PLACE GRID
+================================================== */
+
+.place-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin:20px 0;
+}
+
+.place-small{
+background:#f8fafc;
+border:1px solid #e1e5e8;
+border-radius:18px;
+padding:18px 8px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.place-small-icon{
+display:block;
+font-size:34px;
+margin-bottom:5px;
+}
+
+.place-small strong{
+font-size:15px;
+}
+
+.place-small span{
+display:block;
+font-size:11px;
+color:#777;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   INFO
+================================================== */
+
+.info{
+background:#eef7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:17px;
+margin:20px 0 25px;
+font-size:14px;
+}
+
+.info h3{
+font-size:20px;
+margin-bottom:7px;
+}
+
+
+/* ==================================================
+   ROUTE SUMMARY
+================================================== */
+
+.route-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:20px 0 28px;
+}
+
+.route-box h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.route-box p{
+font-size:14px;
+color:#555;
+}
+
+.route-line{
+font-weight:bold;
+font-size:15px;
+line-height:2;
+margin:10px 0;
+}
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:5px 0;
+}
+
+
+/* ==================================================
+   PLACE DETAIL CARD
+================================================== */
+
+.place-card{
+background:white;
+border-radius:24px;
+padding:22px;
+margin:25px 0;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+border-left:6px solid #1976d2;
+scroll-margin-top:75px;
+}
+
+.place-card:nth-of-type(2){
+border-left-color:#0ea5e9;
+}
+
+.place-card:nth-of-type(3){
+border-left-color:#138808;
+}
+
+.place-card:nth-of-type(4){
+border-left-color:#ff9933;
+}
+
+
+/* ==================================================
+   PLACE HEADER
+================================================== */
+
+.place-header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:14px;
+}
+
+.place-icon{
+font-size:48px;
+}
+
+.place-header h3{
+font-size:25px;
+margin:0;
+}
+
+.place-header span{
+display:block;
+font-size:16px;
+color:#666;
+margin-top:2px;
+}
+
+
+/* ==================================================
+   CATEGORY
+================================================== */
+
+.category{
+display:inline-block;
+background:#f1f5f9;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#555;
+margin-bottom:14px;
+}
+
+
+/* ==================================================
+   DISTANCE BADGE
+================================================== */
+
+.place-distance{
+background:#eaf8ef;
+border-left:4px solid #138808;
+border-radius:12px;
+padding:10px 12px;
+margin:10px 0 15px;
+font-size:13px;
+font-weight:bold;
+color:#176b38;
+}
+
+.place-distance span{
+color:#555;
+font-weight:normal;
+}
+
+
+/* ==================================================
+   SHORT HISTORY
+================================================== */
+
+.short-history{
+background:#eef7ff;
+border-left:4px solid #1976d2;
+padding:14px;
+border-radius:13px;
+margin:12px 0 18px;
+}
+
+.short-history h4{
+margin-bottom:5px;
+font-size:17px;
+}
+
+.short-history p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   BUTTON GRID
+================================================== */
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.action-btn{
+display:block;
+padding:12px 8px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:bold;
+transition:.2s;
+}
+
+.action-btn:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   ACTION COLORS
+================================================== */
+
+.route{
+background:#1976d2;
+}
+
+.maps{
+background:#0f766e;
+}
+
+.hotel{
+background:#d97706;
+}
+
+.luxury{
+background:#7c3aed;
+}
+
+.restaurant{
+background:#dc2626;
+}
+
+.photo{
+background:#2563eb;
+}
+
+.snow{
+background:#0284c7;
+}
+
+.gondola{
+background:#0369a1;
+}
+
+.ski{
+background:#4338ca;
+}
+
+.cab{
+background:#ea580c;
+}
+
+.train{
+background:#6d28d9;
+}
+
+.bus{
+background:#15803d;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px;
+margin-top:18px;
+}
+
+.place-info-row{
+padding:8px 0;
+border-bottom:1px solid #e5e7eb;
+font-size:14px;
+}
+
+.place-info-row:last-child{
+border-bottom:0;
+}
+
+.place-info strong{
+display:inline-block;
+margin-right:5px;
+}
+
+
+/* ==================================================
+   QUICK LINKS
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:17px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #1976d2;
+}
+
+.quick:nth-child(2){
+border-top-color:#138808;
+}
+
+.quick:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.quick:nth-child(4){
+border-top-color:#0ea5e9;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:54px;
+height:54px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:28px 15px;
+margin-top:35px;
+font-size:13px;
+}
+
+footer strong{
+color:#38bdf8;
+font-size:17px;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:26px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:17px 11px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.menu-card{
+min-width:78px;
+padding:5px 5px;
+font-size:9px;
+}
+
+.menu-card span{
+font-size:17px;
+}
+
+.menu-card small{
+font-size:7px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-line{
+font-size:13px;
+}
+
+.place-small{
+padding:15px 6px;
+}
+
+.place-small-icon{
+font-size:29px;
+}
+
+.place-small strong{
+font-size:13px;
+}
+
+.place-small span{
+font-size:10px;
+}
+
+.place-card{
+padding:18px 14px;
+}
+
+.place-header h3{
+font-size:21px;
+}
+
+.place-icon{
+font-size:40px;
+}
+
+.place-header span{
+font-size:14px;
+}
+
+.place-distance{
+font-size:11px;
+}
+
+.action-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.action-btn{
+font-size:11px;
+padding:11px 5px;
+}
+
+.place-info-row{
+font-size:13px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.quick{
+padding:14px 7px;
+font-size:13px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Gulmarg Main Route
+</h1>
+
+<p>
+Meadows • Golf Course • Church • Mountain Views
+</p>
+
+</header>
+
+
+<div class="container">
+
+
+<a
+href="gulmarg.html"
+class="back"
+>
+← Gulmarg / गुलमर्ग
+</a>
+
+
+<!-- ==================================================
+     STICKY MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#main"
+class="menu-card"
+>
+<span>🏔️</span>
+Gulmarg
+<small>Main Area</small>
+</a>
+
+
+<a
+href="#meadow"
+class="menu-card"
+>
+<span>🌿</span>
+Meadow
+<small>Green Valley</small>
+</a>
+
+
+<a
+href="#golf"
+class="menu-card"
+>
+<span>⛳</span>
+Golf
+<small>Golf Course</small>
+</a>
+
+
+<a
+href="#church"
+class="menu-card"
+>
+<span>⛪</span>
+Church
+<small>St. Mary's</small>
+</a>
+
+
+<a
+href="#viewpoint"
+class="menu-card"
+>
+<span>📸</span>
+Views
+<small>Mountains</small>
+</a>
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Planning</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+<a
+href="#stay"
+class="menu-card"
+>
+<span>🏨</span>
+Stay
+<small>Hotels</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div
+class="hero"
+id="main"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏔️
+</div>
+
+<div>
+
+<h2>
+Gulmarg Main Area
+</h2>
+
+<span>
+गुलमर्ग का मुख्य sightseeing area
+</span>
+
+</div>
+
+</div>
+
+
+<p>
+
+Gulmarg का main area beautiful meadows,
+mountain views, Golf Course और आसपास
+के sightseeing attractions के लिए जाना
+जाता है। यह route उन travellers के लिए
+अच्छा है जो Gondola जाने से पहले या
+बाद में Gulmarg town और आसपास के
+मुख्य places देखना चाहते हैं।
+
+</p>
+
+
+<div class="suggested">
+
+<h3>
+📍 Suggested Route
+</h3>
+
+<p>
+
+🏔️ Gulmarg Main
+
+→
+
+🌿 Gulmarg Meadow
+
+→
+
+⛳ Golf Course
+
+→
+
+⛪ St. Mary's Church
+
+→
+
+📸 Mountain Viewpoints
+
+</p>
+
+</div>
+
+
+<div class="route-distance">
+
+📍 Gulmarg Main Area • Local Sightseeing Route
+
+</div>
+
+
+<!-- ==================================================
+     QUICK PLACE GRID
+================================================== -->
+
+<div class="place-grid">
+
+
+<div
+class="place-small"
+>
+
+<span class="place-small-icon">
+🌿
+</span>
+
+<strong>
+Gulmarg Meadow
+</strong>
+
+<span>
+Nature + Views
+</span>
+
+</div>
+
+
+<div
+class="place-small"
+>
+
+<span class="place-small-icon">
+⛳
+</span>
+
+<strong>
+Golf Course
+</strong>
+
+<span>
+Famous Attraction
+</span>
+
+</div>
+
+
+<div
+class="place-small"
+>
+
+<span class="place-small-icon">
+⛪
+</span>
+
+<strong>
+St. Mary's Church
+</strong>
+
+<span>
+Heritage
+</span>
+
+</div>
+
+
+<div
+class="place-small"
+>
+
+<span class="place-small-icon">
+📸
+</span>
+
+<strong>
+Mountain Views
+</strong>
+
+<span>
+Photography
+</span>
+
+</div>
+
+
+</div>
+
+
+<a
+href="#route"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🗺️ Complete Gulmarg Route देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE NOTE
+================================================== -->
+
+<div class="distance-note">
+
+📍 <strong>Distance Note:</strong>
+
+<br><br>
+
+इस page में दी गई distances
+approximate planning distances हैं।
+
+<br><br>
+
+Gulmarg Main Area के अंदर कई places
+एक-दूसरे के relatively close हैं, इसलिए
+exact distance आपकी starting point और
+walking/vehicle route के अनुसार बदल
+सकती है।
+
+<br><br>
+
+⚠️ Snow season में road और walking
+conditions के कारण travel time बढ़ सकता है।
+
+</div>
+
+
+<!-- ==================================================
+     GULMARG MEADOW
+================================================== -->
+
+<div
+class="place-card"
+id="meadow"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🌿
+</div>
+
+<div>
+
+<h3>
+Gulmarg Meadow
+</h3>
+
+<span>
+गुलमर्ग की हरी-भरी meadow
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Nature • Meadow • Photography • Mountain Views
+</div>
+
+
+<div class="place-distance">
+
+📍 Location:
+<strong>
+Gulmarg Main Area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact walking distance आपकी starting location पर depend करेगी।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌿 About Gulmarg Meadow
+</h4>
+
+<p>
+
+Gulmarg की खुली green meadows और
+चारों तरफ दिखाई देने वाले mountains
+इस destination की सबसे खास पहचान हैं।
+Summer और pleasant weather में यहाँ
+walking और photography का experience
+बहुत सुंदर हो सकता है, जबकि winter में
+यही landscape snow-covered दिखाई दे
+सकता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Area:</strong>
+
+Gulmarg Main
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌿 Main Attraction:</strong>
+
+Open Meadow
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Photography + Nature
+
+</div>
+
+<div class="place-info-row">
+
+<strong>❄️ Winter:</strong>
+
+Snow-covered landscape possible
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⏰ Visit:</strong>
+
+Weather और daylight के अनुसार
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gulmarg+Meadow"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Gulmarg+Meadow"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route देखें
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gulmarg+Meadow+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Gulmarg+Meadow"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotels
+</a>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     GOLF COURSE
+================================================== -->
+
+<div
+class="place-card"
+id="golf"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+⛳
+</div>
+
+<div>
+
+<h3>
+Gulmarg Golf Course
+</h3>
+
+<span>
+गुलमर्ग गोल्फ कोर्स
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Golf • Nature • Scenic Landscape
+</div>
+
+
+<div class="place-distance">
+
+📍 Location:
+<strong>
+Gulmarg Main Area
+</strong>
+
+<br>
+
+<span>
+➡️ Main Gulmarg sightseeing area से convenient local attraction।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+⛳ About Gulmarg Golf Course
+</h4>
+
+<p>
+
+Gulmarg Golf Course अपने scenic mountain
+surroundings और natural landscape के लिए
+प्रसिद्ध है। Golf में interest न रखने
+वाले visitors के लिए भी इसका surrounding
+landscape और photography experience
+आकर्षक हो सकता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Gulmarg
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⛳ Attraction:</strong>
+
+Golf Course
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏔️ Surrounding:</strong>
+
+Mountain Landscape
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Scenic Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🕒 Timing:</strong>
+
+Visit से पहले current information check करें
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gulmarg+Golf+Course"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Gulmarg+Golf+Course"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route देखें
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gulmarg+Golf+Course+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Gulmarg+Golf+Course"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+Gulmarg+Golf+Course"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+Golf+Course+timing"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+ℹ️ Current Info
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     ST MARY'S CHURCH
+================================================== -->
+
+<div
+class="place-card"
+id="church"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+⛪
+</div>
+
+<div>
+
+<h3>
+St. Mary's Church
+</h3>
+
+<span>
+सेंट मैरी चर्च • Gulmarg
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Heritage • Church • Architecture • Peaceful Place
+</div>
+
+
+<div class="place-distance">
+
+📍 Location:
+<strong>
+Gulmarg Main Area
+</strong>
+
+<br>
+
+<span>
+➡️ Gulmarg sightseeing route में शामिल किया जा सकता है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+⛪ About St. Mary's Church
+</h4>
+
+<p>
+
+St. Mary's Church Gulmarg की प्रसिद्ध
+heritage attractions में से एक है।
+Mountain surroundings के बीच स्थित यह
+church Gulmarg की natural beauty के
+साथ historical character भी दिखाता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Gulmarg
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⛪ Type:</strong>
+
+Historic Church
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏛️ Interest:</strong>
+
+Heritage + Architecture
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🕒 Timing:</strong>
+
+Current visiting information check करें
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=St+Mary%27s+Church+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=St+Mary%27s+Church+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route देखें
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=St+Mary%27s+Church+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+St+Mary%27s+Church+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+near+St+Mary%27s+Church+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurant
+</a>
+
+
+<a
+href="https://www.google.com/search?q=St+Mary%27s+Church+Gulmarg+timing"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+ℹ️ Current Info
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     MOUNTAIN VIEWPOINTS
+================================================== -->
+
+<div
+class="place-card"
+id="viewpoint"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+📸
+</div>
+
+<div>
+
+<h3>
+Gulmarg Mountain Views
+</h3>
+
+<span>
+Scenic Viewpoints • Photography
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Mountain Views • Photography • Nature
+</div>
+
+
+<div class="place-distance">
+
+📍 Location:
+<strong>
+Gulmarg Main और आसपास
+</strong>
+
+<br>
+
+<span>
+➡️ View weather और visibility के अनुसार बदल सकता है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🏔️ About Gulmarg Views
+</h4>
+
+<p>
+
+Gulmarg के आसपास से snow-covered
+mountains, meadows और valley landscapes
+के शानदार views मिल सकते हैं। Clear
+weather में photography के लिए यह
+पूरे Gulmarg trip का सबसे memorable
+experience बन सकता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>🏔️ Experience:</strong>
+
+Himalayan Mountain Views
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>❄️ Winter:</strong>
+
+Snow Views
+
+</div>
+
+<div class="place-info-row">
+
+<strong>☀️ Clear Weather:</strong>
+
+Better Visibility
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⚠️ Note:</strong>
+
+Weather conditions check करें
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gulmarg+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gulmarg+mountain+views+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=weather+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+🌤️ Weather
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+in+Gulmarg+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotels
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     COMPLETE ROUTE
+================================================== -->
+
+<div
+class="route-box"
+id="route"
+>
+
+<h3>
+🗺️ Complete Gulmarg Main Sightseeing Route
+</h3>
+
+<p>
+
+अगर आप Gulmarg Main Area को आराम से
+घूमना चाहते हैं तो यह sequence practical
+रह सकता है:
+
+</p>
+
+
+<div class="route-line">
+
+🏔️ Gulmarg Main
+
+↓
+
+🌿 Gulmarg Meadow
+
+↓
+
+⛳ Golf Course
+
+↓
+
+⛪ St. Mary's Church
+
+↓
+
+📸 Mountain Viewpoints
+
+↓
+
+🏨 Hotel / Local Area
+
+</div>
+
+
+<div class="route-distance">
+
+📍 Local Gulmarg Sightseeing Route
+
+</div>
+
+
+<p>
+
+👉 इस route को Gondola route के साथ
+एक ही समय में rush करके cover करने
+के बजाय अलग समय देना बेहतर रहेगा।
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gulmarg+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🗺️ Gulmarg Maps खोलें
+</a>
+
+</div>
+
+  <!-- ==================================================
+     TRAVEL PLANNING
+================================================== -->
+
+<h2
+class="section-title"
+id="travel"
+>
+🚗 Gulmarg Main Travel Planning
+</h2>
+
+
+<div class="info">
+
+<h3>
+⏰ Suggested Day Plan
+</h3>
+
+<p>
+
+🌅 <strong>Morning:</strong>
+
+Gulmarg Main Area से sightseeing शुरू करें।
+
+<br><br>
+
+🌿 <strong>First:</strong>
+
+Gulmarg Meadow और आसपास के scenic
+areas देखें।
+
+<br><br>
+
+⛳ <strong>Next:</strong>
+
+Gulmarg Golf Course देखें।
+
+<br><br>
+
+⛪ <strong>After:</strong>
+
+St. Mary's Church visit करें।
+
+<br><br>
+
+📸 <strong>Evening:</strong>
+
+Mountain views और photography के लिए
+समय रखें।
+
+<br><br>
+
+🏨 <strong>Night:</strong>
+
+Gulmarg hotel / local area वापस लौटें।
+
+<br><br>
+
+⚠️ Winter में daylight और weather
+के अनुसार sightseeing timing रखें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     BEST EXPERIENCE
+================================================== -->
+
+<h2 class="section-title">
+⭐ Gulmarg Main Experience
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gulmarg+Meadow+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🌿
+</span>
+
+Meadow Photos
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gulmarg+Golf+Course+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+⛳
+</span>
+
+Golf Course
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=St+Mary%27s+Church+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+⛪
+</span>
+
+Church Photos
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gulmarg+snow+mountain+views"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🏔️
+</span>
+
+Mountain Photos
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     STAY & FOOD
+================================================== -->
+
+<div
+class="info"
+id="stay"
+>
+
+<h3>
+🏨 Gulmarg Stay & 🍽️ Food
+</h3>
+
+<p>
+
+Gulmarg Main Area में hotel लेते समय
+Gondola access, sightseeing और weather
+conditions को ध्यान में रखना practical
+रहेगा।
+
+<br><br>
+
+🍽️ Food के लिए local restaurants,
+hotel restaurants और cafes के current
+options check करें।
+
+</p>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+in+Gulmarg+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+💰 Budget Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+in+Gulmarg+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Best Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=family+hotels+in+Gulmarg+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+👨‍👩‍👧 Family Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+in+Gulmarg+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurants
+</a>
+
+
+<a
+href="https://www.google.com/search?q=vegetarian+restaurants+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🥗 Vegetarian
+</a>
+
+
+<a
+href="https://www.google.com/search?q=cafes+in+Gulmarg+Kashmir"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+☕ Cafes
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     TRANSPORT
+================================================== -->
+
+<h2 class="section-title">
+🚗 Gulmarg Transport
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/search?q=Srinagar+Airport+to+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+✈️
+</span>
+
+Airport
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚆
+</span>
+
+Train
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Srinagar+to+Gulmarg+bus"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚌
+</span>
+
+Bus
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Srinagar+to+Gulmarg+taxi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚕
+</span>
+
+Taxi
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 Gulmarg Main Travel Tips
+</h3>
+
+<p>
+
+🏔️ <strong>1.</strong>
+Gulmarg का weather जल्दी बदल सकता है,
+इसलिए itinerary flexible रखें।
+
+<br><br>
+
+❄️ <strong>2.</strong>
+Winter में warm clothes और suitable
+shoes जरूर रखें।
+
+<br><br>
+
+🚗 <strong>3.</strong>
+Snowfall के दौरान road conditions
+पहले check करें।
+
+<br><br>
+
+📸 <strong>4.</strong>
+Clear weather में mountain views
+के लिए photography का समय जरूर रखें।
+
+<br><br>
+
+⛪ <strong>5.</strong>
+Church और अन्य heritage places के
+local visiting rules follow करें।
+
+<br><br>
+
+⛳ <strong>6.</strong>
+Golf Course के current visiting
+rules पहले check करें।
+
+<br><br>
+
+🚠 <strong>7.</strong>
+Gondola जाने वाले travellers को
+उसका separate time रखना चाहिए।
+
+<br><br>
+
+🌨️ <strong>8.</strong>
+Heavy snowfall या खराब weather में
+upper areas की travel plan बदल सकती है।
+
+<br><br>
+
+🕒 <strong>9.</strong>
+हर attraction की current timing
+पहले verify करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     IMPORTANT NOTICE
+================================================== -->
+
+<div class="distance-note">
+
+⚠️ <strong>Important Information</strong>
+
+<br><br>
+
+• सभी distances approximate हैं।
+
+<br><br>
+
+• Gulmarg Main Area में actual distance
+आपकी hotel/location और walking route
+के अनुसार बदल सकती है।
+
+<br><br>
+
+• Weather, snowfall और road conditions
+travel time को प्रभावित कर सकते हैं।
+
+<br><br>
+
+• Gondola और अन्य activities की
+availability current operational
+conditions पर depend कर सकती है।
+
+<br><br>
+
+• Outdoor activities authorised
+operators के साथ ही करें।
+
+<br><br>
+
+• Local rules और environment का
+सम्मान करें।
+
+</div>
+
+
+<!-- ==================================================
+     QUICK SUMMARY
+================================================== -->
+
+<div
+class="route-box"
+>
+
+<h3>
+🗺️ Gulmarg Main Quick Summary
+</h3>
+
+<p>
+
+🏔️ <strong>Start:</strong>
+Gulmarg Main Area
+
+<br><br>
+
+🌿 <strong>Nature:</strong>
+Gulmarg Meadow
+
+<br><br>
+
+⛳ <strong>Scenic Attraction:</strong>
+Gulmarg Golf Course
+
+<br><br>
+
+⛪ <strong>Heritage:</strong>
+St. Mary's Church
+
+<br><br>
+
+📸 <strong>Experience:</strong>
+Mountain Views + Photography
+
+<br><br>
+
+👉 Gondola, Apharwat, Khilanmarg और
+Alpather Lake को अलग routes में
+देखना ज्यादा practical रहेगा।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     BOTTOM MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#top"
+class="menu-card"
+>
+<span>⬆️</span>
+Top
+<small>ऊपर</small>
+</a>
+
+
+<a
+href="#main"
+class="menu-card"
+>
+<span>🏔️</span>
+Gulmarg
+<small>Main</small>
+</a>
+
+
+<a
+href="#meadow"
+class="menu-card"
+>
+<span>🌿</span>
+Meadow
+<small>Nature</small>
+</a>
+
+
+<a
+href="#golf"
+class="menu-card"
+>
+<span>⛳</span>
+Golf
+<small>Course</small>
+</a>
+
+
+<a
+href="#church"
+class="menu-card"
+>
+<span>⛪</span>
+Church
+<small>Heritage</small>
+</a>
+
+
+<a
+href="#viewpoint"
+class="menu-card"
+>
+<span>📸</span>
+Views
+<small>Mountains</small>
+</a>
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Planning</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+<a
+href="#stay"
+class="menu-card"
+>
+<span>🏨</span>
+Stay
+<small>Hotels</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+India Travel Guide
+
+<br><br>
+
+Gulmarg Main Route | गुलमर्ग
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="ऊपर जाएँ"
+>
+⬆️
+</button>
+
+
+<!-- ==================================================
+     SCRIPT
+================================================== -->
+
+<script>
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+
+
+/* ==================================================
+   BACK TO TOP
+================================================== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+if(topBtn){
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+
+/* ==================================================
+   SMOOTH INTERNAL SCROLL
+================================================== */
+
+document.querySelectorAll(
+'a[href^="#"]'
+).forEach(
+function(link){
+
+link.addEventListener(
+"click",
+function(event){
+
+const targetId =
+this.getAttribute("href");
+
+
+if(
+!targetId ||
+targetId==="#"
+){
+
+return;
+
+}
+
+
+const target =
+document.querySelector(
+targetId
+);
+
+
+if(target){
+
+event.preventDefault();
+
+
+target.scrollIntoView({
+
+behavior:"smooth",
+
+block:"start"
+
+});
+
+}
+
+});
+
+});
+
+
+/* ==================================================
+   EXTERNAL LINKS
+================================================== */
+
+document.querySelectorAll(
+'a[target="_blank"]'
+).forEach(
+function(link){
+
+link.setAttribute(
+"rel",
+"noopener noreferrer"
+);
+
+});
+
+
+/* ==================================================
+   MENU ACTIVE EFFECT
+================================================== */
+
+const menuCards =
+document.querySelectorAll(
+".menu-card"
+);
+
+
+menuCards.forEach(
+function(card){
+
+card.addEventListener(
+"click",
+function(){
+
+menuCards.forEach(
+function(item){
+
+item.classList.remove(
+"active"
+);
+
+});
+
+
+this.classList.add(
+"active"
+);
+
+});
+
+});
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

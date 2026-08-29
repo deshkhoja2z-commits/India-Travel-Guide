@@ -1,0 +1,3489 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Gulmarg Adventure | गुलमर्ग एडवेंचर - DESH KHOJ A2Z
+</title>
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   GULMARG ADVENTURE
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:75px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#dbeafe,
+#ffffff,
+#e0f2fe
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #0284c7;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:40px;
+}
+
+header h1{
+font-size:30px;
+margin:5px 0;
+}
+
+header p{
+font-size:14px;
+font-weight:bold;
+color:#34495e;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:18px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   STICKY HORIZONTAL MENU
+================================================== */
+
+.sticky-menu{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:6px 0;
+margin:0 -2px 15px;
+border-bottom:1px solid #ddd;
+}
+
+.horizontal-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:2px 3px 5px;
+scrollbar-width:none;
+-webkit-overflow-scrolling:touch;
+}
+
+.horizontal-menu::-webkit-scrollbar{
+display:none;
+}
+
+.menu-card{
+flex:0 0 auto;
+min-width:82px;
+background:white;
+color:#202124;
+text-decoration:none;
+border:1px solid #e1e5e8;
+border-radius:10px;
+padding:5px 7px;
+text-align:center;
+font-size:10px;
+font-weight:bold;
+box-shadow:0 2px 7px rgba(0,0,0,.10);
+line-height:1.2;
+}
+
+.menu-card span{
+display:block;
+font-size:18px;
+line-height:19px;
+margin-bottom:2px;
+}
+
+.menu-card small{
+display:block;
+font-size:8px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+.menu-card:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+background:white;
+border-left:6px solid #0284c7;
+border-radius:22px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.09);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+font-size:16px;
+}
+
+
+/* ==================================================
+   SUGGESTED PLANNING
+================================================== */
+
+.suggested{
+background:#eef8ff;
+border-radius:20px;
+padding:18px;
+margin-top:20px;
+}
+
+.suggested h3{
+font-size:20px;
+color:#0284c7;
+margin-bottom:8px;
+}
+
+.suggested p{
+font-size:15px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+background:#eef8ff;
+border-left:5px solid #0284c7;
+border-radius:16px;
+padding:15px;
+margin:18px 0 25px;
+font-size:13px;
+}
+
+.distance-note strong{
+color:#0284c7;
+}
+
+
+/* ==================================================
+   DISTANCE GRID
+================================================== */
+
+.distance-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin:20px 0;
+}
+
+.distance-card{
+background:#f8fafc;
+border:1px solid #e1e5e8;
+border-radius:18px;
+padding:17px 9px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.distance-icon{
+display:block;
+font-size:32px;
+margin-bottom:5px;
+}
+
+.distance-card strong{
+font-size:15px;
+}
+
+.distance-card span{
+display:block;
+font-size:12px;
+color:#666;
+margin-top:3px;
+}
+
+
+/* ==================================================
+   ACTIVITY GRID
+================================================== */
+
+.activity-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin:20px 0;
+}
+
+.activity-card{
+background:#f8fafc;
+border:1px solid #e1e5e8;
+border-radius:18px;
+padding:18px 10px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.activity-icon{
+display:block;
+font-size:35px;
+margin-bottom:6px;
+}
+
+.activity-card strong{
+font-size:16px;
+}
+
+.activity-card span{
+display:block;
+font-size:12px;
+color:#777;
+margin-top:3px;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   INFO
+================================================== */
+
+.info{
+background:#eef7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:17px;
+margin:20px 0 25px;
+font-size:14px;
+}
+
+.info h3{
+font-size:20px;
+margin-bottom:7px;
+}
+
+
+/* ==================================================
+   ROUTE SUMMARY
+================================================== */
+
+.route-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:20px 0 28px;
+}
+
+.route-box h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.route-box p{
+font-size:14px;
+color:#555;
+}
+
+.route-line{
+font-weight:bold;
+font-size:15px;
+line-height:2;
+margin:10px 0;
+}
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:5px 0;
+}
+
+
+/* ==================================================
+   PLACE / ACTIVITY CARD
+================================================== */
+
+.place-card{
+background:white;
+border-radius:24px;
+padding:22px;
+margin:25px 0;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+border-left:6px solid #0284c7;
+scroll-margin-top:75px;
+}
+
+
+/* ==================================================
+   PLACE HEADER
+================================================== */
+
+.place-header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:14px;
+}
+
+.place-icon{
+font-size:48px;
+}
+
+.place-header h3{
+font-size:25px;
+margin:0;
+}
+
+.place-header span{
+display:block;
+font-size:16px;
+color:#666;
+margin-top:2px;
+}
+
+
+/* ==================================================
+   CATEGORY
+================================================== */
+
+.category{
+display:inline-block;
+background:#f1f5f9;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#555;
+margin-bottom:14px;
+}
+
+
+/* ==================================================
+   DISTANCE BADGE
+================================================== */
+
+.place-distance{
+background:#eaf8ef;
+border-left:4px solid #138808;
+border-radius:12px;
+padding:10px 12px;
+margin:10px 0 15px;
+font-size:13px;
+font-weight:bold;
+color:#176b38;
+}
+
+.place-distance span{
+color:#555;
+font-weight:normal;
+}
+
+
+/* ==================================================
+   SHORT HISTORY
+================================================== */
+
+.short-history{
+background:#eef8ff;
+border-left:4px solid #0284c7;
+padding:14px;
+border-radius:13px;
+margin:12px 0 18px;
+}
+
+.short-history h4{
+margin-bottom:5px;
+font-size:17px;
+}
+
+.short-history p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   BUTTON GRID
+================================================== */
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.action-btn{
+display:block;
+padding:12px 8px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:bold;
+transition:.2s;
+}
+
+.action-btn:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   ACTION COLORS
+================================================== */
+
+.route{
+background:#1976d2;
+}
+
+.maps{
+background:#0f766e;
+}
+
+.hotel{
+background:#d97706;
+}
+
+.luxury{
+background:#7c3aed;
+}
+
+.restaurant{
+background:#dc2626;
+}
+
+.photo{
+background:#2563eb;
+}
+
+.gondola{
+background:#0369a1;
+}
+
+.snow{
+background:#0284c7;
+}
+
+.ski{
+background:#4338ca;
+}
+
+.snowboard{
+background:#7c3aed;
+}
+
+.snowmobile{
+background:#ea580c;
+}
+
+.sledge{
+background:#15803d;
+}
+
+.adventure{
+background:#b45309;
+}
+
+.cab{
+background:#ea580c;
+}
+
+.train{
+background:#6d28d9;
+}
+
+.bus{
+background:#15803d;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px;
+margin-top:18px;
+}
+
+.place-info-row{
+padding:8px 0;
+border-bottom:1px solid #e5e7eb;
+font-size:14px;
+}
+
+.place-info-row:last-child{
+border-bottom:0;
+}
+
+.place-info strong{
+display:inline-block;
+margin-right:5px;
+}
+
+
+/* ==================================================
+   QUICK LINKS
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:17px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #0284c7;
+}
+
+.quick:nth-child(2){
+border-top-color:#4338ca;
+}
+
+.quick:nth-child(3){
+border-top-color:#ea580c;
+}
+
+.quick:nth-child(4){
+border-top-color:#15803d;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:54px;
+height:54px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:28px 15px;
+margin-top:35px;
+font-size:13px;
+}
+
+footer strong{
+color:#38bdf8;
+font-size:17px;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:26px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:17px 11px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.menu-card{
+min-width:78px;
+padding:5px 5px;
+font-size:9px;
+}
+
+.menu-card span{
+font-size:17px;
+}
+
+.menu-card small{
+font-size:7px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-line{
+font-size:13px;
+}
+
+.distance-card{
+padding:15px 6px;
+}
+
+.distance-icon{
+font-size:28px;
+}
+
+.distance-card strong{
+font-size:13px;
+}
+
+.distance-card span{
+font-size:10px;
+}
+
+.activity-card{
+padding:15px 6px;
+}
+
+.activity-icon{
+font-size:30px;
+}
+
+.activity-card strong{
+font-size:13px;
+}
+
+.activity-card span{
+font-size:10px;
+}
+
+.place-card{
+padding:18px 14px;
+}
+
+.place-header h3{
+font-size:21px;
+}
+
+.place-icon{
+font-size:40px;
+}
+
+.place-header span{
+font-size:14px;
+}
+
+.place-distance{
+font-size:11px;
+}
+
+.action-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.action-btn{
+font-size:11px;
+padding:11px 5px;
+}
+
+.place-info-row{
+font-size:13px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.quick{
+padding:14px 7px;
+font-size:13px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.menu-card{
+min-width:72px;
+}
+
+.action-btn{
+font-size:10px;
+}
+
+.place-header h3{
+font-size:19px;
+}
+
+.place-header span{
+font-size:13px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Gulmarg Adventure
+</h1>
+
+<p>
+Skiing • Snowboarding • Gondola • Snowmobile • Sledge • Snow Adventure
+</p>
+
+</header>
+
+
+<div class="container">
+
+
+<a
+href="gulmarg.html"
+class="back"
+>
+← Gulmarg / गुलमर्ग
+</a>
+
+
+<!-- ==================================================
+     STICKY MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#adventure"
+class="menu-card"
+>
+<span>🏔️</span>
+Adventure
+<small>Gulmarg</small>
+</a>
+
+
+<a
+href="#skiing"
+class="menu-card"
+>
+<span>⛷️</span>
+Skiing
+<small>Snow</small>
+</a>
+
+
+<a
+href="#snowboard"
+class="menu-card"
+>
+<span>🏂</span>
+Snowboard
+<small>Adventure</small>
+</a>
+
+
+<a
+href="#gondola"
+class="menu-card"
+>
+<span>🚠</span>
+Gondola
+<small>Ride</small>
+</a>
+
+
+<a
+href="#snowmobile"
+class="menu-card"
+>
+<span>🏍️</span>
+Snowmobile
+<small>Ride</small>
+</a>
+
+
+<a
+href="#sledge"
+class="menu-card"
+>
+<span>🛷</span>
+Sledge
+<small>Snow</small>
+</a>
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Distance</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div
+class="hero"
+id="adventure"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏔️
+</div>
+
+<div>
+
+<h2>
+Gulmarg Adventure
+</h2>
+
+<span>
+Snow • Skiing • Gondola • Mountain Adventure
+</span>
+
+</div>
+
+</div>
+
+
+<p>
+
+Gulmarg Kashmir का एक प्रमुख
+mountain adventure destination है।
+Winter season में यहाँ skiing,
+snowboarding, snow activities और
+Gondola ride जैसे experiences
+popular हैं। Adventure activities
+की availability मौसम, snow
+conditions और authorised operators
+पर depend कर सकती है।
+
+</p>
+
+
+<div class="suggested">
+
+<h3>
+📍 Suggested Adventure Planning
+</h3>
+
+<p>
+
+🏨 Gulmarg Main
+
+→
+
+🚠 Gondola Base
+
+→
+
+⛷️ Skiing / Snow Activity
+
+→
+
+🏔️ Kongdoori
+
+→
+
+❄️ Snow Experience
+
+→
+
+🏨 Gulmarg Return
+
+</p>
+
+</div>
+
+
+<div class="route-distance">
+
+🏔️ Gulmarg Main → Adventure Areas:
+लगभग 1–5 km area, activity के
+अनुसार
+
+</div>
+
+
+<!-- ==================================================
+     ACTIVITY GRID
+================================================== -->
+
+<div class="activity-grid">
+
+
+<div class="activity-card">
+
+<span class="activity-icon">
+⛷️
+</span>
+
+<strong>
+Skiing
+</strong>
+
+<span>
+Snow Adventure
+</span>
+
+</div>
+
+
+<div class="activity-card">
+
+<span class="activity-icon">
+🏂
+</span>
+
+<strong>
+Snowboarding
+</strong>
+
+<span>
+Mountain Sport
+</span>
+
+</div>
+
+
+<div class="activity-card">
+
+<span class="activity-icon">
+🚠
+</span>
+
+<strong>
+Gondola
+</strong>
+
+<span>
+Mountain Ride
+</span>
+
+</div>
+
+
+<div class="activity-card">
+
+<span class="activity-icon">
+🏍️
+</span>
+
+<strong>
+Snowmobile
+</strong>
+
+<span>
+Snow Ride
+</span>
+
+</div>
+
+
+<div class="activity-card">
+
+<span class="activity-icon">
+🛷
+</span>
+
+<strong>
+Sledge
+</strong>
+
+<span>
+Snow Fun
+</span>
+
+</div>
+
+
+<div class="activity-card">
+
+<span class="activity-icon">
+❄️
+</span>
+
+<strong>
+Snow Play
+</strong>
+
+<span>
+Family Fun
+</span>
+
+</div>
+
+
+</div>
+
+
+<a
+href="#route"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🗺️ Complete Adventure Route देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE NOTE
+================================================== -->
+
+<div class="distance-note">
+
+📏 <strong>Adventure Distance Important Note:</strong>
+
+<br><br>
+
+Gulmarg में adventure activities
+एक ही location पर नहीं होतीं।
+Activity और season के अनुसार
+starting point बदल सकता है।
+
+<br><br>
+
+🚠 Gondola Base central Gulmarg
+के आसपास है और Gondola route
+Kongdoori तथा Apharwat की तरफ
+जाता है।
+
+<br><br>
+
+⛷️ Skiing और snow activities के
+लिए exact activity area और
+operator location पहले verify करें।
+
+<br><br>
+
+🏍️ Snowmobile और 🛷 Sledge जैसी
+activities की availability और
+route season तथा local operator
+के अनुसार बदल सकती है।
+
+<br><br>
+
+⚠️ Road distance, walking distance
+और Gondola/cable distance को
+अलग-अलग समझें।
+
+</div>
+
+
+<!-- ==================================================
+     SKIING
+================================================== -->
+
+<div
+class="place-card"
+id="skiing"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+⛷️
+</div>
+
+<div>
+
+<h3>
+Gulmarg Skiing
+</h3>
+
+<span>
+Skiing • Snow Sport • Mountain Adventure
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Snow Sport • Adventure • Winter Activity
+</div>
+
+
+<div class="place-distance">
+
+📍 Gulmarg Main → Ski Areas:
+
+<strong>
+लगभग 1–5 km area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact starting point, ski slope और snow conditions के अनुसार distance बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+⛷️ Skiing Experience
+</h4>
+
+<p>
+
+Gulmarg भारत के प्रसिद्ध winter
+ski destinations में से एक है।
+Beginner से लेकर experienced
+skiers तक के लिए अलग-अलग
+terrain और training options
+season तथा authorised ski
+operators के अनुसार उपलब्ध हो
+सकते हैं।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>⛷️ Activity:</strong>
+
+Skiing
+
+</div>
+
+<div class="place-info-row">
+
+<strong>❄️ Season:</strong>
+
+Winter / Snow Conditions
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📍 Area:</strong>
+
+Gulmarg + Higher Snow Areas
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🎿 Equipment:</strong>
+
+Ski Equipment / Rental
+
+</div>
+
+<div class="place-info-row">
+
+<strong>👨‍🏫 Beginner:</strong>
+
+Instructor लेना बेहतर
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🛟 Safety:</strong>
+
+Authorised Operator Instructions Follow करें
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gulmarg+Skiing"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Ski Location
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Gulmarg+Skiing"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+skiing"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn ski"
+>
+⛷️ Ski Options
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+ski+instructor"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn adventure"
+>
+👨‍🏫 Instructor
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gulmarg+skiing"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Ski Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+skiing+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+🌨️ Weather
+</a>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     SNOWBOARDING
+================================================== -->
+
+<div
+class="place-card"
+id="snowboard"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏂
+</div>
+
+<div>
+
+<h3>
+Gulmarg Snowboarding
+</h3>
+
+<span>
+Snowboard • Winter Sport • Mountain Adventure
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Snowboard • Adventure • Winter Sport
+</div>
+
+
+<div class="place-distance">
+
+📍 Gulmarg Adventure Area:
+
+<strong>
+लगभग 1–5 km area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact activity area snow conditions और operator के अनुसार बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🏂 Snowboarding Experience
+</h4>
+
+<p>
+
+Gulmarg में winter snow conditions
+snowboarding के लिए भी suitable
+हो सकती हैं। Higher mountain
+terrain में snow conditions बदलती
+रहती हैं, इसलिए beginners को
+proper instruction और safety
+equipment के साथ activity करनी
+चाहिए।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>🏂 Activity:</strong>
+
+Snowboarding
+
+</div>
+
+<div class="place-info-row">
+
+<strong>❄️ Requirement:</strong>
+
+Suitable Snow Conditions
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🎿 Equipment:</strong>
+
+Snowboard + Safety Gear
+
+</div>
+
+<div class="place-info-row">
+
+<strong>👨‍🏫 Beginner:</strong>
+
+Professional Instruction Recommended
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏔️ Terrain:</strong>
+
+Mountain Snow Areas
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🛟 Safety:</strong>
+
+Marked / Authorised Areas Follow करें
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snowboarding"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snowboard"
+>
+🏂 Snowboard Options
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gulmarg+snowboarding"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Location
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snowboard+instructor"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn adventure"
+>
+👨‍🏫 Instructor
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gulmarg+snowboarding"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snowboarding+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+🌨️ Weather
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snowboard+rental"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn ski"
+>
+🏂 Equipment
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     GONDOLA ADVENTURE
+================================================== -->
+
+<div
+class="place-card"
+id="gondola"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🚠
+</div>
+
+<div>
+
+<h3>
+Gulmarg Gondola Adventure
+</h3>
+
+<span>
+Kongdoori • Apharwat • Mountain Views
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Gondola • Mountain Ride • Snow • Views
+</div>
+
+
+<div class="place-distance">
+
+📍 Gulmarg Main → Gondola Base:
+
+<strong>
+लगभग 1 km area
+</strong>
+
+<br>
+
+<span>
+➡️ Hotel/start point के अनुसार walking distance बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🚠 Gondola Adventure
+</h4>
+
+<p>
+
+Gulmarg Gondola adventure experience
+का प्रमुख हिस्सा है। Gondola के
+Phase 1 से Kongdoori और Phase 2
+से Apharwat की high-altitude side
+तक जाने का option मिलता है, subject
+to current operation and weather
+conditions।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>🚠 Start:</strong>
+
+Gulmarg Gondola Base
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Phase 1:</strong>
+
+लगभग 2.5 km cable journey
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏔️ Phase 2:</strong>
+
+लगभग 2.5–2.7 km cable journey
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Total:</strong>
+
+लगभग 5 km cable journey
+
+</div>
+
+<div class="place-info-row">
+
+<strong>❄️ Highlight:</strong>
+
+Snow + Mountain Views
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌨️ Operation:</strong>
+
+Weather / Wind पर depend
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="gulmarg-gondola-route.html"
+class="action-btn gondola"
+>
+🚠 Gondola Complete Route
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gulmarg+Gondola"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Gondola Map
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+Gondola+ticket+booking"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+🎫 Ticket Info
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gulmarg+Gondola"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+Gondola+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+🌨️ Weather
+</a>
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Gulmarg+Gondola"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotels
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     SNOWMOBILE
+================================================== -->
+
+<div
+class="place-card"
+id="snowmobile"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏍️
+</div>
+
+<div>
+
+<h3>
+Snowmobile Ride
+</h3>
+
+<span>
+Snow Safari • Winter Adventure
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Snowmobile • Snow Safari • Adventure
+</div>
+
+
+<div class="place-distance">
+
+📍 Gulmarg Snow Activity Areas:
+
+<strong>
+लगभग 1–5 km area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact route और starting point local authorised operator के अनुसार बदल सकता है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🏍️ Snowmobile Experience
+</h4>
+
+<p>
+
+Snowmobile ride winter में Gulmarg
+की snow adventure activities में
+शामिल हो सकती है। Ride का route,
+duration और availability snowfall,
+snow condition तथा local operator
+के अनुसार बदल सकती है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>🏍️ Activity:</strong>
+
+Snowmobile Ride
+
+</div>
+
+<div class="place-info-row">
+
+<strong>❄️ Season:</strong>
+
+Snow Season
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📍 Route:</strong>
+
+Operator / Snow Area पर depend
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⏱️ Duration:</strong>
+
+Package के अनुसार
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🛟 Safety:</strong>
+
+Operator Instructions Follow करें
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⚠️ Availability:</strong>
+
+Snow Conditions पर depend
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snowmobile+ride"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snowmobile"
+>
+🏍️ Snowmobile Options
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gulmarg+snowmobile"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Activity Map
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snowmobile+price"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+💰 Price Info
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gulmarg+snowmobile"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snowmobile+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+🌨️ Weather
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snow+activities"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn adventure"
+>
+🏔️ Activities
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     SLEDGE
+================================================== -->
+
+<div
+class="place-card"
+id="sledge"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🛷
+</div>
+
+<div>
+
+<h3>
+Gulmarg Sledge Ride
+</h3>
+
+<span>
+Snow Sledge • Family Fun • Winter Experience
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Sledge • Snow Fun • Family Activity
+</div>
+
+
+<div class="place-distance">
+
+📍 Gulmarg Snow Areas:
+
+<strong>
+Local activity area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact location और route season तथा local operator के अनुसार बदल सकता है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🛷 Sledge Experience
+</h4>
+
+<p>
+
+Snow-covered Gulmarg में sledge
+ride एक traditional winter fun
+experience हो सकता है। यह families
+और visitors के लिए snow landscape
+enjoy करने का आसान तरीका हो सकता
+है। Ride लेने से पहले price और
+route operator से clear कर लें।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>🛷 Activity:</strong>
+
+Sledge Ride
+
+</div>
+
+<div class="place-info-row">
+
+<strong>❄️ Best Time:</strong>
+
+Snow Season
+
+</div>
+
+<div class="place-info-row">
+
+<strong>👨‍👩‍👧 Family:</strong>
+
+Family-friendly option
+
+</div>
+
+<div class="place-info-row">
+
+<strong>💰 Price:</strong>
+
+Operator से पहले confirm करें
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Local Snow Activity Area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⚠️ Important:</strong>
+
+Route और duration पहले पूछें
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+sledge+ride"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn sledge"
+>
+🛷 Sledge Options
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gulmarg+sledge+ride"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+sledge+ride+price"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+💰 Price Info
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snow+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+🌨️ Weather
+</a>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     SNOW EXPERIENCE
+================================================== -->
+
+<div
+class="place-card"
+id="snow"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+❄️
+</div>
+
+<div>
+
+<h3>
+Gulmarg Snow Experience
+</h3>
+
+<span>
+Snow Play • Photography • Mountain Views
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Snow • Family Fun • Photography • Winter
+</div>
+
+
+<div class="place-distance">
+
+📍 Gulmarg Snow Areas:
+
+<strong>
+Central Gulmarg से nearby areas
+</strong>
+
+<br>
+
+<span>
+➡️ Snow depth और activity area season के अनुसार बदल सकते हैं।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+❄️ Snow Experience
+</h4>
+
+<p>
+
+Winter में Gulmarg का landscape
+snow से cover हो सकता है। Visitors
+snow photography, snow play और
+mountain views enjoy कर सकते हैं।
+Higher areas में जाने से पहले
+weather और local operating
+conditions जरूर check करें।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>❄️ Experience:</strong>
+
+Snow Play + Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏔️ Views:</strong>
+
+Mountain + Snow Landscape
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🧤 Carry:</strong>
+
+Warm Jacket + Gloves
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🥾 Footwear:</strong>
+
+Anti-slip / Snow Shoes
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Snow Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌨️ Important:</strong>
+
+Weather conditions check करें
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Gulmarg+snow"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Snow Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snow+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+🌨️ Weather
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snow+boots+rent"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn adventure"
+>
+🥾 Snow Shoes
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snow+activities"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn ski"
+>
+⛷️ Activities
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     COMPLETE ADVENTURE ROUTE
+================================================== -->
+
+<div
+class="route-box"
+id="route"
+>
+
+<h3>
+🗺️ Complete Gulmarg Adventure Route
+</h3>
+
+<p>
+
+Gulmarg adventure day को इस
+sequence में plan करना practical
+रहेगा:
+
+</p>
+
+
+<div class="route-line">
+
+🏨 Gulmarg Hotel
+
+↓
+
+🚶 Adventure / Gondola Base
+
+↓
+
+🚠 Gondola
+
+↓
+
+🏔️ Kongdoori
+
+↓
+
+❄️ Snow Experience
+
+↓
+
+⛷️ Skiing / Snow Activity
+
+↓
+
+🏍️ Optional Snowmobile
+
+↓
+
+🛷 Optional Sledge
+
+↓
+
+🏨 Gulmarg Main
+
+</div>
+
+
+<div class="route-distance">
+
+📏 Main adventure areas लगभग 1–5 km
+area में; Gondola cable route लगभग
+5 km तक
+
+</div>
+
+
+<p>
+
+👉 सभी activities एक ही दिन में
+करना जरूरी नहीं है। Gondola,
+skiing और अन्य snow activities
+के लिए अलग-अलग time रखना ज्यादा
+comfortable रहेगा।
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🗺️ Gulmarg Adventure Map देखें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL PLANNING
+================================================== -->
+
+<h2
+class="section-title"
+id="travel"
+>
+🚗 Gulmarg Adventure Travel Planning
+</h2>
+
+
+<div class="info">
+
+<h3>
+⏰ Suggested Adventure Day Plan
+</h3>
+
+<p>
+
+🌅 <strong>Morning:</strong>
+
+Gulmarg hotel से adventure area
+की तरफ जल्दी निकलें।
+
+<br><br>
+
+🎫 <strong>Before Activity:</strong>
+
+Gondola/activity tickets और
+current operation status verify करें।
+
+<br><br>
+
+🚠 <strong>Morning Adventure:</strong>
+
+Gondola → Kongdoori / higher
+area, subject to operation.
+
+<br><br>
+
+❄️ <strong>Snow Time:</strong>
+
+Snow photography और mountain
+views enjoy करें।
+
+<br><br>
+
+⛷️ <strong>Adventure:</strong>
+
+Skiing / Snowboarding या beginner
+snow activity करें।
+
+<br><br>
+
+🏍️ <strong>Optional:</strong>
+
+Snowmobile activity available
+हो तो operator के साथ करें।
+
+<br><br>
+
+🛷 <strong>Family Option:</strong>
+
+Sledge ride availability check
+कर सकते हैं।
+
+<br><br>
+
+🍽️ <strong>Lunch:</strong>
+
+Gulmarg Main Area में meal / cafe
+break रखें।
+
+<br><br>
+
+🏨 <strong>Evening:</strong>
+
+Gulmarg hotel / main market
+वापस आएँ।
+
+<br><br>
+
+⚠️ सभी activities मौसम, snow,
+wind और operator availability
+पर depend करती हैं।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE GUIDE
+================================================== -->
+
+<h2 class="section-title">
+📏 Gulmarg Adventure Distance Guide
+</h2>
+
+
+<div class="distance-grid">
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏙️
+</span>
+
+<strong>
+Srinagar → Gulmarg
+</strong>
+
+<span>
+लगभग 50–60 km road
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+✈️
+</span>
+
+<strong>
+Srinagar Airport → Gulmarg
+</strong>
+
+<span>
+लगभग 54–66 km road
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏘️
+</span>
+
+<strong>
+Tangmarg → Gulmarg
+</strong>
+
+<span>
+लगभग 12–14 km road
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🚠
+</span>
+
+<strong>
+Gulmarg → Gondola Base
+</strong>
+
+<span>
+लगभग 1 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏔️
+</span>
+
+<strong>
+Gondola Phase 1
+</strong>
+
+<span>
+लगभग 2.5 km cable route
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+❄️
+</span>
+
+<strong>
+Gondola Phase 2
+</strong>
+
+<span>
+लगभग 2.5–2.7 km cable route
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+⛷️
+</span>
+
+<strong>
+Ski Adventure Areas
+</strong>
+
+<span>
+लगभग 1–5 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏍️
+</span>
+
+<strong>
+Snow Activities
+</strong>
+
+<span>
+Local area / operator dependent
+</span>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     STAY & FOOD
+================================================== -->
+
+<div
+class="info"
+id="stay"
+>
+
+<h3>
+🏨 Adventure के पास Stay & 🍽️ Food
+</h3>
+
+<p>
+
+अगर आपका main purpose adventure
+activities है तो Gulmarg Main Area
+में hotel लेना practical रहेगा।
+इससे Gondola Base और local
+activity points तक पहुँचना आसान
+हो सकता है।
+
+<br><br>
+
+🍽️ Food के लिए Gulmarg Main Area
+के hotel restaurants, cafes और
+local restaurants के current
+options check करें।
+
+</p>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=hotels+near+Gulmarg+Gondola"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Best Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+💰 Budget Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurants
+</a>
+
+
+<a
+href="https://www.google.com/search?q=vegetarian+restaurants+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🥗 Vegetarian
+</a>
+
+
+<a
+href="https://www.google.com/search?q=cafes+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+☕ Cafes
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     TRANSPORT
+================================================== -->
+
+<h2 class="section-title">
+🚗 Gulmarg Adventure Transport
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚕
+</span>
+
+Cab Route
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Srinagar+to+Gulmarg+taxi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚗
+</span>
+
+Srinagar Taxi
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Srinagar+to+Gulmarg+bus"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚌
+</span>
+
+Bus
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚆
+</span>
+
+Railway
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK LINKS
+================================================== -->
+
+<h2 class="section-title">
+⭐ Gulmarg Adventure Quick Links
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="gulmarg-gondola-route.html"
+class="quick"
+>
+
+<span class="quick-icon">
+🚠
+</span>
+
+Gondola Route
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+skiing"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+⛷️
+</span>
+
+Skiing
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snowboarding"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🏂
+</span>
+
+Snowboarding
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snow+activities"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+❄️
+</span>
+
+Snow Activities
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 Gulmarg Adventure Important Tips
+</h3>
+
+<p>
+
+🎫 <strong>1.</strong>
+
+Adventure activity और Gondola
+availability पहले verify करें।
+
+<br><br>
+
+🌨️ <strong>2.</strong>
+
+Weather और snow conditions
+activities को प्रभावित कर सकती हैं।
+
+<br><br>
+
+⛷️ <strong>3.</strong>
+
+Beginners skiing/snowboarding
+के लिए trained instructor लेना
+बेहतर है।
+
+<br><br>
+
+🧤 <strong>4.</strong>
+
+Warm jacket, gloves, cap और
+thermal layers रखें।
+
+<br><br>
+
+🥾 <strong>5.</strong>
+
+Snow में proper grip वाले
+water-resistant shoes पहनें।
+
+<br><br>
+
+🚠 <strong>6.</strong>
+
+Gondola Phase 2 weather और
+wind conditions के कारण प्रभावित
+हो सकता है।
+
+<br><br>
+
+🏍️ <strong>7.</strong>
+
+Snowmobile जैसी activities केवल
+authorised/local operator के
+instructions के अनुसार करें।
+
+<br><br>
+
+🛷 <strong>8.</strong>
+
+Sledge ride लेने से पहले price,
+duration और route clear कर लें।
+
+<br><br>
+
+📸 <strong>9.</strong>
+
+Snow और mountain photography
+के लिए phone/camera battery
+fully charged रखें।
+
+<br><br>
+
+🏔️ <strong>10.</strong>
+
+Higher altitude पर धीरे चलें और
+अपनी comfort का ध्यान रखें।
+
+<br><br>
+
+⚠️ <strong>11.</strong>
+
+Marked/authorised activity areas
+से बाहर जाने से बचें।
+
+<br><br>
+
+🕒 <strong>12.</strong>
+
+Return के लिए पर्याप्त time रखें;
+last Gondola/transport के करीब
+rush न करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     IMPORTANT NOTICE
+================================================== -->
+
+<div class="distance-note">
+
+⚠️ <strong>Important Information</strong>
+
+<br><br>
+
+• सभी road distances approximate
+planning estimates हैं।
+
+<br><br>
+
+• Gulmarg Main से Gondola Base
+लगभग 1 km area माना जा सकता है;
+exact hotel location के अनुसार
+distance बदल सकती है।
+
+<br><br>
+
+• Gondola Phase 1 लगभग 2.5 km
+और Phase 2 लगभग 2.5–2.7 km
+cable journey है।
+
+<br><br>
+
+• Skiing, snowboarding, snowmobile
+और sledge activity की exact
+location season/operator के अनुसार
+बदल सकती है।
+
+<br><br>
+
+• Activity price, timing और
+availability यात्रा से पहले
+current information के अनुसार
+verify करें।
+
+<br><br>
+
+• Snowfall, wind, weather और
+local safety conditions के कारण
+कुछ activities temporarily बंद
+हो सकती हैं।
+
+<br><br>
+
+• Adventure activities हमेशा
+authorised operators और official
+safety instructions के अनुसार करें।
+
+</div>
+
+
+<!-- ==================================================
+     QUICK SUMMARY
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+🗺️ Gulmarg Adventure Quick Summary
+</h3>
+
+<p>
+
+🏨 <strong>Start:</strong>
+
+Gulmarg Main / Hotel
+
+<br><br>
+
+🚠 <strong>Major Adventure:</strong>
+
+Gondola
+
+<br><br>
+
+⛷️ <strong>Snow Sport:</strong>
+
+Skiing + Snowboarding
+
+<br><br>
+
+🏍️ <strong>Optional:</strong>
+
+Snowmobile
+
+<br><br>
+
+🛷 <strong>Family Fun:</strong>
+
+Sledge + Snow Play
+
+<br><br>
+
+❄️ <strong>Highlight:</strong>
+
+Snow + Mountain + Adventure
+
+<br><br>
+
+📏 <strong>Gondola:</strong>
+
+दोनों phases मिलाकर लगभग 5 km
+cable journey
+
+<br><br>
+
+📍 <strong>Activity Area:</strong>
+
+Central Gulmarg से higher mountain
+areas तक
+
+<br><br>
+
+👉 Gulmarg की बाकी sightseeing के
+लिए अलग routes में
+<strong>Gondola Route</strong>,
+<strong>Heritage Route</strong> और
+<strong>Khilanmarg–Alpather Route</strong>
+को cover करना ज्यादा practical रहेगा।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     BOTTOM MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#top"
+class="menu-card"
+>
+<span>⬆️</span>
+Top
+<small>ऊपर</small>
+</a>
+
+
+<a
+href="#adventure"
+class="menu-card"
+>
+<span>🏔️</span>
+Adventure
+<small>Gulmarg</small>
+</a>
+
+
+<a
+href="#skiing"
+class="menu-card"
+>
+<span>⛷️</span>
+Skiing
+<small>Snow</small>
+</a>
+
+
+<a
+href="#snowboard"
+class="menu-card"
+>
+<span>🏂</span>
+Snowboard
+<small>Adventure</small>
+</a>
+
+
+<a
+href="#gondola"
+class="menu-card"
+>
+<span>🚠</span>
+Gondola
+<small>Ride</small>
+</a>
+
+
+<a
+href="#snowmobile"
+class="menu-card"
+>
+<span>🏍️</span>
+Snowmobile
+<small>Ride</small>
+</a>
+
+
+<a
+href="#sledge"
+class="menu-card"
+>
+<span>🛷</span>
+Sledge
+<small>Snow</small>
+</a>
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Distance</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+<a
+href="#stay"
+class="menu-card"
+>
+<span>🏨</span>
+Stay
+<small>Food</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+India Travel Guide
+
+<br><br>
+
+Gulmarg Adventure |
+गुलमर्ग एडवेंचर
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="ऊपर जाएँ"
+>
+⬆️
+</button>
+
+
+<!-- ==================================================
+     SCRIPT
+================================================== -->
+
+<script>
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+
+
+/* ==================================================
+   BACK TO TOP
+================================================== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+if(topBtn){
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+
+/* ==================================================
+   SMOOTH INTERNAL SCROLL
+================================================== */
+
+document.querySelectorAll(
+'a[href^="#"]'
+).forEach(
+function(link){
+
+link.addEventListener(
+"click",
+function(event){
+
+const targetId =
+this.getAttribute("href");
+
+
+if(
+!targetId ||
+targetId==="#"
+){
+
+return;
+
+}
+
+
+const target =
+document.querySelector(
+targetId
+);
+
+
+if(target){
+
+event.preventDefault();
+
+
+target.scrollIntoView({
+
+behavior:"smooth",
+
+block:"start"
+
+});
+
+}
+
+});
+
+});
+
+
+/* ==================================================
+   EXTERNAL LINKS
+================================================== */
+
+document.querySelectorAll(
+'a[target="_blank"]'
+).forEach(
+function(link){
+
+link.setAttribute(
+"rel",
+"noopener noreferrer"
+);
+
+});
+
+
+/* ==================================================
+   MENU ACTIVE EFFECT
+================================================== */
+
+const menuCards =
+document.querySelectorAll(
+".menu-card"
+);
+
+
+menuCards.forEach(
+function(card){
+
+card.addEventListener(
+"click",
+function(){
+
+menuCards.forEach(
+function(item){
+
+item.classList.remove(
+"active"
+);
+
+});
+
+
+this.classList.add(
+"active"
+);
+
+});
+
+});
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

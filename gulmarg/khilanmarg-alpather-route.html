@@ -1,0 +1,2709 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Khilanmarg Alpather Route | खीलनमर्ग अल्पाथर - DESH KHOJ A2Z
+</title>
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   KHILANMARG - ALPATHER ROUTE
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:75px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#dbeafe,
+#ffffff,
+#dcfce7
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #138808;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:40px;
+}
+
+header h1{
+font-size:30px;
+margin:5px 0;
+}
+
+header p{
+font-size:14px;
+font-weight:bold;
+color:#34495e;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:18px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   STICKY HORIZONTAL MENU
+================================================== */
+
+.sticky-menu{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:6px 0;
+margin:0 -2px 15px;
+border-bottom:1px solid #ddd;
+}
+
+.horizontal-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:2px 3px 5px;
+scrollbar-width:none;
+-webkit-overflow-scrolling:touch;
+}
+
+.horizontal-menu::-webkit-scrollbar{
+display:none;
+}
+
+.menu-card{
+flex:0 0 auto;
+min-width:82px;
+background:white;
+color:#202124;
+text-decoration:none;
+border:1px solid #e1e5e8;
+border-radius:10px;
+padding:5px 7px;
+text-align:center;
+font-size:10px;
+font-weight:bold;
+box-shadow:0 2px 7px rgba(0,0,0,.10);
+line-height:1.2;
+}
+
+.menu-card span{
+display:block;
+font-size:18px;
+line-height:19px;
+margin-bottom:2px;
+}
+
+.menu-card small{
+display:block;
+font-size:8px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+.menu-card:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+background:white;
+border-left:6px solid #138808;
+border-radius:22px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.09);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+font-size:16px;
+}
+
+
+/* ==================================================
+   SUGGESTED PLANNING
+================================================== */
+
+.suggested{
+background:#f0fff4;
+border-radius:20px;
+padding:18px;
+margin-top:20px;
+}
+
+.suggested h3{
+font-size:20px;
+color:#138808;
+margin-bottom:8px;
+}
+
+.suggested p{
+font-size:15px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+background:#eef8ff;
+border-left:5px solid #1976d2;
+border-radius:16px;
+padding:15px;
+margin:18px 0 25px;
+font-size:13px;
+}
+
+.distance-note strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   DISTANCE GRID
+================================================== */
+
+.distance-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin:20px 0;
+}
+
+.distance-card{
+background:#f8fafc;
+border:1px solid #e1e5e8;
+border-radius:18px;
+padding:17px 9px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.distance-icon{
+display:block;
+font-size:32px;
+margin-bottom:5px;
+}
+
+.distance-card strong{
+font-size:15px;
+}
+
+.distance-card span{
+display:block;
+font-size:12px;
+color:#666;
+margin-top:3px;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   INFO
+================================================== */
+
+.info{
+background:#eef7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:17px;
+margin:20px 0 25px;
+font-size:14px;
+}
+
+.info h3{
+font-size:20px;
+margin-bottom:7px;
+}
+
+
+/* ==================================================
+   ROUTE SUMMARY
+================================================== */
+
+.route-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:20px 0 28px;
+}
+
+.route-box h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.route-box p{
+font-size:14px;
+color:#555;
+}
+
+.route-line{
+font-weight:bold;
+font-size:15px;
+line-height:2;
+margin:10px 0;
+}
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:5px 0;
+}
+
+
+/* ==================================================
+   PLACE / DETAIL CARD
+================================================== */
+
+.place-card{
+background:white;
+border-radius:24px;
+padding:22px;
+margin:25px 0;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+border-left:6px solid #138808;
+scroll-margin-top:75px;
+}
+
+.place-card:nth-of-type(2){
+border-left-color:#1976d2;
+}
+
+.place-card:nth-of-type(3){
+border-left-color:#ff9933;
+}
+
+.place-card:nth-of-type(4){
+border-left-color:#7c3aed;
+}
+
+
+/* ==================================================
+   PLACE HEADER
+================================================== */
+
+.place-header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:14px;
+}
+
+.place-icon{
+font-size:48px;
+}
+
+.place-header h3{
+font-size:25px;
+margin:0;
+}
+
+.place-header span{
+display:block;
+font-size:16px;
+color:#666;
+margin-top:2px;
+}
+
+
+/* ==================================================
+   CATEGORY
+================================================== */
+
+.category{
+display:inline-block;
+background:#f1f5f9;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#555;
+margin-bottom:14px;
+}
+
+
+/* ==================================================
+   DISTANCE BADGE
+================================================== */
+
+.place-distance{
+background:#eaf8ef;
+border-left:4px solid #138808;
+border-radius:12px;
+padding:10px 12px;
+margin:10px 0 15px;
+font-size:13px;
+font-weight:bold;
+color:#176b38;
+}
+
+.place-distance span{
+color:#555;
+font-weight:normal;
+}
+
+
+/* ==================================================
+   SHORT HISTORY
+================================================== */
+
+.short-history{
+background:#fff8e7;
+border-left:4px solid #f59e0b;
+padding:14px;
+border-radius:13px;
+margin:12px 0 18px;
+}
+
+.short-history h4{
+margin-bottom:5px;
+font-size:17px;
+}
+
+.short-history p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   BUTTON GRID
+================================================== */
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.action-btn{
+display:block;
+padding:12px 8px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:bold;
+transition:.2s;
+}
+
+.action-btn:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   ACTION COLORS
+================================================== */
+
+.route{
+background:#1976d2;
+}
+
+.maps{
+background:#0f766e;
+}
+
+.hotel{
+background:#d97706;
+}
+
+.luxury{
+background:#7c3aed;
+}
+
+.restaurant{
+background:#dc2626;
+}
+
+.photo{
+background:#2563eb;
+}
+
+.khilanmarg{
+background:#15803d;
+}
+
+.alpather{
+background:#0891b2;
+}
+
+.snow{
+background:#0284c7;
+}
+
+.ski{
+background:#4338ca;
+}
+
+.cab{
+background:#ea580c;
+}
+
+.train{
+background:#6d28d9;
+}
+
+.bus{
+background:#15803d;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px;
+margin-top:18px;
+}
+
+.place-info-row{
+padding:8px 0;
+border-bottom:1px solid #e5e7eb;
+font-size:14px;
+}
+
+.place-info-row:last-child{
+border-bottom:0;
+}
+
+.place-info strong{
+display:inline-block;
+margin-right:5px;
+}
+
+
+/* ==================================================
+   QUICK LINKS
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:17px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #138808;
+}
+
+.quick:nth-child(2){
+border-top-color:#0891b2;
+}
+
+.quick:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.quick:nth-child(4){
+border-top-color:#1976d2;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:54px;
+height:54px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:28px 15px;
+margin-top:35px;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:17px;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:26px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:17px 11px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.menu-card{
+min-width:78px;
+padding:5px 5px;
+font-size:9px;
+}
+
+.menu-card span{
+font-size:17px;
+}
+
+.menu-card small{
+font-size:7px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-line{
+font-size:13px;
+}
+
+.distance-card{
+padding:15px 6px;
+}
+
+.distance-icon{
+font-size:28px;
+}
+
+.distance-card strong{
+font-size:13px;
+}
+
+.distance-card span{
+font-size:10px;
+}
+
+.place-card{
+padding:18px 14px;
+}
+
+.place-header h3{
+font-size:21px;
+}
+
+.place-icon{
+font-size:40px;
+}
+
+.place-header span{
+font-size:14px;
+}
+
+.place-distance{
+font-size:11px;
+}
+
+.action-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.action-btn{
+font-size:11px;
+padding:11px 5px;
+}
+
+.place-info-row{
+font-size:13px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.quick{
+padding:14px 7px;
+font-size:13px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.menu-card{
+min-width:72px;
+}
+
+.action-btn{
+font-size:10px;
+}
+
+.place-header h3{
+font-size:19px;
+}
+
+.place-header span{
+font-size:13px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Khilanmarg – Alpather Route
+</h1>
+
+<p>
+Khilanmarg • Alpather Lake • Snow • Meadows • Mountain Views
+</p>
+
+</header>
+
+
+<div class="container">
+
+
+<a
+href="gulmarg.html"
+class="back"
+>
+← Gulmarg / गुलमर्ग
+</a>
+
+
+<!-- ==================================================
+     STICKY MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Plan</small>
+</a>
+
+
+<a
+href="#khilanmarg"
+class="menu-card"
+>
+<span>🌲</span>
+Khilanmarg
+<small>Meadow</small>
+</a>
+
+
+<a
+href="#alpather"
+class="menu-card"
+>
+<span>🏔️</span>
+Alpather
+<small>Lake</small>
+</a>
+
+
+<a
+href="#snow"
+class="menu-card"
+>
+<span>❄️</span>
+Snow
+<small>Experience</small>
+</a>
+
+
+<a
+href="#distance"
+class="menu-card"
+>
+<span>📏</span>
+Distance
+<small>Guide</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+<a
+href="#stay"
+class="menu-card"
+>
+<span>🏨</span>
+Stay
+<small>Food</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div
+class="hero"
+id="route"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏔️
+</div>
+
+<div>
+
+<h2>
+Khilanmarg – Alpather Route
+</h2>
+
+<span>
+Meadow • Lake • Snow • Mountain Adventure
+</span>
+
+</div>
+
+</div>
+
+
+<p>
+
+Khilanmarg और Alpather Lake Gulmarg
+के आसपास के scenic mountain
+destinations हैं। यह route उन
+travellers के लिए अच्छा है जो
+Gulmarg के main area के साथ
+meadows, snow और high-altitude
+lake का experience लेना चाहते हैं।
+
+</p>
+
+
+<div class="suggested">
+
+<h3>
+📍 Suggested Planning
+</h3>
+
+<p>
+
+🏨 Gulmarg Main
+
+→
+
+🌲 Khilanmarg
+
+→
+
+🏔️ Alpather Lake
+
+→
+
+❄️ Snow Area
+
+→
+
+🏨 Gulmarg Return
+
+</p>
+
+</div>
+
+
+<div class="route-distance">
+
+📍 Gulmarg → Khilanmarg → Alpather
+पूरा route terrain और selected mode
+के अनुसार बदल सकता है।
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE GRID
+================================================== -->
+
+<div
+class="distance-grid"
+id="distance"
+>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏨
+</span>
+
+<strong>
+Gulmarg → Khilanmarg
+</strong>
+
+<span>
+लगभग 6 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🌲
+</span>
+
+<strong>
+Khilanmarg → Alpather
+</strong>
+
+<span>
+लगभग 7–8 km trekking/route area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏔️
+</span>
+
+<strong>
+Gulmarg → Alpather
+</strong>
+
+<span>
+लगभग 12–13 km route area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏙️
+</span>
+
+<strong>
+Srinagar → Gulmarg
+</strong>
+
+<span>
+लगभग 50–60 km road route
+</span>
+
+</div>
+
+
+</div>
+
+
+<a
+href="#route-details"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🗺️ Complete Route देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE NOTE
+================================================== -->
+
+<div class="distance-note">
+
+📏 <strong>Distance Important Note:</strong>
+
+<br><br>
+
+Gulmarg से Khilanmarg की distance
+लगभग <strong>6 km area</strong> के आसपास
+मानी जाती है, लेकिन exact route
+आपके starting point और selected
+transport/trek route पर depend करेगा।
+
+<br><br>
+
+🌲 Khilanmarg से Alpather Lake की
+distance route और trekking path
+के अनुसार बदल सकती है। Planning के
+लिए लगभग <strong>7–8 km area</strong>
+का route माना जा सकता है।
+
+<br><br>
+
+🏔️ Gulmarg से Alpather तक total
+route लगभग <strong>12–13 km area</strong>
+तक हो सकता है।
+
+<br><br>
+
+⚠️ यहाँ road distance, walking distance
+और trekking distance को अलग-अलग
+समझना जरूरी है।
+
+</div>
+
+
+<!-- ==================================================
+     KHILANMARG
+================================================== -->
+
+<div
+class="place-card"
+id="khilanmarg"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🌲
+</div>
+
+<div>
+
+<h3>
+Khilanmarg
+</h3>
+
+<span>
+खीलनमर्ग • Meadow • Mountain Views
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Meadow • Snow • Photography • Mountain Views
+</div>
+
+
+<div class="place-distance">
+
+📍 Gulmarg → Khilanmarg:
+
+<strong>
+लगभग 6 km area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact distance starting point और route के अनुसार बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌲 Khilanmarg के बारे में
+</h4>
+
+<p>
+
+Khilanmarg Gulmarg के आसपास का
+सुंदर meadow area है। यहाँ से
+surrounding mountains के scenic
+views मिलते हैं। Winter में यह
+area snow-covered landscape के
+लिए भी popular हो सकता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Gulmarg क्षेत्र
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Gulmarg से लगभग 6 km area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌲 Highlight:</strong>
+
+Meadows + Mountain Views
+
+</div>
+
+<div class="place-info-row">
+
+<strong>❄️ Winter:</strong>
+
+Snow experience
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🥾 Access:</strong>
+
+Walking / Trek / Local Route
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Khilanmarg+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Khilanmarg+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Khilanmarg+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Khilanmarg+Gulmarg+snow"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+❄️ Snow
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Khilanmarg+Gulmarg+trek"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn khilanmarg"
+>
+🥾 Trek Route
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Khilanmarg+Gulmarg+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+🌨️ Weather
+</a>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     ALPATHER LAKE
+================================================== -->
+
+<div
+class="place-card"
+id="alpather"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏔️
+</div>
+
+<div>
+
+<h3>
+Alpather Lake
+</h3>
+
+<span>
+अल्पाथर झील • High Altitude Lake
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Lake • Snow • Trekking • Mountain Landscape
+</div>
+
+
+<div class="place-distance">
+
+📍 Khilanmarg → Alpather Lake:
+
+<strong>
+लगभग 7–8 km route area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact distance selected trekking path और starting point के अनुसार बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🏔️ Alpather Lake के बारे में
+</h4>
+
+<p>
+
+Alpather Lake Gulmarg के high-altitude
+mountain landscape में स्थित scenic
+lake destination है। मौसम के अनुसार
+lake के आसपास snow और mountain
+landscape देखने को मिल सकता है।
+यह route trekking और nature lovers
+के लिए खास attraction है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Near Apharwat / Gulmarg high-altitude area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Khilanmarg से लगभग 7–8 km route area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏔️ Type:</strong>
+
+High Altitude Lake
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🥾 Access:</strong>
+
+Trekking / Local Route
+
+</div>
+
+<div class="place-info-row">
+
+<strong>❄️ Best Experience:</strong>
+
+Snow + Lake + Mountain Views
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Nature Photography
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Alpather+Lake+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Alpather Map
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Alpather+Lake+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Alpather+Lake+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Lake Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Alpather+Lake+snow"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+❄️ Snow
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Alpather+Lake+trek"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn alpather"
+>
+🥾 Trekking
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Alpather+Lake+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+🌨️ Weather
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     SNOW EXPERIENCE
+================================================== -->
+
+<div
+class="place-card"
+id="snow"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+❄️
+</div>
+
+<div>
+
+<h3>
+Khilanmarg – Alpather Snow
+</h3>
+
+<span>
+Snow • Mountain • Winter Experience
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Snow • Winter • Photography • Mountain Adventure
+</div>
+
+
+<div class="place-distance">
+
+❄️ Gulmarg → Snow Area:
+
+<strong>
+Route और season के अनुसार बदलता है
+</strong>
+
+<br>
+
+<span>
+➡️ Snow depth और accessibility weather conditions पर depend करती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+❄️ Snow Experience
+</h4>
+
+<p>
+
+Winter season में Khilanmarg और
+Alpather route के आसपास snow-covered
+landscape देखने को मिल सकता है।
+Alpather Lake के आसपास snowfall और
+temperature के कारण conditions काफी
+ठंडी हो सकती हैं।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>❄️ Best For:</strong>
+
+Snow Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🧤 Must Carry:</strong>
+
+Warm Jacket + Gloves + Cap
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🥾 Footwear:</strong>
+
+Warm Anti-slip Shoes
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌨️ Condition:</strong>
+
+Snowfall / Weather dependent
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Highlight:</strong>
+
+Snow + Lake + Mountains
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Khilanmarg+snow+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Snow Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snow+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn snow"
+>
+🌨️ Weather
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Gulmarg+snow+shoes+rent"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn khilanmarg"
+>
+🥾 Snow Shoes
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Khilanmarg+snow+activities"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn ski"
+>
+⛷️ Activities
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     COMPLETE ROUTE
+================================================== -->
+
+<div
+class="route-box"
+id="route-details"
+>
+
+<h3>
+🗺️ Complete Khilanmarg – Alpather Route
+</h3>
+
+<p>
+
+इस route को एक day sightseeing
+plan की तरह इस sequence में
+organise किया जा सकता है:
+
+</p>
+
+
+<div class="route-line">
+
+🏨 Gulmarg Main
+
+↓
+
+🌲 Khilanmarg
+
+↓
+
+🥾 Trek / Mountain Route
+
+↓
+
+🏔️ Alpather Lake
+
+↓
+
+❄️ Snow / Mountain Views
+
+↓
+
+🥾 Return Route
+
+↓
+
+🏨 Gulmarg
+
+</div>
+
+
+<div class="route-distance">
+
+📏 Gulmarg → Khilanmarg ≈ 6 km area
+
+<br>
+
+📏 Khilanmarg → Alpather ≈ 7–8 km route area
+
+<br>
+
+📏 Gulmarg → Alpather ≈ 12–13 km route area
+
+</div>
+
+
+<p>
+
+👉 Actual walking/trekking distance,
+road access और route condition
+season के अनुसार बदल सकती है।
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Alpather+Lake+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🗺️ Alpather Route देखें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL PLANNING
+================================================== -->
+
+<h2
+class="section-title"
+id="travel"
+>
+🚗 Khilanmarg – Alpather Travel Planning
+</h2>
+
+
+<div class="info">
+
+<h3>
+⏰ Suggested Day Plan
+</h3>
+
+<p>
+
+🌅 <strong>Morning:</strong>
+
+Gulmarg hotel से जल्दी निकलें।
+
+<br><br>
+
+🌲 <strong>First Stop:</strong>
+
+Khilanmarg meadow और surrounding
+mountain views देखें।
+
+<br><br>
+
+🥾 <strong>Next:</strong>
+
+Local route / trekking path से
+Alpather की तरफ जाएँ।
+
+<br><br>
+
+🏔️ <strong>Alpather:</strong>
+
+Lake और surrounding mountain
+landscape का experience लें।
+
+<br><br>
+
+❄️ <strong>Winter:</strong>
+
+Snow conditions और temperature
+को ध्यान में रखें।
+
+<br><br>
+
+🥾 <strong>Return:</strong>
+
+समय रहते Gulmarg की तरफ वापस
+लौटें।
+
+<br><br>
+
+🏨 <strong>Evening:</strong>
+
+Gulmarg hotel / main market area
+वापस आएँ।
+
+<br><br>
+
+⚠️ Trek route weather, snow और
+local conditions के अनुसार बदल
+सकता है।
+
+</p>
+
+</div>
+
+  <!-- ==================================================
+     DISTANCE GUIDE
+================================================== -->
+
+<h2 class="section-title">
+📏 Khilanmarg – Alpather Distance Guide
+</h2>
+
+
+<div class="distance-grid">
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏨
+</span>
+
+<strong>
+Gulmarg → Khilanmarg
+</strong>
+
+<span>
+लगभग 6 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🌲
+</span>
+
+<strong>
+Khilanmarg → Alpather
+</strong>
+
+<span>
+लगभग 7–8 km route area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏔️
+</span>
+
+<strong>
+Gulmarg → Alpather
+</strong>
+
+<span>
+लगभग 12–13 km route area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏙️
+</span>
+
+<strong>
+Srinagar → Gulmarg
+</strong>
+
+<span>
+लगभग 50–60 km road
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🚠
+</span>
+
+<strong>
+Gondola → Apharwat Area
+</strong>
+
+<span>
+Gondola Phase 2 side
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🥾
+</span>
+
+<strong>
+Alpather Access
+</strong>
+
+<span>
+Trek / Local Route
+</span>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     STAY & FOOD
+================================================== -->
+
+<div
+class="info"
+id="stay"
+>
+
+<h3>
+🏨 Gulmarg Stay & 🍽️ Food
+</h3>
+
+<p>
+
+Khilanmarg और Alpather route के लिए
+Gulmarg Main Area में stay करना
+सबसे practical option हो सकता है।
+इससे morning में route शुरू करना
+आसान रहता है।
+
+<br><br>
+
+🍽️ Food के लिए Gulmarg Main Area
+के restaurants, cafes और hotel
+restaurants के current options check
+करें।
+
+</p>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=hotels+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Best Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+💰 Budget Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurants
+</a>
+
+
+<a
+href="https://www.google.com/search?q=vegetarian+restaurants+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🥗 Vegetarian
+</a>
+
+
+<a
+href="https://www.google.com/search?q=cafes+in+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+☕ Cafes
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     TRANSPORT
+================================================== -->
+
+<h2 class="section-title">
+🚗 Gulmarg Transport
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚕
+</span>
+
+Cab Route
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Srinagar+to+Gulmarg+taxi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚗
+</span>
+
+Srinagar Taxi
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Srinagar+to+Gulmarg+bus"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚌
+</span>
+
+Bus
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚆
+</span>
+
+Railway
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK LINKS
+================================================== -->
+
+<h2 class="section-title">
+⭐ Khilanmarg – Alpather Quick Links
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Khilanmarg+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🌲
+</span>
+
+Khilanmarg Map
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Alpather+Lake+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🏔️
+</span>
+
+Alpather Map
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Khilanmarg+Alpather+trek"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🥾
+</span>
+
+Trek Route
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Khilanmarg+Alpather+Gulmarg"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+📸
+</span>
+
+Photos
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 Khilanmarg – Alpather Important Tips
+</h3>
+
+<p>
+
+🌅 <strong>1.</strong>
+
+सुबह जल्दी route शुरू करना बेहतर
+रहता है, खासकर अगर trekking करनी हो।
+
+<br><br>
+
+🥾 <strong>2.</strong>
+
+Alpather route के लिए comfortable
+और good-grip shoes पहनें।
+
+<br><br>
+
+🧤 <strong>3.</strong>
+
+Cold season में gloves, warm jacket,
+cap और thermal layers रखें।
+
+<br><br>
+
+❄️ <strong>4.</strong>
+
+Snow में route की actual condition
+local information से जरूर check करें।
+
+<br><br>
+
+💧 <strong>5.</strong>
+
+Trekking के दौरान पर्याप्त पानी और
+हल्का snack साथ रखें।
+
+<br><br>
+
+📱 <strong>6.</strong>
+
+Mobile fully charged रखें क्योंकि
+mountain areas में network coverage
+हर जगह समान नहीं हो सकती।
+
+<br><br>
+
+🌨️ <strong>7.</strong>
+
+Weather खराब होने पर trek को
+force न करें।
+
+<br><br>
+
+🏔️ <strong>8.</strong>
+
+High-altitude area में धीरे चलें और
+थकान होने पर rest लें।
+
+<br><br>
+
+🕒 <strong>9.</strong>
+
+Return journey के लिए पर्याप्त
+daylight रखें।
+
+<br><br>
+
+⚠️ <strong>10.</strong>
+
+Local guide / authorised local
+instructions को priority दें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     IMPORTANT NOTICE
+================================================== -->
+
+<div class="distance-note">
+
+⚠️ <strong>Important Information</strong>
+
+<br><br>
+
+• Gulmarg → Khilanmarg distance
+लगभग 6 km area planning estimate है।
+
+<br><br>
+
+• Khilanmarg → Alpather route लगभग
+7–8 km area माना जा सकता है, लेकिन
+trekking path के अनुसार बदल सकता है।
+
+<br><br>
+
+• Gulmarg → Alpather total route
+लगभग 12–13 km area तक हो सकता है।
+
+<br><br>
+
+• Walking distance, trekking distance
+और road distance अलग हो सकती हैं।
+
+<br><br>
+
+• Snowfall, rain, road condition और
+weather route accessibility को प्रभावित
+कर सकते हैं।
+
+<br><br>
+
+• High-altitude area में जाने से पहले
+current weather और local conditions
+check करें।
+
+</div>
+
+
+<!-- ==================================================
+     QUICK SUMMARY
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+🗺️ Khilanmarg – Alpather Quick Summary
+</h3>
+
+<p>
+
+🏨 <strong>Start:</strong>
+
+Gulmarg Main
+
+<br><br>
+
+🌲 <strong>Stop 1:</strong>
+
+Khilanmarg
+
+<br><br>
+
+📏 <strong>Gulmarg → Khilanmarg:</strong>
+
+लगभग 6 km area
+
+<br><br>
+
+🥾 <strong>Next:</strong>
+
+Mountain / Trek Route
+
+<br><br>
+
+🏔️ <strong>Stop 2:</strong>
+
+Alpather Lake
+
+<br><br>
+
+📏 <strong>Khilanmarg → Alpather:</strong>
+
+लगभग 7–8 km route area
+
+<br><br>
+
+❄️ <strong>Highlight:</strong>
+
+Snow + Lake + Mountain Views
+
+<br><br>
+
+🏨 <strong>Return:</strong>
+
+Alpather → Khilanmarg → Gulmarg
+
+<br><br>
+
+👉 इस route को Gondola route के
+साथ एक ही दिन में combine करने से
+पहले time और trekking difficulty
+का ध्यान रखें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     BOTTOM MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#top"
+class="menu-card"
+>
+<span>⬆️</span>
+Top
+<small>ऊपर</small>
+</a>
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Plan</small>
+</a>
+
+
+<a
+href="#khilanmarg"
+class="menu-card"
+>
+<span>🌲</span>
+Khilanmarg
+<small>Meadow</small>
+</a>
+
+
+<a
+href="#alpather"
+class="menu-card"
+>
+<span>🏔️</span>
+Alpather
+<small>Lake</small>
+</a>
+
+
+<a
+href="#snow"
+class="menu-card"
+>
+<span>❄️</span>
+Snow
+<small>Experience</small>
+</a>
+
+
+<a
+href="#distance"
+class="menu-card"
+>
+<span>📏</span>
+Distance
+<small>Guide</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+<a
+href="#stay"
+class="menu-card"
+>
+<span>🏨</span>
+Stay
+<small>Food</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+India Travel Guide
+
+<br><br>
+
+Khilanmarg – Alpather Route |
+खीलनमर्ग – अल्पाथर
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="ऊपर जाएँ"
+>
+⬆️
+</button>
+
+
+<!-- ==================================================
+     SCRIPT
+================================================== -->
+
+<script>
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+
+
+/* ==================================================
+   BACK TO TOP
+================================================== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+if(topBtn){
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+
+/* ==================================================
+   SMOOTH INTERNAL SCROLL
+================================================== */
+
+document.querySelectorAll(
+'a[href^="#"]'
+).forEach(
+function(link){
+
+link.addEventListener(
+"click",
+function(event){
+
+const targetId =
+this.getAttribute("href");
+
+
+if(
+!targetId ||
+targetId==="#"
+){
+
+return;
+
+}
+
+
+const target =
+document.querySelector(
+targetId
+);
+
+
+if(target){
+
+event.preventDefault();
+
+
+target.scrollIntoView({
+
+behavior:"smooth",
+
+block:"start"
+
+});
+
+}
+
+});
+
+});
+
+
+/* ==================================================
+   EXTERNAL LINKS
+================================================== */
+
+document.querySelectorAll(
+'a[target="_blank"]'
+).forEach(
+function(link){
+
+link.setAttribute(
+"rel",
+"noopener noreferrer"
+);
+
+});
+
+
+/* ==================================================
+   MENU ACTIVE EFFECT
+================================================== */
+
+const menuCards =
+document.querySelectorAll(
+".menu-card"
+);
+
+
+menuCards.forEach(
+function(card){
+
+card.addEventListener(
+"click",
+function(){
+
+menuCards.forEach(
+function(item){
+
+item.classList.remove(
+"active"
+);
+
+});
+
+
+this.classList.add(
+"active"
+);
+
+});
+
+});
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

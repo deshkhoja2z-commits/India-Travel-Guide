@@ -1,0 +1,2777 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Gulmarg | गुलमर्ग Travel Guide - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   GULMARG MAIN PAGE
+   DESH KHOJ A2Z
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:82px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.5;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#e8f5e9,
+#ffffff,
+#dbeafe
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #1976d2;
+}
+
+.logo{
+font-size:38px;
+}
+
+header h1{
+font-size:32px;
+margin:5px 0;
+}
+
+header p{
+font-weight:bold;
+color:#444;
+}
+
+.search-box{
+max-width:600px;
+margin:18px auto 0;
+position:relative;
+}
+
+.search-box input{
+width:100%;
+padding:14px 48px 14px 18px;
+border:0;
+border-radius:30px;
+font-size:16px;
+outline:none;
+box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.search-icon{
+position:absolute;
+right:16px;
+top:7px;
+font-size:27px;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:20px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+padding:10px 18px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;
+margin-bottom:18px;
+}
+
+.hero{
+background:white;
+border-left:6px solid #1976d2;
+border-radius:20px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:16px;
+color:#555;
+}
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   STICKY ROUTE MENU
+================================================== */
+
+.route-menu-wrap{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:7px 0;
+margin:0 -2px 12px;
+border-bottom:1px solid #ddd;
+}
+
+.route-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:3px 2px 6px;
+-webkit-overflow-scrolling:touch;
+scrollbar-width:none;
+}
+
+.route-menu::-webkit-scrollbar{
+display:none;
+}
+
+.route-tab{
+flex:0 0 auto;
+min-width:88px;
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:11px;
+padding:6px 8px;
+text-align:center;
+font-weight:bold;
+font-size:11px;
+box-shadow:0 2px 8px rgba(0,0,0,.10);
+border:1px solid #e3e7eb;
+}
+
+.route-tab span{
+display:block;
+font-size:19px;
+line-height:20px;
+margin-bottom:2px;
+}
+
+.route-tab small{
+display:block;
+font-size:9px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+.route-tab:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   QUICK GRID
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin-bottom:25px;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:18px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #1976d2;
+}
+
+.quick:nth-child(2){
+border-top-color:#138808;
+}
+
+.quick:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.quick:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   INFORMATION
+================================================== */
+
+.info{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:22px 0;
+}
+
+.info h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.info p{
+color:#555;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+background:#eef8ff;
+border-left:5px solid #1976d2;
+border-radius:15px;
+padding:15px;
+margin:18px 0;
+font-size:14px;
+}
+
+.distance-note strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   ROUTE CARDS
+================================================== */
+
+.route-card{
+background:white;
+border-radius:23px;
+padding:20px;
+margin:22px 0;
+box-shadow:0 5px 20px rgba(0,0,0,.09);
+border-left:6px solid #1976d2;
+scroll-margin-top:82px;
+}
+
+.route-card.gondola{
+border-left-color:#0ea5e9;
+}
+
+.route-card.nature{
+border-left-color:#138808;
+}
+
+.route-card.heritage{
+border-left-color:#8b5cf6;
+}
+
+.route-card.adventure{
+border-left-color:#e11d48;
+}
+
+.route-top{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:12px;
+}
+
+.route-big-icon{
+font-size:42px;
+}
+
+.route-top h2{
+font-size:24px;
+margin:0;
+}
+
+.route-subtitle{
+font-size:13px;
+color:#666;
+margin-top:3px;
+}
+
+.route-description{
+font-size:14px;
+color:#555;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   ROUTE PATH
+================================================== */
+
+.route-path-box{
+background:#f5f9fc;
+border-radius:15px;
+padding:14px;
+margin:12px 0;
+}
+
+.route-path-title{
+font-size:13px;
+font-weight:bold;
+color:#1976d2;
+margin-bottom:6px;
+}
+
+.route-path{
+font-size:14px;
+font-weight:bold;
+line-height:1.9;
+}
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 10px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:8px 0;
+}
+
+.route-place-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:8px;
+margin-top:12px;
+}
+
+.route-place{
+background:#f8f9fa;
+border:1px solid #e5e7eb;
+border-radius:13px;
+padding:10px 8px;
+text-align:center;
+font-size:12px;
+font-weight:bold;
+}
+
+.route-place span{
+display:block;
+font-size:22px;
+margin-bottom:2px;
+}
+
+.route-place small{
+font-size:10px;
+font-weight:normal;
+color:#666;
+}
+
+.route-button{
+display:block;
+margin-top:15px;
+background:#1976d2;
+color:white;
+text-decoration:none;
+text-align:center;
+padding:12px;
+border-radius:12px;
+font-weight:bold;
+font-size:13px;
+}
+
+.route-button:active{
+transform:scale(.98);
+}
+
+
+/* ==================================================
+   ROUTE PLANNING
+================================================== */
+
+.plan-card{
+background:white;
+border-radius:20px;
+padding:18px;
+margin:18px 0;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.plan-row{
+display:flex;
+gap:12px;
+padding:12px 0;
+border-bottom:1px solid #eee;
+}
+
+.plan-row:last-child{
+border-bottom:0;
+}
+
+.plan-icon{
+font-size:27px;
+min-width:35px;
+}
+
+.plan-row strong{
+font-size:15px;
+}
+
+.plan-row p{
+font-size:12px;
+color:#666;
+margin-top:3px;
+}
+
+
+/* ==================================================
+   SEARCH RESULT
+================================================== */
+
+.search-result{
+display:none;
+background:white;
+border-radius:18px;
+padding:18px;
+margin:15px 0;
+text-align:center;
+color:#777;
+}
+
+
+/* ==================================================
+   TRANSPORT
+================================================== */
+
+.transport-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.transport{
+background:white;
+border-radius:20px;
+padding:18px 12px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #1976d2;
+}
+
+.transport:nth-child(2){
+border-top-color:#138808;
+}
+
+.transport:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.transport:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.transport-icon{
+font-size:34px;
+margin-bottom:5px;
+}
+
+.transport h3{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.transport p{
+font-size:13px;
+color:#666;
+margin-bottom:12px;
+}
+
+.transport a{
+display:block;
+background:#1976d2;
+color:white;
+text-decoration:none;
+text-align:center;
+padding:10px 5px;
+border-radius:10px;
+font-size:12px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:25px 15px;
+margin-top:30px;
+font-size:13px;
+}
+
+footer strong{
+color:#1976d2;
+font-size:17px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:55px;
+height:55px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 4px 18px rgba(0,0,0,.22);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:27px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:18px 12px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-tab{
+min-width:82px;
+padding:6px 5px;
+font-size:10px;
+}
+
+.route-tab span{
+font-size:17px;
+}
+
+.route-tab small{
+font-size:8px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.quick{
+padding:15px 7px;
+font-size:14px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+.info{
+padding:15px;
+}
+
+.info h3{
+font-size:18px;
+}
+
+.info p{
+font-size:13px;
+}
+
+.distance-note{
+font-size:12px;
+}
+
+.route-card{
+padding:16px 12px;
+}
+
+.route-big-icon{
+font-size:35px;
+}
+
+.route-top h2{
+font-size:20px;
+}
+
+.route-description{
+font-size:13px;
+}
+
+.route-path{
+font-size:12px;
+}
+
+.route-place-grid{
+grid-template-columns:1fr 1fr;
+gap:7px;
+}
+
+.route-place{
+font-size:11px;
+padding:9px 5px;
+}
+
+.route-place span{
+font-size:20px;
+}
+
+.route-place small{
+font-size:9px;
+}
+
+.transport-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.transport{
+padding:15px 8px;
+}
+
+.transport h3{
+font-size:16px;
+}
+
+.transport p{
+font-size:12px;
+}
+
+.transport a{
+font-size:11px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Gulmarg / गुलमर्ग
+</h1>
+
+<p>
+Snow • Mountains • Gondola • Nature • Adventure
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Gulmarg में place या route खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<div class="container">
+
+
+<a
+href="../index.html"
+class="back"
+>
+← DESH KHOJ A2Z
+</a>
+
+
+<div class="hero">
+
+<h2>
+🏔️ Gulmarg Travel Guide
+</h2>
+
+<p>
+Gulmarg Kashmir का एक प्रसिद्ध mountain
+destination है जो snow, beautiful meadows,
+Gondola ride, high-altitude viewpoints,
+nature, skiing और adventure activities
+के लिए जाना जाता है। हमने Gulmarg और
+इसके आसपास के प्रमुख places को अलग-अलग
+routes में रखा है ताकि यात्रा plan करना
+आसान हो।
+</p>
+
+</div>
+
+
+<div class="route-menu-wrap">
+
+<div class="route-menu">
+
+
+<a href="#gulmargmain" class="route-tab">
+<span>🏔️</span>
+Gulmarg
+<small>Main Area</small>
+</a>
+
+
+<a href="#gondola" class="route-tab">
+<span>🚠</span>
+Gondola
+<small>Apharwat</small>
+</a>
+
+
+<a href="#nature" class="route-tab">
+<span>🌲</span>
+Nature
+<small>Lake + Valley</small>
+</a>
+
+
+<a href="#heritage" class="route-tab">
+<span>🕌</span>
+Heritage
+<small>Baba Reshi</small>
+</a>
+
+
+<a href="#adventure" class="route-tab">
+<span>⛷️</span>
+Adventure
+<small>Snow Activities</small>
+</a>
+
+
+<a href="#transport" class="route-tab">
+<span>🚗</span>
+Transport
+<small>Travel</small>
+</a>
+
+
+<a href="#stayfood" class="route-tab">
+<span>🏨</span>
+Stay & Food
+<small>Hotels</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+<div class="distance-note">
+
+📍 <strong>Distance Note:</strong>
+
+<br>
+
+यहाँ दी गई दूरी approximate road distance
+है और travel planning के लिए दी गई है।
+
+<br>
+
+Distance को सामान्यतः
+<strong>Gulmarg</strong> या
+<strong>Srinagar</strong> से starting point
+मानकर बताया गया है।
+
+<br>
+
+Actual distance आपकी starting location,
+selected road, weather और traffic के
+अनुसार कम-ज्यादा हो सकती है।
+
+</div>
+
+
+<div class="info">
+
+<h3>
+📌 पहली बार Gulmarg जा रहे हैं?
+</h3>
+
+<p>
+Gulmarg में सबसे पहले main Gulmarg area
+देखना और फिर Gondola तथा upper mountain
+areas को अलग समय देना बेहतर रहता है।
+Winter में snow conditions और weather
+के कारण travel planning बदल सकती है।
+</p>
+
+<br>
+
+🏔️ <strong>Gulmarg Main:</strong>
+Meadow + Golf Course + Local Sightseeing
+
+<br>
+
+🚠 <strong>Gondola:</strong>
+Kungdoor + Apharwat
+
+<br>
+
+🌲 <strong>Nature:</strong>
+Khilanmarg + Alpather Lake
+
+<br>
+
+🕌 <strong>Heritage:</strong>
+Baba Reshi + St. Mary's Church
+
+<br>
+
+⛷️ <strong>Adventure:</strong>
+Skiing + Snow Activities
+
+</div>
+
+
+<h2 class="section-title">
+🔎 Quick Search
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogle('tourist places in Gulmarg Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+🗺️
+</span>
+
+Gulmarg Maps
+
+</a>
+
+
+<a
+href="javascript:openGoogle('hotels in Gulmarg Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+🏨
+</span>
+
+Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('restaurants in Gulmarg Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+🍽️
+</span>
+
+Restaurants
+
+</a>
+
+
+<a
+href="javascript:openGoogleImages('Gulmarg Kashmir snow Gondola Apharwat Alpather Lake')"
+class="quick"
+>
+
+<span class="quick-icon">
+📸
+</span>
+
+Gulmarg Photos
+
+</a>
+
+
+</div>
+
+
+<h2 class="section-title">
+🧭 Gulmarg को Route-wise घूमें
+</h2>
+
+
+<div class="info">
+
+<h3>
+💡 Smart Gulmarg Travel Planning
+</h3>
+
+<p>
+नीचे Gulmarg के प्रमुख tourist areas को
+अलग-अलग routes में रखा गया है। जिस
+area में आप जाना चाहते हैं उस route
+को खोलकर उसके अंदर सभी places की
+details, distance, maps और travel
+information देख सकते हैं।
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     GULMARG MAIN
+================================================== -->
+
+<div
+class="route-card"
+id="gulmargmain"
+data-search="gulmarg main gulmarg golf course meadows green meadow church sightseeing local market gulmarg town"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+🏔️
+</div>
+
+<div>
+
+<h2>
+Gulmarg Main Route
+</h2>
+
+<div class="route-subtitle">
+Meadows • Golf Course • Local Sightseeing
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+Gulmarg का main area sightseeing के लिए
+बहुत सुंदर है। यहाँ खुली meadows, mountain
+views, Golf Course और आसपास के छोटे
+tourist attractions देखे जा सकते हैं।
+</p>
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏨 Gulmarg
+→
+🌿 Gulmarg Meadow
+→
+⛳ Golf Course
+→
+⛪ St. Mary's Church
+→
+🏔️ Local Viewpoints
+
+</div>
+
+</div>
+
+<div class="route-distance">
+📍 Gulmarg Main Area के आसपास
+</div>
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>🌿</span>
+Gulmarg Meadow
+<small>Meadow</small>
+</div>
+
+<div class="route-place">
+<span>⛳</span>
+Golf Course
+<small>Famous Course</small>
+</div>
+
+<div class="route-place">
+<span>⛪</span>
+St. Mary's Church
+<small>Historic</small>
+</div>
+
+<div class="route-place">
+<span>🏔️</span>
+Mountain Views
+<small>Scenic</small>
+</div>
+
+</div>
+
+<a
+href="gulmarg-main-route.html"
+class="route-button"
+>
+🏔️ Gulmarg Main Route खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     GONDOLA
+================================================== -->
+
+<div
+class="route-card gondola"
+id="gondola"
+data-search="gulmarg gondola cable car kungdoor apharwat peak snow mountain view skiing phase 1 phase 2"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+🚠
+</div>
+
+<div>
+
+<h2>
+Gondola & Apharwat Route
+</h2>
+
+<div class="route-subtitle">
+Gondola • Kungdoor • Apharwat • Snow
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+Gulmarg Gondola Gulmarg की सबसे popular
+attractions में से एक है। Gondola के
+अलग phases से ऊँचाई वाले mountain areas
+और snow-covered landscapes के शानदार
+views मिलते हैं।
+</p>
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏔️ Gulmarg
+→
+🚠 Gondola
+→
+🏔️ Kungdoor
+→
+❄️ Apharwat
+
+</div>
+
+</div>
+
+<div class="route-distance">
+📍 Gulmarg Main Area से Gondola area
+</div>
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>🚠</span>
+Gondola
+<small>Cable Car</small>
+</div>
+
+<div class="route-place">
+<span>🏔️</span>
+Kungdoor
+<small>Mountain Area</small>
+</div>
+
+<div class="route-place">
+<span>❄️</span>
+Apharwat
+<small>High Mountain</small>
+</div>
+
+<div class="route-place">
+<span>📸</span>
+Snow Views
+<small>Scenic</small>
+</div>
+
+</div>
+
+<a
+href="gulmarg-gondola-route.html"
+class="route-button"
+>
+🚠 Gondola Route खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     NATURE ROUTE
+================================================== -->
+
+<div
+class="route-card nature"
+id="nature"
+data-search="khilanmarg alpather lake gulmarg nature valley trekking horse ride meadow lake snow nature gulmarg"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+🌲
+</div>
+
+<div>
+
+<h2>
+Khilanmarg & Alpather Nature Route
+</h2>
+
+<div class="route-subtitle">
+Valley • Lake • Meadow • Nature
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+Khilanmarg और Alpather Lake Gulmarg के
+nature-focused attractions हैं। मौसम और
+local access conditions के अनुसार यहाँ
+trekking, horse ride या sightseeing
+options available हो सकते हैं।
+</p>
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏔️ Gulmarg
+→
+🌿 Khilanmarg
+→
+🏔️ Upper Area
+→
+💧 Alpather Lake
+
+</div>
+
+</div>
+
+<div class="route-distance">
+📍 Route और access मौसम के अनुसार बदल सकते हैं
+</div>
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>🌿</span>
+Khilanmarg
+<small>Meadow</small>
+</div>
+
+<div class="route-place">
+<span>💧</span>
+Alpather Lake
+<small>High-Altitude Lake</small>
+</div>
+
+<div class="route-place">
+<span>🐎</span>
+Horse Ride
+<small>Local Activity</small>
+</div>
+
+<div class="route-place">
+<span>🥾</span>
+Nature Walk
+<small>Activity</small>
+</div>
+
+</div>
+
+<a
+href="khilanmarg-alpather-route.html"
+class="route-button"
+>
+🌲 Nature Route खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     HERITAGE
+================================================== -->
+
+<div
+class="route-card heritage"
+id="heritage"
+data-search="baba reshi shrine st mary church heritage gulmarg mosque shrine church religious places history"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+🕌
+</div>
+
+<div>
+
+<h2>
+Gulmarg Heritage Route
+</h2>
+
+<div class="route-subtitle">
+Baba Reshi • St. Mary's Church • Heritage
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+Gulmarg के आसपास nature के साथ कुछ
+historical और religious places भी हैं।
+Baba Reshi Shrine और St. Mary's Church
+इस route में प्रमुख places हैं।
+</p>
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏔️ Gulmarg
+→
+⛪ St. Mary's Church
+→
+🕌 Baba Reshi Shrine
+
+</div>
+
+</div>
+
+<div class="route-distance">
+📍 Gulmarg और आसपास के area में
+</div>
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>🕌</span>
+Baba Reshi
+<small>Shrine</small>
+</div>
+
+<div class="route-place">
+<span>⛪</span>
+St. Mary's Church
+<small>Church</small>
+</div>
+
+<div class="route-place">
+<span>🏛️</span>
+Heritage
+<small>History</small>
+</div>
+
+<div class="route-place">
+<span>📸</span>
+Scenic Area
+<small>Photography</small>
+</div>
+
+</div>
+
+<a
+href="gulmarg-heritage-route.html"
+class="route-button"
+>
+🕌 Heritage Route खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     ADVENTURE
+================================================== -->
+
+<div
+class="route-card adventure"
+id="adventure"
+data-search="gulmarg adventure skiing snowboarding snow activities sledging gondola winter sports skiing gulmarg"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+⛷️
+</div>
+
+<div>
+
+<h2>
+Gulmarg Adventure Route
+</h2>
+
+<div class="route-subtitle">
+Skiing • Snowboarding • Sledging • Snow
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+Winter season में Gulmarg skiing और
+snow-based activities के लिए बहुत popular
+है। Activities करते समय authorised
+operators और safety instructions को
+follow करना जरूरी है।
+</p>
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Planning
+</div>
+
+<div class="route-path">
+
+🏔️ Gulmarg
+→
+❄️ Snow Area
+→
+⛷️ Skiing
+→
+🚠 Gondola Area
+
+</div>
+
+</div>
+
+<div class="route-distance">
+📍 Activity और snow conditions के अनुसार
+</div>
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>⛷️</span>
+Skiing
+<small>Winter Sport</small>
+</div>
+
+<div class="route-place">
+<span>🏂</span>
+Snowboarding
+<small>Adventure</small>
+</div>
+
+<div class="route-place">
+<span>🛷</span>
+Sledging
+<small>Snow Activity</small>
+</div>
+
+<div class="route-place">
+<span>❄️</span>
+Snow Play
+<small>Family Activity</small>
+</div>
+
+</div>
+
+<a
+href="gulmarg-adventure.html"
+class="route-button"
+>
+⛷️ Gulmarg Adventure देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE PLANNING
+================================================== -->
+
+<h2 class="section-title">
+🗓️ Gulmarg Trip Planning
+</h2>
+
+
+<div class="plan-card">
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🏔️
+</div>
+
+<div>
+
+<strong>
+1 Day — Gulmarg Main
+</strong>
+
+<p>
+Gulmarg Meadow + Golf Course +
+St. Mary's Church और आसपास के
+मुख्य sightseeing points देखें।
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🚠
+</div>
+
+<div>
+
+<strong>
+Half / Full Day — Gondola
+</strong>
+
+<p>
+Gondola और upper mountain areas के
+लिए अलग समय रखें। Weather और
+operating conditions पहले check करें।
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🌲
+</div>
+
+<div>
+
+<strong>
+1 Day — Nature Route
+</strong>
+
+<p>
+Khilanmarg और Alpather Lake को
+nature-focused day के रूप में
+plan करें।
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🕌
+</div>
+
+<div>
+
+<strong>
+Half Day — Heritage
+</strong>
+
+<p>
+Baba Reshi Shrine और St. Mary's
+Church को Gulmarg sightseeing के
+साथ cover किया जा सकता है।
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+⛷️
+</div>
+
+<div>
+
+<strong>
+1 Day — Snow Adventure
+</strong>
+
+<p>
+Skiing और अन्य snow activities के
+लिए weather, snow condition और
+local operator availability check करें।
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     SMART TRAVEL TIP
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 सबसे जरूरी Gulmarg Travel Tip
+</h3>
+
+<p>
+
+<strong>
+Gulmarg में मौसम बहुत जल्दी बदल सकता है।
+</strong>
+
+</p>
+
+<br>
+
+Gondola, upper mountain areas और
+snow activities को weather conditions
+के अनुसार plan करें।
+
+<br><br>
+
+एक ही दिन में बहुत ज्यादा दूर के
+destinations जोड़ने के बजाय Gulmarg
+के nearby places को एक route में रखना
+ज्यादा practical रहेगा।
+
+</div>
+
+  <!-- ==================================================
+     GULMARG TRANSPORT
+================================================== -->
+
+<h2
+class="section-title"
+id="transport"
+>
+🚗 Gulmarg Transport
+</h2>
+
+
+<div class="transport-grid">
+
+
+<div class="transport">
+
+<div class="transport-icon">
+✈️
+</div>
+
+<h3>
+Airport
+</h3>
+
+<p>
+Srinagar Airport से Gulmarg तक
+travel options देखें।
+</p>
+
+<a
+href="javascript:openGoogle('Srinagar Airport to Gulmarg taxi distance')"
+>
+✈️ Airport देखें
+</a>
+
+</div>
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚆
+</div>
+
+<h3>
+Train
+</h3>
+
+<p>
+Nearest railway station और Gulmarg
+connectivity देखें।
+</p>
+
+<a
+href="javascript:openGoogle('nearest railway station to Gulmarg Kashmir')"
+>
+🚆 Train देखें
+</a>
+
+</div>
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚌
+</div>
+
+<h3>
+Bus
+</h3>
+
+<p>
+Srinagar और आसपास से Gulmarg
+bus options देखें।
+</p>
+
+<a
+href="javascript:openGoogle('Srinagar to Gulmarg bus service')"
+>
+🚌 Bus देखें
+</a>
+
+</div>
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚕
+</div>
+
+<h3>
+Cab / Taxi
+</h3>
+
+<p>
+Srinagar से Gulmarg taxi और
+local sightseeing options देखें।
+</p>
+
+<a
+href="javascript:openGoogle('Srinagar to Gulmarg taxi sightseeing')"
+>
+🚕 Cab देखें
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     STAY & FOOD
+================================================== -->
+
+<h2
+class="section-title"
+id="stayfood"
+>
+🏨 Stay & 🍽️ Food
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogle('budget hotels in Gulmarg Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+💰
+</span>
+
+Budget Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('best hotels in Gulmarg Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+⭐
+</span>
+
+Best Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('family hotels in Gulmarg Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+👨‍👩‍👧
+</span>
+
+Family Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('luxury hotels in Gulmarg Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+👑
+</span>
+
+Luxury Hotels
+
+</a>
+
+
+</div>
+
+
+<h2 class="section-title">
+🍽️ Gulmarg Food
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogle('famous food in Kashmir Gulmarg')"
+class="quick"
+>
+
+<span class="quick-icon">
+🍛
+</span>
+
+Famous Food
+
+</a>
+
+
+<a
+href="javascript:openGoogle('vegetarian restaurants in Gulmarg')"
+class="quick"
+>
+
+<span class="quick-icon">
+🥗
+</span>
+
+Vegetarian
+
+</a>
+
+
+<a
+href="javascript:openGoogle('restaurants in Gulmarg Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+🍽️
+</span>
+
+Restaurants
+
+</a>
+
+
+<a
+href="javascript:openGoogle('cafes in Gulmarg Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+☕
+</span>
+
+Cafes
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     NEARBY PLACES
+================================================== -->
+
+<h2 class="section-title">
+📍 Gulmarg Nearby Places
+</h2>
+
+
+<div class="info">
+
+<h3>
+🗺️ Gulmarg के आसपास
+</h3>
+
+<p>
+
+🏙️ <strong>Srinagar:</strong>
+Gulmarg trip के साथ Srinagar sightseeing
+को जोड़ा जा सकता है।
+
+<br><br>
+
+🌊 <strong>Dal Lake:</strong>
+Srinagar में famous lake destination।
+
+<br><br>
+
+🌲 <strong>Tangmarg:</strong>
+Gulmarg की ओर जाने वाले route का
+महत्वपूर्ण town area।
+
+<br><br>
+
+💦 <strong>Drung Waterfall:</strong>
+Tangmarg area के पास popular seasonal
+waterfall attraction।
+
+<br><br>
+
+🏔️ <strong>Gulmarg:</strong>
+Snow, Gondola और mountain sightseeing
+का मुख्य destination।
+
+</p>
+
+<a
+href="javascript:openGoogle('places near Gulmarg Kashmir Tangmarg Drung Waterfall')"
+class="route-button"
+>
+📍 Nearby Places देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     GULMARG WEATHER
+================================================== -->
+
+<h2 class="section-title">
+🌤️ Gulmarg Weather & Season
+</h2>
+
+
+<div class="info">
+
+<h3>
+❄️ Winter
+</h3>
+
+<p>
+Winter में Gulmarg snow और skiing के
+लिए खास attraction बन जाता है। Heavy
+snowfall के समय road conditions,
+Gondola operation और local access
+पहले check करना जरूरी है।
+</p>
+
+<br>
+
+🌸 <strong>Spring:</strong>
+बर्फ कम होने के साथ greenery और
+pleasant mountain views देखने को मिल
+सकते हैं।
+
+<br><br>
+
+☀️ <strong>Summer:</strong>
+Meadows, greenery, walking और
+comfortable sightseeing के लिए अच्छा
+समय हो सकता है।
+
+<br><br>
+
+🍂 <strong>Autumn:</strong>
+Mountain scenery और शांत वातावरण के
+लिए अच्छा season हो सकता है।
+
+</div>
+
+
+<!-- ==================================================
+     GULMARG EXPERIENCE
+================================================== -->
+
+<h2 class="section-title">
+🏔️ Gulmarg Experience
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogleImages('Gulmarg snow Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+❄️
+</span>
+
+Snow Views
+
+</a>
+
+
+<a
+href="javascript:openGoogleImages('Gulmarg Gondola Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+🚠
+</span>
+
+Gondola Photos
+
+</a>
+
+
+<a
+href="javascript:openGoogleImages('Gulmarg meadow Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+🌿
+</span>
+
+Meadows
+
+</a>
+
+
+<a
+href="javascript:openGoogleImages('Apharwat Peak Gulmarg Kashmir')"
+class="quick"
+>
+
+<span class="quick-icon">
+🏔️
+</span>
+
+Mountain Views
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<h2 class="section-title">
+💡 Gulmarg Travel Tips
+</h2>
+
+
+<div class="info">
+
+<p>
+
+📍 Gulmarg में मौसम के अनुसार
+itinerary flexible रखें।
+
+<br><br>
+
+🚠 Gondola जाने से पहले current
+operating status और ticket information
+check करें।
+
+<br><br>
+
+❄️ Snow season में warm clothes,
+waterproof shoes और आवश्यक winter
+gear रखें।
+
+<br><br>
+
+🚗 Snowfall के समय road और vehicle
+conditions को जरूर check करें।
+
+<br><br>
+
+⛷️ Skiing और snow activities
+authorised instructors/operators के
+साथ करें।
+
+<br><br>
+
+🏔️ High-altitude areas में अपनी
+physical comfort और weather conditions
+का ध्यान रखें।
+
+<br><br>
+
+📸 Mountain areas में local rules और
+environment का सम्मान करें।
+
+<br><br>
+
+🕒 Tourist attractions और Gondola की
+current timings पहले check करें।
+
+<br><br>
+
+⚠️ Weather खराब होने पर upper
+mountain activities postpone करना
+बेहतर हो सकता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     PHOTOS
+================================================== -->
+
+<h2 class="section-title">
+📸 Gulmarg Photos
+</h2>
+
+
+<div class="info">
+
+<h3>
+📷 Gulmarg के Places की Photos
+</h3>
+
+<p>
+Gulmarg, Gondola, Apharwat Peak,
+Khilanmarg, Alpather Lake, snow,
+meadows और आसपास के tourist
+attractions की photos देखने के लिए
+Google Images खोलें।
+</p>
+
+<a
+href="javascript:openGoogleImages('Gulmarg Kashmir Gondola Apharwat Khilanmarg Alpather Lake Baba Reshi snow')"
+class="route-button"
+>
+📸 Gulmarg Photos देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     IMPORTANT
+================================================== -->
+
+<div class="info">
+
+<h3>
+⚠️ Important Information
+</h3>
+
+<p>
+
+• सभी distances approximate हैं।
+
+<br><br>
+
+• Actual road distance आपकी starting
+location और selected route के अनुसार
+बदल सकती है।
+
+<br><br>
+
+• Gulmarg का weather जल्दी बदल सकता है।
+
+<br><br>
+
+• Snowfall के दौरान road conditions
+अलग हो सकती हैं।
+
+<br><br>
+
+• Gondola operation weather और
+operational conditions पर depend कर
+सकता है।
+
+<br><br>
+
+• Upper mountain areas में जाने से
+पहले current access information check
+करें।
+
+<br><br>
+
+• Adventure और snow activities में
+safety instructions follow करें।
+
+<br><br>
+
+• Local rules और environmental
+guidelines का पालन करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK ROUTE SUMMARY
+================================================== -->
+
+<h2 class="section-title">
+🗺️ Gulmarg Quick Route Summary
+</h2>
+
+
+<div class="hero">
+
+<h2>
+📍 Gulmarg को Confusion-Free घूमें
+</h2>
+
+<p>
+
+🏔️ <strong>Gulmarg Main:</strong>
+
+Gulmarg Meadow
+→
+Golf Course
+→
+St. Mary's Church
+→
+Local Viewpoints
+
+<br><br>
+
+🚠 <strong>Gondola Route:</strong>
+
+Gulmarg
+→
+Gondola
+→
+Kungdoor
+→
+Apharwat
+
+<br><br>
+
+🌲 <strong>Nature Route:</strong>
+
+Gulmarg
+→
+Khilanmarg
+→
+Upper Area
+→
+Alpather Lake
+
+<br><br>
+
+🕌 <strong>Heritage Route:</strong>
+
+Gulmarg
+→
+St. Mary's Church
+→
+Baba Reshi Shrine
+
+<br><br>
+
+⛷️ <strong>Adventure:</strong>
+
+Gulmarg
+→
+Snow Area
+→
+Skiing
+→
+Snow Activities
+
+<br><br>
+
+<strong>
+👉 हर route के अंदर जाकर उस area के
+सभी detailed places देखें।
+</strong>
+
+</p>
+
+</div>
+
+  <!-- ==================================================
+     GULMARG ROUTE-TO-ROUTE DISTANCE
+================================================== -->
+
+<div class="distance-note">
+
+📍 <strong>Gulmarg Route-to-Route Distance Summary</strong>
+
+<br><br>
+
+🏙️ <strong>Srinagar → Gulmarg:</strong>
+लगभग <strong>50 km</strong>
+
+<br>
+
+<small>
+Approximate road distance। Starting
+location और selected road के अनुसार
+distance बदल सकती है।
+</small>
+
+<br><br>
+
+🏔️ <strong>Gulmarg Main → Gondola:</strong>
+लगभग <strong>local route</strong>
+
+<br>
+
+<small>
+Gulmarg town से Gondola area तक
+local road distance।
+</small>
+
+<br><br>
+
+🏔️ <strong>Gulmarg → Baba Reshi:</strong>
+लगभग <strong>5–7 km area</strong>
+
+<br><br>
+
+🏔️ <strong>Gulmarg → Tangmarg:</strong>
+लगभग <strong>13–15 km</strong>
+
+<br><br>
+
+🌲 <strong>Gulmarg → Khilanmarg:</strong>
+लगभग <strong>local/trek route</strong>
+
+<br>
+
+<small>
+Exact distance selected walking,
+horse या local access route पर depend
+कर सकती है।
+</small>
+
+<br><br>
+
+💧 <strong>Gulmarg → Alpather Lake:</strong>
+लगभग <strong>upper mountain route</strong>
+
+<br>
+
+<small>
+यह normal road-distance destination
+नहीं है। Access route और weather
+conditions के अनुसार planning करें।
+</small>
+
+<br><br>
+
+💦 <strong>Gulmarg → Drung Waterfall:</strong>
+लगभग <strong>20–25 km area</strong>
+
+<br>
+
+<small>
+Tangmarg/Drung route के आधार पर
+approximate distance।
+</small>
+
+<br><br>
+
+🏔️ <strong>Gulmarg → Srinagar:</strong>
+लगभग <strong>50 km</strong>
+
+<br><br>
+
+⚠️ <strong>Important:</strong>
+ये distances planning के लिए
+approximate हैं। Snowfall, road
+conditions, traffic, selected route
+और starting point के अनुसार actual
+distance और travel time बदल सकता है।
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE CONNECTION
+================================================== -->
+
+<div class="info">
+
+<h3>
+🧭 Gulmarg Route Connection
+</h3>
+
+<p>
+
+🏙️ <strong>Srinagar</strong>
+→
+🏔️ <strong>Tangmarg</strong>
+→
+🏔️ <strong>Gulmarg</strong>
+
+<br><br>
+
+🏔️ <strong>Gulmarg Main</strong>
+→
+🚠 <strong>Gondola</strong>
+→
+🏔️ <strong>Upper Mountain</strong>
+
+<br><br>
+
+🏔️ <strong>Gulmarg</strong>
+→
+🌲 <strong>Khilanmarg</strong>
+→
+💧 <strong>Alpather Lake</strong>
+
+<br><br>
+
+🏔️ <strong>Gulmarg</strong>
+→
+🕌 <strong>Baba Reshi</strong>
+→
+💦 <strong>Drung / Nearby Nature Areas</strong>
+
+<br><br>
+
+⛷️ <strong>Snow Activities</strong>
+को weather और snow conditions के
+अनुसार अलग activity day के रूप में
+रखना ज्यादा practical रहेगा।
+
+<br><br>
+
+👉 हर route के अंदर जाकर उस area के
+detailed places, maps और travel
+information देखें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     BOTTOM STICKY MENU
+================================================== -->
+
+<div class="route-menu-wrap">
+
+<div class="route-menu">
+
+
+<a
+href="#top"
+class="route-tab"
+>
+<span>⬆️</span>
+Top
+<small>ऊपर</small>
+</a>
+
+
+<a
+href="#gulmargmain"
+class="route-tab"
+>
+<span>🏔️</span>
+Gulmarg
+<small>Main</small>
+</a>
+
+
+<a
+href="#gondola"
+class="route-tab"
+>
+<span>🚠</span>
+Gondola
+<small>Apharwat</small>
+</a>
+
+
+<a
+href="#nature"
+class="route-tab"
+>
+<span>🌲</span>
+Nature
+<small>Lake</small>
+</a>
+
+
+<a
+href="#heritage"
+class="route-tab"
+>
+<span>🕌</span>
+Heritage
+<small>Baba Reshi</small>
+</a>
+
+
+<a
+href="#adventure"
+class="route-tab"
+>
+<span>⛷️</span>
+Adventure
+<small>Snow</small>
+</a>
+
+
+<a
+href="#transport"
+class="route-tab"
+>
+<span>🚗</span>
+Transport
+<small>Travel</small>
+</a>
+
+
+<a
+href="#stayfood"
+class="route-tab"
+>
+<span>🏨</span>
+Stay & Food
+<small>Hotels</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+India Travel Guide
+
+<br><br>
+
+Gulmarg | गुलमर्ग
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="ऊपर जाएँ"
+>
+⬆️
+</button>
+
+
+<script src="script.js"></script>
+
+
+<!-- ==================================================
+     GULMARG MAIN PAGE SEARCH
+================================================== -->
+
+<script>
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+
+const searchInput =
+document.getElementById("searchInput");
+
+const searchable =
+document.querySelectorAll(
+".route-card"
+);
+
+const noResult =
+document.getElementById("noResult");
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+/* ==================================================
+   SEARCH
+================================================== */
+
+if(searchInput){
+
+searchInput.addEventListener(
+"input",
+function(){
+
+const value =
+this.value
+.toLowerCase()
+.trim();
+
+let found = false;
+
+searchable.forEach(
+function(item){
+
+const text =
+(
+item.innerText +
+" " +
+(item.getAttribute(
+"data-search"
+) || "")
+)
+.toLowerCase();
+
+if(
+value === "" ||
+text.includes(value)
+){
+
+item.style.display =
+"";
+
+if(value !== ""){
+found = true;
+}
+
+}else{
+
+item.style.display =
+"none";
+
+}
+
+});
+
+
+if(
+value !== "" &&
+!found
+){
+
+if(noResult){
+noResult.style.display =
+"block";
+}
+
+}else{
+
+if(noResult){
+noResult.style.display =
+"none";
+}
+
+}
+
+});
+
+}
+
+
+/* ==================================================
+   BACK TO TOP
+================================================== */
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY > 500){
+
+topBtn.style.display =
+"block";
+
+}else{
+
+topBtn.style.display =
+"none";
+
+}
+
+});
+
+
+if(topBtn){
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+});
+
+</script>
+
+
+</body>
+
+</html>
