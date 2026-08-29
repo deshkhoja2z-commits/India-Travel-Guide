@@ -1,280 +1,308 @@
-/* =========================================================
+/* ==================================================
    DESH KHOJ A2Z
    HARIDWAR TRAVEL GUIDE
-   SIMPLE OLD-STYLE JS
-========================================================= */
+   SCRIPT.JS
+================================================== */
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function(){
 
-    /* ================================
-       BACK TO TOP BUTTON
-    ================================= */
+    /* ==================================================
+       BACK TO TOP
+    ================================================== */
 
-    var topBtn = document.getElementById("topBtn");
+    const topBtn = document.getElementById("topBtn");
 
-    window.addEventListener("scroll", function () {
+    if(topBtn){
 
-        if (!topBtn) return;
+        window.addEventListener("scroll", function(){
 
-        if (window.pageYOffset > 300) {
-            topBtn.style.display = "flex";
-        } else {
-            topBtn.style.display = "none";
-        }
+            if(window.scrollY > 350){
 
-    });
+                topBtn.style.display = "flex";
 
-    if (topBtn) {
+            }else{
 
-        topBtn.onclick = function () {
+                topBtn.style.display = "none";
 
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-
-        };
-
-    }
-
-
-    /* ================================
-       MENU CARD CLICK
-    ================================= */
-
-    var menuCards = document.querySelectorAll(".menu-card");
-
-    for (var i = 0; i < menuCards.length; i++) {
-
-        menuCards[i].onclick = function () {
-
-            for (var j = 0; j < menuCards.length; j++) {
-                menuCards[j].classList.remove("active");
             }
 
-            this.classList.add("active");
+        });
 
-        };
+        topBtn.addEventListener("click", function(){
+
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            });
+
+        });
 
     }
 
 
-    /* ================================
-       STAY MENU
-       #stay → #hotels
-    ================================= */
+    /* ==================================================
+       SMOOTH INTERNAL LINKS
+    ================================================== */
 
-    var stayLinks = document.querySelectorAll('a[href="#stay"]');
+    document.querySelectorAll('a[href^="#"]').forEach(function(link){
 
-    for (var i = 0; i < stayLinks.length; i++) {
+        link.addEventListener("click", function(event){
 
-        stayLinks[i].onclick = function (e) {
+            const targetId = this.getAttribute("href");
 
-            e.preventDefault();
+            if(!targetId || targetId === "#"){
+                return;
+            }
 
-            var hotels = document.getElementById("hotels");
+            const target = document.querySelector(targetId);
 
-            if (hotels) {
+            if(target){
 
-                hotels.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
+                event.preventDefault();
+
+                target.scrollIntoView({
+                    behavior:"smooth",
+                    block:"start"
                 });
 
             }
 
-        };
+        });
 
-    }
-
-
-    /* ================================
-       SMOOTH SCROLL
-    ================================= */
-
-    var links = document.querySelectorAll('a[href^="#"]');
-
-    for (var i = 0; i < links.length; i++) {
-
-        links[i].onclick = function (e) {
-
-            var id = this.getAttribute("href");
-
-            if (!id || id === "#" || id === "#stay") {
-                return;
-            }
-
-            var target = document.querySelector(id);
-
-            if (!target) {
-                return;
-            }
-
-            e.preventDefault();
-
-            target.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-
-        };
-
-    }
+    });
 
 
-    /* ================================
-       CURRENT LOCATION BUTTON
-       GOOGLE MAPS NAVIGATION
-    ================================= */
+    /* ==================================================
+       CURRENT LOCATION → GOOGLE MAPS
+    ================================================== */
 
-    var currentButtons =
-        document.querySelectorAll("[data-current-route]");
+    document.querySelectorAll("[data-current-route]").forEach(function(button){
 
-    for (var i = 0; i < currentButtons.length; i++) {
+        button.addEventListener("click", function(event){
 
-        currentButtons[i].onclick = function (e) {
+            event.preventDefault();
 
-            e.preventDefault();
-
-            var destination =
+            const destination =
                 this.getAttribute("data-current-route");
 
-            if (!destination) {
+            if(!destination){
                 return;
             }
 
 
-            /* --------------------------------
-               GPS AVAILABLE
-            -------------------------------- */
+            /* ==========================================
+               FALLBACK
+            ========================================== */
 
-            if (navigator.geolocation) {
+            function openFallback(){
 
-                navigator.geolocation.getCurrentPosition(
-
-                    function (position) {
-
-                        var lat =
-                            position.coords.latitude;
-
-                        var lng =
-                            position.coords.longitude;
-
-
-                        var url =
-                            "https://www.google.com/maps/dir/?api=1" +
-                            "&origin=" +
-                            encodeURIComponent(
-                                lat + "," + lng
-                            ) +
-                            "&destination=" +
-                            encodeURIComponent(
-                                destination
-                            );
-
-
-                        window.open(
-                            url,
-                            "_blank"
-                        );
-
-                    },
-
-                    function () {
-
-                        /* GPS permission denied */
-
-                        var url =
-                            "https://www.google.com/maps/dir/?api=1" +
-                            "&destination=" +
-                            encodeURIComponent(
-                                destination
-                            );
-
-                        window.open(
-                            url,
-                            "_blank"
-                        );
-
-                    }
-
-                );
-
-            }
-
-            /* --------------------------------
-               GPS NOT AVAILABLE
-            -------------------------------- */
-
-            else {
-
-                var url =
+                const fallback =
                     "https://www.google.com/maps/dir/?api=1" +
                     "&destination=" +
-                    encodeURIComponent(
-                        destination
-                    );
+                    encodeURIComponent(destination);
 
                 window.open(
-                    url,
-                    "_blank"
+                    fallback,
+                    "_blank",
+                    "noopener,noreferrer"
                 );
 
             }
 
-        };
 
-    }
+            /* ==========================================
+               GEOLOCATION CHECK
+            ========================================== */
+
+            if(!navigator.geolocation){
+
+                openFallback();
+
+                return;
+
+            }
 
 
-    /* ================================
+            navigator.geolocation.getCurrentPosition(
+
+                function(position){
+
+                    const lat =
+                        position.coords.latitude;
+
+                    const lng =
+                        position.coords.longitude;
+
+
+                    const mapsUrl =
+                        "https://www.google.com/maps/dir/?api=1" +
+                        "&origin=" +
+                        lat +
+                        "," +
+                        lng +
+                        "&destination=" +
+                        encodeURIComponent(destination);
+
+
+                    window.open(
+                        mapsUrl,
+                        "_blank",
+                        "noopener,noreferrer"
+                    );
+
+                },
+
+
+                function(){
+
+                    openFallback();
+
+                },
+
+
+                {
+                    enableHighAccuracy:true,
+                    timeout:10000,
+                    maximumAge:60000
+                }
+
+            );
+
+        });
+
+    });
+
+
+    /* ==================================================
        EXTERNAL LINKS
-    ================================= */
+    ================================================== */
 
-    var externalLinks =
-        document.querySelectorAll(
-            'a[target="_blank"]'
-        );
+    document.querySelectorAll('a[target="_blank"]').forEach(function(link){
 
-    for (var i = 0; i < externalLinks.length; i++) {
-
-        externalLinks[i].setAttribute(
+        link.setAttribute(
             "rel",
             "noopener noreferrer"
         );
 
+    });
+
+
+    /* ==================================================
+       ACTIVE TOP MENU
+    ================================================== */
+
+    const menuCards =
+        document.querySelectorAll(".menu-card");
+
+
+    menuCards.forEach(function(card){
+
+        card.addEventListener("click", function(){
+
+            menuCards.forEach(function(item){
+
+                item.classList.remove("active");
+
+            });
+
+            this.classList.add("active");
+
+        });
+
+    });
+
+
+    /* ==================================================
+       CURRENT BUTTON TOUCH EFFECT
+    ================================================== */
+
+    document.querySelectorAll(".current").forEach(function(button){
+
+        button.addEventListener("touchstart", function(){
+
+            this.style.transform = "scale(.95)";
+
+        }, {passive:true});
+
+
+        button.addEventListener("touchend", function(){
+
+            this.style.transform = "";
+
+        }, {passive:true});
+
+    });
+
+
+    /* ==================================================
+       TOP BUTTON INITIAL STATE
+    ================================================== */
+
+    if(topBtn){
+
+        topBtn.style.display =
+            window.scrollY > 350 ? "flex" : "none";
+
     }
 
 
-    /* ================================
-       MAP BUTTONS HIDE
-       Extra safety
-    ================================= */
+    /* ==================================================
+       ACTIVE MENU ON SCROLL
+    ================================================== */
 
-    var mapButtons =
-        document.querySelectorAll(
-            ".mini-btn.map"
-        );
-
-    for (var i = 0; i < mapButtons.length; i++) {
-
-        mapButtons[i].style.display = "none";
-
-    }
+    const sections = [
+        "route1",
+        "route2",
+        "route3",
+        "route4",
+        "route5",
+        "route6",
+        "travel"
+    ];
 
 
-    /* ================================
-       INITIAL TOP BUTTON
-    ================================= */
+    window.addEventListener("scroll", function(){
 
-    if (topBtn) {
+        let currentSection = "";
 
-        if (window.pageYOffset > 300) {
-            topBtn.style.display = "flex";
-        } else {
-            topBtn.style.display = "none";
+        sections.forEach(function(id){
+
+            const section =
+                document.getElementById(id);
+
+            if(!section){
+                return;
+            }
+
+            const position =
+                section.getBoundingClientRect();
+
+            if(position.top <= 140){
+
+                currentSection = id;
+
+            }
+
+        });
+
+
+        if(currentSection){
+
+            menuCards.forEach(function(card){
+
+                const href =
+                    card.getAttribute("href");
+
+                card.classList.toggle(
+                    "active",
+                    href === "#" + currentSection
+                );
+
+            });
+
         }
 
-    }
+    });
+
 
 });
