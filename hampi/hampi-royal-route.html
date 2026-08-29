@@ -1,0 +1,3660 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Hampi Royal Route | हम्पी Royal Heritage Route - DESH KHOJ A2Z
+</title>
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   HAMPI ROYAL ROUTE
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:75px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#fff3d6,
+#ffffff,
+#fef3c7
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #d97706;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:40px;
+}
+
+header h1{
+font-size:30px;
+margin:5px 0;
+}
+
+header p{
+font-size:14px;
+font-weight:bold;
+color:#34495e;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:18px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   STICKY HORIZONTAL MENU
+================================================== */
+
+.sticky-menu{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:6px 0;
+margin:0 -2px 15px;
+border-bottom:1px solid #ddd;
+}
+
+.horizontal-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:2px 3px 5px;
+scrollbar-width:none;
+-webkit-overflow-scrolling:touch;
+}
+
+.horizontal-menu::-webkit-scrollbar{
+display:none;
+}
+
+.menu-card{
+flex:0 0 auto;
+min-width:82px;
+background:white;
+color:#202124;
+text-decoration:none;
+border:1px solid #e1e5e8;
+border-radius:10px;
+padding:5px 7px;
+text-align:center;
+font-size:10px;
+font-weight:bold;
+box-shadow:0 2px 7px rgba(0,0,0,.10);
+line-height:1.2;
+}
+
+.menu-card span{
+display:block;
+font-size:18px;
+line-height:19px;
+margin-bottom:2px;
+}
+
+.menu-card small{
+display:block;
+font-size:8px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+.menu-card:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+background:white;
+border-left:6px solid #d97706;
+border-radius:22px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.09);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+font-size:16px;
+}
+
+
+/* ==================================================
+   SUGGESTED PLANNING
+================================================== */
+
+.suggested{
+background:#fff8e7;
+border-radius:20px;
+padding:18px;
+margin-top:20px;
+}
+
+.suggested h3{
+font-size:20px;
+color:#b45309;
+margin-bottom:8px;
+}
+
+.suggested p{
+font-size:15px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+background:#eef8ff;
+border-left:5px solid #1976d2;
+border-radius:16px;
+padding:15px;
+margin:18px 0 25px;
+font-size:13px;
+}
+
+.distance-note strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   DISTANCE GRID
+================================================== */
+
+.distance-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin:20px 0;
+}
+
+.distance-card{
+background:#f8fafc;
+border:1px solid #e1e5e8;
+border-radius:18px;
+padding:17px 9px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.distance-icon{
+display:block;
+font-size:32px;
+margin-bottom:5px;
+}
+
+.distance-card strong{
+font-size:15px;
+}
+
+.distance-card span{
+display:block;
+font-size:12px;
+color:#666;
+margin-top:3px;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   INFO
+================================================== */
+
+.info{
+background:#eef7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:17px;
+margin:20px 0 25px;
+font-size:14px;
+}
+
+.info h3{
+font-size:20px;
+margin-bottom:7px;
+}
+
+
+/* ==================================================
+   ROUTE SUMMARY
+================================================== */
+
+.route-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:20px 0 28px;
+}
+
+.route-box h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.route-box p{
+font-size:14px;
+color:#555;
+}
+
+.route-line{
+font-weight:bold;
+font-size:15px;
+line-height:2;
+margin:10px 0;
+}
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:5px 0;
+}
+
+
+/* ==================================================
+   PLACE / DETAIL CARD
+================================================== */
+
+.place-card{
+background:white;
+border-radius:24px;
+padding:22px;
+margin:25px 0;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+border-left:6px solid #d97706;
+scroll-margin-top:75px;
+}
+
+.place-card:nth-of-type(2){
+border-left-color:#1976d2;
+}
+
+.place-card:nth-of-type(3){
+border-left-color:#138808;
+}
+
+.place-card:nth-of-type(4){
+border-left-color:#7c3aed;
+}
+
+.place-card:nth-of-type(5){
+border-left-color:#dc2626;
+}
+
+
+/* ==================================================
+   PLACE HEADER
+================================================== */
+
+.place-header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:14px;
+}
+
+.place-icon{
+font-size:48px;
+}
+
+.place-header h3{
+font-size:25px;
+margin:0;
+}
+
+.place-header span{
+display:block;
+font-size:16px;
+color:#666;
+margin-top:2px;
+}
+
+
+/* ==================================================
+   CATEGORY
+================================================== */
+
+.category{
+display:inline-block;
+background:#f1f5f9;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#555;
+margin-bottom:14px;
+}
+
+
+/* ==================================================
+   DISTANCE BADGE
+================================================== */
+
+.place-distance{
+background:#eaf8ef;
+border-left:4px solid #138808;
+border-radius:12px;
+padding:10px 12px;
+margin:10px 0 15px;
+font-size:13px;
+font-weight:bold;
+color:#176b38;
+}
+
+.place-distance span{
+color:#555;
+font-weight:normal;
+}
+
+
+/* ==================================================
+   SHORT HISTORY
+================================================== */
+
+.short-history{
+background:#fff8e7;
+border-left:4px solid #f59e0b;
+padding:14px;
+border-radius:13px;
+margin:12px 0 18px;
+}
+
+.short-history h4{
+margin-bottom:5px;
+font-size:17px;
+}
+
+.short-history p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   BUTTON GRID
+================================================== */
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.action-btn{
+display:block;
+padding:12px 8px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:bold;
+transition:.2s;
+}
+
+.action-btn:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   ACTION COLORS
+================================================== */
+
+.route{
+background:#1976d2;
+}
+
+.maps{
+background:#0f766e;
+}
+
+.hotel{
+background:#d97706;
+}
+
+.luxury{
+background:#7c3aed;
+}
+
+.restaurant{
+background:#dc2626;
+}
+
+.photo{
+background:#2563eb;
+}
+
+.royal{
+background:#b45309;
+}
+
+.history{
+background:#92400e;
+}
+
+.temple{
+background:#15803d;
+}
+
+.architecture{
+background:#7c3aed;
+}
+
+.ticket{
+background:#0369a1;
+}
+
+.cab{
+background:#ea580c;
+}
+
+.train{
+background:#6d28d9;
+}
+
+.bus{
+background:#15803d;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px;
+margin-top:18px;
+}
+
+.place-info-row{
+padding:8px 0;
+border-bottom:1px solid #e5e7eb;
+font-size:14px;
+}
+
+.place-info-row:last-child{
+border-bottom:0;
+}
+
+.place-info strong{
+display:inline-block;
+margin-right:5px;
+}
+
+
+/* ==================================================
+   QUICK LINKS
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:17px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #d97706;
+}
+
+.quick:nth-child(2){
+border-top-color:#1976d2;
+}
+
+.quick:nth-child(3){
+border-top-color:#138808;
+}
+
+.quick:nth-child(4){
+border-top-color:#7c3aed;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:54px;
+height:54px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:28px 15px;
+margin-top:35px;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:17px;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:26px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:17px 11px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.menu-card{
+min-width:78px;
+padding:5px 5px;
+font-size:9px;
+}
+
+.menu-card span{
+font-size:17px;
+}
+
+.menu-card small{
+font-size:7px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-line{
+font-size:13px;
+}
+
+.distance-card{
+padding:15px 6px;
+}
+
+.distance-icon{
+font-size:28px;
+}
+
+.distance-card strong{
+font-size:13px;
+}
+
+.distance-card span{
+font-size:10px;
+}
+
+.place-card{
+padding:18px 14px;
+}
+
+.place-header h3{
+font-size:21px;
+}
+
+.place-icon{
+font-size:40px;
+}
+
+.place-header span{
+font-size:14px;
+}
+
+.place-distance{
+font-size:11px;
+}
+
+.action-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.action-btn{
+font-size:11px;
+padding:11px 5px;
+}
+
+.place-info-row{
+font-size:13px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.quick{
+padding:14px 7px;
+font-size:13px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.menu-card{
+min-width:72px;
+}
+
+.action-btn{
+font-size:10px;
+}
+
+.place-header h3{
+font-size:19px;
+}
+
+.place-header span{
+font-size:13px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Hampi Royal Route
+</h1>
+
+<p>
+Royal Enclosure • Lotus Mahal • Elephant Stables • Queen's Bath • Vijayanagara History
+</p>
+
+</header>
+
+
+<div class="container">
+
+
+<a
+href="hampi.html"
+class="back"
+>
+← Hampi / हम्पी
+</a>
+
+
+<!-- ==================================================
+     STICKY MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>👑</span>
+Royal
+<small>Route</small>
+</a>
+
+
+<a
+href="#royal"
+class="menu-card"
+>
+<span>🏰</span>
+Royal Enclosure
+<small>History</small>
+</a>
+
+
+<a
+href="#lotus"
+class="menu-card"
+>
+<span>🌸</span>
+Lotus Mahal
+<small>Palace</small>
+</a>
+
+
+<a
+href="#elephant"
+class="menu-card"
+>
+<span>🐘</span>
+Elephant
+<small>Stables</small>
+</a>
+
+
+<a
+href="#queen"
+class="menu-card"
+>
+<span>👑</span>
+Queen's Bath
+<small>Architecture</small>
+</a>
+
+
+<a
+href="#distance"
+class="menu-card"
+>
+<span>📏</span>
+Distance
+<small>Guide</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+<a
+href="#stay"
+class="menu-card"
+>
+<span>🏨</span>
+Stay
+<small>Food</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div
+class="hero"
+id="route"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+👑
+</div>
+
+<div>
+
+<h2>
+Hampi Royal Route
+</h2>
+
+<span>
+Royal Enclosure • Palaces • Architecture • Vijayanagara History
+</span>
+
+</div>
+
+</div>
+
+
+<p>
+
+Hampi का Royal Route Vijayanagara
+Empire के royal centre, palace
+complexes और impressive architecture
+को explore करने के लिए बनाया जा सकता है।
+इस route में Royal Enclosure,
+Mahanavami Dibba, Lotus Mahal,
+Elephant Stables और Queen's Bath
+जैसे प्रमुख heritage sites शामिल किए
+जा सकते हैं।
+
+</p>
+
+
+<div class="suggested">
+
+<h3>
+📍 Suggested Royal Heritage Planning
+</h3>
+
+<p>
+
+🏛️ Hampi Main Area
+
+→
+
+🏰 Royal Enclosure
+
+→
+
+🪨 Mahanavami Dibba
+
+→
+
+🌸 Lotus Mahal
+
+→
+
+🐘 Elephant Stables
+
+→
+
+👑 Queen's Bath
+
+→
+
+🏛️ Hampi Return
+
+</p>
+
+</div>
+
+
+<div class="route-distance">
+
+📍 Hampi Main → Royal Enclosure →
+Mahanavami Dibba → Lotus Mahal →
+Elephant Stables → Queen's Bath
+
+<br>
+
+पूरी दूरी starting point और walking
+route के अनुसार बदल सकती है।
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE GRID
+================================================== -->
+
+<div
+class="distance-grid"
+id="distance"
+>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏛️
+</span>
+
+<strong>
+Hampi Main → Royal Enclosure
+</strong>
+
+<span>
+लगभग 1–2 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏰
+</span>
+
+<strong>
+Royal Enclosure → Mahanavami Dibba
+</strong>
+
+<span>
+लगभग 0.2–0.5 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🪨
+</span>
+
+<strong>
+Mahanavami Dibba → Lotus Mahal
+</strong>
+
+<span>
+लगभग 1–2 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🌸
+</span>
+
+<strong>
+Lotus Mahal → Elephant Stables
+</strong>
+
+<span>
+लगभग 0.3–0.5 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🐘
+</span>
+
+<strong>
+Elephant Stables → Queen's Bath
+</strong>
+
+<span>
+लगभग 1–2 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+📍
+</span>
+
+<strong>
+Hampi Royal Circuit
+</strong>
+
+<span>
+लगभग 4–7 km sightseeing area
+</span>
+
+</div>
+
+
+</div>
+
+
+<a
+href="#route-details"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🗺️ Complete Royal Route देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE NOTE
+================================================== -->
+
+<div class="distance-note">
+
+📏 <strong>Distance Important Note:</strong>
+
+<br><br>
+
+🏛️ Hampi Main Area से Royal Enclosure
+तक distance आपके starting point के
+अनुसार बदल सकती है। Planning के लिए
+लगभग <strong>1–2 km area</strong> माना जा
+सकता है।
+
+<br><br>
+
+🏰 Royal Enclosure से Mahanavami Dibba
+का distance काफी छोटा है और दोनों को
+एक ही sightseeing stop में explore
+किया जा सकता है।
+
+<br><br>
+
+🪨 Mahanavami Dibba से Lotus Mahal तक
+walking/road route लगभग
+<strong>1–2 km area</strong> हो सकता है।
+
+<br><br>
+
+🌸 Lotus Mahal से Elephant Stables
+लगभग <strong>0.3–0.5 km area</strong> का
+short walking distance माना जा सकता है।
+
+<br><br>
+
+🐘 Elephant Stables से Queen's Bath
+तक selected route के अनुसार लगभग
+<strong>1–2 km area</strong> हो सकता है।
+
+<br><br>
+
+⚠️ यहाँ दिए गए distances planning
+estimates हैं। Actual walking distance,
+road distance और monument entrance
+से दूरी अलग हो सकती है।
+
+</div>
+
+
+<!-- ==================================================
+     ROYAL ENCLOSURE
+================================================== -->
+
+<div
+class="place-card"
+id="royal"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏰
+</div>
+
+<div>
+
+<h3>
+Royal Enclosure
+</h3>
+
+<span>
+राजसी परिसर • Vijayanagara Royal Centre
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Royal Heritage • History • Architecture • Photography
+</div>
+
+
+<div class="place-distance">
+
+📍 Hampi Main → Royal Enclosure:
+
+<strong>
+लगभग 1–2 km area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact distance आपके starting point और selected walking route के अनुसार बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🏰 Royal Enclosure के बारे में
+</h4>
+
+<p>
+
+Royal Enclosure Vijayanagara Empire
+के royal centre का महत्वपूर्ण हिस्सा
+था। इस area में royal buildings,
+platforms और ceremonial structures
+के archaeological remains देखने को
+मिलते हैं। यह Hampi के इतिहास और
+राजसी व्यवस्था को समझने के लिए
+महत्वपूर्ण heritage zone है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Hampi Royal Centre
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Hampi Main से लगभग 1–2 km area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏰 Highlight:</strong>
+
+Royal Architecture + Ruins
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📜 History:</strong>
+
+Vijayanagara Empire
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Heritage Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚶 Access:</strong>
+
+Walking / Local Transport
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Royal+Enclosure+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Royal+Enclosure+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Royal+Enclosure+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Royal+Enclosure+Hampi+history"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn history"
+>
+📜 History
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Royal+Enclosure+Hampi+architecture"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn architecture"
+>
+🏛️ Architecture
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Royal+Enclosure+Hampi+timings"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn ticket"
+>
+⏰ Timings
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     MAHANAVAMI DIBBA
+================================================== -->
+
+<div
+class="place-card"
+id="dibba"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🪨
+</div>
+
+<div>
+
+<h3>
+Mahanavami Dibba
+</h3>
+
+<span>
+महानवमी डिब्बा • Royal Ceremonial Platform
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Royal Platform • Vijayanagara History • Architecture
+</div>
+
+
+<div class="place-distance">
+
+📍 Royal Enclosure → Mahanavami Dibba:
+
+<strong>
+लगभग 0.2–0.5 km area
+</strong>
+
+<br>
+
+<span>
+➡️ यह Royal Enclosure के आसपास का short walking route है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🪨 Mahanavami Dibba के बारे में
+</h4>
+
+<p>
+
+Mahanavami Dibba एक विशाल raised
+ceremonial platform है जिसे Vijayanagara
+काल के royal ceremonies और public
+events से जोड़ा जाता है। इसके stone
+reliefs और elevated structure Hampi
+की royal architecture की महत्वपूर्ण
+झलक देते हैं।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Royal Centre, Hampi
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Royal Enclosure से लगभग 0.2–0.5 km area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏛️ Type:</strong>
+
+Ceremonial Royal Platform
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📜 Period:</strong>
+
+Vijayanagara Era
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Stone Relief Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚶 Access:</strong>
+
+Walking
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Mahanavami+Dibba+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Dibba Map
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Mahanavami+Dibba+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Mahanavami+Dibba+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Mahanavami+Dibba+Hampi+history"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn history"
+>
+📜 History
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Mahanavami+Dibba+Hampi+architecture"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn architecture"
+>
+🏛️ Architecture
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Mahanavami+Dibba+Hampi+timings"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn ticket"
+>
+⏰ Timings
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     LOTUS MAHAL
+================================================== -->
+
+<div
+class="place-card"
+id="lotus"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🌸
+</div>
+
+<div>
+
+<h3>
+Lotus Mahal
+</h3>
+
+<span>
+कमल महल • Elegant Vijayanagara Architecture
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Architecture • Royal Complex • Photography • Heritage
+</div>
+
+
+<div class="place-distance">
+
+📍 Mahanavami Dibba → Lotus Mahal:
+
+<strong>
+लगभग 1–2 km area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact route monument access और selected walking/road path के अनुसार बदल सकता है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌸 Lotus Mahal के बारे में
+</h4>
+
+<p>
+
+Lotus Mahal Hampi के Zenana Enclosure
+क्षेत्र में स्थित एक सुंदर architectural
+structure है। इसकी कमल जैसी shape,
+arched openings और decorative design
+इसे Hampi के सबसे visually distinctive
+heritage structures में शामिल करते हैं।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Zenana Enclosure, Hampi
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Mahanavami Dibba से लगभग 1–2 km area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌸 Highlight:</strong>
+
+Lotus-shaped Architecture
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏛️ Type:</strong>
+
+Royal-era Structure
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Architecture Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚶 Access:</strong>
+
+Walking / Local Transport
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Lotus+Mahal+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Lotus Mahal Map
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Lotus+Mahal+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Lotus+Mahal+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Lotus+Mahal+Hampi+history"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn history"
+>
+📜 History
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Lotus+Mahal+Hampi+architecture"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn architecture"
+>
+🏛️ Architecture
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Lotus+Mahal+Hampi+timings"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn ticket"
+>
+⏰ Timings
+</a>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     ELEPHANT STABLES
+================================================== -->
+
+<div
+class="place-card"
+id="elephant"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🐘
+</div>
+
+<div>
+
+<h3>
+Elephant Stables
+</h3>
+
+<span>
+हाथी अस्तबल • Royal Elephant Architecture
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Royal Architecture • Heritage • Photography • History
+</div>
+
+
+<div class="place-distance">
+
+📍 Lotus Mahal → Elephant Stables:
+
+<strong>
+लगभग 0.3–0.5 km area
+</strong>
+
+<br>
+
+<span>
+➡️ दोनों monuments एक ही heritage zone के आसपास explore किए जा सकते हैं।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🐘 Elephant Stables के बारे में
+</h4>
+
+<p>
+
+Elephant Stables Vijayanagara Empire
+के royal elephants के लिए बनाया गया
+विशाल architectural complex माना जाता
+है। इसके बड़े arched chambers और
+symmetrical design Hampi की impressive
+royal architecture को दिखाते हैं।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Near Zenana Enclosure, Hampi
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Lotus Mahal से लगभग 0.3–0.5 km area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🐘 Highlight:</strong>
+
+Large Elephant Chambers
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🏛️ Type:</strong>
+
+Royal-era Architecture
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Architecture Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚶 Access:</strong>
+
+Walking / Local Transport
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Elephant+Stables+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Elephant Stables Map
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Elephant+Stables+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Elephant+Stables+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Elephant+Stables+Hampi+history"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn history"
+>
+📜 History
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Elephant+Stables+Hampi+architecture"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn architecture"
+>
+🏛️ Architecture
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Elephant+Stables+Hampi+timings"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn ticket"
+>
+⏰ Timings
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     QUEEN'S BATH
+================================================== -->
+
+<div
+class="place-card"
+id="queen"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+👑
+</div>
+
+<div>
+
+<h3>
+Queen's Bath
+</h3>
+
+<span>
+रानी स्नानागार • Royal Bath Architecture
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Royal Architecture • History • Water Structure • Photography
+</div>
+
+
+<div class="place-distance">
+
+📍 Elephant Stables → Queen's Bath:
+
+<strong>
+लगभग 1–2 km area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact distance selected heritage route और starting point के अनुसार बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+👑 Queen's Bath के बारे में
+</h4>
+
+<p>
+
+Queen's Bath Vijayanagara period की
+एक distinctive royal water structure है।
+इसकी large enclosed design और
+architectural details इसे Hampi के
+महत्वपूर्ण royal-era monuments में
+शामिल करते हैं।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Hampi Royal Heritage Area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Elephant Stables से लगभग 1–2 km area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>👑 Highlight:</strong>
+
+Royal Bath Structure
+
+</div>
+
+<div class="place-info-row">
+
+<strong>💧 Type:</strong>
+
+Historic Water Architecture
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📜 Period:</strong>
+
+Vijayanagara Era
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Architecture Photography
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Queen's+Bath+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Queen's Bath Map
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Queen's+Bath+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Queen's+Bath+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Queen's+Bath+Hampi+history"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn history"
+>
+📜 History
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Queen's+Bath+Hampi+architecture"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn architecture"
+>
+🏛️ Architecture
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Queen's+Bath+Hampi+timings"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn ticket"
+>
+⏰ Timings
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     COMPLETE ROYAL ROUTE
+================================================== -->
+
+<div
+class="route-box"
+id="route-details"
+>
+
+<h3>
+🗺️ Complete Hampi Royal Heritage Route
+</h3>
+
+<p>
+
+इस route को एक day heritage
+sightseeing plan की तरह इस sequence
+में organise किया जा सकता है:
+
+</p>
+
+
+<div class="route-line">
+
+🏛️ Hampi Main Area
+
+↓
+
+🏰 Royal Enclosure
+
+↓
+
+🪨 Mahanavami Dibba
+
+↓
+
+🌸 Lotus Mahal
+
+↓
+
+🐘 Elephant Stables
+
+↓
+
+👑 Queen's Bath
+
+↓
+
+🚶 Royal Heritage Area
+
+↓
+
+🏛️ Hampi Return
+
+</div>
+
+
+<div class="route-distance">
+
+📏 Hampi Main → Royal Enclosure
+≈ 1–2 km area
+
+<br>
+
+📏 Royal Enclosure → Mahanavami Dibba
+≈ 0.2–0.5 km area
+
+<br>
+
+📏 Mahanavami Dibba → Lotus Mahal
+≈ 1–2 km area
+
+<br>
+
+📏 Lotus Mahal → Elephant Stables
+≈ 0.3–0.5 km area
+
+<br>
+
+📏 Elephant Stables → Queen's Bath
+≈ 1–2 km area
+
+<br>
+
+📏 Complete Royal Circuit
+≈ 4–7 km sightseeing area
+
+</div>
+
+
+<p>
+
+👉 Actual walking distance, road route,
+monument entrance और sightseeing stops
+के अनुसार total distance बदल सकती है।
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Royal+Enclosure+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🗺️ Royal Route देखें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     ROYAL ROUTE DISTANCE GUIDE
+================================================== -->
+
+<h2 class="section-title">
+📏 Hampi Royal Route Distance Guide
+</h2>
+
+
+<div class="distance-grid">
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏛️
+</span>
+
+<strong>
+Hampi Main → Royal Enclosure
+</strong>
+
+<span>
+लगभग 1–2 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏰
+</span>
+
+<strong>
+Royal Enclosure → Mahanavami Dibba
+</strong>
+
+<span>
+लगभग 0.2–0.5 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🪨
+</span>
+
+<strong>
+Mahanavami Dibba → Lotus Mahal
+</strong>
+
+<span>
+लगभग 1–2 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🌸
+</span>
+
+<strong>
+Lotus Mahal → Elephant Stables
+</strong>
+
+<span>
+लगभग 0.3–0.5 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🐘
+</span>
+
+<strong>
+Elephant Stables → Queen's Bath
+</strong>
+
+<span>
+लगभग 1–2 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏙️
+</span>
+
+<strong>
+Hospet → Hampi
+</strong>
+
+<span>
+लगभग 12–15 km road route
+</span>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL PLANNING
+================================================== -->
+
+<h2
+class="section-title"
+id="travel"
+>
+🚗 Hampi Royal Route Travel Planning
+</h2>
+
+
+<div class="info">
+
+<h3>
+⏰ Suggested Day Plan
+</h3>
+
+<p>
+
+🌅 <strong>Morning:</strong>
+
+Hampi में सुबह जल्दी sightseeing
+start करें ताकि outdoor walking
+के लिए मौसम relatively comfortable
+रहे।
+
+<br><br>
+
+🏰 <strong>First Stop:</strong>
+
+Royal Enclosure और आसपास के royal
+structures explore करें।
+
+<br><br>
+
+🪨 <strong>Next:</strong>
+
+Mahanavami Dibba और उसके stone
+details देखें।
+
+<br><br>
+
+🌸 <strong>Next Visit:</strong>
+
+Lotus Mahal की architecture और
+surrounding heritage area explore करें।
+
+<br><br>
+
+🐘 <strong>Next Visit:</strong>
+
+Elephant Stables तक जाएँ और
+royal architecture देखें।
+
+<br><br>
+
+👑 <strong>Final Stop:</strong>
+
+Queen's Bath और आसपास के heritage
+structures explore करें।
+
+<br><br>
+
+🌇 <strong>Return:</strong>
+
+समय और मौसम के अनुसार Hampi Main
+Area की तरफ वापस लौटें।
+
+<br><br>
+
+⚠️ Monument timings, entry rules,
+weather और local conditions यात्रा
+से पहले verify करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     ROYAL ROUTE EXPERIENCE
+================================================== -->
+
+<div class="info">
+
+<h3>
+👑 Royal Route में क्या देखें?
+</h3>
+
+<p>
+
+🏰 <strong>Royal Enclosure:</strong>
+
+Vijayanagara के royal centre और
+archaeological remains को समझने
+का प्रमुख स्थान।
+
+<br><br>
+
+🪨 <strong>Mahanavami Dibba:</strong>
+
+Grand ceremonial platform और
+stone reliefs के लिए प्रसिद्ध।
+
+<br><br>
+
+🌸 <strong>Lotus Mahal:</strong>
+
+Distinctive architectural design
+और decorative arches के लिए
+विशेष आकर्षण।
+
+<br><br>
+
+🐘 <strong>Elephant Stables:</strong>
+
+Large arched chambers और royal
+architecture का impressive example।
+
+<br><br>
+
+👑 <strong>Queen's Bath:</strong>
+
+Historic royal water architecture
+और distinctive structure।
+
+</p>
+
+</div>
+
+  <!-- ==================================================
+     STAY & FOOD
+================================================== -->
+
+<div
+class="info"
+id="stay"
+>
+
+<h3>
+🏨 Hampi Stay & 🍽️ Food
+</h3>
+
+<p>
+
+Hampi Royal Route के लिए Hampi Main
+Area या nearby Hospet में stay करना
+practical option हो सकता है। इससे
+सुबह जल्दी heritage sightseeing
+शुरू करना आसान रहता है।
+
+<br><br>
+
+🏨 Hampi में heritage area के आसपास
+available stays check करें और
+booking से पहले current reviews,
+location और facilities verify करें।
+
+<br><br>
+
+🍽️ Food के लिए Hampi और nearby
+areas के restaurants, cafes और
+hotel restaurants के current options
+check करें।
+
+</p>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=hotels+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Best Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+💰 Budget Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurants
+</a>
+
+
+<a
+href="https://www.google.com/search?q=vegetarian+restaurants+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🥗 Vegetarian
+</a>
+
+
+<a
+href="https://www.google.com/search?q=cafes+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+☕ Cafes
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     TRANSPORT
+================================================== -->
+
+<h2 class="section-title">
+🚗 Hampi Transport
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚕
+</span>
+
+Hampi Cab Route
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hospet+to+Hampi+taxi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚗
+</span>
+
+Hospet Taxi
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hospet+to+Hampi+bus"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚌
+</span>
+
+Bus
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚆
+</span>
+
+Railway
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     ROYAL QUICK LINKS
+================================================== -->
+
+<h2 class="section-title">
+⭐ Hampi Royal Route Quick Links
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Royal+Enclosure+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🏰
+</span>
+
+Royal Enclosure Map
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Lotus+Mahal+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🌸
+</span>
+
+Lotus Mahal Map
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Elephant+Stables+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🐘
+</span>
+
+Elephant Stables
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Queen's+Bath+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+👑
+</span>
+
+Queen's Bath
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     PHOTOGRAPHY & HISTORY LINKS
+================================================== -->
+
+<h2 class="section-title">
+📸 Royal Heritage Explore
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Hampi+Royal+Enclosure"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+📸
+</span>
+
+Royal Photos
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Lotus+Mahal+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🌸
+</span>
+
+Lotus Photos
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hampi+Vijayanagara+Empire+history"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+📜
+</span>
+
+History
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hampi+royal+architecture"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🏛️
+</span>
+
+Architecture
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 Hampi Royal Route Important Tips
+</h3>
+
+<p>
+
+🌅 <strong>1.</strong>
+
+Royal Route सुबह जल्दी शुरू करना
+बेहतर रहता है, खासकर गर्म मौसम में।
+
+<br><br>
+
+🚶 <strong>2.</strong>
+
+Royal heritage area में काफी walking
+हो सकती है, इसलिए comfortable
+walking shoes रखें।
+
+<br><br>
+
+💧 <strong>3.</strong>
+
+पूरा route explore करते समय drinking
+water साथ रखना useful रहेगा।
+
+<br><br>
+
+☀️ <strong>4.</strong>
+
+दोपहर में Hampi की धूप तेज हो सकती
+है, इसलिए cap, sunglasses और
+sun protection रखें।
+
+<br><br>
+
+📸 <strong>5.</strong>
+
+Protected monuments और restricted
+areas में photography rules follow करें।
+
+<br><br>
+
+🏛️ <strong>6.</strong>
+
+Ancient structures पर न चढ़ें और
+stone carvings को नुकसान न पहुँचाएँ।
+
+<br><br>
+
+👟 <strong>7.</strong>
+
+Uneven stone paths और heritage
+ruins के कारण good-grip footwear
+पहनना comfortable रहेगा।
+
+<br><br>
+
+🕒 <strong>8.</strong>
+
+हर monument के लिए पर्याप्त time
+रखें और return journey के लिए
+daylight का ध्यान रखें।
+
+<br><br>
+
+🎟️ <strong>9.</strong>
+
+Current monument timings, entry
+rules और ticket information यात्रा
+से पहले verify करें।
+
+<br><br>
+
+⚠️ <strong>10.</strong>
+
+Local heritage rules और authorised
+instructions को priority दें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     ROYAL ROUTE PLANNING NOTE
+================================================== -->
+
+<div class="distance-note">
+
+📏 <strong>Royal Route Distance Planning</strong>
+
+<br><br>
+
+🏛️ Hampi Main → Royal Enclosure
+लगभग <strong>1–2 km area</strong>।
+
+<br><br>
+
+🏰 Royal Enclosure → Mahanavami Dibba
+लगभग <strong>0.2–0.5 km area</strong>।
+
+<br><br>
+
+🪨 Mahanavami Dibba → Lotus Mahal
+लगभग <strong>1–2 km area</strong>।
+
+<br><br>
+
+🌸 Lotus Mahal → Elephant Stables
+लगभग <strong>0.3–0.5 km area</strong>।
+
+<br><br>
+
+🐘 Elephant Stables → Queen's Bath
+लगभग <strong>1–2 km area</strong>।
+
+<br><br>
+
+📍 Complete Royal Circuit लगभग
+<strong>4–7 km sightseeing area</strong>
+हो सकता है।
+
+<br><br>
+
+⚠️ ये approximate planning distances
+हैं। Walking route, road route,
+monument entrance और actual starting
+point के कारण distance बदल सकती है।
+
+</div>
+
+
+<!-- ==================================================
+     ROYAL ROUTE EXPERIENCE
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+👑 Hampi Royal Route Experience
+</h3>
+
+<p>
+
+यह route उन travellers के लिए अच्छा
+है जो Hampi में temples के साथ
+Vijayanagara Empire की royal history,
+palace architecture और ceremonial
+structures देखना चाहते हैं।
+
+<br><br>
+
+🏰 Royal Enclosure और Mahanavami Dibba
+से royal centre की historical scale
+समझी जा सकती है।
+
+<br><br>
+
+🌸 Lotus Mahal और 🐘 Elephant Stables
+architecture-focused sightseeing के
+लिए विशेष आकर्षण हैं।
+
+<br><br>
+
+👑 Queen's Bath route को एक अलग
+historic water architecture stop
+देता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     ONE DAY ROYAL PLAN
+================================================== -->
+
+<h2 class="section-title">
+🗓️ One Day Hampi Royal Route Plan
+</h2>
+
+
+<div class="route-box">
+
+<h3>
+🌅 Morning → Evening Heritage Plan
+</h3>
+
+
+<div class="route-line">
+
+🌅 Morning
+
+↓
+
+🏛️ Hampi Main
+
+↓
+
+🏰 Royal Enclosure
+
+↓
+
+🪨 Mahanavami Dibba
+
+↓
+
+🌸 Lotus Mahal
+
+↓
+
+🐘 Elephant Stables
+
+↓
+
+👑 Queen's Bath
+
+↓
+
+📸 Photography / Heritage Walk
+
+↓
+
+🏨 Hampi Return
+
+</div>
+
+
+<div class="route-distance">
+
+⏱️ Total sightseeing time
+आपके pace और monument stops के
+अनुसार बदल सकता है।
+
+</div>
+
+
+<p>
+
+👉 अगर route में दूसरे Hampi monuments
+भी जोड़ने हैं, तो एक ही दिन में बहुत
+ज्यादा places शामिल करने के बजाय
+priority monuments पहले रखें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     ROYAL ROUTE CHECKLIST
+================================================== -->
+
+<div class="info">
+
+<h3>
+✅ Royal Route Travel Checklist
+</h3>
+
+<p>
+
+🎒 Water Bottle
+
+<br><br>
+
+👟 Comfortable Walking Shoes
+
+<br><br>
+
+🧢 Cap / Sun Protection
+
+<br><br>
+
+📱 Fully Charged Mobile
+
+<br><br>
+
+🔋 Power Bank
+
+<br><br>
+
+📸 Camera / Photography Gear
+
+<br><br>
+
+🎟️ Required Tickets / Entry Information
+
+<br><br>
+
+🕒 Current Monument Timings
+
+<br><br>
+
+🌦️ Weather Check
+
+<br><br>
+
+🗺️ Route Planning
+
+</p>
+
+</div>
+
+  <!-- ==================================================
+     QUICK SUMMARY
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+🗺️ Hampi Royal Route Quick Summary
+</h3>
+
+<p>
+
+🏛️ <strong>Start:</strong>
+
+Hampi Main Area
+
+<br><br>
+
+🏰 <strong>Stop 1:</strong>
+
+Royal Enclosure
+
+<br><br>
+
+📏 <strong>Hampi Main → Royal Enclosure:</strong>
+
+लगभग 1–2 km area
+
+<br><br>
+
+🪨 <strong>Stop 2:</strong>
+
+Mahanavami Dibba
+
+<br><br>
+
+📏 <strong>Royal Enclosure → Mahanavami Dibba:</strong>
+
+लगभग 0.2–0.5 km area
+
+<br><br>
+
+🌸 <strong>Stop 3:</strong>
+
+Lotus Mahal
+
+<br><br>
+
+📏 <strong>Mahanavami Dibba → Lotus Mahal:</strong>
+
+लगभग 1–2 km area
+
+<br><br>
+
+🐘 <strong>Stop 4:</strong>
+
+Elephant Stables
+
+<br><br>
+
+📏 <strong>Lotus Mahal → Elephant Stables:</strong>
+
+लगभग 0.3–0.5 km area
+
+<br><br>
+
+👑 <strong>Stop 5:</strong>
+
+Queen's Bath
+
+<br><br>
+
+📏 <strong>Elephant Stables → Queen's Bath:</strong>
+
+लगभग 1–2 km area
+
+<br><br>
+
+📍 <strong>Total Royal Circuit:</strong>
+
+लगभग 4–7 km sightseeing area
+
+<br><br>
+
+📸 <strong>Highlight:</strong>
+
+Royal History + Architecture +
+Stone Structures
+
+<br><br>
+
+🏨 <strong>Return:</strong>
+
+Queen's Bath → Hampi Main Area
+
+<br><br>
+
+👉 Actual walking distance और
+route conditions के अनुसार planning
+में थोड़ा बदलाव हो सकता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     FINAL TRAVEL NOTE
+================================================== -->
+
+<div class="distance-note">
+
+⚠️ <strong>Travel Information Note</strong>
+
+<br><br>
+
+• सभी route distances approximate
+planning information हैं।
+
+<br><br>
+
+• Walking distance, road distance
+और monument entrance distance
+अलग हो सकती हैं।
+
+<br><br>
+
+• Monument access और opening hours
+समय-समय पर बदल सकते हैं।
+
+<br><br>
+
+• मौसम, गर्मी और local conditions
+sightseeing time को प्रभावित कर
+सकते हैं।
+
+<br><br>
+
+• Protected monuments में local
+heritage rules follow करें।
+
+<br><br>
+
+• Religious और heritage places में
+appropriate behaviour रखें।
+
+<br><br>
+
+• किसी भी ancient structure पर चढ़ें
+नहीं और उसे नुकसान न पहुँचाएँ।
+
+<br><br>
+
+• Current tickets, timings और
+transport information यात्रा से
+पहले verify करें।
+
+</div>
+
+
+<!-- ==================================================
+     BOTTOM MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#top"
+class="menu-card"
+>
+<span>⬆️</span>
+Top
+<small>ऊपर</small>
+</a>
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>👑</span>
+Royal
+<small>Route</small>
+</a>
+
+
+<a
+href="#royal"
+class="menu-card"
+>
+<span>🏰</span>
+Royal Enclosure
+<small>History</small>
+</a>
+
+
+<a
+href="#dibba"
+class="menu-card"
+>
+<span>🪨</span>
+Dibba
+<small>Platform</small>
+</a>
+
+
+<a
+href="#lotus"
+class="menu-card"
+>
+<span>🌸</span>
+Lotus Mahal
+<small>Palace</small>
+</a>
+
+
+<a
+href="#elephant"
+class="menu-card"
+>
+<span>🐘</span>
+Elephant
+<small>Stables</small>
+</a>
+
+
+<a
+href="#queen"
+class="menu-card"
+>
+<span>👑</span>
+Queen's Bath
+<small>Architecture</small>
+</a>
+
+
+<a
+href="#distance"
+class="menu-card"
+>
+<span>📏</span>
+Distance
+<small>Guide</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+<a
+href="#stay"
+class="menu-card"
+>
+<span>🏨</span>
+Stay
+<small>Food</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+India Travel Guide
+
+<br><br>
+
+Hampi Royal Route |
+हम्पी Royal Heritage Route
+
+<br><br>
+
+Royal Enclosure • Mahanavami Dibba •
+Lotus Mahal • Elephant Stables • Queen's Bath
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="ऊपर जाएँ"
+>
+⬆️
+</button>
+
+
+<!-- ==================================================
+     SCRIPT
+================================================== -->
+
+<script>
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+
+
+/* ==================================================
+   BACK TO TOP
+================================================== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+if(topBtn){
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+
+/* ==================================================
+   SMOOTH INTERNAL SCROLL
+================================================== */
+
+document.querySelectorAll(
+'a[href^="#"]'
+).forEach(
+function(link){
+
+link.addEventListener(
+"click",
+function(event){
+
+const targetId =
+this.getAttribute("href");
+
+
+if(
+!targetId ||
+targetId==="#"
+){
+
+return;
+
+}
+
+
+const target =
+document.querySelector(
+targetId
+);
+
+
+if(target){
+
+event.preventDefault();
+
+
+target.scrollIntoView({
+
+behavior:"smooth",
+
+block:"start"
+
+});
+
+}
+
+});
+
+});
+
+
+/* ==================================================
+   EXTERNAL LINKS
+================================================== */
+
+document.querySelectorAll(
+'a[target="_blank"]'
+).forEach(
+function(link){
+
+link.setAttribute(
+"rel",
+"noopener noreferrer"
+);
+
+});
+
+
+/* ==================================================
+   MENU ACTIVE EFFECT
+================================================== */
+
+const menuCards =
+document.querySelectorAll(
+".menu-card"
+);
+
+
+menuCards.forEach(
+function(card){
+
+card.addEventListener(
+"click",
+function(){
+
+menuCards.forEach(
+function(item){
+
+item.classList.remove(
+"active"
+);
+
+});
+
+
+this.classList.add(
+"active"
+);
+
+});
+
+});
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

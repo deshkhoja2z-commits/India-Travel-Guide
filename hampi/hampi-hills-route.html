@@ -1,0 +1,3050 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Hampi Hills Route | हम्पी हिल्स रूट - DESH KHOJ A2Z
+</title>
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   HAMPI HILLS ROUTE
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:75px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#dbeafe,
+#ffffff,
+#dcfce7
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #138808;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:40px;
+}
+
+header h1{
+font-size:30px;
+margin:5px 0;
+}
+
+header p{
+font-size:14px;
+font-weight:bold;
+color:#34495e;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:18px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   STICKY HORIZONTAL MENU
+================================================== */
+
+.sticky-menu{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:6px 0;
+margin:0 -2px 15px;
+border-bottom:1px solid #ddd;
+}
+
+.horizontal-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:2px 3px 5px;
+scrollbar-width:none;
+-webkit-overflow-scrolling:touch;
+}
+
+.horizontal-menu::-webkit-scrollbar{
+display:none;
+}
+
+.menu-card{
+flex:0 0 auto;
+min-width:82px;
+background:white;
+color:#202124;
+text-decoration:none;
+border:1px solid #e1e5e8;
+border-radius:10px;
+padding:5px 7px;
+text-align:center;
+font-size:10px;
+font-weight:bold;
+box-shadow:0 2px 7px rgba(0,0,0,.10);
+line-height:1.2;
+}
+
+.menu-card span{
+display:block;
+font-size:18px;
+line-height:19px;
+margin-bottom:2px;
+}
+
+.menu-card small{
+display:block;
+font-size:8px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+.menu-card:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+background:white;
+border-left:6px solid #138808;
+border-radius:22px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.09);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+font-size:16px;
+}
+
+
+/* ==================================================
+   SUGGESTED PLANNING
+================================================== */
+
+.suggested{
+background:#f0fff4;
+border-radius:20px;
+padding:18px;
+margin-top:20px;
+}
+
+.suggested h3{
+font-size:20px;
+color:#138808;
+margin-bottom:8px;
+}
+
+.suggested p{
+font-size:15px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+background:#eef8ff;
+border-left:5px solid #1976d2;
+border-radius:16px;
+padding:15px;
+margin:18px 0 25px;
+font-size:13px;
+}
+
+.distance-note strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   DISTANCE GRID
+================================================== */
+
+.distance-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin:20px 0;
+}
+
+.distance-card{
+background:#f8fafc;
+border:1px solid #e1e5e8;
+border-radius:18px;
+padding:17px 9px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.distance-icon{
+display:block;
+font-size:32px;
+margin-bottom:5px;
+}
+
+.distance-card strong{
+font-size:15px;
+}
+
+.distance-card span{
+display:block;
+font-size:12px;
+color:#666;
+margin-top:3px;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   INFO
+================================================== */
+
+.info{
+background:#eef7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:17px;
+margin:20px 0 25px;
+font-size:14px;
+}
+
+.info h3{
+font-size:20px;
+margin-bottom:7px;
+}
+
+
+/* ==================================================
+   ROUTE SUMMARY
+================================================== */
+
+.route-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:20px 0 28px;
+}
+
+.route-box h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.route-box p{
+font-size:14px;
+color:#555;
+}
+
+.route-line{
+font-weight:bold;
+font-size:15px;
+line-height:2;
+margin:10px 0;
+}
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:5px 0;
+}
+
+
+/* ==================================================
+   PLACE / DETAIL CARD
+================================================== */
+
+.place-card{
+background:white;
+border-radius:24px;
+padding:22px;
+margin:25px 0;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+border-left:6px solid #138808;
+scroll-margin-top:75px;
+}
+
+.place-card:nth-of-type(2){
+border-left-color:#1976d2;
+}
+
+.place-card:nth-of-type(3){
+border-left-color:#ff9933;
+}
+
+.place-card:nth-of-type(4){
+border-left-color:#7c3aed;
+}
+
+
+/* ==================================================
+   PLACE HEADER
+================================================== */
+
+.place-header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:14px;
+}
+
+.place-icon{
+font-size:48px;
+}
+
+.place-header h3{
+font-size:25px;
+margin:0;
+}
+
+.place-header span{
+display:block;
+font-size:16px;
+color:#666;
+margin-top:2px;
+}
+
+
+/* ==================================================
+   CATEGORY
+================================================== */
+
+.category{
+display:inline-block;
+background:#f1f5f9;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#555;
+margin-bottom:14px;
+}
+
+
+/* ==================================================
+   DISTANCE BADGE
+================================================== */
+
+.place-distance{
+background:#eaf8ef;
+border-left:4px solid #138808;
+border-radius:12px;
+padding:10px 12px;
+margin:10px 0 15px;
+font-size:13px;
+font-weight:bold;
+color:#176b38;
+}
+
+.place-distance span{
+color:#555;
+font-weight:normal;
+}
+
+
+/* ==================================================
+   NEXT VISIT DISTANCE
+================================================== */
+
+.next-distance{
+background:#eef8ff;
+border-left:4px solid #1976d2;
+border-radius:13px;
+padding:11px 12px;
+margin:12px 0 16px;
+font-size:13px;
+font-weight:bold;
+color:#145a91;
+}
+
+.next-distance span{
+display:block;
+color:#555;
+font-weight:normal;
+margin-top:3px;
+}
+
+
+/* ==================================================
+   SHORT HISTORY
+================================================== */
+
+.short-history{
+background:#fff8e7;
+border-left:4px solid #f59e0b;
+padding:14px;
+border-radius:13px;
+margin:12px 0 18px;
+}
+
+.short-history h4{
+margin-bottom:5px;
+font-size:17px;
+}
+
+.short-history p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   BUTTON GRID
+================================================== */
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.action-btn{
+display:block;
+padding:12px 8px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:bold;
+transition:.2s;
+}
+
+.action-btn:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   ACTION COLORS
+================================================== */
+
+.route{
+background:#1976d2;
+}
+
+.maps{
+background:#0f766e;
+}
+
+.hotel{
+background:#d97706;
+}
+
+.luxury{
+background:#7c3aed;
+}
+
+.restaurant{
+background:#dc2626;
+}
+
+.photo{
+background:#2563eb;
+}
+
+.hill{
+background:#15803d;
+}
+
+.temple{
+background:#b45309;
+}
+
+.sunrise{
+background:#ea580c;
+}
+
+.view{
+background:#0891b2;
+}
+
+.trek{
+background:#4338ca;
+}
+
+.cab{
+background:#ea580c;
+}
+
+.train{
+background:#6d28d9;
+}
+
+.bus{
+background:#15803d;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px;
+margin-top:18px;
+}
+
+.place-info-row{
+padding:8px 0;
+border-bottom:1px solid #e5e7eb;
+font-size:14px;
+}
+
+.place-info-row:last-child{
+border-bottom:0;
+}
+
+.place-info strong{
+display:inline-block;
+margin-right:5px;
+}
+
+
+/* ==================================================
+   QUICK LINKS
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:17px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #138808;
+}
+
+.quick:nth-child(2){
+border-top-color:#0891b2;
+}
+
+.quick:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.quick:nth-child(4){
+border-top-color:#1976d2;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:54px;
+height:54px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:28px 15px;
+margin-top:35px;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:17px;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:26px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:17px 11px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.menu-card{
+min-width:78px;
+padding:5px 5px;
+font-size:9px;
+}
+
+.menu-card span{
+font-size:17px;
+}
+
+.menu-card small{
+font-size:7px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-line{
+font-size:13px;
+}
+
+.distance-card{
+padding:15px 6px;
+}
+
+.distance-icon{
+font-size:28px;
+}
+
+.distance-card strong{
+font-size:13px;
+}
+
+.distance-card span{
+font-size:10px;
+}
+
+.place-card{
+padding:18px 14px;
+}
+
+.place-header h3{
+font-size:21px;
+}
+
+.place-icon{
+font-size:40px;
+}
+
+.place-header span{
+font-size:14px;
+}
+
+.place-distance{
+font-size:11px;
+}
+
+.next-distance{
+font-size:11px;
+}
+
+.action-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.action-btn{
+font-size:11px;
+padding:11px 5px;
+}
+
+.place-info-row{
+font-size:13px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.quick{
+padding:14px 7px;
+font-size:13px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.menu-card{
+min-width:72px;
+}
+
+.action-btn{
+font-size:10px;
+}
+
+.place-header h3{
+font-size:19px;
+}
+
+.place-header span{
+font-size:13px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Hampi Hills Route
+</h1>
+
+<p>
+हम्पी हिल्स • Matanga Hill • Hemakuta Hill • Anjanadri Hill • Sunset Views
+</p>
+
+</header>
+
+
+<div class="container">
+
+
+<a
+href="hampi.html"
+class="back"
+>
+← Hampi / हम्पी
+</a>
+
+
+<!-- ==================================================
+     STICKY MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Plan</small>
+</a>
+
+
+<a
+href="#matanga"
+class="menu-card"
+>
+<span>⛰️</span>
+Matanga
+<small>Hill</small>
+</a>
+
+
+<a
+href="#hemakuta"
+class="menu-card"
+>
+<span>🪨</span>
+Hemakuta
+<small>Hill</small>
+</a>
+
+
+<a
+href="#anjanadri"
+class="menu-card"
+>
+<span>🏔️</span>
+Anjanadri
+<small>Hill</small>
+</a>
+
+
+<a
+href="#sunset"
+class="menu-card"
+>
+<span>🌅</span>
+Sunset
+<small>Views</small>
+</a>
+
+
+<a
+href="#distance"
+class="menu-card"
+>
+<span>📏</span>
+Distance
+<small>Guide</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+<a
+href="#stay"
+class="menu-card"
+>
+<span>🏨</span>
+Stay
+<small>Food</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div
+class="hero"
+id="route"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+⛰️
+</div>
+
+<div>
+
+<h2>
+Hampi Hills Route
+</h2>
+
+<span>
+Hills • Temples • Sunset • Sunrise • Panoramic Views
+</span>
+
+</div>
+
+</div>
+
+
+<p>
+
+Hampi के आसपास कई scenic hills हैं
+जहाँ से ancient ruins, temples,
+Tungabhadra landscape और पूरे
+Hampi क्षेत्र के panoramic views
+देखे जा सकते हैं। यह route उन
+travellers के लिए अच्छा है जो
+heritage sightseeing के साथ
+sunrise, sunset और hill views का
+experience लेना चाहते हैं।
+
+</p>
+
+
+<div class="suggested">
+
+<h3>
+📍 Suggested Hill Planning
+</h3>
+
+<p>
+
+🏨 Hampi Main Area
+
+→
+
+⛰️ Matanga Hill
+
+→
+
+🪨 Hemakuta Hill
+
+→
+
+🏔️ Anjanadri Hill
+
+→
+
+🌅 Sunset / View Point
+
+→
+
+🏨 Hampi Return
+
+</p>
+
+</div>
+
+
+<div class="route-distance">
+
+📍 Hampi Main → Matanga Hill → Hemakuta Hill
+→ Anjanadri Hill
+
+पूरा route selected starting point,
+walking path और local access के
+अनुसार बदल सकता है।
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE GRID
+================================================== -->
+
+<div
+class="distance-grid"
+id="distance"
+>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏨
+</span>
+
+<strong>
+Hampi → Matanga Hill
+</strong>
+
+<span>
+लगभग 1–2 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+⛰️
+</span>
+
+<strong>
+Matanga → Hemakuta
+</strong>
+
+<span>
+लगभग 1–2 km route area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🪨
+</span>
+
+<strong>
+Hemakuta → Hampi Bazaar
+</strong>
+
+<span>
+लगभग 1 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏔️
+</span>
+
+<strong>
+Hampi → Anjanadri Hill
+</strong>
+
+<span>
+लगभग 5–6 km road area
+</span>
+
+</div>
+
+
+</div>
+
+
+<a
+href="#route-details"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🗺️ Complete Hill Route देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE DISTANCE NOTE
+================================================== -->
+
+<div class="distance-note">
+
+📏 <strong>Distance Planning Note:</strong>
+
+<br><br>
+
+यहाँ दी गई distances sightseeing
+planning के लिए approximate हैं।
+Hampi में walking paths, temple
+entrances, hill approach और road
+starting points के कारण actual
+distance बदल सकती है।
+
+<br><br>
+
+⛰️ एक hill visit के बाद नीचे दिए गए
+<strong>Next Visit Distance</strong> box
+में अगली जगह की approximate दूरी
+दी गई है, ताकि पूरा route step-by-step
+समझना आसान रहे।
+
+<br><br>
+
+⚠️ Walking distance, road distance
+और hill trekking distance को
+अलग-अलग समझना जरूरी है।
+
+</div>
+
+
+<!-- ==================================================
+     MATANGA HILL
+================================================== -->
+
+<div
+class="place-card"
+id="matanga"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+⛰️
+</div>
+
+<div>
+
+<h3>
+Matanga Hill
+</h3>
+
+<span>
+मातंग पहाड़ी • Sunrise • Sunset • Hampi Views
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Hill • Sunrise • Sunset • Trekking • Photography
+</div>
+
+
+<div class="place-distance">
+
+📍 Hampi Main Area → Matanga Hill:
+
+<strong>
+लगभग 1–2 km area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact distance आपके starting point और selected walking route पर depend करेगी।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+⛰️ Matanga Hill के बारे में
+</h4>
+
+<p>
+
+Matanga Hill Hampi के प्रसिद्ध
+viewpoints में से एक है। Hilltop से
+Hampi के आसपास के temples, ruins,
+boulders और landscape का panoramic
+view देखा जा सकता है। Sunrise और
+sunset के समय यहाँ का landscape
+खास तौर पर आकर्षक दिखाई देता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     NEXT VISIT DISTANCE
+================================================== -->
+
+<div class="next-distance">
+
+➡️ <strong>Next Visit:</strong>
+Matanga Hill → Hemakuta Hill
+
+<strong>
+लगभग 1–2 km route area
+</strong>
+
+<span>
+📍 Actual walking route और selected
+path के अनुसार distance बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Hampi heritage area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Hampi Main Area से लगभग 1–2 km area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⛰️ Highlight:</strong>
+
+Panoramic Hampi Views
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌅 Best Time:</strong>
+
+Sunrise / Sunset
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Landscape Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🥾 Access:</strong>
+
+Walking / Hill Trek
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Matanga+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Matanga+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Matanga+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Matanga+Hill+Hampi+sunrise"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn sunrise"
+>
+🌅 Sunrise
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Matanga+Hill+Hampi+trek"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn trek"
+>
+🥾 Trek Route
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Matanga+Hill+Hampi+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn view"
+>
+🌤️ Weather
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     HEMAKUTA HILL
+================================================== -->
+
+<div
+class="place-card"
+id="hemakuta"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🪨
+</div>
+
+<div>
+
+<h3>
+Hemakuta Hill
+</h3>
+
+<span>
+हेमकुटा हिल • Temples • Boulders • Sunset
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Hill • Temple • Boulders • Sunset • Photography
+</div>
+
+
+<div class="place-distance">
+
+📍 Matanga Hill → Hemakuta Hill:
+
+<strong>
+लगभग 1–2 km route area
+</strong>
+
+<br>
+
+<span>
+➡️ Actual walking distance selected path और starting point के अनुसार बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🪨 Hemakuta Hill के बारे में
+</h4>
+
+<p>
+
+Hemakuta Hill Hampi के Virupaksha
+Temple area के पास स्थित historic
+hill complex है। यहाँ कई छोटे
+temples, stone structures और
+boulder landscape देखने को मिलते
+हैं। Sunset के समय यहाँ का view
+काफी सुंदर दिखाई दे सकता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     NEXT VISIT DISTANCE
+================================================== -->
+
+<div class="next-distance">
+
+➡️ <strong>Next Visit:</strong>
+Hemakuta Hill → Anjanadri Hill
+
+<strong>
+लगभग 5–6 km road area
+</strong>
+
+<span>
+🚗 Anjanadri Hill Hampi के दूसरे
+side में है, इसलिए road route के
+अनुसार actual distance बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Near Virupaksha Temple / Hampi Bazaar area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Matanga Hill से लगभग 1–2 km route area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🛕 Highlight:</strong>
+
+Historic Hill Temples
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🪨 Landscape:</strong>
+
+Boulders + Stone Structures
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌅 Best Time:</strong>
+
+Evening / Sunset
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Heritage Photography
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Hemakuta+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Hemakuta+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Hemakuta+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hemakuta+Hill+Hampi+sunset"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn sunrise"
+>
+🌅 Sunset
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hemakuta+Hill+Hampi+temples"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn temple"
+>
+🛕 Temples
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hemakuta+Hill+Hampi+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn view"
+>
+🌤️ Weather
+</a>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     ANJANADRI HILL
+================================================== -->
+
+<div
+class="place-card"
+id="anjanadri"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🏔️
+</div>
+
+<div>
+
+<h3>
+Anjanadri Hill
+</h3>
+
+<span>
+अंजनाद्री हिल • Hanuman Temple • Panoramic Views
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Hill • Temple • Sunrise • River Views • Photography
+</div>
+
+
+<div class="place-distance">
+
+📍 Hemakuta Hill → Anjanadri Hill:
+
+<strong>
+लगभग 5–6 km road area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact road distance starting point और selected route के अनुसार बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🏔️ Anjanadri Hill के बारे में
+</h4>
+
+<p>
+
+Anjanadri Hill Hampi के आसपास
+प्रसिद्ध hill destinations में से
+एक है। Hilltop पर मंदिर तक पहुँचने
+के लिए सीढ़ियों का रास्ता है और
+ऊपर से आसपास के landscape,
+Tungabhadra river region और
+boulder formations के views मिल
+सकते हैं।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     NEXT VISIT DISTANCE
+================================================== -->
+
+<div class="next-distance">
+
+➡️ <strong>Next Visit:</strong>
+Anjanadri Hill → Hampi Main Area
+
+<strong>
+लगभग 5–6 km road area
+</strong>
+
+<span>
+🏨 Visit के बाद Hampi Main Area /
+hotel side वापस आने के लिए road
+route use किया जा सकता है।
+</span>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Anegundi / Hampi region
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Hemakuta Hill से लगभग 5–6 km road area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🛕 Highlight:</strong>
+
+Hilltop Temple
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🥾 Access:</strong>
+
+Stairs / Walking
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌄 Highlight:</strong>
+
+Panoramic Landscape Views
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Landscape + Temple Photography
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Anjanadri+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Anjanadri+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Anjanadri+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Anjanadri+Hill+Hampi+sunrise"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn sunrise"
+>
+🌅 Sunrise
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Anjanadri+Hill+Hampi+temple"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn temple"
+>
+🛕 Temple
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Anjanadri+Hill+Hampi+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn view"
+>
+🌤️ Weather
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     SUNSET EXPERIENCE
+================================================== -->
+
+<div
+class="place-card"
+id="sunset"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🌅
+</div>
+
+<div>
+
+<h3>
+Hampi Sunset & Viewpoints
+</h3>
+
+<span>
+Sunset • Golden Hour • Ruins • Hills
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Sunset • Photography • Hills • Heritage Landscape
+</div>
+
+
+<div class="place-distance">
+
+📍 Anjanadri / Hill Area → Hampi Viewpoints:
+
+<strong>
+Route और selected viewpoint के अनुसार बदलता है
+</strong>
+
+<br>
+
+<span>
+➡️ Sunset के लिए daylight और return route का ध्यान रखें।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌅 Hampi Sunset Experience
+</h4>
+
+<p>
+
+Hampi का boulder landscape,
+ancient monuments और hills sunset
+के समय अलग तरह का दृश्य बनाते हैं।
+Golden hour photography के लिए
+Matanga Hill और Hemakuta Hill जैसे
+viewpoints popular choices हो सकते
+हैं। Weather और access conditions
+के अनुसार viewpoint select करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     NEXT VISIT DISTANCE
+================================================== -->
+
+<div class="next-distance">
+
+➡️ <strong>Next Visit:</strong>
+Sunset Viewpoint → Hampi Main Area
+
+<strong>
+लगभग 1–3 km area
+</strong>
+
+<span>
+📍 Exact return distance selected
+viewpoint और hotel location पर
+depend करेगी।
+</span>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>🌅 Best Time:</strong>
+
+Sunset / Golden Hour
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Landscape Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⛰️ Highlight:</strong>
+
+Hills + Ruins + Boulders
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌤️ Condition:</strong>
+
+Weather dependent
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🕒 Return:</strong>
+
+Sunset के बाद daylight का ध्यान रखें
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📍 Route:</strong>
+
+Selected viewpoint के अनुसार
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=Hampi+sunset+viewpoint"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn sunrise"
+>
+🌅 Sunset
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Hampi+sunset"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Matanga+Hill+sunset+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hill"
+>
+⛰️ Matanga
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hemakuta+Hill+sunset+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn temple"
+>
+🪨 Hemakuta
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     COMPLETE ROUTE
+================================================== -->
+
+<div
+class="route-box"
+id="route-details"
+>
+
+<h3>
+🗺️ Complete Hampi Hills Route
+</h3>
+
+<p>
+
+इस hill route को sightseeing
+plan की तरह sequence में organise
+किया जा सकता है:
+
+</p>
+
+
+<div class="route-line">
+
+🏨 Hampi Main Area
+
+↓
+
+⛰️ Matanga Hill
+
+↓
+
+🪨 Hemakuta Hill
+
+↓
+
+🚗 Road Transfer
+
+↓
+
+🏔️ Anjanadri Hill
+
+↓
+
+🌅 Sunset / Viewpoint
+
+↓
+
+🚗 Return Route
+
+↓
+
+🏨 Hampi Main Area
+
+</div>
+
+
+<div class="route-distance">
+
+📏 Hampi → Matanga Hill ≈ 1–2 km area
+
+<br>
+
+📏 Matanga → Hemakuta ≈ 1–2 km route area
+
+<br>
+
+📏 Hemakuta → Anjanadri ≈ 5–6 km road area
+
+<br>
+
+📏 Anjanadri → Hampi ≈ 5–6 km road area
+
+</div>
+
+
+<p>
+
+👉 Actual walking distance, road
+distance, hill stairs और viewpoint
+access अलग हो सकते हैं।
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Matanga+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🗺️ Hampi Hill Route देखें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL PLANNING
+================================================== -->
+
+<h2
+class="section-title"
+id="travel"
+>
+🚗 Hampi Hills Travel Planning
+</h2>
+
+
+<div class="info">
+
+<h3>
+⏰ Suggested Day Plan
+</h3>
+
+<p>
+
+🌅 <strong>Morning:</strong>
+
+अगर sunrise देखना चाहते हैं तो
+early morning hill visit plan करें।
+
+<br><br>
+
+⛰️ <strong>First Stop:</strong>
+
+Matanga Hill से Hampi landscape
+का panoramic view देखें।
+
+<br><br>
+
+🪨 <strong>Next:</strong>
+
+Hemakuta Hill और आसपास के historic
+temples तथा boulders explore करें।
+
+<br><br>
+
+🚗 <strong>Transfer:</strong>
+
+Anjanadri Hill के लिए road route
+की तरफ जाएँ।
+
+<br><br>
+
+🏔️ <strong>Anjanadri:</strong>
+
+Hilltop temple और surrounding
+landscape views का experience लें।
+
+<br><br>
+
+🌅 <strong>Evening:</strong>
+
+Sunset के लिए suitable viewpoint
+select करें।
+
+<br><br>
+
+🏨 <strong>Return:</strong>
+
+Sunset के बाद daylight और route
+condition को ध्यान में रखते हुए
+Hampi Main Area वापस आएँ।
+
+<br><br>
+
+⚠️ Hill routes में मौसम, गर्मी,
+stone surface और stairs की
+condition का ध्यान रखें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE GUIDE
+================================================== -->
+
+<h2 class="section-title"
+id="distance-guide">
+
+📏 Hampi Hills Distance Guide
+
+</h2>
+
+
+<div class="distance-grid">
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏨
+</span>
+
+<strong>
+Hampi → Matanga Hill
+</strong>
+
+<span>
+लगभग 1–2 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+⛰️
+</span>
+
+<strong>
+Matanga → Hemakuta
+</strong>
+
+<span>
+लगभग 1–2 km route area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🪨
+</span>
+
+<strong>
+Hemakuta → Hampi Bazaar
+</strong>
+
+<span>
+लगभग 1 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏔️
+</span>
+
+<strong>
+Hampi → Anjanadri
+</strong>
+
+<span>
+लगभग 5–6 km road area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🌅
+</span>
+
+<strong>
+Hill → Sunset Point
+</strong>
+
+<span>
+Selected viewpoint के अनुसार
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🚗
+</span>
+
+<strong>
+Hampi Hills Full Route
+</strong>
+
+<span>
+Walking + road route dependent
+</span>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     STAY & FOOD
+================================================== -->
+
+<div
+class="info"
+id="stay"
+>
+
+<h3>
+🏨 Hampi Stay & 🍽️ Food
+</h3>
+
+<p>
+
+Hampi Hills route के लिए Hampi
+Main Area में stay करना practical
+option हो सकता है। इससे सुबह
+जल्दी hill route शुरू करना और
+शाम को वापस लौटना आसान रहता है।
+
+<br><br>
+
+🍽️ Food के लिए Hampi Bazaar,
+Hospet / Hampi area के restaurants,
+cafes और hotel restaurants के
+current options check करें।
+
+</p>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=hotels+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Best Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+💰 Budget Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurants
+</a>
+
+
+<a
+href="https://www.google.com/search?q=vegetarian+restaurants+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🥗 Vegetarian
+</a>
+
+
+<a
+href="https://www.google.com/search?q=cafes+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+☕ Cafes
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     TRANSPORT
+================================================== -->
+
+<h2 class="section-title">
+🚗 Hampi Transport
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚕
+</span>
+
+Local Cab
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hospet+to+Hampi+taxi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚗
+</span>
+
+Taxi
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hospet+to+Hampi+bus"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚌
+</span>
+
+Bus
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚆
+</span>
+
+Railway
+
+</a>
+
+</div>
+
+  <!-- ==================================================
+     QUICK LINKS
+================================================== -->
+
+<h2 class="section-title">
+⭐ Hampi Hills Quick Links
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Matanga+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+⛰️
+</span>
+
+Matanga Hill
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Hemakuta+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🪨
+</span>
+
+Hemakuta Hill
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Anjanadri+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🏔️
+</span>
+
+Anjanadri Hill
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Hampi+Hills"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+📸
+</span>
+
+Hill Photos
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 Hampi Hills Important Travel Tips
+</h3>
+
+<p>
+
+🌅 <strong>1.</strong>
+
+Sunrise या sunset देखने के लिए
+route पहले से plan करना बेहतर रहता
+है।
+
+<br><br>
+
+🥾 <strong>2.</strong>
+
+Hills और rocky paths के लिए
+comfortable और good-grip shoes
+पहनें।
+
+<br><br>
+
+☀️ <strong>3.</strong>
+
+Hampi में गर्मी काफी महसूस हो
+सकती है, इसलिए daytime sightseeing
+में hydration का विशेष ध्यान रखें।
+
+<br><br>
+
+🧢 <strong>4.</strong>
+
+Cap, sunglasses और sunscreen
+साथ रखना useful रहेगा।
+
+<br><br>
+
+💧 <strong>5.</strong>
+
+Hill route पर पर्याप्त drinking
+water साथ रखें।
+
+<br><br>
+
+📱 <strong>6.</strong>
+
+Mobile fully charged रखें क्योंकि
+कुछ areas में network coverage
+हर जगह समान नहीं हो सकती।
+
+<br><br>
+
+🪨 <strong>7.</strong>
+
+Ancient structures, rocks या
+protected monuments पर चढ़कर
+उन्हें नुकसान न पहुँचाएँ।
+
+<br><br>
+
+🛕 <strong>8.</strong>
+
+Active temples में local religious
+customs और dress expectations
+का सम्मान करें।
+
+<br><br>
+
+🌧️ <strong>9.</strong>
+
+Rain या खराब weather में slippery
+rocks और hill paths पर extra
+caution रखें।
+
+<br><br>
+
+🕒 <strong>10.</strong>
+
+Return journey के लिए पर्याप्त
+daylight रखें और isolated hill
+areas में देर तक न रुकें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK SUMMARY
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+🗺️ Hampi Hills Quick Summary
+</h3>
+
+<p>
+
+🏨 <strong>Start:</strong>
+
+Hampi Main Area
+
+<br><br>
+
+⛰️ <strong>Visit 1:</strong>
+
+Matanga Hill
+
+<br><br>
+
+📏 <strong>Hampi → Matanga:</strong>
+
+लगभग 1–2 km area
+
+<br><br>
+
+➡️ <strong>Next:</strong>
+
+Hemakuta Hill
+
+<br><br>
+
+📏 <strong>Matanga → Hemakuta:</strong>
+
+लगभग 1–2 km route area
+
+<br><br>
+
+🪨 <strong>Visit 2:</strong>
+
+Hemakuta Hill
+
+<br><br>
+
+📏 <strong>Hemakuta → Anjanadri:</strong>
+
+लगभग 5–6 km road area
+
+<br><br>
+
+🏔️ <strong>Visit 3:</strong>
+
+Anjanadri Hill
+
+<br><br>
+
+🌅 <strong>Highlight:</strong>
+
+Sunrise + Sunset + Hills + Hampi
+Landscape
+
+<br><br>
+
+📏 <strong>Anjanadri → Hampi:</strong>
+
+लगभग 5–6 km road area
+
+<br><br>
+
+🏨 <strong>Return:</strong>
+
+Hill Route → Hampi Main Area
+
+<br><br>
+
+👉 Hills को एक ही दिन में cover
+करते समय walking, stairs, weather
+और daylight का ध्यान रखें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     BOTTOM MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#top"
+class="menu-card"
+>
+<span>⬆️</span>
+Top
+<small>ऊपर</small>
+</a>
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Plan</small>
+</a>
+
+
+<a
+href="#matanga"
+class="menu-card"
+>
+<span>⛰️</span>
+Matanga
+<small>Hill</small>
+</a>
+
+
+<a
+href="#hemakuta"
+class="menu-card"
+>
+<span>🪨</span>
+Hemakuta
+<small>Hill</small>
+</a>
+
+
+<a
+href="#anjanadri"
+class="menu-card"
+>
+<span>🏔️</span>
+Anjanadri
+<small>Hill</small>
+</a>
+
+
+<a
+href="#sunset"
+class="menu-card"
+>
+<span>🌅</span>
+Sunset
+<small>Views</small>
+</a>
+
+
+<a
+href="#distance"
+class="menu-card"
+>
+<span>📏</span>
+Distance
+<small>Guide</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+<a
+href="#stay"
+class="menu-card"
+>
+<span>🏨</span>
+Stay
+<small>Food</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+India Travel Guide
+
+<br><br>
+
+Hampi Hills Route |
+हम्पी हिल्स रूट
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="ऊपर जाएँ"
+>
+⬆️
+</button>
+
+
+<!-- ==================================================
+     SCRIPT
+================================================== -->
+
+<script>
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+
+
+/* ==================================================
+   BACK TO TOP
+================================================== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+if(topBtn){
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+
+/* ==================================================
+   SMOOTH INTERNAL SCROLL
+================================================== */
+
+document.querySelectorAll(
+'a[href^="#"]'
+).forEach(
+function(link){
+
+link.addEventListener(
+"click",
+function(event){
+
+const targetId =
+this.getAttribute("href");
+
+
+if(
+!targetId ||
+targetId==="#"
+){
+
+return;
+
+}
+
+
+const target =
+document.querySelector(
+targetId
+);
+
+
+if(target){
+
+event.preventDefault();
+
+
+target.scrollIntoView({
+
+behavior:"smooth",
+
+block:"start"
+
+});
+
+}
+
+});
+
+});
+
+
+/* ==================================================
+   EXTERNAL LINKS
+================================================== */
+
+document.querySelectorAll(
+'a[target="_blank"]'
+).forEach(
+function(link){
+
+link.setAttribute(
+"rel",
+"noopener noreferrer"
+);
+
+});
+
+
+/* ==================================================
+   MENU ACTIVE EFFECT
+================================================== */
+
+const menuCards =
+document.querySelectorAll(
+".menu-card"
+);
+
+
+menuCards.forEach(
+function(card){
+
+card.addEventListener(
+"click",
+function(){
+
+menuCards.forEach(
+function(item){
+
+item.classList.remove(
+"active"
+);
+
+});
+
+
+this.classList.add(
+"active"
+);
+
+});
+
+});
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

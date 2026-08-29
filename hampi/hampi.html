@@ -1,0 +1,2969 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Hampi | हम्पी Travel Guide - DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==================================================
+   HAMPI MAIN PAGE
+   DESH KHOJ A2Z
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:82px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.5;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#fff3e0,
+#ffffff,
+#e8f5e9
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #d97706;
+}
+
+.logo{
+font-size:38px;
+}
+
+header h1{
+font-size:32px;
+margin:5px 0;
+}
+
+header p{
+font-weight:bold;
+color:#444;
+}
+
+.search-box{
+max-width:600px;
+margin:18px auto 0;
+position:relative;
+}
+
+.search-box input{
+width:100%;
+padding:14px 48px 14px 18px;
+border:0;
+border-radius:30px;
+font-size:16px;
+outline:none;
+box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.search-icon{
+position:absolute;
+right:16px;
+top:7px;
+font-size:27px;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:20px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+padding:10px 18px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;
+margin-bottom:18px;
+}
+
+.hero{
+background:white;
+border-left:6px solid #d97706;
+border-radius:20px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:16px;
+color:#555;
+}
+
+
+/* ==================================================
+   STICKY ROUTE MENU
+================================================== */
+
+.route-menu-wrap{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:7px 0;
+margin:0 -2px 12px;
+border-bottom:1px solid #ddd;
+}
+
+.route-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:3px 2px 6px;
+-webkit-overflow-scrolling:touch;
+scrollbar-width:none;
+}
+
+.route-menu::-webkit-scrollbar{
+display:none;
+}
+
+.route-tab{
+flex:0 0 auto;
+min-width:88px;
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:11px;
+padding:6px 8px;
+text-align:center;
+font-weight:bold;
+font-size:11px;
+box-shadow:0 2px 8px rgba(0,0,0,.10);
+border:1px solid #e3e7eb;
+}
+
+.route-tab span{
+display:block;
+font-size:19px;
+line-height:20px;
+margin-bottom:2px;
+}
+
+.route-tab small{
+display:block;
+font-size:9px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+
+/* ==================================================
+   QUICK GRID
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin-bottom:25px;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:18px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #d97706;
+}
+
+.quick:nth-child(2){
+border-top-color:#138808;
+}
+
+.quick:nth-child(3){
+border-top-color:#1976d2;
+}
+
+.quick:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   INFORMATION
+================================================== */
+
+.info{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:22px 0;
+}
+
+.info h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.info p{
+color:#555;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+background:#eef8ff;
+border-left:5px solid #1976d2;
+border-radius:15px;
+padding:15px;
+margin:18px 0;
+font-size:14px;
+}
+
+.distance-note strong{
+color:#1976d2;
+}
+
+
+/* ==================================================
+   ROUTE CARDS
+================================================== */
+
+.route-card{
+background:white;
+border-radius:23px;
+padding:20px;
+margin:22px 0;
+box-shadow:0 5px 20px rgba(0,0,0,.09);
+border-left:6px solid #d97706;
+scroll-margin-top:82px;
+}
+
+.route-card.hills{
+border-left-color:#16a34a;
+}
+
+.route-card.nature{
+border-left-color:#138808;
+}
+
+.route-card.royal{
+border-left-color:#8b5cf6;
+}
+
+.route-card.temple{
+border-left-color:#dc2626;
+}
+
+.route-card.vittala{
+border-left-color:#1976d2;
+}
+
+.route-top{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:12px;
+}
+
+.route-big-icon{
+font-size:42px;
+}
+
+.route-top h2{
+font-size:24px;
+margin:0;
+}
+
+.route-subtitle{
+font-size:13px;
+color:#666;
+margin-top:3px;
+}
+
+.route-description{
+font-size:14px;
+color:#555;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   ROUTE PATH
+================================================== */
+
+.route-path-box{
+background:#f5f9fc;
+border-radius:15px;
+padding:14px;
+margin:12px 0;
+}
+
+.route-path-title{
+font-size:13px;
+font-weight:bold;
+color:#1976d2;
+margin-bottom:6px;
+}
+
+.route-path{
+font-size:14px;
+font-weight:bold;
+line-height:1.9;
+}
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 10px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:8px 0;
+}
+
+.route-place-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:8px;
+margin-top:12px;
+}
+
+.route-place{
+background:#f8f9fa;
+border:1px solid #e5e7eb;
+border-radius:13px;
+padding:10px 8px;
+text-align:center;
+font-size:12px;
+font-weight:bold;
+}
+
+.route-place span{
+display:block;
+font-size:22px;
+margin-bottom:2px;
+}
+
+.route-place small{
+font-size:10px;
+font-weight:normal;
+color:#666;
+}
+
+.route-button{
+display:block;
+margin-top:15px;
+background:#d97706;
+color:white;
+text-decoration:none;
+text-align:center;
+padding:12px;
+border-radius:12px;
+font-weight:bold;
+font-size:13px;
+}
+
+
+/* ==================================================
+   ROUTE PLANNING
+================================================== */
+
+.plan-card{
+background:white;
+border-radius:20px;
+padding:18px;
+margin:18px 0;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.plan-row{
+display:flex;
+gap:12px;
+padding:12px 0;
+border-bottom:1px solid #eee;
+}
+
+.plan-row:last-child{
+border-bottom:0;
+}
+
+.plan-icon{
+font-size:27px;
+min-width:35px;
+}
+
+.plan-row strong{
+font-size:15px;
+}
+
+.plan-row p{
+font-size:12px;
+color:#666;
+margin-top:3px;
+}
+
+
+/* ==================================================
+   TRANSPORT
+================================================== */
+
+.transport-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.transport{
+background:white;
+border-radius:20px;
+padding:18px 12px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #d97706;
+}
+
+.transport:nth-child(2){
+border-top-color:#138808;
+}
+
+.transport:nth-child(3){
+border-top-color:#1976d2;
+}
+
+.transport:nth-child(4){
+border-top-color:#8b5cf6;
+}
+
+.transport-icon{
+font-size:34px;
+margin-bottom:5px;
+}
+
+.transport h3{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.transport p{
+font-size:13px;
+color:#666;
+margin-bottom:12px;
+}
+
+.transport a{
+display:block;
+background:#d97706;
+color:white;
+text-decoration:none;
+text-align:center;
+padding:10px 5px;
+border-radius:10px;
+font-size:12px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:25px 15px;
+margin-top:30px;
+font-size:13px;
+}
+
+footer strong{
+color:#d97706;
+font-size:17px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:55px;
+height:55px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 4px 18px rgba(0,0,0,.22);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:27px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:18px 12px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-tab{
+min-width:82px;
+padding:6px 5px;
+font-size:10px;
+}
+
+.route-tab span{
+font-size:17px;
+}
+
+.route-tab small{
+font-size:8px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.quick{
+padding:15px 7px;
+font-size:14px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+.info{
+padding:15px;
+}
+
+.info h3{
+font-size:18px;
+}
+
+.info p{
+font-size:13px;
+}
+
+.distance-note{
+font-size:12px;
+}
+
+.route-card{
+padding:16px 12px;
+}
+
+.route-big-icon{
+font-size:35px;
+}
+
+.route-top h2{
+font-size:20px;
+}
+
+.route-description{
+font-size:13px;
+}
+
+.route-path{
+font-size:12px;
+}
+
+.route-place-grid{
+grid-template-columns:1fr 1fr;
+gap:7px;
+}
+
+.route-place{
+font-size:11px;
+padding:9px 5px;
+}
+
+.route-place span{
+font-size:20px;
+}
+
+.route-place small{
+font-size:9px;
+}
+
+.transport-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.transport{
+padding:15px 8px;
+}
+
+.transport h3{
+font-size:16px;
+}
+
+.transport p{
+font-size:12px;
+}
+
+.transport a{
+font-size:11px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Hampi / हम्पी
+</h1>
+
+<p>
+Temples • Heritage • Ruins • Hills • Nature • History
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Hampi में place या route खोजें..."
+autocomplete="off"
+>
+
+<span class="search-icon">
+🔍
+</span>
+
+</div>
+
+</header>
+
+
+<div class="container">
+
+
+<a
+href="../index.html"
+class="back"
+>
+← DESH KHOJ A2Z
+</a>
+
+
+<div class="hero">
+
+<h2>
+🏛️ Hampi Travel Guide
+</h2>
+
+<p>
+Hampi Karnataka का एक प्रसिद्ध heritage
+destination है जो Vijayanagara Empire के
+ऐतिहासिक ruins, ancient temples, विशाल
+boulders, hills, Tungabhadra River और
+unique landscapes के लिए जाना जाता है।
+हमने Hampi और आसपास के प्रमुख places को
+अलग-अलग routes में रखा है ताकि यात्रा
+plan करना आसान हो।
+</p>
+
+</div>
+
+
+<div class="route-menu-wrap">
+
+<div class="route-menu">
+
+<a href="#heritage" class="route-tab">
+<span>🏛️</span>
+Heritage
+<small>Ruins</small>
+</a>
+
+<a href="#hills" class="route-tab">
+<span>⛰️</span>
+Hills
+<small>Views</small>
+</a>
+
+<a href="#nature" class="route-tab">
+<span>🌿</span>
+Nature
+<small>River + Lake</small>
+</a>
+
+<a href="#royal" class="route-tab">
+<span>👑</span>
+Royal
+<small>Vijayanagara</small>
+</a>
+
+<a href="#temple" class="route-tab">
+<span>🛕</span>
+Temple
+<small>Temples</small>
+</a>
+
+<a href="#vittala" class="route-tab">
+<span>🏛️</span>
+Vittala
+<small>Stone Chariot</small>
+</a>
+
+<a href="#transport" class="route-tab">
+<span>🚗</span>
+Transport
+<small>Travel</small>
+</a>
+
+<a href="#stayfood" class="route-tab">
+<span>🏨</span>
+Stay & Food
+<small>Hotels</small>
+</a>
+
+</div>
+
+</div>
+
+
+<div class="distance-note">
+
+📍 <strong>Distance Note:</strong>
+
+<br>
+
+यहाँ दी गई दूरी approximate road,
+walking या local route distance है और
+travel planning के लिए दी गई है।
+
+<br><br>
+
+Distance को सामान्यतः
+<strong>Hampi Bazaar / Hampi Main Area</strong>
+से starting point मानकर बताया गया है।
+
+<br><br>
+
+Actual distance आपकी starting location,
+selected road, walking route और local
+access के अनुसार कम-ज्यादा हो सकती है।
+
+</div>
+
+
+<div class="info">
+
+<h3>
+📌 पहली बार Hampi जा रहे हैं?
+</h3>
+
+<p>
+
+Hampi बहुत बड़ा heritage area है इसलिए
+सभी monuments को एक ही जगह से nearby
+मानना सही नहीं होगा। अलग-अलग areas को
+route-wise cover करना ज्यादा practical है।
+
+<br><br>
+
+🏛️ <strong>Heritage:</strong>
+Hampi Bazaar + Achyutaraya + पुराने ruins
+
+<br>
+
+⛰️ <strong>Hills:</strong>
+Hemakuta + Matanga + Anjanadri
+
+<br>
+
+🌿 <strong>Nature:</strong>
+Tungabhadra River + Sanapur + countryside
+
+<br>
+
+👑 <strong>Royal:</strong>
+Royal Enclosure + Queen's Bath + Lotus Mahal
+
+<br>
+
+🛕 <strong>Temple:</strong>
+Virupaksha + Hazara Rama + Krishna Temple
+
+<br>
+
+🏛️ <strong>Vittala:</strong>
+Vittala Temple + Stone Chariot + Riverside
+
+</p>
+
+</div>
+
+
+<h2 class="section-title">
+🔎 Quick Search
+</h2>
+
+
+<div class="quick-grid">
+
+<a
+href="javascript:openGoogle('tourist places in Hampi Karnataka')"
+class="quick"
+>
+
+<span class="quick-icon">
+🗺️
+</span>
+
+Hampi Maps
+
+</a>
+
+
+<a
+href="javascript:openGoogle('hotels in Hampi Karnataka')"
+class="quick"
+>
+
+<span class="quick-icon">
+🏨
+</span>
+
+Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('restaurants in Hampi Karnataka')"
+class="quick"
+>
+
+<span class="quick-icon">
+🍽️
+</span>
+
+Restaurants
+
+</a>
+
+
+<a
+href="javascript:openGoogleImages('Hampi Karnataka ruins temples stone chariot')"
+class="quick"
+>
+
+<span class="quick-icon">
+📸
+</span>
+
+Hampi Photos
+
+</a>
+
+</div>
+
+
+<h2 class="section-title">
+🧭 Hampi को Route-wise घूमें
+</h2>
+
+
+<div class="info">
+
+<h3>
+💡 Smart Hampi Travel Planning
+</h3>
+
+<p>
+नीचे Hampi के प्रमुख tourist areas को
+अलग-अलग routes में रखा गया है। जिस
+area में आप जाना चाहते हैं उस route
+को खोलकर उसके अंदर places, distance,
+maps और travel information देखें।
+</p>
+
+</div>
+
+  <!-- ==================================================
+     HERITAGE ROUTE
+================================================== -->
+
+<div
+class="route-card"
+id="heritage"
+data-search="hampi heritage ruins hampi bazaar achyutaraya temple courtesan street ruins kadalekalu ganesha sasivekalu ganesha history vijayanagara"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+🏛️
+</div>
+
+<div>
+
+<h2>
+Hampi Heritage Route
+</h2>
+
+<div class="route-subtitle">
+Hampi Bazaar • Achyutaraya • Ancient Ruins
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+
+यह route Hampi के historic core और
+ancient ruins को explore करने के लिए
+अच्छा है। पुराने market areas, temples,
+monuments और Vijayanagara-era architecture
+इस route की मुख्य highlights हैं।
+
+</p>
+
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏘️ Hampi Bazaar
+→
+🛕 Virupaksha Area
+→
+🏛️ Kadalekalu Ganesha
+→
+🏛️ Sasivekalu Ganesha
+→
+🏛️ Achyutaraya Temple
+
+</div>
+
+</div>
+
+
+<div class="route-distance">
+📍 Hampi Bazaar से Heritage Circuit लगभग 2–3 km walking/local route
+</div>
+
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>🏘️</span>
+Hampi Bazaar
+<small>Historic Market</small>
+</div>
+
+<div class="route-place">
+<span>🐘</span>
+Kadalekalu Ganesha
+<small>Monument</small>
+</div>
+
+<div class="route-place">
+<span>🙏</span>
+Sasivekalu Ganesha
+<small>Monolithic Statue</small>
+</div>
+
+<div class="route-place">
+<span>🏛️</span>
+Achyutaraya
+<small>Temple Ruins</small>
+</div>
+
+</div>
+
+
+<a
+href="hampi-heritage-route.html"
+class="route-button"
+>
+🏛️ Heritage Route खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     HILLS ROUTE
+================================================== -->
+
+<div
+class="route-card hills"
+id="hills"
+data-search="hampi hills hemakuta hill matanga hill anjanadri hill sunset sunrise viewpoint monkey temple hanuman hill panoramic view"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+⛰️
+</div>
+
+<div>
+
+<h2>
+Hampi Hills & Viewpoint Route
+</h2>
+
+<div class="route-subtitle">
+Hemakuta • Matanga • Anjanadri • Sunset
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+
+Hampi की rocky hills और viewpoints
+sunrise, sunset और panoramic landscape
+के लिए प्रसिद्ध हैं। अलग-अलग hills की
+access और walking difficulty अलग हो
+सकती है।
+
+</p>
+
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏘️ Hampi
+→
+⛰️ Hemakuta Hill
+→
+🌅 Matanga Hill
+→
+🌄 Anjanadri Hill
+
+</div>
+
+</div>
+
+
+<div class="route-distance">
+📍 Hampi Main से Hemakuta लगभग 0.5–1 km area
+</div>
+
+<div class="route-distance">
+📍 Hampi Bazaar से Matanga Hill लगभग 1–2 km area
+</div>
+
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>⛰️</span>
+Hemakuta Hill
+<small>Sunset Views</small>
+</div>
+
+<div class="route-place">
+<span>🌅</span>
+Matanga Hill
+<small>Panoramic View</small>
+</div>
+
+<div class="route-place">
+<span>🙏</span>
+Anjanadri Hill
+<small>Hanuman Temple Area</small>
+</div>
+
+<div class="route-place">
+<span>📸</span>
+Viewpoints
+<small>Photography</small>
+</div>
+
+</div>
+
+
+<a
+href="hampi-hills-route.html"
+class="route-button"
+>
+⛰️ Hills Route खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     NATURE ROUTE
+================================================== -->
+
+<div
+class="route-card nature"
+id="nature"
+data-search="hampi nature tungabhadra river sanapur lake lake hippie island countryside paddy fields coracle nature waterfall landscape"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+🌿
+</div>
+
+<div>
+
+<h2>
+Hampi Nature Route
+</h2>
+
+<div class="route-subtitle">
+Tungabhadra • Sanapur • Countryside • River
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+
+Hampi केवल ruins के लिए ही नहीं बल्कि
+Tungabhadra River, rocky landscape,
+fields और nearby countryside के लिए भी
+famous है। यह route relaxed sightseeing
+और photography के लिए अच्छा है।
+
+</p>
+
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏘️ Hampi
+→
+🌊 Tungabhadra River
+→
+🌿 Riverside Area
+→
+💧 Sanapur Lake
+→
+🌾 Countryside
+
+</div>
+
+</div>
+
+
+<div class="route-distance">
+📍 Hampi Main → Tungabhadra Riverside लगभग 1–2 km area
+</div>
+
+<div class="route-distance">
+📍 Hampi → Sanapur Lake लगभग 5–6 km area
+</div>
+
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>🌊</span>
+Tungabhadra River
+<small>River</small>
+</div>
+
+<div class="route-place">
+<span>💧</span>
+Sanapur Lake
+<small>Lake Area</small>
+</div>
+
+<div class="route-place">
+<span>🛶</span>
+Coracle Ride
+<small>Seasonal Activity</small>
+</div>
+
+<div class="route-place">
+<span>🌾</span>
+Countryside
+<small>Village Views</small>
+</div>
+
+</div>
+
+
+<a
+href="hampi-nature-route.html"
+class="route-button"
+>
+🌿 Nature Route खोलें →
+</a>
+
+</div>
+
+  <!-- ==================================================
+     ROYAL ROUTE
+================================================== -->
+
+<div
+class="route-card royal"
+id="royal"
+data-search="hampi royal enclosure queen bath lotus mahal elephant stables zenana enclosure mahanavami dibba underground shiva temple royal palace vijayanagara"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+👑
+</div>
+
+<div>
+
+<h2>
+Hampi Royal Route
+</h2>
+
+<div class="route-subtitle">
+Royal Enclosure • Queen's Bath • Lotus Mahal
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+
+यह route Vijayanagara Empire के royal
+complexes और palace-related monuments
+को explore करता है। Royal Enclosure,
+Mahanavami Dibba, Queen's Bath और Lotus
+Mahal इस circuit की प्रमुख highlights हैं।
+
+</p>
+
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏛️ Royal Enclosure
+→
+🪜 Mahanavami Dibba
+→
+🛁 Queen's Bath
+→
+🏯 Zenana Enclosure
+→
+🌸 Lotus Mahal
+→
+🐘 Elephant Stables
+
+</div>
+
+</div>
+
+
+<div class="route-distance">
+📍 Hampi Bazaar → Royal Enclosure लगभग 2 km area
+</div>
+
+<div class="route-distance">
+📍 Royal Enclosure → Lotus Mahal लगभग 2–3 km local circuit
+</div>
+
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>👑</span>
+Royal Enclosure
+<small>Royal Complex</small>
+</div>
+
+<div class="route-place">
+<span>🪜</span>
+Mahanavami Dibba
+<small>Grand Platform</small>
+</div>
+
+<div class="route-place">
+<span>🌸</span>
+Lotus Mahal
+<small>Architecture</small>
+</div>
+
+<div class="route-place">
+<span>🐘</span>
+Elephant Stables
+<small>Royal Complex</small>
+</div>
+
+</div>
+
+
+<a
+href="hampi-royal-route.html"
+class="route-button"
+>
+👑 Royal Route खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TEMPLE ROUTE
+================================================== -->
+
+<div
+class="route-card temple"
+id="temple"
+data-search="hampi temple route virupaksha temple krishna temple hazara rama temple achyutaraya temple underground shiva temple temple ruins religious places"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+🛕
+</div>
+
+<div>
+
+<h2>
+Hampi Temple Route
+</h2>
+
+<div class="route-subtitle">
+Virupaksha • Krishna • Hazara Rama • Temples
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+
+Hampi में कई important ancient temples
+और temple complexes हैं। यह route
+religious architecture, stone carvings,
+mandapas और Vijayanagara period temple
+heritage को समझने के लिए बनाया गया है।
+
+</p>
+
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🛕 Virupaksha Temple
+→
+🛕 Krishna Temple
+→
+🛕 Hazara Rama Temple
+→
+🛕 Underground Shiva Temple
+→
+🏛️ Temple Ruins
+
+</div>
+
+</div>
+
+
+<div class="route-distance">
+📍 Hampi Bazaar → Virupaksha Temple लगभग 0–0.5 km
+</div>
+
+<div class="route-distance">
+📍 Hampi Bazaar → Krishna Temple लगभग 1 km area
+</div>
+
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>🛕</span>
+Virupaksha Temple
+<small>Main Temple</small>
+</div>
+
+<div class="route-place">
+<span>🙏</span>
+Krishna Temple
+<small>Historic Temple</small>
+</div>
+
+<div class="route-place">
+<span>🏛️</span>
+Hazara Rama
+<small>Temple Complex</small>
+</div>
+
+<div class="route-place">
+<span>🪔</span>
+Underground Shiva
+<small>Ancient Temple</small>
+</div>
+
+</div>
+
+
+<a
+href="hampi-temple-route.html"
+class="route-button"
+>
+🛕 Temple Route खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     VITTALA ROUTE
+================================================== -->
+
+<div
+class="route-card vittala"
+id="vittala"
+data-search="hampi vittala temple stone chariot musical pillars pushkarani king balance riverside vittala bazaar purandara mantapa"
+>
+
+<div class="route-top">
+
+<div class="route-big-icon">
+🏛️
+</div>
+
+<div>
+
+<h2>
+Vittala Temple Route
+</h2>
+
+<div class="route-subtitle">
+Stone Chariot • Musical Pillars • Riverside
+</div>
+
+</div>
+
+</div>
+
+<p class="route-description">
+
+Vittala Temple Hampi के सबसे iconic
+heritage monuments में से एक है। प्रसिद्ध
+Stone Chariot, temple complex और
+architectural details इस route की मुख्य
+highlights हैं।
+
+</p>
+
+
+<div class="route-path-box">
+
+<div class="route-path-title">
+📍 Suggested Route
+</div>
+
+<div class="route-path">
+
+🏘️ Hampi
+→
+🏛️ Vittala Temple
+→
+🛕 Temple Complex
+→
+🚃 Stone Chariot
+→
+🌊 Tungabhadra Riverside
+
+</div>
+
+</div>
+
+
+<div class="route-distance">
+📍 Hampi Bazaar → Vittala Temple लगभग 2.5–3 km area
+</div>
+
+<div class="route-distance">
+📍 Virupaksha Temple → Vittala Temple लगभग 2.5–3 km local route
+</div>
+
+
+<div class="route-place-grid">
+
+<div class="route-place">
+<span>🏛️</span>
+Vittala Temple
+<small>UNESCO Heritage Area</small>
+</div>
+
+<div class="route-place">
+<span>🚃</span>
+Stone Chariot
+<small>Iconic Monument</small>
+</div>
+
+<div class="route-place">
+<span>🎵</span>
+Musical Pillars
+<small>Architecture</small>
+</div>
+
+<div class="route-place">
+<span>🌊</span>
+Riverside
+<small>Tungabhadra</small>
+</div>
+
+</div>
+
+
+<a
+href="hampi-vittala-route.html"
+class="route-button"
+>
+🏛️ Vittala Route खोलें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE PLANNING
+================================================== -->
+
+<h2 class="section-title">
+🗓️ Hampi Trip Planning
+</h2>
+
+
+<div class="plan-card">
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🛕
+</div>
+
+<div>
+
+<strong>
+1 Day — Temple & Heritage
+</strong>
+
+<p>
+Virupaksha Temple, Hampi Bazaar,
+Hemakuta Hill, Achyutaraya और nearby
+heritage monuments cover करें।
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+👑
+</div>
+
+<div>
+
+<strong>
+1 Day — Royal Hampi
+</strong>
+
+<p>
+Royal Enclosure, Mahanavami Dibba,
+Queen's Bath, Lotus Mahal और Elephant
+Stables को एक circuit में रखें।
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🏛️
+</div>
+
+<div>
+
+<strong>
+1 Day — Vittala & Riverside
+</strong>
+
+<p>
+Vittala Temple, Stone Chariot और
+Tungabhadra riverside area को आराम से
+explore करें।
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+⛰️
+</div>
+
+<div>
+
+<strong>
+Half Day — Hampi Hills
+</strong>
+
+<p>
+Hemakuta या Matanga Hill को sunrise/
+sunset के लिए रखें। Comfortable shoes
+और पानी साथ रखें।
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🌿
+</div>
+
+<div>
+
+<strong>
+Half / Full Day — Nature
+</strong>
+
+<p>
+Tungabhadra River और Sanapur Lake
+area को relaxed nature trip के रूप
+में plan किया जा सकता है।
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     SMART TRAVEL TIP
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 सबसे जरूरी Hampi Travel Tip
+</h3>
+
+<p>
+
+<strong>
+Hampi को एक single sightseeing point
+की तरह plan न करें।
+</strong>
+
+<br><br>
+
+यहाँ monuments काफी बड़े area में
+फैले हुए हैं। इसलिए Temple, Royal,
+Vittala, Hills और Nature को अलग-अलग
+routes में रखना ज्यादा practical है।
+
+<br><br>
+
+सुबह और शाम walking तथा viewpoints
+के लिए बेहतर हो सकते हैं, जबकि
+दोपहर में heritage complexes को
+आराम से cover किया जा सकता है।
+
+</p>
+
+</div>
+
+  <!-- ==================================================
+     TRANSPORT
+================================================== -->
+
+<h2
+class="section-title"
+id="transport"
+>
+🚗 Hampi Transport
+</h2>
+
+
+<div class="transport-grid">
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚆
+</div>
+
+<h3>
+Train
+</h3>
+
+<p>
+Hosapete Junction Hampi का प्रमुख
+railway access point है।
+</p>
+
+<a
+href="javascript:openGoogle('Hosapete Junction to Hampi distance')"
+>
+🚆 Train देखें
+</a>
+
+</div>
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚌
+</div>
+
+<h3>
+Bus
+</h3>
+
+<p>
+Hospet और nearby cities से Hampi
+के लिए bus connectivity देखें।
+</p>
+
+<a
+href="javascript:openGoogle('Hospet to Hampi bus')"
+>
+🚌 Bus देखें
+</a>
+
+</div>
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🚕
+</div>
+
+<h3>
+Cab / Taxi
+</h3>
+
+<p>
+Hospet या nearby cities से Hampi
+taxi और local sightseeing options।
+</p>
+
+<a
+href="javascript:openGoogle('Hospet to Hampi taxi sightseeing')"
+>
+🚕 Cab देखें
+</a>
+
+</div>
+
+
+<div class="transport">
+
+<div class="transport-icon">
+🏍️
+</div>
+
+<h3>
+Local Travel
+</h3>
+
+<p>
+Hampi में walking, bicycle, scooter
+या local vehicle options मिल सकते हैं।
+</p>
+
+<a
+href="javascript:openGoogle('Hampi bicycle scooter rental')"
+>
+🏍️ Local देखें
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     STAY & FOOD
+================================================== -->
+
+<h2
+class="section-title"
+id="stayfood"
+>
+🏨 Stay & 🍽️ Food
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogle('budget hotels in Hampi Karnataka')"
+class="quick"
+>
+
+<span class="quick-icon">
+💰
+</span>
+
+Budget Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('best hotels in Hampi Karnataka')"
+class="quick"
+>
+
+<span class="quick-icon">
+⭐
+</span>
+
+Best Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('family hotels in Hampi Karnataka')"
+class="quick"
+>
+
+<span class="quick-icon">
+👨‍👩‍👧
+</span>
+
+Family Hotels
+
+</a>
+
+
+<a
+href="javascript:openGoogle('hotels near Hampi Karnataka')"
+class="quick"
+>
+
+<span class="quick-icon">
+🏨
+</span>
+
+Nearby Hotels
+
+</a>
+
+
+</div>
+
+
+<h2 class="section-title">
+🍽️ Hampi Food
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogle('famous food in Hampi Karnataka')"
+class="quick"
+>
+
+<span class="quick-icon">
+🍛
+</span>
+
+Famous Food
+
+</a>
+
+
+<a
+href="javascript:openGoogle('vegetarian restaurants in Hampi')"
+class="quick"
+>
+
+<span class="quick-icon">
+🥗
+</span>
+
+Vegetarian
+
+</a>
+
+
+<a
+href="javascript:openGoogle('restaurants near Hampi Karnataka')"
+class="quick"
+>
+
+<span class="quick-icon">
+🍽️
+</span>
+
+Restaurants
+
+</a>
+
+
+<a
+href="javascript:openGoogle('cafes in Hampi Karnataka')"
+class="quick"
+>
+
+<span class="quick-icon">
+☕
+</span>
+
+Cafes
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     NEARBY PLACES
+================================================== -->
+
+<h2 class="section-title">
+📍 Hampi Nearby Places
+</h2>
+
+
+<div class="info">
+
+<h3>
+🗺️ Hampi के आसपास
+</h3>
+
+<p>
+
+🏙️ <strong>Hosapete / Hospet:</strong>
+Hampi का प्रमुख nearby town और
+transport base।
+
+<br><br>
+
+🌊 <strong>Tungabhadra Dam:</strong>
+Hospet के पास famous dam और reservoir
+area।
+
+<br><br>
+
+🌿 <strong>Sanapur:</strong>
+Hampi के आसपास nature और lake
+landscape के लिए जाना जाता है।
+
+<br><br>
+
+🐘 <strong>Daroji Sloth Bear Sanctuary:</strong>
+Hampi region के आसपास wildlife
+experience के लिए जाना जाता है।
+
+<br><br>
+
+🏛️ <strong>Hampi:</strong>
+Vijayanagara heritage और ancient
+monuments का मुख्य destination।
+
+</p>
+
+
+<a
+href="javascript:openGoogle('places near Hampi Karnataka Hospet Sanapur Daroji')"
+class="route-button"
+>
+📍 Nearby Places देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     WEATHER
+================================================== -->
+
+<h2 class="section-title">
+🌤️ Hampi Weather & Season
+</h2>
+
+
+<div class="info">
+
+<h3>
+☀️ Best Travel Planning
+</h3>
+
+<p>
+
+Hampi में sightseeing के दौरान गर्मी
+और धूप को ध्यान में रखना जरूरी है।
+Walking-heavy routes के लिए comfortable
+shoes, water और sun protection रखें।
+
+<br><br>
+
+🌧️ <strong>Monsoon:</strong>
+Landscape हरा-भरा हो सकता है, लेकिन
+कुछ outdoor activities और walking
+conditions मौसम से प्रभावित हो सकती हैं।
+
+<br><br>
+
+☀️ <strong>Winter:</strong>
+सुबह और शाम sightseeing के लिए
+comfortable conditions मिल सकती हैं।
+
+<br><br>
+
+🔥 <strong>Summer:</strong>
+दोपहर में गर्मी अधिक हो सकती है,
+इसलिए सुबह और शाम major sightseeing
+के लिए बेहतर planning हो सकती है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     EXPERIENCE
+================================================== -->
+
+<h2 class="section-title">
+🏛️ Hampi Experience
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="javascript:openGoogleImages('Hampi ruins Karnataka')"
+class="quick"
+>
+
+<span class="quick-icon">
+🏛️
+</span>
+
+Ancient Ruins
+
+</a>
+
+
+<a
+href="javascript:openGoogleImages('Hampi Stone Chariot Vittala Temple')"
+class="quick"
+>
+
+<span class="quick-icon">
+🚃
+</span>
+
+Stone Chariot
+
+</a>
+
+
+<a
+href="javascript:openGoogleImages('Hampi Virupaksha Temple')"
+class="quick"
+>
+
+<span class="quick-icon">
+🛕
+</span>
+
+Temples
+
+</a>
+
+
+<a
+href="javascript:openGoogleImages('Hampi sunset Matanga Hill')"
+class="quick"
+>
+
+<span class="quick-icon">
+🌅
+</span>
+
+Sunset Views
+
+</a>
+
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<h2 class="section-title">
+💡 Hampi Travel Tips
+</h2>
+
+
+<div class="info">
+
+<p>
+
+📍 Hampi का sightseeing area काफी बड़ा
+है, इसलिए route-wise planning करें।
+
+<br><br>
+
+👟 Comfortable walking shoes जरूर रखें।
+
+<br><br>
+
+💧 पानी साथ रखें, खासकर long walking
+routes और hills के लिए।
+
+<br><br>
+
+☀️ गर्मी में दोपहर की तेज धूप से बचने
+के लिए सुबह और शाम sightseeing रखें।
+
+<br><br>
+
+⛰️ Hills पर चढ़ते समय अपनी fitness और
+weather conditions का ध्यान रखें।
+
+<br><br>
+
+📸 Ancient monuments पर climbing या
+damage करने से बचें।
+
+<br><br>
+
+🛕 Temples में local dress और
+entry rules का सम्मान करें।
+
+<br><br>
+
+🌊 River और rocky areas में local
+safety instructions follow करें।
+
+<br><br>
+
+🚗 अलग-अलग monument clusters के बीच
+local transport planning पहले करें।
+
+<br><br>
+
+🕒 Monument और temple timings को
+यात्रा से पहले check करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     PHOTOS
+================================================== -->
+
+<h2 class="section-title">
+📸 Hampi Photos
+</h2>
+
+
+<div class="info">
+
+<h3>
+📷 Hampi के Places की Photos
+</h3>
+
+<p>
+
+Hampi ruins, Virupaksha Temple,
+Vittala Temple, Stone Chariot,
+Royal Enclosure, Lotus Mahal,
+Hemakuta Hill, Matanga Hill,
+Tungabhadra River और Sanapur की
+photos देखने के लिए Google Images खोलें।
+
+</p>
+
+
+<a
+href="javascript:openGoogleImages('Hampi Karnataka Virupaksha Vittala Stone Chariot Royal Enclosure Lotus Mahal Matanga Hill')"
+class="route-button"
+>
+📸 Hampi Photos देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     IMPORTANT
+================================================== -->
+
+<div class="info">
+
+<h3>
+⚠️ Important Information
+</h3>
+
+<p>
+
+• सभी distances approximate हैं।
+
+<br><br>
+
+• Actual distance आपकी starting
+location और selected route के अनुसार
+बदल सकती है।
+
+<br><br>
+
+• Hampi में कई places walking और
+local transport दोनों से cover किए
+जा सकते हैं।
+
+<br><br>
+
+• मौसम के अनुसार outdoor sightseeing
+conditions बदल सकती हैं।
+
+<br><br>
+
+• Hills पर जाने से पहले weather और
+local conditions check करें।
+
+<br><br>
+
+• Temple और heritage monuments के
+local rules follow करें।
+
+<br><br>
+
+• Ancient structures को नुकसान न पहुँचाएँ।
+
+<br><br>
+
+• River और rocky areas में safety
+instructions follow करें।
+
+<br><br>
+
+• Monument timings और entry information
+पहले check करना बेहतर है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     HAMPI DISTANCE SUMMARY
+================================================== -->
+
+<h2 class="section-title">
+📍 Hampi Route-to-Route Distance Summary
+</h2>
+
+
+<div class="distance-note">
+
+📍 <strong>Hampi Distance Guide</strong>
+
+<br><br>
+
+🚆 <strong>Hosapete / Hospet → Hampi:</strong>
+लगभग <strong>13 km</strong>
+
+<br>
+
+<small>
+Approximate road distance।
+</small>
+
+<br><br>
+
+🏙️ <strong>Hospet → Hampi Bazaar:</strong>
+लगभग <strong>13–14 km</strong>
+
+<br><br>
+
+🛕 <strong>Hampi Bazaar → Virupaksha Temple:</strong>
+लगभग <strong>0–0.5 km</strong>
+
+<br><br>
+
+⛰️ <strong>Hampi Bazaar → Hemakuta Hill:</strong>
+लगभग <strong>0.5–1 km area</strong>
+
+<br><br>
+
+🏛️ <strong>Hampi Bazaar → Vittala Temple:</strong>
+लगभग <strong>2.5–3 km area</strong>
+
+<br><br>
+
+👑 <strong>Hampi Bazaar → Royal Enclosure:</strong>
+लगभग <strong>2 km area</strong>
+
+<br><br>
+
+🌸 <strong>Royal Enclosure → Lotus Mahal:</strong>
+लगभग <strong>2–3 km local circuit</strong>
+
+<br><br>
+
+⛰️ <strong>Hampi Bazaar → Matanga Hill:</strong>
+लगभग <strong>1–2 km area</strong>
+
+<br><br>
+
+🌿 <strong>Hampi → Sanapur Lake:</strong>
+लगभग <strong>5–6 km</strong>
+
+<br><br>
+
+🌊 <strong>Hampi → Tungabhadra Riverside:</strong>
+लगभग <strong>1–2 km area</strong>
+
+<br><br>
+
+🐻 <strong>Hampi → Daroji Wildlife Sanctuary:</strong>
+लगभग <strong>20 km area</strong>
+
+<br><br>
+
+🏙️ <strong>Hampi → Hospet:</strong>
+लगभग <strong>13 km</strong>
+
+<br><br>
+
+⚠️ <strong>Important:</strong>
+
+ये distances travel planning के लिए
+approximate हैं। Actual road distance,
+walking distance, selected route,
+traffic और local access conditions के
+अनुसार बदल सकती है।
+
+</div>
+
+
+<!-- ==================================================
+     ROUTE CONNECTION
+================================================== -->
+
+<div class="info">
+
+<h3>
+🧭 Hampi Route Connection
+</h3>
+
+<p>
+
+🏙️ <strong>Hospet</strong>
+→
+🏛️ <strong>Hampi</strong>
+
+<br><br>
+
+🏘️ <strong>Hampi Bazaar</strong>
+→
+🛕 <strong>Virupaksha Temple</strong>
+→
+⛰️ <strong>Hemakuta Hill</strong>
+
+<br><br>
+
+🏛️ <strong>Hampi</strong>
+→
+👑 <strong>Royal Enclosure</strong>
+→
+🌸 <strong>Lotus Mahal</strong>
+→
+🐘 <strong>Elephant Stables</strong>
+
+<br><br>
+
+🏛️ <strong>Hampi</strong>
+→
+🏛️ <strong>Vittala Temple</strong>
+→
+🚃 <strong>Stone Chariot</strong>
+→
+🌊 <strong>Riverside</strong>
+
+<br><br>
+
+🏛️ <strong>Hampi</strong>
+→
+🌿 <strong>Sanapur</strong>
+→
+💧 <strong>Lake Area</strong>
+
+<br><br>
+
+👉 हर route के अंदर जाकर उस area के
+detailed places, maps और travel
+information देखें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK ROUTE SUMMARY
+================================================== -->
+
+<h2 class="section-title">
+🗺️ Hampi Quick Route Summary
+</h2>
+
+
+<div class="hero">
+
+<h2>
+📍 Hampi को Confusion-Free घूमें
+</h2>
+
+<p>
+
+🏛️ <strong>Heritage:</strong>
+
+Hampi Bazaar
+→
+Kadalekalu Ganesha
+→
+Sasivekalu Ganesha
+→
+Achyutaraya
+
+<br><br>
+
+⛰️ <strong>Hills:</strong>
+
+Hemakuta
+→
+Matanga
+→
+Anjanadri
+
+<br><br>
+
+🌿 <strong>Nature:</strong>
+
+Tungabhadra
+→
+Riverside
+→
+Sanapur Lake
+
+<br><br>
+
+👑 <strong>Royal:</strong>
+
+Royal Enclosure
+→
+Mahanavami Dibba
+→
+Queen's Bath
+→
+Lotus Mahal
+→
+Elephant Stables
+
+<br><br>
+
+🛕 <strong>Temple:</strong>
+
+Virupaksha
+→
+Krishna Temple
+→
+Hazara Rama
+→
+Underground Shiva
+
+<br><br>
+
+🏛️ <strong>Vittala:</strong>
+
+Vittala Temple
+→
+Stone Chariot
+→
+Musical Pillars
+→
+Riverside
+
+<br><br>
+
+<strong>
+👉 हर route के अंदर जाकर उस area के
+सभी detailed places देखें।
+</strong>
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     BOTTOM STICKY MENU
+================================================== -->
+
+<div class="route-menu-wrap">
+
+<div class="route-menu">
+
+<a
+href="#top"
+class="route-tab"
+>
+<span>⬆️</span>
+Top
+<small>ऊपर</small>
+</a>
+
+<a
+href="#heritage"
+class="route-tab"
+>
+<span>🏛️</span>
+Heritage
+<small>Ruins</small>
+</a>
+
+<a
+href="#hills"
+class="route-tab"
+>
+<span>⛰️</span>
+Hills
+<small>Views</small>
+</a>
+
+<a
+href="#nature"
+class="route-tab"
+>
+<span>🌿</span>
+Nature
+<small>Lake</small>
+</a>
+
+<a
+href="#royal"
+class="route-tab"
+>
+<span>👑</span>
+Royal
+<small>Palace</small>
+</a>
+
+<a
+href="#temple"
+class="route-tab"
+>
+<span>🛕</span>
+Temple
+<small>Temples</small>
+</a>
+
+<a
+href="#vittala"
+class="route-tab"
+>
+<span>🏛️</span>
+Vittala
+<small>Stone Chariot</small>
+</a>
+
+<a
+href="#transport"
+class="route-tab"
+>
+<span>🚗</span>
+Transport
+<small>Travel</small>
+</a>
+
+<a
+href="#stayfood"
+class="route-tab"
+>
+<span>🏨</span>
+Stay & Food
+<small>Hotels</small>
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+India Travel Guide
+
+<br><br>
+
+Hampi | हम्पी
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="ऊपर जाएँ"
+>
+⬆️
+</button>
+
+
+<script src="script.js"></script>
+
+
+<!-- ==================================================
+     HAMPI MAIN PAGE SEARCH
+================================================== -->
+
+<script>
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+
+const searchInput =
+document.getElementById("searchInput");
+
+const searchable =
+document.querySelectorAll(
+".route-card"
+);
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+/* ==================================================
+   SEARCH
+================================================== */
+
+if(searchInput){
+
+searchInput.addEventListener(
+"input",
+function(){
+
+const value =
+this.value
+.toLowerCase()
+.trim();
+
+let found = false;
+
+searchable.forEach(
+function(item){
+
+const text =
+(
+item.innerText +
+" " +
+(item.getAttribute(
+"data-search"
+) || "")
+)
+.toLowerCase();
+
+if(
+value === "" ||
+text.includes(value)
+){
+
+item.style.display =
+"";
+
+if(value !== ""){
+found = true;
+}
+
+}else{
+
+item.style.display =
+"none";
+
+}
+
+});
+
+
+/* ==================================================
+   NO RESULT MESSAGE
+================================================== */
+
+let noResult =
+document.getElementById("noResult");
+
+if(!noResult){
+
+noResult =
+document.createElement("div");
+
+noResult.id =
+"noResult";
+
+noResult.className =
+"search-result";
+
+noResult.innerHTML =
+"🔍 इस search के लिए कोई route नहीं मिला।";
+
+searchInput
+.parentElement
+.parentElement
+.insertBefore(
+noResult,
+searchInput.parentElement.nextSibling
+);
+
+}
+
+
+if(
+value !== "" &&
+!found
+){
+
+noResult.style.display =
+"block";
+
+}else{
+
+noResult.style.display =
+"none";
+
+}
+
+});
+
+}
+
+
+/* ==================================================
+   BACK TO TOP
+================================================== */
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY > 500){
+
+topBtn.style.display =
+"block";
+
+}else{
+
+topBtn.style.display =
+"none";
+
+}
+
+});
+
+
+if(topBtn){
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+});
+
+</script>
+
+
+</body>
+
+</html>

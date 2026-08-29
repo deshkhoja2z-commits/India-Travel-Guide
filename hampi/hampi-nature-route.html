@@ -1,0 +1,3126 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Hampi Nature Route | हम्पी नेचर रूट - DESH KHOJ A2Z
+</title>
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   HAMPI NATURE ROUTE
+================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:75px;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7f6;
+color:#202124;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(
+135deg,
+#dcfce7,
+#ffffff,
+#dbeafe
+);
+padding:22px 15px;
+text-align:center;
+border-bottom:5px solid #138808;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.logo{
+font-size:40px;
+}
+
+header h1{
+font-size:30px;
+margin:5px 0;
+}
+
+header p{
+font-size:14px;
+font-weight:bold;
+color:#34495e;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:18px 14px;
+}
+
+.back{
+display:inline-block;
+background:#17202a;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+
+/* ==================================================
+   STICKY HORIZONTAL MENU
+================================================== */
+
+.sticky-menu{
+position:sticky;
+top:0;
+z-index:90;
+background:#f4f7f6;
+padding:6px 0;
+margin:0 -2px 15px;
+border-bottom:1px solid #ddd;
+}
+
+.horizontal-menu{
+display:flex;
+gap:6px;
+overflow-x:auto;
+padding:2px 3px 5px;
+scrollbar-width:none;
+-webkit-overflow-scrolling:touch;
+}
+
+.horizontal-menu::-webkit-scrollbar{
+display:none;
+}
+
+.menu-card{
+flex:0 0 auto;
+min-width:82px;
+background:white;
+color:#202124;
+text-decoration:none;
+border:1px solid #e1e5e8;
+border-radius:10px;
+padding:5px 7px;
+text-align:center;
+font-size:10px;
+font-weight:bold;
+box-shadow:0 2px 7px rgba(0,0,0,.10);
+line-height:1.2;
+}
+
+.menu-card span{
+display:block;
+font-size:18px;
+line-height:19px;
+margin-bottom:2px;
+}
+
+.menu-card small{
+display:block;
+font-size:8px;
+color:#666;
+font-weight:normal;
+white-space:nowrap;
+}
+
+.menu-card:active{
+transform:scale(.96);
+}
+
+.menu-card.active{
+border-color:#138808;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+background:white;
+border-left:6px solid #138808;
+border-radius:22px;
+padding:22px;
+margin-bottom:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.09);
+}
+
+.hero h2{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+font-size:16px;
+}
+
+
+/* ==================================================
+   SUGGESTED PLANNING
+================================================== */
+
+.suggested{
+background:#f0fff4;
+border-radius:20px;
+padding:18px;
+margin-top:20px;
+}
+
+.suggested h3{
+font-size:20px;
+color:#138808;
+margin-bottom:8px;
+}
+
+.suggested p{
+font-size:15px;
+font-weight:bold;
+}
+
+
+/* ==================================================
+   DISTANCE GRID
+================================================== */
+
+.distance-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin:20px 0;
+}
+
+.distance-card{
+background:#f8fafc;
+border:1px solid #e1e5e8;
+border-radius:18px;
+padding:17px 9px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.distance-icon{
+display:block;
+font-size:32px;
+margin-bottom:5px;
+}
+
+.distance-card strong{
+font-size:15px;
+}
+
+.distance-card span{
+display:block;
+font-size:12px;
+color:#666;
+margin-top:3px;
+}
+
+
+/* ==================================================
+   ROUTE DISTANCE BETWEEN VISITS
+================================================== */
+
+.route-distance{
+display:inline-block;
+background:#eaf8ef;
+color:#187a3d;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:5px 0;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title{
+font-size:25px;
+margin:25px 0 15px;
+}
+
+
+/* ==================================================
+   INFO
+================================================== */
+
+.info{
+background:#eef7ff;
+border-left:6px solid #1976d2;
+border-radius:18px;
+padding:17px;
+margin:20px 0 25px;
+font-size:14px;
+}
+
+.info h3{
+font-size:20px;
+margin-bottom:7px;
+}
+
+
+/* ==================================================
+   ROUTE SUMMARY
+================================================== */
+
+.route-box{
+background:#fff8e7;
+border-left:6px solid #f59e0b;
+border-radius:18px;
+padding:18px;
+margin:20px 0 28px;
+}
+
+.route-box h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.route-box p{
+font-size:14px;
+color:#555;
+}
+
+.route-line{
+font-weight:bold;
+font-size:15px;
+line-height:2;
+margin:10px 0;
+}
+
+
+/* ==================================================
+   PLACE / DETAIL CARD
+================================================== */
+
+.place-card{
+background:white;
+border-radius:24px;
+padding:22px;
+margin:25px 0;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+border-left:6px solid #138808;
+scroll-margin-top:75px;
+}
+
+.place-card:nth-of-type(2){
+border-left-color:#1976d2;
+}
+
+.place-card:nth-of-type(3){
+border-left-color:#ff9933;
+}
+
+.place-card:nth-of-type(4){
+border-left-color:#7c3aed;
+}
+
+.place-card:nth-of-type(5){
+border-left-color:#0891b2;
+}
+
+
+/* ==================================================
+   PLACE HEADER
+================================================== */
+
+.place-header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:14px;
+}
+
+.place-icon{
+font-size:48px;
+}
+
+.place-header h3{
+font-size:25px;
+margin:0;
+}
+
+.place-header span{
+display:block;
+font-size:16px;
+color:#666;
+margin-top:2px;
+}
+
+
+/* ==================================================
+   CATEGORY
+================================================== */
+
+.category{
+display:inline-block;
+background:#f1f5f9;
+padding:6px 11px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#555;
+margin-bottom:14px;
+}
+
+
+/* ==================================================
+   DISTANCE BADGE
+================================================== */
+
+.place-distance{
+background:#eaf8ef;
+border-left:4px solid #138808;
+border-radius:12px;
+padding:10px 12px;
+margin:10px 0 15px;
+font-size:13px;
+font-weight:bold;
+color:#176b38;
+}
+
+.place-distance span{
+color:#555;
+font-weight:normal;
+}
+
+
+/* ==================================================
+   SHORT HISTORY
+================================================== */
+
+.short-history{
+background:#fff8e7;
+border-left:4px solid #f59e0b;
+padding:14px;
+border-radius:13px;
+margin:12px 0 18px;
+}
+
+.short-history h4{
+margin-bottom:5px;
+font-size:17px;
+}
+
+.short-history p{
+font-size:14px;
+color:#555;
+}
+
+
+/* ==================================================
+   BUTTON GRID
+================================================== */
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:15px;
+}
+
+.action-btn{
+display:block;
+padding:12px 8px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:bold;
+transition:.2s;
+}
+
+.action-btn:active{
+transform:scale(.96);
+}
+
+
+/* ==================================================
+   ACTION COLORS
+================================================== */
+
+.route{
+background:#1976d2;
+}
+
+.maps{
+background:#0f766e;
+}
+
+.hotel{
+background:#d97706;
+}
+
+.luxury{
+background:#7c3aed;
+}
+
+.restaurant{
+background:#dc2626;
+}
+
+.photo{
+background:#2563eb;
+}
+
+.nature{
+background:#15803d;
+}
+
+.water{
+background:#0891b2;
+}
+
+.sunset{
+background:#ea580c;
+}
+
+.temple{
+background:#b45309;
+}
+
+.cab{
+background:#ea580c;
+}
+
+.train{
+background:#6d28d9;
+}
+
+.bus{
+background:#15803d;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:15px;
+padding:15px;
+margin-top:18px;
+}
+
+.place-info-row{
+padding:8px 0;
+border-bottom:1px solid #e5e7eb;
+font-size:14px;
+}
+
+.place-info-row:last-child{
+border-bottom:0;
+}
+
+.place-info strong{
+display:inline-block;
+margin-right:5px;
+}
+
+
+/* ==================================================
+   QUICK LINKS
+================================================== */
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:20px 0;
+}
+
+.quick{
+background:white;
+color:#202124;
+text-decoration:none;
+border-radius:18px;
+padding:17px 10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-top:5px solid #138808;
+}
+
+.quick:nth-child(2){
+border-top-color:#0891b2;
+}
+
+.quick:nth-child(3){
+border-top-color:#ff9933;
+}
+
+.quick:nth-child(4){
+border-top-color:#1976d2;
+}
+
+.quick-icon{
+display:block;
+font-size:30px;
+margin-bottom:5px;
+}
+
+
+/* ==================================================
+   TOP BUTTON
+================================================== */
+
+#topBtn{
+display:none;
+position:fixed;
+right:18px;
+bottom:20px;
+width:54px;
+height:54px;
+border:0;
+border-radius:50%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+font-size:25px;
+z-index:100;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:28px 15px;
+margin-top:35px;
+font-size:13px;
+}
+
+footer strong{
+color:#ff9933;
+font-size:17px;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+header h1{
+font-size:26px;
+}
+
+header p{
+font-size:12px;
+}
+
+.container{
+padding:17px 11px;
+}
+
+.hero{
+padding:18px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.menu-card{
+min-width:78px;
+padding:5px 5px;
+font-size:9px;
+}
+
+.menu-card span{
+font-size:17px;
+}
+
+.menu-card small{
+font-size:7px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.route-line{
+font-size:13px;
+}
+
+.distance-card{
+padding:15px 6px;
+}
+
+.distance-icon{
+font-size:28px;
+}
+
+.distance-card strong{
+font-size:13px;
+}
+
+.distance-card span{
+font-size:10px;
+}
+
+.place-card{
+padding:18px 14px;
+}
+
+.place-header h3{
+font-size:21px;
+}
+
+.place-icon{
+font-size:40px;
+}
+
+.place-header span{
+font-size:14px;
+}
+
+.place-distance{
+font-size:11px;
+}
+
+.action-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.action-btn{
+font-size:11px;
+padding:11px 5px;
+}
+
+.place-info-row{
+font-size:13px;
+}
+
+.quick-grid{
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.quick{
+padding:14px 7px;
+font-size:13px;
+}
+
+.quick-icon{
+font-size:27px;
+}
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:380px){
+
+.menu-card{
+min-width:72px;
+}
+
+.action-btn{
+font-size:10px;
+}
+
+.place-header h3{
+font-size:19px;
+}
+
+.place-header span{
+font-size:13px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="top">
+
+<div class="logo">
+🇮🇳
+</div>
+
+<h1>
+Hampi Nature Route
+</h1>
+
+<p>
+हम्पी • River • Hills • Sunset • Nature • Ancient Landscape
+</p>
+
+</header>
+
+
+<div class="container">
+
+
+<a
+href="hampi.html"
+class="back"
+>
+← Hampi / हम्पी
+</a>
+
+
+<!-- ==================================================
+     STICKY MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Plan</small>
+</a>
+
+
+<a
+href="#matanga"
+class="menu-card"
+>
+<span>⛰️</span>
+Matanga
+<small>Hill</small>
+</a>
+
+
+<a
+href="#tungabhadra"
+class="menu-card"
+>
+<span>🌊</span>
+Tungabhadra
+<small>River</small>
+</a>
+
+
+<a
+href="#sanapur"
+class="menu-card"
+>
+<span>💧</span>
+Sanapur
+<small>Lake</small>
+</a>
+
+
+<a
+href="#sunset"
+class="menu-card"
+>
+<span>🌅</span>
+Sunset
+<small>Point</small>
+</a>
+
+
+<a
+href="#distance"
+class="menu-card"
+>
+<span>📏</span>
+Distance
+<small>Guide</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+<a
+href="#stay"
+class="menu-card"
+>
+<span>🏨</span>
+Stay
+<small>Food</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<div
+class="hero"
+id="route"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🌿
+</div>
+
+<div>
+
+<h2>
+Hampi Nature Route
+</h2>
+
+<span>
+River • Hills • Lake • Sunset • Nature
+</span>
+
+</div>
+
+</div>
+
+
+<p>
+
+Hampi केवल ancient temples और ruins
+के लिए ही famous नहीं है। यहाँ
+Tungabhadra River, rocky hills,
+natural landscapes, lake areas और
+सुंदर sunset views भी देखने को मिलते हैं।
+यह route उन travellers के लिए अच्छा है
+जो heritage sightseeing के साथ
+Hampi की natural beauty भी explore
+करना चाहते हैं।
+
+</p>
+
+
+<div class="suggested">
+
+<h3>
+📍 Suggested Nature Planning
+</h3>
+
+<p>
+
+🏨 Hampi Main Area
+
+→
+
+⛰️ Matanga Hill
+
+→
+
+🌊 Tungabhadra River
+
+→
+
+💧 Sanapur Lake
+
+→
+
+🌅 Sunset Point
+
+→
+
+🏨 Hampi Return
+
+</p>
+
+</div>
+
+
+<div class="route-distance">
+
+📍 Hampi Main → Matanga Hill → Tungabhadra
+→ Sanapur Lake → Sunset Point
+
+<br>
+
+Nature route की actual distance
+selected starting point और travel mode
+के अनुसार बदल सकती है।
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE GRID
+================================================== -->
+
+<div
+class="distance-grid"
+id="distance"
+>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏨
+</span>
+
+<strong>
+Hampi Main → Matanga Hill
+</strong>
+
+<span>
+लगभग 2–3 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+⛰️
+</span>
+
+<strong>
+Matanga Hill → Tungabhadra River
+</strong>
+
+<span>
+लगभग 2–3 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🌊
+</span>
+
+<strong>
+Tungabhadra → Sanapur Lake
+</strong>
+
+<span>
+लगभग 20–25 km route area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+💧
+</span>
+
+<strong>
+Sanapur → Sunset Area
+</strong>
+
+<span>
+लगभग 5–10 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🌅
+</span>
+
+<strong>
+Sunset Area → Hampi Main
+</strong>
+
+<span>
+लगभग 5–10 km route area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏙️
+</span>
+
+<strong>
+Hospet → Hampi
+</strong>
+
+<span>
+लगभग 12–15 km road route
+</span>
+
+</div>
+
+
+</div>
+
+
+<a
+href="#route-details"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🗺️ Complete Nature Route देखें →
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     MATANGA HILL
+================================================== -->
+
+<div
+class="place-card"
+id="matanga"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+⛰️
+</div>
+
+<div>
+
+<h3>
+Matanga Hill
+</h3>
+
+<span>
+मातंगा हिल • Hilltop • Landscape Views
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Hill • Sunrise • Sunset • Photography • Landscape
+</div>
+
+
+<div class="place-distance">
+
+📍 Hampi Main → Matanga Hill:
+
+<strong>
+लगभग 2–3 km area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact distance आपके starting point और selected walking/road route के अनुसार बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+⛰️ Matanga Hill के बारे में
+</h4>
+
+<p>
+
+Matanga Hill Hampi के प्रमुख hilltop
+viewpoints में से एक है। यहाँ से
+surrounding rocky landscape और
+Hampi area के panoramic views
+देखे जा सकते हैं। Sunrise और sunset
+के समय यहाँ का landscape विशेष रूप
+से आकर्षक दिखाई दे सकता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Hampi heritage area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Hampi Main से लगभग 2–3 km area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>⛰️ Highlight:</strong>
+
+Hilltop + Panoramic Views
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌅 Best Time:</strong>
+
+Early Morning / Evening
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Landscape Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🥾 Access:</strong>
+
+Walking / Trekking Route
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Matanga+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Google Maps
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Matanga+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Matanga+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Matanga+Hill+Hampi+sunrise"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn sunset"
+>
+🌅 Sunrise
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Matanga+Hill+Hampi+sunset"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn sunset"
+>
+🌇 Sunset
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Matanga+Hill+Hampi+trek"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn nature"
+>
+🥾 Trek Route
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE AFTER VISIT 1
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+📏 Next Visit Distance
+</h3>
+
+<p>
+
+⛰️ <strong>Matanga Hill Visit के बाद</strong>
+
+</p>
+
+<div class="route-distance">
+
+⛰️ Matanga Hill → 🌊 Tungabhadra River
+<br>
+लगभग 2–3 km area
+
+</div>
+
+<p>
+
+👉 यह दूरी selected starting point,
+walking route और road route के अनुसार
+थोड़ी बदल सकती है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     TUNGABHADRA RIVER
+================================================== -->
+
+<div
+class="place-card"
+id="tungabhadra"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🌊
+</div>
+
+<div>
+
+<h3>
+Tungabhadra River
+</h3>
+
+<span>
+तुंगभद्रा नदी • River • Landscape • Nature
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+River • Nature • Landscape • Photography
+</div>
+
+
+<div class="place-distance">
+
+📍 Matanga Hill → Tungabhadra River:
+
+<strong>
+लगभग 2–3 km area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact distance river access point और starting location के अनुसार बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌊 Tungabhadra River के बारे में
+</h4>
+
+<p>
+
+Tungabhadra River Hampi के natural
+landscape का महत्वपूर्ण हिस्सा है।
+River के आसपास rocky boulders,
+greenery और ancient Hampi landscape
+एक साथ दिखाई देते हैं। शांत nature
+experience और photography के लिए
+यह route का खास हिस्सा है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Hampi / Tungabhadra River area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Matanga Hill से लगभग 2–3 km area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌊 Highlight:</strong>
+
+River + Rocky Landscape
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌿 Experience:</strong>
+
+Nature + Relaxation
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🕒 Best Time:</strong>
+
+Morning / Evening
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Tungabhadra+River+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ River Map
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Tungabhadra+River+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Tungabhadra+River+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 River Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Tungabhadra+River+Hampi+sunset"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn sunset"
+>
+🌅 Sunset
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Tungabhadra+River+Hampi+coracle"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn water"
+>
+🚣 River Experience
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Tungabhadra+River+Hampi+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn nature"
+>
+🌤️ Weather
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE AFTER VISIT 2
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+📏 Next Visit Distance
+</h3>
+
+<p>
+
+🌊 <strong>Tungabhadra River Visit के बाद</strong>
+
+</p>
+
+<div class="route-distance">
+
+🌊 Tungabhadra River → 💧 Sanapur Lake
+<br>
+लगभग 20–25 km route area
+
+</div>
+
+<p>
+
+👉 Sanapur side जाने के लिए road route
+लेना पड़ सकता है। Exact distance आपके
+river access point और selected route
+पर depend करेगी।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     SANAPUR LAKE
+================================================== -->
+
+<div
+class="place-card"
+id="sanapur"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+💧
+</div>
+
+<div>
+
+<h3>
+Sanapur Lake
+</h3>
+
+<span>
+सनापुर झील • Lake • Boulders • Nature
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Lake • Boulders • Nature • Photography
+</div>
+
+
+<div class="place-distance">
+
+📍 Tungabhadra River → Sanapur Lake:
+
+<strong>
+लगभग 20–25 km route area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact distance selected river point और road route के अनुसार बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+💧 Sanapur Lake के बारे में
+</h4>
+
+<p>
+
+Sanapur Lake Hampi के आसपास का
+scenic natural destination है। Lake
+के आसपास बड़े granite boulders और
+open landscape दिखाई देता है। यह
+place Hampi के crowded heritage
+spots से अलग एक शांत nature
+experience दे सकता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Sanapur village area, Hampi region
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Tungabhadra River से लगभग 20–25 km route area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>💧 Highlight:</strong>
+
+Lake + Rocky Landscape
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌿 Best For:</strong>
+
+Nature Experience
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Photography:</strong>
+
+Lake + Boulders
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🚗 Access:</strong>
+
+Road / Local Transport
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Sanapur+Lake+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Lake Map
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Sanapur+Lake+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Sanapur+Lake+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Lake Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Sanapur+Lake+Hampi+sunset"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn sunset"
+>
+🌅 Sunset
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Sanapur+Lake+Hampi+nature"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn nature"
+>
+🌿 Nature
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Sanapur+Lake+Hampi+weather"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn water"
+>
+🌤️ Weather
+</a>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     DISTANCE AFTER VISIT 3
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+📏 Next Visit Distance
+</h3>
+
+<p>
+
+💧 <strong>Sanapur Lake Visit के बाद</strong>
+
+</p>
+
+<div class="route-distance">
+
+💧 Sanapur Lake → 🌅 Sunset Area
+<br>
+लगभग 5–10 km area
+
+</div>
+
+<p>
+
+👉 Sunset location और selected viewpoint
+के अनुसार actual distance बदल सकती है।
+Sunset के लिए daylight और return time
+का ध्यान रखें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     SUNSET / NATURE VIEW
+================================================== -->
+
+<div
+class="place-card"
+id="sunset"
+>
+
+<div class="place-header">
+
+<div class="place-icon">
+🌅
+</div>
+
+<div>
+
+<h3>
+Hampi Sunset Point
+</h3>
+
+<span>
+सनसेट • Rocky Landscape • Evening Views
+</span>
+
+</div>
+
+</div>
+
+
+<div class="category">
+Sunset • Landscape • Photography • Nature
+</div>
+
+
+<div class="place-distance">
+
+📍 Sanapur Lake → Sunset Area:
+
+<strong>
+लगभग 5–10 km area
+</strong>
+
+<br>
+
+<span>
+➡️ Exact distance selected sunset viewpoint के अनुसार बदल सकती है।
+</span>
+
+</div>
+
+
+<div class="short-history">
+
+<h4>
+🌅 Hampi Sunset Experience
+</h4>
+
+<p>
+
+Hampi का rocky landscape sunset के
+समय अलग ही रूप दिखाई देता है। बड़े
+boulders, hills, ancient structures और
+open sky के बीच sunset photography
+के लिए कई viewpoints मिलते हैं।
+Evening में temperature भी daytime
+की तुलना में comfortable हो सकता है।
+
+</p>
+
+</div>
+
+
+<div class="place-info">
+
+<div class="place-info-row">
+
+<strong>📍 Location:</strong>
+
+Hampi आसपास selected viewpoint
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📏 Distance:</strong>
+
+Sanapur Lake से लगभग 5–10 km area
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌅 Highlight:</strong>
+
+Sunset + Rocky Landscape
+
+</div>
+
+<div class="place-info-row">
+
+<strong>📸 Best For:</strong>
+
+Sunset Photography
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🌿 Experience:</strong>
+
+Peaceful Evening
+
+</div>
+
+<div class="place-info-row">
+
+<strong>🕒 Timing:</strong>
+
+Sunset से पहले पहुँचें
+
+</div>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Hampi+Sunset+Point"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn maps"
+>
+🗺️ Sunset Map
+</a>
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Hampi+Sunset+Point"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+>
+📍 Route
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Hampi+sunset"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn photo"
+>
+📸 Sunset Photos
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hampi+sunset+time"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn sunset"
+>
+🌅 Sunset Time
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hampi+sunset+viewpoint"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn nature"
+>
+⛰️ Viewpoints
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hampi+weather+today"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn water"
+>
+🌤️ Weather
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE AFTER VISIT 4
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+📏 Return Distance
+</h3>
+
+<p>
+
+🌅 <strong>Sunset Visit के बाद</strong>
+
+</p>
+
+<div class="route-distance">
+
+🌅 Sunset Area → 🏨 Hampi Main
+<br>
+लगभग 5–10 km route area
+
+</div>
+
+<p>
+
+👉 Sunset के बाद वापस Hampi Main Area
+या अपने hotel की तरफ लौटें। Actual
+distance selected viewpoint और hotel
+location के अनुसार बदल सकती है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     COMPLETE ROUTE
+================================================== -->
+
+<div
+class="route-box"
+id="route-details"
+>
+
+<h3>
+🗺️ Complete Hampi Nature Route
+</h3>
+
+<p>
+
+इस nature route को एक day sightseeing
+plan की तरह इस sequence में organise
+किया जा सकता है:
+
+</p>
+
+
+<div class="route-line">
+
+🏨 Hampi Main Area
+
+↓
+
+⛰️ Matanga Hill
+
+<br>
+
+📏 लगभग 2–3 km
+
+↓
+
+🌊 Tungabhadra River
+
+<br>
+
+📏 लगभग 2–3 km
+
+↓
+
+🚗 Nature / Road Route
+
+↓
+
+💧 Sanapur Lake
+
+<br>
+
+📏 लगभग 20–25 km
+
+↓
+
+🌅 Sunset Area
+
+<br>
+
+📏 लगभग 5–10 km
+
+↓
+
+🏨 Hampi Main / Hotel
+
+</div>
+
+
+<div class="route-distance">
+
+📏 Hampi Main → Matanga Hill ≈ 2–3 km
+
+<br>
+
+📏 Matanga Hill → Tungabhadra River ≈ 2–3 km
+
+<br>
+
+📏 Tungabhadra River → Sanapur Lake ≈ 20–25 km
+
+<br>
+
+📏 Sanapur Lake → Sunset Area ≈ 5–10 km
+
+<br>
+
+📏 Sunset Area → Hampi Main ≈ 5–10 km
+
+</div>
+
+
+<p>
+
+👉 Actual road distance, walking distance
+और selected sightseeing route अलग हो
+सकते हैं। Nature route को अपने available
+time और transport के अनुसार adjust करें।
+
+</p>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Hampi+Karnataka"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn route"
+style="margin-top:12px;"
+>
+🗺️ Hampi Nature Route देखें
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL PLANNING
+================================================== -->
+
+<h2
+class="section-title"
+id="travel"
+>
+🚗 Hampi Nature Travel Planning
+</h2>
+
+
+<div class="info">
+
+<h3>
+⏰ Suggested Nature Day Plan
+</h3>
+
+<p>
+
+🌅 <strong>Early Morning:</strong>
+
+Hampi Main Area से दिन की शुरुआत
+करें और मौसम comfortable होने पर
+Matanga Hill explore करें।
+
+<br><br>
+
+⛰️ <strong>First Stop:</strong>
+
+Matanga Hill से Hampi के rocky
+landscape और आसपास के views देखें।
+
+<br><br>
+
+🌊 <strong>Next:</strong>
+
+Tungabhadra River area की तरफ जाएँ
+और river landscape explore करें।
+
+<br><br>
+
+🚗 <strong>Afternoon:</strong>
+
+Sanapur Lake की तरफ road route से
+जाएँ। Travel time और local road
+conditions को ध्यान में रखें।
+
+<br><br>
+
+💧 <strong>Sanapur Lake:</strong>
+
+Lake, boulders और surrounding
+natural landscape का experience लें।
+
+<br><br>
+
+🌅 <strong>Evening:</strong>
+
+Sunset के लिए selected viewpoint
+पर समय से पहले पहुँचें।
+
+<br><br>
+
+🏨 <strong>Return:</strong>
+
+Sunset के बाद Hampi Main Area या
+अपने hotel की तरफ वापस लौटें।
+
+<br><br>
+
+⚠️ Nature route को season, weather,
+local access और available daylight
+के अनुसार adjust करना बेहतर रहता है।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     DISTANCE GUIDE
+================================================== -->
+
+<h2 class="section-title">
+📏 Hampi Nature Distance Guide
+</h2>
+
+
+<div class="distance-grid">
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏨
+</span>
+
+<strong>
+Hampi Main → Matanga Hill
+</strong>
+
+<span>
+लगभग 2–3 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+⛰️
+</span>
+
+<strong>
+Matanga Hill → River
+</strong>
+
+<span>
+लगभग 2–3 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🌊
+</span>
+
+<strong>
+River → Sanapur Lake
+</strong>
+
+<span>
+लगभग 20–25 km route
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+💧
+</span>
+
+<strong>
+Sanapur → Sunset Area
+</strong>
+
+<span>
+लगभग 5–10 km area
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🌅
+</span>
+
+<strong>
+Sunset → Hampi Main
+</strong>
+
+<span>
+लगभग 5–10 km route
+</span>
+
+</div>
+
+
+<div class="distance-card">
+
+<span class="distance-icon">
+🏙️
+</span>
+
+<strong>
+Hospet → Hampi
+</strong>
+
+<span>
+लगभग 12–15 km road
+</span>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     STAY & FOOD
+================================================== -->
+
+<div
+class="info"
+id="stay"
+>
+
+<h3>
+🏨 Hampi Stay & 🍽️ Food
+</h3>
+
+<p>
+
+Hampi Nature Route के लिए Hampi Main
+Area या आसपास stay करना practical
+option हो सकता है। इससे सुबह जल्दी
+nature sightseeing शुरू करना आसान
+रहता है।
+
+<br><br>
+
+🍽️ Food के लिए Hampi और आसपास के
+restaurants, cafes और hotel restaurants
+के current options check करें।
+
+<br><br>
+
+💧 Nature route पर निकलते समय पर्याप्त
+पानी और हल्का food/snacks साथ रखना
+useful रहेगा।
+
+</p>
+
+
+<div class="action-grid">
+
+
+<a
+href="https://www.google.com/search?q=hotels+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+🏨 Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=best+hotels+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn luxury"
+>
+⭐ Best Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=budget+hotels+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+💰 Budget Hotels
+</a>
+
+
+<a
+href="https://www.google.com/search?q=restaurants+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🍽️ Restaurants
+</a>
+
+
+<a
+href="https://www.google.com/search?q=vegetarian+restaurants+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn restaurant"
+>
+🥗 Vegetarian
+</a>
+
+
+<a
+href="https://www.google.com/search?q=cafes+in+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="action-btn hotel"
+>
+☕ Cafes
+</a>
+
+</div>
+
+</div>
+
+  <!-- ==================================================
+     TRANSPORT
+================================================== -->
+
+<h2 class="section-title">
+🚗 Hampi Transport
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚕
+</span>
+
+Cab Route
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hospet+to+Hampi+taxi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚗
+</span>
+
+Taxi
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=Hospet+to+Hampi+bus"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚌
+</span>
+
+Bus
+
+</a>
+
+
+<a
+href="https://www.google.com/search?q=nearest+railway+station+to+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🚆
+</span>
+
+Railway
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK LINKS
+================================================== -->
+
+<h2 class="section-title">
+⭐ Hampi Nature Quick Links
+</h2>
+
+
+<div class="quick-grid">
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Matanga+Hill+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+⛰️
+</span>
+
+Matanga Hill
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Tungabhadra+River+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+🌊
+</span>
+
+Tungabhadra River
+
+</a>
+
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Sanapur+Lake+Hampi"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+💧
+</span>
+
+Sanapur Lake
+
+</a>
+
+
+<a
+href="https://www.google.com/search?tbm=isch&q=Hampi+nature+landscape"
+target="_blank"
+rel="noopener noreferrer"
+class="quick"
+>
+
+<span class="quick-icon">
+📸
+</span>
+
+Nature Photos
+
+</a>
+
+</div>
+
+
+<!-- ==================================================
+     TRAVEL TIPS
+================================================== -->
+
+<div class="info">
+
+<h3>
+💡 Hampi Nature Important Tips
+</h3>
+
+<p>
+
+🌅 <strong>1.</strong>
+
+सुबह और शाम का समय outdoor
+nature sightseeing के लिए ज्यादा
+comfortable हो सकता है।
+
+<br><br>
+
+☀️ <strong>2.</strong>
+
+गर्मी में दोपहर के समय direct sun
+से बचें और hydration का विशेष
+ध्यान रखें।
+
+<br><br>
+
+🥾 <strong>3.</strong>
+
+Matanga Hill जैसे walking या
+hill routes के लिए comfortable
+और good-grip shoes पहनें।
+
+<br><br>
+
+💧 <strong>4.</strong>
+
+पूरे nature route के दौरान पर्याप्त
+drinking water साथ रखें।
+
+<br><br>
+
+📸 <strong>5.</strong>
+
+Photography करते समय protected
+heritage structures और restricted
+areas के rules follow करें।
+
+<br><br>
+
+🌿 <strong>6.</strong>
+
+Natural areas में कचरा न फैलाएँ और
+local environment को नुकसान न पहुँचाएँ।
+
+<br><br>
+
+🚫 <strong>7.</strong>
+
+Ancient rocks, monuments या natural
+formations पर चढ़ना, लिखना या नुकसान
+पहुँचाना avoid करें।
+
+<br><br>
+
+🌊 <strong>8.</strong>
+
+River और lake areas में पानी के
+पास सावधानी रखें और local safety
+instructions follow करें।
+
+<br><br>
+
+📱 <strong>9.</strong>
+
+Mobile fully charged रखें क्योंकि
+कुछ outdoor areas में network coverage
+हर जगह समान नहीं हो सकती।
+
+<br><br>
+
+🌨️ <strong>10.</strong>
+
+Weather खराब होने पर hill, river या
+lake route को force न करें और local
+conditions के अनुसार plan बदलें।
+
+<br><br>
+
+🕒 <strong>11.</strong>
+
+Sunset route के लिए पर्याप्त daylight
+और return journey का समय रखें।
+
+<br><br>
+
+⚠️ <strong>12.</strong>
+
+Current access, local rules, weather
+और transport information यात्रा से
+पहले verify करें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     QUICK SUMMARY
+================================================== -->
+
+<div class="route-box">
+
+<h3>
+🗺️ Hampi Nature Quick Summary
+</h3>
+
+<p>
+
+🏨 <strong>Start:</strong>
+
+Hampi Main Area
+
+<br><br>
+
+⛰️ <strong>Stop 1:</strong>
+
+Matanga Hill
+
+<br><br>
+
+📏 <strong>Hampi Main → Matanga Hill:</strong>
+
+लगभग 2–3 km area
+
+<br><br>
+
+🌊 <strong>Stop 2:</strong>
+
+Tungabhadra River
+
+<br><br>
+
+📏 <strong>Matanga Hill → River:</strong>
+
+लगभग 2–3 km area
+
+<br><br>
+
+💧 <strong>Stop 3:</strong>
+
+Sanapur Lake
+
+<br><br>
+
+📏 <strong>River → Sanapur Lake:</strong>
+
+लगभग 20–25 km route area
+
+<br><br>
+
+🌅 <strong>Stop 4:</strong>
+
+Sunset Area
+
+<br><br>
+
+📏 <strong>Sanapur → Sunset:</strong>
+
+लगभग 5–10 km area
+
+<br><br>
+
+🏨 <strong>Return:</strong>
+
+Sunset Area → Hampi Main
+
+<br><br>
+
+🌿 <strong>Highlight:</strong>
+
+Hills + River + Lake + Boulders +
+Sunset + Natural Landscape
+
+<br><br>
+
+👉 इस route को Hampi के main
+heritage monuments के साथ combine
+करने से पहले available time और
+travel distance का ध्यान रखें।
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     BOTTOM MENU
+================================================== -->
+
+<div class="sticky-menu">
+
+<div class="horizontal-menu">
+
+
+<a
+href="#top"
+class="menu-card"
+>
+<span>⬆️</span>
+Top
+<small>ऊपर</small>
+</a>
+
+
+<a
+href="#route"
+class="menu-card"
+>
+<span>🗺️</span>
+Route
+<small>Plan</small>
+</a>
+
+
+<a
+href="#matanga"
+class="menu-card"
+>
+<span>⛰️</span>
+Matanga
+<small>Hill</small>
+</a>
+
+
+<a
+href="#tungabhadra"
+class="menu-card"
+>
+<span>🌊</span>
+River
+<small>Nature</small>
+</a>
+
+
+<a
+href="#sanapur"
+class="menu-card"
+>
+<span>💧</span>
+Sanapur
+<small>Lake</small>
+</a>
+
+
+<a
+href="#sunset"
+class="menu-card"
+>
+<span>🌅</span>
+Sunset
+<small>Point</small>
+</a>
+
+
+<a
+href="#distance"
+class="menu-card"
+>
+<span>📏</span>
+Distance
+<small>Guide</small>
+</a>
+
+
+<a
+href="#travel"
+class="menu-card"
+>
+<span>🚗</span>
+Travel
+<small>Info</small>
+</a>
+
+
+<a
+href="#stay"
+class="menu-card"
+>
+<span>🏨</span>
+Stay
+<small>Food</small>
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+🇮🇳
+
+<strong>
+DESH KHOJ A2Z
+</strong>
+
+<br><br>
+
+India Travel Guide
+
+<br><br>
+
+Hampi Nature Route |
+हम्पी नेचर रूट
+
+<br><br>
+
+Explore • Travel • Discover
+
+<br><br>
+
+भारत को जानें • भारत को खोजें
+
+<br><br>
+
+© 2026 DESH KHOJ A2Z
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+id="topBtn"
+title="ऊपर जाएँ"
+>
+⬆️
+</button>
+
+
+<!-- ==================================================
+     SCRIPT
+================================================== -->
+
+<script>
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+
+
+/* ==================================================
+   BACK TO TOP
+================================================== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+
+if(topBtn){
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+
+topBtn.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+
+/* ==================================================
+   SMOOTH INTERNAL SCROLL
+================================================== */
+
+document.querySelectorAll(
+'a[href^="#"]'
+).forEach(
+function(link){
+
+link.addEventListener(
+"click",
+function(event){
+
+const targetId =
+this.getAttribute("href");
+
+
+if(
+!targetId ||
+targetId==="#"
+){
+
+return;
+
+}
+
+
+const target =
+document.querySelector(
+targetId
+);
+
+
+if(target){
+
+event.preventDefault();
+
+
+target.scrollIntoView({
+
+behavior:"smooth",
+
+block:"start"
+
+});
+
+}
+
+});
+
+});
+
+
+/* ==================================================
+   EXTERNAL LINKS
+================================================== */
+
+document.querySelectorAll(
+'a[target="_blank"]'
+).forEach(
+function(link){
+
+link.setAttribute(
+"rel",
+"noopener noreferrer"
+);
+
+});
+
+
+/* ==================================================
+   MENU ACTIVE EFFECT
+================================================== */
+
+const menuCards =
+document.querySelectorAll(
+".menu-card"
+);
+
+
+menuCards.forEach(
+function(card){
+
+card.addEventListener(
+"click",
+function(){
+
+menuCards.forEach(
+function(item){
+
+item.classList.remove(
+"active"
+);
+
+});
+
+
+this.classList.add(
+"active"
+);
+
+});
+
+});
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>
