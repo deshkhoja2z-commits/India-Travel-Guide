@@ -1,1091 +1,280 @@
-<script>
-
-/* ==========================================================
+/* =========================================================
    DESH KHOJ A2Z
    HARIDWAR TRAVEL GUIDE
-   INLINE JAVASCRIPT
-========================================================== */
+   SIMPLE OLD-STYLE JS
+========================================================= */
 
-"use strict";
+document.addEventListener("DOMContentLoaded", function () {
 
-document.addEventListener("DOMContentLoaded", function(){
+    /* ================================
+       BACK TO TOP BUTTON
+    ================================= */
 
-/* ==========================================================
-   01. BASIC ELEMENTS
-========================================================== */
+    var topBtn = document.getElementById("topBtn");
 
-const topBtn =
-    document.getElementById("topBtn");
+    window.addEventListener("scroll", function () {
 
-const menuCards =
-    document.querySelectorAll(".menu-card");
+        if (!topBtn) return;
 
-const currentButtons =
-    document.querySelectorAll("[data-current-route]");
+        if (window.pageYOffset > 300) {
+            topBtn.style.display = "flex";
+        } else {
+            topBtn.style.display = "none";
+        }
 
-const routeCards =
-    document.querySelectorAll(".route-card");
+    });
 
-const internalLinks =
-    document.querySelectorAll('a[href^="#"]');
+    if (topBtn) {
 
-
-/* ==========================================================
-   02. BACK TO TOP BUTTON
-========================================================== */
-
-function updateTopButton(){
-
-    if(!topBtn){
-        return;
-    }
-
-    if(window.scrollY > 350){
-
-        topBtn.style.display = "flex";
-
-    }else{
-
-        topBtn.style.display = "none";
-
-    }
-
-}
-
-
-window.addEventListener(
-    "scroll",
-    updateTopButton,
-    {passive:true}
-);
-
-
-updateTopButton();
-
-
-if(topBtn){
-
-    topBtn.addEventListener(
-        "click",
-        function(){
+        topBtn.onclick = function () {
 
             window.scrollTo({
-
-                top:0,
-
-                behavior:"smooth"
-
+                top: 0,
+                behavior: "smooth"
             });
 
-        }
-    );
-
-}
-
-
-/* ==========================================================
-   03. NORMALIZE TARGET
-========================================================== */
-
-function normalizeTarget(targetId){
-
-    if(targetId === "#stay"){
-
-        return "#hotels";
+        };
 
     }
 
-    return targetId;
 
-}
+    /* ================================
+       MENU CARD CLICK
+    ================================= */
 
+    var menuCards = document.querySelectorAll(".menu-card");
 
-/* ==========================================================
-   04. ACTIVE MENU
-========================================================== */
+    for (var i = 0; i < menuCards.length; i++) {
 
-function setActiveMenu(targetId){
+        menuCards[i].onclick = function () {
 
-    targetId =
-        normalizeTarget(targetId);
-
-
-    menuCards.forEach(
-        function(card){
-
-            let href =
-                card.getAttribute("href");
-
-            href =
-                normalizeTarget(href);
-
-            if(href === targetId){
-
-                card.classList.add("active");
-
-            }else{
-
-                card.classList.remove("active");
-
+            for (var j = 0; j < menuCards.length; j++) {
+                menuCards[j].classList.remove("active");
             }
 
-        }
-    );
+            this.classList.add("active");
 
-}
-
-
-/* ==========================================================
-   05. INTERNAL SMOOTH SCROLL
-========================================================== */
-
-internalLinks.forEach(
-    function(link){
-
-        link.addEventListener(
-            "click",
-            function(event){
-
-                let targetId =
-                    this.getAttribute("href");
-
-
-                /* ------------------------------------------
-                   EMPTY #
-                ------------------------------------------ */
-
-                if(
-                    !targetId ||
-                    targetId === "#"
-                ){
-
-                    return;
-
-                }
-
-
-                targetId =
-                    normalizeTarget(targetId);
-
-
-                const target =
-                    document.querySelector(
-                        targetId
-                    );
-
-
-                if(!target){
-
-                    return;
-
-                }
-
-
-                event.preventDefault();
-
-
-                target.scrollIntoView({
-
-                    behavior:"smooth",
-
-                    block:"start"
-
-                });
-
-
-                setActiveMenu(targetId);
-
-
-                /*
-                   URL hash update
-                   without page jump
-                */
-
-                try{
-
-                    history.replaceState(
-                        null,
-                        "",
-                        targetId
-                    );
-
-                }catch(error){
-
-                    /* Ignore */
-
-                }
-
-            }
-        );
+        };
 
     }
-);
 
 
-/* ==========================================================
-   06. HORIZONTAL MENU ACTIVE CLICK
-========================================================== */
+    /* ================================
+       STAY MENU
+       #stay → #hotels
+    ================================= */
 
-menuCards.forEach(
-    function(card){
+    var stayLinks = document.querySelectorAll('a[href="#stay"]');
 
-        card.addEventListener(
-            "click",
-            function(){
+    for (var i = 0; i < stayLinks.length; i++) {
 
-                let href =
-                    this.getAttribute("href");
+        stayLinks[i].onclick = function (e) {
 
-                href =
-                    normalizeTarget(href);
+            e.preventDefault();
 
-                setActiveMenu(href);
+            var hotels = document.getElementById("hotels");
 
+            if (hotels) {
 
-                /*
-                   Bring clicked tab into
-                   visible horizontal area
-                */
-
-                this.scrollIntoView({
-
-                    behavior:"smooth",
-
-                    block:"nearest",
-
-                    inline:"center"
-
+                hotels.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
                 });
 
             }
-        );
 
-    }
-);
-
-
-/* ==========================================================
-   07. CURRENT LOCATION FUNCTION
-========================================================== */
-
-function openGoogleDestination(
-    destination
-){
-
-    const url =
-        "https://www.google.com/maps/dir/?api=1"
-        +
-        "&destination="
-        +
-        encodeURIComponent(
-            destination
-        );
-
-
-    window.open(
-        url,
-        "_blank",
-        "noopener,noreferrer"
-    );
-
-}
-
-
-/* ==========================================================
-   08. CURRENT LOCATION → GOOGLE MAPS
-========================================================== */
-
-function openCurrentRoute(
-    button
-){
-
-    const destination =
-        button.getAttribute(
-            "data-current-route"
-        );
-
-
-    if(!destination){
-
-        return;
+        };
 
     }
 
 
-    /*
-       Save original button text
-    */
+    /* ================================
+       SMOOTH SCROLL
+    ================================= */
 
-    const originalHTML =
-        button.innerHTML;
+    var links = document.querySelectorAll('a[href^="#"]');
 
+    for (var i = 0; i < links.length; i++) {
 
-    /*
-       Loading state
-    */
+        links[i].onclick = function (e) {
 
-    button.classList.add(
-        "location-loading"
-    );
+            var id = this.getAttribute("href");
 
-    button.innerHTML =
-        "📍 Location…";
-
-
-    /*
-       Browser GPS available?
-    */
-
-    if(
-        !navigator.geolocation
-    ){
-
-        button.classList.remove(
-            "location-loading"
-        );
-
-        button.innerHTML =
-            originalHTML;
-
-        openGoogleDestination(
-            destination
-        );
-
-        return;
-
-    }
-
-
-    navigator.geolocation.getCurrentPosition(
-
-        function(position){
-
-            const latitude =
-                position.coords.latitude;
-
-            const longitude =
-                position.coords.longitude;
-
-
-            /*
-               Google Maps directions
-            */
-
-            const mapsURL =
-                "https://www.google.com/maps/dir/?api=1"
-                +
-                "&origin="
-                +
-                encodeURIComponent(
-                    latitude +
-                    "," +
-                    longitude
-                )
-                +
-                "&destination="
-                +
-                encodeURIComponent(
-                    destination
-                );
-
-
-            button.classList.remove(
-                "location-loading"
-            );
-
-            button.innerHTML =
-                originalHTML;
-
-
-            window.open(
-                mapsURL,
-                "_blank",
-                "noopener,noreferrer"
-            );
-
-        },
-
-
-        function(error){
-
-            /*
-               If GPS fails,
-               open destination directly.
-            */
-
-            button.classList.remove(
-                "location-loading"
-            );
-
-            button.innerHTML =
-                originalHTML;
-
-
-            openGoogleDestination(
-                destination
-            );
-
-        },
-
-
-        {
-
-            enableHighAccuracy:true,
-
-            timeout:10000,
-
-            maximumAge:60000
-
-        }
-
-    );
-
-}
-
-
-/* ==========================================================
-   09. ALL CURRENT BUTTONS
-========================================================== */
-
-currentButtons.forEach(
-    function(button){
-
-        button.addEventListener(
-            "click",
-            function(event){
-
-                event.preventDefault();
-
-                openCurrentRoute(
-                    this
-                );
-
-            }
-        );
-
-
-        /*
-           Mobile touch effect
-        */
-
-        button.addEventListener(
-            "touchstart",
-            function(){
-
-                this.classList.add(
-                    "pressed"
-                );
-
-            },
-            {passive:true}
-        );
-
-
-        button.addEventListener(
-            "touchend",
-            function(){
-
-                this.classList.remove(
-                    "pressed"
-                );
-
-            },
-            {passive:true}
-        );
-
-
-        /*
-           Accessibility title
-        */
-
-        button.setAttribute(
-            "title",
-            "Current location से route खोलें"
-        );
-
-    }
-);
-
-
-/* ==========================================================
-   10. EXTERNAL LINKS
-========================================================== */
-
-document.querySelectorAll(
-    'a[target="_blank"]'
-).forEach(
-    function(link){
-
-        link.setAttribute(
-            "rel",
-            "noopener noreferrer"
-        );
-
-    }
-);
-
-
-/* ==========================================================
-   11. GOOGLE MAP LINKS
-========================================================== */
-
-document.querySelectorAll(
-    'a[href*="google.com/maps"]'
-).forEach(
-    function(link){
-
-        link.setAttribute(
-            "target",
-            "_blank"
-        );
-
-        link.setAttribute(
-            "rel",
-            "noopener noreferrer"
-        );
-
-    }
-);
-
-
-/* ==========================================================
-   12. PHOTO LINKS
-========================================================== */
-
-document.querySelectorAll(
-    'a[href*="tbm=isch"]'
-).forEach(
-    function(link){
-
-        link.setAttribute(
-            "target",
-            "_blank"
-        );
-
-        link.setAttribute(
-            "rel",
-            "noopener noreferrer"
-        );
-
-        link.setAttribute(
-            "aria-label",
-            "Photos देखें"
-        );
-
-    }
-);
-
-
-/* ==========================================================
-   13. ACTIVE ROUTE ON SCROLL
-========================================================== */
-
-if(
-    "IntersectionObserver"
-    in window
-){
-
-    const routeObserver =
-        new IntersectionObserver(
-
-            function(entries){
-
-                let bestEntry =
-                    null;
-
-
-                entries.forEach(
-                    function(entry){
-
-                        if(
-                            entry.isIntersecting
-                        ){
-
-                            if(
-                                !bestEntry ||
-                                entry.intersectionRatio
-                                >
-                                bestEntry.intersectionRatio
-                            ){
-
-                                bestEntry =
-                                    entry;
-
-                            }
-
-                        }
-
-                    }
-                );
-
-
-                if(bestEntry){
-
-                    const id =
-                        "#" +
-                        bestEntry.target.id;
-
-
-                    setActiveMenu(
-                        id
-                    );
-
-                }
-
-            },
-
-            {
-
-                root:null,
-
-                rootMargin:
-                    "-105px 0px -55% 0px",
-
-                threshold:[
-                    0.05,
-                    0.15,
-                    0.30,
-                    0.50
-                ]
-
-            }
-
-        );
-
-
-    routeCards.forEach(
-        function(card){
-
-            routeObserver.observe(
-                card
-            );
-
-        }
-    );
-
-}
-
-
-/* ==========================================================
-   14. HORIZONTAL MENU
-========================================================== */
-
-const horizontalMenu =
-    document.querySelector(
-        ".horizontal-menu"
-    );
-
-
-if(horizontalMenu){
-
-    let dragging = false;
-
-    let startX = 0;
-
-    let startScroll = 0;
-
-
-    horizontalMenu.addEventListener(
-        "pointerdown",
-        function(event){
-
-            dragging = true;
-
-            startX =
-                event.clientX;
-
-            startScroll =
-                horizontalMenu.scrollLeft;
-
-        }
-    );
-
-
-    horizontalMenu.addEventListener(
-        "pointermove",
-        function(event){
-
-            if(!dragging){
-
+            if (!id || id === "#" || id === "#stay") {
                 return;
+            }
 
+            var target = document.querySelector(id);
+
+            if (!target) {
+                return;
+            }
+
+            e.preventDefault();
+
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        };
+
+    }
+
+
+    /* ================================
+       CURRENT LOCATION BUTTON
+       GOOGLE MAPS NAVIGATION
+    ================================= */
+
+    var currentButtons =
+        document.querySelectorAll("[data-current-route]");
+
+    for (var i = 0; i < currentButtons.length; i++) {
+
+        currentButtons[i].onclick = function (e) {
+
+            e.preventDefault();
+
+            var destination =
+                this.getAttribute("data-current-route");
+
+            if (!destination) {
+                return;
             }
 
 
-            const distance =
-                event.clientX -
-                startX;
+            /* --------------------------------
+               GPS AVAILABLE
+            -------------------------------- */
+
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(
+
+                    function (position) {
+
+                        var lat =
+                            position.coords.latitude;
+
+                        var lng =
+                            position.coords.longitude;
 
 
-            horizontalMenu.scrollLeft =
-                startScroll -
-                distance;
-
-        }
-    );
-
-
-    horizontalMenu.addEventListener(
-        "pointerup",
-        function(){
-
-            dragging = false;
-
-        }
-    );
+                        var url =
+                            "https://www.google.com/maps/dir/?api=1" +
+                            "&origin=" +
+                            encodeURIComponent(
+                                lat + "," + lng
+                            ) +
+                            "&destination=" +
+                            encodeURIComponent(
+                                destination
+                            );
 
 
-    horizontalMenu.addEventListener(
-        "pointercancel",
-        function(){
-
-            dragging = false;
-
-        }
-    );
-
-
-    horizontalMenu.addEventListener(
-        "pointerleave",
-        function(){
-
-            dragging = false;
-
-        }
-    );
-
-}
-
-
-/* ==========================================================
-   15. CARD TOUCH EFFECT
-========================================================== */
-
-document.querySelectorAll(
-    ".route-card, .service, .quick, .summary-card"
-).forEach(
-    function(card){
-
-        card.addEventListener(
-            "touchstart",
-            function(){
-
-                this.classList.add(
-                    "touch-active"
-                );
-
-            },
-            {passive:true}
-        );
-
-
-        card.addEventListener(
-            "touchend",
-            function(){
-
-                this.classList.remove(
-                    "touch-active"
-                );
-
-            },
-            {passive:true}
-        );
-
-
-        card.addEventListener(
-            "touchcancel",
-            function(){
-
-                this.classList.remove(
-                    "touch-active"
-                );
-
-            },
-            {passive:true}
-        );
-
-    }
-);
-
-
-/* ==========================================================
-   16. ACTION BUTTON FEEDBACK
-========================================================== */
-
-document.querySelectorAll(
-    ".action-btn, .mini-btn"
-).forEach(
-    function(button){
-
-        button.addEventListener(
-            "click",
-            function(){
-
-                this.classList.add(
-                    "button-clicked"
-                );
-
-
-                setTimeout(
-                    function(){
-
-                        button.classList.remove(
-                            "button-clicked"
+                        window.open(
+                            url,
+                            "_blank"
                         );
 
                     },
-                    350
-                );
 
-            }
-        );
+                    function () {
 
-    }
-);
+                        /* GPS permission denied */
 
+                        var url =
+                            "https://www.google.com/maps/dir/?api=1" +
+                            "&destination=" +
+                            encodeURIComponent(
+                                destination
+                            );
 
-/* ==========================================================
-   17. PAGE LOAD HASH
-========================================================== */
-
-if(
-    window.location.hash
-){
-
-    let hash =
-        normalizeTarget(
-            window.location.hash
-        );
-
-
-    const initialTarget =
-        document.querySelector(
-            hash
-        );
-
-
-    if(initialTarget){
-
-        setTimeout(
-            function(){
-
-                initialTarget.scrollIntoView({
-
-                    behavior:"smooth",
-
-                    block:"start"
-
-                });
-
-
-                setActiveMenu(
-                    hash
-                );
-
-            },
-            300
-        );
-
-    }
-
-}
-
-
-/* ==========================================================
-   18. DEFAULT ACTIVE TAB
-========================================================== */
-
-if(
-    !window.location.hash
-){
-
-    setActiveMenu(
-        "#route1"
-    );
-
-}
-
-
-/* ==========================================================
-   19. ESCAPE KEY
-========================================================== */
-
-document.addEventListener(
-    "keydown",
-    function(event){
-
-        /*
-           Escape removes temporary
-           pressed states.
-        */
-
-        if(
-            event.key === "Escape"
-        ){
-
-            document
-                .querySelectorAll(
-                    ".pressed"
-                )
-                .forEach(
-                    function(element){
-
-                        element.classList.remove(
-                            "pressed"
+                        window.open(
+                            url,
+                            "_blank"
                         );
 
                     }
-                );
 
-        }
-
-    }
-);
-
-
-/* ==========================================================
-   20. GPS AVAILABILITY
-========================================================== */
-
-if(
-    !navigator.geolocation
-){
-
-    currentButtons.forEach(
-        function(button){
-
-            button.setAttribute(
-                "title",
-                "GPS उपलब्ध नहीं है"
-            );
-
-        }
-    );
-
-}
-
-
-/* ==========================================================
-   21. PREVENT MULTIPLE GPS REQUESTS
-========================================================== */
-
-let gpsBusy = false;
-
-
-currentButtons.forEach(
-    function(button){
-
-        button.addEventListener(
-            "click",
-            function(){
-
-                if(gpsBusy){
-
-                    return;
-
-                }
-
-
-                gpsBusy = true;
-
-
-                setTimeout(
-                    function(){
-
-                        gpsBusy = false;
-
-                    },
-                    11000
                 );
 
             }
+
+            /* --------------------------------
+               GPS NOT AVAILABLE
+            -------------------------------- */
+
+            else {
+
+                var url =
+                    "https://www.google.com/maps/dir/?api=1" +
+                    "&destination=" +
+                    encodeURIComponent(
+                        destination
+                    );
+
+                window.open(
+                    url,
+                    "_blank"
+                );
+
+            }
+
+        };
+
+    }
+
+
+    /* ================================
+       EXTERNAL LINKS
+    ================================= */
+
+    var externalLinks =
+        document.querySelectorAll(
+            'a[target="_blank"]'
+        );
+
+    for (var i = 0; i < externalLinks.length; i++) {
+
+        externalLinks[i].setAttribute(
+            "rel",
+            "noopener noreferrer"
         );
 
     }
-);
 
 
-/* ==========================================================
-   22. SCROLL POSITION
-========================================================== */
+    /* ================================
+       MAP BUTTONS HIDE
+       Extra safety
+    ================================= */
 
-window.addEventListener(
-    "scroll",
-    function(){
+    var mapButtons =
+        document.querySelectorAll(
+            ".mini-btn.map"
+        );
 
-        /*
-           Keep top button updated
-        */
+    for (var i = 0; i < mapButtons.length; i++) {
 
-        updateTopButton();
+        mapButtons[i].style.display = "none";
 
-    },
-    {passive:true}
-);
-
-
-/* ==========================================================
-   23. PAGE READY
-========================================================== */
-
-document.body.classList.add(
-    "js-ready"
-);
-
-
-/* ==========================================================
-   24. OPTIONAL VISUAL SUPPORT CSS
-========================================================== */
-
-const style =
-    document.createElement(
-        "style"
-    );
-
-
-style.textContent = `
-
-    .location-loading{
-        opacity:.72 !important;
-        pointer-events:none;
     }
 
-    .pressed{
-        transform:scale(.95) !important;
-    }
 
-    .button-clicked{
-        transform:scale(.97);
-    }
+    /* ================================
+       INITIAL TOP BUTTON
+    ================================= */
 
-    .touch-active{
-        transform:translateY(-1px);
-    }
+    if (topBtn) {
 
-    @media(
-        prefers-reduced-motion:reduce
-    ){
-
-        .button-clicked,
-        .touch-active,
-        .pressed{
-            transform:none !important;
+        if (window.pageYOffset > 300) {
+            topBtn.style.display = "flex";
+        } else {
+            topBtn.style.display = "none";
         }
 
     }
-
-`;
-
-
-document.head.appendChild(
-    style
-);
-
-
-/* ==========================================================
-   END
-========================================================== */
 
 });
-
-</script>
