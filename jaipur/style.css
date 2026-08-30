@@ -1,0 +1,1846 @@
+/* ==================================================
+   DESH KHOJ A2Z
+   JAIPUR TRAVEL GUIDE
+   STYLE.CSS
+   PART 1/4
+================================================== */
+
+
+/* ==================================================
+   RESET
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f7f6;
+    color:#202124;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+
+button{
+    font-family:inherit;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+header#top{
+
+    background:
+        linear-gradient(
+            135deg,
+            #e85d04,
+            #ff9f1c,
+            #e63946
+        );
+
+    color:#fff;
+    text-align:center;
+
+    padding:30px 15px 28px;
+
+    border-bottom-left-radius:28px;
+    border-bottom-right-radius:28px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.16);
+}
+
+
+.logo{
+    font-size:42px;
+    line-height:1;
+    margin-bottom:7px;
+}
+
+
+header#top h1{
+    font-size:33px;
+    line-height:1.2;
+    margin-bottom:7px;
+}
+
+
+header#top p{
+    font-size:15px;
+    opacity:.96;
+}
+
+
+/* ==================================================
+   MAIN CONTAINER
+================================================== */
+
+.container{
+    width:100%;
+    max-width:1100px;
+    margin:0 auto;
+    padding:18px 16px 45px;
+}
+
+
+/* ==================================================
+   BACK BUTTON
+================================================== */
+
+.back{
+
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+
+    background:#fff;
+    color:#333;
+
+    padding:9px 15px;
+    border-radius:25px;
+
+    font-size:13px;
+    font-weight:bold;
+
+    box-shadow:
+        0 3px 12px rgba(0,0,0,.08);
+
+    margin-bottom:15px;
+
+    transition:.2s;
+}
+
+
+.back:hover{
+    transform:translateY(-2px);
+}
+
+
+.back:active{
+    transform:scale(.97);
+}
+
+
+/* ==================================================
+   STICKY MENU
+================================================== */
+
+.sticky-menu{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:
+        rgba(244,247,246,.96);
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    padding:7px 0 9px;
+    margin-bottom:17px;
+}
+
+
+/* ==================================================
+   HORIZONTAL MENU
+   SAME SIZE — DO NOT ENLARGE
+================================================== */
+
+.horizontal-menu{
+
+    display:flex;
+    gap:9px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    padding:3px 2px 7px;
+
+    scrollbar-width:none;
+
+    -webkit-overflow-scrolling:touch;
+
+}
+
+
+.horizontal-menu::-webkit-scrollbar{
+    display:none;
+}
+
+
+/* ==================================================
+   MENU CARD
+================================================== */
+
+.menu-card{
+
+    flex:0 0 auto;
+
+    width:92px;
+    min-height:72px;
+
+    background:#fff;
+
+    border:1px solid #e9e9e9;
+
+    border-radius:16px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:7px 5px;
+
+    font-size:12px;
+    font-weight:bold;
+
+    box-shadow:
+        0 3px 11px rgba(0,0,0,.07);
+
+    transition:.2s;
+}
+
+
+.menu-card span{
+
+    display:block;
+
+    font-size:21px;
+    line-height:1.1;
+
+    margin-bottom:3px;
+}
+
+
+.menu-card small{
+
+    display:block;
+
+    color:#777;
+
+    font-size:10px;
+    font-weight:normal;
+
+    line-height:1.2;
+}
+
+
+.menu-card:hover{
+    transform:translateY(-2px);
+}
+
+
+.menu-card:active{
+    transform:scale(.95);
+}
+
+
+.menu-card.active{
+
+    border-color:#e85d04;
+
+    box-shadow:
+        0 0 0 2px rgba(232,93,4,.12),
+        0 4px 12px rgba(0,0,0,.08);
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:21px;
+
+    margin-bottom:22px;
+
+    border:1px solid #ededed;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.07);
+}
+
+
+.place-header{
+
+    display:flex;
+    align-items:center;
+
+    gap:13px;
+
+    margin-bottom:14px;
+}
+
+
+.place-icon{
+
+    width:56px;
+    height:56px;
+
+    flex:0 0 56px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#fff1df;
+
+    border-radius:17px;
+
+    font-size:30px;
+}
+
+
+.place-header h2{
+
+    font-size:25px;
+
+    line-height:1.2;
+
+    margin-bottom:4px;
+}
+
+
+.place-header span{
+
+    display:block;
+
+    color:#666;
+
+    font-size:13px;
+
+    line-height:1.4;
+}
+
+
+.hero p{
+
+    font-size:14px;
+
+    margin-bottom:11px;
+}
+
+
+/* ==================================================
+   SUGGESTED ROUTE
+================================================== */
+
+.suggested{
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8e9,
+            #fff0f3
+        );
+
+    border-left:5px solid #f39c12;
+
+    border-radius:14px;
+
+    padding:14px 15px;
+
+    margin-top:15px;
+}
+
+
+.suggested h3{
+
+    font-size:16px;
+
+    margin-bottom:6px;
+}
+
+
+.suggested p{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin:0;
+
+    line-height:1.7;
+}
+
+
+/* ==================================================
+   ROUTE CARD
+================================================== */
+
+.route-card{
+
+    background:#fff;
+
+    border:1px solid #e9e9e9;
+
+    border-radius:22px;
+
+    padding:18px;
+
+    margin-bottom:23px;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.07);
+
+    scroll-margin-top:95px;
+}
+
+
+/* ==================================================
+   ROUTE HEADER
+================================================== */
+
+.route-header{
+
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    padding-bottom:14px;
+
+    margin-bottom:15px;
+
+    border-bottom:1px solid #ededed;
+}
+
+
+.route-icon{
+
+    width:51px;
+    height:51px;
+
+    flex:0 0 51px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#fff3e5;
+
+    border-radius:15px;
+
+    font-size:27px;
+}
+
+
+.route-header h3{
+
+    font-size:21px;
+
+    line-height:1.25;
+
+    margin-bottom:4px;
+}
+
+
+.route-header span{
+
+    display:block;
+
+    color:#707070;
+
+    font-size:13px;
+
+    line-height:1.5;
+}
+
+
+/* ==================================================
+   ROUTE LINE
+================================================== */
+
+.route-line{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:14px;
+}
+
+
+.route-arrow{
+    display:none !important;
+}
+
+
+/* ==================================================
+   PLACE CARD
+================================================== */
+
+.route-stop{
+
+    min-width:0;
+
+    background:#fbfcfd;
+
+    border:1px solid #e0e4e8;
+
+    border-radius:17px;
+
+    padding:13px;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.055);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        border-color .2s ease;
+}
+
+
+.route-stop:hover{
+
+    transform:translateY(-2px);
+
+    border-color:#d3d8dd;
+
+    box-shadow:
+        0 7px 17px rgba(0,0,0,.09);
+}
+
+
+.route-stop:active{
+    transform:scale(.99);
+}
+
+
+/* ==================================================
+   PLACE NAME
+================================================== */
+
+.stop-main{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    min-height:40px;
+
+    margin-bottom:9px;
+}
+
+
+.stop-main strong{
+
+    font-size:16px;
+
+    line-height:1.35;
+
+    color:#252525;
+}
+
+
+/* ==================================================
+   STOP BOTTOM
+================================================== */
+
+.stop-bottom{
+
+    border-top:1px solid #e5e7e9;
+
+    padding-top:9px;
+}
+
+
+/* ==================================================
+   DISTANCE INSIDE CARD
+================================================== */
+
+.distance{
+
+    display:block;
+
+    width:100%;
+
+    background:#fff8e7;
+
+    border:1px solid #eed79b;
+
+    color:#7e6100;
+
+    border-radius:9px;
+
+    padding:5px 7px;
+
+    font-size:11px;
+
+    line-height:1.4;
+
+    margin-bottom:9px;
+}
+
+
+/* ==================================================
+   MINI ACTIONS
+================================================== */
+
+.mini-actions{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:5px;
+}
+
+
+.mini-btn{
+
+    min-width:0;
+
+    min-height:33px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    border-radius:8px;
+
+    border:1px solid #dcdfe2;
+
+    background:#fff;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    padding:3px 2px;
+
+    transition:.15s;
+}
+
+
+.mini-btn:hover{
+    background:#f8f8f8;
+}
+
+
+.mini-btn:active{
+    transform:scale(.94);
+}
+
+
+.mini-btn.map{
+    color:#17649a;
+}
+
+
+.mini-btn.current{
+    color:#a52b27;
+}
+
+
+.mini-btn.photo{
+    color:#76227d;
+}
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+
+    background:#f8fafb;
+
+    border:1px solid #e6eaed;
+
+    border-radius:15px;
+
+    padding:14px;
+
+    margin-top:17px;
+
+    font-size:14px;
+
+    line-height:1.65;
+}
+
+
+.place-info strong{
+    color:#333;
+}
+
+
+/* ==================================================
+   ACTION GRID
+================================================== */
+
+.action-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:8px;
+
+    margin-top:15px;
+}
+
+
+.action-btn{
+
+    min-width:0;
+
+    min-height:42px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    border-radius:11px;
+
+    border:1px solid #e0e3e6;
+
+    background:#fff;
+
+    padding:5px;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    transition:.15s;
+}
+
+
+.action-btn:hover{
+    transform:translateY(-1px);
+}
+
+
+.action-btn:active{
+    transform:scale(.96);
+}
+
+
+.action-btn.maps{
+
+    color:#17649a;
+
+    background:#eff8ff;
+}
+
+
+.action-btn.route{
+
+    color:#a52b27;
+
+    background:#fff1f0;
+}
+
+
+.action-btn.hotel{
+
+    color:#72227e;
+
+    background:#faf1ff;
+}
+
+
+.action-btn.restaurant{
+
+    color:#a85b00;
+
+    background:#fff7eb;
+}
+
+
+.action-btn.taxi{
+
+    color:#176b3d;
+
+    background:#effbf4;
+}
+
+
+.action-btn.bus{
+
+    color:#315c9c;
+
+    background:#eff5ff;
+}
+
+
+.action-btn.photo{
+
+    color:#842c78;
+
+    background:#fff1fb;
+}
+
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+
+    background:#fff;
+
+    border:1px solid #e7e9eb;
+
+    border-left:5px solid #f39c12;
+
+    border-radius:17px;
+
+    padding:16px;
+
+    margin:20px 0;
+
+    font-size:14px;
+
+    line-height:1.65;
+
+    box-shadow:
+        0 3px 12px rgba(0,0,0,.055);
+}
+
+
+.distance-note strong{
+    color:#333;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title{
+
+    font-size:22px;
+
+    line-height:1.3;
+
+    margin:28px 0 14px;
+
+    scroll-margin-top:95px;
+}
+
+
+/* ==================================================
+   SERVICE GRID
+================================================== */
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:10px;
+
+    margin-bottom:24px;
+}
+
+
+.service{
+
+    min-height:82px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:6px;
+
+    text-align:center;
+
+    background:#fff;
+
+    border:1px solid #e5e7e9;
+
+    border-radius:16px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.055);
+
+    transition:.18s;
+}
+
+
+.service:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,.09);
+}
+
+
+.service:active{
+    transform:scale(.96);
+}
+
+
+.service-icon{
+
+    font-size:25px;
+
+    line-height:1;
+}
+
+
+/* ==================================================
+   BACK TO TOP — OLD HTML
+================================================== */
+
+.back-top{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:30px 0 25px;
+}
+
+
+.back-top a{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-width:120px;
+
+    min-height:40px;
+
+    background:#fff;
+
+    border:1px solid #ddd;
+
+    border-radius:25px;
+
+    padding:8px 17px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    box-shadow:
+        0 3px 11px rgba(0,0,0,.07);
+}
+
+
+/* ==================================================
+   FLOATING BACK TO TOP
+================================================== */
+
+#backToTop{
+
+    position:fixed;
+
+    right:16px;
+    bottom:20px;
+
+    z-index:2000;
+
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    border:1px solid #d9d9d9;
+
+    background:#fff;
+
+    color:#333;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    box-shadow:
+        0 5px 17px rgba(0,0,0,.18);
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+
+#backToTop.show{
+    display:flex;
+}
+
+
+#backToTop:hover{
+    transform:translateY(-3px);
+}
+
+
+#backToTop:active{
+    transform:scale(.91);
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+
+    background:#202124;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:30px 15px;
+
+    margin-top:25px;
+}
+
+
+.footer-logo{
+
+    font-size:35px;
+
+    line-height:1;
+
+    margin-bottom:7px;
+}
+
+
+footer h3{
+
+    font-size:18px;
+
+    margin-bottom:4px;
+}
+
+
+footer p{
+
+    color:#d4d4d4;
+
+    font-size:12px;
+
+    margin:3px 0;
+}
+
+
+footer .copyright{
+
+    color:#999;
+
+    font-size:10px;
+
+    margin-top:12px;
+}
+
+
+/* ==================================================
+   LOCATION ACTIVE
+================================================== */
+
+.location-active{
+
+    border-color:#d93025 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(217,48,37,.10) !important;
+
+    animation:
+        locationPulse 1s ease;
+}
+
+
+@keyframes locationPulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.035);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+
+/* ==================================================
+   SMALL LOADING STATE
+================================================== */
+
+.locating{
+
+    opacity:.65;
+
+    pointer-events:none;
+}
+
+/* ==================================================
+   DESKTOP LARGE
+================================================== */
+
+@media (min-width:1001px){
+
+    .route-line{
+        gap:16px;
+    }
+
+
+    .route-stop{
+        min-height:145px;
+    }
+
+
+    .route-header span{
+        font-size:13px;
+    }
+
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width:800px){
+
+    .container{
+
+        padding-left:12px;
+
+        padding-right:12px;
+    }
+
+
+    header#top h1{
+        font-size:30px;
+    }
+
+
+    .route-card{
+        padding:15px;
+    }
+
+
+    .route-line{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:11px;
+    }
+
+
+    .action-grid{
+
+        grid-template-columns:
+            repeat(3,minmax(0,1fr));
+    }
+
+
+    .service-grid{
+
+        grid-template-columns:
+            repeat(3,minmax(0,1fr));
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width:520px){
+
+    .container{
+
+        padding-left:10px;
+
+        padding-right:10px;
+    }
+
+
+    header#top{
+
+        padding:27px 12px 25px;
+
+        border-bottom-left-radius:22px;
+
+        border-bottom-right-radius:22px;
+    }
+
+
+    .logo{
+        font-size:36px;
+    }
+
+
+    header#top h1{
+        font-size:27px;
+    }
+
+
+    header#top p{
+        font-size:13px;
+    }
+
+
+    .back{
+
+        font-size:11px;
+
+        padding:8px 13px;
+    }
+
+
+    .sticky-menu{
+
+        margin-left:-10px;
+
+        margin-right:-10px;
+
+        padding-left:8px;
+
+        padding-right:8px;
+    }
+
+
+    /* ==============================================
+       HORIZONTAL MENU — SAME AS BEFORE
+    ============================================== */
+
+    .menu-card{
+
+        width:80px;
+
+        min-height:68px;
+
+        border-radius:14px;
+
+        font-size:11px;
+    }
+
+
+    .menu-card span{
+        font-size:19px;
+    }
+
+
+    .menu-card small{
+        font-size:9px;
+    }
+
+
+    /* ==============================================
+       HERO
+    ============================================== */
+
+    .hero{
+
+        padding:16px;
+
+        border-radius:18px;
+    }
+
+
+    .place-header{
+        gap:10px;
+    }
+
+
+    .place-icon{
+
+        width:48px;
+        height:48px;
+
+        flex-basis:48px;
+
+        font-size:25px;
+    }
+
+
+    .place-header h2{
+        font-size:21px;
+    }
+
+
+    .place-header span{
+        font-size:10px;
+    }
+
+
+    .hero p{
+        font-size:12px;
+    }
+
+
+    .suggested{
+        padding:11px 12px;
+    }
+
+
+    .suggested h3{
+        font-size:14px;
+    }
+
+
+    .suggested p{
+        font-size:11px;
+    }
+
+
+    /* ==============================================
+       ROUTE CARD
+    ============================================== */
+
+    .route-card{
+
+        padding:12px;
+
+        border-radius:18px;
+
+        margin-bottom:18px;
+    }
+
+
+    .route-header{
+
+        gap:9px;
+
+        padding-bottom:12px;
+
+        margin-bottom:12px;
+    }
+
+
+    .route-icon{
+
+        width:43px;
+        height:43px;
+
+        flex-basis:43px;
+
+        font-size:23px;
+    }
+
+
+    .route-header h3{
+        font-size:18px;
+    }
+
+
+    .route-header span{
+
+        font-size:11px;
+
+        line-height:1.45;
+    }
+
+
+    /* ==============================================
+       2 × 2 PLACE CARDS
+    ============================================== */
+
+    .route-line{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:8px;
+    }
+
+
+    .route-stop{
+
+        padding:8px;
+
+        border-radius:13px;
+    }
+
+
+    /* ==============================================
+       PLACE NAME — SLIGHTLY BIGGER
+    ============================================== */
+
+    .stop-main{
+
+        gap:5px;
+
+        min-height:34px;
+
+        margin-bottom:6px;
+    }
+
+
+    .stop-main strong{
+
+        font-size:13px;
+
+        line-height:1.35;
+    }
+
+
+    .stop-bottom{
+        padding-top:6px;
+    }
+
+
+    /* ==============================================
+       DISTANCE — SLIGHTLY BIGGER
+    ============================================== */
+
+    .distance{
+
+        font-size:9px;
+
+        padding:4px 5px;
+
+        border-radius:7px;
+
+        margin-bottom:6px;
+
+        line-height:1.4;
+    }
+
+
+    /* ==============================================
+       MAP / CURRENT / PHOTO
+    ============================================== */
+
+    .mini-actions{
+        gap:3px;
+    }
+
+
+    .mini-btn{
+
+        min-height:27px;
+
+        border-radius:6px;
+
+        font-size:8px;
+
+        padding:2px 1px;
+    }
+
+
+    /* ==============================================
+       INFORMATION
+    ============================================== */
+
+    .place-info{
+
+        padding:11px;
+
+        border-radius:13px;
+
+        font-size:12px;
+
+        line-height:1.65;
+    }
+
+
+    /* ==============================================
+       ACTION BUTTONS
+    ============================================== */
+
+    .action-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:6px;
+    }
+
+
+    .action-btn{
+
+        min-height:37px;
+
+        border-radius:9px;
+
+        font-size:9px;
+    }
+
+
+    /* ==============================================
+       DISTANCE NOTE
+    ============================================== */
+
+    .distance-note{
+
+        padding:12px;
+
+        border-radius:14px;
+
+        font-size:12px;
+    }
+
+
+    /* ==============================================
+       SECTION
+    ============================================== */
+
+    .section-title{
+
+        font-size:19px;
+
+        margin:23px 0 11px;
+    }
+
+
+    /* ==============================================
+       SERVICES
+    ============================================== */
+
+    .service-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:7px;
+    }
+
+
+    .service{
+
+        min-height:70px;
+
+        border-radius:13px;
+
+        font-size:11px;
+    }
+
+
+    .service-icon{
+        font-size:22px;
+    }
+
+
+    .back-top{
+        margin:24px 0;
+    }
+
+
+    #backToTop{
+
+        width:44px;
+        height:44px;
+
+        right:12px;
+        bottom:17px;
+
+        font-size:23px;
+    }
+
+
+    footer{
+        padding:25px 12px;
+    }
+
+}
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media (max-width:360px){
+
+    header#top h1{
+        font-size:24px;
+    }
+
+
+    header#top p{
+        font-size:12px;
+    }
+
+
+    /* Horizontal menu unchanged */
+
+    .route-line{
+        gap:6px;
+    }
+
+
+    .route-stop{
+        padding:7px;
+    }
+
+
+    .stop-main{
+        min-height:32px;
+    }
+
+
+    .stop-main strong{
+        font-size:12px;
+    }
+
+
+    .distance{
+        font-size:8.5px;
+        padding:4px;
+    }
+
+
+    .mini-btn{
+
+        min-height:25px;
+
+        font-size:7.5px;
+    }
+
+
+    .action-btn{
+
+        min-height:35px;
+
+        font-size:8px;
+    }
+
+
+    .service{
+
+        min-height:67px;
+
+        font-size:10px;
+    }
+
+}
+
+
+/* ==================================================
+   LANDSCAPE MOBILE
+================================================== */
+
+@media (
+    max-width:700px
+) and (
+    orientation:landscape
+){
+
+    .route-line{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+    }
+
+
+    .route-stop{
+        padding:10px;
+    }
+
+}
+
+
+/* ==================================================
+   REDUCE MOTION
+================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+    }
+
+}
+
+
+/* ==================================================
+   SAFE IMAGE
+================================================== */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+}
+
+
+/* ==================================================
+   SELECTION
+================================================== */
+
+::selection{
+
+    background:#ffd166;
+
+    color:#222;
+}
+
+
+/* ==================================================
+   FOCUS ACCESSIBILITY
+================================================== */
+
+a:focus-visible,
+button:focus-visible{
+
+    outline:3px solid rgba(30,136,229,.35);
+
+    outline-offset:2px;
+}
+
+
+/* ==================================================
+   PREVENT LONG TEXT BREAKING LAYOUT
+================================================== */
+
+.route-stop,
+.route-header,
+.place-header,
+.service,
+.action-btn{
+
+    overflow-wrap:anywhere;
+}
+
+
+/* ==================================================
+   ROUTE CARD EQUAL VISUAL HEIGHT
+================================================== */
+
+@media (min-width:521px){
+
+    .route-line .route-stop{
+
+        display:flex;
+
+        flex-direction:column;
+    }
+
+
+    .route-line .route-stop .stop-bottom{
+
+        margin-top:auto;
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE CARD BALANCE
+================================================== */
+
+@media (max-width:520px){
+
+    .route-line .route-stop{
+
+        display:flex;
+
+        flex-direction:column;
+    }
+
+
+    .route-line .route-stop .stop-bottom{
+
+        margin-top:auto;
+    }
+
+}
+
+
+/* ==================================================
+   HORIZONTAL SCROLL SAFETY
+================================================== */
+
+.horizontal-menu{
+
+    overscroll-behavior-x:contain;
+}
+
+
+/* ==================================================
+   STICKY MENU SHADOW
+================================================== */
+
+.sticky-menu::after{
+
+    content:"";
+
+    display:block;
+
+    height:1px;
+
+    margin-top:3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(0,0,0,.08),
+            transparent
+        );
+}
+
+
+/* ==================================================
+   END OF JAIPUR STYLE.CSS
+================================================== */
