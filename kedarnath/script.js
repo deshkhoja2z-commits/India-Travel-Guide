@@ -11,8 +11,10 @@
 
 document.addEventListener("DOMContentLoaded", function(){
 
+
     /* ----------------------------------------------
        CURRENT LOCATION BUTTONS
+       DIRECT GOOGLE MAPS
     ---------------------------------------------- */
 
     const currentButtons =
@@ -23,31 +25,35 @@ document.addEventListener("DOMContentLoaded", function(){
 
     currentButtons.forEach(function(button){
 
-        button.addEventListener("click", function(event){
+        button.addEventListener(
+            "click",
+            function(event){
 
-            event.preventDefault();
+                event.preventDefault();
 
-            const destination =
-                button.getAttribute(
-                    "data-current-route"
+                const destination =
+                    button.getAttribute(
+                        "data-current-route"
+                    );
+
+
+                if(!destination){
+
+                    alert(
+                        "Destination उपलब्ध नहीं है।"
+                    );
+
+                    return;
+
+                }
+
+
+                openCurrentLocationRoute(
+                    destination
                 );
 
-
-            if(!destination){
-
-                alert(
-                    "Destination उपलब्ध नहीं है।"
-                );
-
-                return;
             }
-
-
-            openCurrentLocationRoute(
-                destination
-            );
-
-        });
+        );
 
     });
 
@@ -105,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
                 event.preventDefault();
 
+
                 window.scrollTo({
 
                     top:0,
@@ -121,7 +128,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
     /* ----------------------------------------------
        EXTERNAL LINKS
-       Keep normal Google Maps / Google Search
     ---------------------------------------------- */
 
     const externalLinks =
@@ -158,121 +164,51 @@ document.addEventListener("DOMContentLoaded", function(){
 
 /* ==================================================
    CURRENT LOCATION → GOOGLE MAPS
+   DIRECT ROUTE
 ================================================== */
 
 function openCurrentLocationRoute(
     destination
 ){
 
-    if(
-        !navigator.geolocation
-    ){
-
-        openGoogleMapsDestination(
-            destination
-        );
+    if(!destination){
 
         return;
+
     }
 
 
-    showLocationLoading();
+    const destinationEncoded =
+        encodeURIComponent(
+            destination
+        );
 
 
-    navigator.geolocation.getCurrentPosition(
+    /*
+       IMPORTANT:
 
-        function(position){
+       origin intentionally नहीं दिया गया है।
 
-            const latitude =
-                position.coords.latitude;
+       Google Maps अपने आप device की
+       current location को starting point
+       के रूप में इस्तेमाल करेगा।
+    */
 
-
-            const longitude =
-                position.coords.longitude;
-
-
-            const destinationEncoded =
-                encodeURIComponent(
-                    destination
-                );
-
-
-            const mapsURL =
-                "https://www.google.com/maps/dir/?api=1" +
-                "&origin=" +
-                latitude +
-                "," +
-                longitude +
-                "&destination=" +
-                destinationEncoded +
-                "&travelmode=driving";
+    const mapsURL =
+        "https://www.google.com/maps/dir/?api=1" +
+        "&destination=" +
+        destinationEncoded +
+        "&travelmode=driving";
 
 
-            window.open(
-                mapsURL,
-                "_blank",
-                "noopener,noreferrer"
-            );
+    /*
+       window.location.href का उपयोग किया गया है
+       ताकि mobile browser popup blocker
+       Google Maps को block न करे।
+    */
 
-
-            hideLocationLoading();
-
-        },
-
-
-        function(error){
-
-            hideLocationLoading();
-
-
-            /* --------------------------------------
-               If location permission denied,
-               open destination normally
-            -------------------------------------- */
-
-            if(
-                error.code ===
-                error.PERMISSION_DENIED
-            ){
-
-                const confirmOpen =
-                    confirm(
-                        "Current location की अनुमति नहीं मिली।\n\n" +
-                        "क्या आप Google Maps में " +
-                        destination +
-                        " खोलना चाहते हैं?"
-                    );
-
-
-                if(confirmOpen){
-
-                    openGoogleMapsDestination(
-                        destination
-                    );
-
-                }
-
-                return;
-            }
-
-
-            openGoogleMapsDestination(
-                destination
-            );
-
-        },
-
-
-        {
-            enableHighAccuracy:true,
-
-            timeout:10000,
-
-            maximumAge:60000
-
-        }
-
-    );
+    window.location.href =
+        mapsURL;
 
 }
 
@@ -284,6 +220,13 @@ function openCurrentLocationRoute(
 function openGoogleMapsDestination(
     destination
 ){
+
+    if(!destination){
+
+        return;
+
+    }
+
 
     const destinationEncoded =
         encodeURIComponent(
@@ -297,101 +240,8 @@ function openGoogleMapsDestination(
         destinationEncoded;
 
 
-    window.open(
-        mapsURL,
-        "_blank",
-        "noopener,noreferrer"
-    );
-
-}
-
-
-/* ==================================================
-   LOCATION LOADING MESSAGE
-================================================== */
-
-function showLocationLoading(){
-
-    let loading =
-        document.getElementById(
-            "location-loading"
-        );
-
-
-    if(loading){
-
-        loading.style.display =
-            "flex";
-
-        return;
-
-    }
-
-
-    loading =
-        document.createElement(
-            "div"
-        );
-
-
-    loading.id =
-        "location-loading";
-
-
-    loading.innerHTML = `
-        <div class="location-loading-box">
-            <div class="location-spinner">
-                📍
-            </div>
-
-            <strong>
-                Current location प्राप्त की जा रही है...
-            </strong>
-
-            <span>
-                कृपया GPS / Location permission allow करें।
-            </span>
-        </div>
-    `;
-
-
-    loading.style.cssText = `
-        position:fixed;
-        inset:0;
-        z-index:99999;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        padding:20px;
-        background:rgba(0,0,0,0.35);
-        backdrop-filter:blur(3px);
-    `;
-
-
-    document.body.appendChild(
-        loading
-    );
-
-}
-
-
-/* ==================================================
-   HIDE LOCATION LOADING
-================================================== */
-
-function hideLocationLoading(){
-
-    const loading =
-        document.getElementById(
-            "location-loading"
-        );
-
-
-    if(loading){
-
-        loading.remove();
-
-    }
+    window.location.href =
+        mapsURL;
 
 }
 
@@ -522,6 +372,7 @@ function setupScrollSpy(){
             },
 
             {
+
                 root:null,
 
                 rootMargin:
@@ -556,89 +407,6 @@ window.addEventListener(
     function(){
 
         activateRouteFromHash();
-
-    }
-);
-
-
-/* ==================================================
-   PREVENT DOUBLE CLICK ON CURRENT LOCATION
-================================================== */
-
-let locationRequestRunning =
-    false;
-
-
-function safeCurrentLocationRoute(
-    destination
-){
-
-    if(locationRequestRunning){
-
-        return;
-
-    }
-
-
-    locationRequestRunning =
-        true;
-
-
-    openCurrentLocationRoute(
-        destination
-    );
-
-
-    setTimeout(
-        function(){
-
-            locationRequestRunning =
-                false;
-
-        },
-        3000
-    );
-
-}
-
-
-/* ==================================================
-   SUPPORT ALL CURRENT LOCATION BUTTONS
-================================================== */
-
-document.addEventListener(
-    "click",
-    function(event){
-
-        const button =
-            event.target.closest(
-                "[data-current-route]"
-            );
-
-
-        if(!button){
-
-            return;
-
-        }
-
-
-        event.preventDefault();
-
-
-        const destination =
-            button.getAttribute(
-                "data-current-route"
-            );
-
-
-        if(destination){
-
-            safeCurrentLocationRoute(
-                destination
-            );
-
-        }
 
     }
 );
