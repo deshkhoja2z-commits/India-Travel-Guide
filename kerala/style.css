@@ -1,0 +1,2374 @@
+/* ==================================================
+   DESH KHOJ A2Z
+   KERALA TRAVEL GUIDE
+   STYLE.CSS
+   PART 1/2
+   UPDATED — USER FRIENDLY MOBILE UI
+================================================== */
+
+
+/* ==================================================
+   RESET
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Noto Sans",
+        "Noto Sans Devanagari",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background:#f4f7f6;
+
+    color:#202124;
+
+    line-height:1.65;
+
+    overflow-x:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+    text-rendering:optimizeLegibility;
+}
+
+
+a{
+    text-decoration:none;
+
+    color:inherit;
+}
+
+
+button{
+    font-family:inherit;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+header#top{
+
+    background:
+        linear-gradient(
+            135deg,
+            #16803c,
+            #32a852,
+            #0b8457
+        );
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:30px 15px 28px;
+
+    border-bottom-left-radius:28px;
+
+    border-bottom-right-radius:28px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.16);
+}
+
+
+.logo{
+
+    font-size:42px;
+
+    line-height:1;
+
+    margin-bottom:7px;
+}
+
+
+header#top h1{
+
+    font-size:33px;
+
+    line-height:1.3;
+
+    margin-bottom:7px;
+
+    font-weight:750;
+}
+
+
+header#top p{
+
+    font-size:16px;
+
+    opacity:.96;
+
+    line-height:1.5;
+}
+
+
+/* ==================================================
+   MAIN CONTAINER
+================================================== */
+
+.container{
+
+    width:100%;
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding:18px 16px 45px;
+}
+
+
+/* ==================================================
+   LANGUAGE SWITCH
+================================================== */
+
+.language-switch{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:14px;
+}
+
+
+.language-btn,
+.lang-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:40px;
+
+    padding:8px 15px;
+
+    border-radius:22px;
+
+    background:#fff;
+
+    border:1px solid #e1e4e6;
+
+    color:#333;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.06);
+
+    transition:.2s;
+}
+
+
+.language-btn.active,
+.lang-btn.active{
+
+    background:#16803c;
+
+    color:#fff;
+
+    border-color:#16803c;
+}
+
+
+.language-btn:hover,
+.lang-btn:hover{
+
+    transform:translateY(-2px);
+}
+
+
+.language-btn:active,
+.lang-btn:active{
+
+    transform:scale(.96);
+}
+
+
+/* ==================================================
+   BACK BUTTON
+================================================== */
+
+.back{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    background:#fff;
+
+    color:#333;
+
+    padding:10px 15px;
+
+    border-radius:25px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    box-shadow:
+        0 3px 12px rgba(0,0,0,.08);
+
+    margin-bottom:15px;
+
+    transition:.2s;
+}
+
+
+.back:hover{
+
+    transform:translateY(-2px);
+}
+
+
+.back:active{
+
+    transform:scale(.97);
+}
+
+
+/* ==================================================
+   STICKY MENU
+================================================== */
+
+.sticky-menu{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:
+        rgba(244,247,246,.96);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    padding:7px 0 9px;
+
+    margin-bottom:17px;
+}
+
+
+/* ==================================================
+   HORIZONTAL MENU
+================================================== */
+
+.horizontal-menu{
+
+    display:flex;
+
+    gap:9px;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    padding:3px 2px 7px;
+
+    scrollbar-width:none;
+
+    -webkit-overflow-scrolling:touch;
+
+    overscroll-behavior-x:contain;
+}
+
+
+.horizontal-menu::-webkit-scrollbar{
+
+    display:none;
+}
+
+
+/* ==================================================
+   MENU CARD
+================================================== */
+
+.menu-card{
+
+    flex:0 0 auto;
+
+    width:94px;
+
+    min-height:80px;
+
+    background:#fff;
+
+    border:1px solid #e9e9e9;
+
+    border-radius:17px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:8px 5px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    box-shadow:
+        0 3px 11px rgba(0,0,0,.07);
+
+    transition:.2s;
+}
+
+
+.menu-card span{
+
+    display:block;
+
+    font-size:23px;
+
+    line-height:1.1;
+
+    margin-bottom:4px;
+}
+
+
+.menu-card small{
+
+    display:block;
+
+    color:#777;
+
+    font-size:11px;
+
+    font-weight:500;
+
+    line-height:1.3;
+}
+
+
+.menu-card:hover{
+
+    transform:translateY(-2px);
+}
+
+
+.menu-card:active{
+
+    transform:scale(.95);
+}
+
+
+.menu-card.active{
+
+    border-color:#16803c;
+
+    box-shadow:
+        0 0 0 2px rgba(22,128,60,.12),
+        0 4px 12px rgba(0,0,0,.08);
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:21px;
+
+    margin-bottom:22px;
+
+    border:1px solid #ededed;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.07);
+}
+
+
+.place-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+
+    margin-bottom:14px;
+}
+
+
+.place-icon{
+
+    width:56px;
+
+    height:56px;
+
+    flex:0 0 56px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#eaf7ee;
+
+    border-radius:17px;
+
+    font-size:30px;
+}
+
+
+.place-header h2{
+
+    font-size:26px;
+
+    line-height:1.3;
+
+    margin-bottom:4px;
+
+    font-weight:750;
+}
+
+
+.place-header span{
+
+    display:block;
+
+    color:#666;
+
+    font-size:14px;
+
+    line-height:1.5;
+}
+
+
+.hero p{
+
+    font-size:15px;
+
+    margin-bottom:11px;
+
+    line-height:1.75;
+}
+
+
+/* ==================================================
+   SUGGESTED ROUTE
+================================================== */
+
+.suggested{
+
+    background:
+        linear-gradient(
+            135deg,
+            #f1faee,
+            #fff8e9
+        );
+
+    border-left:5px solid #16803c;
+
+    border-radius:14px;
+
+    padding:14px 15px;
+
+    margin-top:15px;
+}
+
+
+.suggested h3{
+
+    font-size:17px;
+
+    margin-bottom:6px;
+
+    font-weight:750;
+}
+
+
+.suggested p{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin:0;
+
+    line-height:1.75;
+}
+
+
+/* ==================================================
+   ROUTE CARD
+================================================== */
+
+.route-card{
+
+    background:#fff;
+
+    border:1px solid #e9e9e9;
+
+    border-radius:22px;
+
+    padding:18px;
+
+    margin-bottom:23px;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.07);
+
+    scroll-margin-top:95px;
+}
+
+
+/* ==================================================
+   ROUTE HEADER
+================================================== */
+
+.route-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding-bottom:14px;
+
+    margin-bottom:15px;
+
+    border-bottom:1px solid #ededed;
+}
+
+
+.route-icon{
+
+    width:51px;
+
+    height:51px;
+
+    flex:0 0 51px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#eaf7ee;
+
+    border-radius:15px;
+
+    font-size:27px;
+}
+
+
+.route-header h3{
+
+    font-size:22px;
+
+    line-height:1.3;
+
+    margin-bottom:4px;
+
+    font-weight:750;
+}
+
+
+.route-header span{
+
+    display:block;
+
+    color:#707070;
+
+    font-size:14px;
+
+    line-height:1.5;
+}
+
+
+/* ==================================================
+   ROUTE LINE
+================================================== */
+
+.route-line{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:14px;
+}
+
+
+/* ==================================================
+   HIDE OLD VERTICAL ARROWS
+================================================== */
+
+.route-arrow{
+
+    display:none !important;
+}
+
+
+/* ==================================================
+   PLACE CARD
+================================================== */
+
+.route-stop{
+
+    min-width:0;
+
+    background:#fbfcfd;
+
+    border:1px solid #e0e4e8;
+
+    border-radius:17px;
+
+    padding:13px;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.055);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        border-color .2s ease;
+
+    overflow-wrap:anywhere;
+}
+
+
+.route-stop:hover{
+
+    transform:translateY(-2px);
+
+    border-color:#cfd6db;
+
+    box-shadow:
+        0 7px 17px rgba(0,0,0,.09);
+}
+
+
+.route-stop:active{
+
+    transform:scale(.99);
+}
+
+
+/* ==================================================
+   PLACE NAME
+================================================== */
+
+.stop-main{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    min-height:42px;
+
+    margin-bottom:9px;
+}
+
+
+.stop-main strong{
+
+    font-size:17px;
+
+    line-height:1.4;
+
+    color:#252525;
+
+    font-weight:750;
+}
+
+
+/* ==================================================
+   STOP BOTTOM
+================================================== */
+
+.stop-bottom{
+
+    border-top:1px solid #e5e7e9;
+
+    padding-top:9px;
+}
+
+
+/* ==================================================
+   DISTANCE
+   IMPORTANT — ALWAYS VISIBLE
+================================================== */
+
+.distance{
+
+    display:block !important;
+
+    visibility:visible !important;
+
+    opacity:1 !important;
+
+    width:100%;
+
+    min-height:40px;
+
+    background:#fff8e7;
+
+    border:1px solid #eed79b;
+
+    color:#715900;
+
+    border-radius:10px;
+
+    padding:7px 9px;
+
+    font-size:13px;
+
+    font-weight:650;
+
+    line-height:1.5;
+
+    margin-bottom:10px;
+
+    text-align:left;
+
+    overflow-wrap:anywhere;
+}
+
+
+/* ==================================================
+   MINI ACTIONS
+================================================== */
+
+.mini-actions{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:6px;
+}
+
+
+.mini-btn{
+
+    min-width:0;
+
+    min-height:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    border-radius:9px;
+
+    border:1px solid #dcdfe2;
+
+    background:#fff;
+
+    font-size:12px;
+
+    font-weight:750;
+
+    line-height:1.3;
+
+    padding:5px 3px;
+
+    transition:.15s;
+
+    overflow-wrap:anywhere;
+}
+
+
+.mini-btn:hover{
+
+    background:#f8f8f8;
+}
+
+
+.mini-btn:active{
+
+    transform:scale(.94);
+}
+
+
+.mini-btn.map{
+
+    color:#17649a;
+}
+
+
+.mini-btn.current{
+
+    color:#a52b27;
+}
+
+
+.mini-btn.photo{
+
+    color:#76227d;
+}
+
+
+/* ==================================================
+   PLACE INFO
+================================================== */
+
+.place-info{
+
+    background:#f8fafb;
+
+    border:1px solid #e6eaed;
+
+    border-radius:15px;
+
+    padding:14px;
+
+    margin-top:17px;
+
+    font-size:15px;
+
+    line-height:1.8;
+}
+
+
+.place-info strong{
+
+    color:#333;
+}
+
+
+/* ==================================================
+   ACTION GRID
+================================================== */
+
+.action-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:8px;
+
+    margin-top:15px;
+}
+
+
+.action-btn{
+
+    min-width:0;
+
+    min-height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    border-radius:11px;
+
+    border:1px solid #e0e3e6;
+
+    background:#fff;
+
+    padding:6px;
+
+    font-size:12px;
+
+    font-weight:750;
+
+    line-height:1.4;
+
+    transition:.15s;
+
+    overflow-wrap:anywhere;
+}
+
+
+.action-btn:hover{
+
+    transform:translateY(-1px);
+}
+
+
+.action-btn:active{
+
+    transform:scale(.96);
+}
+
+
+.action-btn.maps{
+
+    color:#17649a;
+
+    background:#eff8ff;
+}
+
+
+.action-btn.route{
+
+    color:#a52b27;
+
+    background:#fff1f0;
+}
+
+
+.action-btn.hotel{
+
+    color:#72227e;
+
+    background:#faf1ff;
+}
+
+
+.action-btn.restaurant{
+
+    color:#a85b00;
+
+    background:#fff7eb;
+}
+
+
+.action-btn.taxi{
+
+    color:#176b3d;
+
+    background:#effbf4;
+}
+
+
+.action-btn.bus{
+
+    color:#315c9c;
+
+    background:#eff5ff;
+}
+
+
+.action-btn.photo{
+
+    color:#842c78;
+
+    background:#fff1fb;
+}
+
+/* ==================================================
+   DISTANCE NOTE
+================================================== */
+
+.distance-note{
+
+    background:#fff;
+
+    border:1px solid #e7e9eb;
+
+    border-left:5px solid #16803c;
+
+    border-radius:17px;
+
+    padding:16px;
+
+    margin:20px 0;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    box-shadow:
+        0 3px 12px rgba(0,0,0,.055);
+}
+
+
+.distance-note strong{
+
+    color:#333;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title{
+
+    font-size:23px;
+
+    line-height:1.4;
+
+    margin:28px 0 14px;
+
+    scroll-margin-top:95px;
+
+    font-weight:750;
+}
+
+
+/* ==================================================
+   SERVICE GRID
+================================================== */
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:10px;
+
+    margin-bottom:24px;
+}
+
+
+.service{
+
+    min-height:86px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:6px;
+
+    text-align:center;
+
+    background:#fff;
+
+    border:1px solid #e5e7e9;
+
+    border-radius:16px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    line-height:1.45;
+
+    padding:7px;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.055);
+
+    transition:.18s;
+
+    overflow-wrap:anywhere;
+}
+
+
+.service:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,.09);
+}
+
+
+.service:active{
+
+    transform:scale(.96);
+}
+
+
+.service-icon{
+
+    font-size:27px;
+
+    line-height:1;
+}
+
+
+/* ==================================================
+   BACK TO TOP — OLD HTML
+================================================== */
+
+.back-top{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:30px 0 25px;
+}
+
+
+.back-top a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:125px;
+
+    min-height:44px;
+
+    background:#fff;
+
+    border:1px solid #ddd;
+
+    border-radius:25px;
+
+    padding:8px 18px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    box-shadow:
+        0 3px 11px rgba(0,0,0,.07);
+}
+
+
+/* ==================================================
+   FLOATING BACK TO TOP
+================================================== */
+
+#backToTop{
+
+    position:fixed;
+
+    right:16px;
+
+    bottom:20px;
+
+    z-index:2000;
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    border:1px solid #d9d9d9;
+
+    background:#fff;
+
+    color:#333;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:
+        0 5px 17px rgba(0,0,0,.18);
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+
+#backToTop.show{
+
+    display:flex;
+}
+
+
+#backToTop:hover{
+
+    transform:translateY(-3px);
+}
+
+
+#backToTop:active{
+
+    transform:scale(.91);
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+
+    background:#202124;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:30px 15px;
+
+    margin-top:25px;
+}
+
+
+.footer-logo{
+
+    font-size:36px;
+
+    line-height:1;
+
+    margin-bottom:7px;
+}
+
+
+footer h3{
+
+    font-size:19px;
+
+    margin-bottom:4px;
+}
+
+
+footer p{
+
+    color:#d4d4d4;
+
+    font-size:13px;
+
+    margin:3px 0;
+
+    line-height:1.6;
+}
+
+
+footer .copyright{
+
+    color:#999;
+
+    font-size:11px;
+
+    margin-top:12px;
+}
+
+
+/* ==================================================
+   LOCATION ACTIVE
+================================================== */
+
+.location-active{
+
+    border-color:#d93025 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(217,48,37,.10) !important;
+
+    animation:
+        locationPulse 1s ease;
+}
+
+
+@keyframes locationPulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.035);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+
+/* ==================================================
+   SMALL LOADING STATE
+================================================== */
+
+.locating{
+
+    opacity:.65;
+
+    pointer-events:none;
+}
+
+
+/* ==================================================
+   DESKTOP LARGE
+================================================== */
+
+@media (min-width:1001px){
+
+    .route-line{
+
+        gap:16px;
+    }
+
+
+    .route-stop{
+
+        min-height:155px;
+
+        display:flex;
+
+        flex-direction:column;
+    }
+
+
+    .route-line .route-stop .stop-bottom{
+
+        margin-top:auto;
+    }
+
+
+    .route-header span{
+
+        font-size:14px;
+    }
+
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width:800px){
+
+    .container{
+
+        padding-left:12px;
+
+        padding-right:12px;
+    }
+
+
+    header#top h1{
+
+        font-size:30px;
+    }
+
+
+    .route-card{
+
+        padding:15px;
+    }
+
+
+    .route-line{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:11px;
+    }
+
+
+    .action-grid{
+
+        grid-template-columns:
+            repeat(3,minmax(0,1fr));
+    }
+
+
+    .service-grid{
+
+        grid-template-columns:
+            repeat(3,minmax(0,1fr));
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width:520px){
+
+    .container{
+
+        padding-left:10px;
+
+        padding-right:10px;
+    }
+
+
+    /* ----------------------------------------------
+       HEADER
+    ---------------------------------------------- */
+
+    header#top{
+
+        padding:27px 12px 25px;
+
+        border-bottom-left-radius:22px;
+
+        border-bottom-right-radius:22px;
+    }
+
+
+    .logo{
+
+        font-size:37px;
+    }
+
+
+    header#top h1{
+
+        font-size:27px;
+
+        line-height:1.35;
+
+        font-weight:750;
+    }
+
+
+    header#top p{
+
+        font-size:14px;
+
+        line-height:1.55;
+    }
+
+
+    /* ----------------------------------------------
+       LANGUAGE
+    ---------------------------------------------- */
+
+    .language-switch{
+
+        gap:7px;
+
+        margin-bottom:12px;
+    }
+
+
+    .language-btn,
+    .lang-btn{
+
+        min-height:39px;
+
+        padding:8px 13px;
+
+        font-size:13px;
+    }
+
+
+    /* ----------------------------------------------
+       BACK
+    ---------------------------------------------- */
+
+    .back{
+
+        font-size:13px;
+
+        padding:9px 13px;
+    }
+
+
+    /* ----------------------------------------------
+       STICKY MENU
+    ---------------------------------------------- */
+
+    .sticky-menu{
+
+        margin-left:-10px;
+
+        margin-right:-10px;
+
+        padding-left:8px;
+
+        padding-right:8px;
+    }
+
+
+    .menu-card{
+
+        width:90px;
+
+        min-height:78px;
+
+        border-radius:16px;
+
+        font-size:13px;
+
+        padding:8px 5px;
+    }
+
+
+    .menu-card span{
+
+        font-size:22px;
+    }
+
+
+    .menu-card small{
+
+        font-size:10px;
+    }
+
+
+    /* ----------------------------------------------
+       HERO
+    ---------------------------------------------- */
+
+    .hero{
+
+        padding:16px;
+
+        border-radius:18px;
+    }
+
+
+    .place-header{
+
+        gap:11px;
+    }
+
+
+    .place-icon{
+
+        width:51px;
+
+        height:51px;
+
+        flex-basis:51px;
+
+        font-size:27px;
+    }
+
+
+    .place-header h2{
+
+        font-size:22px;
+
+        line-height:1.35;
+
+        font-weight:750;
+    }
+
+
+    .place-header span{
+
+        font-size:12.5px;
+
+        line-height:1.55;
+    }
+
+
+    .hero p{
+
+        font-size:14px;
+
+        line-height:1.75;
+    }
+
+
+    /* ----------------------------------------------
+       SUGGESTED
+    ---------------------------------------------- */
+
+    .suggested{
+
+        padding:12px 13px;
+    }
+
+
+    .suggested h3{
+
+        font-size:16px;
+    }
+
+
+    .suggested p{
+
+        font-size:13px;
+
+        line-height:1.75;
+    }
+
+
+    /* ----------------------------------------------
+       ROUTE CARD
+    ---------------------------------------------- */
+
+    .route-card{
+
+        padding:14px;
+
+        border-radius:19px;
+
+        margin-bottom:18px;
+    }
+
+
+    .route-header{
+
+        gap:10px;
+
+        padding-bottom:13px;
+
+        margin-bottom:13px;
+    }
+
+
+    .route-icon{
+
+        width:46px;
+
+        height:46px;
+
+        flex-basis:46px;
+
+        font-size:25px;
+    }
+
+
+    .route-header h3{
+
+        font-size:19px;
+
+        line-height:1.35;
+
+        font-weight:750;
+    }
+
+
+    .route-header span{
+
+        font-size:12px;
+
+        line-height:1.55;
+    }
+
+
+    /* ----------------------------------------------
+       2 × 2 PLACE CARDS
+    ---------------------------------------------- */
+
+    .route-line{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:9px;
+    }
+
+
+    .route-stop{
+
+        padding:10px;
+
+        border-radius:14px;
+
+        display:flex;
+
+        flex-direction:column;
+
+        min-width:0;
+    }
+
+
+    .route-line .route-stop .stop-bottom{
+
+        margin-top:auto;
+    }
+
+
+    /* ----------------------------------------------
+       PLACE NAME
+    ---------------------------------------------- */
+
+    .stop-main{
+
+        gap:6px;
+
+        min-height:40px;
+
+        margin-bottom:7px;
+
+        align-items:center;
+    }
+
+
+    .stop-main strong{
+
+        font-size:15px;
+
+        line-height:1.45;
+
+        font-weight:750;
+    }
+
+
+    /* ----------------------------------------------
+       STOP BOTTOM
+    ---------------------------------------------- */
+
+    .stop-bottom{
+
+        padding-top:7px;
+    }
+
+
+    /* ----------------------------------------------
+       DISTANCE
+       MOBILE — CLEAR AND READABLE
+    ---------------------------------------------- */
+
+    .distance{
+
+        display:block !important;
+
+        visibility:visible !important;
+
+        opacity:1 !important;
+
+        min-height:40px;
+
+        font-size:11.5px;
+
+        padding:6px 7px;
+
+        border-radius:8px;
+
+        margin-bottom:7px;
+
+        line-height:1.5;
+
+        font-weight:650;
+
+        overflow-wrap:anywhere;
+    }
+
+
+    /* ----------------------------------------------
+       MINI ACTIONS
+    ---------------------------------------------- */
+
+    .mini-actions{
+
+        gap:4px;
+    }
+
+
+    .mini-btn{
+
+        min-height:36px;
+
+        border-radius:7px;
+
+        font-size:10px;
+
+        line-height:1.35;
+
+        padding:4px 2px;
+
+        font-weight:700;
+
+        overflow-wrap:anywhere;
+    }
+
+
+    /* ----------------------------------------------
+       INFORMATION
+    ---------------------------------------------- */
+
+    .place-info{
+
+        padding:12px;
+
+        border-radius:14px;
+
+        font-size:13.5px;
+
+        line-height:1.8;
+    }
+
+
+    /* ----------------------------------------------
+       ACTION BUTTONS
+    ---------------------------------------------- */
+
+    .action-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:7px;
+    }
+
+
+    .action-btn{
+
+        min-height:43px;
+
+        border-radius:10px;
+
+        font-size:11px;
+
+        line-height:1.45;
+
+        padding:6px 5px;
+
+        font-weight:700;
+    }
+
+
+    /* ----------------------------------------------
+       DISTANCE NOTE
+    ---------------------------------------------- */
+
+    .distance-note{
+
+        padding:13px;
+
+        border-radius:15px;
+
+        font-size:13.5px;
+
+        line-height:1.8;
+    }
+
+
+    /* ----------------------------------------------
+       SECTION TITLE
+    ---------------------------------------------- */
+
+    .section-title{
+
+        font-size:21px;
+
+        line-height:1.4;
+
+        margin:25px 0 12px;
+
+        font-weight:750;
+    }
+
+
+    /* ----------------------------------------------
+       SERVICES
+    ---------------------------------------------- */
+
+    .service-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:8px;
+    }
+
+
+    .service{
+
+        min-height:78px;
+
+        border-radius:14px;
+
+        font-size:12.5px;
+
+        line-height:1.45;
+
+        padding:7px;
+    }
+
+
+    .service-icon{
+
+        font-size:24px;
+    }
+
+
+    /* ----------------------------------------------
+       BACK TO TOP
+    ---------------------------------------------- */
+
+    .back-top{
+
+        margin:26px 0;
+    }
+
+
+    .back-top a{
+
+        min-height:43px;
+
+        padding:8px 18px;
+
+        font-size:12.5px;
+    }
+
+
+    /* ----------------------------------------------
+       FLOATING BUTTON
+    ---------------------------------------------- */
+
+    #backToTop{
+
+        width:45px;
+
+        height:45px;
+
+        right:12px;
+
+        bottom:17px;
+
+        font-size:23px;
+    }
+
+
+    /* ----------------------------------------------
+       FOOTER
+    ---------------------------------------------- */
+
+    footer{
+
+        padding:27px 12px;
+    }
+
+
+    footer h3{
+
+        font-size:18px;
+    }
+
+
+    footer p{
+
+        font-size:12px;
+
+        line-height:1.6;
+    }
+
+}
+
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media (max-width:360px){
+
+    header#top h1{
+
+        font-size:24px;
+    }
+
+
+    header#top p{
+
+        font-size:13px;
+    }
+
+
+    .menu-card{
+
+        width:84px;
+
+        min-height:74px;
+
+        font-size:12px;
+    }
+
+
+    .menu-card span{
+
+        font-size:21px;
+    }
+
+
+    .route-header h3{
+
+        font-size:18px;
+    }
+
+
+    .route-header span{
+
+        font-size:11.5px;
+    }
+
+
+    .route-line{
+
+        gap:7px;
+    }
+
+
+    .route-stop{
+
+        padding:9px;
+    }
+
+
+    .stop-main{
+
+        min-height:36px;
+
+        gap:5px;
+    }
+
+
+    .stop-main strong{
+
+        font-size:14px;
+    }
+
+
+    .distance{
+
+        min-height:38px;
+
+        font-size:10.5px;
+
+        padding:5px;
+
+        line-height:1.5;
+    }
+
+
+    .mini-btn{
+
+        min-height:32px;
+
+        font-size:9.5px;
+
+        padding:3px 2px;
+    }
+
+
+    .place-info{
+
+        font-size:13px;
+    }
+
+
+    .action-btn{
+
+        min-height:40px;
+
+        font-size:10.5px;
+    }
+
+
+    .service{
+
+        min-height:72px;
+
+        font-size:11.5px;
+    }
+
+}
+
+
+/* ==================================================
+   LANDSCAPE MOBILE
+================================================== */
+
+@media (
+    max-width:700px
+) and (
+    orientation:landscape
+){
+
+    .route-line{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+    }
+
+
+    .route-stop{
+
+        padding:10px;
+    }
+
+}
+
+
+/* ==================================================
+   REDUCE MOTION
+================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    html{
+
+        scroll-behavior:auto;
+    }
+
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+    }
+
+}
+
+
+/* ==================================================
+   SAFE IMAGE
+================================================== */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+}
+
+
+/* ==================================================
+   SELECTION
+================================================== */
+
+::selection{
+
+    background:#b7e4c7;
+
+    color:#222;
+}
+
+
+/* ==================================================
+   FOCUS ACCESSIBILITY
+================================================== */
+
+a:focus-visible,
+button:focus-visible{
+
+    outline:3px solid rgba(22,128,60,.35);
+
+    outline-offset:2px;
+}
+
+
+/* ==================================================
+   PREVENT LONG TEXT BREAKING LAYOUT
+================================================== */
+
+.route-stop,
+.route-header,
+.place-header,
+.service,
+.action-btn,
+.mini-btn,
+.distance{
+
+    overflow-wrap:anywhere;
+
+    word-break:normal;
+}
+
+
+/* ==================================================
+   ROUTE CARD EQUAL VISUAL HEIGHT
+================================================== */
+
+@media (min-width:521px){
+
+    .route-line .route-stop{
+
+        display:flex;
+
+        flex-direction:column;
+    }
+
+
+    .route-line .route-stop .stop-bottom{
+
+        margin-top:auto;
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE CARD BALANCE
+================================================== */
+
+@media (max-width:520px){
+
+    .route-line .route-stop{
+
+        display:flex;
+
+        flex-direction:column;
+    }
+
+
+    .route-line .route-stop .stop-bottom{
+
+        margin-top:auto;
+    }
+
+}
+
+
+/* ==================================================
+   HORIZONTAL SCROLL SAFETY
+================================================== */
+
+.horizontal-menu{
+
+    overscroll-behavior-x:contain;
+
+    touch-action:pan-x;
+}
+
+
+/* ==================================================
+   STICKY MENU SHADOW
+================================================== */
+
+.sticky-menu::after{
+
+    content:"";
+
+    display:block;
+
+    height:1px;
+
+    margin-top:3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(0,0,0,.08),
+            transparent
+        );
+}
+
+
+/* ==================================================
+   LOCATION LOADING BOX
+================================================== */
+
+.location-loading-box{
+
+    width:100%;
+
+    max-width:330px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:22px 18px;
+
+    text-align:center;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.20);
+}
+
+
+.location-loading-box strong{
+
+    display:block;
+
+    font-size:17px;
+
+    line-height:1.5;
+
+    margin-bottom:7px;
+}
+
+
+.location-loading-box span{
+
+    display:block;
+
+    color:#666;
+
+    font-size:13px;
+
+    line-height:1.6;
+}
+
+
+.location-spinner{
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+    animation:
+
+        locationBounce 1s infinite;
+}
+
+
+@keyframes locationBounce{
+
+    0%,
+    100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-5px);
+    }
+
+}
+
+
+/* ==================================================
+   END OF KERALA STYLE.CSS
+================================================== */
