@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Partner Registration | Lakshadweep | DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   LAKSHADWEEP PARTNER REGISTRATION
+   MOBILE FRIENDLY VERSION
+================================================== */
+
+
+/* ==================================================
+   PAGE
+================================================== */
+
+.partner-page{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.partner-hero{
+
+    margin:20px 0;
+
+    padding:25px 20px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ecfeff,
+            #ffffff
+        );
+
+    border:1px solid #a5f3fc;
+
+    box-shadow:
+        0 8px 28px rgba(0,0,0,.06);
+
+    text-align:center;
+
+}
+
+
+.partner-logo{
+
+    width:68px;
+
+    height:68px;
+
+    margin:0 auto 12px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#ffffff;
+
+    font-size:34px;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.08);
+
+}
+
+
+.partner-hero h2{
+
+    margin:0;
+
+    font-size:25px;
+
+    line-height:1.3;
+
+}
+
+
+.partner-hero p{
+
+    margin:9px auto 0;
+
+    max-width:680px;
+
+    color:#64748b;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+/* ==================================================
+   REGISTRATION BOX
+================================================== */
+
+.registration-box{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:22px;
+
+    padding:20px;
+
+    margin:20px 0;
+
+    box-shadow:
+        0 7px 25px rgba(0,0,0,.05);
+
+}
+
+
+/* ==================================================
+   REGISTRATION HEADING
+================================================== */
+
+.registration-heading{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:8px;
+
+}
+
+
+.registration-heading-icon{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:13px;
+
+    background:#f3f4f6;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:24px;
+
+    flex-shrink:0;
+
+}
+
+
+.registration-heading h2{
+
+    margin:0;
+
+    font-size:21px;
+
+    line-height:1.4;
+
+}
+
+
+/* ==================================================
+   DESCRIPTION
+================================================== */
+
+.registration-description{
+
+    color:#64748b;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+    margin:0 0 20px;
+
+}
+
+
+/* ==================================================
+   SERVICE GRID
+   2 x 2 MOBILE FRIENDLY
+================================================== */
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+
+/* ==================================================
+   SERVICE BUTTON
+================================================== */
+
+.service-button{
+
+    position:relative;
+
+    min-height:125px;
+
+    padding:16px 10px;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:17px;
+
+    background:#ffffff;
+
+    color:#1f2937;
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    text-align:center;
+
+    transition:
+        transform .2s,
+        box-shadow .2s,
+        border-color .2s,
+        background .2s;
+
+}
+
+
+.service-button:hover{
+
+    transform:translateY(-2px);
+
+    border-color:#cbd5e1;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,.08);
+
+}
+
+
+.service-button:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* ==================================================
+   SERVICE ICON
+================================================== */
+
+.service-icon{
+
+    display:block;
+
+    font-size:36px;
+
+    margin-bottom:7px;
+
+}
+
+
+/* ==================================================
+   SERVICE NAME
+================================================== */
+
+.service-name{
+
+    display:block;
+
+    font-size:15px;
+
+    font-weight:800;
+
+    line-height:1.3;
+
+}
+
+
+/* ==================================================
+   SERVICE ACTION
+================================================== */
+
+.service-action{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:#64748b;
+
+    font-size:11px;
+
+    line-height:1.4;
+
+}
+
+
+/* ==================================================
+   SELECTED SERVICE
+================================================== */
+
+.selected-service{
+
+    display:none;
+
+    text-align:center;
+
+    margin:14px 0 10px;
+
+    padding:10px;
+
+    border-radius:11px;
+
+    background:#f8fafc;
+
+    color:#475569;
+
+    font-size:13px;
+
+}
+
+
+.selected-service strong{
+
+    color:#111827;
+
+}
+
+
+/* ==================================================
+   CONTACT CHOICE
+================================================== */
+
+.contact-choice{
+
+    display:none;
+
+    margin-top:18px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:#f8fafc;
+
+    border:1px solid #e2e8f0;
+
+}
+
+
+.contact-choice-title{
+
+    text-align:center;
+
+    font-size:15px;
+
+    font-weight:800;
+
+    margin-bottom:12px;
+
+}
+
+
+/* ==================================================
+   CONTACT BUTTONS
+================================================== */
+
+.contact-buttons{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:10px;
+
+}
+
+
+.contact-button{
+
+    display:block;
+
+    padding:13px 10px;
+
+    border-radius:11px;
+
+    text-decoration:none;
+
+    text-align:center;
+
+    font-size:14px;
+
+    font-weight:800;
+
+    transition:
+        transform .2s,
+        opacity .2s;
+
+}
+
+
+.contact-button:active{
+
+    transform:scale(.97);
+
+}
+
+
+.whatsapp-button{
+
+    background:#25D366;
+
+    color:#ffffff;
+
+}
+
+
+.email-button{
+
+    background:#111827;
+
+    color:#ffffff;
+
+}
+
+
+/* ==================================================
+   COMING SOON
+================================================== */
+
+.coming-soon{
+
+    margin:20px 0;
+
+    padding:24px 18px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f0fdfa,
+            #ffffff
+        );
+
+    border:1px dashed #99f6e4;
+
+    text-align:center;
+
+}
+
+
+.coming-soon-icon{
+
+    font-size:35px;
+
+    margin-bottom:8px;
+
+}
+
+
+.coming-soon h2{
+
+    margin:0 0 8px;
+
+    font-size:20px;
+
+}
+
+
+.coming-soon p{
+
+    margin:0;
+
+    color:#64748b;
+
+    font-size:13px;
+
+    line-height:1.8;
+
+}
+
+
+/* ==================================================
+   PARTNER NOTE
+================================================== */
+
+.partner-note{
+
+    padding:15px;
+
+    margin:20px 0 0;
+
+    border-radius:14px;
+
+    background:#fffbeb;
+
+    border:1px solid #fde68a;
+
+    color:#78350f;
+
+    font-size:12px;
+
+    line-height:1.7;
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+    .partner-page{
+
+        width:100%;
+
+    }
+
+
+    .partner-hero{
+
+        padding:22px 15px;
+
+        border-radius:18px;
+
+    }
+
+
+    .partner-hero h2{
+
+        font-size:21px;
+
+    }
+
+
+    .partner-hero p{
+
+        font-size:13px;
+
+        line-height:1.7;
+
+    }
+
+
+    .registration-box{
+
+        padding:15px;
+
+        border-radius:18px;
+
+    }
+
+
+    .registration-heading{
+
+        gap:10px;
+
+    }
+
+
+    .registration-heading-icon{
+
+        width:42px;
+
+        height:42px;
+
+        font-size:22px;
+
+    }
+
+
+    .registration-heading h2{
+
+        font-size:18px;
+
+    }
+
+
+    .service-grid{
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap:10px;
+
+    }
+
+
+    .service-button{
+
+        min-height:116px;
+
+        padding:14px 7px;
+
+        border-radius:15px;
+
+    }
+
+
+    .service-icon{
+
+        font-size:32px;
+
+        margin-bottom:6px;
+
+    }
+
+
+    .service-name{
+
+        font-size:14px;
+
+    }
+
+
+    .service-action{
+
+        font-size:10px;
+
+        margin-top:4px;
+
+    }
+
+
+    .contact-buttons{
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap:9px;
+
+    }
+
+
+    .contact-button{
+
+        padding:12px 7px;
+
+        font-size:12px;
+
+    }
+
+
+    .coming-soon{
+
+        padding:21px 15px;
+
+        border-radius:18px;
+
+    }
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:360px){
+
+    .service-grid{
+
+        gap:8px;
+
+    }
+
+
+    .service-button{
+
+        min-height:108px;
+
+        padding:12px 5px;
+
+    }
+
+
+    .service-icon{
+
+        font-size:29px;
+
+    }
+
+
+    .service-name{
+
+        font-size:13px;
+
+    }
+
+
+    .service-action{
+
+        font-size:9px;
+
+    }
+
+
+    .contact-buttons{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="top">
+
+    <div class="logo">
+        🇮🇳
+    </div>
+
+    <h1>
+        DESH KHOJ A2Z
+    </h1>
+
+    <p>
+        Lakshadweep Tourism Guide
+    </p>
+
+</header>
+
+
+<div class="container partner-page">
+
+
+<!-- ==================================================
+     BACK
+================================================== -->
+
+<a
+    href="lakshadweep.html"
+    class="back">
+
+    ← लक्षद्वीप यात्रा गाइड पर वापस जाएं
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="partner-hero">
+
+
+    <div class="partner-logo">
+
+        🤝
+
+    </div>
+
+
+    <h2>
+
+        Business Partner Registration
+
+    </h2>
+
+
+    <p>
+
+        Lakshadweep और आसपास tourism
+        service देने वाले business और
+        local service providers
+        DESH KHOJ A2Z से जुड़ सकते हैं।
+
+    </p>
+
+
+</section>
+
+
+<!-- ==================================================
+     REGISTRATION
+================================================== -->
+
+<section class="registration-box">
+
+
+    <div class="registration-heading">
+
+
+        <div class="registration-heading-icon">
+
+            📝
+
+        </div>
+
+
+        <h2>
+
+            Registration के लिए Service चुनें
+
+        </h2>
+
+
+    </div>
+
+
+    <p class="registration-description">
+
+        अपनी service के अनुसार नीचे
+        दिए गए option पर click करें।
+        आपकी registration request
+        सीधे DESH KHOJ A2Z team को
+        भेजने के लिए तैयार होगी।
+
+    </p>
+
+
+    <!-- ==================================================
+         SERVICE GRID
+    ================================================== -->
+
+    <div class="service-grid">
+
+
+        <!-- ==================================================
+             HOTEL
+        ================================================== -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="Hotel">
+
+            <span class="service-icon">
+                🏨
+            </span>
+
+            <span class="service-name">
+                Hotel
+            </span>
+
+            <span class="service-action">
+                Registration के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+        <!-- ==================================================
+             TRAVEL / TAXI
+        ================================================== -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="Travel / Taxi">
+
+            <span class="service-icon">
+                🚕
+            </span>
+
+            <span class="service-name">
+                Travel / Taxi
+            </span>
+
+            <span class="service-action">
+                Registration के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+        <!-- ==================================================
+             TOUR GUIDE
+        ================================================== -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="Tour Guide">
+
+            <span class="service-icon">
+                🧑‍🏫
+            </span>
+
+            <span class="service-name">
+                Tour Guide
+            </span>
+
+            <span class="service-action">
+                Registration के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+        <!-- ==================================================
+             RESTAURANT
+        ================================================== -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="Restaurant">
+
+            <span class="service-icon">
+                🍽️
+            </span>
+
+            <span class="service-name">
+                Restaurant
+            </span>
+
+            <span class="service-action">
+                Registration के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+        <!-- ==================================================
+             HOMESTAY
+        ================================================== -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="Homestay">
+
+            <span class="service-icon">
+                🏠
+            </span>
+
+            <span class="service-name">
+                Homestay
+            </span>
+
+            <span class="service-action">
+                Registration के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+        <!-- ==================================================
+             WATER / BOAT
+        ================================================== -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="Boat / Water Tourism Service">
+
+            <span class="service-icon">
+                🚤
+            </span>
+
+            <span class="service-name">
+                Boat / Water Service
+            </span>
+
+            <span class="service-action">
+                Registration के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+        <!-- ==================================================
+             OTHER
+        ================================================== -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="Other Tourism Service">
+
+            <span class="service-icon">
+                ➕
+            </span>
+
+            <span class="service-name">
+                Other Service
+            </span>
+
+            <span class="service-action">
+                Registration के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+    </div>
+
+
+    <!-- ==================================================
+         SELECTED SERVICE
+    ================================================== -->
+
+    <div
+        id="selectedService"
+        class="selected-service">
+
+    </div>
+
+
+    <!-- ==================================================
+         CONTACT CHOICE
+    ================================================== -->
+
+    <div
+        id="contactChoice"
+        class="contact-choice">
+
+
+        <div class="contact-choice-title">
+
+            📩 Registration भेजने का तरीका चुनें
+
+        </div>
+
+
+        <div class="contact-buttons">
+
+
+            <a
+                id="whatsappRegistration"
+                class="contact-button whatsapp-button"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                🟢 WhatsApp पर भेजें
+
+            </a>
+
+
+            <a
+                id="emailRegistration"
+                class="contact-button email-button"
+                href="#">
+
+                📧 Email पर भेजें
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ==================================================
+         NOTE
+    ================================================== -->
+
+    <div class="partner-note">
+
+        ℹ️ Registration request भेजने के बाद
+        DESH KHOJ A2Z team आपकी service
+        की जानकारी लेकर आगे आपसे संपर्क करेगी।
+
+    </div>
+
+
+</section>
+
+  <!-- ==================================================
+     COMING SOON
+================================================== -->
+
+<section class="coming-soon">
+
+
+    <div class="coming-soon-icon">
+
+        🚧
+
+    </div>
+
+
+    <h2>
+
+        Partner Services Coming Soon
+
+    </h2>
+
+
+    <p>
+
+        Lakshadweep के Hotel, Travel,
+        Taxi, Guide, Restaurant,
+        Homestay, Boat / Water Tourism
+        और अन्य verified service
+        partners जल्द DESH KHOJ A2Z
+        पर उपलब्ध होंगे।
+
+    </p>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     PARTNER INFORMATION
+================================================== -->
+
+<section class="registration-box">
+
+
+    <div class="registration-heading">
+
+
+        <div class="registration-heading-icon">
+
+            🌴
+
+        </div>
+
+
+        <h2>
+
+            Lakshadweep Tourism Partners
+
+        </h2>
+
+
+    </div>
+
+
+    <p class="registration-description">
+
+        DESH KHOJ A2Z का उद्देश्य tourists को
+        future में local और tourism-related
+        service providers से जोड़ना है।
+
+        <br><br>
+
+        Partner network में verified service
+        providers को शामिल करने का प्रयास किया जाएगा।
+
+    </p>
+
+
+    <div class="service-grid">
+
+
+        <!-- HOTEL -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="Hotel / Resort">
+
+            <span class="service-icon">
+                🏨
+            </span>
+
+            <span class="service-name">
+                Hotel / Resort
+            </span>
+
+            <span class="service-action">
+                Partner Registration
+            </span>
+
+        </button>
+
+
+        <!-- HOMESTAY -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="Homestay / Guest House">
+
+            <span class="service-icon">
+                🏠
+            </span>
+
+            <span class="service-name">
+                Homestay
+            </span>
+
+            <span class="service-action">
+                Partner Registration
+            </span>
+
+        </button>
+
+
+        <!-- BOAT -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="Boat / Island Transfer">
+
+            <span class="service-icon">
+                🚤
+            </span>
+
+            <span class="service-name">
+                Boat Service
+            </span>
+
+            <span class="service-action">
+                Partner Registration
+            </span>
+
+        </button>
+
+
+        <!-- TOUR -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="Tour Operator">
+
+            <span class="service-icon">
+                🧳
+            </span>
+
+            <span class="service-name">
+                Tour Operator
+            </span>
+
+            <span class="service-action">
+                Partner Registration
+            </span>
+
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     IMPORTANT NOTE
+================================================== -->
+
+<div class="partner-note">
+
+    ⚠️ <strong>
+        Important Information
+    </strong>
+
+    <br><br>
+
+    DESH KHOJ A2Z इस समय इस page पर
+    कोई fake hotel listing, fake partner,
+    fake rating, fake price, fake availability
+    या fake booking information display नहीं करता।
+
+    <br><br>
+
+    Partner information उपलब्ध होने के बाद
+    current details को verify करने का प्रयास
+    किया जाएगा।
+
+    <br><br>
+
+    किसी भी service को book या payment करने
+    से पहले provider से current price,
+    availability, terms और service details
+    स्वयं confirm करें।
+
+</div>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <p>
+        © DESH KHOJ A2Z
+    </p>
+
+    <p>
+        Lakshadweep Tourism Guide
+    </p>
+
+    <p>
+        🤝 Business Partner & Tourism Services
+    </p>
+
+</footer>
+
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+    /* ==============================================
+       DESH KHOJ A2Z INTERNAL CONTACT
+    ============================================== */
+
+    const whatsappNumber =
+        "918200195546";
+
+
+    const emailAddress =
+        "deshkhoja2z@gmail.com";
+
+
+    /* ==============================================
+       ELEMENTS
+    ============================================== */
+
+    const serviceButtons =
+        document.querySelectorAll(
+            ".service-button"
+        );
+
+
+    const contactChoice =
+        document.getElementById(
+            "contactChoice"
+        );
+
+
+    const selectedService =
+        document.getElementById(
+            "selectedService"
+        );
+
+
+    const whatsappRegistration =
+        document.getElementById(
+            "whatsappRegistration"
+        );
+
+
+    const emailRegistration =
+        document.getElementById(
+            "emailRegistration"
+        );
+
+
+    /* ==============================================
+       SERVICE BUTTON
+    ============================================== */
+
+    serviceButtons.forEach(
+        function (button) {
+
+
+        button.addEventListener(
+            "click",
+            function () {
+
+
+            const service =
+                button.getAttribute(
+                    "data-service"
+                );
+
+
+            if (!service) {
+
+                return;
+
+            }
+
+
+            /* ======================================
+               MESSAGE
+            ====================================== */
+
+            const message =
+
+`DESH KHOJ A2Z
+Business Partner Registration
+
+I want to register my service as a
+DESH KHOJ A2Z Tourism Partner.
+
+Destination:
+Lakshadweep, India
+
+Type of Service:
+${service}
+
+Please contact me for further
+registration and verification.
+
+Thank you.`;
+
+
+            /* ======================================
+               WHATSAPP
+            ====================================== */
+
+            const whatsappURL =
+
+                "https://wa.me/" +
+                whatsappNumber +
+                "?text=" +
+                encodeURIComponent(
+                    message
+                );
+
+
+            whatsappRegistration.href =
+                whatsappURL;
+
+
+            /* ======================================
+               EMAIL SUBJECT
+            ====================================== */
+
+            const emailSubject =
+
+                "DESH KHOJ A2Z - " +
+                service +
+                " Partner Registration - Lakshadweep";
+
+
+            /* ======================================
+               EMAIL URL
+            ====================================== */
+
+            const emailURL =
+
+                "mailto:" +
+                emailAddress +
+                "?subject=" +
+                encodeURIComponent(
+                    emailSubject
+                ) +
+                "&body=" +
+                encodeURIComponent(
+                    message
+                );
+
+
+            emailRegistration.href =
+                emailURL;
+
+
+            /* ======================================
+               SELECTED SERVICE DISPLAY
+            ====================================== */
+
+            selectedService.innerHTML =
+
+                "Selected Service: " +
+                "<strong>" +
+                service +
+                "</strong>";
+
+
+            selectedService.style.display =
+                "block";
+
+
+            /* ======================================
+               SHOW CONTACT OPTIONS
+            ====================================== */
+
+            contactChoice.style.display =
+                "block";
+
+
+            /* ======================================
+               RESET ALL BUTTONS
+            ====================================== */
+
+            serviceButtons.forEach(
+                function (item) {
+
+                    item.style.borderColor =
+                        "#e5e7eb";
+
+                    item.style.background =
+                        "#ffffff";
+
+                }
+            );
+
+
+            /* ======================================
+               ACTIVE BUTTON
+            ====================================== */
+
+            button.style.borderColor =
+                "#0891b2";
+
+
+            button.style.background =
+                "#ecfeff";
+
+
+            /* ======================================
+               SCROLL TO CONTACT OPTIONS
+            ====================================== */
+
+            contactChoice.scrollIntoView({
+
+                behavior:
+                    "smooth",
+
+                block:
+                    "center"
+
+            });
+
+
+        });
+
+
+    });
+
+
+});
+
+</script>
+
+
+</div>
+<!-- END CONTAINER -->
+
+
+</body>
+
+</html>
