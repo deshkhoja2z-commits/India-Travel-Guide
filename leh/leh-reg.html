@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+पार्टनर रजिस्ट्रेशन | लेह-लद्दाख | DESH KHOJ A2Z
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+<style>
+
+/* ==================================================
+   DESH KHOJ A2Z
+   LEH-LADAKH PARTNER REGISTRATION
+   SIMPLE PROFESSIONAL VERSION
+================================================== */
+
+
+/* ==================================================
+   PAGE
+================================================== */
+
+.partner-page{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.partner-hero{
+
+    margin:20px 0;
+
+    padding:25px 20px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff7ed,
+            #ffffff
+        );
+
+    border:1px solid #fed7aa;
+
+    box-shadow:
+        0 8px 28px rgba(0,0,0,.06);
+
+    text-align:center;
+
+}
+
+
+.partner-logo{
+
+    width:68px;
+
+    height:68px;
+
+    margin:0 auto 12px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#ffffff;
+
+    font-size:34px;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.08);
+
+}
+
+
+.partner-hero h2{
+
+    margin:0;
+
+    font-size:25px;
+
+    line-height:1.3;
+
+}
+
+
+.partner-hero p{
+
+    margin:9px auto 0;
+
+    max-width:680px;
+
+    color:#64748b;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+/* ==================================================
+   REGISTRATION BOX
+================================================== */
+
+.registration-box{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:22px;
+
+    padding:20px;
+
+    margin:20px 0;
+
+    box-shadow:
+        0 7px 25px rgba(0,0,0,.05);
+
+}
+
+
+.registration-heading{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:8px;
+
+}
+
+
+.registration-heading-icon{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:13px;
+
+    background:#f3f4f6;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:24px;
+
+    flex-shrink:0;
+
+}
+
+
+.registration-heading h2{
+
+    margin:0;
+
+    font-size:21px;
+
+}
+
+
+.registration-description{
+
+    color:#64748b;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+    margin:0 0 20px;
+
+}
+
+
+/* ==================================================
+   SERVICE GRID
+================================================== */
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+
+/* ==================================================
+   SERVICE BUTTON
+================================================== */
+
+.service-button{
+
+    position:relative;
+
+    min-height:125px;
+
+    padding:18px 12px;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:17px;
+
+    background:#ffffff;
+
+    color:#1f2937;
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    text-align:center;
+
+    transition:
+        transform .2s,
+        box-shadow .2s,
+        border-color .2s,
+        background .2s;
+
+}
+
+
+.service-button:hover{
+
+    transform:translateY(-2px);
+
+    border-color:#cbd5e1;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,.08);
+
+}
+
+
+.service-button:active{
+
+    transform:scale(.98);
+
+}
+
+
+.service-icon{
+
+    display:block;
+
+    font-size:38px;
+
+    margin-bottom:8px;
+
+}
+
+
+.service-name{
+
+    display:block;
+
+    font-size:16px;
+
+    font-weight:800;
+
+}
+
+
+.service-action{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:#64748b;
+
+    font-size:11px;
+
+}
+
+
+/* ==================================================
+   COMING SOON
+================================================== */
+
+.coming-soon{
+
+    margin:20px 0;
+
+    padding:24px 18px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc,
+            #ffffff
+        );
+
+    border:1px dashed #cbd5e1;
+
+    text-align:center;
+
+}
+
+
+.coming-soon-icon{
+
+    font-size:35px;
+
+    margin-bottom:8px;
+
+}
+
+
+.coming-soon h2{
+
+    margin:0 0 8px;
+
+    font-size:20px;
+
+}
+
+
+.coming-soon p{
+
+    margin:0;
+
+    color:#64748b;
+
+    font-size:13px;
+
+    line-height:1.8;
+
+}
+
+
+/* ==================================================
+   CONTACT CHOICE
+================================================== */
+
+.contact-choice{
+
+    display:none;
+
+    margin-top:18px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:#f8fafc;
+
+    border:1px solid #e2e8f0;
+
+}
+
+
+.contact-choice-title{
+
+    text-align:center;
+
+    font-size:15px;
+
+    font-weight:800;
+
+    margin-bottom:12px;
+
+}
+
+
+.contact-buttons{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:10px;
+
+}
+
+
+.contact-button{
+
+    display:block;
+
+    padding:13px 10px;
+
+    border-radius:11px;
+
+    text-decoration:none;
+
+    text-align:center;
+
+    font-size:14px;
+
+    font-weight:800;
+
+}
+
+
+.whatsapp-button{
+
+    background:#25D366;
+
+    color:#ffffff;
+
+}
+
+
+.email-button{
+
+    background:#111827;
+
+    color:#ffffff;
+
+}
+
+
+/* ==================================================
+   SELECTED SERVICE
+================================================== */
+
+.selected-service{
+
+    display:none;
+
+    text-align:center;
+
+    margin-bottom:12px;
+
+    color:#475569;
+
+    font-size:13px;
+
+}
+
+
+.selected-service strong{
+
+    color:#111827;
+
+}
+
+
+/* ==================================================
+   NOTE
+================================================== */
+
+.partner-note{
+
+    padding:15px;
+
+    margin:20px 0;
+
+    border-radius:14px;
+
+    background:#fffbeb;
+
+    border:1px solid #fde68a;
+
+    color:#78350f;
+
+    font-size:12px;
+
+    line-height:1.7;
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+    .partner-hero{
+
+        padding:22px 15px;
+
+        border-radius:18px;
+
+    }
+
+
+    .partner-hero h2{
+
+        font-size:21px;
+
+    }
+
+
+    .registration-box{
+
+        padding:15px;
+
+        border-radius:18px;
+
+    }
+
+
+    .registration-heading h2{
+
+        font-size:19px;
+
+    }
+
+
+    .service-grid{
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap:10px;
+
+    }
+
+
+    .service-button{
+
+        min-height:118px;
+
+        padding:15px 7px;
+
+    }
+
+
+    .service-icon{
+
+        font-size:34px;
+
+    }
+
+
+    .service-name{
+
+        font-size:14px;
+
+    }
+
+
+    .contact-buttons{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+@media(max-width:360px){
+
+    .service-button{
+
+        min-height:110px;
+
+    }
+
+
+    .service-icon{
+
+        font-size:30px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="top">
+
+    <div class="logo">
+        🏔️
+    </div>
+
+    <h1>
+        DESH KHOJ A2Z
+    </h1>
+
+    <p>
+        लेह-लद्दाख पर्यटन गाइड
+    </p>
+
+</header>
+
+
+<div class="container partner-page">
+
+
+<!-- ==================================================
+     BACK
+================================================== -->
+
+<a
+    href="leh.html"
+    class="back">
+
+    ← लेह यात्रा गाइड पर वापस जाएं
+
+</a>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="partner-hero">
+
+
+    <div class="partner-logo">
+
+        🤝
+
+    </div>
+
+
+    <h2>
+
+        पर्यटन पार्टनर रजिस्ट्रेशन
+
+    </h2>
+
+
+    <p>
+
+        लेह-लद्दाख और आसपास पर्यटन
+        सेवा देने वाले व्यवसाय तथा
+        स्थानीय सेवा प्रदाता
+        DESH KHOJ A2Z से जुड़ सकते हैं।
+
+    </p>
+
+
+</section>
+
+
+<!-- ==================================================
+     REGISTRATION
+================================================== -->
+
+<section class="registration-box">
+
+
+    <div class="registration-heading">
+
+
+        <div class="registration-heading-icon">
+
+            📝
+
+        </div>
+
+
+        <h2>
+
+            रजिस्ट्रेशन के लिए सेवा चुनें
+
+        </h2>
+
+
+    </div>
+
+
+    <p class="registration-description">
+
+        अपनी सेवा के अनुसार नीचे
+        दिए गए विकल्प पर क्लिक करें।
+        आपकी रजिस्ट्रेशन रिक्वेस्ट
+        सीधे DESH KHOJ A2Z टीम को
+        भेजने के लिए तैयार होगी।
+
+    </p>
+
+
+    <!-- ==================================================
+         SERVICE GRID
+    ================================================== -->
+
+    <div class="service-grid">
+
+
+        <!-- HOTEL -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="होटल">
+
+            <span class="service-icon">
+                🏨
+            </span>
+
+            <span class="service-name">
+                होटल
+            </span>
+
+            <span class="service-action">
+                रजिस्ट्रेशन के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+        <!-- TRAVEL -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="ट्रैवल / टैक्सी">
+
+            <span class="service-icon">
+                🚕
+            </span>
+
+            <span class="service-name">
+                ट्रैवल / टैक्सी
+            </span>
+
+            <span class="service-action">
+                रजिस्ट्रेशन के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+        <!-- GUIDE -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="पर्यटक गाइड">
+
+            <span class="service-icon">
+                🧑‍🏫
+            </span>
+
+            <span class="service-name">
+                पर्यटक गाइड
+            </span>
+
+            <span class="service-action">
+                रजिस्ट्रेशन के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+        <!-- RESTAURANT -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="रेस्टोरेंट">
+
+            <span class="service-icon">
+                🍽️
+            </span>
+
+            <span class="service-name">
+                रेस्टोरेंट
+            </span>
+
+            <span class="service-action">
+                रजिस्ट्रेशन के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+        <!-- HOMESTAY -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="होमस्टे">
+
+            <span class="service-icon">
+                🏠
+            </span>
+
+            <span class="service-name">
+                होमस्टे
+            </span>
+
+            <span class="service-action">
+                रजिस्ट्रेशन के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+        <!-- OTHER -->
+
+        <button
+            type="button"
+            class="service-button"
+            data-service="अन्य पर्यटन सेवा">
+
+            <span class="service-icon">
+                ➕
+
+            </span>
+
+            <span class="service-name">
+                अन्य सेवा
+            </span>
+
+            <span class="service-action">
+                रजिस्ट्रेशन के लिए क्लिक करें
+            </span>
+
+        </button>
+
+
+    </div>
+
+      <!-- ==================================================
+         SELECTED SERVICE
+    ================================================== -->
+
+    <div
+        id="selectedService"
+        class="selected-service">
+
+    </div>
+
+
+    <!-- ==================================================
+         CONTACT CHOICE
+    ================================================== -->
+
+    <div
+        id="contactChoice"
+        class="contact-choice">
+
+
+        <div class="contact-choice-title">
+
+            📩 रजिस्ट्रेशन भेजने का तरीका चुनें
+
+        </div>
+
+
+        <div class="contact-buttons">
+
+
+            <a
+                id="whatsappRegistration"
+                class="contact-button whatsapp-button"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                🟢 WhatsApp पर भेजें
+
+            </a>
+
+
+            <a
+                id="emailRegistration"
+                class="contact-button email-button"
+                href="#">
+
+                📧 Email पर भेजें
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ==================================================
+         NOTE
+    ================================================== -->
+
+    <div class="partner-note">
+
+        ℹ️ रजिस्ट्रेशन रिक्वेस्ट भेजने के बाद
+        DESH KHOJ A2Z टीम आपकी सेवा
+        की जानकारी लेकर आगे आपसे संपर्क करेगी।
+
+    </div>
+
+
+</section>
+
+
+<!-- ==================================================
+     COMING SOON
+================================================== -->
+
+<section class="coming-soon">
+
+
+    <div class="coming-soon-icon">
+
+        🚧
+
+    </div>
+
+
+    <h2>
+
+        पार्टनर सेवाएं जल्द उपलब्ध होंगी
+
+    </h2>
+
+
+    <p>
+
+        लेह-लद्दाख के होटल, ट्रैवल,
+        टैक्सी, गाइड, रेस्टोरेंट,
+        होमस्टे और अन्य सत्यापित
+        सेवा पार्टनर जल्द
+        DESH KHOJ A2Z पर उपलब्ध होंगे।
+
+    </p>
+
+
+</section>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <p>
+        © DESH KHOJ A2Z
+    </p>
+
+    <p>
+        लेह-लद्दाख पर्यटन गाइड
+    </p>
+
+</footer>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+    /* ==============================================
+       DESH KHOJ A2Z INTERNAL CONTACT
+    ============================================== */
+
+    const whatsappNumber =
+        "918200195546";
+
+
+    const emailAddress =
+        "deshkhoja2z@gmail.com";
+
+
+    /* ==============================================
+       ELEMENTS
+    ============================================== */
+
+    const serviceButtons =
+        document.querySelectorAll(
+            ".service-button"
+        );
+
+
+    const contactChoice =
+        document.getElementById(
+            "contactChoice"
+        );
+
+
+    const selectedService =
+        document.getElementById(
+            "selectedService"
+        );
+
+
+    const whatsappRegistration =
+        document.getElementById(
+            "whatsappRegistration"
+        );
+
+
+    const emailRegistration =
+        document.getElementById(
+            "emailRegistration"
+        );
+
+
+    /* ==============================================
+       SERVICE BUTTON
+    ============================================== */
+
+    serviceButtons.forEach(
+        function (button) {
+
+
+        button.addEventListener(
+            "click",
+            function () {
+
+
+            const service =
+                button.getAttribute(
+                    "data-service"
+                );
+
+
+            if (!service) {
+
+                return;
+
+            }
+
+
+            /* ======================================
+               MESSAGE
+            ====================================== */
+
+            const message =
+
+`DESH KHOJ A2Z
+पर्यटन पार्टनर रजिस्ट्रेशन
+
+मैं अपनी सेवा को
+DESH KHOJ A2Z पर्यटन पार्टनर
+के रूप में रजिस्टर करना चाहता/चाहती हूँ।
+
+गंतव्य:
+लेह-लद्दाख
+
+सेवा का प्रकार:
+${service}
+
+कृपया आगे की रजिस्ट्रेशन और
+वेरिफिकेशन प्रक्रिया के लिए
+मुझसे संपर्क करें।
+
+धन्यवाद।`;
+
+
+            /* ======================================
+               WHATSAPP
+            ====================================== */
+
+            const whatsappURL =
+
+                "https://wa.me/" +
+                whatsappNumber +
+                "?text=" +
+                encodeURIComponent(
+                    message
+                );
+
+
+            whatsappRegistration.href =
+                whatsappURL;
+
+
+            /* ======================================
+               EMAIL
+            ====================================== */
+
+            const emailSubject =
+
+                "DESH KHOJ A2Z - " +
+                service +
+                " पार्टनर रजिस्ट्रेशन - लेह-लद्दाख";
+
+
+            const emailURL =
+
+                "mailto:" +
+                emailAddress +
+                "?subject=" +
+                encodeURIComponent(
+                    emailSubject
+                ) +
+                "&body=" +
+                encodeURIComponent(
+                    message
+                );
+
+
+            emailRegistration.href =
+                emailURL;
+
+
+            /* ======================================
+               SELECTED SERVICE DISPLAY
+            ====================================== */
+
+            selectedService.innerHTML =
+
+                "चयनित सेवा: " +
+                "<strong>" +
+                service +
+                "</strong>";
+
+
+            selectedService.style.display =
+                "block";
+
+
+            /* ======================================
+               SHOW CONTACT OPTIONS
+            ====================================== */
+
+            contactChoice.style.display =
+                "block";
+
+
+            /* ======================================
+               ACTIVE BUTTON
+            ====================================== */
+
+            serviceButtons.forEach(
+                function (item) {
+
+                    item.style.borderColor =
+                        "#e5e7eb";
+
+                    item.style.background =
+                        "#ffffff";
+
+                }
+            );
+
+
+            button.style.borderColor =
+                "#111827";
+
+
+            button.style.background =
+                "#f8fafc";
+
+
+            /* ======================================
+               SCROLL TO OPTIONS
+            ====================================== */
+
+            contactChoice.scrollIntoView({
+
+                behavior:
+                    "smooth",
+
+                block:
+                    "center"
+
+            });
+
+
+        });
+
+
+    });
+
+
+});
+
+</script>
+
+  <!-- ==================================================
+     END CONTAINER
+================================================== -->
+
+</div>
+
+
+<!-- ==================================================
+     END BODY
+================================================== -->
+
+</body>
+
+</html>

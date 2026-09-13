@@ -1,0 +1,3055 @@
+/* ==================================================
+   DESH KHOJ A2Z
+   LEH – LADAKH TRAVEL GUIDE
+   COMPLETE STYLE.CSS
+================================================== */
+
+
+/* ==================================================
+   RESET
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:80px;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Noto Sans Devanagari",
+        "Mangal",
+        Arial,
+        sans-serif;
+
+    background:#f4f7f7;
+
+    color:#222;
+
+    line-height:1.65;
+
+    overflow-x:hidden;
+}
+
+
+a{
+    text-decoration:none;
+
+    color:inherit;
+}
+
+
+img{
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+}
+
+
+button{
+    font:inherit;
+}
+
+
+section{
+    width:100%;
+}
+
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+header{
+    width:100%;
+
+    padding:22px 15px 18px;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f1f8f7
+        );
+
+    border-bottom:1px solid #dfe7e7;
+
+    box-shadow:
+        0 3px 15px rgba(0,0,0,.06);
+}
+
+
+.logo{
+    font-size:clamp(30px,8vw,48px);
+
+    line-height:1.15;
+
+    font-weight:900;
+
+    letter-spacing:.2px;
+
+    color:#202124;
+
+    margin-bottom:5px;
+}
+
+
+.page-title{
+    font-size:clamp(20px,5vw,29px);
+
+    line-height:1.35;
+
+    font-weight:700;
+
+    color:#333;
+}
+
+
+
+/* ==================================================
+   LANGUAGE SWITCH
+================================================== */
+
+.language-switch{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin:17px auto 0;
+
+    flex-wrap:wrap;
+}
+
+
+.language-btn{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:88px;
+
+    min-height:44px;
+
+    padding:8px 18px;
+
+    border-radius:28px;
+
+    background:#fff;
+
+    color:#333;
+
+    border:1px solid #d8dddd;
+
+    font-size:15px;
+
+    font-weight:800;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.08);
+
+    transition:.2s;
+}
+
+
+.language-btn.active{
+    background:#a85410;
+
+    color:#fff;
+
+    border-color:#a85410;
+
+    box-shadow:
+        0 5px 14px rgba(168,84,16,.20);
+}
+
+
+.language-btn:active{
+    transform:scale(.96);
+}
+
+
+
+/* ==================================================
+   BACK BUTTON
+================================================== */
+
+.back-btn{
+    display:block;
+
+    width:max-content;
+
+    max-width:calc(100% - 20px);
+
+    margin:14px auto;
+
+    padding:9px 15px;
+
+    border-radius:13px;
+
+    background:#fff;
+
+    color:#155e75;
+
+    border:1px solid #d9e4e6;
+
+    font-size:15px;
+
+    font-weight:800;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.06);
+}
+
+
+
+/* ==================================================
+   STICKY MENU
+================================================== */
+
+.sticky-menu{
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    padding:9px 10px;
+
+    overflow-x:auto;
+
+    background:
+        rgba(255,255,255,.96);
+
+    backdrop-filter:blur(12px);
+
+    border-top:1px solid #dce3e4;
+
+    border-bottom:1px solid #d5dddd;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,.09);
+
+    scrollbar-width:thin;
+}
+
+
+.sticky-menu::-webkit-scrollbar{
+    height:4px;
+}
+
+
+.sticky-menu::-webkit-scrollbar-thumb{
+    background:#aab8bb;
+
+    border-radius:20px;
+}
+
+
+.sticky-menu a{
+    flex:0 0 auto;
+
+    min-width:92px;
+
+    min-height:56px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:7px 9px;
+
+    border-radius:17px;
+
+    background:#eef7ff;
+
+    color:#1769aa;
+
+    border:1px solid #d4e5f2;
+
+    font-size:13px;
+
+    line-height:1.25;
+
+    font-weight:900;
+
+    transition:.2s;
+}
+
+
+.sticky-menu a:nth-child(2){
+    background:#f1f8ef;
+
+    color:#397143;
+
+    border-color:#d7e8d5;
+}
+
+
+.sticky-menu a:nth-child(3){
+    background:#eef7ff;
+
+    color:#1769aa;
+}
+
+
+.sticky-menu a:nth-child(4){
+    background:#fff7e9;
+
+    color:#9a6108;
+
+    border-color:#f0dfbd;
+}
+
+
+.sticky-menu a:nth-child(5){
+    background:#f6f0ff;
+
+    color:#673e9b;
+
+    border-color:#e2d8f1;
+}
+
+
+.sticky-menu a:nth-child(6){
+    background:#eef9f7;
+
+    color:#08776c;
+
+    border-color:#d3eae6;
+}
+
+
+.sticky-menu a:nth-child(7){
+    background:#fff4e8;
+
+    color:#a45b00;
+
+    border-color:#f1dcc0;
+}
+
+
+.sticky-menu a:active{
+    transform:scale(.95);
+}
+
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:20px auto;
+
+    padding:30px 20px;
+
+    border-radius:25px;
+
+    background:#fff;
+
+    border:1px solid #dfe7e7;
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,.08);
+
+    text-align:center;
+}
+
+
+.hero h1{
+    margin-bottom:13px;
+
+    font-size:clamp(34px,9vw,55px);
+
+    line-height:1.2;
+
+    font-weight:900;
+
+    color:#202124;
+}
+
+
+.hero p{
+    margin:8px 0;
+
+    font-size:clamp(16px,4vw,21px);
+
+    line-height:1.6;
+
+    color:#424a4e;
+}
+
+
+.hero p:first-of-type{
+    font-weight:800;
+
+    color:#176b61;
+}
+
+
+
+/* ==================================================
+   PARTNER REGISTRATION
+================================================== */
+
+.partner-registration{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:22px auto;
+
+    padding:22px 17px;
+
+    border-radius:22px;
+
+    background:#fff;
+
+    border:1px solid #dce5e6;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,.07);
+}
+
+
+.partner-registration h2{
+    margin-bottom:9px;
+
+    font-size:clamp(23px,6vw,32px);
+
+    line-height:1.35;
+
+    font-weight:900;
+}
+
+
+.partner-registration h3{
+    margin-bottom:8px;
+
+    font-size:21px;
+
+    line-height:1.35;
+}
+
+
+.partner-registration p{
+    margin-bottom:13px;
+
+    font-size:15px;
+
+    color:#4b5559;
+}
+
+
+.partner-registration a{
+    color:#075ea8;
+
+    text-decoration:underline;
+
+    font-weight:800;
+}
+
+
+
+/* ==================================================
+   COMMON SECTION HEADING
+================================================== */
+
+.section-heading{
+    margin-bottom:17px;
+}
+
+
+.section-heading h2{
+    margin-bottom:8px;
+
+    font-size:clamp(24px,6vw,32px);
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#202124;
+}
+
+
+.section-heading p{
+    font-size:15px;
+
+    line-height:1.65;
+
+    color:#4b555a;
+}
+
+
+
+/* ==================================================
+   ROUTE SECTION
+================================================== */
+
+.route-section{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:25px auto;
+
+    padding:20px 14px;
+
+    border-radius:23px;
+
+    background:#fff;
+
+    border:1px solid #dce5e7;
+
+    box-shadow:
+        0 7px 22px rgba(0,0,0,.07);
+
+    text-align:left;
+}
+
+
+.route-heading{
+    margin-bottom:16px;
+}
+
+
+.route-heading .route-number{
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:7px;
+
+    padding:6px 12px;
+
+    border-radius:10px;
+
+    background:#e6f4f1;
+
+    color:#176b61;
+
+    font-size:13px;
+
+    line-height:1.2;
+
+    font-weight:900;
+}
+
+
+.route-heading h2{
+    margin-bottom:7px;
+
+    font-size:clamp(23px,6vw,32px);
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#202124;
+}
+
+
+.route-heading p{
+    font-size:15px;
+
+    line-height:1.65;
+
+    color:#4b555a;
+}
+
+
+
+/* ==================================================
+   IMPORTANT
+   PLACE CARDS WILL BE 2 × 2
+================================================== */
+
+.route-section .place-card{
+    width:calc(50% - 9px);
+
+    display:inline-block;
+
+    vertical-align:top;
+
+    margin:6px 3px;
+
+    padding:15px 12px;
+
+    border-radius:19px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fbfdfd
+        );
+
+    border:1px solid #d9e3e5;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,.06);
+
+    overflow:hidden;
+}
+
+
+.route-section .place-card h3{
+    margin-bottom:8px;
+
+    font-size:clamp(18px,5vw,25px);
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#176b61;
+}
+
+
+.route-section .place-card p{
+    margin-bottom:9px;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    color:#4a5357;
+}
+
+
+
+/* ==================================================
+   DISTANCE BOX
+================================================== */
+
+.route-section .place-card p:last-of-type{
+    margin-top:10px;
+
+    margin-bottom:10px;
+
+    padding:9px 10px;
+
+    border-radius:12px;
+
+    background:#eaf5ff;
+
+    border:1px solid #c9e2f5;
+
+    color:#28566e;
+
+    font-size:12px;
+
+    line-height:1.45;
+
+    font-weight:900;
+}
+
+
+
+/* ==================================================
+   ACTION GRID
+================================================== */
+
+.action-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:6px;
+
+    margin-top:9px;
+}
+
+
+.action-grid a{
+    min-height:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:6px 4px;
+
+    border-radius:10px;
+
+    background:#f1f7f8;
+
+    color:#155e75;
+
+    font-size:11px;
+
+    line-height:1.25;
+
+    font-weight:900;
+
+    border:1px solid #d6e2e4;
+}
+
+
+.action-grid a:active{
+    transform:scale(.95);
+}
+
+/* ==================================================
+   TRAVEL NOTE
+================================================== */
+
+.travel-note{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:24px auto;
+
+    padding:19px 16px;
+
+    border-radius:20px;
+
+    background:#fff7df;
+
+    border:1px solid #f0dca7;
+
+    border-left:5px solid #e89a00;
+
+    box-shadow:
+        0 5px 16px rgba(0,0,0,.06);
+}
+
+
+.travel-note h2{
+    margin-bottom:9px;
+
+    font-size:clamp(22px,6vw,29px);
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#8a5b00;
+}
+
+
+.travel-note p{
+    margin:7px 0;
+
+    font-size:14px;
+
+    line-height:1.65;
+
+    color:#5b5038;
+}
+
+
+
+/* ==================================================
+   SERVICE SECTION
+================================================== */
+
+.service-section{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:25px auto;
+
+    padding:20px 14px;
+
+    border-radius:22px;
+
+    background:#fff;
+
+    border:1px solid #dce5e7;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,.07);
+}
+
+
+.service-section .section-heading{
+    margin-bottom:17px;
+}
+
+
+.service-section .section-heading h2{
+    margin-bottom:8px;
+
+    font-size:clamp(23px,6vw,31px);
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#202124;
+}
+
+
+.service-section .section-heading p{
+    font-size:14px;
+
+    line-height:1.6;
+
+    color:#4b555a;
+}
+
+
+
+/* ==================================================
+   SERVICE GRID
+   2 × 2 ON MOBILE
+================================================== */
+
+.service-grid{
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:9px;
+}
+
+
+
+/* ==================================================
+   SERVICE CARD
+================================================== */
+
+.service-card{
+    min-width:0;
+
+    min-height:105px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    gap:5px;
+
+    padding:12px 7px;
+
+    border-radius:17px;
+
+    background:#fff;
+
+    border:1px solid #dce5e7;
+
+    box-shadow:
+        0 5px 14px rgba(0,0,0,.07);
+
+    transition:.2s;
+}
+
+
+.service-card strong{
+    font-size:13px;
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#202124;
+}
+
+
+.service-card span{
+    font-size:11px;
+
+    line-height:1.4;
+
+    color:#687277;
+}
+
+
+.service-card:nth-child(1){
+    border-top:5px solid #1976d2;
+}
+
+
+.service-card:nth-child(2){
+    border-top:5px solid #2e7d32;
+}
+
+
+.service-card:nth-child(3){
+    border-top:5px solid #7b1fa2;
+}
+
+
+.service-card:nth-child(4){
+    border-top:5px solid #ef6c00;
+}
+
+
+.service-card:nth-child(5){
+    border-top:5px solid #00897b;
+}
+
+
+.service-card:nth-child(6){
+    border-top:5px solid #f4511e;
+}
+
+
+.service-card:active{
+    transform:scale(.97);
+}
+
+
+
+/* ==================================================
+   IMPORTANT INFORMATION
+================================================== */
+
+.important-info{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:25px auto;
+
+    padding:20px 14px;
+
+    border-radius:22px;
+
+    background:#fff;
+
+    border:1px solid #dce5e7;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,.07);
+}
+
+
+.important-info .section-heading{
+    margin-bottom:16px;
+}
+
+
+.important-info .section-heading h2{
+    margin-bottom:7px;
+
+    font-size:clamp(23px,6vw,31px);
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#202124;
+}
+
+
+
+/* ==================================================
+   INFO CARD
+================================================== */
+
+.info-card{
+    margin:10px 0;
+
+    padding:15px 13px;
+
+    border-radius:16px;
+
+    background:#eef8ff;
+
+    border:1px solid #cfe4f4;
+
+    border-left:5px solid #1976d2;
+}
+
+
+.info-card h3{
+    margin-bottom:6px;
+
+    font-size:19px;
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#1769aa;
+}
+
+
+.info-card p{
+    font-size:13.5px;
+
+    line-height:1.65;
+
+    color:#46545b;
+}
+
+
+
+/* ==================================================
+   ROUTE SUMMARY
+================================================== */
+
+.route-summary{
+    width:100%;
+
+    margin:25px auto;
+}
+
+
+.route-summary .section-heading{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:0 auto 15px;
+}
+
+
+.route-summary .section-heading h2{
+    font-size:clamp(23px,6vw,31px);
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#202124;
+}
+
+
+.route-summary .section-heading p{
+    margin-top:7px;
+
+    font-size:14px;
+
+    color:#4b555a;
+}
+
+
+
+/* ==================================================
+   SUMMARY CARD
+================================================== */
+
+.summary-card{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:14px auto;
+
+    padding:18px 15px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f2faf9
+        );
+
+    border:1px solid #d4e5e3;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,.07);
+}
+
+
+.summary-card h3{
+    margin-bottom:10px;
+
+    font-size:21px;
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#176b61;
+}
+
+
+.summary-card p{
+    margin:6px 0;
+
+    font-size:13.5px;
+
+    line-height:1.65;
+
+    color:#465156;
+}
+
+
+.summary-card p + p{
+    padding-top:6px;
+
+    border-top:1px solid #e0e9e8;
+}
+
+
+
+/* ==================================================
+   TRAVEL PLAN
+================================================== */
+
+.travel-plan{
+    width:100%;
+
+    margin:25px auto;
+}
+
+
+.travel-plan .section-heading{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:0 auto 14px;
+}
+
+
+.travel-plan .section-heading h2{
+    font-size:clamp(23px,6vw,31px);
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#202124;
+}
+
+
+.travel-plan .plan-card{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:0 auto;
+
+    padding:18px 15px;
+
+    border-radius:19px;
+
+    background:#fff;
+
+    border:1px solid #dce5e7;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,.07);
+}
+
+
+.travel-plan .plan-card h3{
+    margin:11px 0 6px;
+
+    font-size:19px;
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#176b61;
+}
+
+
+.travel-plan .plan-card h3:first-child{
+    margin-top:0;
+}
+
+
+.travel-plan .plan-card p{
+    margin:6px 0;
+
+    font-size:13.5px;
+
+    line-height:1.65;
+
+    color:#4a555a;
+}
+
+
+
+/* ==================================================
+   FOOD SECTION
+================================================== */
+
+.food-section{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:25px auto;
+
+    padding:20px 14px;
+
+    border-radius:22px;
+
+    background:#fff;
+
+    border:1px solid #dce5e7;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,.07);
+}
+
+
+.food-section .section-heading{
+    margin-bottom:16px;
+}
+
+
+.food-section .section-heading h2{
+    margin-bottom:7px;
+
+    font-size:clamp(23px,6vw,31px);
+
+    line-height:1.35;
+
+    font-weight:900;
+}
+
+
+.food-section .section-heading p{
+    font-size:14px;
+
+    color:#4b555a;
+}
+
+
+
+/* ==================================================
+   FOOD GRID
+   2 × 2 ON MOBILE
+================================================== */
+
+.food-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:9px;
+}
+
+
+
+/* ==================================================
+   FOOD CARD
+================================================== */
+
+.food-card{
+    min-width:0;
+
+    min-height:140px;
+
+    padding:14px 9px;
+
+    border-radius:17px;
+
+    background:#fffaf0;
+
+    border:1px solid #f0dfb8;
+
+    text-align:center;
+}
+
+
+.food-card h3{
+    margin:6px 0;
+
+    font-size:17px;
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#8b5d00;
+}
+
+
+.food-card p{
+    font-size:11.5px;
+
+    line-height:1.55;
+
+    color:#5b5445;
+}
+
+
+
+/* ==================================================
+   CULTURE SECTION
+================================================== */
+
+.culture-section{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:25px auto;
+
+    padding:20px 14px;
+
+    border-radius:22px;
+
+    background:#fff;
+
+    border:1px solid #dce5e7;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,.07);
+}
+
+
+.culture-section .section-heading{
+    margin-bottom:16px;
+}
+
+
+.culture-section .section-heading h2{
+    margin-bottom:7px;
+
+    font-size:clamp(23px,6vw,31px);
+
+    line-height:1.35;
+
+    font-weight:900;
+}
+
+
+.culture-section .section-heading p{
+    font-size:14px;
+
+    color:#4b555a;
+}
+
+
+
+/* ==================================================
+   CULTURE GRID
+   2 × 2 ON MOBILE
+================================================== */
+
+.culture-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:9px;
+}
+
+
+
+/* ==================================================
+   CULTURE CARD
+================================================== */
+
+.culture-card{
+    min-width:0;
+
+    min-height:140px;
+
+    padding:14px 9px;
+
+    border-radius:17px;
+
+    background:#f7f5ff;
+
+    border:1px solid #dfd8f2;
+
+    text-align:center;
+}
+
+
+.culture-card h3{
+    margin:6px 0;
+
+    font-size:17px;
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#633b92;
+}
+
+
+.culture-card p{
+    font-size:11.5px;
+
+    line-height:1.55;
+
+    color:#55505d;
+}
+
+/* ==================================================
+   BUSINESS REGISTRATION
+================================================== */
+
+.business-registration{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:25px auto;
+
+    padding:22px 16px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f5fbff
+        );
+
+    border:1px solid #d7e5eb;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,.07);
+
+    text-align:center;
+}
+
+
+.business-registration h2{
+    margin-bottom:9px;
+
+    font-size:clamp(23px,6vw,31px);
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#202124;
+}
+
+
+.business-registration p{
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    line-height:1.65;
+
+    color:#4b555a;
+}
+
+
+.business-registration .partner-btn{
+    margin-top:9px;
+}
+
+
+
+/* ==================================================
+   TOURIST PARTNER
+================================================== */
+
+.tourist-partner{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:25px auto;
+
+    padding:22px 16px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f3faf8
+        );
+
+    border:1px solid #d4e5df;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,.07);
+
+    text-align:center;
+}
+
+
+.tourist-partner h2{
+    margin-bottom:9px;
+
+    font-size:clamp(23px,6vw,31px);
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#176b61;
+}
+
+
+.tourist-partner p{
+    margin-bottom:13px;
+
+    font-size:14px;
+
+    line-height:1.65;
+
+    color:#4b555a;
+}
+
+
+
+/* ==================================================
+   PARTNER BUTTON
+================================================== */
+
+.partner-btn{
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:46px;
+
+    padding:9px 17px;
+
+    border-radius:13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00796b,
+            #009688
+        );
+
+    color:#fff !important;
+
+    text-decoration:none !important;
+
+    font-size:14px;
+
+    line-height:1.3;
+
+    font-weight:900;
+
+    box-shadow:
+        0 5px 14px rgba(0,121,107,.20);
+
+    transition:.2s;
+}
+
+
+.partner-btn:active{
+    transform:scale(.96);
+}
+
+
+
+/* ==================================================
+   FINAL NOTE
+================================================== */
+
+.final-note{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:25px auto;
+
+    padding:19px 15px;
+
+    border-radius:20px;
+
+    background:#fff7df;
+
+    border:1px solid #f0dca7;
+
+    border-left:5px solid #e89a00;
+
+    color:#5b5038;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    box-shadow:
+        0 5px 16px rgba(0,0,0,.05);
+}
+
+
+.final-note h2{
+    margin-bottom:8px;
+
+    font-size:clamp(22px,6vw,29px);
+
+    line-height:1.35;
+
+    font-weight:900;
+
+    color:#8a5b00;
+}
+
+
+.final-note p{
+    margin:7px 0;
+}
+
+
+
+/* ==================================================
+   LANGUAGE BOTTOM
+================================================== */
+
+.language-bottom{
+    width:calc(100% - 20px);
+
+    max-width:1180px;
+
+    margin:28px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:11px;
+
+    flex-wrap:wrap;
+}
+
+
+.lang-btn{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:88px;
+
+    min-height:43px;
+
+    padding:8px 17px;
+
+    border-radius:27px;
+
+    background:#fff;
+
+    color:#333;
+
+    border:1px solid #d8e0e1;
+
+    font-size:14px;
+
+    font-weight:900;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.07);
+
+    transition:.2s;
+}
+
+
+.lang-btn.active{
+    background:#a85410;
+
+    color:#fff;
+
+    border-color:#a85410;
+}
+
+
+.lang-btn:active{
+    transform:scale(.96);
+}
+
+
+
+/* ==================================================
+   BACK TO TOP
+================================================== */
+
+.back-to-top{
+    position:fixed;
+
+    right:14px;
+
+    bottom:15px;
+
+    z-index:9999;
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#555;
+
+    border:1px solid #d2d9db;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.15);
+
+    font-size:28px;
+
+    line-height:1;
+
+    font-weight:900;
+
+    transition:.2s;
+}
+
+
+.back-to-top:active{
+    transform:scale(.91);
+}
+
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+    width:100%;
+
+    margin-top:35px;
+
+    padding:31px 15px 27px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #173f3a,
+            #075e55
+        );
+
+    color:#fff;
+
+    text-align:center;
+}
+
+
+.footer-logo{
+    margin-bottom:8px;
+
+    font-size:clamp(24px,6vw,32px);
+
+    line-height:1.2;
+
+    font-weight:900;
+}
+
+
+footer p{
+    margin:6px 0;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+    color:rgba(255,255,255,.88);
+}
+
+
+footer p:last-child{
+    margin-top:14px;
+
+    font-size:11px;
+
+    color:rgba(255,255,255,.68);
+}
+
+
+
+/* ==================================================
+   EXTRA PLACE CARD SUPPORT
+================================================== */
+
+.place-card{
+    position:relative;
+
+    overflow:hidden;
+}
+
+
+.place-card::after{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    right:0;
+
+    width:45px;
+    height:45px;
+
+    border-radius:0 0 0 45px;
+
+    background:
+        rgba(0,150,136,.035);
+
+    pointer-events:none;
+}
+
+
+
+/* ==================================================
+   DESKTOP / TABLET
+================================================== */
+
+@media (min-width:700px){
+
+    .route-section .place-card{
+        width:calc(50% - 10px);
+
+        margin:7px 4px;
+
+        padding:19px;
+    }
+
+
+    .route-section{
+        padding:25px 20px;
+    }
+
+
+    .action-grid{
+        gap:8px;
+    }
+
+
+    .service-grid{
+        grid-template-columns:
+            repeat(3,minmax(0,1fr));
+
+        gap:12px;
+    }
+
+
+    .food-grid{
+        grid-template-columns:
+            repeat(3,minmax(0,1fr));
+
+        gap:12px;
+    }
+
+
+    .culture-grid{
+        grid-template-columns:
+            repeat(4,minmax(0,1fr));
+
+        gap:12px;
+    }
+
+
+    .important-info{
+        padding:25px 20px;
+    }
+
+
+    .summary-card{
+        padding:23px 20px;
+    }
+
+}
+
+
+
+/* ==================================================
+   MOBILE — KEEP 2 × 2
+================================================== */
+
+@media (max-width:520px){
+
+    .route-section{
+        width:calc(100% - 10px);
+
+        padding:15px 7px;
+
+        border-radius:20px;
+    }
+
+
+    .route-section .place-card{
+        width:calc(50% - 8px);
+
+        display:inline-block;
+
+        vertical-align:top;
+
+        margin:6px 3px;
+
+        padding:12px 9px;
+
+        border-radius:16px;
+    }
+
+
+    .route-section .place-card h3{
+        font-size:18px;
+
+        line-height:1.35;
+    }
+
+
+    .route-section .place-card p{
+        font-size:11.5px;
+
+        line-height:1.55;
+    }
+
+
+    .route-section .place-card p:last-of-type{
+        font-size:10px;
+
+        line-height:1.4;
+
+        padding:7px 7px;
+    }
+
+
+    .action-grid{
+        grid-template-columns:
+            1fr;
+
+        gap:5px;
+    }
+
+
+    .action-grid a{
+        min-height:34px;
+
+        padding:5px 3px;
+
+        font-size:9.5px;
+
+        border-radius:9px;
+    }
+
+
+    .service-section{
+        width:calc(100% - 10px);
+
+        padding:17px 10px;
+    }
+
+
+    .service-grid{
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:8px;
+    }
+
+
+    .service-card{
+        min-height:95px;
+
+        padding:10px 6px;
+    }
+
+
+    .food-section{
+        width:calc(100% - 10px);
+
+        padding:17px 10px;
+    }
+
+
+    .food-grid{
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:8px;
+    }
+
+
+    .culture-section{
+        width:calc(100% - 10px);
+
+        padding:17px 10px;
+    }
+
+
+    .culture-grid{
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:8px;
+    }
+
+
+    .important-info{
+        width:calc(100% - 10px);
+
+        padding:17px 10px;
+    }
+
+
+    .summary-card{
+        width:calc(100% - 10px);
+
+        padding:16px 12px;
+    }
+
+
+    .travel-plan .plan-card{
+        width:calc(100% - 10px);
+
+        padding:16px 12px;
+    }
+
+
+    .business-registration,
+    .tourist-partner,
+    .final-note{
+        width:calc(100% - 10px);
+
+        padding:18px 12px;
+    }
+
+
+    .partner-section{
+        width:calc(100% - 10px);
+
+        padding:18px 11px;
+    }
+
+
+    .partner-services{
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:8px;
+    }
+
+}
+
+/* ==================================================
+   MOBILE SCREEN
+================================================== */
+
+@media (max-width:520px){
+
+    body{
+        font-size:14px;
+    }
+
+
+    header{
+        padding:18px 8px 16px;
+    }
+
+
+    .logo{
+        font-size:28px;
+    }
+
+
+    .page-title{
+        font-size:18px;
+    }
+
+
+    .language-switch{
+        gap:9px;
+
+        margin-top:14px;
+    }
+
+
+    .language-btn{
+        min-width:82px;
+
+        min-height:42px;
+
+        padding:7px 14px;
+
+        font-size:14px;
+    }
+
+
+    .back-btn{
+        margin:12px auto;
+
+        padding:8px 12px;
+
+        font-size:13px;
+    }
+
+
+
+    /* ==================================================
+       TOP MENU
+    ================================================== */
+
+    .sticky-menu{
+        gap:7px;
+
+        padding:8px 7px;
+
+        justify-content:flex-start;
+    }
+
+
+    .sticky-menu a{
+        min-width:88px;
+
+        min-height:52px;
+
+        padding:6px 7px;
+
+        border-radius:16px;
+
+        font-size:11.5px;
+    }
+
+
+
+    /* ==================================================
+       HERO
+    ================================================== */
+
+    .hero{
+        width:calc(100% - 10px);
+
+        margin:16px auto;
+
+        padding:22px 14px;
+
+        border-radius:20px;
+    }
+
+
+    .hero h1{
+        font-size:32px;
+    }
+
+
+    .hero p{
+        font-size:14px;
+
+        line-height:1.6;
+    }
+
+
+
+    /* ==================================================
+       PARTNER
+    ================================================== */
+
+    .partner-registration{
+        width:calc(100% - 10px);
+
+        margin:18px auto;
+
+        padding:18px 12px;
+
+        border-radius:18px;
+    }
+
+
+    .partner-registration h2{
+        font-size:23px;
+    }
+
+
+    .partner-registration p{
+        font-size:13px;
+    }
+
+
+
+    /* ==================================================
+       ROUTE
+    ================================================== */
+
+    .route-heading .route-number{
+        font-size:11px;
+
+        padding:5px 9px;
+    }
+
+
+    .route-heading h2{
+        font-size:22px;
+    }
+
+
+    .route-heading p{
+        font-size:13px;
+    }
+
+
+
+    /* ==================================================
+       2 × 2 PLACE CARDS
+    ================================================== */
+
+    .route-section .place-card{
+        width:calc(50% - 8px);
+
+        display:inline-block;
+
+        vertical-align:top;
+
+        margin:6px 3px;
+
+        padding:12px 8px;
+
+        border-radius:16px;
+    }
+
+
+    .route-section .place-card h3{
+        font-size:17px;
+
+        line-height:1.35;
+    }
+
+
+    .route-section .place-card p{
+        font-size:11px;
+
+        line-height:1.5;
+    }
+
+
+    .route-section .place-card p:last-of-type{
+        font-size:9.5px;
+
+        line-height:1.4;
+
+        padding:7px 6px;
+
+        border-radius:9px;
+    }
+
+
+
+    /* ==================================================
+       PLACE BUTTONS
+    ================================================== */
+
+    .action-grid{
+        display:grid;
+
+        grid-template-columns:
+            1fr;
+
+        gap:5px;
+
+        margin-top:7px;
+    }
+
+
+    .action-grid a{
+        min-height:34px;
+
+        padding:5px 2px;
+
+        border-radius:9px;
+
+        font-size:9px;
+
+        line-height:1.2;
+    }
+
+
+
+    /* ==================================================
+       TRAVEL NOTE
+    ================================================== */
+
+    .travel-note{
+        width:calc(100% - 10px);
+
+        margin:18px auto;
+
+        padding:15px 12px;
+
+        border-radius:17px;
+    }
+
+
+    .travel-note h2{
+        font-size:20px;
+    }
+
+
+    .travel-note p{
+        font-size:12.5px;
+    }
+
+
+
+    /* ==================================================
+       SERVICE SECTION
+    ================================================== */
+
+    .service-section{
+        width:calc(100% - 10px);
+
+        margin:19px auto;
+
+        padding:17px 9px;
+
+        border-radius:19px;
+    }
+
+
+    .service-section .section-heading h2{
+        font-size:23px;
+    }
+
+
+    .service-section .section-heading p{
+        font-size:13px;
+    }
+
+
+    .service-grid{
+        display:grid;
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:8px;
+    }
+
+
+    .service-card{
+        min-height:94px;
+
+        padding:10px 6px;
+
+        border-radius:15px;
+    }
+
+
+    .service-card strong{
+        font-size:11.5px;
+
+        line-height:1.3;
+    }
+
+
+    .service-card span{
+        font-size:9.5px;
+
+        line-height:1.35;
+    }
+
+
+
+    /* ==================================================
+       IMPORTANT INFORMATION
+    ================================================== */
+
+    .important-info{
+        width:calc(100% - 10px);
+
+        margin:19px auto;
+
+        padding:17px 10px;
+
+        border-radius:19px;
+    }
+
+
+    .important-info .section-heading h2{
+        font-size:23px;
+    }
+
+
+    .info-card{
+        margin:8px 0;
+
+        padding:12px 10px;
+
+        border-radius:14px;
+    }
+
+
+    .info-card h3{
+        font-size:17px;
+    }
+
+
+    .info-card p{
+        font-size:12px;
+
+        line-height:1.6;
+    }
+
+
+
+    /* ==================================================
+       ROUTE SUMMARY
+    ================================================== */
+
+    .route-summary{
+        margin:20px auto;
+    }
+
+
+    .route-summary .section-heading{
+        width:calc(100% - 10px);
+
+        margin-bottom:12px;
+    }
+
+
+    .route-summary .section-heading h2{
+        font-size:23px;
+    }
+
+
+    .route-summary .section-heading p{
+        font-size:13px;
+    }
+
+
+    .summary-card{
+        width:calc(100% - 10px);
+
+        margin:10px auto;
+
+        padding:15px 11px;
+
+        border-radius:17px;
+    }
+
+
+    .summary-card h3{
+        font-size:19px;
+    }
+
+
+    .summary-card p{
+        font-size:12px;
+
+        line-height:1.6;
+    }
+
+
+
+    /* ==================================================
+       TRAVEL PLAN
+    ================================================== */
+
+    .travel-plan{
+        margin:20px auto;
+    }
+
+
+    .travel-plan .section-heading{
+        width:calc(100% - 10px);
+
+        margin-bottom:11px;
+    }
+
+
+    .travel-plan .section-heading h2{
+        font-size:23px;
+    }
+
+
+    .travel-plan .plan-card{
+        width:calc(100% - 10px);
+
+        padding:15px 11px;
+
+        border-radius:17px;
+    }
+
+
+    .travel-plan .plan-card h3{
+        font-size:18px;
+    }
+
+
+    .travel-plan .plan-card p{
+        font-size:12px;
+    }
+
+
+
+    /* ==================================================
+       FOOD
+    ================================================== */
+
+    .food-section{
+        width:calc(100% - 10px);
+
+        margin:20px auto;
+
+        padding:17px 9px;
+
+        border-radius:19px;
+    }
+
+
+    .food-section .section-heading h2{
+        font-size:23px;
+    }
+
+
+    .food-section .section-heading p{
+        font-size:13px;
+    }
+
+
+    .food-grid{
+        display:grid;
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:8px;
+    }
+
+
+    .food-card{
+        min-height:130px;
+
+        padding:12px 7px;
+
+        border-radius:15px;
+    }
+
+
+    .food-card h3{
+        font-size:16px;
+    }
+
+
+    .food-card p{
+        font-size:10.5px;
+
+        line-height:1.5;
+    }
+
+
+
+    /* ==================================================
+       CULTURE
+    ================================================== */
+
+    .culture-section{
+        width:calc(100% - 10px);
+
+        margin:20px auto;
+
+        padding:17px 9px;
+
+        border-radius:19px;
+    }
+
+
+    .culture-section .section-heading h2{
+        font-size:23px;
+    }
+
+
+    .culture-section .section-heading p{
+        font-size:13px;
+    }
+
+
+    .culture-grid{
+        display:grid;
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:8px;
+    }
+
+
+    .culture-card{
+        min-height:130px;
+
+        padding:12px 7px;
+
+        border-radius:15px;
+    }
+
+
+    .culture-card h3{
+        font-size:16px;
+    }
+
+
+    .culture-card p{
+        font-size:10.5px;
+
+        line-height:1.5;
+    }
+
+
+
+    /* ==================================================
+       BUSINESS REGISTRATION
+    ================================================== */
+
+    .business-registration{
+        width:calc(100% - 10px);
+
+        margin:20px auto;
+
+        padding:18px 11px;
+
+        border-radius:19px;
+    }
+
+
+    .business-registration h2{
+        font-size:23px;
+    }
+
+
+    .business-registration p{
+        font-size:12.5px;
+    }
+
+
+
+    /* ==================================================
+       TOURIST PARTNER
+    ================================================== */
+
+    .tourist-partner{
+        width:calc(100% - 10px);
+
+        margin:20px auto;
+
+        padding:18px 11px;
+
+        border-radius:19px;
+    }
+
+
+    .tourist-partner h2{
+        font-size:23px;
+    }
+
+
+    .tourist-partner p{
+        font-size:12.5px;
+    }
+
+
+
+    /* ==================================================
+       PARTNER SECTION
+    ================================================== */
+
+    .partner-section{
+        width:calc(100% - 10px);
+
+        margin:20px auto;
+
+        padding:18px 10px;
+
+        border-radius:19px;
+    }
+
+
+    .partner-section h2{
+        font-size:23px;
+    }
+
+
+    .partner-section p{
+        font-size:13px;
+    }
+
+
+    .partner-services{
+        display:grid;
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:8px;
+    }
+
+
+    .partner-service{
+        padding:10px 6px;
+
+        border-radius:13px;
+
+        font-size:10.5px;
+    }
+
+
+
+    /* ==================================================
+       FINAL NOTE
+    ================================================== */
+
+    .final-note{
+        width:calc(100% - 10px);
+
+        margin:20px auto;
+
+        padding:16px 11px;
+
+        border-radius:17px;
+
+        font-size:12.5px;
+    }
+
+
+    .final-note h2{
+        font-size:21px;
+    }
+
+
+
+    /* ==================================================
+       BOTTOM LANGUAGE
+    ================================================== */
+
+    .language-bottom{
+        width:calc(100% - 10px);
+
+        margin:22px auto;
+
+        gap:8px;
+    }
+
+
+    .lang-btn{
+        min-width:82px;
+
+        min-height:41px;
+
+        padding:7px 13px;
+
+        font-size:13px;
+    }
+
+
+
+    /* ==================================================
+       BACK TO TOP
+    ================================================== */
+
+    .back-to-top{
+        width:52px;
+
+        height:52px;
+
+        right:11px;
+
+        bottom:13px;
+
+        font-size:25px;
+    }
+
+
+
+    /* ==================================================
+       FOOTER
+    ================================================== */
+
+    footer{
+        margin-top:28px;
+
+        padding:28px 12px 24px;
+    }
+
+
+    .footer-logo{
+        font-size:25px;
+    }
+
+
+    footer p{
+        font-size:12px;
+    }
+
+}
+
+
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media (max-width:360px){
+
+    .logo{
+        font-size:25px;
+    }
+
+
+    .page-title{
+        font-size:17px;
+    }
+
+
+    .sticky-menu a{
+        min-width:82px;
+
+        font-size:10.5px;
+    }
+
+
+    .hero h1{
+        font-size:29px;
+    }
+
+
+    .route-heading h2{
+        font-size:20px;
+    }
+
+
+    .route-section .place-card h3{
+        font-size:16px;
+    }
+
+
+    .route-section .place-card p{
+        font-size:10.5px;
+    }
+
+
+    .route-section .place-card p:last-of-type{
+        font-size:9px;
+    }
+
+
+    .action-grid a{
+        font-size:8.5px;
+    }
+
+
+    .service-card strong{
+        font-size:10.5px;
+    }
+
+
+    .service-card span{
+        font-size:9px;
+    }
+
+
+    .food-card h3,
+    .culture-card h3{
+        font-size:15px;
+    }
+
+
+    .food-card p,
+    .culture-card p{
+        font-size:9.5px;
+    }
+
+}
+
+
+
+/* ==================================================
+   HOVER
+================================================== */
+
+@media (hover:hover){
+
+    .sticky-menu a:hover{
+        transform:translateY(-2px);
+
+        box-shadow:
+            0 5px 14px rgba(0,0,0,.10);
+    }
+
+
+    .place-card:hover{
+        transform:translateY(-2px);
+
+        box-shadow:
+            0 8px 20px rgba(0,0,0,.09);
+    }
+
+
+    .service-card:hover{
+        transform:translateY(-3px);
+
+        box-shadow:
+            0 8px 20px rgba(0,0,0,.10);
+    }
+
+
+    .partner-btn:hover{
+        transform:translateY(-2px);
+    }
+
+
+    .lang-btn:hover,
+    .language-btn:hover{
+        transform:translateY(-2px);
+    }
+
+}
+
+
+
+/* ==================================================
+   FOCUS
+================================================== */
+
+a:focus-visible,
+button:focus-visible{
+    outline:3px solid #80cbc4;
+
+    outline-offset:3px;
+}
+
+
+
+/* ==================================================
+   REDUCED MOTION
+================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+
+    *,
+    *::before,
+    *::after{
+        transition:none !important;
+
+        animation:none !important;
+    }
+
+}
+
+
+
+/* ==================================================
+   PRINT
+================================================== */
+
+@media print{
+
+    .sticky-menu,
+    .back-btn,
+    .language-switch,
+    .language-bottom,
+    .back-to-top,
+    .action-grid{
+        display:none !important;
+    }
+
+
+    body{
+        background:#fff;
+    }
+
+
+    header{
+        background:#fff;
+
+        color:#000;
+
+        box-shadow:none;
+    }
+
+
+    .hero,
+    .route-section,
+    .place-card,
+    .service-section,
+    .summary-card,
+    .important-info,
+    .food-section,
+    .culture-section,
+    .business-registration,
+    .tourist-partner,
+    .final-note{
+        box-shadow:none;
+
+        break-inside:avoid;
+    }
+
+
+    footer{
+        background:#fff;
+
+        color:#000;
+
+        border-top:1px solid #ddd;
+    }
+
+}
